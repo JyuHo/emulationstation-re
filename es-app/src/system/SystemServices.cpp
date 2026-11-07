@@ -10,6 +10,7 @@
 #include <csignal>
 #include <cstdlib>
 #include <fcntl.h>
+#include <fstream>
 #include <set>
 #include <sstream>
 #include <sys/stat.h>
@@ -478,6 +479,138 @@ namespace SystemServices
 		{
 			// Needs polkit authorization (the active local session gets it by default)
 			return !zone.empty() && run({ "timedatectl", "set-timezone", zone }) == 0;
+		}
+	}
+
+//////////////////////////////////////////////////////////////////////////
+// Keyboard
+
+	namespace Keyboard
+	{
+		namespace
+		{
+			// "! layout" / "! variant" sections of xkeyboard-config's rules list, as "code\tlabel".
+			// A variant line reads "  azerty          fr: French (AZERTY)".
+			std::vector<std::string> xkbList(const std::string& section, const std::string& layout)
+			{
+				const char* root = getenv("XKB_CONFIG_ROOT");
+				std::ifstream in(std::string(root != nullptr && *root ? root : "/usr/share/X11/xkb") + "/rules/evdev.lst");
+
+				std::vector<std::string> result;
+				bool inSection = false;
+				std::string line;
+				while (std::getline(in, line))
+				{
+					if (line.rfind("! ", 0) == 0)
+					{
+						inSection = Utils::String::trim(line.substr(2)) == section;
+						continue;
+					}
+
+					if (!inSection)
+						continue;
+
+					std::istringstream fields(line);
+					std::string code;
+					if (!(fields >> code))
+						continue;
+
+					std::string label;
+					std::getline(fields, label);
+					label = Utils::String::trim(label);
+
+					if (!layout.empty())
+					{
+						if (label.rfind(layout + ":", 0) != 0)
+							continue;
+						label = Utils::String::trim(label.substr(layout.size() + 1));
+					}
+
+					result.push_back(code + "\t" + (label.empty() ? code : label));
+				}
+				return result;
+			}
+
+			std::string statusField(const std::string& name)
+			{
+				std::string out;
+				if (run({ "localectl", "status" }, &out) != 0)
+					return "";
+
+				for (auto& line : lines(out))
+				{
+					auto colon = line.find(':');
+					if (colon != std::string::npos && Utils::String::trim(line.substr(0, colon)) == name)
+						return Utils::String::trim(line.substr(colon + 1));
+				}
+				return "";
+			}
+
+			std::string label(const std::string& entry) { return entry.substr(entry.find('\t') + 1); }
+		}
+
+		bool isAvailable() { return hasCommand("localectl"); }
+
+		std::vector<std::string> layouts()
+		{
+			auto result = xkbList("layout", "");
+			if (result.empty())
+			{
+				// No xkeyboard-config list: the codes are all there is
+				std::string out;
+				if (run({ "localectl", "list-x11-keymap-layouts" }, &out) == 0)
+					for (auto& code : lines(out))
+						result.push_back(code + "\t" + code);
+			}
+
+			std::stable_sort(result.begin(), result.end(), [](const std::string& a, const std::string& b)
+			{
+				return Utils::String::toLower(label(a)) < Utils::String::toLower(label(b));
+			});
+			return result;
+		}
+
+		std::vector<std::string> variants(const std::string& layout)
+		{
+			if (layout.empty())
+				return {};
+
+			auto result = xkbList("variant", layout);
+			if (result.empty())
+			{
+				std::string out;
+				if (run({ "localectl", "list-x11-keymap-variants", layout }, &out) == 0)
+					for (auto& code : lines(out))
+						result.push_back(code + "\t" + code);
+			}
+			return result;
+		}
+
+		// Several layouts ("fr,us" with variants ",dvorak") keep the first one: the menu offers a single layout
+		std::string currentLayout() { auto value = statusField("X11 Layout"); return value.substr(0, value.find(',')); }
+		std::string currentVariant() { auto value = statusField("X11 Variant"); return value.substr(0, value.find(',')); }
+
+		bool set(const std::string& layout, const std::string& variant, bool* appliedNow)
+		{
+			if (appliedNow != nullptr)
+				*appliedNow = false;
+
+			if (layout.empty())
+				return false;
+
+			// Needs polkit authorization, like timedatectl. Also converts it to the closest console keymap.
+			if (run({ "localectl", "set-x11-keymap", layout, "", variant }) != 0)
+				return false;
+
+			// Under Wayland the compositor owns the keymap (setxkbmap would only reach Xwayland)
+			const char* display = getenv("DISPLAY");
+			const char* wayland = getenv("WAYLAND_DISPLAY");
+			if (display != nullptr && *display && (wayland == nullptr || !*wayland) && hasCommand("setxkbmap"))
+			{
+				if (run({ "setxkbmap", "-layout", layout, "-variant", variant }) == 0 && appliedNow != nullptr)
+					*appliedNow = true;
+			}
+			return true;
 		}
 	}
 

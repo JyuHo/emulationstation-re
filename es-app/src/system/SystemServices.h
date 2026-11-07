@@ -68,6 +68,20 @@ namespace SystemServices
 		bool set(const std::string& zone);
 	}
 
+	namespace Keyboard // systemd (localectl), xkeyboard-config for the names
+	{
+		// Entries are "code\tlabel": layouts sorted by label, variants of `layout` in xkb order
+		bool isAvailable();
+		std::vector<std::string> layouts();
+		std::vector<std::string> variants(const std::string& layout);
+		// The X11 layout and variant the system is set to (variant is empty when there is none)
+		std::string currentLayout();
+		std::string currentVariant();
+		// Sets the system keyboard (X11 and console). In an X11 session it also takes effect right
+		// away (setxkbmap), and `appliedNow` says so; elsewhere it needs a new session.
+		bool set(const std::string& layout, const std::string& variant, bool* appliedNow = nullptr);
+	}
+
 	namespace Audio // PipeWire or PulseAudio (pactl)
 	{
 		// Entries are "id\tlabel", as read by the sound menu. "auto" keeps the server's choice.

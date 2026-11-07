@@ -2318,6 +2318,9 @@ msgstr ""
 msgid "KEYBOARD VARIANT"
 msgstr ""
 
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr ""
+
 msgid ""
 "Select the physical keyboard layout. A reboot may be required for changes to "
 "take full effect."

@@ -2365,6 +2365,9 @@ msgstr "DISPOSITION DU CLAVIER"
 msgid "KEYBOARD VARIANT"
 msgstr "VARIANTE CLAVIER"
 
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "IMPOSSIBLE DE CHANGER LA DISPOSITION DU CLAVIER"
+
 msgid ""
 "Select the physical keyboard layout. A reboot may be required for changes to "
 "take full effect."

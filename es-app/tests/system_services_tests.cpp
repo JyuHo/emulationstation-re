@@ -1,4 +1,4 @@
-// Unit tests of system/SystemServices against stub nmcli, bluetoothctl and pactl.
+// Unit tests of system/SystemServices against stub nmcli, bluetoothctl, pactl, timedatectl and localectl.
 // Built with -DES_TESTS=ON, run with ctest: each stub prints canned output and logs its arguments.
 
 #include "system/SystemServices.h"
@@ -92,6 +92,21 @@ esac)");
   list-timezones) printf 'Europe/Paris\nUTC\n';;
   "show --property=Timezone --value") echo Europe/Paris;;
 esac)");
+
+		writeStub("localectl", R"(case "$*" in
+  status) printf '   System Locale: LANG=fr_FR.UTF-8\n       VC Keymap: fr\n      X11 Layout: fr,us\n       X11 Model: pc105\n     X11 Variant: azerty,\n';;
+esac)");
+		writeStub("setxkbmap", "");
+
+		// A trimmed xkeyboard-config rules list
+		mkdir((stubDir + "/xkb").c_str(), 0755);
+		mkdir((stubDir + "/xkb/rules").c_str(), 0755);
+		std::ofstream(stubDir + "/xkb/rules/evdev.lst") <<
+			"! model\n  pc105           Generic 105-key PC\n\n"
+			"! layout\n  us              English (US)\n  de              German\n  fr              French\n\n"
+			"! variant\n  azerty          ara: Arabic (AZERTY)\n  azerty          fr: French (AZERTY)\n  bepo            fr: French (BEPO)\n  dvorak          us: English (Dvorak)\n\n"
+			"! option\n  grp             Switching to another layout\n";
+		setenv("XKB_CONFIG_ROOT", (stubDir + "/xkb").c_str(), 1);
 	}
 
 	void testWifi()
@@ -195,6 +210,44 @@ esac)");
 		CHECK(called("timedatectl set-timezone UTC"));
 		CHECK(!TimeZone::set(""));
 	}
+
+	void testKeyboard()
+	{
+		using namespace SystemServices;
+		CHECK(Keyboard::isAvailable());
+
+		auto layouts = Keyboard::layouts();
+		CHECK(layouts.size() == 3);
+		CHECK(layouts.size() == 3 && layouts[0] == "us\tEnglish (US)" && layouts[1] == "fr\tFrench" && layouts[2] == "de\tGerman");
+
+		auto variants = Keyboard::variants("fr");
+		CHECK(variants.size() == 2);
+		CHECK(variants.size() == 2 && variants[0] == "azerty\tFrench (AZERTY)" && variants[1] == "bepo\tFrench (BEPO)");
+		CHECK(Keyboard::variants("de").empty());
+
+		CHECK(Keyboard::currentLayout() == "fr");
+		CHECK(Keyboard::currentVariant() == "azerty");
+
+		// X11 session: applied right away too
+		setenv("DISPLAY", ":0", 1);
+		unsetenv("WAYLAND_DISPLAY");
+		bool appliedNow = false;
+		clearCalls();
+		CHECK(Keyboard::set("us", "dvorak", &appliedNow));
+		CHECK(called("localectl set-x11-keymap us  dvorak"));
+		CHECK(called("setxkbmap -layout us -variant dvorak"));
+		CHECK(appliedNow);
+
+		// Wayland: the compositor keeps its keymap until the next session
+		setenv("WAYLAND_DISPLAY", "wayland-0", 1);
+		clearCalls();
+		CHECK(Keyboard::set("de", "", &appliedNow));
+		CHECK(called("localectl set-x11-keymap de  "));
+		CHECK(calls().find("setxkbmap") == std::string::npos);
+		CHECK(!appliedNow);
+
+		CHECK(!Keyboard::set("", "", &appliedNow));
+	}
 }
 
 int main()
@@ -204,6 +257,7 @@ int main()
 	testBluetooth();
 	testAudio();
 	testTimeZone();
+	testKeyboard();
 
 	CHECK(!SystemServices::hasCommand("es-no-such-command"));
 	CHECK(SystemServices::run({ "es-no-such-command" }) == 127);
