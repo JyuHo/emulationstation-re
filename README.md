@@ -11,18 +11,18 @@ EmulationStation-RE targets Linux only, on two platforms:
 * x86_64 (Arch Linux / CachyOS)
 * Raspberry Pi 4 and later (Armbian trixie)
 
-The code is built as C++23, so you need GCC 13+ or Clang 18+ and CMake 3.25+. You also need SDL 3.2+, FreeImage, FreeType, cURL, RapidJSON, LibVLC, ALSA and gettext. FriBidi, libudev and libcec are optional. Audio decoding (MP3, Ogg Vorbis, FLAC, WAV) is built in, so SDL_mixer is not needed. The `fonts-droid-fallback` package (or equivalent) provides fallback fonts for Chinese/Japanese/Korean characters at run time.
+The code is built as C++23, so you need GCC 13+ or Clang 18+ and CMake 3.25+. You also need SDL 3.2+, SDL_image 3.2+, FreeType, cURL, RapidJSON, LibVLC, ALSA and gettext. FriBidi, libudev and libcec are optional. Audio decoding (MP3, Ogg Vorbis, FLAC, WAV) is built in, so SDL_mixer is not needed. The `fonts-droid-fallback` package (or equivalent) provides fallback fonts for Chinese/Japanese/Korean characters at run time.
 
 **On Arch Linux / CachyOS:**
 ```bash
-sudo pacman -S --needed base-devel cmake ninja sdl3 freeimage freetype2 curl \
+sudo pacman -S --needed base-devel cmake ninja sdl3 sdl3_image freetype2 curl \
   rapidjson vlc alsa-lib gettext fribidi libcec
 ```
 
 **On Armbian trixie / Debian:**
 ```bash
 sudo apt-get install build-essential cmake ninja-build libsdl3-dev \
-  libfreeimage-dev libfreetype-dev libcurl4-openssl-dev rapidjson-dev libvlc-dev \
+  libsdl3-image-dev libfreetype-dev libcurl4-openssl-dev rapidjson-dev libvlc-dev \
   libasound2-dev libgles-dev libgl-dev libudev-dev libfribidi-dev libcec-dev gettext \
   fonts-droid-fallback
 ```
