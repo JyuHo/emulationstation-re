@@ -69,7 +69,8 @@ Installing and running
 
 Each `v*` tag publishes a [release](https://github.com/JyuHo/emulationstation-re/releases) with
 an Arch Linux package (x86_64, OpenGL) and Debian trixie packages (amd64 with OpenGL, arm64 with
-OpenGL ES for the Raspberry Pi 4 and later), plus their `SHA256SUMS`:
+OpenGL ES for the Raspberry Pi 4 and later), plus their `SHA256SUMS`. ES's update menu only sees the latest *full* release: GitHub leaves
+pre-releases out of `releases/latest`.
 
 ```bash
 sudo pacman -U emulationstation-re-<version>-1-x86_64.pkg.tar.zst   # Arch Linux / CachyOS

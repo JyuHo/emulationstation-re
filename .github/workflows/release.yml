@@ -150,13 +150,18 @@ jobs:
           print(json.dumps(latest, indent=2))
           PY
 
-      - name: Create the release
+      - name: Publish the release
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.ref_name }}
+        # a release made by hand for the tag gets the files; otherwise it is created here
         run: |
           cd packages
-          prerelease=""
-          case "$TAG" in *-*) prerelease="--prerelease" ;; esac
-          gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" \
-            --generate-notes --verify-tag $prerelease -- *
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber -- *
+          else
+            prerelease=""
+            case "$TAG" in *-*) prerelease="--prerelease" ;; esac
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" \
+              --generate-notes --verify-tag $prerelease -- *
+          fi
