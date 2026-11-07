@@ -765,6 +765,10 @@ int main(int argc, char* argv[])
 	while (window.peekGui() != nullptr)
 		delete window.peekGui();
 
+	// Close the mixer's audio stream while SDL is up: SDL_Quit frees it, and the static
+	// mixer would then destroy it again at exit, corrupting the heap.
+	AudioManager::getInstance()->deinit();
+
 	window.deinit();
 
 	Utils::Platform::processQuitMode();
