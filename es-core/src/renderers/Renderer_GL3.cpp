@@ -1566,7 +1566,9 @@ namespace Renderer
 
 	void GL3Renderer::destroyTexture(const unsigned int _texture)
 	{
-		if (_texture == 0)
+		// Without a context, every texture is already gone with it (destroyContext). This also
+		// covers textures released by static destructors at exit, when _textures may be destroyed.
+		if (_texture == 0 || sdlContext == nullptr)
 			return;
 
 		auto it = _textures.find(_texture);

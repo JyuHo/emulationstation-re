@@ -338,8 +338,10 @@ void signalHandler(int signum)
 
 	Log::flush();
 
-	// cleanup and close up stuff here  
-	exit(signum);
+	// Die with the signal: exit() would run the static destructors over a crashed or
+	// half-running ES, and they release textures and fonts the renderer no longer has.
+	signal(signum, SIG_DFL);
+	raise(signum);
 }
 
 void playVideo()
@@ -441,9 +443,8 @@ int main(int argc, char* argv[])
 	// signal(SIGABRT, signalHandler);
 	signal(SIGFPE, signalHandler);
 	signal(SIGILL, signalHandler);
-	signal(SIGINT, signalHandler);
 	signal(SIGSEGV, signalHandler);
-	// signal(SIGTERM, signalHandler);
+	// SIGINT and SIGTERM are left to SDL, which turns them into SDL_EVENT_QUIT for a clean shutdown
 
 	srand((unsigned int)time(NULL));
 
@@ -763,6 +764,10 @@ int main(int argc, char* argv[])
 	// Delete ViewController
 	while (window.peekGui() != nullptr)
 		delete window.peekGui();
+
+	// Close the mixer's audio stream while SDL is up: SDL_Quit frees it, and the static
+	// mixer would then destroy it again at exit, corrupting the heap.
+	AudioManager::getInstance()->deinit();
 
 	window.deinit();
 
