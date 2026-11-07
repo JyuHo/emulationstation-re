@@ -2349,5 +2349,14 @@ BindableProperty SystemData::getProperty(const std::string& name)
 		return BindableProperty::EmptyString;
 	}
 
+	if (name == "lastPlayedDateTime")
+	{
+		Utils::Time::DateTime dt = info->lastPlayedDate;
+		if (dt.getTime() != 0)
+			return info->lastPlayedDate;
+		
+		return BindableProperty::EmptyString;
+	}
+
 	return BindableProperty::Null;
 }
