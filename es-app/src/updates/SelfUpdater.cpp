@@ -1,11 +1,13 @@
 #include "updates/SelfUpdater.h"
 
-#include "ApiSystem.h"
 #include "HttpReq.h"
 #include "LocaleES.h"
 #include "Log.h"
 #include "utils/StringUtil.h"
 
+#include <cstdio>
+#include <cstdlib>
+#include <sys/wait.h>
 #include <unistd.h>
 
 #ifndef ES_RELEASES_URL
@@ -21,6 +23,34 @@ namespace
 	{
 		return system(("command -v " + program + " >/dev/null 2>&1").c_str()) == 0;
 	}
+
+	// Runs a shell command, gives each line it prints to onLine; returns its exit code
+	int run(const std::string& command, const std::function<void(const std::string&)>& onLine)
+	{
+		LOG(LogInfo) << "Updates: running " << command;
+
+		FILE* pipe = popen(command.c_str(), "r");
+		if (pipe == nullptr)
+			return -1;
+
+		char buffer[1024];
+		std::string line;
+		while (fgets(buffer, sizeof(buffer), pipe))
+		{
+			line += buffer;
+			if (!line.empty() && line.back() == '\n')
+			{
+				line.pop_back();
+				onLine(line);
+				line.clear();
+			}
+		}
+		if (!line.empty())
+			onLine(line);
+
+		int status = pclose(pipe);
+		return WIFEXITED(status) ? WEXITSTATUS(status) : -1;
+	}
 }
 
 std::string SelfUpdater::latestUrl() { return std::string(ES_RELEASES_URL) + "/latest/download/latest.json"; }
@@ -32,7 +62,7 @@ std::string SelfUpdater::platform()
 		return "";
 
 	std::string result;
-	ApiSystem::getInstance()->executeScript(helperPath() + " platform 2>/dev/null", [&result](const std::string& line)
+	run(helperPath() + " platform 2>/dev/null", [&result](const std::string& line)
 	{
 		if (result.empty())
 			result = Utils::String::trim(line);
@@ -71,7 +101,7 @@ std::optional<selfupdate::Release> SelfUpdater::fetchLatest(std::string* error)
 SelfUpdater::Result SelfUpdater::install(const Progress& progress)
 {
 	std::string last;
-	auto result = ApiSystem::getInstance()->executeScript("pkexec " + helperPath() + " install 2>&1", [&](const std::string& line)
+	int code = run("pkexec " + helperPath() + " install 2>&1", [&](const std::string& line)
 	{
 		last = line;
 		LOG(LogInfo) << "Updates: " << line;
@@ -80,8 +110,8 @@ SelfUpdater::Result SelfUpdater::install(const Progress& progress)
 	});
 
 	// pkexec: 126 when the authorization was refused, 127 when it could not authenticate
-	if (result.second == 126 || result.second == 127)
-		return Result(_("The update was not authorized"), result.second);
+	if (code == 126 || code == 127)
+		return Result(_("The update was not authorized"), code);
 
-	return Result(last, result.second);
+	return Result(last, code);
 }
