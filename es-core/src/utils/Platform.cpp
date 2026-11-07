@@ -17,6 +17,7 @@
 #include <chrono>
 #include <cstdio>
 #include <cstring>
+#include <climits>
 #include "Window.h"
 #include "utils/FileSystemUtil.h"
 #include "utils/StringUtil.h"
@@ -234,9 +235,23 @@ namespace Utils
 			// The new instance reopens the log, the controllers, the HTTP port...: none of ours may leak into it
 			close_range(3, ~0U, CLOSE_RANGE_CLOEXEC);
 
-			// /proc/self/exe survives a relative argv[0]; argv[0] still works if the binary was replaced meanwhile
-			execv("/proc/self/exe", argv);
+			// Start the binary now at our path, not /proc/self/exe: after an update, the package
+			// manager has replaced the file, and /proc/self/exe would run the old, deleted one again.
+			// Its link still names the path, with " (deleted)" appended once the file was replaced.
+			char self[PATH_MAX];
+			ssize_t length = readlink("/proc/self/exe", self, sizeof(self) - 1);
+			if (length > 0)
+			{
+				std::string path(self, length);
+				const std::string deleted = " (deleted)";
+				if (path.size() > deleted.size() && path.compare(path.size() - deleted.size(), deleted.size(), deleted) == 0)
+					path.resize(path.size() - deleted.size());
+
+				execv(path.c_str(), argv);
+			}
+
 			execvp(argv[0], argv);
+			execv("/proc/self/exe", argv); // the binary is gone from its path: same version again
 			fprintf(stderr, "EmulationStation: restart failed: %s\n", strerror(errno));
 		}
 
