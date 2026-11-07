@@ -15,6 +15,14 @@ permissions:
 env:
   # empty outside a tag: the version then comes from `git describe`
   ES_VERSION: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || '' }}
+  # API keys compiled into the release packages (see "API keys" in the README). They are only
+  # given to tag builds: pull request and master builds, whose packages anyone can download as
+  # artifacts, are built without them. A secret that is not set is empty, which means no key.
+  SCREENSCRAPER_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.SCREENSCRAPER_DEV_LOGIN || '' }}
+  SCREENSCRAPER_SOFTNAME: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.SCREENSCRAPER_SOFTNAME || '' }}
+  GAMESDB_APIKEY: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.GAMESDB_APIKEY || '' }}
+  HFS_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.HFS_DEV_LOGIN || '' }}
+  CHEEVOS_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.CHEEVOS_DEV_LOGIN || '' }}
 
 jobs:
   arch:
@@ -37,7 +45,9 @@ jobs:
           chown -R builder .
           sudo -u builder git config --global --add safe.directory '*'
           cd packaging/arch
-          sudo -u builder env ES_VERSION="${ES_VERSION#v}" makepkg -sf --noconfirm
+          sudo -u builder \
+            --preserve-env=SCREENSCRAPER_DEV_LOGIN,SCREENSCRAPER_SOFTNAME,GAMESDB_APIKEY,HFS_DEV_LOGIN,CHEEVOS_DEV_LOGIN \
+            env ES_VERSION="${ES_VERSION#v}" makepkg -sf --noconfirm
 
       - name: Check the package
         run: |

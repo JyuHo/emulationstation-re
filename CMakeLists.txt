@@ -177,25 +177,19 @@ if(CEC)
   endif()
 endif()
 
-if(DEFINED SCREENSCRAPER_SOFTNAME)
-    add_definitions(-DSCREENSCRAPER_SOFTNAME="${SCREENSCRAPER_SOFTNAME}")
-endif()
-
-if(DEFINED SCREENSCRAPER_DEV_LOGIN)
-    add_definitions(-DSCREENSCRAPER_DEV_LOGIN="${SCREENSCRAPER_DEV_LOGIN}")
-endif()
-
-if(DEFINED GAMESDB_APIKEY)
-    add_definitions(-DGAMESDB_APIKEY="${GAMESDB_APIKEY}")
-endif()
-
-if(DEFINED CHEEVOS_DEV_LOGIN)
-    add_definitions(-DCHEEVOS_DEV_LOGIN="${CHEEVOS_DEV_LOGIN}")
-endif()
-
-if(DEFINED HFS_DEV_LOGIN)
-    add_definitions(-DHFS_DEV_LOGIN="${HFS_DEV_LOGIN}")
-endif()
+# API keys of the web services, compiled into the binary. Each one is read from the CMake
+# variable of that name (-DGAMESDB_APIKEY=...), else from the environment variable of that name,
+# which is how the release workflow passes its secrets. An empty value means no key: the
+# scraper or menu that needs it is left out of the build.
+foreach(ES_API_KEY SCREENSCRAPER_SOFTNAME SCREENSCRAPER_DEV_LOGIN GAMESDB_APIKEY CHEEVOS_DEV_LOGIN HFS_DEV_LOGIN)
+    if(NOT DEFINED ${ES_API_KEY} AND DEFINED ENV{${ES_API_KEY}})
+        set(${ES_API_KEY} "$ENV{${ES_API_KEY}}")
+    endif()
+    if(NOT "${${ES_API_KEY}}" STREQUAL "")
+        message("-- ${ES_API_KEY} set")
+        add_compile_definitions(${ES_API_KEY}="${${ES_API_KEY}}")
+    endif()
+endforeach()
 
 #-------------------------------------------------------------------------------
 
