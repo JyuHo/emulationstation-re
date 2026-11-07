@@ -95,6 +95,22 @@ Paths::Paths()
 	mBiosPath = mDataPath + "/bios";
 	mUserManualPath = mDataPath + "/notice.pdf";
 
+	// RetroArch shader presets of the player (system ones: "system.shaders" in the paths file)
+	mUserShadersPath = mDataPath + "/shaders";
+	// Decoration sets (RetroArch overlays, The Bezel Project...), one folder per set
+	mUserDecorationsPath = mDataPath + "/decorations";
+
+	// RetroArch's video filters: the player's own, then the ones the distribution's RetroArch ships
+	mUserVideoFiltersPath = mDataPath + "/videofilters";
+	for (const char* dir : { "/usr/lib/retroarch/filters/video", "/usr/lib/x86_64-linux-gnu/retroarch/filters/video", "/usr/lib/aarch64-linux-gnu/retroarch/filters/video" })
+	{
+		if (Utils::FileSystem::isDirectory(dir))
+		{
+			mVideoFiltersPath = dir;
+			break;
+		}
+	}
+
 	loadCustomConfiguration(false); // Try to detect alternate paths ( Decorations, Shaders... ) without loading overrides
 	loadCustomConfiguration(true); // Load paths overrides from emulationstation.ini file
 }

@@ -125,6 +125,117 @@ static void testVideoAndStates()
 	CHECK(config.get("video_driver") == "glcore");
 }
 
+static void testGameOptions()
+{
+	TempDir tmp;
+	writeFile(tmp.path / "user" / "crt.filt", "");
+	writeFile(tmp.path / "system" / "crt.filt", "");
+	writeFile(tmp.path / "system" / "Scanline2x.filt", "");
+
+	LaunchContext ctx;
+	ctx.paths.videoFilters = { tmp.path / "user", tmp.path / "system" };
+	ctx.controllers = { makePad(1, 0) };
+
+	// video filters: the player's folder first, "none" clears the one set in RetroArch, auto leaves it
+	ConfigFile config;
+	ctx.settings = Settings({ { "videofilters", "Scanline2x" } }, {}, { { "videofilters", "crt" } });
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_filter") == (tmp.path / "user" / "crt.filt").string());
+
+	ctx.settings = Settings({ { "videofilters", "Scanline2x" } }, {}, {});
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_filter") == (tmp.path / "system" / "Scanline2x.filt").string());
+
+	ctx.settings = Settings({ { "videofilters", "none" } }, {}, {});
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_filter") == "");
+
+	ctx.settings = Settings({}, {}, {});
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(!config.get("video_filter"));
+
+	// shader presets: the .slangp for glcore, the .glslp for gl, the other one when it is all there is
+	writeFile(tmp.path / "shaders" / "crt" / "crt-royale.slangp", "");
+	writeFile(tmp.path / "shaders" / "crt" / "crt-royale.glslp", "");
+	writeFile(tmp.path / "shaders" / "scanlines.glslp", "");
+	ctx.paths.shaders = { tmp.path / "shaders" };
+	ctx.architecture = Architecture::X86_64;
+
+	ctx.settings = Settings({ { "shaderset", "crt/crt-royale" } }, {}, {});
+	CHECK(RetroArchGenerator::shaderPreset(ctx) == tmp.path / "shaders" / "crt" / "crt-royale.slangp");
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_shader_enable") == "true");
+
+	ctx.settings = Settings({ { "shaderset", "crt/crt-royale" }, { "gfxbackend", "gl" } }, {}, {});
+	CHECK(RetroArchGenerator::shaderPreset(ctx) == tmp.path / "shaders" / "crt" / "crt-royale.glslp");
+	ctx.settings = Settings({ { "shaderset", "scanlines" } }, {}, {});
+	CHECK(RetroArchGenerator::shaderPreset(ctx) == tmp.path / "shaders" / "scanlines.glslp");
+
+	ctx.settings = Settings({ { "shaderset", "crt/crt-royale" } }, {}, { { "shaderset", "none" } });
+	CHECK(!RetroArchGenerator::shaderPreset(ctx));
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_shader_enable") == "false");
+
+	// decorations: the game's overlay, then the system's; a bare picture gets a generated .cfg
+	writeFile(tmp.path / "deco" / "thebezelproject" / "GameBezels" / "SNES" / "Super Metroid (USA).cfg", "overlays = 1\n");
+	writeFile(tmp.path / "deco" / "thebezelproject" / "GameBezels" / "SNES" / "Super Metroid (USA).png", "");
+	writeFile(tmp.path / "deco" / "thebezelproject" / "snes.png", "");
+	writeFile(tmp.path / "deco" / "thebezelproject" / "Genesis" / "Sonic (USA).png", "");
+	ctx.paths.decorations = { tmp.path / "deco" };
+	ctx.paths.emulatorConfigs = tmp.path / "emulators";
+	ctx.game.system = "snes";
+
+	ctx.game.rom = "/roms/snes/Super Metroid (USA).sfc";
+	ctx.settings = Settings({ { "bezel", "thebezelproject" } }, {}, {});
+	CHECK(RetroArchGenerator::decorationOverlay(ctx) == tmp.path / "deco" / "thebezelproject" / "GameBezels" / "SNES" / "Super Metroid (USA).cfg");
+	ConfigFile deco;
+	RetroArchGenerator::setDecoration(ctx, deco);
+	CHECK(deco.get("input_overlay_enable") == "true");
+	CHECK(deco.get("input_overlay") == (tmp.path / "deco" / "thebezelproject" / "GameBezels" / "SNES" / "Super Metroid (USA).cfg").string());
+	CHECK(deco.get("aspect_ratio_index") == "0");
+
+	ctx.game.rom = "/roms/snes/Zelda.sfc";
+	RetroArchGenerator::setDecoration(ctx, deco);
+	CHECK(deco.get("input_overlay") == (tmp.path / "emulators" / "retroarch" / "decoration.cfg").string());
+	CHECK(readFile(tmp.path / "emulators" / "retroarch" / "decoration.cfg").find((tmp.path / "deco" / "thebezelproject" / "snes.png").string()) != std::string::npos);
+
+	ctx.game.system = "megadrive";
+	ctx.game.rom = "/roms/megadrive/Sonic (USA).md";
+	CHECK(RetroArchGenerator::decorationOverlay(ctx) == tmp.path / "deco" / "thebezelproject" / "Genesis" / "Sonic (USA).png");
+
+	ctx.game.rom = "/roms/megadrive/Other.md";
+	CHECK(!RetroArchGenerator::decorationOverlay(ctx));
+	RetroArchGenerator::setDecoration(ctx, deco);
+	CHECK(deco.get("input_overlay_enable") == "false");
+
+	ctx.settings = Settings({ { "bezel", "thebezelproject" } }, {}, { { "bezel", "none" } });
+	ctx.game.system = "snes";
+	CHECK(!RetroArchGenerator::decorationOverlay(ctx));
+
+	// AI translation: the target language goes into the service URL
+	ctx.settings = Settings({ { "ai_service_enabled", "1" }, { "ai_target_lang", "Fr" }, { "ai_service_url", "http://localhost:4404/" }, { "ai_service_pause", "1" } }, {}, {});
+	RetroArchGenerator::setTranslation(ctx, config);
+	CHECK(config.get("ai_service_enable") == "true");
+	CHECK(config.get("ai_service_url") == "http://localhost:4404/?target_lang=Fr");
+	CHECK(config.get("ai_service_pause") == "true");
+
+	ctx.settings = Settings({ { "ai_service_enabled", "1" }, { "ai_service_url", "http://host/translate?key=abc" } }, {}, {});
+	RetroArchGenerator::setTranslation(ctx, config);
+	CHECK(config.get("ai_service_url") == "http://host/translate?key=abc&target_lang=En");
+
+	ctx.settings = Settings({}, {}, {});
+	RetroArchGenerator::setTranslation(ctx, config);
+	CHECK(config.get("ai_service_enable") == "false");
+
+	// automatic controller configuration off: the player's own bindings stay
+	ConfigFile pads;
+	pads.set("input_player1_a_btn", "5");
+	ctx.settings = Settings({ { "disableautocontrollers", "1" } }, {}, {});
+	RetroArchGenerator::setControllers(ctx, pads);
+	CHECK(pads.get("input_player1_a_btn") == "5");
+	CHECK(pads.get("input_autodetect_enable") == "true");
+}
+
 static void testFullLaunch()
 {
 	TempDir tmp;
@@ -179,6 +290,15 @@ static void testFullLaunch()
 	ConfigFile options = ConfigFile::load(configDir / "retroarch-core-options.cfg");
 	CHECK(options.get("gambatte_gb_colorization") == "auto");
 	CHECK(options.get("gambatte_up_down_allowed") == "enabled");
+
+	// a shader preset is passed on the command line, before the game
+	LaunchContext shaded = ctx;
+	writeFile(tmp.path / "shaders" / "crt.slangp", "");
+	shaded.paths.shaders = { tmp.path / "shaders" };
+	shaded.settings = Settings({ { "shaderset", "crt" } }, {}, {});
+	Command shadedCmd = Launch(shaded).prepare();
+	CHECK(std::ranges::find(shadedCmd.argv, "--set-shader") != shadedCmd.argv.end());
+	CHECK(shadedCmd.argv[shadedCmd.argv.size() - 2] == (tmp.path / "shaders" / "crt.slangp").string());
 
 	// missing core
 	LaunchContext missing = ctx;
@@ -295,6 +415,7 @@ void tests::runRetroArchTests()
 	testCoreNames();
 	testControllers();
 	testVideoAndStates();
+	testGameOptions();
 	testFullLaunch();
 	testCatalogInstall();
 }

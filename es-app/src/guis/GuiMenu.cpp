@@ -3844,8 +3844,8 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 		systemConfiguration->addSaveFunc([configName, ratio_choice] { SystemConf::getInstance()->set(configName + ".ratio", ratio_choice->getSelected()); });
 	}
 
-	// video resolution mode
-	if (systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::videomode))
+	// video resolution mode: nothing switches the display mode yet, as in the global settings
+	if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::RESOLUTION) && systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::videomode))
 	{
 		auto videoResolutionMode_choice = createVideoResolutionModeOptionList(mWindow, configName);
 		systemConfiguration->addWithDescription(_("VIDEO MODE"), _("Sets the display's resolution. Does not affect the rendering resolution."), videoResolutionMode_choice);
@@ -3879,8 +3879,12 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 		systemConfiguration->addSaveFunc([configName, autosave_enabled] { SystemConf::getInstance()->set(configName + ".autosave", autosave_enabled->getSelected()); });
 	}
 
+	// Shader presets, video filters and decorations (overlays) are RetroArch's
+	std::string launchedEmulator = currentEmulator.empty() ? systemData->getEmulator(true) : currentEmulator;
+	bool isRetroArch = launchedEmulator == "libretro" || launchedEmulator == "retroarch";
+
 	// Shaders preset
-	if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::SHADERS) &&
+	if (isRetroArch && ApiSystem::getInstance()->isScriptingSupported(ApiSystem::SHADERS) &&
 		systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::shaders))
 	{
 		auto installedShaders = ApiSystem::getInstance()->getShaderList(systemData->getName(), currentEmulator, currentCore);
@@ -3904,13 +3908,13 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 	}
 
 	// Video Filters preset
-	if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::VIDEOFILTERS) &&
+	if (isRetroArch && ApiSystem::getInstance()->isScriptingSupported(ApiSystem::VIDEOFILTERS) &&
 		systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::videofilters))
 	{
 		auto installedVideofilters = ApiSystem::getInstance()->getVideoFilterList(systemData->getName(), currentEmulator, currentCore);
 		if (installedVideofilters.size() > 0)
 		{
-			std::string currentVideofilter = SystemConf::getInstance()->get(configName + ".videofilter");
+			std::string currentVideofilter = SystemConf::getInstance()->get(configName + ".videofilters");
 
 			auto videofilters_choices = std::make_shared<OptionListComponent<std::string> >(mWindow, _("VIDEO FILTER"), false);
 			videofilters_choices->add(_("AUTO"), "auto", currentVideofilter.empty() || currentVideofilter == "auto");
@@ -3923,7 +3927,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 				videofilters_choices->selectFirstItem();
 
 			systemConfiguration->addWithLabel(_("VIDEO FILTER"), videofilters_choices);
-			systemConfiguration->addSaveFunc([configName, videofilters_choices] { SystemConf::getInstance()->set(configName + ".videofilter", videofilters_choices->getSelected()); });
+			systemConfiguration->addSaveFunc([configName, videofilters_choices] { SystemConf::getInstance()->set(configName + ".videofilters", videofilters_choices->getSelected()); });
 		}
 	}
 
@@ -3937,7 +3941,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 	}
 
 	// decorations
-	if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::DECORATIONS) && systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::decoration))
+	if (isRetroArch && ApiSystem::getInstance()->isScriptingSupported(ApiSystem::DECORATIONS) && systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::decoration))
 	{
 		auto sets = GuiMenu::getDecorationsSets(systemData);
 		if (sets.size() > 0)
@@ -3953,7 +3957,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 	{
 		// gameboy colorize
 		auto colorizations_choices = std::make_shared<OptionListComponent<std::string> >(mWindow, _("COLORIZATION"), false);
-		std::string currentColorization = SystemConf::getInstance()->get(configName + "-renderer.colorization");
+		std::string currentColorization = SystemConf::getInstance()->get(configName + ".gb_colorization");
 		if (currentColorization.empty())
 			currentColorization = std::string("auto");
 
@@ -4094,7 +4098,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 		if (CustomFeatures::FeaturesLoaded || (!CustomFeatures::FeaturesLoaded && (systemData->getName() == "gb" || systemData->getName() == "gbc" || systemData->getName() == "gb2players" || systemData->getName() == "gbc2players")))  // only for gb, gbc and gb2players
 		{
 			systemConfiguration->addWithLabel(_("COLORIZATION"), colorizations_choices);
-			systemConfiguration->addSaveFunc([colorizations_choices, configName] { SystemConf::getInstance()->set(configName + "-renderer.colorization", colorizations_choices->getSelected()); });
+			systemConfiguration->addSaveFunc([colorizations_choices, configName] { SystemConf::getInstance()->set(configName + ".gb_colorization", colorizations_choices->getSelected()); });
 		}
 	}
 
@@ -4137,7 +4141,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 	// psp internal resolution
 	if (systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::internal_resolution))
 	{
-		std::string curResol = SystemConf::getInstance()->get(configName + ".internalresolution");
+		std::string curResol = SystemConf::getInstance()->get(configName + ".internal_resolution");
 
 		auto internalresolution = std::make_shared<OptionListComponent<std::string>>(mWindow, _("INTERNAL RESOLUTION"));
 		internalresolution->add(_("AUTO"), "auto", curResol.empty() || curResol == "auto");
@@ -4156,7 +4160,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 		if (CustomFeatures::FeaturesLoaded || (!CustomFeatures::FeaturesLoaded && (systemData->getName() == "psp" || systemData->getName() == "wii" || systemData->getName() == "gamecube"))) // only for psp, wii, gamecube
 		{
 			systemConfiguration->addWithLabel(_("INTERNAL RESOLUTION"), internalresolution);
-			systemConfiguration->addSaveFunc([internalresolution, configName] { SystemConf::getInstance()->set(configName + ".internalresolution", internalresolution->getSelected()); });
+			systemConfiguration->addSaveFunc([internalresolution, configName] { SystemConf::getInstance()->set(configName + ".internal_resolution", internalresolution->getSelected()); });
 		}
 	}
 

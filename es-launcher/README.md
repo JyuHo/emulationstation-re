@@ -94,6 +94,18 @@ configuration (`global.eslauncher`, `<system>.eslauncher` or for one game) also 
 * Saves and save states go to `<saves>/<system>/`, the BIOS folder is RetroArch's system folder.
 * Hotkeys: hold the hotkey button of player 1, then Start quits, B opens the menu, Y/X save and load
   a state, Up/Down change the slot, Left rewinds, Right fast-forwards, A resets.
+* Game options of ES's menus: `ratio`, `smooth`, `integerscale`, `rewind`, `runahead`, `autosave`,
+  `incrementalsavestates`, `videofilters` (a `<name>.filt` of `ctx.paths.videoFilters`, `none` for
+  none), `shaderset` (a preset of `ctx.paths.shaders` such as `crt/crt-royale`, passed with
+  `--set-shader`: the `.slangp` for glcore/vulkan, the `.glslp` for gl), `bezel` (see below), the AI translation (`ai_service_enabled`, `ai_target_lang`, `ai_service_url`,
+  `ai_service_pause`; the hotkey + R1 translates the screen) and `disableautocontrollers=1`, which
+  leaves the pads to RetroArch's own bindings and autoconfig profiles.
+* Decorations (`bezel`): a set is a folder of `ctx.paths.decorations` holding RetroArch overlays,
+  for instance the `retroarch/overlay` folder of [The Bezel Project](https://github.com/thebezelproject).
+  The game's overlay is `<system>/<rom>.cfg` or `GameBezels/<system>/<rom>.cfg`, else the system's
+  `<system>.cfg` or `systems/<system>.cfg`; a `.png` alone works too. Names match whatever their case
+  (`SNES` for `snes`, `Genesis` for `megadrive`). Unless a ratio is set, the game is shown in 4:3,
+  the frame the bezels are drawn for.
 
 ### Standalone emulators
 
@@ -140,6 +152,7 @@ leaves the others as the player set them in the emulator's menus.
   emulator's own menus.
 * Azahar binds player 1's pad input by input (button numbers and SDL GUID), as batocera-launch does;
   Eden does the same for players 1 to 8.
+* PCSX2: `fullboot=1` shows the BIOS intro (fast boot off).
 * Wii: emulated Wii Remotes by default; `emulatedwiimotes=0` for real ones. `controller_mode` adds
   an extension: `cc` or `pro` (Classic Controller), `in` (Nunchuk), `side` (held sideways).
 

@@ -92,6 +92,19 @@ namespace GameLauncher
 		paths.runtime = Paths::getRuntimePath();
 		paths.emulatorConfigs = Paths::getConfigPath() + "/emulators";
 		paths.cores = CatalogInstaller::coresPath();
+
+		for (const auto& dir : { Paths::getUserVideoFilters(), Paths::getVideoFilters() })
+			if (!dir.empty())
+				paths.videoFilters.push_back(dir);
+
+		for (const auto& dir : { Paths::getUserShadersPath(), Paths::getShadersPath() })
+			if (!dir.empty())
+				paths.shaders.push_back(dir);
+
+		for (const auto& dir : { Paths::getUserDecorationsPath(), Paths::getDecorationsPath() })
+			if (!dir.empty())
+				paths.decorations.push_back(dir);
+
 		return paths;
 	}
 

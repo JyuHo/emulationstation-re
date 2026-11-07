@@ -1864,23 +1864,29 @@ std::pair<std::string, int> ApiSystem::uninstallBatoceraStorePackage(std::string
 	return executeScript("batocera-store remove \"" + name + "\"", func);
 }
 
+// RetroArch shader presets, as paths relative to their folder without the extension ("crt/crt-royale")
 std::vector<std::string> ApiSystem::getShaderList(const std::string& systemName, const std::string& emulator, const std::string& core)
 {
 	std::vector<std::string> ret;
 
 	for (auto folder : { Paths::getUserShadersPath(), Paths::getShadersPath() })
 	{
+		if (folder.empty())
+			continue;
+
 		for (auto file : Utils::FileSystem::getDirContent(folder, true))
 		{
-			if (Utils::FileSystem::getFileName(file) == "rendering-defaults.yml")
-			{
-				auto parent = Utils::FileSystem::getFileName(Utils::FileSystem::getParent(file));
-				if (parent == "configs")
-					continue;
+			auto extension = Utils::FileSystem::getExtension(file);
+			if (extension != ".slangp" && extension != ".glslp")
+				continue;
 
-				if (std::find(ret.cbegin(), ret.cend(), parent) == ret.cend())
-					ret.push_back(parent);
-			}
+			auto name = Utils::FileSystem::createRelativePath(file, folder, false);
+			if (Utils::String::startsWith(name, "./"))
+				name = name.substr(2);
+			name = name.substr(0, name.size() - extension.size());
+
+			if (std::find(ret.cbegin(), ret.cend(), name) == ret.cend())
+				ret.push_back(name);
 		}
 	}
 

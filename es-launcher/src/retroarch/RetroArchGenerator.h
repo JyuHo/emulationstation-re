@@ -9,6 +9,7 @@
 #include "retroarch/ConfigFile.h"
 
 #include <filesystem>
+#include <optional>
 #include <vector>
 
 namespace es::launcher::retroarch
@@ -40,6 +41,19 @@ namespace es::launcher::retroarch
 		static void setControllers(const LaunchContext& ctx, ConfigFile& config);
 		static void setSaveStates(const LaunchContext& ctx, ConfigFile& config);
 		static void setAchievements(const LaunchContext& ctx, ConfigFile& config);
+		static void setTranslation(const LaunchContext& ctx, ConfigFile& config);
 		static void setNetplay(const LaunchContext& ctx, ConfigFile& config);
+
+		// The preset of the "shaderset" option ("crt/crt-royale"): the .slangp for the glcore and
+		// vulkan drivers, the .glslp for gl, else the other one. Empty for none.
+		static std::optional<std::filesystem::path> shaderPreset(const LaunchContext& ctx);
+
+		// The overlay of the "bezel" decoration set for this game, in the set's folder (names
+		// match whatever their case):
+		//   <system>/<rom>.cfg|png, GameBezels/<system>/<rom>.cfg|png (The Bezel Project),
+		//   then <system>.cfg|png, systems/<system>.cfg|png.
+		static std::optional<std::filesystem::path> decorationOverlay(const LaunchContext& ctx);
+		// Turns RetroArch's overlay on with it (a bare .png gets a generated .cfg), or off
+		static void setDecoration(const LaunchContext& ctx, ConfigFile& config);
 	};
 }

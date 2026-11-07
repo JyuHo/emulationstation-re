@@ -186,7 +186,9 @@ namespace es::launcher::pcsx2
 
 		// [EmuCore]
 		ini.set("EmuCore", "EnableDiscordPresence", "false");
-		ini.set("EmuCore", "EnableFastBoot", boolString(s.getBool("pcsx2_fastboot", true)));
+		// "Full boot" of ES's menu shows the PS2 BIOS intro, which fast boot skips
+		bool fastBoot = s.get("fullboot") ? !s.getBool("fullboot", false) : s.getBool("pcsx2_fastboot", true);
+		ini.set("EmuCore", "EnableFastBoot", boolString(fastBoot));
 		ini.set("EmuCore", "EnableCheats", s.getString("pcsx2_cheats", "false"));
 		ini.set("EmuCore", "EnableWideScreenPatches", s.getString("pcsx2_EnableWideScreenPatches", "false"));
 		ini.set("EmuCore", "EnableNoInterlacingPatches", s.getString("pcsx2_interlacing_patches", "false"));
