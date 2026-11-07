@@ -97,6 +97,8 @@ Paths::Paths()
 
 	// RetroArch shader presets of the player (system ones: "system.shaders" in the paths file)
 	mUserShadersPath = mDataPath + "/shaders";
+	// Decoration sets (RetroArch overlays, The Bezel Project...), one folder per set
+	mUserDecorationsPath = mDataPath + "/decorations";
 
 	// RetroArch's video filters: the player's own, then the ones the distribution's RetroArch ships
 	mUserVideoFiltersPath = mDataPath + "/videofilters";

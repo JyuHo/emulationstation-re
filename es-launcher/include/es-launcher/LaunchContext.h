@@ -81,6 +81,10 @@ namespace es::launcher
 
 		// Folders holding RetroArch shader presets (<name>.slangp, <name>.glslp), searched in order
 		std::vector<std::filesystem::path> shaders;
+
+		// Folders holding decoration sets: one folder per set, with RetroArch overlays (.cfg or a
+		// bare .png) per game and per system, as The Bezel Project lays them out. Searched in order.
+		std::vector<std::filesystem::path> decorations;
 	};
 
 	struct ES_LAUNCHER_API Netplay

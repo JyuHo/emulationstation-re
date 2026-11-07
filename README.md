@@ -82,6 +82,7 @@ Each `XDG_*` variable falls back to the default shown in brackets.
 | --- | --- |
 | Settings, input, `es_systems.cfg`, `es_features.cfg`, scripts, theme settings, `padtokey` | `$XDG_CONFIG_HOME/emulationstation` (`~/.config`) |
 | Themes, music, gamelists, collections, resources overrides | `$XDG_DATA_HOME/emulationstation` (`~/.local/share`) |
+| RetroArch shader presets (`shaders/`), video filters (`videofilters/`), decoration sets (`decorations/<set>/`, such as The Bezel Project's overlays) | `$XDG_DATA_HOME/emulationstation` |
 | Downloads, video thumbnails, temporary files | `$XDG_CACHE_HOME/emulationstation` (`~/.cache`) |
 | Logs (`es_log.txt`), last used input | `$XDG_STATE_HOME/emulationstation` (`~/.local/state`) |
 | Flag files (`restart.please`...), `game.xml`, `es_input_players.cfg`, runtime scripts | `$XDG_RUNTIME_DIR/emulationstation` (`/tmp/emulationstation-<uid>`) |

@@ -12,6 +12,7 @@
 
 #include <algorithm>
 #include <array>
+#include <cctype>
 #include <cstdlib>
 
 namespace es::launcher::retroarch
@@ -176,6 +177,118 @@ namespace es::launcher::retroarch
 				return preset;
 		}
 		return std::nullopt;
+	}
+
+	namespace
+	{
+		std::string lower(std::string text)
+		{
+			std::ranges::transform(text, text.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+			return text;
+		}
+
+		// The entry of dir called name, whatever its case ("SNES" for "snes")
+		std::optional<fs::path> childNoCase(const fs::path& dir, const std::string& name)
+		{
+			std::error_code ec;
+			if (fs::exists(dir / name, ec))
+				return dir / name;
+
+			std::string wanted = lower(name);
+			for (fs::directory_iterator it(dir, ec), end; !ec && it != end; it.increment(ec))
+			{
+				if (lower(it->path().filename().string()) == wanted)
+					return it->path();
+			}
+			return std::nullopt;
+		}
+
+		std::optional<fs::path> overlayIn(const fs::path& dir, const std::string& name)
+		{
+			for (const char* extension : { ".cfg", ".png" })
+			{
+				if (auto file = childNoCase(dir, name + extension))
+					return file;
+			}
+			return std::nullopt;
+		}
+	}
+
+	std::optional<fs::path> RetroArchGenerator::decorationOverlay(const LaunchContext& ctx)
+	{
+		auto set = ctx.settings.get("bezel");
+		if (!set || *set == "none")
+			return std::nullopt;
+
+		// The Bezel Project names Mega Drive folders after the Genesis
+		std::vector<std::string> systems = { ctx.game.system };
+		if (ctx.game.system == "megadrive")
+			systems.push_back("genesis");
+
+		std::string game = ctx.game.rom.stem().string();
+
+		for (const fs::path& root : ctx.paths.decorations)
+		{
+			auto setDir = childNoCase(root, *set);
+			if (!setDir)
+				continue;
+
+			for (const std::string& system : systems)
+			{
+				for (const fs::path& parent : { *setDir, *setDir / "GameBezels" })
+				{
+					if (auto systemDir = childNoCase(parent, system))
+						if (auto overlay = overlayIn(*systemDir, game))
+							return overlay;
+				}
+			}
+
+			for (const std::string& system : systems)
+			{
+				for (const fs::path& parent : { *setDir, *setDir / "systems" })
+				{
+					if (auto overlay = overlayIn(parent, system))
+						return overlay;
+				}
+			}
+		}
+		return std::nullopt;
+	}
+
+	void RetroArchGenerator::setDecoration(const LaunchContext& ctx, ConfigFile& config)
+	{
+		auto overlay = decorationOverlay(ctx);
+		config.set("input_overlay_enable", overlay.has_value());
+		if (!overlay)
+			return;
+
+		// A bare picture: an overlay of one full screen image
+		if (overlay->extension() != ".cfg")
+		{
+			fs::path generated = ctx.paths.configFor("retroarch") / "decoration.cfg";
+			try
+			{
+				util::writeFileAtomically(generated, "overlays = 1\noverlay0_overlay = \"" + overlay->string() + "\"\noverlay0_full_screen = true\noverlay0_descs = 0\n");
+			}
+			catch (const fs::filesystem_error&)
+			{
+				config.set("input_overlay_enable", false);
+				return;
+			}
+			overlay = generated;
+		}
+
+		config.set("input_overlay", overlay->string());
+		config.set("input_overlay_opacity", "1.000000");
+		config.set("input_overlay_hide_in_menu", true);
+		config.set("input_overlay_show_inputs", 0);
+
+		// Bezels frame a 4:3 picture in the middle of the screen, unless the player chose a ratio
+		if (!ctx.settings.get("ratio"))
+		{
+			config.set("video_aspect_ratio_auto", false);
+			config.set("aspect_ratio_index", 0);
+		}
 	}
 
 	void RetroArchGenerator::setVideoAndAudio(const LaunchContext& ctx, ConfigFile& config)
@@ -497,6 +610,7 @@ namespace es::launcher::retroarch
 			ctx.paths.cache, core->parent_path(), ctx.game.rom.parent_path() };
 		shared.insert(shared.end(), ctx.paths.videoFilters.begin(), ctx.paths.videoFilters.end());
 		shared.insert(shared.end(), ctx.paths.shaders.begin(), ctx.paths.shaders.end());
+		shared.insert(shared.end(), ctx.paths.decorations.begin(), ctx.paths.decorations.end());
 
 		auto retroarch = util::emulatorCommand(ctx, "retroarch", "retroarch", shared);
 		if (!retroarch)
@@ -511,6 +625,7 @@ namespace es::launcher::retroarch
 		ConfigFile config = ConfigFile::load(configPath);
 		setPaths(ctx, config, core->parent_path());
 		setVideoAndAudio(ctx, config);
+		setDecoration(ctx, config);
 		setControllers(ctx, config);
 		setSaveStates(ctx, config);
 		setAchievements(ctx, config);

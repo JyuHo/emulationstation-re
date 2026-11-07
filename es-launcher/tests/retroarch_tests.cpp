@@ -176,6 +176,42 @@ static void testGameOptions()
 	RetroArchGenerator::setVideoAndAudio(ctx, config);
 	CHECK(config.get("video_shader_enable") == "false");
 
+	// decorations: the game's overlay, then the system's; a bare picture gets a generated .cfg
+	writeFile(tmp.path / "deco" / "thebezelproject" / "GameBezels" / "SNES" / "Super Metroid (USA).cfg", "overlays = 1\n");
+	writeFile(tmp.path / "deco" / "thebezelproject" / "GameBezels" / "SNES" / "Super Metroid (USA).png", "");
+	writeFile(tmp.path / "deco" / "thebezelproject" / "snes.png", "");
+	writeFile(tmp.path / "deco" / "thebezelproject" / "Genesis" / "Sonic (USA).png", "");
+	ctx.paths.decorations = { tmp.path / "deco" };
+	ctx.paths.emulatorConfigs = tmp.path / "emulators";
+	ctx.game.system = "snes";
+
+	ctx.game.rom = "/roms/snes/Super Metroid (USA).sfc";
+	ctx.settings = Settings({ { "bezel", "thebezelproject" } }, {}, {});
+	CHECK(RetroArchGenerator::decorationOverlay(ctx) == tmp.path / "deco" / "thebezelproject" / "GameBezels" / "SNES" / "Super Metroid (USA).cfg");
+	ConfigFile deco;
+	RetroArchGenerator::setDecoration(ctx, deco);
+	CHECK(deco.get("input_overlay_enable") == "true");
+	CHECK(deco.get("input_overlay") == (tmp.path / "deco" / "thebezelproject" / "GameBezels" / "SNES" / "Super Metroid (USA).cfg").string());
+	CHECK(deco.get("aspect_ratio_index") == "0");
+
+	ctx.game.rom = "/roms/snes/Zelda.sfc";
+	RetroArchGenerator::setDecoration(ctx, deco);
+	CHECK(deco.get("input_overlay") == (tmp.path / "emulators" / "retroarch" / "decoration.cfg").string());
+	CHECK(readFile(tmp.path / "emulators" / "retroarch" / "decoration.cfg").find((tmp.path / "deco" / "thebezelproject" / "snes.png").string()) != std::string::npos);
+
+	ctx.game.system = "megadrive";
+	ctx.game.rom = "/roms/megadrive/Sonic (USA).md";
+	CHECK(RetroArchGenerator::decorationOverlay(ctx) == tmp.path / "deco" / "thebezelproject" / "Genesis" / "Sonic (USA).png");
+
+	ctx.game.rom = "/roms/megadrive/Other.md";
+	CHECK(!RetroArchGenerator::decorationOverlay(ctx));
+	RetroArchGenerator::setDecoration(ctx, deco);
+	CHECK(deco.get("input_overlay_enable") == "false");
+
+	ctx.settings = Settings({ { "bezel", "thebezelproject" } }, {}, { { "bezel", "none" } });
+	ctx.game.system = "snes";
+	CHECK(!RetroArchGenerator::decorationOverlay(ctx));
+
 	// AI translation: the target language goes into the service URL
 	ctx.settings = Settings({ { "ai_service_enabled", "1" }, { "ai_target_lang", "Fr" }, { "ai_service_url", "http://localhost:4404/" }, { "ai_service_pause", "1" } }, {}, {});
 	RetroArchGenerator::setTranslation(ctx, config);

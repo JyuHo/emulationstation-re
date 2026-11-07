@@ -101,6 +101,10 @@ namespace GameLauncher
 			if (!dir.empty())
 				paths.shaders.push_back(dir);
 
+		for (const auto& dir : { Paths::getUserDecorationsPath(), Paths::getDecorationsPath() })
+			if (!dir.empty())
+				paths.decorations.push_back(dir);
+
 		return paths;
 	}
 

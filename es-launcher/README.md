@@ -96,9 +96,16 @@ configuration (`global.eslauncher`, `<system>.eslauncher` or for one game) also 
   a state, Up/Down change the slot, Left rewinds, Right fast-forwards, A resets.
 * Game options of ES's menus: `ratio`, `smooth`, `integerscale`, `rewind`, `runahead`, `autosave`,
   `incrementalsavestates`, `videofilters` (a `<name>.filt` of `ctx.paths.videoFilters`, `none` for
-  none), the AI translation (`ai_service_enabled`, `ai_target_lang`, `ai_service_url`,
+  none), `shaderset` (a preset of `ctx.paths.shaders` such as `crt/crt-royale`, passed with
+  `--set-shader`: the `.slangp` for glcore/vulkan, the `.glslp` for gl), `bezel` (see below), the AI translation (`ai_service_enabled`, `ai_target_lang`, `ai_service_url`,
   `ai_service_pause`; the hotkey + R1 translates the screen) and `disableautocontrollers=1`, which
   leaves the pads to RetroArch's own bindings and autoconfig profiles.
+* Decorations (`bezel`): a set is a folder of `ctx.paths.decorations` holding RetroArch overlays,
+  for instance the `retroarch/overlay` folder of [The Bezel Project](https://github.com/thebezelproject).
+  The game's overlay is `<system>/<rom>.cfg` or `GameBezels/<system>/<rom>.cfg`, else the system's
+  `<system>.cfg` or `systems/<system>.cfg`; a `.png` alone works too. Names match whatever their case
+  (`SNES` for `snes`, `Genesis` for `megadrive`). Unless a ratio is set, the game is shown in 4:3,
+  the frame the bezels are drawn for.
 
 ### Standalone emulators
 
