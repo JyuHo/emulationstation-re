@@ -157,21 +157,6 @@ set(LIBRETRO_COMMON_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/7zip/LzFind.c
 	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/7zip/Lzma2Dec.c
                                 
-	# zip                      
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/adler32.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/compress.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/deflate.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/gzclose.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/gzlib.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/gzread.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/gzwrite.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/inffast.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/inflate.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/inftrees.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/libz-crc32.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/trees.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/uncompr.c
-	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libz/zutil.c
 	                            
 	# flac                     
 	${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/libFLAC/bitmath.c
@@ -205,3 +190,8 @@ include_directories(${COMMON_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR}/libretro-
 include_directories(${COMMON_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR}/libretro-common/src/7zip)
 
 add_library(libcheevos STATIC ${CHEEVOS_SOURCES} ${CHEEVOS_HEADERS} ${LIBRETRO_COMMON_HEADERS} ${LIBRETRO_COMMON_SOURCES})
+
+# The system zlib, never a bundled copy: zlib functions linked into the executable are exported
+# and replace the system ones for every library (libpng, freetype, curl...), mixing two zlibs.
+find_package(ZLIB REQUIRED)
+target_link_libraries(libcheevos PUBLIC ZLIB::ZLIB)

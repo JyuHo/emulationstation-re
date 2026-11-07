@@ -71,7 +71,7 @@ jobs:
           apt-get install -y --no-install-recommends git ca-certificates build-essential cmake \
             ninja-build dpkg-dev file libsdl3-dev libsdl3-image-dev libfreetype-dev \
             libcurl4-openssl-dev rapidjson-dev libvlc-dev libasound2-dev libgles-dev libgl-dev \
-            libudev-dev libfribidi-dev libcec-dev gettext
+            libudev-dev libfribidi-dev libcec-dev zlib1g-dev gettext
 
       - uses: actions/checkout@v4
         with:

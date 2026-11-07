@@ -16,14 +16,14 @@ The code is built as C++23, so you need GCC 13+ or Clang 18+ and CMake 3.25+. Yo
 **On Arch Linux / CachyOS:**
 ```bash
 sudo pacman -S --needed base-devel cmake ninja sdl3 sdl3_image freetype2 curl \
-  rapidjson vlc alsa-lib gettext fribidi libcec
+  rapidjson vlc alsa-lib gettext fribidi libcec zlib
 ```
 
 **On Armbian trixie / Debian:**
 ```bash
 sudo apt-get install build-essential cmake ninja-build libsdl3-dev \
   libsdl3-image-dev libfreetype-dev libcurl4-openssl-dev rapidjson-dev libvlc-dev \
-  libasound2-dev libgles-dev libgl-dev libudev-dev libfribidi-dev libcec-dev gettext \
+  libasound2-dev libgles-dev libgl-dev libudev-dev libfribidi-dev libcec-dev zlib1g-dev gettext \
   fonts-droid-fallback
 ```
 
