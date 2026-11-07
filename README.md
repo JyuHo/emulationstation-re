@@ -40,8 +40,9 @@ release's `SHA256SUMS` and installs it with pacman or apt, run as root by `pkexe
 policy lets the active local session do this without a password; it needs `curl` and `pkexec`
 (package `polkit` on Arch, `pkexec` on Debian).
 
-The release packages are built without any [API key](#api-keys), so the scrapers and services
-that need one (ScreenScraper, TheGamesDB, HfsDB, RetroAchievements) are not available in them.
+The release packages get their [API keys](#api-keys) from the repository's GitHub Actions
+secrets (see [Keys in the release packages](#keys-in-the-release-packages)). A service whose key
+is not set there (ScreenScraper, TheGamesDB, HfsDB, RetroAchievements) is not available in them.
 
 Emulator catalog
 ----------------
@@ -167,8 +168,10 @@ the others pick `GL`.
 API keys
 --------
 
-Some web services need a developer key, which is compiled into the binary. Each key is a CMake
-variable: when it is not defined, the matching scraper or menu is left out of the build.
+Some web services need a developer key, which is compiled into the binary. Each key is read
+from the CMake variable of that name, or else from the environment variable of that name when
+CMake configures the build. When it is empty or not set, the matching scraper or menu is left
+out of the build.
 
 | Variable | Service | Value |
 | --- | --- | --- |
@@ -187,14 +190,31 @@ cmake -S . -B build -G Ninja -DGL=ON \
   -DCHEEVOS_DEV_LOGIN="z=<user>&y=<web API key>"
 ```
 
-Quote the values: they hold `&`. The keys are stored in `build/CMakeCache.txt` and can be read
-back from the binary, so do not publish a build or a cache made with your own keys. To remove a
-key, run `cmake -U <VARIABLE> build`.
+or, with environment variables:
+
+```bash
+export GAMESDB_APIKEY="<key>" CHEEVOS_DEV_LOGIN="z=<user>&y=<web API key>"
+cmake -S . -B build -G Ninja -DGL=ON
+```
+
+Quote the values: they hold `&`. They cannot hold a double quote (`"`). Keys given with `-D` are stored in `build/CMakeCache.txt` (remove one
+with `cmake -U <VARIABLE> build`), and every key can be read back from the binary, so do not
+publish a build or a cache made with your own keys.
 
 IGDB and ArcadeDB need no build-time key. The IGDB client ID and secret are entered in the
 scraper settings (**Client ID** and **Client secret**, saved as `IGDBClientID` and `IGDBSecret`),
 and so are the user name and password of your own ScreenScraper account, which ES adds to the
 developer login.
+
+### Keys in the release packages
+
+The [release workflow](.github/workflows/release.yml) reads the keys from repository secrets of
+the same names (**Settings > Secrets and variables > Actions > New repository secret**):
+`SCREENSCRAPER_DEV_LOGIN`, `SCREENSCRAPER_SOFTNAME`, `GAMESDB_APIKEY`, `HFS_DEV_LOGIN` and
+`CHEEVOS_DEV_LOGIN`, each holding the value shown in the table above, without quotes. Only the
+builds of `vX.Y.Z` tags get them: the packages built for pull requests and pushes to `master`
+can be downloaded by anyone from the workflow's artifacts, so they are built without keys (and
+GitHub never gives secrets to pull requests from forks). A secret that is not set means no key.
 
 Tests
 -----
