@@ -29,6 +29,9 @@ option(USE_SYSTEM_PUGIXML "Set to ON to use system-wide pugixml library" OFF)
 
 project(emulationstation-all)
 
+# Lets `ctest --test-dir build` find the tests that ES_TESTS and ES_LAUNCHER_TESTS add in the subfolders
+enable_testing()
+
 include(GNUInstallDirs)
 
 # Version shown in ES and given to the packages. Release builds pass -DES_VERSION=<tag without v>;
