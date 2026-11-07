@@ -14,6 +14,7 @@
 #include "guis/GuiMsgBox.h"
 #include "utils/FileSystemUtil.h"
 #include "HttpApi.h"
+#include "HttpFileApi.h"
 #include "Settings.h"
 #include "ApiSystem.h"
 
@@ -52,6 +53,16 @@ Store APIs
 ----------
 POST /addgames/{systemName}										-> body must contain partial gamelist.xml file as application/xml
 POST /removegames/{systemName}									-> body must contains partial gamelist.xml file as application/xml
+
+File manager APIs (see HttpFileApi.h)
+-----------------
+GET    /files/roots
+GET    /files/list?root={id}&path={relative}
+GET    /files/download?root={id}&path={relative}
+PUT    /files/upload?root={id}&path={relative}[&overwrite=1]		-> body must contain the file bytes
+PUT    /files/mkdir?root={id}&path={relative}
+PUT    /files/rename?root={id}&path={relative}&to={relative}
+DELETE /files?root={id}&path={relative}[&recursive=1]
 
 File APIs
 ---------
@@ -212,6 +223,8 @@ void HttpServerThread::run()
 
 			"</body>\r\n</html>", "text/html");
 	});
+
+	HttpFileApi::registerRoutes(mHttpServer, isAllowed);
 
 	mHttpServer->Get("/quit", [this](const httplib::Request& req, httplib::Response& res)
 	{

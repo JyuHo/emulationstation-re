@@ -2070,6 +2070,9 @@ msgstr "ARRÊTER DE LANCER CE JEU AU DÉMARRAGE"
 msgid "ENABLE PUBLIC WEB API ACCESS"
 msgstr "ACTIVER L’ACCÈS PUBLIC À L’API WEB"
 
+msgid "WEB ACCESS PASSWORD"
+msgstr "MOT DE PASSE DE L’ACCÈS WEB"
+
 #, c-format
 msgid "Allow public web access API using %s"
 msgstr "Autoriser l’accès public à l’API via %s"

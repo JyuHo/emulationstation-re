@@ -173,6 +173,7 @@ void Settings::setDefaults()
 	mStringMap["HiddenSystems"] = "";
 
 	mBoolMap["PublicWebAccess"] = false;	
+	mStringMap["WebAccessPassword"] = ""; // needed to manage files from the network
 	mBoolMap["FirstJoystickOnly"] = false;
     mBoolMap["EnableSounds"] = false;
 	mBoolMap["ShowHelpPrompts"] = true;

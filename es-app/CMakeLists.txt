@@ -31,6 +31,8 @@ set(ES_HEADERS
 	${CMAKE_CURRENT_SOURCE_DIR}/src/KeyboardMapping.h	
 	${CMAKE_CURRENT_SOURCE_DIR}/src/services/HttpServerThread.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/services/HttpApi.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/services/HttpFileApi.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/services/HttpFileAccess.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/services/httplib.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/RetroAchievements.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/SaveState.h
@@ -138,6 +140,8 @@ set(ES_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/src/KeyboardMapping.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/services/HttpServerThread.cpp	
 	${CMAKE_CURRENT_SOURCE_DIR}/src/services/HttpApi.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/services/HttpFileApi.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/services/HttpFileAccess.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/RetroAchievements.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/SaveState.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/SaveStateRepository.cpp
@@ -258,6 +262,15 @@ if(ES_TESTS)
         ${CMAKE_CURRENT_SOURCE_DIR}/src ${CMAKE_SOURCE_DIR}/es-core/src ${RAPIDJSON_INCLUDE_DIRS})
     target_compile_options(es-app-system-services-tests PRIVATE -Wall -Wextra)
     add_test(NAME es-app-system-services-tests COMMAND es-app-system-services-tests)
+
+    add_executable(es-app-http-file-access-tests
+        ${CMAKE_CURRENT_SOURCE_DIR}/tests/http_file_access_tests.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/services/HttpFileAccess.cpp
+        ${CMAKE_SOURCE_DIR}/es-core/src/utils/StringUtil.cpp)
+    target_include_directories(es-app-http-file-access-tests PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/src ${CMAKE_SOURCE_DIR}/es-core/src)
+    target_compile_options(es-app-http-file-access-tests PRIVATE -Wall -Wextra)
+    add_test(NAME es-app-http-file-access-tests COMMAND es-app-http-file-access-tests)
 endif()
 
 
