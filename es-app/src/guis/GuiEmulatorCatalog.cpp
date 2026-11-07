@@ -471,17 +471,33 @@ GuiEmulatorCatalogEntry::GuiEmulatorCatalogEntry(Window* window, const std::stri
 	float itemHeight = (theme->Text.font->getHeight() + theme->TextSmall.font->getHeight() * 3) * 1.15f;
 	itemHeight = Math::max(itemHeight, Renderer::getScreenHeight() * 0.132f);
 
-	// Logos are square-ish icons, unlike the 16:9 theme previews
-	float logoWidth = logo.empty() ? 0.0f : Math::min((itemHeight / windowWidth), 0.24f);
+	// Logos are square-ish icons, unlike the 16:9 theme previews. The column is always reserved,
+	// with or without a logo: a column at 0% is an automatic one in ComponentGrid, so leaving it
+	// at 0 made the text column share its width with the empty ones and the details wrap.
+	float logoWidth = Math::min((itemHeight / windowWidth), 0.24f);
 
-	setColWidthPerc(0, 42.0f / windowWidth, false);
-	setColWidthPerc(1, 0.015f, false);
-	setColWidthPerc(3, logo.empty() ? 0.0f : 0.01f, false);
+	const float iconColWidth = 42.0f / windowWidth;
+	const float spacingColWidth = 0.015f;
+	const float logoSpacingColWidth = 0.01f;
+	const float textColWidth = 1.0f - iconColWidth - spacingColWidth - logoSpacingColWidth - logoWidth;
+
+	setColWidthPerc(0, iconColWidth, false);
+	setColWidthPerc(1, spacingColWidth, false);
+	setColWidthPerc(2, textColWidth, false);
+	setColWidthPerc(3, logoSpacingColWidth, false);
 	setColWidthPerc(4, logoWidth, false);
 
-	setRowHeightPerc(0, (itemHeight - mText->getSize().y() - mDetails->getSize().y()) / itemHeight / 2.0f, false);
+	// Measure the details at the width they will really have, so a long description that wraps
+	// makes the line taller instead of spilling over the title and the next line
+	mDetails->setSize(windowWidth * textColWidth * 0.9f, 0);
+
+	const float textHeight = mText->getSize().y() + mDetails->getSize().y();
+	itemHeight = Math::max(itemHeight, textHeight + theme->TextSmall.font->getHeight() * 0.5f);
+
+	setRowHeightPerc(0, (itemHeight - textHeight) / itemHeight / 2.0f, false);
 	setRowHeightPerc(1, mText->getSize().y() / itemHeight, false);
 	setRowHeightPerc(2, mDetails->getSize().y() / itemHeight, false);
+	setRowHeightPerc(3, (itemHeight - textHeight) / itemHeight / 2.0f, false);
 
 	if (pending)
 	{
@@ -501,6 +517,16 @@ GuiEmulatorCatalogEntry::GuiEmulatorCatalogEntry(Window* window, const std::stri
 
 		setEntry(mLogo, Vector2i(4, 0), false, false, Vector2i(1, 4));
 	}
+	else
+	{
+		// No logo: a dimmed gamepad in its place, so every line has the same layout
+		mPlaceholder = std::make_shared<TextComponent>(mWindow, _U("\uf11b"), Font::get(FONT_SIZE_LARGE), theme->Text.color);
+		mPlaceholder->setHorizontalAlignment(ALIGN_CENTER);
+		mPlaceholder->setVerticalAlignment(ALIGN_CENTER);
+		mPlaceholder->setOpacity(pending ? 40 : 70);
+
+		setEntry(mPlaceholder, Vector2i(4, 0), false, true, Vector2i(1, 4));
+	}
 
 	setSize(Vector2f(0, itemHeight));
 }
@@ -510,4 +536,6 @@ void GuiEmulatorCatalogEntry::setColor(unsigned int color)
 	mIcon->setColor(color);
 	mText->setColor(color);
 	mDetails->setColor(color);
+	if (mPlaceholder)
+		mPlaceholder->setColor(color);
 }

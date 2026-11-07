@@ -29,6 +29,7 @@ private:
 	std::shared_ptr<TextComponent>  mText;
 	std::shared_ptr<TextComponent>  mDetails;
 	std::shared_ptr<ImageComponent> mLogo;
+	std::shared_ptr<TextComponent>  mPlaceholder; // shown instead of the logo when there is none
 };
 
 class GuiEmulatorCatalog : public GuiComponent, IContentInstalledNotify
