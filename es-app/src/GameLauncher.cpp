@@ -97,6 +97,10 @@ namespace GameLauncher
 			if (!dir.empty())
 				paths.videoFilters.push_back(dir);
 
+		for (const auto& dir : { Paths::getUserShadersPath(), Paths::getShadersPath() })
+			if (!dir.empty())
+				paths.shaders.push_back(dir);
+
 		return paths;
 	}
 

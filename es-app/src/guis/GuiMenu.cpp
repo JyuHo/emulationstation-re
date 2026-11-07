@@ -1297,34 +1297,10 @@ void GuiMenu::openNetplaySettings()
 	mWindow->pushGui(new GuiNetPlaySettings(mWindow));
 }
 
-void GuiMenu::addDecorationSetOptionListComponent(Window* window, GuiSettings* parentWindow, const std::vector<DecorationSetInfo>& sets, const std::string& configName)
-{
-	auto decorations = std::make_shared<OptionListComponent<std::string> >(window, _("DECORATION SET"), false);
-	decorations->setRowTemplate([window, sets](std::string data, ComponentListRow& row) { createDecorationItemTemplate(window, sets, data, row); });
-
-	std::vector<std::string> items = { _("AUTO"), _("NONE") };
-	for (auto set : sets)
-		items.push_back(set.name);
-
-	std::string bezel = SystemConf::getInstance()->get(configName + ".bezel");
-
-	for (auto item : items)
-		decorations->add(item, item, (bezel == item) || (bezel == "none" && item == _("NONE")) || (bezel == "" && item == _("AUTO")));
-
-	if (!decorations->hasSelection())
-		decorations->selectFirstItem();
-
-	parentWindow->addWithLabel(_("DECORATION SET"), decorations);
-	parentWindow->addSaveFunc([decorations, configName]
-	{
-		SystemConf::getInstance()->set(configName + ".bezel", decorations->getSelected() == _("NONE") ? "none" : decorations->getSelected() == _("AUTO") ? "" : decorations->getSelected());
-	});
-}
-
-
 void GuiMenu::addFeatureItem(Window* window, GuiSettings* settings, const CustomFeature& feat, const std::string& configName, const std::string& system, const std::string& emulator, const std::string& core)
 {
-	if (feat.preset == "hidden")
+	// Decorations (bezels) are Batocera's: no launcher draws them
+	if (feat.preset == "hidden" || feat.preset == "decorations" || feat.preset == "bezel")
 		return;
 
 	std::string storageName = configName + "." + feat.value;
@@ -1582,20 +1558,6 @@ void GuiMenu::addFeatureItem(Window* window, GuiSettings* settings, const Custom
 
 			for (auto videofilter : videofilters)
 				item->add(pgettext("game_options", Utils::String::toUpper(videofilter).c_str()), videofilter, storedValue == videofilter);
-		}
-	}
-	else if (feat.preset == "decorations" || feat.preset == "bezel")
-	{
-		item->add(_("AUTO"), "auto", storedValue.empty() || storedValue == "auto");
-
-		auto sets = GuiMenu::getDecorationsSets(ViewController::get()->getSelectedSystem());
-		if (sets.size() > 0)
-		{
-			item->setRowTemplate([window, sets](std::string data, ComponentListRow& row) { createDecorationItemTemplate(window, sets, data, row); });
-			item->add(_("NONE"), "none", storedValue == "none");
-
-			for (auto set : sets)
-				item->add(set.name, set.name, storedValue == set.name);
 		}
 	}
 	else if (feat.preset == "videomodes" || feat.preset == "videomode")
@@ -1983,15 +1945,6 @@ void GuiMenu::openGamesSettings()
 		}
 	}
 
-	// decorations
-	if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::DECORATIONS) && !hasGlobalFeature("bezel"))
-	{
-		auto sets = GuiMenu::getDecorationsSets(ViewController::get()->getSelectedSystem());
-		if (sets.size() > 0)
-		{
-			addDecorationSetOptionListComponent(mWindow, s, sets);
-		}
-	}
 
 	// latency reduction
 	if (!hasGlobalFeature("runahead"))
@@ -3705,50 +3658,6 @@ void GuiMenu::openQuitMenu_static(Window *window, bool quickAccessMenu, bool ani
 	window->pushGui(s);
 }
 
-void GuiMenu::createDecorationItemTemplate(Window* window, std::vector<DecorationSetInfo> sets, std::string data, ComponentListRow& row)
-{
-	Vector2f maxSize(Renderer::getScreenWidth() * 0.14, Renderer::getScreenHeight() * 0.14);
-
-	int IMGPADDING = Renderer::getScreenHeight()*0.01f;
-
-	auto theme = ThemeData::getMenuTheme();
-	std::shared_ptr<Font> font = theme->Text.font;
-	unsigned int color = theme->Text.color;
-
-	// spacer between icon and text
-	auto spacer = std::make_shared<GuiComponent>(window);
-	spacer->setSize(IMGPADDING, 0);
-	row.addElement(spacer, false);
-
-	std::string label = data;
-	if (data.empty())
-		label = _("AUTO");
-	else if (data == "none")
-		label = _("NONE");
-	else
-		label = Utils::String::toUpper(Utils::String::replace(data, "_", " "));
-
-	row.addElement(std::make_shared<TextComponent>(window, label, font, color, ALIGN_LEFT), true);
-
-	std::string imageUrl;
-
-	for (auto set : sets)
-		if (set.name == data)
-			imageUrl = set.imageUrl;
-
-	// image
-	if (!imageUrl.empty())
-	{
-		spacer->setSize(IMGPADDING, maxSize.y());
-		auto icon = std::make_shared<ImageComponent>(window);
-		icon->setImage(imageUrl, false, maxSize);
-		icon->setMaxSize(maxSize);
-		icon->setColorShift(theme->Text.color);
-		icon->setPadding(IMGPADDING);
-		row.addElement(icon, false);
-	}
-}
-
 void GuiMenu::popSystemConfigurationGui(Window* mWindow, SystemData* systemData)
 {
 	popSpecificConfigurationGui(mWindow,
@@ -3879,8 +3788,12 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 		systemConfiguration->addSaveFunc([configName, autosave_enabled] { SystemConf::getInstance()->set(configName + ".autosave", autosave_enabled->getSelected()); });
 	}
 
+	// Shader presets and video filters are RetroArch's
+	std::string launchedEmulator = currentEmulator.empty() ? systemData->getEmulator(true) : currentEmulator;
+	bool isRetroArch = launchedEmulator == "libretro" || launchedEmulator == "retroarch";
+
 	// Shaders preset
-	if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::SHADERS) &&
+	if (isRetroArch && ApiSystem::getInstance()->isScriptingSupported(ApiSystem::SHADERS) &&
 		systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::shaders))
 	{
 		auto installedShaders = ApiSystem::getInstance()->getShaderList(systemData->getName(), currentEmulator, currentCore);
@@ -3904,7 +3817,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 	}
 
 	// Video Filters preset
-	if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::VIDEOFILTERS) &&
+	if (isRetroArch && ApiSystem::getInstance()->isScriptingSupported(ApiSystem::VIDEOFILTERS) &&
 		systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::videofilters))
 	{
 		auto installedVideofilters = ApiSystem::getInstance()->getVideoFilterList(systemData->getName(), currentEmulator, currentCore);
@@ -3936,15 +3849,6 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 		systemConfiguration->addSaveFunc([integerscale_enabled, configName] { SystemConf::getInstance()->set(configName + ".integerscale", integerscale_enabled->getSelected()); });
 	}
 
-	// decorations
-	if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::DECORATIONS) && systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::decoration))
-	{
-		auto sets = GuiMenu::getDecorationsSets(systemData);
-		if (sets.size() > 0)
-		{
-			addDecorationSetOptionListComponent(mWindow, systemConfiguration, sets, configName);
-		}
-	}
 
 	if (systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::latency_reduction))
 		systemConfiguration->addEntry(_("LATENCY REDUCTION"), true, [mWindow, configName] { openLatencyReductionConfiguration(mWindow, configName); });
@@ -3953,7 +3857,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 	{
 		// gameboy colorize
 		auto colorizations_choices = std::make_shared<OptionListComponent<std::string> >(mWindow, _("COLORIZATION"), false);
-		std::string currentColorization = SystemConf::getInstance()->get(configName + "-renderer.colorization");
+		std::string currentColorization = SystemConf::getInstance()->get(configName + ".gb_colorization");
 		if (currentColorization.empty())
 			currentColorization = std::string("auto");
 
@@ -4094,7 +3998,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 		if (CustomFeatures::FeaturesLoaded || (!CustomFeatures::FeaturesLoaded && (systemData->getName() == "gb" || systemData->getName() == "gbc" || systemData->getName() == "gb2players" || systemData->getName() == "gbc2players")))  // only for gb, gbc and gb2players
 		{
 			systemConfiguration->addWithLabel(_("COLORIZATION"), colorizations_choices);
-			systemConfiguration->addSaveFunc([colorizations_choices, configName] { SystemConf::getInstance()->set(configName + "-renderer.colorization", colorizations_choices->getSelected()); });
+			systemConfiguration->addSaveFunc([colorizations_choices, configName] { SystemConf::getInstance()->set(configName + ".gb_colorization", colorizations_choices->getSelected()); });
 		}
 	}
 

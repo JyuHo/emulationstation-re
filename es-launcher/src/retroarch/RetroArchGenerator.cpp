@@ -160,6 +160,24 @@ namespace es::launcher::retroarch
 		config.set("sort_savestates_by_content_enable", false);
 	}
 
+	std::optional<fs::path> RetroArchGenerator::shaderPreset(const LaunchContext& ctx)
+	{
+		auto name = ctx.settings.get("shaderset");
+		if (!name || *name == "none")
+			return std::nullopt;
+
+		std::string driver = ctx.settings.getString("gfxbackend", defaultVideoDriver(ctx.architecture));
+		const char* preferred = driver == "gl" ? ".glslp" : ".slangp";
+		const char* other = driver == "gl" ? ".slangp" : ".glslp";
+
+		for (const char* extension : { preferred, other })
+		{
+			if (auto preset = util::findFile(*name + extension, ctx.paths.shaders))
+				return preset;
+		}
+		return std::nullopt;
+	}
+
 	void RetroArchGenerator::setVideoAndAudio(const LaunchContext& ctx, ConfigFile& config)
 	{
 		const Settings& s = ctx.settings;
@@ -197,6 +215,10 @@ namespace es::launcher::retroarch
 		config.set("preemptive_frames_enable", preemptive);
 		config.set("run_ahead_frames", runAhead);
 		config.set("run_ahead_secondary_instance", runAhead > 0 && s.getBool("secondinstance", false));
+
+		// Shader preset, passed with --set-shader; "none" turns off the one the player set in RetroArch
+		if (auto shader = s.get("shaderset"))
+			config.set("video_shader_enable", *shader != "none" && shaderPreset(ctx).has_value());
 
 		// Video filter (software rendered cores only): "none" turns off the one the player set in RetroArch
 		if (auto filter = s.get("videofilters"))
@@ -474,6 +496,7 @@ namespace es::launcher::retroarch
 			ctx.paths.configFor("retroarch"), ctx.paths.saves, ctx.paths.bios, ctx.paths.screenshots,
 			ctx.paths.cache, core->parent_path(), ctx.game.rom.parent_path() };
 		shared.insert(shared.end(), ctx.paths.videoFilters.begin(), ctx.paths.videoFilters.end());
+		shared.insert(shared.end(), ctx.paths.shaders.begin(), ctx.paths.shaders.end());
 
 		auto retroarch = util::emulatorCommand(ctx, "retroarch", "retroarch", shared);
 		if (!retroarch)
@@ -529,6 +552,9 @@ namespace es::launcher::retroarch
 		}
 		if (!append.empty())
 			cmd.argv.insert(cmd.argv.end(), { "--appendconfig", append });
+
+		if (auto shader = shaderPreset(ctx))
+			cmd.argv.insert(cmd.argv.end(), { "--set-shader", shader->string() });
 
 		if (ctx.netplay)
 		{

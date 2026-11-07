@@ -154,6 +154,28 @@ static void testGameOptions()
 	RetroArchGenerator::setVideoAndAudio(ctx, config);
 	CHECK(!config.get("video_filter"));
 
+	// shader presets: the .slangp for glcore, the .glslp for gl, the other one when it is all there is
+	writeFile(tmp.path / "shaders" / "crt" / "crt-royale.slangp", "");
+	writeFile(tmp.path / "shaders" / "crt" / "crt-royale.glslp", "");
+	writeFile(tmp.path / "shaders" / "scanlines.glslp", "");
+	ctx.paths.shaders = { tmp.path / "shaders" };
+	ctx.architecture = Architecture::X86_64;
+
+	ctx.settings = Settings({ { "shaderset", "crt/crt-royale" } }, {}, {});
+	CHECK(RetroArchGenerator::shaderPreset(ctx) == tmp.path / "shaders" / "crt" / "crt-royale.slangp");
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_shader_enable") == "true");
+
+	ctx.settings = Settings({ { "shaderset", "crt/crt-royale" }, { "gfxbackend", "gl" } }, {}, {});
+	CHECK(RetroArchGenerator::shaderPreset(ctx) == tmp.path / "shaders" / "crt" / "crt-royale.glslp");
+	ctx.settings = Settings({ { "shaderset", "scanlines" } }, {}, {});
+	CHECK(RetroArchGenerator::shaderPreset(ctx) == tmp.path / "shaders" / "scanlines.glslp");
+
+	ctx.settings = Settings({ { "shaderset", "crt/crt-royale" } }, {}, { { "shaderset", "none" } });
+	CHECK(!RetroArchGenerator::shaderPreset(ctx));
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_shader_enable") == "false");
+
 	// AI translation: the target language goes into the service URL
 	ctx.settings = Settings({ { "ai_service_enabled", "1" }, { "ai_target_lang", "Fr" }, { "ai_service_url", "http://localhost:4404/" }, { "ai_service_pause", "1" } }, {}, {});
 	RetroArchGenerator::setTranslation(ctx, config);
@@ -232,6 +254,15 @@ static void testFullLaunch()
 	ConfigFile options = ConfigFile::load(configDir / "retroarch-core-options.cfg");
 	CHECK(options.get("gambatte_gb_colorization") == "auto");
 	CHECK(options.get("gambatte_up_down_allowed") == "enabled");
+
+	// a shader preset is passed on the command line, before the game
+	LaunchContext shaded = ctx;
+	writeFile(tmp.path / "shaders" / "crt.slangp", "");
+	shaded.paths.shaders = { tmp.path / "shaders" };
+	shaded.settings = Settings({ { "shaderset", "crt" } }, {}, {});
+	Command shadedCmd = Launch(shaded).prepare();
+	CHECK(std::ranges::find(shadedCmd.argv, "--set-shader") != shadedCmd.argv.end());
+	CHECK(shadedCmd.argv[shadedCmd.argv.size() - 2] == (tmp.path / "shaders" / "crt.slangp").string());
 
 	// missing core
 	LaunchContext missing = ctx;

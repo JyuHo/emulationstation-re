@@ -78,6 +78,9 @@ namespace es::launcher
 
 		// Folders holding RetroArch video filters (<name>.filt), searched in order
 		std::vector<std::filesystem::path> videoFilters;
+
+		// Folders holding RetroArch shader presets (<name>.slangp, <name>.glslp), searched in order
+		std::vector<std::filesystem::path> shaders;
 	};
 
 	struct ES_LAUNCHER_API Netplay
