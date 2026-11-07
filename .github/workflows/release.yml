@@ -5,12 +5,7 @@ name: release
 on:
   push:
     tags: ['v*']
-  pull_request:
-    paths:
-      - '.github/workflows/release.yml'
-      - 'packaging/**'
-      - 'CMakeLists.txt'
-      - '*/CMakeLists.txt'
+  pull_request:     # every pull request builds and checks the three packages
   workflow_dispatch:
 
 permissions:
