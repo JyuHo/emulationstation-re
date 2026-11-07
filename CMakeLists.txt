@@ -30,6 +30,27 @@ option(USE_SYSTEM_PUGIXML "Set to ON to use system-wide pugixml library" OFF)
 project(emulationstation-all)
 
 include(GNUInstallDirs)
+
+# Version shown in ES and given to the packages. Release builds pass -DES_VERSION=<tag without v>;
+# otherwise it comes from `git describe` (v1.2.0-3-gabcdef -> 1.2.0-3-gabcdef).
+set(ES_VERSION "" CACHE STRING "EmulationStation-RE version (default: from git describe)")
+if(NOT ES_VERSION)
+    find_package(Git QUIET)
+    if(GIT_FOUND)
+        execute_process(COMMAND ${GIT_EXECUTABLE} describe --tags --match "v[0-9]*" --dirty
+            WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+            OUTPUT_VARIABLE ES_GIT_DESCRIBE OUTPUT_STRIP_TRAILING_WHITESPACE ERROR_QUIET)
+    endif()
+    if(ES_GIT_DESCRIBE)
+        string(REGEX REPLACE "^v" "" ES_VERSION_RESOLVED "${ES_GIT_DESCRIBE}")
+    else()
+        set(ES_VERSION_RESOLVED "0.0.0-dev")
+    endif()
+else()
+    string(REGEX REPLACE "^v" "" ES_VERSION_RESOLVED "${ES_VERSION}")
+endif()
+message("-- EmulationStation-RE version: ${ES_VERSION_RESOLVED}")
+add_compile_definitions(ES_VERSION_STRING="${ES_VERSION_RESOLVED}")
 # Installed files are also looked up in $XDG_DATA_DIRS, this is the fallback when the prefix is not listed there
 add_compile_definitions(ES_INSTALL_DATADIR="${CMAKE_INSTALL_FULL_DATADIR}" ES_INSTALL_LOCALEDIR="${CMAKE_INSTALL_FULL_LOCALEDIR}")
 

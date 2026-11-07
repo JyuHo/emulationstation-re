@@ -132,7 +132,7 @@ static HttpReqOptions getHttpOptions()
 
 #ifdef CHEEVOS_DEV_LOGIN
 	std::string ret = Utils::String::extractString(CHEEVOS_DEV_LOGIN, "z=", "&");
-	ret =  ret + "/" + Utils::String::replace(RESOURCE_VERSION_STRING, ",", ".");		 
+	ret = ret + "/" + std::string(PROGRAM_VERSION_STRING);		 
 	options.userAgent = ret;
 #endif	
 

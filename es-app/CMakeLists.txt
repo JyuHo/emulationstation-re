@@ -283,28 +283,27 @@ install(TARGETS emulationstation
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/resources
     DESTINATION ${CMAKE_INSTALL_DATADIR}/emulationstation)
 
-INCLUDE(InstallRequiredSystemLibraries)
+# Debian package: configure with -DCMAKE_INSTALL_PREFIX=/usr, then `cpack` in the build folder,
+# as the release workflow does.
+# The library dependencies are found by dpkg-shlibdeps; the Arch package is in packaging/arch.
+set(CPACK_PACKAGE_NAME "emulationstation-re")
+set(CPACK_PACKAGE_VERSION "${ES_VERSION_RESOLVED}")
+set(CPACK_PACKAGE_VENDOR "EmulationStation-RE")
+set(CPACK_PACKAGE_CONTACT "EmulationStation-RE <https://github.com/JyuHo/emulationstation-re>")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Graphical front-end for emulators with controller navigation")
+set(CPACK_PACKAGE_DESCRIPTION "EmulationStation-RE is a Linux build of Batocera's EmulationStation, a graphical front-end for emulators designed for controller navigation.")
+set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/LICENSE.md")
+set(CPACK_STRIP_FILES ON)
 
-SET(CPACK_PACKAGE_DESCRIPTION_SUMMARY "A flexible graphical emulator front-end")
-SET(CPACK_PACKAGE_DESCRIPTION "EmulationStation is a flexible, graphical front-end designed for keyboardless navigation of your multi-platform retro game collection.")
+set(CPACK_DEBIAN_FILE_NAME DEB-DEFAULT)
+set(CPACK_DEBIAN_PACKAGE_SECTION "games")
+set(CPACK_DEBIAN_PACKAGE_PRIORITY "optional")
+set(CPACK_DEBIAN_PACKAGE_HOMEPAGE "https://github.com/JyuHo/emulationstation-re")
+set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
+set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS_PRIVATE_DIRS "${CMAKE_BINARY_DIR}/es-launcher") # libes-launcher.so ships in the package
+set(CPACK_DEBIAN_PACKAGE_RECOMMENDS "fonts-droid-fallback")
+set(CPACK_DEBIAN_PACKAGE_CONFLICTS "emulationstation")
 
-SET(CPACK_RESOURCE_FILE LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE.md")
-SET(CPACK_RESOURCE_FILE README "${CMAKE_CURRENT_SOURCE_DIR}/README.md")
+set(CPACK_GENERATOR "DEB")
 
-SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "Alec Lofquist <allofquist@yahoo.com>")
-SET(CPACK_DEBIAN_PACKAGE_SECTION "misc")
-SET(CPACK_DEBIAN_PACKAGE_PRIORITY "extra")
-SET(CPACK_DEBIAN_PACKAGE_DEPENDS "libc6, libsdl3-0, libfreeimage3, libfreetype6, libcurl3, libasound2")
-SET(CPACK_DEBIAN_PACKAGE_BUILDS_DEPENDS "debhelper (>= 8.0.0), cmake, g++ (>= 13), libsdl3-dev, libfreeimage-dev, libfreetype6-dev, libcurl4-openssl-dev, libasound2-dev, libgl1-mesa-dev, rapidjson-dev, libgl1-mesa-dev")
-
-SET(CPACK_PACKAGE_VENDOR "emulationstation.org")
-SET(CPACK_PACKAGE_VERSION "2.0.0~rc1")
-SET(CPACK_PACKAGE_VERSION_MAJOR "2")
-SET(CPACK_PACKAGE_VERSION_MINOR "0")
-SET(CPACK_PACKAGE_VERSION_PATCH "0")
-SET(CPACK_PACKAGE_INSTALL_DIRECTORY "emulationstation_${CMAKE_PACKAGE_VERSION}")
-SET(CPACK_PACKAGE_EXECUTABLES "emulationstation" "emulationstation")
-
-SET(CPACK_GENERATOR "TGZ;DEB")
-
-INCLUDE(CPack)
+include(CPack)
