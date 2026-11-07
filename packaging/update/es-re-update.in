@@ -1,0 +1,95 @@
+#!/bin/sh
+# EmulationStation-RE updater, run by ES's "Update EmulationStation" menu.
+#
+#   es-re-update platform   prints which release package fits this machine (arch-x86_64,
+#                           debian-amd64, debian-arm64), "not-packaged" when ES was not installed
+#                           from the emulationstation-re package, "unsupported" otherwise
+#   es-re-update install    as root (ES runs it through pkexec): downloads that package from the
+#                           latest GitHub release, checks it against the release's SHA256SUMS and
+#                           installs it with pacman or apt
+#
+# It takes no other argument, and pkexec clears the environment: the only thing it can install
+# is the package of the latest official release.
+
+set -eu
+PATH=/usr/sbin:/usr/bin:/sbin:/bin
+export PATH
+umask 022
+
+RELEASES="@ES_RELEASES_URL@/latest/download"
+PACKAGE=emulationstation-re
+
+fail() {
+    echo "$*" >&2
+    exit 1
+}
+
+platform() {
+    ID="" ID_LIKE=""
+    # shellcheck disable=SC1091
+    [ -r /etc/os-release ] && . /etc/os-release
+    case " $ID $ID_LIKE " in
+        *" arch "*)
+            pacman -Q "$PACKAGE" >/dev/null 2>&1 || { echo not-packaged; return; }
+            echo "arch-$(uname -m)" ;;
+        *" debian "*)
+            dpkg-query -W -f '${Status}' "$PACKAGE" 2>/dev/null | grep -q 'install ok installed' \
+                || { echo not-packaged; return; }
+            echo "debian-$(dpkg --print-architecture)" ;;
+        *)
+            echo unsupported ;;
+    esac
+}
+
+install_latest() {
+    [ "$(id -u)" = 0 ] || fail "es-re-update install must run as root"
+
+    platform=$(platform)
+    case "$platform" in
+        arch-*)   pattern="$PACKAGE-*-${platform#arch-}.pkg.tar.zst" ;;
+        debian-*) pattern="${PACKAGE}_*_${platform#debian-}.deb" ;;
+        not-packaged) fail "EmulationStation was not installed from the $PACKAGE package" ;;
+        *) fail "No package for this system" ;;
+    esac
+
+    work=$(mktemp -d)
+    trap 'rm -rf "$work"' EXIT INT TERM
+    chmod 755 "$work"   # apt reads local packages as the _apt user
+
+    echo "Downloading the release list"
+    curl -fsS -L --proto '=https' --retry 3 -o "$work/SHA256SUMS" "$RELEASES/SHA256SUMS" \
+        || fail "Cannot download $RELEASES/SHA256SUMS"
+
+    file=""
+    while read -r sum name; do
+        name=${name#\*}
+        # shellcheck disable=SC2254
+        case "$name" in
+            */* | *[!A-Za-z0-9._+~-]*) continue ;;
+            $pattern) file=$name; expected=$sum; break ;;
+        esac
+    done < "$work/SHA256SUMS"
+    [ -n "$file" ] || fail "The latest release has no package for $platform"
+
+    echo "Downloading $file"
+    curl -fsS -L --proto '=https' --retry 3 -o "$work/$file" "$RELEASES/$file" \
+        || fail "Cannot download $file"
+    chmod 644 "$work/$file"
+
+    echo "Checking $file"
+    actual=$(sha256sum "$work/$file" | cut -d' ' -f1)
+    [ "$actual" = "$expected" ] || fail "$file does not match its checksum"
+
+    echo "Installing $file"
+    case "$platform" in
+        arch-*)   pacman -U --noconfirm "$work/$file" ;;
+        debian-*) DEBIAN_FRONTEND=noninteractive apt-get install -y "$work/$file" ;;
+    esac
+    echo "Done"
+}
+
+case "${1:-}" in
+    platform) platform ;;
+    install)  install_latest ;;
+    *) fail "usage: es-re-update platform|install" ;;
+esac

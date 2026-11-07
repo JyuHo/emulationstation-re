@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<!-- Lets the user of the active local session update EmulationStation-RE from its menu, without
+     a password: es-re-update only installs the latest official release, checked against its
+     SHA256SUMS. Remote and inactive sessions still need an administrator password. -->
+<policyconfig>
+  <vendor>EmulationStation-RE</vendor>
+  <vendor_url>https://github.com/JyuHo/emulationstation-re</vendor_url>
+  <action id="org.emulationstation-re.update">
+    <description>Update EmulationStation-RE</description>
+    <message>Authentication is required to update EmulationStation-RE</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">@ES_UPDATE_HELPER@</annotate>
+  </action>
+</policyconfig>

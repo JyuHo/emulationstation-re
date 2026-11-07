@@ -1,29 +1,5 @@
 project("emulationstation")
 
-option(INJECT_VERSION "Inject Version" OFF)
-
-if(INJECT_VERSION)
-
-	# Main version number
-	set(VERSION_MAJOR 42)
-
-	# Create version.h at configure/build time
-	string(TIMESTAMP BUILD_YEAR   "%Y")
-	string(TIMESTAMP BUILD_MONTH  "%m")
-	string(TIMESTAMP BUILD_DAY    "%d")
-	string(TIMESTAMP BUILD_HOUR   "%H")
-	string(TIMESTAMP BUILD_MINUTE "%M")
-
-	# Format into your desired scheme		
-	set(VERSION_DATE   "${BUILD_MONTH}${BUILD_DAY}") # e.g. 1004
-	set(VERSION_TIME   "${BUILD_HOUR}${BUILD_MINUTE}") # e.g. 2041
-
-	configure_file(
-		${CMAKE_CURRENT_SOURCE_DIR}/EmulationStation.h.in
-		${CMAKE_CURRENT_SOURCE_DIR}/src/EmulationStation.h
-		@ONLY
-	)
-endif()
 
 set(ES_HEADERS	
     ${CMAKE_CURRENT_SOURCE_DIR}/src/EmulationStation.h
@@ -43,6 +19,8 @@ set(ES_HEADERS
     ${CMAKE_CURRENT_SOURCE_DIR}/src/NetworkThread.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/ContentInstaller.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/catalog/CatalogInstaller.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/updates/Release.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/updates/SelfUpdater.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/system/SystemServices.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/catalog/EmulatorCatalog.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/ThreadedScraper.h
@@ -148,6 +126,8 @@ set(ES_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/NetworkThread.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/ContentInstaller.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/catalog/CatalogInstaller.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/updates/Release.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/updates/SelfUpdater.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/system/SystemServices.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/catalog/EmulatorCatalog.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/ThreadedScraper.cpp
@@ -262,6 +242,14 @@ if(ES_TESTS)
     target_compile_options(es-app-catalog-tests PRIVATE -Wall -Wextra)
     add_test(NAME es-app-catalog-tests COMMAND es-app-catalog-tests)
 
+    add_executable(es-app-update-tests
+        ${CMAKE_CURRENT_SOURCE_DIR}/tests/update_tests.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/updates/Release.cpp)
+    target_include_directories(es-app-update-tests PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/src ${RAPIDJSON_INCLUDE_DIRS})
+    target_compile_options(es-app-update-tests PRIVATE -Wall -Wextra)
+    add_test(NAME es-app-update-tests COMMAND es-app-update-tests)
+
     add_executable(es-app-system-services-tests
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/system_services_tests.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/system/SystemServices.cpp
@@ -283,28 +271,42 @@ install(TARGETS emulationstation
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/resources
     DESTINATION ${CMAKE_INSTALL_DATADIR}/emulationstation)
 
-INCLUDE(InstallRequiredSystemLibraries)
+# Updates from the menu: es-re-update installs the latest release, pkexec runs it as root
+# without a password for the active local session (polkit policy)
+set(ES_RELEASES_URL "https://github.com/JyuHo/emulationstation-re/releases")
+set(ES_UPDATE_HELPER "${CMAKE_INSTALL_FULL_LIBEXECDIR}/emulationstation-re/es-re-update")
+configure_file(${CMAKE_SOURCE_DIR}/packaging/update/es-re-update.in
+    ${CMAKE_CURRENT_BINARY_DIR}/es-re-update @ONLY)
+configure_file(${CMAKE_SOURCE_DIR}/packaging/update/org.emulationstation-re.update.policy.in
+    ${CMAKE_CURRENT_BINARY_DIR}/org.emulationstation-re.update.policy @ONLY)
+target_compile_definitions(emulationstation PRIVATE
+    ES_RELEASES_URL="${ES_RELEASES_URL}" ES_UPDATE_HELPER="${ES_UPDATE_HELPER}")
+install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/es-re-update
+    DESTINATION ${CMAKE_INSTALL_LIBEXECDIR}/emulationstation-re)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.emulationstation-re.update.policy
+    DESTINATION ${CMAKE_INSTALL_DATADIR}/polkit-1/actions)
 
-SET(CPACK_PACKAGE_DESCRIPTION_SUMMARY "A flexible graphical emulator front-end")
-SET(CPACK_PACKAGE_DESCRIPTION "EmulationStation is a flexible, graphical front-end designed for keyboardless navigation of your multi-platform retro game collection.")
+# Debian package: configure with -DCMAKE_INSTALL_PREFIX=/usr, then `cpack` in the build folder,
+# as the release workflow does.
+# The library dependencies are found by dpkg-shlibdeps; the Arch package is in packaging/arch.
+set(CPACK_PACKAGE_NAME "emulationstation-re")
+set(CPACK_PACKAGE_VERSION "${ES_VERSION_RESOLVED}")
+set(CPACK_PACKAGE_VENDOR "EmulationStation-RE")
+set(CPACK_PACKAGE_CONTACT "EmulationStation-RE <https://github.com/JyuHo/emulationstation-re>")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Graphical front-end for emulators with controller navigation")
+set(CPACK_PACKAGE_DESCRIPTION "EmulationStation-RE is a Linux build of Batocera's EmulationStation, a graphical front-end for emulators designed for controller navigation.")
+set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/LICENSE.md")
+set(CPACK_STRIP_FILES ON)
 
-SET(CPACK_RESOURCE_FILE LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE.md")
-SET(CPACK_RESOURCE_FILE README "${CMAKE_CURRENT_SOURCE_DIR}/README.md")
+set(CPACK_DEBIAN_FILE_NAME DEB-DEFAULT)
+set(CPACK_DEBIAN_PACKAGE_SECTION "games")
+set(CPACK_DEBIAN_PACKAGE_PRIORITY "optional")
+set(CPACK_DEBIAN_PACKAGE_HOMEPAGE "https://github.com/JyuHo/emulationstation-re")
+set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
+set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS_PRIVATE_DIRS "${CMAKE_BINARY_DIR}/es-launcher") # libes-launcher.so ships in the package
+set(CPACK_DEBIAN_PACKAGE_RECOMMENDS "fonts-droid-fallback, curl, pkexec") # curl and pkexec: updates from the menu
+set(CPACK_DEBIAN_PACKAGE_CONFLICTS "emulationstation")
 
-SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "Alec Lofquist <allofquist@yahoo.com>")
-SET(CPACK_DEBIAN_PACKAGE_SECTION "misc")
-SET(CPACK_DEBIAN_PACKAGE_PRIORITY "extra")
-SET(CPACK_DEBIAN_PACKAGE_DEPENDS "libc6, libsdl3-0, libfreeimage3, libfreetype6, libcurl3, libasound2")
-SET(CPACK_DEBIAN_PACKAGE_BUILDS_DEPENDS "debhelper (>= 8.0.0), cmake, g++ (>= 13), libsdl3-dev, libfreeimage-dev, libfreetype6-dev, libcurl4-openssl-dev, libasound2-dev, libgl1-mesa-dev, rapidjson-dev, libgl1-mesa-dev")
+set(CPACK_GENERATOR "DEB")
 
-SET(CPACK_PACKAGE_VENDOR "emulationstation.org")
-SET(CPACK_PACKAGE_VERSION "2.0.0~rc1")
-SET(CPACK_PACKAGE_VERSION_MAJOR "2")
-SET(CPACK_PACKAGE_VERSION_MINOR "0")
-SET(CPACK_PACKAGE_VERSION_PATCH "0")
-SET(CPACK_PACKAGE_INSTALL_DIRECTORY "emulationstation_${CMAKE_PACKAGE_VERSION}")
-SET(CPACK_PACKAGE_EXECUTABLES "emulationstation" "emulationstation")
-
-SET(CPACK_GENERATOR "TGZ;DEB")
-
-INCLUDE(CPack)
+include(CPack)

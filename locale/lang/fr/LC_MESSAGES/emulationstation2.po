@@ -4211,3 +4211,42 @@ msgstr "Ce cœur est installé par votre distribution. Mettez-le à jour ou supp
 
 msgid "This emulator is installed by your distribution. Update or remove it with your package manager."
 msgstr "Cet émulateur est installé par votre distribution. Mettez-le à jour ou supprimez-le avec votre gestionnaire de paquets."
+
+msgid "EMULATIONSTATION"
+msgstr "EMULATIONSTATION"
+
+msgid "CHECKING FOR UPDATES"
+msgstr "RECHERCHE DES MISES À JOUR"
+
+msgid "CANNOT CHECK FOR UPDATES"
+msgstr "IMPOSSIBLE DE RECHERCHER LES MISES À JOUR"
+
+msgid "EMULATIONSTATION IS UP TO DATE (VERSION %s)"
+msgstr "EMULATIONSTATION EST À JOUR (VERSION %s)"
+
+msgid "VERSION %s IS AVAILABLE (YOU HAVE %s)"
+msgstr "LA VERSION %s EST DISPONIBLE (VOUS AVEZ LA %s)"
+
+msgid "EMULATIONSTATION WAS NOT INSTALLED FROM ITS PACKAGE: UPDATE IT THE WAY YOU INSTALLED IT."
+msgstr "EMULATIONSTATION N'A PAS ÉTÉ INSTALLÉ DEPUIS SON PAQUET : METTEZ-LE À JOUR DE LA MÊME FAÇON QUE VOUS L'AVEZ INSTALLÉ."
+
+msgid "THIS RELEASE HAS NO PACKAGE FOR THIS SYSTEM."
+msgstr "CETTE VERSION N'A PAS DE PAQUET POUR CE SYSTÈME."
+
+msgid "PKEXEC (POLKIT) IS NEEDED TO INSTALL UPDATES."
+msgstr "PKEXEC (POLKIT) EST NÉCESSAIRE POUR INSTALLER LES MISES À JOUR."
+
+msgid "INSTALL IT NOW?"
+msgstr "L'INSTALLER MAINTENANT ?"
+
+msgid "UPDATING EMULATIONSTATION"
+msgstr "MISE À JOUR D'EMULATIONSTATION"
+
+msgid "THE UPDATE FAILED"
+msgstr "LA MISE À JOUR A ÉCHOUÉ"
+
+msgid "EMULATIONSTATION WAS UPDATED. RESTART IT NOW?"
+msgstr "EMULATIONSTATION A ÉTÉ MIS À JOUR. LE REDÉMARRER MAINTENANT ?"
+
+msgid "The update was not authorized"
+msgstr "La mise à jour n'a pas été autorisée"

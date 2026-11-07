@@ -12,6 +12,7 @@
 #include "guis/GuiHashStart.h"
 #include "guis/GuiThemeInstaller.h"
 #include "guis/GuiEmulatorCatalog.h"
+#include "updates/SelfUpdater.h"
 #include "guis/GuiSettings.h"
 #include "guis/GuiRetroAchievements.h"
 #include "guis/GuiGamelistOptions.h"
@@ -789,6 +790,13 @@ void GuiMenu::openUpdatesSettings()
 {
 	GuiSettings *updateGui = new GuiSettings(mWindow, _("UPDATES & DOWNLOADS").c_str());
 
+	updateGui->addGroup(_("EMULATIONSTATION"));
+	updateGui->addEntry(_("CHECK FOR UPDATES"), true, [this]
+	{
+		if (checkNetwork())
+			checkSelfUpdate(mWindow);
+	});
+
 	updateGui->addGroup(_("DOWNLOADS"));
 
 
@@ -806,6 +814,83 @@ void GuiMenu::openUpdatesSettings()
 
 
 	mWindow->pushGui(updateGui);
+}
+
+// Update EmulationStation itself: compare with the latest release, then install its package
+void GuiMenu::checkSelfUpdate(Window* window)
+{
+	struct Check
+	{
+		std::optional<selfupdate::Release> release;
+		std::string error;
+		std::string platform;
+	};
+
+	window->pushGui(new GuiLoading<Check>(window, _("CHECKING FOR UPDATES"),
+		[](auto gui)
+		{
+			Check check;
+			check.platform = SelfUpdater::platform();
+			check.release = SelfUpdater::fetchLatest(&check.error);
+			return check;
+		},
+		[window](Check check)
+		{
+			if (!check.release)
+			{
+				window->pushGui(new GuiMsgBox(window, _("CANNOT CHECK FOR UPDATES") + "\n" + check.error, _("OK"), nullptr, ICON_ERROR));
+				return;
+			}
+
+			auto current = ApiSystem::getInstance()->getVersion();
+			auto& release = *check.release;
+			if (selfupdate::compareVersions(release.version, current) <= 0)
+			{
+				window->pushGui(new GuiMsgBox(window, Utils::String::format(_("EMULATIONSTATION IS UP TO DATE (VERSION %s)").c_str(), current.c_str())));
+				return;
+			}
+
+			auto available = Utils::String::format(_("VERSION %s IS AVAILABLE (YOU HAVE %s)").c_str(), release.version.c_str(), current.c_str());
+
+			std::string why;
+			if (check.platform == "not-packaged")
+				why = _("EMULATIONSTATION WAS NOT INSTALLED FROM ITS PACKAGE: UPDATE IT THE WAY YOU INSTALLED IT.");
+			else if (check.platform.empty() || check.platform == "unsupported" || release.packages.count(check.platform) == 0)
+				why = _("THIS RELEASE HAS NO PACKAGE FOR THIS SYSTEM.");
+			else if (!SelfUpdater::canInstall(check.platform))
+				why = _("PKEXEC (POLKIT) IS NEEDED TO INSTALL UPDATES.");
+
+			if (!why.empty())
+			{
+				window->pushGui(new GuiMsgBox(window, available + "\n\n" + why + "\n" + release.url));
+				return;
+			}
+
+			window->pushGui(new GuiMsgBox(window, available + "\n\n" + _("INSTALL IT NOW?"),
+				_("INSTALL"), [window] { installSelfUpdate(window); },
+				_("CANCEL"), nullptr));
+		}));
+}
+
+void GuiMenu::installSelfUpdate(Window* window)
+{
+	window->pushGui(new GuiLoading<std::pair<std::string, int>>(window, _("UPDATING EMULATIONSTATION"),
+		[](IGuiLoadingHandler* gui)
+		{
+			return SelfUpdater::install([gui](const std::string& line) { gui->setText(line); });
+		},
+		[window](std::pair<std::string, int> result)
+		{
+			if (result.second != 0)
+			{
+				window->pushGui(new GuiMsgBox(window, _("THE UPDATE FAILED") + "\n" + result.first, _("OK"), nullptr, ICON_ERROR));
+				return;
+			}
+
+			window->pushGui(new GuiMsgBox(window, _("EMULATIONSTATION WAS UPDATED. RESTART IT NOW?"),
+				_("YES"), [] { Utils::Platform::quitES(Utils::Platform::QuitMode::RESTART); },
+				_("NO"), nullptr));
+		}));
 }
 
 bool GuiMenu::checkNetwork()

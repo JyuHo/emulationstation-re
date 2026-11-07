@@ -67,6 +67,26 @@ shared library, `libes-launcher.so`. See [es-launcher/README.md](es-launcher/REA
 Installing and running
 ======================
 
+Each `v*` tag publishes a [release](https://github.com/JyuHo/emulationstation-re/releases) with
+an Arch Linux package (x86_64, OpenGL) and Debian trixie packages (amd64 with OpenGL, arm64 with
+OpenGL ES for the Raspberry Pi 4 and later), plus their `SHA256SUMS`:
+
+```bash
+sudo pacman -U emulationstation-re-<version>-1-x86_64.pkg.tar.zst   # Arch Linux / CachyOS
+sudo apt install ./emulationstation-re_<version>_arm64.deb          # Debian / Armbian trixie
+```
+
+When ES was installed from one of these packages, **Updates & downloads > Check for updates**
+compares it with the latest release (its `latest.json`) and installs the new package:
+`es-re-update` (in `<libexecdir>/emulationstation-re`) downloads it, checks it against the
+release's `SHA256SUMS` and installs it with pacman or apt, run as root by `pkexec`. Its polkit
+policy lets the active local session do this without a password; it needs `curl` and `pkexec`
+(package `polkit` on Arch, `pkexec` on Debian).
+
+The version comes from the tag (`git describe` for other builds, or `-DES_VERSION=<version>`).
+To make the packages yourself: `ES_VERSION=<version> makepkg -s` in `packaging/arch`, or configure
+with `-DCMAKE_INSTALL_PREFIX=/usr`, build, and run `cpack` in the build folder for the `.deb`.
+
 `cmake --install build` puts the binary in `<prefix>/bin` and the resources in
 `<prefix>/share/emulationstation`. You can also run `./build/emulationstation` straight
 from the build folder without installing; `emulationstation.sh` starts it again when you pick Restart
