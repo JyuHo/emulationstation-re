@@ -309,10 +309,16 @@ namespace Renderer
 			}
 		}
 
+		// Let the fullscreen window land on the primary display instead of wherever the
+		// window manager would place a new window before the fullscreen request is applied.
+		Vector2i windowPosition = sdlWindowPosition;
+		if (!Settings::getInstance()->getBool("Windowed") && windowPosition == Vector2i(SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED))
+			windowPosition = Vector2i(SDL_WINDOWPOS_CENTERED_DISPLAY(SDL_GetPrimaryDisplay()), SDL_WINDOWPOS_CENTERED_DISPLAY(SDL_GetPrimaryDisplay()));
+
 		SDL_PropertiesID windowProps = SDL_CreateProperties();
 		SDL_SetStringProperty(windowProps, SDL_PROP_WINDOW_CREATE_TITLE_STRING, "EmulationStation");
-		SDL_SetNumberProperty(windowProps, SDL_PROP_WINDOW_CREATE_X_NUMBER, sdlWindowPosition.x());
-		SDL_SetNumberProperty(windowProps, SDL_PROP_WINDOW_CREATE_Y_NUMBER, sdlWindowPosition.y());
+		SDL_SetNumberProperty(windowProps, SDL_PROP_WINDOW_CREATE_X_NUMBER, windowPosition.x());
+		SDL_SetNumberProperty(windowProps, SDL_PROP_WINDOW_CREATE_Y_NUMBER, windowPosition.y());
 		SDL_SetNumberProperty(windowProps, SDL_PROP_WINDOW_CREATE_WIDTH_NUMBER, windowWidth);
 		SDL_SetNumberProperty(windowProps, SDL_PROP_WINDOW_CREATE_HEIGHT_NUMBER, windowHeight);
 		SDL_SetNumberProperty(windowProps, SDL_PROP_WINDOW_CREATE_FLAGS_NUMBER, windowFlags);
@@ -327,6 +333,32 @@ namespace Renderer
 
 		if (Settings::getInstance()->getBool("Windowed"))
 			SDL_SetWindowMinimumSize(sdlWindow, 320, 200);
+
+		// On Wayland and X11 the fullscreen / maximized state is applied asynchronously by the
+		// compositor. Without waiting, the splash screen is drawn into the window as it was
+		// first mapped (e.g. a quarter of the screen) until the main loop pumps the events
+		// that finally make it fullscreen. Wait for the pending state, then size the viewport
+		// from the real drawable so the very first frame is already fullscreen.
+		SDL_SyncWindow(sdlWindow);
+
+		if (!Settings::getInstance()->getBool("Windowed"))
+		{
+			int pixelWidth = 0, pixelHeight = 0;
+			if (SDL_GetWindowSizeInPixels(sdlWindow, &pixelWidth, &pixelHeight) && pixelWidth > 0 && pixelHeight > 0 &&
+				(pixelWidth != windowWidth || pixelHeight != windowHeight))
+			{
+				LOG(LogInfo) << "Fullscreen drawable is " << pixelWidth << "x" << pixelHeight << " (requested " << windowWidth << "x" << windowHeight << ")";
+
+				windowWidth  = pixelWidth;
+				windowHeight = pixelHeight;
+
+				if (!Settings::getInstance()->getInt("ScreenWidth") && !Settings::getInstance()->getInt("ScreenHeight"))
+				{
+					screenWidth  = (screenRotate == 1 || screenRotate == 3) ? pixelHeight : pixelWidth;
+					screenHeight = (screenRotate == 1 || screenRotate == 3) ? pixelWidth  : pixelHeight;
+				}
+			}
+		}
 
 		if (windowFlags & SDL_WINDOW_MAXIMIZED)
 		{
