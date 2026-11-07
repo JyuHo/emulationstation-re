@@ -12,6 +12,7 @@ license=('MIT' 'LGPL-3.0-or-later')
 depends=('sdl3' 'freeimage' 'freetype2' 'curl' 'vlc' 'alsa-lib' 'fribidi' 'libcec' 'systemd-libs' 'libglvnd')
 makedepends=('cmake' 'ninja' 'rapidjson' 'gettext' 'git')
 optdepends=('noto-fonts-cjk: Chinese, Japanese and Korean characters'
+            'polkit: updates from the menu'
             'flatpak: Flatpak emulators of the emulator catalog')
 conflicts=('emulationstation')
 options=('!debug')

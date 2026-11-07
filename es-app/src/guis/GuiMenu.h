@@ -88,6 +88,8 @@ private:
 	static void addFeatures(const VectorEx<CustomFeature>& features, Window* window, GuiSettings* settings, const std::string& configName, const std::string& system, const std::string& emulator, const std::string& core, const std::string& defaultGroupName = "", bool addDefaultGroupOnlyIfNotFirst = false);
 
 	bool checkNetwork();
+	static void checkSelfUpdate(Window* window);
+	static void installSelfUpdate(Window* window);
 
 	static void saveSubsetSettings();
 	static void loadSubsetSettings(const std::string themeName);

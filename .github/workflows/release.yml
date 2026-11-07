@@ -65,7 +65,7 @@ jobs:
         include:
           - arch: amd64
             runner: ubuntu-24.04
-            graphics: -DGL=ON
+            graphics: -DGL=ON -DES_TESTS=ON
           - arch: arm64             # Raspberry Pi 4 and later
             runner: ubuntu-24.04-arm
             graphics: -DGLES3=ON
@@ -89,6 +89,7 @@ jobs:
           cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr \
             ${{ matrix.graphics }} ${ES_VERSION:+-DES_VERSION="$ES_VERSION"}
           cmake --build build
+          if [ -f build/CTestTestfile.cmake ]; then ctest --test-dir build --output-on-failure; fi
           cd build && cpack -G DEB
 
       - name: Check the package
@@ -116,15 +117,46 @@ jobs:
           path: packages
           merge-multiple: true
 
+      - name: Write latest.json
+        env:
+          TAG: ${{ github.ref_name }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        # what ES's update menu reads, from <repo>/releases/latest/download/latest.json
+        run: |
+          cd packages
+          sha256sum -- *.pkg.tar.zst *.deb > SHA256SUMS
+          cat SHA256SUMS
+          python3 - <<'PY'
+          import datetime, json, os, re
+          tag = os.environ["TAG"]
+          packages = {}
+          for line in open("SHA256SUMS"):
+              sha, name = line.split()
+              m = re.fullmatch(r"emulationstation-re-.+-(x86_64|aarch64)\.pkg\.tar\.zst", name)
+              key = f"arch-{m.group(1)}" if m else None
+              m = re.fullmatch(r"emulationstation-re_.+_(amd64|arm64)\.deb", name)
+              key = f"debian-{m.group(1)}" if m else key
+              if key:
+                  packages[key] = {"file": name, "sha256": sha, "size": os.path.getsize(name)}
+          latest = {
+              "format": 1,
+              "version": tag.removeprefix("v"),
+              "tag": tag,
+              "date": datetime.date.today().isoformat(),
+              "url": f"{os.environ['REPO_URL']}/releases/tag/{tag}",
+              "packages": packages,
+          }
+          json.dump(latest, open("latest.json", "w"), indent=2)
+          print(json.dumps(latest, indent=2))
+          PY
+
       - name: Create the release
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.ref_name }}
         run: |
           cd packages
-          sha256sum * > SHA256SUMS
-          cat SHA256SUMS
           prerelease=""
           case "$TAG" in *-*) prerelease="--prerelease" ;; esac
           gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" \
-            --generate-notes --verify-tag $prerelease *
+            --generate-notes --verify-tag $prerelease -- *
