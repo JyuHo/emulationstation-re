@@ -243,6 +243,13 @@ static void testPcsx2()
 	CHECK(ini.get("Pad4", "Cross") == "SDL-2/FaceSouth");
 	CHECK(ini.get("Hotkeys", "ShutdownVM") == "SDL-0/Guide & SDL-0/Start");
 	CHECK(!ini.get("Hotkeys", "Rewind"));
+	CHECK(ini.get("EmuCore", "EnableFastBoot") == "true");
+
+	// "Full boot" of ES's menu shows the BIOS intro
+	ctx.settings = Settings({}, { { "fullboot", "1" } }, {});
+	Launch(ctx).prepare();
+	ini = IniFile::load(tmp.path / "emulators" / "pcsx2" / "PCSX2" / "inis" / "PCSX2.ini");
+	CHECK(ini.get("EmuCore", "EnableFastBoot") == "false");
 
 	// PCSX2 is x86_64 only
 	ctx.architecture = Architecture::AArch64;

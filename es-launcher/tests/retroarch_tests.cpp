@@ -125,6 +125,59 @@ static void testVideoAndStates()
 	CHECK(config.get("video_driver") == "glcore");
 }
 
+static void testGameOptions()
+{
+	TempDir tmp;
+	writeFile(tmp.path / "user" / "crt.filt", "");
+	writeFile(tmp.path / "system" / "crt.filt", "");
+	writeFile(tmp.path / "system" / "Scanline2x.filt", "");
+
+	LaunchContext ctx;
+	ctx.paths.videoFilters = { tmp.path / "user", tmp.path / "system" };
+	ctx.controllers = { makePad(1, 0) };
+
+	// video filters: the player's folder first, "none" clears the one set in RetroArch, auto leaves it
+	ConfigFile config;
+	ctx.settings = Settings({ { "videofilters", "Scanline2x" } }, {}, { { "videofilters", "crt" } });
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_filter") == (tmp.path / "user" / "crt.filt").string());
+
+	ctx.settings = Settings({ { "videofilters", "Scanline2x" } }, {}, {});
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_filter") == (tmp.path / "system" / "Scanline2x.filt").string());
+
+	ctx.settings = Settings({ { "videofilters", "none" } }, {}, {});
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_filter") == "");
+
+	ctx.settings = Settings({}, {}, {});
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(!config.get("video_filter"));
+
+	// AI translation: the target language goes into the service URL
+	ctx.settings = Settings({ { "ai_service_enabled", "1" }, { "ai_target_lang", "Fr" }, { "ai_service_url", "http://localhost:4404/" }, { "ai_service_pause", "1" } }, {}, {});
+	RetroArchGenerator::setTranslation(ctx, config);
+	CHECK(config.get("ai_service_enable") == "true");
+	CHECK(config.get("ai_service_url") == "http://localhost:4404/?target_lang=Fr");
+	CHECK(config.get("ai_service_pause") == "true");
+
+	ctx.settings = Settings({ { "ai_service_enabled", "1" }, { "ai_service_url", "http://host/translate?key=abc" } }, {}, {});
+	RetroArchGenerator::setTranslation(ctx, config);
+	CHECK(config.get("ai_service_url") == "http://host/translate?key=abc&target_lang=En");
+
+	ctx.settings = Settings({}, {}, {});
+	RetroArchGenerator::setTranslation(ctx, config);
+	CHECK(config.get("ai_service_enable") == "false");
+
+	// automatic controller configuration off: the player's own bindings stay
+	ConfigFile pads;
+	pads.set("input_player1_a_btn", "5");
+	ctx.settings = Settings({ { "disableautocontrollers", "1" } }, {}, {});
+	RetroArchGenerator::setControllers(ctx, pads);
+	CHECK(pads.get("input_player1_a_btn") == "5");
+	CHECK(pads.get("input_autodetect_enable") == "true");
+}
+
 static void testFullLaunch()
 {
 	TempDir tmp;
@@ -295,6 +348,7 @@ void tests::runRetroArchTests()
 	testCoreNames();
 	testControllers();
 	testVideoAndStates();
+	testGameOptions();
 	testFullLaunch();
 	testCatalogInstall();
 }

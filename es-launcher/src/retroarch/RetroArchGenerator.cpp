@@ -198,6 +198,17 @@ namespace es::launcher::retroarch
 		config.set("run_ahead_frames", runAhead);
 		config.set("run_ahead_secondary_instance", runAhead > 0 && s.getBool("secondinstance", false));
 
+		// Video filter (software rendered cores only): "none" turns off the one the player set in RetroArch
+		if (auto filter = s.get("videofilters"))
+		{
+			if (*filter == "none")
+				config.set("video_filter", "");
+			else if (auto path = util::findFile(*filter + ".filt", ctx.paths.videoFilters))
+				config.set("video_filter", path->string());
+		}
+		else
+			config.remove("video_filter");
+
 		if (auto driver = s.get("audio_driver"))
 			config.set("audio_driver", *driver);
 		if (auto latency = s.get("audio_latency"))
@@ -221,6 +232,13 @@ namespace es::launcher::retroarch
 	void RetroArchGenerator::setControllers(const LaunchContext& ctx, ConfigFile& config)
 	{
 		const Core& core = coreProfile(ctx.core);
+
+		// The player binds the pads in RetroArch's own menu (or its autoconfig profiles): leave them alone
+		if (ctx.settings.getBool("disableautocontrollers", false))
+		{
+			config.set("input_autodetect_enable", true);
+			return;
+		}
 
 		// Forget the pads of the previous launch; RetroArch keeps its keyboard defaults
 		config.removeStartingWith("input_player");
@@ -370,6 +388,29 @@ namespace es::launcher::retroarch
 		setBoolFromSetting(ctx, config, "cheevos_test_unofficial", "retroachievements.unofficial", false);
 	}
 
+	void RetroArchGenerator::setTranslation(const LaunchContext& ctx, ConfigFile& config)
+	{
+		const Settings& s = ctx.settings;
+
+		// AI translation: the hotkey + R1 sends the screen to the service, which answers with the translated image
+		bool enabled = s.getBool("ai_service_enabled", false);
+		config.set("ai_service_enable", enabled);
+		if (!enabled)
+			return;
+
+		config.set("ai_service_mode", 0);          // image mode
+		config.set("ai_service_source_lang", 0);   // let the service detect it
+		config.set("ai_service_pause", s.getBool("ai_service_pause", false));
+
+		// The service gets the target language in its URL, as with batocera-launch. Without an URL
+		// of ES's, the one set in RetroArch's menu stays.
+		if (auto url = s.get("ai_service_url"))
+		{
+			std::string target = s.getString("ai_target_lang", "En");
+			config.set("ai_service_url", *url + (url->find('?') == std::string::npos ? "?" : "&") + "target_lang=" + target);
+		}
+	}
+
 	void RetroArchGenerator::setNetplay(const LaunchContext& ctx, ConfigFile& config)
 	{
 		if (!ctx.netplay)
@@ -429,9 +470,12 @@ namespace es::launcher::retroarch
 
 		// The catalog installs RetroArch under the id "retroarch", whatever ctx.emulator says
 		// ("libretro" in es_systems.cfg). A Flatpak RetroArch needs to reach everything below.
-		auto retroarch = util::emulatorCommand(ctx, "retroarch", "retroarch", {
+		std::vector<fs::path> shared = {
 			ctx.paths.configFor("retroarch"), ctx.paths.saves, ctx.paths.bios, ctx.paths.screenshots,
-			ctx.paths.cache, core->parent_path(), ctx.game.rom.parent_path() });
+			ctx.paths.cache, core->parent_path(), ctx.game.rom.parent_path() };
+		shared.insert(shared.end(), ctx.paths.videoFilters.begin(), ctx.paths.videoFilters.end());
+
+		auto retroarch = util::emulatorCommand(ctx, "retroarch", "retroarch", shared);
 		if (!retroarch)
 			throw LaunchError(ErrorCode::EmulatorMissing, "RetroArch is not installed: install it from the emulator catalog or with your package manager.");
 
@@ -447,6 +491,7 @@ namespace es::launcher::retroarch
 		setControllers(ctx, config);
 		setSaveStates(ctx, config);
 		setAchievements(ctx, config);
+		setTranslation(ctx, config);
 		setNetplay(ctx, config);
 		profile.setConfig(ctx, config);
 

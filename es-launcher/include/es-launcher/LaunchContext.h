@@ -75,6 +75,9 @@ namespace es::launcher
 		// libretro cores installed by ES's emulator catalog, with their .info files in info/.
 		// Looked up before the distribution's cores. Empty when ES has none.
 		std::filesystem::path cores;
+
+		// Folders holding RetroArch video filters (<name>.filt), searched in order
+		std::vector<std::filesystem::path> videoFilters;
 	};
 
 	struct ES_LAUNCHER_API Netplay

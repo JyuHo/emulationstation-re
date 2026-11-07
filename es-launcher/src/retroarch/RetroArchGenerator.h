@@ -40,6 +40,7 @@ namespace es::launcher::retroarch
 		static void setControllers(const LaunchContext& ctx, ConfigFile& config);
 		static void setSaveStates(const LaunchContext& ctx, ConfigFile& config);
 		static void setAchievements(const LaunchContext& ctx, ConfigFile& config);
+		static void setTranslation(const LaunchContext& ctx, ConfigFile& config);
 		static void setNetplay(const LaunchContext& ctx, ConfigFile& config);
 	};
 }

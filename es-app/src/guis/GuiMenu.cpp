@@ -3844,8 +3844,8 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 		systemConfiguration->addSaveFunc([configName, ratio_choice] { SystemConf::getInstance()->set(configName + ".ratio", ratio_choice->getSelected()); });
 	}
 
-	// video resolution mode
-	if (systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::videomode))
+	// video resolution mode: nothing switches the display mode yet, as in the global settings
+	if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::RESOLUTION) && systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::videomode))
 	{
 		auto videoResolutionMode_choice = createVideoResolutionModeOptionList(mWindow, configName);
 		systemConfiguration->addWithDescription(_("VIDEO MODE"), _("Sets the display's resolution. Does not affect the rendering resolution."), videoResolutionMode_choice);
@@ -3910,7 +3910,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 		auto installedVideofilters = ApiSystem::getInstance()->getVideoFilterList(systemData->getName(), currentEmulator, currentCore);
 		if (installedVideofilters.size() > 0)
 		{
-			std::string currentVideofilter = SystemConf::getInstance()->get(configName + ".videofilter");
+			std::string currentVideofilter = SystemConf::getInstance()->get(configName + ".videofilters");
 
 			auto videofilters_choices = std::make_shared<OptionListComponent<std::string> >(mWindow, _("VIDEO FILTER"), false);
 			videofilters_choices->add(_("AUTO"), "auto", currentVideofilter.empty() || currentVideofilter == "auto");
@@ -3923,7 +3923,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 				videofilters_choices->selectFirstItem();
 
 			systemConfiguration->addWithLabel(_("VIDEO FILTER"), videofilters_choices);
-			systemConfiguration->addSaveFunc([configName, videofilters_choices] { SystemConf::getInstance()->set(configName + ".videofilter", videofilters_choices->getSelected()); });
+			systemConfiguration->addSaveFunc([configName, videofilters_choices] { SystemConf::getInstance()->set(configName + ".videofilters", videofilters_choices->getSelected()); });
 		}
 	}
 
@@ -4137,7 +4137,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 	// psp internal resolution
 	if (systemData->isFeatureSupported(currentEmulator, currentCore, EmulatorFeatures::internal_resolution))
 	{
-		std::string curResol = SystemConf::getInstance()->get(configName + ".internalresolution");
+		std::string curResol = SystemConf::getInstance()->get(configName + ".internal_resolution");
 
 		auto internalresolution = std::make_shared<OptionListComponent<std::string>>(mWindow, _("INTERNAL RESOLUTION"));
 		internalresolution->add(_("AUTO"), "auto", curResol.empty() || curResol == "auto");
@@ -4156,7 +4156,7 @@ void GuiMenu::popSpecificConfigurationGui(Window* mWindow, std::string title, st
 		if (CustomFeatures::FeaturesLoaded || (!CustomFeatures::FeaturesLoaded && (systemData->getName() == "psp" || systemData->getName() == "wii" || systemData->getName() == "gamecube"))) // only for psp, wii, gamecube
 		{
 			systemConfiguration->addWithLabel(_("INTERNAL RESOLUTION"), internalresolution);
-			systemConfiguration->addSaveFunc([internalresolution, configName] { SystemConf::getInstance()->set(configName + ".internalresolution", internalresolution->getSelected()); });
+			systemConfiguration->addSaveFunc([internalresolution, configName] { SystemConf::getInstance()->set(configName + ".internal_resolution", internalresolution->getSelected()); });
 		}
 	}
 

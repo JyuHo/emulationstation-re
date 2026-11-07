@@ -94,6 +94,11 @@ configuration (`global.eslauncher`, `<system>.eslauncher` or for one game) also 
 * Saves and save states go to `<saves>/<system>/`, the BIOS folder is RetroArch's system folder.
 * Hotkeys: hold the hotkey button of player 1, then Start quits, B opens the menu, Y/X save and load
   a state, Up/Down change the slot, Left rewinds, Right fast-forwards, A resets.
+* Game options of ES's menus: `ratio`, `smooth`, `integerscale`, `rewind`, `runahead`, `autosave`,
+  `incrementalsavestates`, `videofilters` (a `<name>.filt` of `ctx.paths.videoFilters`, `none` for
+  none), the AI translation (`ai_service_enabled`, `ai_target_lang`, `ai_service_url`,
+  `ai_service_pause`; the hotkey + R1 translates the screen) and `disableautocontrollers=1`, which
+  leaves the pads to RetroArch's own bindings and autoconfig profiles.
 
 ### Standalone emulators
 
@@ -140,6 +145,7 @@ leaves the others as the player set them in the emulator's menus.
   emulator's own menus.
 * Azahar binds player 1's pad input by input (button numbers and SDL GUID), as batocera-launch does;
   Eden does the same for players 1 to 8.
+* PCSX2: `fullboot=1` shows the BIOS intro (fast boot off).
 * Wii: emulated Wii Remotes by default; `emulatedwiimotes=0` for real ones. `controller_mode` adds
   an extension: `cc` or `pro` (Classic Controller), `in` (Nunchuk), `side` (held sideways).
 
