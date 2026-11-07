@@ -7,7 +7,9 @@
 #include "Log.h"
 #include "Settings.h"
 #include "SystemData.h"
-#include <FreeImage.h>
+#include <SDL3/SDL_iostream.h>
+#include <SDL3/SDL_surface.h>
+#include <SDL3_image/SDL_image.h>
 #include <fstream>
 #include "utils/FileSystemUtil.h"
 #include "utils/StringUtil.h"
@@ -697,34 +699,29 @@ bool resizeImage(const std::string& path, int maxWidth, int maxHeight)
 	if(maxWidth == 0 && maxHeight == 0)
 		return true;
 
-	FREE_IMAGE_FORMAT format = FIF_UNKNOWN;
-	FIBITMAP* image = NULL;
-	
-	//detect the filetype
-	format = FreeImage_GetFileType(path.c_str(), 0);
-	if(format == FIF_UNKNOWN)
-		format = FreeImage_GetFIFFromFilename(path.c_str());
-	if(format == FIF_UNKNOWN)
+	// the resized image is saved in the format of the file (whatever its extension): JPEG, BMP or PNG
+	SDL_IOStream* io = SDL_IOFromFile(path.c_str(), "rb");
+	if (io == nullptr)
 	{
-		LOG(LogError) << "Error - could not detect filetype for image \"" << path << "\"!";
+		LOG(LogError) << "Error - could not open image \"" << path << "\": " << SDL_GetError();
 		return false;
 	}
 
-	//make sure we can read this filetype first, then load it
-	if(FreeImage_FIFSupportsReading(format))
+	bool isJpeg = IMG_isJPG(io);
+	bool isBmp = IMG_isBMP(io);
+	SDL_Surface* image = IMG_Load_IO(io, true);
+	if (image == nullptr)
 	{
-		image = FreeImage_Load(format, path.c_str());
-	}else{
-		LOG(LogError) << "Error - file format reading not supported for image \"" << path << "\"!";
+		LOG(LogError) << "Error - could not load image \"" << path << "\": " << SDL_GetError();
 		return false;
 	}
 
-	float width = (float)FreeImage_GetWidth(image);
-	float height = (float)FreeImage_GetHeight(image);
+	float width = (float)image->w;
+	float height = (float)image->h;
 
 	if (width == 0 || height == 0)
 	{
-		FreeImage_Unload(image);
+		SDL_DestroySurface(image);
 		return true;
 	}
 
@@ -732,34 +729,34 @@ bool resizeImage(const std::string& path, int maxWidth, int maxHeight)
 		maxWidth = (int)((maxHeight / height) * width);
 	else if(maxHeight == 0)
 		maxHeight = (int)((maxWidth / width) * height);
-	
+
 	if (width <= maxWidth && height <= maxHeight)
 	{
-		FreeImage_Unload(image);
+		SDL_DestroySurface(image);
 		return true;
 	}
-		
-	FIBITMAP* imageRescaled = FreeImage_Rescale(image, maxWidth, maxHeight, FILTER_BILINEAR);
-	FreeImage_Unload(image);
 
-	if(imageRescaled == NULL)
+	SDL_Surface* imageRescaled = SDL_ScaleSurface(image, maxWidth, maxHeight, SDL_SCALEMODE_LINEAR);
+	SDL_DestroySurface(image);
+
+	if(imageRescaled == nullptr)
 	{
-		LOG(LogError) << "Could not resize image! (not enough memory? invalid bitdepth?)";
+		LOG(LogError) << "Could not resize image! " << SDL_GetError();
 		return false;
 	}
 
 	bool saved = false;
-	
-	try
-	{
-		saved = (FreeImage_Save(format, imageRescaled, path.c_str()) != 0);
-	}
-	catch(...) { }
+	if (isJpeg)
+		saved = IMG_SaveJPG(imageRescaled, path.c_str(), 90);
+	else if (isBmp)
+		saved = SDL_SaveBMP(imageRescaled, path.c_str());
+	else
+		saved = IMG_SavePNG(imageRescaled, path.c_str());
 
-	FreeImage_Unload(imageRescaled);
+	SDL_DestroySurface(imageRescaled);
 
 	if(!saved)
-		LOG(LogError) << "Failed to save resized image!";
+		LOG(LogError) << "Failed to save resized image! " << SDL_GetError();
 
 	return saved;
 }

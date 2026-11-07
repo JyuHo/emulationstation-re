@@ -14,8 +14,8 @@ PugiXML
 SDL 2
 	http://www.libsdl.org/
 
-FreeImage
-	http://www.freeimage.sourceforge.net
+SDL_image
+	https://github.com/libsdl-org/SDL_image
 
 FreeType
 	http://www.freetype.org

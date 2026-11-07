@@ -1,7 +1,11 @@
 #include "ImageIO.h"
 
 #include "Log.h"
-#include <FreeImage.h>
+#include <SDL3/SDL_iostream.h>
+#include <SDL3/SDL_surface.h>
+#include <SDL3_image/SDL_image.h>
+#include <algorithm>
+#include <cstdint>
 #include <string.h>
 #include "utils/FileSystemUtil.h"
 #include "utils/StringUtil.h"
@@ -16,6 +20,41 @@
 
 const MaxSizeInfo MaxSizeInfo::Empty;
 
+namespace
+{
+	// Area average (box filter) of an RGBA32 image into a smaller one, as FreeImage's FILTER_BOX did
+	void downscaleBox(const unsigned char* src, size_t srcPitch, size_t sw, size_t sh, unsigned char* dst, size_t dw, size_t dh)
+	{
+		for (size_t dy = 0; dy < dh; dy++)
+		{
+			size_t y0 = dy * sh / dh;
+			size_t y1 = std::max(y0 + 1, ((dy + 1) * sh + dh - 1) / dh);
+
+			for (size_t dx = 0; dx < dw; dx++)
+			{
+				size_t x0 = dx * sw / dw;
+				size_t x1 = std::max(x0 + 1, ((dx + 1) * sw + dw - 1) / dw);
+
+				uint64_t sum[4] = { 0, 0, 0, 0 };
+				for (size_t y = y0; y < y1 && y < sh; y++)
+				{
+					const unsigned char* px = src + y * srcPitch + x0 * 4;
+					for (size_t x = x0; x < x1 && x < sw; x++, px += 4)
+						for (int c = 0; c < 4; c++)
+							sum[c] += px[c];
+				}
+
+				uint64_t count = (std::min(y1, sh) - y0) * (std::min(x1, sw) - x0);
+				unsigned char* out = dst + (dy * dw + dx) * 4;
+				for (int c = 0; c < 4; c++)
+					out[c] = (unsigned char)((sum[c] + count / 2) / count);
+			}
+		}
+	}
+}
+
+// Decodes with SDL_image. Returns RGBA bytes (R, G, B, A in memory), bottom row first as the
+// renderer expects, in a buffer to free with delete[]; subImageIndex picks a frame of an animation.
 unsigned char* ImageIO::loadFromMemoryRGBA32(const unsigned char * data, const size_t size, size_t & width, size_t & height, MaxSizeInfo* maxSize, Vector2i* baseSize, Vector2i* packedSize, int subImageIndex)
 {
 	LOG(LogDebug) << "ImageIO::loadFromMemoryRGBA32";
@@ -23,188 +62,100 @@ unsigned char* ImageIO::loadFromMemoryRGBA32(const unsigned char * data, const s
 	if (baseSize != nullptr)
 		*baseSize = Vector2i(0, 0);
 
-	if (baseSize != nullptr)
+	if (packedSize != nullptr)
 		*packedSize = Vector2i(0, 0);
 
-	std::vector<unsigned char> rawData;
 	width = 0;
 	height = 0;
-	FIMEMORY * fiMemory = FreeImage_OpenMemory((BYTE *)data, (DWORD)size);
-	if (fiMemory != nullptr) 
+
+	if (data == nullptr || size == 0)
+		return nullptr;
+
+	SDL_IOStream* io = SDL_IOFromConstMem(data, size);
+	if (io == nullptr)
+		return nullptr;
+
+	IMG_Animation* animation = nullptr;
+	SDL_Surface* decoded = nullptr;
+	SDL_Surface* frame = nullptr; // decoded, or a frame of animation
+
+	if (subImageIndex >= 0)
 	{
-		//detect the filetype from data
-		FREE_IMAGE_FORMAT format = FreeImage_GetFileTypeFromMemory(fiMemory);
-		if (format != FIF_UNKNOWN && FreeImage_FIFSupportsReading(format))
-		{			
-			// file type is supported. load image
-			FIMULTIBITMAP* fiMultiBitmap = nullptr;
-			FIBITMAP* fiBitmap = nullptr;
-
-			if (subImageIndex < 0)
-				fiBitmap = FreeImage_LoadFromMemory(format, fiMemory);
-			else 
-			{
-				fiMultiBitmap = FreeImage_LoadMultiBitmapFromMemory(format, fiMemory, GIF_PLAYBACK);
-				if (fiMultiBitmap == nullptr)
-					fiBitmap = FreeImage_LoadFromMemory(format, fiMemory);
-				else
-				{
-					fiBitmap = FreeImage_LockPage(fiMultiBitmap, subImageIndex);
-					if (fiBitmap == nullptr)
-						FreeImage_CloseMultiBitmap(fiMultiBitmap);				
-				}
-			}
-			
-			if (fiBitmap != nullptr)
-			{
-				//loaded. convert to 32bit if necessary
-				const int bitsPerPixel = FreeImage_GetBPP(fiBitmap);
-				if ((fiMultiBitmap != nullptr && bitsPerPixel != 32) || (fiMultiBitmap == nullptr && bitsPerPixel != 32 && bitsPerPixel != 24 && bitsPerPixel != 8))
-				{
-					FIBITMAP * fiConverted = FreeImage_ConvertTo32Bits(fiBitmap);
-					if (fiConverted != nullptr)
-					{
-						//free original bitmap data
-						if (fiMultiBitmap != nullptr)
-						{
-							FreeImage_UnlockPage(fiMultiBitmap, fiBitmap, false);
-							FreeImage_CloseMultiBitmap(fiMultiBitmap);
-							fiMultiBitmap = nullptr;
-						}
-						else
-							FreeImage_Unload(fiBitmap);
-
-						fiBitmap = fiConverted;
-					}
-				}
-
-				if (fiBitmap != nullptr)
-				{
-					width = FreeImage_GetWidth(fiBitmap);
-					height = FreeImage_GetHeight(fiBitmap);
-
-					if (baseSize != nullptr)
-						*baseSize = Vector2i(width, height);
-
-					size_t maxX = maxSize == nullptr ? 0 : (size_t) Math::round(maxSize->x());
-					size_t maxY = maxSize == nullptr ? 0 : (size_t) Math::round(maxSize->y());
-
-					if (maxSize != nullptr && maxX > 0 && maxY > 0 && (width > maxX || height > maxY))
-					{
-						Vector2i sz = adjustPictureSize(Vector2i(width, height), Vector2i(maxX, maxY), maxSize->externalZoom());
-
-						if (sz.x() > Renderer::getScreenWidth() || sz.y() > Renderer::getScreenHeight())
-							sz = adjustPictureSize(sz, Vector2i(Renderer::getScreenWidth(), Renderer::getScreenHeight()), false);
-						
-						if (sz.x() != (int)width || sz.y() != (int)height)
-						{
-							LOG(LogDebug) << "ImageIO : rescaling image from " << std::string(std::to_string(width) + "x" + std::to_string(height)).c_str() << " to " << std::string(std::to_string(sz.x()) + "x" + std::to_string(sz.y())).c_str();
-
-							FIBITMAP* imageRescaled = FreeImage_Rescale(fiBitmap, sz.x(), sz.y(), FILTER_BOX);
-
-							if (fiMultiBitmap != nullptr)
-							{
-								FreeImage_UnlockPage(fiMultiBitmap, fiBitmap, false);
-								FreeImage_CloseMultiBitmap(fiMultiBitmap);
-								fiMultiBitmap = nullptr;
-							}
-							else
-								FreeImage_Unload(fiBitmap);
-
-							fiBitmap = imageRescaled;
-
-							width = FreeImage_GetWidth(fiBitmap);
-							height = FreeImage_GetHeight(fiBitmap);
-
-							if (packedSize != nullptr)
-								*packedSize = Vector2i(width, height);
-						}
-					}
-
-					unsigned char* tempData = new unsigned char[width * height * 4];
-											
-					const size_t w = width;
-					const size_t h = height;
-					const int pitch = FreeImage_GetPitch(fiBitmap);
-					const unsigned char* bits = FreeImage_GetBits(fiBitmap);
-					const int bpp = FreeImage_GetBPP(fiBitmap);
-
-					if (bpp == 32)
-					{
-						for (size_t y = 0; y < h; y++)
-						{
-							const unsigned int* argb = (const unsigned int*)(bits + y * pitch);
-							unsigned int* abgr = (unsigned int*)(tempData + y * w * 4);
-
-							for (size_t x = 0; x < w; x++)
-							{
-								const unsigned int c = argb[x];
-								abgr[x] = (c & 0xFF00FF00) | ((c & 0xFF) << 16) | ((c >> 16) & 0xFF);
-							}
-						}
-					}
-					else if (bpp == 24)
-					{
-						for (size_t y = 0; y < h; y++)
-						{
-							const unsigned char* src = bits + y * pitch;
-							unsigned int* abgr = (unsigned int*)(tempData + y * w * 4);
-							for (size_t x = 0; x < w; x++)
-							{
-								const unsigned char r = src[x * 3 + 0];
-								const unsigned char g = src[x * 3 + 1];
-								const unsigned char b = src[x * 3 + 2];
-								abgr[x] = (0xFF << 24) | (r << 16) | (g << 8) | b;
-							}
-						}
-					}
-					else if (bpp == 8)
-					{
-						RGBQUAD* palette = FreeImage_GetPalette(fiBitmap);
-						BOOL hasTransparency = FreeImage_IsTransparent(fiBitmap);
-						BYTE* transTable = FreeImage_GetTransparencyTable(fiBitmap); // alpha par index de palette
-
-						for (size_t y = 0; y < h; y++)
-						{
-							const unsigned char* src = bits + y * pitch;
-							unsigned int* abgr = (unsigned int*)(tempData + y * w * 4);
-							for (size_t x = 0; x < w; x++)
-							{
-								const BYTE idx = src[x];
-								const RGBQUAD& color = palette[idx];
-								const BYTE alpha = (hasTransparency && transTable) ? transTable[idx] : 0xFF;
-								abgr[x] = (alpha << 24) | (color.rgbBlue << 16) | (color.rgbGreen << 8) | color.rgbRed;
-							}
-						}
-					}
-
-					if (fiMultiBitmap)
-					{
-						FreeImage_UnlockPage(fiMultiBitmap, fiBitmap, false);
-						FreeImage_CloseMultiBitmap(fiMultiBitmap);
-					}
-					else
-						FreeImage_Unload(fiBitmap);
-
-					FreeImage_CloseMemory(fiMemory);
-
-					return tempData;
-				}
-			}
-			else
-			{
-				LOG(LogError) << "Error - Failed to load image from memory!";
-			}
-		}
-		else
-		{
-			LOG(LogError) << "Error - File type " << (format == FIF_UNKNOWN ? "unknown" : "unsupported") << "!";
-		}
-		//free FIMEMORY again
-		FreeImage_CloseMemory(fiMemory);
+		animation = IMG_LoadAnimation_IO(io, false);
+		if (animation != nullptr && subImageIndex < animation->count)
+			frame = animation->frames[subImageIndex];
+		else if (animation == nullptr)
+			SDL_SeekIO(io, 0, SDL_IO_SEEK_SET);
 	}
 
-	return nullptr;
+	if (frame == nullptr && animation == nullptr)
+		frame = decoded = IMG_Load_IO(io, false);
+
+	SDL_CloseIO(io);
+
+	SDL_Surface* rgba = frame != nullptr ? SDL_ConvertSurface(frame, SDL_PIXELFORMAT_RGBA32) : nullptr;
+
+	if (decoded != nullptr)
+		SDL_DestroySurface(decoded);
+	if (animation != nullptr)
+		IMG_FreeAnimation(animation);
+
+	if (rgba == nullptr)
+	{
+		LOG(LogError) << "Error - Failed to load image from memory: " << SDL_GetError();
+		return nullptr;
+	}
+
+	width = rgba->w;
+	height = rgba->h;
+
+	if (baseSize != nullptr)
+		*baseSize = Vector2i(width, height);
+
+	size_t outWidth = width;
+	size_t outHeight = height;
+
+	size_t maxX = maxSize == nullptr ? 0 : (size_t) Math::round(maxSize->x());
+	size_t maxY = maxSize == nullptr ? 0 : (size_t) Math::round(maxSize->y());
+
+	if (maxSize != nullptr && maxX > 0 && maxY > 0 && (width > maxX || height > maxY))
+	{
+		Vector2i sz = adjustPictureSize(Vector2i(width, height), Vector2i(maxX, maxY), maxSize->externalZoom());
+
+		if (sz.x() > Renderer::getScreenWidth() || sz.y() > Renderer::getScreenHeight())
+			sz = adjustPictureSize(sz, Vector2i(Renderer::getScreenWidth(), Renderer::getScreenHeight()), false);
+
+		// only ever shrinks: a bigger size here would be the screen limit of an extern zoom
+		if (sz.x() > 0 && sz.y() > 0 && (size_t)sz.x() <= width && (size_t)sz.y() <= height && (sz.x() != (int)width || sz.y() != (int)height))
+		{
+			LOG(LogDebug) << "ImageIO : rescaling image from " << width << "x" << height << " to " << sz.x() << "x" << sz.y();
+			outWidth = sz.x();
+			outHeight = sz.y();
+
+			if (packedSize != nullptr)
+				*packedSize = Vector2i(outWidth, outHeight);
+		}
+	}
+
+	unsigned char* result = new unsigned char[outWidth * outHeight * 4];
+	const unsigned char* pixels = (const unsigned char*)rgba->pixels;
+
+	if (outWidth != width || outHeight != height)
+	{
+		downscaleBox(pixels, rgba->pitch, width, height, result, outWidth, outHeight);
+		flipPixelsVert(result, outWidth, outHeight);
+	}
+	else
+	{
+		for (size_t y = 0; y < height; y++)
+			memcpy(result + (height - 1 - y) * width * 4, pixels + y * rgba->pitch, width * 4);
+	}
+
+	SDL_DestroySurface(rgba);
+
+	width = outWidth;
+	height = outHeight;
+	return result;
 }
 
 void ImageIO::flipPixelsVert(unsigned char* imagePx, const size_t& width, const size_t& height)
@@ -314,68 +265,25 @@ Vector2f ImageIO::getPictureMinSize(Vector2f imageSize, Vector2f maxSize)
 }
 
 bool ImageIO::getMultiBitmapInformation(const std::string& path, int& totalFrames, int& frameTime)
-{	
+{
 	totalFrames = 1;
 	frameTime = 0;
 
-	FREE_IMAGE_FORMAT fileFormat;
-
-	fileFormat = FreeImage_GetFileType(path.c_str());
-
-	if (fileFormat != FIF_GIF && fileFormat != FIF_PNG)
+	IMG_Animation* animation = IMG_LoadAnimation(path.c_str());
+	if (animation == nullptr)
 		return false;
-
-	if (!FreeImage_FIFSupportsReading(fileFormat))
-		return false;
-
-	auto size = Utils::FileSystem::getFileSize(path);
-	if (size < 4)
-		return false;
-
-	unsigned char* data = new unsigned char[size]();
-	if (data == nullptr)
-		return false;
-
-	std::ifstream stream(path, std::ios::binary);
-
-	stream.read((char*)data, size);
-	stream.close();
 
 	bool result = false;
-
-	FIMEMORY* fiMemory = FreeImage_OpenMemory((BYTE *)data, (DWORD)size);
-	if (fiMemory != nullptr)
+	if (animation->count > 1)
 	{
-		auto fiMultiBitmap = FreeImage_LoadMultiBitmapFromMemory(fileFormat, fiMemory);
-		if (fiMultiBitmap != nullptr)
-		{
-			auto fiBitmap = FreeImage_LockPage(fiMultiBitmap, 0);
-			if (fiBitmap != nullptr)
-			{
-				totalFrames = FreeImage_GetPageCount(fiMultiBitmap);
-				if (totalFrames > 1)
-				{
-					FITAG* tagFrameTime = nullptr;
-					FreeImage_GetMetadata(FIMD_ANIMATION, fiBitmap, "FrameTime", &tagFrameTime);
-					if (tagFrameTime != nullptr && FreeImage_GetTagCount(tagFrameTime))
-						frameTime = *static_cast<const uint32_t*>(FreeImage_GetTagValue(tagFrameTime));
+		totalFrames = animation->count;
+		frameTime = animation->delays != nullptr ? animation->delays[0] : 0;
+		if (frameTime <= 0)
+			frameTime = 100;
 
-					if (frameTime == 0)
-						frameTime = 100;
-
-					result = true;
-				}
-
-				FreeImage_UnlockPage(fiMultiBitmap, fiBitmap, false);
-			}
-
-			FreeImage_CloseMultiBitmap(fiMultiBitmap, 0);
-		}
-
-		FreeImage_CloseMemory(fiMemory);
+		result = true;
 	}
 
-	delete[] data;
-
+	IMG_FreeAnimation(animation);
 	return result;
 }

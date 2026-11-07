@@ -105,8 +105,8 @@ else()
     endif()
 endif()
 find_package(Freetype REQUIRED)
-find_package(FreeImage REQUIRED)
 find_package(SDL3 3.2.0 REQUIRED CONFIG COMPONENTS SDL3)
+find_package(SDL3_image 3.2.0 REQUIRED CONFIG)  # image decoding (PNG, JPEG, animated GIF, WebP...)
 find_package(CURL REQUIRED)
 find_package(VLC REQUIRED)
 find_package(RapidJSON REQUIRED)
@@ -211,7 +211,6 @@ endif()
 #add include directories
 set(COMMON_INCLUDE_DIRS
     ${FREETYPE_INCLUDE_DIRS}
-    ${FreeImage_INCLUDE_DIRS}
     ${FRIBIDI_INCLUDE_DIRS}
     ${CURL_INCLUDE_DIR}
     ${VLC_INCLUDE_DIR}
@@ -255,9 +254,9 @@ endif()
 #define libraries and directories
 set(COMMON_LIBRARIES
     ${FREETYPE_LIBRARIES}
-    ${FreeImage_LIBRARIES}
     ${FRIBIDI_LIBRARIES}
     SDL3::SDL3
+    SDL3_image::SDL3_image
     audiodecoders
     ${CURL_LIBRARIES}
     ${VLC_LIBRARIES}

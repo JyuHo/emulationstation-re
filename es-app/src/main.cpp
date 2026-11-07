@@ -29,7 +29,6 @@
 #include "NetworkThread.h"
 #include "scrapers/ThreadedScraper.h"
 #include "ThreadedHasher.h"
-#include <FreeImage.h>
 #include "ImageIO.h"
 #include "components/VideoVlcComponent.h"
 #include <csignal>
@@ -455,10 +454,6 @@ int main(int argc, char* argv[])
 
 	// only show the console on Windows if HideConsole is false
 
-	// call this ONLY when linking with FreeImage as a static library
-#ifdef FREEIMAGE_LIB
-	FreeImage_Initialise();
-#endif
 
 	//if ~/.emulationstation doesn't exist and cannot be created, bail
 	if(!verifyHomeFolderExists())
@@ -764,10 +759,6 @@ int main(int argc, char* argv[])
 	SystemData::deleteSystems();
 	Scripting::exitScriptingEngine();
 
-	// call this ONLY when linking with FreeImage as a static library
-#ifdef FREEIMAGE_LIB
-	FreeImage_DeInitialise();
-#endif
 	
 	// Delete ViewController
 	while (window.peekGui() != nullptr)
