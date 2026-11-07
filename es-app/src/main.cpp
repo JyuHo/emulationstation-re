@@ -338,8 +338,10 @@ void signalHandler(int signum)
 
 	Log::flush();
 
-	// cleanup and close up stuff here  
-	exit(signum);
+	// Die with the signal: exit() would run the static destructors over a crashed or
+	// half-running ES, and they release textures and fonts the renderer no longer has.
+	signal(signum, SIG_DFL);
+	raise(signum);
 }
 
 void playVideo()
@@ -441,9 +443,8 @@ int main(int argc, char* argv[])
 	// signal(SIGABRT, signalHandler);
 	signal(SIGFPE, signalHandler);
 	signal(SIGILL, signalHandler);
-	signal(SIGINT, signalHandler);
 	signal(SIGSEGV, signalHandler);
-	// signal(SIGTERM, signalHandler);
+	// SIGINT and SIGTERM are left to SDL, which turns them into SDL_EVENT_QUIT for a clean shutdown
 
 	srand((unsigned int)time(NULL));
 
