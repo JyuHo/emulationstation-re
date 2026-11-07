@@ -819,46 +819,6 @@ bool GuiMenu::checkNetwork()
 	return true;
 }
 
-// Keyboard helper function that parses output "code Description" into a pair { "code", "Description" }
-static std::vector<std::pair<std::string, std::string>> getScriptOutput(const std::string& command)
-{
-	std::vector<std::pair<std::string, std::string>> results;
-	std::array<char, 128> buffer;
-	std::string result;
-	auto closePipe = [](FILE* f) { pclose(f); };
-	std::unique_ptr<FILE, decltype(closePipe)> pipe(popen(command.c_str(), "r"), closePipe);
-	if (!pipe) return results;
-
-	while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
-		result += buffer.data();
-	}
-
-	std::stringstream ss(result);
-	std::string line;
-	while (std::getline(ss, line))
-	{
-		// Trim newline chars
-		if (!line.empty() && line.back() == '\n') line.pop_back();
-		if (!line.empty() && line.back() == '\r') line.pop_back();
-		if (line.empty()) continue;
-
-		// Find first space: split "code" and "Description"
-		size_t splitPos = line.find(' ');
-		if (splitPos != std::string::npos)
-		{
-			std::string code = line.substr(0, splitPos);
-			std::string name = line.substr(splitPos + 1);
-
-			// Trim potential leading whitespace from name
-			size_t first = name.find_first_not_of(' ');
-			if (first != std::string::npos) name = name.substr(first);
-
-			results.push_back({ code, name });
-		}
-	}
-	return results;
-}
-
 void GuiMenu::openSystemSettings()
 {
 	Window *window = mWindow;
@@ -935,89 +895,66 @@ void GuiMenu::openSystemSettings()
 		}
 	});
 
-	// Keyboard layout & variant
-
-	std::string curLayout = SystemConf::getInstance()->get("system.kblayout");
-	if (curLayout.empty()) curLayout = "us";
-
-	std::string curVariant = SystemConf::getInstance()->get("system.kbvariant");
-	if (curVariant.empty()) curVariant = "none";
-
-	auto keyboard_layout = std::make_shared<OptionListComponent<std::string>>(window, _("KEYBOARD LAYOUT"), false);
-	auto keyboard_variant = std::make_shared<OptionListComponent<std::string>>(window, _("KEYBOARD VARIANT"), false);
-
-	// Populate Layouts
-	auto layouts = getScriptOutput("/usr/bin/batocera-keyboard list-layouts");
-	bool layoutFound = false;
-
-	for (const auto& l : layouts)
+	// Keyboard layout & variant, as the system has them (localectl)
+	if (SystemServices::Keyboard::isAvailable())
 	{
-		bool isSelected = (l.first == curLayout);
-		if (isSelected) layoutFound = true;
-		keyboard_layout->add(l.second, l.first, isSelected);
-	}
-	if (!layoutFound) {
-		keyboard_layout->add(curLayout, curLayout, true);
-	}
+		std::string curLayout = SystemServices::Keyboard::currentLayout();
+		if (curLayout.empty()) curLayout = "us";
+		std::string curVariant = SystemServices::Keyboard::currentVariant();
 
-	// Populate Variants
-	auto populateVariants = [keyboard_variant, curVariant](std::string layoutCode) {
-		keyboard_variant->clear();
-		bool noneSelected = (curVariant == "none" || curVariant.empty());
-		keyboard_variant->add(_("NONE"), "none", noneSelected);
+		auto keyboard_layout = std::make_shared<OptionListComponent<std::string>>(window, _("KEYBOARD LAYOUT"), false);
+		auto keyboard_variant = std::make_shared<OptionListComponent<std::string>>(window, _("KEYBOARD VARIANT"), false);
 
-		auto variants = getScriptOutput("/usr/bin/batocera-keyboard list-variants " + layoutCode);
-		bool variantFound = false;
-		for (const auto& v : variants)
+		// Entries are "code\tlabel"
+		auto split = [](const std::string& entry) { auto tab = entry.find('\t'); return std::make_pair(entry.substr(0, tab), entry.substr(tab + 1)); };
+
+		bool layoutFound = false;
+		for (const auto& entry : SystemServices::Keyboard::layouts())
 		{
-			bool isSelected = (v.first == curVariant);
-			if (isSelected) variantFound = true;
-			keyboard_variant->add(v.second, v.first, isSelected);
+			auto [code, label] = split(entry);
+			layoutFound |= code == curLayout;
+			keyboard_layout->add(label, code, code == curLayout);
 		}
+		if (!layoutFound)
+			keyboard_layout->add(curLayout, curLayout, true);
 
-		if (!variantFound && !noneSelected) {
-			keyboard_variant->selectFirstItem();
-		}
-		keyboard_variant->invalidate();
-	};
-
-	populateVariants(curLayout);
-
-	// Callback for layout change
-	keyboard_layout->setSelectedChangedCallback([populateVariants, keyboard_variant](std::string newLayout) {
-		keyboard_variant->clear();
-		keyboard_variant->add(_("NONE"), "none", true);
-
-		auto variants = getScriptOutput("/usr/bin/batocera-keyboard list-variants " + newLayout);
-		for (const auto& v : variants)
+		// "" is the layout without variant
+		auto populateVariants = [keyboard_variant, split](const std::string& layout, const std::string& selected)
 		{
-			keyboard_variant->add(v.second, v.first, false);
-		}
-		keyboard_variant->selectFirstItem();
-		keyboard_variant->invalidate();
-	});
+			auto variants = SystemServices::Keyboard::variants(layout);
+			bool found = std::any_of(variants.cbegin(), variants.cend(), [&](const std::string& entry) { return split(entry).first == selected; });
 
-	std::string kbHelpText = _("Select the physical keyboard layout. A reboot may be required for changes to take full effect.");
-
-	s->addWithDescription(_("KEYBOARD LAYOUT"), kbHelpText, keyboard_layout);
-	s->addWithDescription(_("KEYBOARD VARIANT"), kbHelpText, keyboard_variant);
-
-	s->addSaveFunc([keyboard_layout, keyboard_variant, s] {
-		if (keyboard_layout->changed() || keyboard_variant->changed())
-		{
-			std::string selLayout = keyboard_layout->getSelected();
-			std::string selVariant = keyboard_variant->getSelected();
-
-			std::string cmd = "/usr/bin/batocera-keyboard set \"" + selLayout + "\" \"" + selVariant + "\"";
-			if (system(cmd.c_str()) == 0) {
-				SystemConf::getInstance()->set("system.kblayout", selLayout);
-				SystemConf::getInstance()->set("system.kbvariant", selVariant);
-
-				// Trigger the standard "Reboot Required" notification on menu exit
-				s->setVariable("reboot", true);
+			keyboard_variant->clear();
+			keyboard_variant->add(_("NONE"), "", !found);
+			for (const auto& entry : variants)
+			{
+				auto [code, label] = split(entry);
+				keyboard_variant->add(label, code, found && code == selected);
 			}
-		}
-	});
+			keyboard_variant->invalidate();
+		};
+
+		populateVariants(curLayout, curVariant);
+		keyboard_layout->setSelectedChangedCallback([populateVariants](const std::string& layout) { populateVariants(layout, ""); });
+
+		std::string kbHelpText = _("Select the physical keyboard layout. A reboot may be required for changes to take full effect.");
+		s->addWithDescription(_("KEYBOARD LAYOUT"), kbHelpText, keyboard_layout);
+		s->addWithDescription(_("KEYBOARD VARIANT"), kbHelpText, keyboard_variant);
+
+		s->addSaveFunc([window, keyboard_layout, keyboard_variant, curLayout, curVariant, s]
+		{
+			std::string layout = keyboard_layout->getSelected();
+			std::string variant = keyboard_variant->getSelected();
+			if (layout == curLayout && variant == curVariant)
+				return;
+
+			bool appliedNow = false;
+			if (!SystemServices::Keyboard::set(layout, variant, &appliedNow))
+				window->displayNotificationMessage(_U("\uF071  ") + _("UNABLE TO CHANGE THE KEYBOARD LAYOUT"));
+			else if (!appliedNow)
+				s->setVariable("reboot", true);
+		});
+	}
 
 	// Timezone
 	if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::ScriptId::TIMEZONES))
