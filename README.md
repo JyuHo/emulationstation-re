@@ -1,73 +1,29 @@
-EmulationStation
-================
+EmulationStation-RE
+===================
 
-EmulationStation is a cross-platform graphical front-end for emulators with controller navigation.
+[![Build](https://github.com/JyuHo/emulationstation-re/actions/workflows/release.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/release.yml)
+[![Latest release](https://img.shields.io/github/v/release/JyuHo/emulationstation-re)](https://github.com/JyuHo/emulationstation-re/releases/latest)
 
-Building
-========
+EmulationStation-RE is a graphical front-end for emulators with controller navigation, for
+Linux only. It started from the Batocera fork of EmulationStation and was reworked:
 
-EmulationStation-RE targets Linux only, on two platforms:
+* **C++23 and SDL3** (SDL 3.2+ and SDL_image 3.2+), with built-in audio decoding (MP3, Ogg Vorbis, FLAC, WAV) instead of SDL_mixer.
+* **One OpenGL renderer**, built for desktop OpenGL 3.3 core (x86_64) or for OpenGL ES 3.x (Raspberry Pi 4 and later).
+* **XDG folders**: settings in `~/.config`, data in `~/.local/share`, cache, logs and runtime files in their own XDG folders (see [Where files live](#where-files-live)).
+* **es-launcher**: native C++ generators that configure each emulator (controllers, video, per-game options) and build the command that starts it, in place of Batocera's Python `batocera-launch` (see [Game launcher](#game-launcher)).
+* **Emulator and theme catalog**: the **Emulator catalog** menu and **Updates & downloads > Themes** install emulators, libretro cores and themes listed by [es-re-catalog](https://github.com/JyuHo/es-re-catalog).
+* **Updates from GitHub releases**: Arch Linux and Debian packages are published for each `vX.Y.Z` tag, and ES installs them from **Updates & downloads > Check for updates** (see [Installing and running](#installing-and-running)).
+* **Web server** on port 1234, for local tools and remote control. It only listens on `127.0.0.1` unless **Enable public web API access** is turned on, then it answers on `http://<host>:1234`.
 
-* x86_64 (Arch Linux / CachyOS)
-* Raspberry Pi 4 and later (Armbian trixie)
+Supported platforms:
 
-The code is built as C++23, so you need GCC 13+ or Clang 18+ and CMake 3.25+. You also need SDL 3.2+, SDL_image 3.2+, FreeType, cURL, RapidJSON, LibVLC, ALSA and gettext. FriBidi, libudev and libcec are optional. Audio decoding (MP3, Ogg Vorbis, FLAC, WAV) is built in, so SDL_mixer is not needed. The `fonts-droid-fallback` package (or equivalent) provides fallback fonts for Chinese/Japanese/Korean characters at run time.
-
-**On Arch Linux / CachyOS:**
-```bash
-sudo pacman -S --needed base-devel cmake ninja sdl3 sdl3_image freetype2 curl \
-  rapidjson vlc alsa-lib gettext fribidi libcec zlib
-```
-
-**On Armbian trixie / Debian:**
-```bash
-sudo apt-get install build-essential cmake ninja-build libsdl3-dev \
-  libsdl3-image-dev libfreetype-dev libcurl4-openssl-dev rapidjson-dev libvlc-dev \
-  libasound2-dev libgles-dev libgl-dev libudev-dev libfribidi-dev libcec-dev zlib1g-dev gettext \
-  fonts-droid-fallback
-```
-
-This repository uses a git submodule:
-
-```bash
-git clone --recursive https://github.com/JyuHo/emulationstation-re.git
-```
-
-or, in an existing clone, `git submodule update --init`.
-
-Then configure and build:
-
-```bash
-# x86_64, desktop OpenGL 3.3 core
-cmake -S . -B build -G Ninja -DGL=ON -DCMAKE_BUILD_TYPE=Release
-# Raspberry Pi 4 and later, OpenGL ES 3.x
-cmake -S . -B build -G Ninja -DGLES3=ON -DCMAKE_BUILD_TYPE=Release
-
-cmake --build build
-```
-
-There is a single renderer, built either for desktop OpenGL 3.3 core (`GL`) or
-for OpenGL ES 3.x (`GLES3`). When neither option is given, ARM builds pick
-`GLES3` and the others pick `GL`.
-
-Everything the build produces stays in the build folder, nothing is written to the
-source tree: `build/emulationstation`, `build/locale/<lang>/LC_MESSAGES/*.mo` and a
-`build/resources` link to the source resources. Translations are only compiled when
-gettext (`msgfmt`) is installed. To refresh the `.pot` template and the `.po` files
-after changing strings in the code, run `cmake --build build --target i18n-update`.
-
-Game launcher
--------------
-
-`es-launcher/` holds the game launcher: it configures each emulator (controllers, video,
-per-game options) and builds the command that starts it, as Batocera's `batocera-launch` does.
-It is licensed under the LGPL 3.0 or later, unlike the rest of the code (MIT), and is built as a
-shared library, `libes-launcher.so`. See [es-launcher/README.md](es-launcher/README.md).
+* x86_64 (Arch Linux / CachyOS), OpenGL 3.3 core
+* Raspberry Pi 4 and later (Armbian / Debian trixie, arm64), OpenGL ES 3.x
 
 Installing and running
 ======================
 
-Each `v*` tag publishes a [release](https://github.com/JyuHo/emulationstation-re/releases) with
+Each `vX.Y.Z` tag publishes a [release](https://github.com/JyuHo/emulationstation-re/releases) with
 an Arch Linux package (x86_64, OpenGL) and Debian trixie packages (amd64 with OpenGL, arm64 with
 OpenGL ES for the Raspberry Pi 4 and later), plus their `SHA256SUMS`. ES's update menu only sees the latest *full* release: GitHub leaves
 pre-releases out of `releases/latest`.
@@ -84,14 +40,16 @@ release's `SHA256SUMS` and installs it with pacman or apt, run as root by `pkexe
 policy lets the active local session do this without a password; it needs `curl` and `pkexec`
 (package `polkit` on Arch, `pkexec` on Debian).
 
-The version comes from the tag (`git describe` for other builds, or `-DES_VERSION=<version>`).
-To make the packages yourself: `ES_VERSION=<version> makepkg -s` in `packaging/arch`, or configure
-with `-DCMAKE_INSTALL_PREFIX=/usr`, build, and run `cpack` in the build folder for the `.deb`.
+The release packages are built without any [API key](#api-keys), so the scrapers and services
+that need one (ScreenScraper, TheGamesDB, HfsDB, RetroAchievements) are not available in them.
 
-`cmake --install build` puts the binary in `<prefix>/bin` and the resources in
-`<prefix>/share/emulationstation`. You can also run `./build/emulationstation` straight
-from the build folder without installing; `emulationstation.sh` starts it again when you pick Restart
-in the Quit menu.
+Emulator catalog
+----------------
+
+The **Emulator catalog** menu installs standalone emulators (AppImages, archives or Flathub apps)
+and libretro cores from the catalog published by [es-re-catalog](https://github.com/JyuHo/es-re-catalog):
+it downloads its `catalog.json` and checks every file against the sha256 listed there. Set
+`global.catalog.url` to use another catalog. The format is documented in the es-re-catalog README.
 
 Where files live
 ----------------
@@ -116,6 +74,164 @@ Each `XDG_*` variable falls back to the default shown in brackets.
 The old `~/.emulationstation` folder is no longer read. To keep an existing setup,
 move the settings and `es_*.cfg` files to `~/.config/emulationstation`, and the
 `themes`, `music`, `gamelists` and `collections` folders to `~/.local/share/emulationstation`.
+
+Developing
+==========
+
+Dependencies
+------------
+
+The code is built as C++23, so you need GCC 13+ or Clang 18+ and CMake 3.25+. You also need SDL 3.2+, SDL_image 3.2+, FreeType, cURL, RapidJSON, LibVLC, ALSA and gettext. FriBidi, libudev and libcec are optional. The `fonts-droid-fallback` package (or equivalent) provides fallback fonts for Chinese/Japanese/Korean characters at run time.
+
+**On Arch Linux / CachyOS:**
+```bash
+sudo pacman -S --needed base-devel cmake ninja sdl3 sdl3_image freetype2 curl \
+  rapidjson vlc alsa-lib gettext fribidi libcec zlib
+```
+
+**On Armbian trixie / Debian:**
+```bash
+sudo apt-get install build-essential cmake ninja-build libsdl3-dev \
+  libsdl3-image-dev libfreetype-dev libcurl4-openssl-dev rapidjson-dev libvlc-dev \
+  libasound2-dev libgles-dev libgl-dev libudev-dev libfribidi-dev libcec-dev zlib1g-dev gettext \
+  fonts-droid-fallback
+```
+
+Building
+--------
+
+This repository uses a git submodule:
+
+```bash
+git clone --recursive https://github.com/JyuHo/emulationstation-re.git
+```
+
+or, in an existing clone, `git submodule update --init`.
+
+Then configure and build:
+
+```bash
+# x86_64, desktop OpenGL 3.3 core
+cmake -S . -B build -G Ninja -DGL=ON -DCMAKE_BUILD_TYPE=Release
+# Raspberry Pi 4 and later, OpenGL ES 3.x
+cmake -S . -B build -G Ninja -DGLES3=ON -DCMAKE_BUILD_TYPE=Release
+
+cmake --build build
+```
+
+Use `-DCMAKE_BUILD_TYPE=Debug` for a debug build (the default is `Release`).
+
+Everything the build produces stays in the build folder, nothing is written to the
+source tree: `build/emulationstation`, `build/locale/<lang>/LC_MESSAGES/*.mo` and a
+`build/resources` link to the source resources. Translations are only compiled when
+gettext (`msgfmt`) is installed. To refresh the `.pot` template and the `.po` files
+after changing strings in the code, run `cmake --build build --target i18n-update`.
+
+Running from the build folder
+-----------------------------
+
+There is no need to install: run the binary straight from the build folder, it finds its
+resources through the `build/resources` link.
+
+```bash
+./build/emulationstation --windowed --resolution 1280 720 --debug
+```
+
+`--home <folder>` keeps a test setup apart from your own (for example `--home /tmp/es-test`
+uses `/tmp/es-test/.config/emulationstation` and so on). `emulationstation.sh` runs the binary
+in a loop, so that **Restart** in the Quit menu starts it again.
+
+`cmake --install build` puts the binary in `<prefix>/bin` and the resources in
+`<prefix>/share/emulationstation`.
+
+CMake options
+-------------
+
+| Option | Default | What it does |
+| --- | --- | --- |
+| `GL` | `OFF` | Build the desktop OpenGL 3.3 core renderer |
+| `GLES3` | `OFF` | Build the OpenGL ES 3.x renderer |
+| `ES_TESTS` | `OFF` | Build the es-app unit tests (catalog, updates, system services) |
+| `ES_LAUNCHER_TESTS` | `OFF` (`ON` when es-launcher is built on its own) | Build the es-launcher tests |
+| `ES_VERSION` | from `git describe` | Version shown in ES and given to the packages |
+| `CEC` | `ON` | HDMI-CEC support, when libcec is found |
+| `ENABLE_PULSE` | `OFF` | PulseAudio volume control instead of ALSA |
+| `ENABLE_TTS` | `OFF` | Text to speech with espeak |
+| `ENABLE_FILEMANAGER` | `OFF` | F1 opens a file manager |
+| `DISABLE_KODI` | `OFF` | Remove Kodi from the menu |
+| `USE_SYSTEM_PUGIXML` | `OFF` | Use the system pugixml instead of the bundled one |
+
+`GL` and `GLES3` are mutually exclusive. When neither is given, ARM builds pick `GLES3` and
+the others pick `GL`.
+
+API keys
+--------
+
+Some web services need a developer key, which is compiled into the binary. Each key is a CMake
+variable: when it is not defined, the matching scraper or menu is left out of the build.
+
+| Variable | Service | Value |
+| --- | --- | --- |
+| `SCREENSCRAPER_DEV_LOGIN` | ScreenScraper scraper | URL parameters added to every API call: `devid=<id>&devpassword=<password>` |
+| `SCREENSCRAPER_SOFTNAME` | ScreenScraper | Software name sent with each call, followed by the version (default `Emulationstation`) |
+| `GAMESDB_APIKEY` | TheGamesDB scraper | The API key |
+| `HFS_DEV_LOGIN` | HfsDB scraper (db.hfsplay.fr) | `<user>:<password>` |
+| `CHEEVOS_DEV_LOGIN` | RetroAchievements menu | URL parameters added to every API call: `z=<user>&y=<web API key>`; `z` is also sent as the user agent |
+
+```bash
+cmake -S . -B build -G Ninja -DGL=ON \
+  -DSCREENSCRAPER_DEV_LOGIN="devid=<id>&devpassword=<password>" \
+  -DSCREENSCRAPER_SOFTNAME="EmulationStation-RE" \
+  -DGAMESDB_APIKEY="<key>" \
+  -DHFS_DEV_LOGIN="<user>:<password>" \
+  -DCHEEVOS_DEV_LOGIN="z=<user>&y=<web API key>"
+```
+
+Quote the values: they hold `&`. The keys are stored in `build/CMakeCache.txt` and can be read
+back from the binary, so do not publish a build or a cache made with your own keys. To remove a
+key, run `cmake -U <VARIABLE> build`.
+
+IGDB and ArcadeDB need no build-time key. The IGDB client ID and secret are entered in the
+scraper settings (**Client ID** and **Client secret**, saved as `IGDBClientID` and `IGDBSecret`),
+and so are the user name and password of your own ScreenScraper account, which ES adds to the
+developer login.
+
+Tests
+-----
+
+```bash
+cmake -S . -B build -G Ninja -DGL=ON -DES_TESTS=ON -DES_LAUNCHER_TESTS=ON
+cmake --build build
+ctest --test-dir build --output-on-failure
+```
+
+es-launcher can also be built and tested on its own, without the rest of ES:
+
+```bash
+cmake -S es-launcher -B build-launcher -G Ninja
+cmake --build build-launcher
+ctest --test-dir build-launcher --output-on-failure
+```
+
+Game launcher
+-------------
+
+`es-launcher/` holds the game launcher: it configures each emulator (controllers, video,
+per-game options) and builds the command that starts it, as Batocera's `batocera-launch` does.
+It has native generators for RetroArch, Azahar, Cemu, Dolphin, DuckStation, Eden, PCSX2,
+PPSSPP, RPCS3, xemu and Xenia; an emulator without a generator is started with the command of
+its `es_systems.cfg` entry. es-launcher is licensed under the LGPL 3.0 or later, unlike the rest
+of the code (MIT), and is built as a shared library, `libes-launcher.so`. See
+[es-launcher/README.md](es-launcher/README.md).
+
+Packages
+--------
+
+The version comes from the tag (`git describe` for other builds, or `-DES_VERSION=<version>`).
+To make the packages yourself: `ES_VERSION=<version> makepkg -s` in `packaging/arch`, or configure
+with `-DCMAKE_INSTALL_PREFIX=/usr`, build, and run `cpack` in the build folder for the `.deb`.
+The [release workflow](.github/workflows/release.yml) builds the three packages for every pull
+request and every push to `master`, and publishes them when a `vX.Y.Z` tag is pushed.
 
 Configuring
 ===========
@@ -145,19 +261,20 @@ The new configuration will be added to the `~/.config/emulationstation/es_input.
 You can use `--help` or `-h` to view a list of command-line options. Briefly outlined here:
 ```
 --resolution [width] [height]   try and force a particular resolution
+--monitor [index]               open the window on this monitor
 --gamelist-only                 skip automatic game search, only read from gamelist.xml
 --ignore-gamelist               ignore the gamelist (useful for troubleshooting)
 --draw-framerate                display the framerate
 --no-exit                       don't show the exit option in the menu
 --no-splash                     don't show the splash screen
 --debug                         more logging
---scrape                        scrape using command line interface
 --windowed                      not fullscreen, should be used with --resolution
---fullscreen-borderless			fullscreen, non exclusive.
+--fullscreen-borderless         fullscreen, non exclusive
 --vsync [1/on or 0/off]         turn vsync on or off (default is on)
 --max-vram [size]               Max VRAM to use in Mb before swapping. 0 for unlimited
---force-kid             		Force the UI mode to be Kid
---force-kiosk           		Force the UI mode to be Kiosk
+--anti-aliasing [0, 2 or 4]     set MSAA anti-aliasing to disabled, 2x or 4x
+--force-kid                     Force the UI mode to be Kid
+--force-kiosk                   Force the UI mode to be Kiosk
 --force-disable-filters         Force the UI to ignore applied filters in gamelist
 --home [path]                   build the user folders from this folder
 --help, -h                      summon a sentient, angry tuba
@@ -209,14 +326,12 @@ The `gamelist.xml` file for a system defines metadata for games, such as a name,
 
 If at least one game in a system has an image specified, ES will use the detailed view for that system (which displays metadata alongside the game list).
 
-*You can use ES's [scraping](http://en.wikipedia.org/wiki/Web_scraping) tools to avoid creating a `gamelist.xml` by hand.*  There are two ways to run the scraper:
+*You can use ES's [scraping](http://en.wikipedia.org/wiki/Web_scraping) tools (ScreenScraper, TheGamesDB, HfsDB, IGDB, ArcadeDB; see [API keys](#api-keys) for the ones that need a key at build time) to avoid creating a `gamelist.xml` by hand.*  There are two ways to run the scraper:
 
 * **If you want to scrape multiple games:** press start to open the menu and choose the "SCRAPER" option.  Adjust your settings and press "SCRAPE NOW".
 * **If you just want to scrape one game:** find the game on the game list in ES and press select.  Choose "EDIT THIS GAME'S METADATA" and then press the "SCRAPE" button at the bottom of the metadata editor.
 
 You can also edit metadata within ES by using the metadata editor - just find the game you wish to edit on the gamelist, press Select, and choose "EDIT THIS GAME'S METADATA."
-
-A command-line version of the scraper is also provided - just run emulationstation with `--scrape` *(currently broken)*.
 
 The switch `--ignore-gamelist` can be used to ignore the gamelist and force ES to use the non-detailed view.
 
@@ -226,7 +341,10 @@ If you're writing a tool to generate or parse gamelist.xml files, you should che
 Themes
 ======
 
-By default, EmulationStation will use ES-Carbon. Additional themes can be installed into `~/.local/share/emulationstation/themes`, or system-wide into `/usr/share/emulationstation/themes`.
+Themes can be installed from **Updates & downloads > Themes**, which lists the themes of the
+[es-re-catalog](https://github.com/JyuHo/es-re-catalog) repository (its `themes.json`; set
+`global.themes.url` to use another list). They can also be copied by hand into
+`~/.local/share/emulationstation/themes`, or system-wide into `/usr/share/emulationstation/themes`.
 
 If you want to know more about making your own themes (or editing existing ones), read [THEMES.md](THEMES.md) or check out the [wiki page](https://wiki.batocera.org/write_themes_for_emulationstation).
 

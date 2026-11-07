@@ -4,6 +4,7 @@ name: release
 
 on:
   push:
+    branches: [master]  # keeps the README build badge up to date
     tags: ['v*']
   pull_request:     # every pull request builds and checks the three packages
   workflow_dispatch:
