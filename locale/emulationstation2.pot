@@ -2043,6 +2043,9 @@ msgstr ""
 msgid "ENABLE PUBLIC WEB API ACCESS"
 msgstr ""
 
+msgid "WEB ACCESS PASSWORD"
+msgstr ""
+
 #, c-format
 msgid "Allow public web access API using %s"
 msgstr ""

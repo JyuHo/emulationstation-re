@@ -1,0 +1,45 @@
+/* File manager page (files.html) */
+
+a.toolbarbutton { display: inline-block; text-decoration: none; }
+
+.fm { display: flex; height: calc(100% - 80px); background-color: #202020; color: white; }
+
+.fm-roots { width: 200px; flex-shrink: 0; overflow-y: auto; background-color: #181818; }
+.fm-root { padding: 8px 10px; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fm-root:hover { background-color: #303030; }
+.fm-selected { background-color: #304070; }
+
+.fm-main { flex: 1; overflow-y: auto; padding: 8px 12px; position: relative; }
+.fm-main a { color: #9ab4ff; }
+
+.fm-crumbs { font-size: 13pt; padding: 4px 0 8px 0; }
+.fm-status { min-height: 1.4em; color: #A0A0A0; font-size: 10pt; }
+.fm-error { color: #ff8080; }
+
+.fm-list { width: 100%; border-collapse: collapse; }
+.fm-list th { text-align: left; color: #A0A0A0; font-weight: normal; font-size: 10pt; border-bottom: 1px solid #404040; padding: 4px; }
+.fm-list td { padding: 4px; border-bottom: 1px solid #2a2a2a; }
+.fm-entry:hover { background-color: #303030; }
+.fm-size, .fm-date { color: #A0A0A0; font-size: 10pt; white-space: nowrap; }
+.fm-actions { text-align: right; white-space: nowrap; font-size: 10pt; }
+.fm-actions button, .fm-editor button { background-color: #808080; border: solid 1px #303030; border-radius: 4px; padding: 2px 8px; cursor: pointer; }
+.fm-actions button:hover, .fm-editor button:hover { background-color: #909090; }
+.fm-empty { color: #A0A0A0; text-align: center; padding: 20px; }
+
+.fm-drop { display: none; }
+.fm-dragging { outline: 3px dashed #405080; outline-offset: -6px; }
+.fm-dragging .fm-drop { display: block; position: absolute; top: 40%; left: 0; right: 0; text-align: center; font-size: 16pt; color: #9ab4ff; }
+
+.fm-editor { position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: center; justify-content: center; }
+.fm-editor-box { width: 90%; height: 85%; background-color: #202020; color: white; display: flex; flex-direction: column; border-radius: 6px; padding: 10px; }
+.fm-editor-title { padding-bottom: 6px; }
+.fm-editor textarea { flex: 1; background-color: #101010; color: #e0e0e0; border: 1px solid #404040; font-family: monospace; font-size: 11pt; padding: 6px; resize: none; }
+.fm-editor-buttons { padding-top: 8px; text-align: right; }
+.fm-hint { float: left; color: #A0A0A0; font-size: 9pt; padding-top: 4px; }
+
+@media (max-width: 640px) {
+	.fm { flex-direction: column; }
+	.fm-roots { width: auto; max-height: 30%; }
+	.fm-date { display: none; }
+}
+body { background-color: #202020; }

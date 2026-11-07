@@ -470,6 +470,12 @@ void GuiMenu::openDeveloperSettings()
 	  }
 	});
 
+	// Password of the file manager of the web API, required from the network
+	s->addInputTextRow(_("WEB ACCESS PASSWORD"), Settings::getInstance()->getString("WebAccessPassword"), true, nullptr, [](const std::string& value)
+	{
+		Settings::getInstance()->setString("WebAccessPassword", value);
+	});
+
 	// log level
 	auto logLevel = std::make_shared< OptionListComponent<std::string> >(mWindow, _("LOG LEVEL"), false);
 	std::vector<std::string> modes;

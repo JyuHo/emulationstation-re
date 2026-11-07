@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EmulationStation files</title>
+	<link rel="shortcut icon" href="favicon.png">
+	<link href="main.css" rel="stylesheet">
+	<link href="files.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="title">
+	<img height="24" style="vertical-align: middle;" src="favicon.png">
+	<span>EmulationStation files</span>
+</div>
+
+<!-- Simple client of the file manager API: GET /files/roots, /files/list, /files/download,
+     PUT /files/upload, /files/mkdir, /files/rename, DELETE /files. See es-app/src/services/HttpFileApi.h -->
+
+<div id="toolbar" class="toolbar">
+	<a class="toolbarbutton" href="index.html">Games</a>
+	<input class="toolbarbutton" type="button" value="Upload files" onclick="document.getElementById('picker').click()">
+	<input class="toolbarbutton" type="button" value="New folder" onclick="newFolder()">
+	<input class="toolbarbutton" type="button" value="Reload games" onclick="reloadGames()">
+	<input id="picker" type="file" multiple style="display:none" onchange="uploadFiles(this.files); this.value=''">
+</div>
+
+<div class="fm">
+	<div id="roots" class="fm-roots"></div>
+	<div id="main" class="fm-main">
+		<div id="crumbs" class="fm-crumbs"></div>
+		<div id="status" class="fm-status"></div>
+		<table class="fm-list">
+			<thead><tr><th>Name</th><th class="fm-size">Size</th><th class="fm-date">Modified</th><th></th></tr></thead>
+			<tbody id="entries"></tbody>
+		</table>
+		<div class="fm-drop">Drop files here to upload them to this folder</div>
+	</div>
+</div>
+
+<div id="editor" class="fm-editor" style="display:none">
+	<div class="fm-editor-box">
+		<div class="fm-editor-title"><span id="editorName"></span></div>
+		<textarea id="editorText" spellcheck="false"></textarea>
+		<div class="fm-editor-buttons">
+			<span class="fm-hint">EmulationStation rewrites es_settings.cfg when it exits: change it while ES is stopped, or from the menu.</span>
+			<button onclick="closeEditor()">Cancel</button>
+			<button onclick="saveEditor()">Save</button>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var roots = [];
+var currentRoot = null;
+var currentPath = "";
+var editedPath = null;
+var currentNames = [];
+
+var TEXT_FILES = /\.(cfg|conf|ini|xml|txt|json|cue|m3u|sh|lst|opt|yml|yaml|log)$/i;
+
+function query(root, path, extra) {
+	return "?root=" + encodeURIComponent(root) + "&path=" + encodeURIComponent(path) + (extra || "");
+}
+
+function join(dir, name) {
+	return dir ? dir + "/" + name : name;
+}
+
+function escapeHtml(s) {
+	return String(s).replace(/[&<>"']/g, function(c) {
+		return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+	});
+}
+
+function formatSize(bytes) {
+	var units = ["B", "KB", "MB", "GB", "TB"];
+	var i = 0;
+	while (bytes >= 1024 && i < units.length - 1) { bytes /= 1024; i++; }
+	return (i ? bytes.toFixed(1) : bytes) + " " + units[i];
+}
+
+function setStatus(text, isError) {
+	var el = document.getElementById("status");
+	el.textContent = text || "";
+	el.className = "fm-status" + (isError ? " fm-error" : "");
+}
+
+// Every call goes through here: the browser asks for the password itself when the API answers 401
+function api(method, url, body) {
+	return fetch(url, { method: method, body: body, credentials: "same-origin" }).then(function(res) {
+		if (res.ok)
+			return res;
+
+		return res.json().catch(function() { return {}; }).then(function(json) {
+			throw new Error(json.error || (res.status + " " + res.statusText));
+		});
+	});
+}
+
+function loadRoots() {
+	api("GET", "/files/roots").then(function(res) { return res.json(); }).then(function(list) {
+		roots = list;
+		var out = "";
+		list.forEach(function(root, i) {
+			out += '<div class="fm-root" data-index="' + i + '" title="' + escapeHtml(root.path) + '">' + escapeHtml(root.name) + '</div>';
+		});
+		document.getElementById("roots").innerHTML = out;
+		document.querySelectorAll(".fm-root").forEach(function(el) {
+			el.onclick = function() { openFolder(roots[el.dataset.index].id, ""); };
+		});
+		if (list.length)
+			openFolder(list[0].id, "");
+	}).catch(function(e) { setStatus(e.message, true); });
+}
+
+function openFolder(root, path, keepStatus) {
+	currentRoot = root;
+	currentPath = path;
+
+	document.querySelectorAll(".fm-root").forEach(function(el) {
+		el.classList.toggle("fm-selected", roots[el.dataset.index].id == root);
+	});
+
+	api("GET", "/files/list" + query(root, path)).then(function(res) { return res.json(); }).then(function(data) {
+		showCrumbs();
+		showEntries(data.entries);
+		if (!keepStatus)
+			setStatus("");
+	}).catch(function(e) { setStatus(e.message, true); });
+}
+
+function showCrumbs() {
+	var root = roots.filter(function(r) { return r.id == currentRoot; })[0];
+	var parts = currentPath ? currentPath.split("/") : [];
+	var out = '<a href="#" data-path="">' + escapeHtml(root ? root.name : currentRoot) + '</a>';
+	var path = "";
+	parts.forEach(function(part) {
+		path = join(path, part);
+		out += ' / <a href="#" data-path="' + escapeHtml(path) + '">' + escapeHtml(part) + '</a>';
+	});
+	var crumbs = document.getElementById("crumbs");
+	crumbs.innerHTML = out;
+	crumbs.querySelectorAll("a").forEach(function(a) {
+		a.onclick = function(e) { e.preventDefault(); openFolder(currentRoot, a.dataset.path); };
+	});
+}
+
+function showEntries(entries) {
+	entries.sort(function(a, b) {
+		if (a.dir != b.dir) return a.dir ? -1 : 1;
+		return a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: "base" });
+	});
+
+	currentNames = entries.map(function(entry) { return entry.name; });
+
+	var body = document.getElementById("entries");
+	body.innerHTML = "";
+
+	if (currentPath) {
+		var up = document.createElement("tr");
+		up.className = "fm-entry";
+		up.innerHTML = '<td colspan="4"><a href="#">..</a></td>';
+		up.querySelector("a").onclick = function(e) {
+			e.preventDefault();
+			openFolder(currentRoot, currentPath.split("/").slice(0, -1).join("/"));
+		};
+		body.appendChild(up);
+	}
+
+	entries.forEach(function(entry) {
+		var path = join(currentPath, entry.name);
+		var tr = document.createElement("tr");
+		tr.className = "fm-entry";
+
+		var actions = '';
+		if (!entry.dir) {
+			actions += '<a href="/files/download' + escapeHtml(query(currentRoot, path)) + '">Download</a> ';
+			if (TEXT_FILES.test(entry.name) && entry.size < 2 * 1024 * 1024)
+				actions += '<button data-action="edit">Edit</button> ';
+		}
+		actions += '<button data-action="rename">Rename</button> <button data-action="delete">Delete</button>';
+
+		tr.innerHTML =
+			'<td>' + (entry.dir ? '<a href="#" data-action="open">&#128193; ' + escapeHtml(entry.name) + '</a>' : escapeHtml(entry.name)) + '</td>' +
+			'<td class="fm-size">' + (entry.dir ? "" : formatSize(entry.size)) + '</td>' +
+			'<td class="fm-date">' + (entry.mtime ? new Date(entry.mtime * 1000).toLocaleString() : "") + '</td>' +
+			'<td class="fm-actions">' + actions + '</td>';
+
+		tr.querySelectorAll("[data-action]").forEach(function(el) {
+			el.onclick = function(e) {
+				e.preventDefault();
+				var action = el.dataset.action;
+				if (action == "open") openFolder(currentRoot, path);
+				else if (action == "edit") openEditor(path);
+				else if (action == "rename") renameEntry(entry, path);
+				else if (action == "delete") deleteEntry(entry, path);
+			};
+		});
+
+		body.appendChild(tr);
+	});
+
+	if (!entries.length) {
+		var empty = document.createElement("tr");
+		empty.innerHTML = '<td colspan="4" class="fm-empty">Empty folder</td>';
+		body.appendChild(empty);
+	}
+}
+
+function refresh() {
+	openFolder(currentRoot, currentPath, true);
+}
+
+function newFolder() {
+	var name = prompt("Folder name");
+	if (!name) return;
+	api("PUT", "/files/mkdir" + query(currentRoot, join(currentPath, name)), "").then(refresh).catch(function(e) { setStatus(e.message, true); });
+}
+
+function renameEntry(entry, path) {
+	var name = prompt("New name", entry.name);
+	if (!name || name == entry.name) return;
+	api("PUT", "/files/rename" + query(currentRoot, path, "&to=" + encodeURIComponent(join(currentPath, name))), "")
+		.then(refresh).catch(function(e) { setStatus(e.message, true); });
+}
+
+function deleteEntry(entry, path) {
+	if (!confirm("Delete " + (entry.dir ? "the folder " + entry.name + " and everything in it" : entry.name) + "?"))
+		return;
+	api("DELETE", "/files" + query(currentRoot, path, entry.dir ? "&recursive=1" : ""))
+		.then(refresh).catch(function(e) { setStatus(e.message, true); });
+}
+
+// XMLHttpRequest rather than fetch, for the progress of big ROMs
+function uploadOne(file, overwrite) {
+	return new Promise(function(resolve, reject) {
+		var xhr = new XMLHttpRequest();
+		xhr.open("PUT", "/files/upload" + query(currentRoot, join(currentPath, file.name), overwrite ? "&overwrite=1" : ""));
+		xhr.upload.onprogress = function(e) {
+			if (e.lengthComputable)
+				setStatus("Uploading " + file.name + " : " + Math.round(e.loaded * 100 / e.total) + " %");
+		};
+		xhr.onload = function() {
+			if (xhr.status == 409 && !overwrite && confirm(file.name + " already exists. Replace it?"))
+				return uploadOne(file, true).then(resolve, reject); // added since the folder was listed
+			if (xhr.status >= 200 && xhr.status < 300)
+				return resolve();
+			var message = xhr.status + "";
+			try { message = JSON.parse(xhr.responseText).error; } catch (e) {}
+			reject(new Error(file.name + " : " + message));
+		};
+		xhr.onerror = function() { reject(new Error(file.name + " : upload failed")); };
+		xhr.send(file);
+	});
+}
+
+function uploadFiles(files) {
+	var list = Array.prototype.slice.call(files);
+	var chain = Promise.resolve();
+	list.forEach(function(file) {
+		// Asked before sending, so that a big ROM is not sent twice
+		var exists = currentNames.indexOf(file.name) >= 0;
+		if (exists && !confirm(file.name + " already exists. Replace it?"))
+			return;
+		chain = chain.then(function() { return uploadOne(file, exists); });
+	});
+	chain.then(function() {
+		setStatus(list.length + " file(s) uploaded. Use Reload games to show new ROMs.");
+		refresh();
+	}).catch(function(e) { setStatus(e.message, true); refresh(); });
+}
+
+function openEditor(path) {
+	api("GET", "/files/download" + query(currentRoot, path, "&inline=1")).then(function(res) { return res.text(); }).then(function(text) {
+		editedPath = path;
+		document.getElementById("editorName").textContent = path;
+		document.getElementById("editorText").value = text;
+		document.getElementById("editor").style.display = "";
+	}).catch(function(e) { setStatus(e.message, true); });
+}
+
+function closeEditor() {
+	document.getElementById("editor").style.display = "none";
+	editedPath = null;
+}
+
+function saveEditor() {
+	var text = document.getElementById("editorText").value;
+	api("PUT", "/files/upload" + query(currentRoot, editedPath, "&overwrite=1"), new Blob([text])).then(function() {
+		setStatus(editedPath + " saved");
+		closeEditor();
+		refresh();
+	}).catch(function(e) { setStatus(e.message, true); });
+}
+
+function reloadGames() {
+	api("GET", "/reloadgames").then(function() { setStatus("Reloading games..."); }).catch(function(e) { setStatus(e.message, true); });
+}
+
+var main = document.getElementById("main");
+main.addEventListener("dragover", function(e) { e.preventDefault(); main.classList.add("fm-dragging"); });
+main.addEventListener("dragleave", function() { main.classList.remove("fm-dragging"); });
+main.addEventListener("drop", function(e) {
+	e.preventDefault();
+	main.classList.remove("fm-dragging");
+	if (currentRoot && e.dataTransfer.files.length)
+		uploadFiles(e.dataTransfer.files);
+});
+
+loadRoots();
+</script>
+</body>
+</html>
