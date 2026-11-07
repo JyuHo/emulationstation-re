@@ -572,8 +572,8 @@ std::string ApiSystem::getThemesUrl()
 	if (!systemsetting.empty())
 		return systemsetting;
 
-	// Theme catalogue maintained by Batocera; override with global.themes.url
-	return "https://updates.batocera.org/themes.json";
+	// Published by the es-re-catalog repository, next to the emulator catalog; override with global.themes.url
+	return "https://raw.githubusercontent.com/JyuHo/es-re-catalog/main/themes.json";
 }
 
 std::string ApiSystem::getGitRepositoryDefaultBranch(const std::string& url)
@@ -718,8 +718,11 @@ std::vector<BatoceraTheme> ApiSystem::getBatoceraThemesList()
 			bt.size = jsonInt(item, "size");
 			bt.isInstalled = isThemeInstalled(bt.name, bt.url);
 
+			// A path relative to the list, or a full URL
 			auto screenShot = jsonString(item, "screenshot");
-			if (!screenShot.empty())
+			if (Utils::String::startsWith(screenShot, "https://") || Utils::String::startsWith(screenShot, "http://"))
+				bt.image = screenShot;
+			else if (!screenShot.empty())
 				bt.image = Utils::FileSystem::getParent(url) + "/" + screenShot;
 
 			res.push_back(bt);
