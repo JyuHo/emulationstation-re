@@ -2439,9 +2439,6 @@ msgstr "JOYSTIK DO DPAD"
 msgid "JUMP ON A"
 msgstr "TLAČÍTKO A = NAHORU"
 
-msgid "JUMP ON B"
-msgstr "TLAČÍTKO B = NAHORU"
-
 msgid "Jamaica"
 msgstr "Jamajka"
 

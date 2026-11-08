@@ -354,23 +354,34 @@ def emulator_to_xml(tag: str, attributes: str, info: dict, indent: str):
 # Translations: Batocera's batocera-es-system.po files, reduced to the strings of es_features.cfg
 
 
-def po_entries(path: Path) -> dict[str, str]:
-    """msgid -> msgstr of a .po file, untranslated ones included (plural forms: the first msgstr)"""
+def po_entries(path: Path, obsolete: bool = False) -> dict[str, str]:
+    """msgid -> msgstr of a .po file, untranslated ones included (plural forms: the first msgstr).
+    With obsolete: the messages msgfmt would see defined twice next to ours, that is the ones
+    without a msgctxt, including those commented out with #~ (msgfmt still counts them)."""
     entries: dict[str, str] = {}
     msgid = msgstr = None
     current = None
+    has_context = False
 
     def unquote(s: str) -> str:
         return s.strip()[1:-1].encode('utf-8').decode('unicode_escape').encode('latin-1').decode('utf-8')
 
     def flush():
-        if msgid is not None and msgstr is not None:
+        if msgid is not None and msgstr is not None and not (obsolete and has_context):
             entries.setdefault(msgid, msgstr)
 
     for line in path.read_text(encoding='utf-8').splitlines():
         line = line.strip()
-        if line.startswith('msgid '):
+        if obsolete and line.startswith('#~'):
+            line = line[2:].strip()
+        if line.startswith('msgctxt '):
             flush()
+            msgid = msgstr = current = None
+            has_context = True
+        elif line.startswith('msgid '):
+            if msgstr is not None:
+                flush()
+                has_context = False
             msgid, msgstr, current = unquote(line[6:]), None, 'id'
         elif line.startswith('msgstr ') or line.startswith('msgstr[0] '):
             msgstr, current = unquote(line.split(' ', 1)[1]), 'str'
@@ -383,6 +394,7 @@ def po_entries(path: Path) -> dict[str, str]:
         elif not line:
             flush()
             msgid = msgstr = current = None
+            has_context = False
     flush()
     return entries
 
@@ -419,8 +431,9 @@ def write_translations(batocera: Path, strings: set[str]) -> int:
         if not es_po.exists():
             continue
 
-        # msgfmt refuses a msgid defined twice: leave out the strings ES already has
-        known = set(po_entries(es_po)) | {''}
+        # msgfmt refuses a msgid defined twice, even an obsolete one: leave out the strings ES
+        # already has
+        known = set(po_entries(es_po, obsolete=True)) | {''}
         entries = {k: v for k, v in sorted(po_entries(po).items()) if k in strings and k not in known and v}
         target = PO_OUTPUT / f'{lang}.po'
         if not entries:
