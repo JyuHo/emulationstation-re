@@ -13,10 +13,16 @@ foreach(ES_PO_DIR ${ES_PO_DIRS})
 	set(ES_PO ${ES_PO_DIR}/LC_MESSAGES/emulationstation2.po)
 	set(ES_MO ${CMAKE_BINARY_DIR}/locale/${ES_LANG}/LC_MESSAGES/emulationstation2.mo)
 
+	# the options of es_features.cfg (features/build_es_features.py) go into the same catalog
+	set(ES_PO_FILES ${ES_PO})
+	if(EXISTS ${ES_LOCALE_SRC}/features/${ES_LANG}.po)
+		list(APPEND ES_PO_FILES ${ES_LOCALE_SRC}/features/${ES_LANG}.po)
+	endif()
+
 	add_custom_command(OUTPUT ${ES_MO}
 		COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_BINARY_DIR}/locale/${ES_LANG}/LC_MESSAGES
-		COMMAND ${MSGFMT_EXECUTABLE} -o ${ES_MO} ${ES_PO}
-		DEPENDS ${ES_PO}
+		COMMAND ${MSGFMT_EXECUTABLE} -o ${ES_MO} ${ES_PO_FILES}
+		DEPENDS ${ES_PO_FILES}
 		VERBATIM)
 
 	list(APPEND ES_MO_FILES ${ES_MO})
