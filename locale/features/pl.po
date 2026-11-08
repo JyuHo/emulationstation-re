@@ -9,8 +9,26 @@ msgstr "(FDS) AUTOMATYCZNIE ŁADUJ STRONĘ DYSKU A"
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "(FDS) SZYBKIE ŁADOWANIE DYSKU DO PRZODU"
 
+msgid "0 degrees"
+msgstr "0 stopni"
+
 msgid "0% (Default)"
 msgstr "0% (domyślnie)"
+
+msgid "0.5x"
+msgstr "0.5x"
+
+msgid "0.6x"
+msgstr "0.6x"
+
+msgid "0.7x"
+msgstr "0.7x"
+
+msgid "0.8x"
+msgstr "0.8x"
+
+msgid "0.9x"
+msgstr "0.9x"
 
 msgid "1 second"
 msgstr "1 sekunda"
@@ -18,11 +36,29 @@ msgstr "1 sekunda"
 msgid "1 thread"
 msgstr "1 wątek"
 
+msgid "1% (Default)"
+msgstr "1% (domyślnie)"
+
+msgid "1.1x"
+msgstr "1.1x"
+
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
 
 msgid "1.25x Native"
 msgstr "1,25x natywnej"
+
+msgid "1.2x"
+msgstr "1.2x"
+
+msgid "1.3x"
+msgstr "1.3x"
+
+msgid "1.4x"
+msgstr "1.4x"
+
+msgid "1.5x"
+msgstr "1.5x"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -207,6 +243,9 @@ msgstr "28"
 msgid "29th"
 msgstr "29"
 
+msgid "2X"
+msgstr "2x"
+
 msgid "2nd"
 msgstr "2"
 
@@ -290,6 +329,9 @@ msgstr "ADAPTER DLA 4 GRACZY"
 
 msgid "4 threads"
 msgstr "4 wątki"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5x (1440x1080)"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -453,6 +495,9 @@ msgstr "ALSAThread"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX Super Resolution"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "USTAWIENIE ANAGLIFU (3D)"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "FILTROWANIE ANIZOTROPOWE"
 
@@ -483,6 +528,9 @@ msgstr "ASYNCHRONICZNE STRUMIENIOWANIE TEKSTUR"
 msgid "AUDIO"
 msgstr "AUDIO"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "BUFOR AUDIO (SAMPLE)"
+
 msgid "AUDIO CHANNELS"
 msgstr "KANAŁY AUDIO"
 
@@ -494,6 +542,9 @@ msgstr "FORMAT AUDIO"
 
 msgid "AUDIO LATENCY"
 msgstr "OPÓŹNIENIE DŹWIĘKU"
+
+msgid "AUDIO SYNC"
+msgstr "SYNC AUDIO"
 
 msgid "AUTO FRAMESKIP"
 msgstr "AUTOMATYCZNE PRZESKAKIWANIE KLATEK"
@@ -509,6 +560,9 @@ msgstr "Dodaj kolor do gier na Game Boy'a."
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Dostosowuje współczynnik proporcji filmów Full Motion Video."
+
+msgid "Adjusts the positions of the screens."
+msgstr "Umożliwia regulację położenia ekranów."
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Wpływa na sposób skalowania emulowanych ekranów. Tylko dla renderera OpenGL."
@@ -555,6 +609,12 @@ msgstr "Umożliwia wymianę tekstur przez użytkownika."
 msgid "Always"
 msgstr "Zawsze"
 
+msgid "Always enforce horizontal"
+msgstr "Zawsze wymuszaj poziom"
+
+msgid "Always enforce vertical"
+msgstr "Zawsze wymuszaj pion"
+
 msgid "Analog Controller"
 msgstr "Kontroler Analogowy"
 
@@ -567,11 +627,17 @@ msgstr "Joystick analogowy"
 msgid "Analog Joystick (Flystick)"
 msgstr "Joystick Analogowy (Flystick)"
 
+msgid "Angrylion"
+msgstr "Angrylion"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (najbardziej zgodna)"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Stosuje algorytm antyaliasingu FXAA w celu poprawy jakości wizualnej gier."
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "Zastosuj mnożnik dla wejścia joysticka, aby zmniejszyć lub zwiększyć szybkość reakcji."
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Zastosuj filtr wideo, aby naśladować różne sygnały telewizyjne NTSC."
@@ -591,11 +657,17 @@ msgstr "Paddle Arkanoid'a"
 msgid "Armenia"
 msgstr "Armenia"
 
+msgid "Arrange the dual screen layout."
+msgstr "Rozmieść układ dwóch ekranów."
+
 msgid "As Host (Default)"
 msgstr "Jako host (domyślnie)Jako host (domyślnie)"
 
 msgid "As Is"
 msgstr "Tak jak jest"
+
+msgid "As game specifies"
+msgstr "Zgodnie z grą"
 
 msgid "August"
 msgstr "Sierpień"
@@ -614,6 +686,9 @@ msgstr "Auto standardowe (4:3 z przeplotem / 3:2 progresywne)"
 
 msgid "Autodetect"
 msgstr "Autowykrywanie"
+
+msgid "Automatic"
+msgstr "Automatyczne"
 
 msgid "Automatic ratio"
 msgstr "Proporcje automatyczne"
@@ -747,6 +822,9 @@ msgstr "Tylko dół"
 msgid "Bottom Right"
 msgstr "Prawy dół"
 
+msgid "Bottom only"
+msgstr "Tylko dół"
+
 msgid "Brazil"
 msgstr "Brazylia"
 
@@ -774,6 +852,9 @@ msgstr "FILTR KOLORU"
 msgid "COLOR PALETTE"
 msgstr "PALETA KOLORÓW"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "PALETA KOLORÓW (2D)"
+
 msgid "CONSOLE COUNTRY"
 msgstr "KRAJ KONSOLI"
 
@@ -783,17 +864,35 @@ msgstr "JĘZYK KONSOLI"
 msgid "CONSOLE REGION"
 msgstr "REGION KONSOLI"
 
+msgid "CONSOLE TYPE"
+msgstr "TYP KONSOLI"
+
+msgid "CONTROLLER 1"
+msgstr "KONTROLER 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "TYP KONTROLERA 1"
+
+msgid "CONTROLLER 2"
+msgstr "KONTROLER 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "TYP KONTROLERA 2"
 
+msgid "CONTROLLER 3"
+msgstr "KONTROLER 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "TYP KONTROLERA 3"
 
+msgid "CONTROLLER 4"
+msgstr "KONTROLER 4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "KOMBINACJA KONTROLERÓW"
+
+msgid "CONTROLLER TYPE"
+msgstr "TYP KONTROLERA"
 
 msgid "CONTROLLERS"
 msgstr "KONTROLERY"
@@ -897,6 +996,9 @@ msgstr "Wybierz metodę skalowania w dół."
 msgid "Choose mipmapping type."
 msgstr "Wybierz typ mipmappingu."
 
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "Wybierz wtyczkę graficzną Parallel N64."
+
 msgid "Choose the audio output type."
 msgstr "Wybierz typ wyjścia audio."
 
@@ -999,6 +1101,9 @@ msgstr "USUWANIE PRZEPLOTU"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "CYFROWY PROCESOR DŹWIĘKU"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "WYŁĄCZ 4MB ROZSZERZENIE PAMIĘCI RAM"
+
 msgid "DISABLE CULLING"
 msgstr "WYŁĄCZ CULLING"
 
@@ -1041,8 +1146,14 @@ msgstr "DS (domyślnie)"
 msgid "DSi"
 msgstr "DSi"
 
+msgid "DSi (experiemental)"
+msgstr "DSi (eksperymentalnie)"
+
 msgid "DUAL CORE MODE"
 msgstr "TRYB DWURDZENIOWY"
+
+msgid "DUAL SCREEN"
+msgstr "PODWÓJNY EKRAN"
 
 msgid "DYNAREC CODE INVALIDATION"
 msgstr "UNIEWAŻNIENIE KODU DYNAREC"
@@ -1103,6 +1214,12 @@ msgstr "Kontroler cyfrowy (gamepad)"
 
 msgid "Digital Prime FBX"
 msgstr "Digital Prime FBX"
+
+msgid "Disable"
+msgstr "Wyłącz"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "Wyłącz, aby uzyskać dostęp do ustawień systemu, takich jak czas i język."
 
 msgid "Disabled"
 msgstr "Wyłączone"
@@ -1176,6 +1293,9 @@ msgstr "WŁĄCZ NAKŁADKĘ WYDAJNOŚCI"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "WŁĄCZ KOREKTY PGXP"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "WŁĄCZ PODZIAŁ WIELOKĄTA"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "WŁĄCZ ROZCIĄGANIE CZASU"
 
@@ -1194,6 +1314,12 @@ msgstr "Egipt"
 msgid "El Salvador"
 msgstr "Salwador"
 
+msgid "Emphasize bottom"
+msgstr "Podkreśl dół"
+
+msgid "Emphasize top"
+msgstr "Podkreśl górę"
+
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Emuluj Wiimote Sideway z L2 dla Shake i Nunchuk na R-stick."
 
@@ -1205,6 +1331,9 @@ msgstr "Włącz nakładkę wydajności Cemu."
 
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "Włączenie animacji rozruchu Gamecube i dostępu do BIOS-u (wymaga BIOS-u IPL.bin w odpowiednim katalogu użytkownika)."
+
+msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
+msgstr "Włącz wyświetlanie MelonDS na dwóch ekranach. Niektóre powiązane opcje ekranu zostaną zignorowane."
 
 msgid "Enable No-interlacing Patches."
 msgstr "Włącz poprawki dla usuwania przeplotu."
@@ -1220,6 +1349,9 @@ msgstr "Włączenie widoku gamepada w grach z interakcją na dwóch ekranach. U�
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Włącz powiadomienia o pamięci podręcznej, zdarzeniach kontrolera, itp."
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "Włączenie drugiego ogranicznika dźwięku. Poprawia jakość dźwięku kosztem wydajności."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Włącz procesor DSP Dreamcasta, by uzyskać dokładniejszy dźwięk. Zalecane tylko dla szybkich systemów."
@@ -1287,6 +1419,12 @@ msgstr "Usprawnienie."
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "Usprawnienie. 3 punktowy jest dokładny, standardowy jest lepszy."
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "Usprawnienie. Umożliwia ulepszone dzielenie wielokątów."
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "Usprawnienie. Poprawia wyrazistość odległych tekstur, gdy mapowanie mip jest włączone."
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "Usprawnienie. Zwiększa rozdzielczość renderowania w przypadku proporcji 16:9. Sprawia, że obiekty 3D obiekty są wyraźniejsze."
 
@@ -1335,14 +1473,23 @@ msgstr "Usprawnienie. Podwyższona jakość tekstur."
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "Usprawnienie. Poprawia jakość tekstur (tylko gry 2D)."
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "Usprawnienie. Poprawia jakość tekstur na obiektach 3D."
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "Upewnij się, że każda klatka renderowana przez konsolę jest wyświetlana na ekranie."
 
 msgid "Estonia"
 msgstr "Estonia"
 
+msgid "Even"
+msgstr "Równo"
+
 msgid "Exclusive Ubershaders"
 msgstr "Ekskluzywne Ubershaders"
+
+msgid "External"
+msgstr "Zewnętrzne"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "SZYBKI TRANSFER DYSKU"
@@ -1379,6 +1526,9 @@ msgstr "POMIJANIE RAMEK"
 
 msgid "FRAMESKIP"
 msgstr "POMIJANIE KLATEK"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "FRAMESKIP (TYLKO GL64MK2)"
 
 msgid "FRAMESKIP CONTROL"
 msgstr "KONTROLA POMIJANIA RAMEK"
@@ -1581,6 +1731,12 @@ msgstr "GRAFIKA"
 msgid "GRAPHICS API"
 msgstr "API GRAFIKI"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "WTYCZKA GRAFICZNA"
+
+msgid "Game default"
+msgstr "Domyślne ustawienia gry"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "Adapter GameCube dla Wii U"
 
@@ -1610,6 +1766,12 @@ msgstr "Niemcy"
 
 msgid "Giga"
 msgstr "Giga"
+
+msgid "Glide64"
+msgstr "Glide64"
+
+msgid "Gln64"
+msgstr "Gln64"
 
 msgid "Gray"
 msgstr "Szary"
@@ -1652,6 +1814,9 @@ msgstr "Hong Kong"
 
 msgid "Horizontal"
 msgstr "Poziomo"
+
+msgid "How the window space is distributed between the screens."
+msgstr "Sposób w jaki przestrzeń jest rozdzielana pomiędzy ekrany."
 
 msgid "Hungary"
 msgstr "Węgry"
@@ -1830,8 +1995,14 @@ msgstr "Kirgistan"
 msgid "LAZY TEXTURE CACHING"
 msgstr "LENIWE BUFOROWANIE TEKSTUR"
 
+msgid "LCD FILTER"
+msgstr "FILTR LCD"
+
 msgid "LCD GHOSTING EFFECT"
 msgstr "EFEKT GHOSTINGU LCD"
+
+msgid "LCD GHOSTING EFFECTS"
+msgstr "EFEKTY SMUŻENIA WYŚWIETLACZA LCD"
 
 msgid "LCD Ghosting (Accurate)"
 msgstr "Dokładny"
@@ -1844,6 +2015,9 @@ msgstr "PISTOLET ŚWIETLNY"
 
 msgid "LIGHT GUNS"
 msgstr "PISTOLETY ŚWIETLNE"
+
+msgid "LIMIT FRAME RATE"
+msgstr "OGRANICZ CZĘSTOTLIWOŚĆ ODŚWIEŻANIA"
 
 msgid "LINEAR UPSCALING"
 msgstr "PRZESKALOWANIE LINIOWE"
@@ -1913,6 +2087,9 @@ msgstr "Lokalny adres i port do odbierania pakietów. Pozostaw to puste, jeśli 
 
 msgid "Low"
 msgstr "Słabe"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "Niższe wartości zmniejszają opóźnienia dźwięku i poprawiają."
 
 msgid "Luxembourg"
 msgstr "Luksemburg"
@@ -2016,6 +2193,9 @@ msgstr "Meksyk"
 msgid "Minimum"
 msgstr "Minimalne"
 
+msgid "Mirrored"
+msgstr "Lustrzane"
+
 msgid "Modern Fightstick Style"
 msgstr "Styl Modern Fightstick"
 
@@ -2042,6 +2222,12 @@ msgstr "Mysz"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "Znacznie szybszy niż interpreter (ale może mieć problemy)."
+
+msgid "N64"
+msgstr "N64"
+
+msgid "N64 3-point"
+msgstr "N64 3 punktowy"
 
 msgid "NAT"
 msgstr "NAT"
@@ -2145,6 +2331,9 @@ msgstr "Nie (domyślnie)"
 msgid "No Buffer"
 msgstr "Brak bufora"
 
+msgid "No Limit"
+msgstr "Bez limitu"
+
 msgid "No Ubershaders"
 msgstr "Bez Ubershaders"
 
@@ -2165,6 +2354,9 @@ msgstr "Norwegia"
 
 msgid "November"
 msgstr "Listopad"
+
+msgid "OFF (Default)"
+msgstr "WYŁ. (domyślnie)"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "POWIADOMIENIA EKRANOWE"
@@ -2235,6 +2427,12 @@ msgstr "Tylko obsługiwane gry. Wyższe ustawienia zwiększają wymagania system
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL (Classic)"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL (Compute shader)"
+
 msgid "OpenGL (Default)"
 msgstr "OpenGL (domyślnie)"
 
@@ -2252,6 +2450,9 @@ msgstr "Oryginalny sprzęt (FirebrandX)"
 
 msgid "Original resolution"
 msgstr "Rozdzielczość oryginalna"
+
+msgid "Original screen positions"
+msgstr "Oryginalne pozycje ekranów"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "Podkręć procesor SNES-a (Gradius 3, Super R-Type)."
@@ -2306,6 +2507,9 @@ msgstr "ParaLLEl-RDP"
 
 msgid "Paraguay"
 msgstr "Paragwaj"
+
+msgid "Parallel"
+msgstr "Parallel"
 
 msgid "Partial"
 msgstr "Częściowe"
@@ -2385,6 +2589,9 @@ msgstr "Wstępne ładowanie"
 msgid "Preload requires more RAM."
 msgstr "Wstępne ładowanie wymaga więcej pamięci RAM."
 
+msgid "Produces a clean LCD effect."
+msgstr "Zapewnia czysty efekt LCD."
+
 msgid "Puerto Rico"
 msgstr "Portoryko"
 
@@ -2399,6 +2606,9 @@ msgstr "Katar"
 
 msgid "RDP PLUGIN"
 msgstr "WTYCZKA RDP"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "ODCZYTUJ BUFOR RAMKI CO KLATKĘ (GLIDE64MK2)"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "ZMNIEJSZ MIGOTANIE SPRITE'ÓW"
@@ -2478,6 +2688,9 @@ msgstr "Wymagane przez niektóre gry."
 msgid "Required for certain visual effects."
 msgstr "Wymagane dla niektórych efektów wizualnych."
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "Wymagana dla niektórych efektów w grze (przejścia Banjo Kazooie i DK64), może powodować spowolnienie działania."
+
 msgid "Requires BIOS file to be present."
 msgstr "Wymaga obecności pliku BIOS."
 
@@ -2486,6 +2699,12 @@ msgstr "Resampling (przesunięcie tonalne)"
 
 msgid "Restored Wii VC"
 msgstr "Przywrócona Wii VC"
+
+msgid "RetroPad (Default)"
+msgstr "RetroPad (domyślnie)"
+
+msgid "Rice"
+msgstr "Rice"
 
 msgid "Right Stick"
 msgstr "Prawy joystick"
@@ -2501,6 +2720,9 @@ msgstr "Obracanie ekranu, przydatne w niektórych homebrew'ach do gry w pionie."
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Rotated 4-Way Stick (Q*Bert)"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "Obraca ekrany, aby symulować trzymanie DS-a bokiem."
 
 msgid "Runs \"skinning\" on the CPU instead of the GPU, means that draw calls from the game can more easily be combined, which often improves things."
 msgstr "Uruchamianie \"skinning\" na CPU zamiast GPU oznacza, że wywołania rysowania z gry mogą być łatwiej łączone, co często poprawia sytuację."
@@ -2529,8 +2751,17 @@ msgstr "FILTROWANIE EKRANU"
 msgid "SCREEN SETTINGS"
 msgstr "USTAWIENIA EKRANU"
 
+msgid "SCREEN SIZING"
+msgstr "ROZMIARY EKRANÓW"
+
+msgid "SCREEN SWAP"
+msgstr "ZAMIANA EKRANÓW"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "CZUŁOŚĆ"
 
 msgid "SENSOR BAR POSITION"
 msgstr "POZYCJA SENSOR BARA"
@@ -2567,6 +2798,9 @@ msgstr "POKAŻ UKŁAD EKRANU"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "POMIŃ EFEKTY BUFORA"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "POMIŃ MENU SYSTEMU DS"
 
 msgid "SKIP GPU READBACKS"
 msgstr "POMIŃ ODCZYTY GPU"
@@ -2667,6 +2901,12 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Skalowane"
 
+msgid "Screen Resolution (Default)"
+msgstr "Rozdzielczość ekranu (domyślnie)"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "Wybrany język zostanie użyty, jeśli opcja \"Użyj ustawień oprogramowania\" jest wyłączona lub jeśli plik oprogramowania nie został znaleziony."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "Wybierz typ wprowadzania, aby poruszać się po ekranie dotykowym"
 
@@ -2696,6 +2936,12 @@ msgstr "Wyostrzanie 1"
 
 msgid "Sharp 2"
 msgstr "Wyostrzanie 2"
+
+msgid "Sharpen"
+msgstr "Wyostrz"
+
+msgid "Sharpen More"
+msgstr "Wyostrz więcej"
 
 msgid "Show"
 msgstr "Pokaż"
@@ -2774,6 +3020,9 @@ msgstr "Gładkie tekstury na obiektach 3D."
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "Wygładzanie tekstur na odległych obiektach 3D w oparciu o kąt."
+
+msgid "Smooths out textures on 3D objects."
+msgstr "Wygładza tekstury na obiektach 3D."
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Wygładza ogólny obraz wyświetlany na ekranie. Koryguje położenie między pikselami."
@@ -2859,6 +3108,9 @@ msgstr "Dźwięk przestrzenny 5.1"
 msgid "Surround 7.1"
 msgstr "Dźwięk przestrzenny 7.1"
 
+msgid "Swap the position of the dual displays."
+msgstr "Zamień pozycję podwójnych wyświetlaczy."
+
 msgid "Sweden"
 msgstr "Szwecja"
 
@@ -2895,8 +3147,14 @@ msgstr "ZAMIENNIKI TEKSTUR"
 msgid "TEXTURE SCALING"
 msgstr "SKALOWANIE TEKSTUR"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "WYGŁADZANIE TEKSTURY"
+
 msgid "TEXTURE UPSCALING"
 msgstr "PRZESKALOWANIE TEKSTURY"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "SKALOWANIE TEKSTURY (TYLKO RYŻ)"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "PRZESKALOWANIE TEKSTURY (XBRZ)"
@@ -2942,6 +3200,9 @@ msgstr "Tajlandia"
 
 msgid "The PSP will cull triangles that are outside a 4096x4096 clipping box, and also triangles crossing the Z=1 plane if clipping is enabled."
 msgstr "PSP usunie trójkąty znajdujące się poza obszarem przycinania 4096x4096, a także trójkąty przecinające płaszczyznę Z=1, jeśli przycinanie jest włączone."
+
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "Obszar wokół neutralnej pozycji joysticka, w którym dane wejściowe są ignorowane. Może pomóc ograniczyć niezamierzone ruchy."
 
 msgid "The day within the month of your birthday."
 msgstr "Dzień w miesiącu Twoich urodzin."
@@ -2994,6 +3255,9 @@ msgstr "Tylko góra"
 msgid "Top Right"
 msgstr "Prawa góra"
 
+msgid "Top only"
+msgstr "Tylko góra"
+
 msgid "Touch Screen"
 msgstr "Ekran dotykowy"
 
@@ -3039,6 +3303,9 @@ msgstr "FILTR UPSCALE"
 msgid "USE DSP AUDIO"
 msgstr "UŻYWAJ DŹWIĘKU DSP"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "UŻYJ USTAWIEŃ OPROGRAMOWANIA"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "UŻYJ RAMEK WSTĘPNYCH"
 
@@ -3072,6 +3339,9 @@ msgstr "Do 2 (domyślnie)"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "Przesyła całe tekstury naraz zamiast małych fragmentów. Poprawia wydajność w większości gier."
 
+msgid "Upscale textures on 3D objects."
+msgstr "Skalowanie tekstur na obiektach 3D."
+
 msgid "Uruguay"
 msgstr "Urugwaj"
 
@@ -3084,6 +3354,9 @@ msgstr "Użyj hosta"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Używaj SSAA zamiast MSAA do antyaliasingu. SSAA może wyglądać lepiej, ale ma wyższy koszt wydajności."
 
+msgid "Use language and username from the NDS Firmware"
+msgstr "Użyj języka i nazwy użytkownika z oprogramowania NDS"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Używa ramek wstępnych zamiast run-ahead. Działa tylko wtedy, gdy zmienia się stan kontrolera."
 
@@ -3092,6 +3365,15 @@ msgstr "Służy do eliminacji dryftu joysticka/niepożądanego wejścia. Działa
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "Służy do zwiększania lub zmniejszania czułości joysticka. Wpływa na wszystkie kontrolery."
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "Użyj swoich fizycznych okularów 3D anaglifowych!"
+
+msgid "Useful for N64 style controllers."
+msgstr "Przydatne dla kontrolerów typu N64."
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "Przydatne dla kontrolerów typu N64. Ograniczone skróty klawiszowe dla kontrolerów bez dedykowanego skrótu."
 
 msgid "Useful for speedruns/glitches."
 msgstr "Przydatne przy speedrun'ach/glitch'ach."
@@ -3237,11 +3519,41 @@ msgstr "DOKŁADNOŚĆ ZCULL"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Powiększ, aby ukryć czarne ramki. Granice są różne dla poszczególnych gier."
 
+msgid "bilinear"
+msgstr "dwuliniowe"
+
 msgid "black and white"
 msgstr "czarno-biały"
 
+msgid "black/blue"
+msgstr "czarny/niebieski"
+
+msgid "black/cyan"
+msgstr "czarny/cyjan"
+
+msgid "black/electric cyan"
+msgstr "czarny/elektryczny cyjan"
+
+msgid "black/green"
+msgstr "czarny/zielony"
+
+msgid "black/magenta"
+msgstr "czarny/magenta"
+
+msgid "black/white"
+msgstr "czarny/biały"
+
+msgid "black/yellow"
+msgstr "czarny/żółty"
+
 msgid "blue sea"
 msgstr "morze błękitu"
+
+msgid "bottom only"
+msgstr "tylko dół"
+
+msgid "bottom/top"
+msgstr "dół/góra"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -3258,20 +3570,62 @@ msgstr "gba sp"
 msgid "green forest"
 msgstr "zieleń leśna"
 
+msgid "green/magenta"
+msgstr "zielony/magenta"
+
 msgid "hot desert"
 msgstr "gorące pustynie"
+
+msgid "hybrid bottom ratio 2"
+msgstr "hybryda dół współczynnik 2"
+
+msgid "hybrid bottom ratio 3"
+msgstr "hybryda dół współczynnik 3"
+
+msgid "hybrid top ratio 2"
+msgstr "hybryda góra współczynnik 2"
+
+msgid "hybrid top ratio 3"
+msgstr "hybryda góra współczynnik 3"
+
+msgid "hybrid/bottom"
+msgstr "hybryda/dół"
+
+msgid "hybrid/top"
+msgstr "hybryda/góra"
+
+msgid "left/right"
+msgstr "lewo/prawo"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
+msgid "nearest"
+msgstr "najbliższe"
+
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original"
+msgstr "oryginalnie"
 
 msgid "original gameboy"
 msgstr "oryginalny gameboy"
 
 msgid "pink dreams"
 msgstr "różowe sny"
+
+msgid "red/blue"
+msgstr "czerwony/niebieski"
+
+msgid "red/cyan"
+msgstr "czerwony/cyjan"
+
+msgid "red/electric cyan"
+msgstr "czerwony/elektryczny cyjan"
+
+msgid "right/left"
+msgstr "prawo/lewo"
 
 msgid "royaltea"
 msgstr "royaltea"
@@ -3282,8 +3636,17 @@ msgstr "linie skanowania"
 msgid "standard"
 msgstr "standardowy"
 
+msgid "top only"
+msgstr "tylko góra"
+
+msgid "top/bottom"
+msgstr "góra/dół"
+
 msgid "triangular filter"
 msgstr "filtr trójkątny"
+
+msgid "trilinear"
+msgstr "trójliniowe"
 
 msgid "wave filter"
 msgstr "filtr falowy"
@@ -3302,3 +3665,6 @@ msgstr "xBRZ (domyślnie)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - algorytm wyostrzania w górę, Bicubic - gładki wygląd, Hybrid - wykorzystuje bicubic do gładkich obszarów."
+
+msgid "yellow/blue"
+msgstr "żółty/niebieski"

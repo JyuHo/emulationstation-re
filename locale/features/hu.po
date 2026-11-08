@@ -9,8 +9,26 @@ msgstr "(FDS) AUTOMATIKUSAN BETÖLTI A LEMEZ A OLDALÁT"
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "(FDS) GYORS ELŐTÖLTÉS LEMEZNÉL"
 
+msgid "0 degrees"
+msgstr "0 fok"
+
 msgid "0% (Default)"
 msgstr "0% (alapértelmezett)"
+
+msgid "0.5x"
+msgstr "0.5x"
+
+msgid "0.6x"
+msgstr "0.6x"
+
+msgid "0.7x"
+msgstr "0.7x"
+
+msgid "0.8x"
+msgstr "0.8x"
+
+msgid "0.9x"
+msgstr "0.9x"
 
 msgid "1 second"
 msgstr "1 másodperc"
@@ -18,11 +36,29 @@ msgstr "1 másodperc"
 msgid "1 thread"
 msgstr "1 szál"
 
+msgid "1% (Default)"
+msgstr "1% (alapértelmezett)"
+
+msgid "1.1x"
+msgstr "1.1x"
+
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
 
 msgid "1.25x Native"
 msgstr "1,25x Natív"
+
+msgid "1.2x"
+msgstr "1.2x"
+
+msgid "1.3x"
+msgstr "1.3x"
+
+msgid "1.4x"
+msgstr "1.4x"
+
+msgid "1.5x"
+msgstr "1.5x"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -207,6 +243,9 @@ msgstr "28."
 msgid "29th"
 msgstr "29."
 
+msgid "2X"
+msgstr "2X"
+
 msgid "2nd"
 msgstr "2."
 
@@ -290,6 +329,9 @@ msgstr "4 JÁTÉKOS ADAPTER"
 
 msgid "4 threads"
 msgstr "4 szál"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5x (1440x1080)"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -453,6 +495,9 @@ msgstr "ALSAThread"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX szuperfelbontás"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "ANAGLIF BEÁLLÍTÁS (3D)"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "ANIZOTRÓP SZŰRÉS"
 
@@ -483,6 +528,9 @@ msgstr "ASZINKRON TEXTÚRA streamelés"
 msgid "AUDIO"
 msgstr "AUDIÓ"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "HANGPUFFER (MINTÁK)"
+
 msgid "AUDIO CHANNELS"
 msgstr "AUDIO CSATORNÁK"
 
@@ -494,6 +542,9 @@ msgstr "AUDIÓ FORMÁTUM"
 
 msgid "AUDIO LATENCY"
 msgstr "AUDIÓ KÉSLELTETÉS"
+
+msgid "AUDIO SYNC"
+msgstr "AUDIÓ SZINKRONIZÁLÁS"
 
 msgid "AUTO FRAMESKIP"
 msgstr "AUTO KÉPKOCKAKIHAGYÁS"
@@ -509,6 +560,9 @@ msgstr "Színt ad a Game Boy játékokhoz."
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "A Full Motion Video filmek képarányának beállítása."
+
+msgid "Adjusts the positions of the screens."
+msgstr "A képernyők pozíciójának beállítása."
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Az emulált képernyők méretezését befolyásolja. Csak OpenGL megjelenítő."
@@ -555,6 +609,12 @@ msgstr "Lehetővé teszi a felhasználó által cserélhető textúrákat."
 msgid "Always"
 msgstr "Mindig"
 
+msgid "Always enforce horizontal"
+msgstr "Mindig a vízszintes"
+
+msgid "Always enforce vertical"
+msgstr "Mindig a függőleges"
+
 msgid "Analog Controller"
 msgstr "Analóg vezérlő"
 
@@ -567,11 +627,17 @@ msgstr "Analóg Joystick"
 msgid "Analog Joystick (Flystick)"
 msgstr "Analóg Joystick (Flystick)"
 
+msgid "Angrylion"
+msgstr "Angrylion"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (Leginkább kompatibilis)"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Alkalmazza az FXAA anti-aliasing algoritmust a játékok vizuális minőségének javítása érdekében."
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "Alkalmazzon szorzót a joystick bemenetére, hogy csökkentse vagy növelje a reakciókészséget."
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Alkalmazzon videoszűrőt a különféle NTSC TV-jelek utánozásához."
@@ -591,11 +657,17 @@ msgstr "Arkanoid vezérlő"
 msgid "Armenia"
 msgstr "Örményország"
 
+msgid "Arrange the dual screen layout."
+msgstr "Rendezze el a kétképernyős elrendezést."
+
 msgid "As Host (Default)"
 msgstr "Gazdaként (alapértelmezett)"
 
 msgid "As Is"
 msgstr "Amint az"
+
+msgid "As game specifies"
+msgstr "Ahogy a játék előírja"
 
 msgid "August"
 msgstr "Agusztus"
@@ -614,6 +686,9 @@ msgstr "Auto Standard (4:3 váltottsoros / 3:2 progresszív)"
 
 msgid "Autodetect"
 msgstr "Automatikus észlelés"
+
+msgid "Automatic"
+msgstr "Automatikus"
 
 msgid "Automatic ratio"
 msgstr "Automatikus arány"
@@ -747,6 +822,9 @@ msgstr "Csak alul"
 msgid "Bottom Right"
 msgstr "Jobbra lent"
 
+msgid "Bottom only"
+msgstr "Csak alul"
+
 msgid "Brazil"
 msgstr "Brazília"
 
@@ -774,6 +852,9 @@ msgstr "SZÍNSZŰRŐ"
 msgid "COLOR PALETTE"
 msgstr "SZÍNPALETTA"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "SZÍNPALETTA (2D)"
+
 msgid "CONSOLE COUNTRY"
 msgstr "KONZOL ORSZÁGA"
 
@@ -783,17 +864,35 @@ msgstr "KONZOL NYELVE"
 msgid "CONSOLE REGION"
 msgstr "KONZOL RÉGIÓKONZOL RÉGIÓ"
 
+msgid "CONSOLE TYPE"
+msgstr "KONZOL TÍPUSA"
+
+msgid "CONTROLLER 1"
+msgstr "KONTROLLER 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "VEZÉRLŐ 1 TÍPUS"
+
+msgid "CONTROLLER 2"
+msgstr "KONTROLLER 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "VEZÉRLŐ 2 TÍPUS"
 
+msgid "CONTROLLER 3"
+msgstr "KONTROLLER 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "VEZÉRLŐ 3 TÍPUS"
 
+msgid "CONTROLLER 4"
+msgstr "KONTROLLER 4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "VEZÉRLŐ KOMBINÁCIÓ"
+
+msgid "CONTROLLER TYPE"
+msgstr "KONTROLLER TÍPUS"
 
 msgid "CONTROLLERS"
 msgstr "VEZÉRLŐK"
@@ -897,6 +996,9 @@ msgstr "Válassza ki a csökkentési módszert."
 msgid "Choose mipmapping type."
 msgstr "Válassza ki a mipmapping típusát."
 
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "Válassza a Parallel N64 grafikus bővítményt."
+
 msgid "Choose the audio output type."
 msgstr "Válassza ki a hangkimenet típusát."
 
@@ -999,6 +1101,9 @@ msgstr "DEINTERLACING"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "DIGITÁLIS HANGPROCESSZOR"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "4 MB BŐVÍTÉSI RAM CSOMAG LETILTÁSA"
+
 msgid "DISABLE CULLING"
 msgstr "LESZEDÉS TILTÁSA"
 
@@ -1041,8 +1146,14 @@ msgstr "DS (alapértelmezett)"
 msgid "DSi"
 msgstr "DSi"
 
+msgid "DSi (experiemental)"
+msgstr "DSi (kísérleti)"
+
 msgid "DUAL CORE MODE"
 msgstr "KETTŐS MAG ÜZEMMÓD"
+
+msgid "DUAL SCREEN"
+msgstr "KETTŐS KÉPERNYŐ"
 
 msgid "DYNAREC CODE INVALIDATION"
 msgstr "DYNAREC KÓD ÉRVÉNYTELENÍTÉSE"
@@ -1103,6 +1214,12 @@ msgstr "Digitális vezérlő (Gamepad)"
 
 msgid "Digital Prime FBX"
 msgstr "Digital Prime FBX"
+
+msgid "Disable"
+msgstr "Letiltás"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "Tiltsa le a rendszerbeállítások, például az idő és a nyelv eléréséhez."
 
 msgid "Disabled"
 msgstr "Letiltva"
@@ -1176,6 +1293,9 @@ msgstr "TELJESÍTMÉNY FEDÉS ENGEDÉLYEZÉSE"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "PGXP KORREKCIÓK ENGEDÉLYEZÉSE"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "POLIGON FELOSZTÁS ENGEDÉLYEZÉSE"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "AZ IDŐNYÚJTÁS ENGEDÉLYEZÉSE"
 
@@ -1194,6 +1314,12 @@ msgstr "Egyiptom"
 msgid "El Salvador"
 msgstr "Salvador"
 
+msgid "Emphasize bottom"
+msgstr "Hangsúlyozd az alját"
+
+msgid "Emphasize top"
+msgstr "Hangsúlyozza a tetejét"
+
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Emulálj egy Wiimote Sideway-t L2-vel Shake-hez és Nunchukhoz R-stick-en."
 
@@ -1205,6 +1331,9 @@ msgstr "Engedélyezze a Cemu teljesítményfedvényét."
 
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "Engedélyezze a Gamecube boot animációt és a BIOS hozzáférést (IPL.bin BIOS szükséges a megfelelő felhasználói könyvtárban)."
+
+msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
+msgstr "Engedélyezd a MelonDS két képernyőn való megjelenítését. Néhány kapcsolódó képernyőbeállítás figyelmen kívül marad."
 
 msgid "Enable No-interlacing Patches."
 msgstr "Engedélyezze a sorváltás nélküli javításokat."
@@ -1220,6 +1349,9 @@ msgstr "A játékvezérlő nézet engedélyezése olyan játékoknál, amelyek k
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Értesítések engedélyezése a gyorsítótárról, a vezérlő eseményekről stb."
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "Engedélyezze a második hangkorlátozót. Javítja a hangminőséget a teljesítmény árán."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Engedélyezze a Dreamcast DSP-t a pontosabb hangzás érdekében. Csak gyors rendszerekhez ajánlott."
@@ -1287,6 +1419,12 @@ msgstr "Fejlesztés."
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "Fokozás. A 3 pontos az N64-re, a szabvány jobb."
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "Fejlesztés. Lehetővé teszi a javított poligonfelosztást."
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "Fokozás. Javítja a távoli textúrák tisztaságát, ha a mip-leképezés engedélyezve van."
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "Fokozás. Növelje a renderelési felbontást 16:9 arányban. Világosabbá teszi a 3D objektumokat."
 
@@ -1335,14 +1473,23 @@ msgstr "Fokozás. Textúrák felskálázása."
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "Fejlesztés. Képernyőtextúrák feljavítása (csak 2D-s játékok)."
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "Fokozás. A 3D objektumok textúráit feljavítja."
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "Biztosítsa, hogy a konzol által renderelt minden képkocka megjelenjen a képernyőn."
 
 msgid "Estonia"
 msgstr "Észtország"
 
+msgid "Even"
+msgstr "Egyenletes"
+
 msgid "Exclusive Ubershaders"
 msgstr "Exkluzív Ubershaderek"
+
+msgid "External"
+msgstr "Külső"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "GYORS LEMEZÁTVITELI SEBESSÉG"
@@ -1379,6 +1526,9 @@ msgstr "FRAME KIHAGYÁS"
 
 msgid "FRAMESKIP"
 msgstr "KÉPKOCKAKIHAGYÁS"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "FRAMESKIP (CSAK GL64MK2)"
 
 msgid "FRAMESKIP CONTROL"
 msgstr "KÉPKOCKA-KIHAGYÁS VEZÉRLÉSE"
@@ -1581,6 +1731,12 @@ msgstr "GRAFIKA"
 msgid "GRAPHICS API"
 msgstr "GRAFIKUS API"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "GRAFIKUS PLAUGIN"
+
+msgid "Game default"
+msgstr "Játék alapértelmezett"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "GameCube adapter Wii U-hoz"
 
@@ -1610,6 +1766,12 @@ msgstr "Németország"
 
 msgid "Giga"
 msgstr "Giga"
+
+msgid "Glide64"
+msgstr "Glide64"
+
+msgid "Gln64"
+msgstr "Gln64"
 
 msgid "Gray"
 msgstr "Szürke"
@@ -1652,6 +1814,9 @@ msgstr "Hong Kong"
 
 msgid "Horizontal"
 msgstr "Vízszintes"
+
+msgid "How the window space is distributed between the screens."
+msgstr "Az ablakfelület elosztása a képernyők között."
 
 msgid "Hungary"
 msgstr "Magyarország"
@@ -1830,8 +1995,14 @@ msgstr "Kirgizisztán"
 msgid "LAZY TEXTURE CACHING"
 msgstr "LUSTA TEXTÚRA GYORSÍTÓTÁROLÁSA"
 
+msgid "LCD FILTER"
+msgstr "LCD FILTER"
+
 msgid "LCD GHOSTING EFFECT"
 msgstr "LCD SZELLEMHATÁS"
+
+msgid "LCD GHOSTING EFFECTS"
+msgstr "LCD GHOSTING EFFECTS"
 
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD szellemkép (pontos)"
@@ -1844,6 +2015,9 @@ msgstr "FÉNYPUSKA"
 
 msgid "LIGHT GUNS"
 msgstr "FÉNYPISZTOLYOK"
+
+msgid "LIMIT FRAME RATE"
+msgstr "KÉPKOCKA SEBESSÉG KORLÁTOZÁSA"
 
 msgid "LINEAR UPSCALING"
 msgstr "LINEÁRIS FELSKÁLÁZÁS"
@@ -1913,6 +2087,9 @@ msgstr "Helyi cím és port a csomagok fogadásához. Hagyja üresen, ha manuál
 
 msgid "Low"
 msgstr "Alacsony"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "Az alacsonyabb értékek csökkentik a hang késését és javítják a teljesítményt, de hangproblémákat okozhatnak."
 
 msgid "Luxembourg"
 msgstr "Luxemburg"
@@ -2016,6 +2193,9 @@ msgstr "Mexikó"
 msgid "Minimum"
 msgstr "Minimum"
 
+msgid "Mirrored"
+msgstr "Tükrözött"
+
 msgid "Modern Fightstick Style"
 msgstr "Modern Fightstick Stílus"
 
@@ -2042,6 +2222,12 @@ msgstr "Egér"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "Sokkal gyorsabb, mint a fordító (de lehetnek problémák)."
+
+msgid "N64"
+msgstr "N64"
+
+msgid "N64 3-point"
+msgstr "N64 3-point"
 
 msgid "NAT"
 msgstr "NAT"
@@ -2145,6 +2331,9 @@ msgstr "Nem (alapértelmezett)"
 msgid "No Buffer"
 msgstr "Nincs puffer"
 
+msgid "No Limit"
+msgstr "Nincs korlát"
+
 msgid "No Ubershaders"
 msgstr "Nincsenek Ubershaderek"
 
@@ -2165,6 +2354,9 @@ msgstr "Norvégia"
 
 msgid "November"
 msgstr "November"
+
+msgid "OFF (Default)"
+msgstr "KI (Alapértelmezett)"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "KÉPERNYŐN MEGJELENŐ ÉRTESÍTÉSEK & ÉRTESÍTÉSEK"
@@ -2235,6 +2427,12 @@ msgstr "Csak támogatott játékok. A magasabb beállítások növelik a rendsze
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL (Klasszikus)"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL (Számítási shader)"
+
 msgid "OpenGL (Default)"
 msgstr "OpenGL (alapértelmezett)"
 
@@ -2252,6 +2450,9 @@ msgstr "Eredeti hardver (FirebrandX)"
 
 msgid "Original resolution"
 msgstr "Eredeti felbontás"
+
+msgid "Original screen positions"
+msgstr "Eredeti képernyőpozíciók"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "Túlhajtja az SNES CPU-t (Gradius 3, Super R-Type)."
@@ -2306,6 +2507,9 @@ msgstr "ParaLLEl-RDP"
 
 msgid "Paraguay"
 msgstr "Paraguay"
+
+msgid "Parallel"
+msgstr "Parallel"
 
 msgid "Partial"
 msgstr "Részleges"
@@ -2385,6 +2589,9 @@ msgstr "Előtöltés"
 msgid "Preload requires more RAM."
 msgstr "Az előtöltés több RAM-ot igényel."
 
+msgid "Produces a clean LCD effect."
+msgstr "Tiszta LCD hatást produkál."
+
 msgid "Puerto Rico"
 msgstr "Puerto Rico"
 
@@ -2399,6 +2606,9 @@ msgstr "Katar"
 
 msgid "RDP PLUGIN"
 msgstr "RDP PLUGIN"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "A FRAMEBUFFER OLVASSA EL MINDEN KÉPET (GLIDE64MK2)"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "CSÖKKENTI A SPRITE VILLÓDZÁST"
@@ -2478,6 +2688,9 @@ msgstr "Egyes játékokhoz szükséges."
 msgid "Required for certain visual effects."
 msgstr "Bizonyos vizuális effektusokhoz szükséges."
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "Egyes játékbeli effektusokhoz (Banjo Kazooie és DK64 átmenetek) szükséges, lassulást okozhat."
+
 msgid "Requires BIOS file to be present."
 msgstr "BIOS-fájl megléte szükséges."
 
@@ -2486,6 +2699,12 @@ msgstr "Újramintavételezés (Pirch Shift)"
 
 msgid "Restored Wii VC"
 msgstr "Felújított Wii VC"
+
+msgid "RetroPad (Default)"
+msgstr "RetroPad (Alap)"
+
+msgid "Rice"
+msgstr "Rice"
 
 msgid "Right Stick"
 msgstr "Jobb kar"
@@ -2501,6 +2720,9 @@ msgstr "A képernyő elforgatása, hasznos bizonyos függőleges játékmenetű 
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Forgatható 4 irányú bot (Q*Bert)"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "Elforgatja a képernyőket, hogy szimulálja a DS oldalirányú tartását."
 
 msgid "Runs \"skinning\" on the CPU instead of the GPU, means that draw calls from the game can more easily be combined, which often improves things."
 msgstr "A \"skinning\" funkciót a CPU-n futtatja a GPU helyett, ami azt jelenti, hogy a játékból érkező draw hívások könnyebben kombinálhatók, ami gyakran javít a dolgokon."
@@ -2529,8 +2751,17 @@ msgstr "KÉPERNYŐ SZŰRÉS"
 msgid "SCREEN SETTINGS"
 msgstr "KÉPERNYŐBEÁLLÍTÁSOK"
 
+msgid "SCREEN SIZING"
+msgstr "KÉPERNYŐ MÉRETEZÉSE"
+
+msgid "SCREEN SWAP"
+msgstr "KÉPERNYŐCSERE"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "ÉRZÉKENYSÉG"
 
 msgid "SENSOR BAR POSITION"
 msgstr "ÉRZÉKELŐRÁR POZÍCIÓJA"
@@ -2567,6 +2798,9 @@ msgstr "KÉPERNYŐ-ELRENDEZÉS MEGJELENÍTÉSE"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "PUFFER HATÁSOK KIHAGYÁSA"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "DS RENDSZER MENÜ KIHAGYÁSA"
 
 msgid "SKIP GPU READBACKS"
 msgstr "GPU VISSZAKÉPZÉSEK KIHAGYÁSA"
@@ -2667,6 +2901,12 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Skálázott"
 
+msgid "Screen Resolution (Default)"
+msgstr "Képernyőfelbontás (alapértelmezett)"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "A kiválasztott nyelv akkor kerül használatba, ha a 'Firmware beállítások használata' ki van kapcsolva, vagy ha a firmware fájl nem található."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "Válassza ki a beviteli típust az érintőképernyőn való navigáláshoz"
 
@@ -2696,6 +2936,12 @@ msgstr "Éles 1"
 
 msgid "Sharp 2"
 msgstr "Éles 2"
+
+msgid "Sharpen"
+msgstr "Élesíteni"
+
+msgid "Sharpen More"
+msgstr "Többet élesít"
 
 msgid "Show"
 msgstr "Mutasd meg"
@@ -2774,6 +3020,9 @@ msgstr "Sima textúrák 3D objektumokon."
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "Távoli 3D objektumok textúráinak simítása a szög alapján."
+
+msgid "Smooths out textures on 3D objects."
+msgstr "Kisimítja a textúrákat a 3D objektumokon."
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Kisimítja a teljes képet, ahogyan az a képernyőn megjelenik. Korrigálja a képpontok közötti pozicionálást."
@@ -2859,6 +3108,9 @@ msgstr "Surround 5.1"
 msgid "Surround 7.1"
 msgstr "Surround 7.1"
 
+msgid "Swap the position of the dual displays."
+msgstr "Cserélje fel a kettős kijelző pozícióját."
+
 msgid "Sweden"
 msgstr "Svédország"
 
@@ -2895,8 +3147,14 @@ msgstr "TEXTÚRA CSERÉK"
 msgid "TEXTURE SCALING"
 msgstr "TEXTÚRA MÉRETEZÉS"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "TEXTÚRA SIMÍTÁS"
+
 msgid "TEXTURE UPSCALING"
 msgstr "TEXTÚRAFELSKÁLÁZÁS"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "TEXTÚRAFELBŐVÍTÉS (CSAK RIZS)"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "TEXTÚRA FELSKÁLÁZÁS (XBRZ)"
@@ -2942,6 +3200,9 @@ msgstr "Thaiföld"
 
 msgid "The PSP will cull triangles that are outside a 4096x4096 clipping box, and also triangles crossing the Z=1 plane if clipping is enabled."
 msgstr "A PSP kivágja a 4096x4096-os vágókereten kívül eső háromszögeket, valamint a Z=1 síkot metsző háromszögeket is, ha a vágás engedélyezve van."
+
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "A joystick semleges pozíciója körüli terület, ahol a bevitel figyelmen kívül marad. Segíthet a nem szándékos bemenetek csökkentésében."
 
 msgid "The day within the month of your birthday."
 msgstr "A születésnapod hónapján belüli nap."
@@ -2994,6 +3255,9 @@ msgstr "Csak felül"
 msgid "Top Right"
 msgstr "Jobbra fent"
 
+msgid "Top only"
+msgstr "Csak felül"
+
 msgid "Touch Screen"
 msgstr "Érintőképernyő"
 
@@ -3039,6 +3303,9 @@ msgstr "FELSKÁLÁZÓ SZŰRŐ"
 msgid "USE DSP AUDIO"
 msgstr "DSP AUDIO HASZNÁLATA"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "FIRMWARE BEÁLLÍTÁSOK HASZNÁLATA"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "HASZNÁLJON MEGELŐZŐ KERETET"
 
@@ -3072,6 +3339,9 @@ msgstr "Up to 2 (Alap)"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "Kis darabok helyett teljes textúrákat tölt fel egyszerre. Javítja a teljesítményt a legtöbb játékban."
 
+msgid "Upscale textures on 3D objects."
+msgstr "Felbővített textúrák a 3D objektumokon."
+
 msgid "Uruguay"
 msgstr "Uruguay"
 
@@ -3084,6 +3354,9 @@ msgstr "Host használata"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Használja az SSAA-t az MSAA helyett az anti-aliasinghez. Az SSAA jobban nézhet ki, de nagyobb teljesítményköltséggel jár."
 
+msgid "Use language and username from the NDS Firmware"
+msgstr "Az NDS firmware nyelvének és felhasználónevének használata"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Használjon preemptív kereteket a előrefutás helyett. Csak akkor fut előre, ha a vezérlő állapota megváltozik."
 
@@ -3092,6 +3365,15 @@ msgstr "Használja a joystick eltolódásának/nem kívánt bevitelének kiküsz
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "Használja a joystick mozgásának többé-kevésbé érzékenyebbé tételéhez. Az összes vezérlőt érinti."
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "Használd fizikai anaglipt 3D szemüvegedet!"
+
+msgid "Useful for N64 style controllers."
+msgstr "Hasznos az N64 típusú vezérlőkhöz."
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "Hasznos az N64 típusú vezérlőkhöz. Korlátozott gyorsbillentyűk a dedikált gyorsbillentyű nélküli vezérlőkhöz."
 
 msgid "Useful for speedruns/glitches."
 msgstr "Hasznos speedruns/glitches esetén."
@@ -3237,11 +3519,41 @@ msgstr "ZCULL PONTOSSÁG"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Nagyítás a fekete keretek elrejtéséhez. A határok játékonként eltérőek."
 
+msgid "bilinear"
+msgstr "bilineáris"
+
 msgid "black and white"
 msgstr "fekete és fehér"
 
+msgid "black/blue"
+msgstr "fekete/kék"
+
+msgid "black/cyan"
+msgstr "fekete/cián"
+
+msgid "black/electric cyan"
+msgstr "fekete/elektromos cián"
+
+msgid "black/green"
+msgstr "fekete/zöld"
+
+msgid "black/magenta"
+msgstr "fekete/magenta"
+
+msgid "black/white"
+msgstr "fekete/fehér"
+
+msgid "black/yellow"
+msgstr "fekete/sárga"
+
 msgid "blue sea"
 msgstr "kéktenger"
+
+msgid "bottom only"
+msgstr "csak lent"
+
+msgid "bottom/top"
+msgstr "lent/fent"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -3258,20 +3570,62 @@ msgstr "gba sp"
 msgid "green forest"
 msgstr "zöld erdő"
 
+msgid "green/magenta"
+msgstr "zöld/magenta"
+
 msgid "hot desert"
 msgstr "forró sivatag"
+
+msgid "hybrid bottom ratio 2"
+msgstr "hybrid bottom ratio 2"
+
+msgid "hybrid bottom ratio 3"
+msgstr "hibrid alsó arány 3"
+
+msgid "hybrid top ratio 2"
+msgstr "hibrid csúcsarány 2"
+
+msgid "hybrid top ratio 3"
+msgstr "hibrid csúcsarány 3"
+
+msgid "hybrid/bottom"
+msgstr "hibrid/le"
+
+msgid "hybrid/top"
+msgstr "hibrid/fel"
+
+msgid "left/right"
+msgstr "bal/jobb"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
+msgid "nearest"
+msgstr "legközelebbi"
+
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original"
+msgstr "eredeti"
 
 msgid "original gameboy"
 msgstr "eredeti gameboy"
 
 msgid "pink dreams"
 msgstr "rózsaszín álmok"
+
+msgid "red/blue"
+msgstr "piros/kék"
+
+msgid "red/cyan"
+msgstr "piros/cián"
+
+msgid "red/electric cyan"
+msgstr "piros/elektromos cián"
+
+msgid "right/left"
+msgstr "jobb/bal"
 
 msgid "royaltea"
 msgstr "royaltea"
@@ -3282,8 +3636,17 @@ msgstr "scanlines"
 msgid "standard"
 msgstr "szabvány"
 
+msgid "top only"
+msgstr "csak felnt"
+
+msgid "top/bottom"
+msgstr "fent/lent"
+
 msgid "triangular filter"
 msgstr "háromszögszűrő"
+
+msgid "trilinear"
+msgstr "trilineáris"
 
 msgid "wave filter"
 msgstr "hullámszűrő"
@@ -3302,3 +3665,6 @@ msgstr "xBRZ (Alapértelmezett)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - élesebb felskálázási algoritmus, Bicubic - sima megjelenés, Hybrid - bicubic-ot használ a sima területekhez."
+
+msgid "yellow/blue"
+msgstr "sárga/kék"

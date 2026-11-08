@@ -9,8 +9,26 @@ msgstr "（FDS）自动加载磁碟A面"
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "（FDS）快进磁盘加载"
 
+msgid "0 degrees"
+msgstr "0度"
+
 msgid "0% (Default)"
 msgstr "0%（默认）"
+
+msgid "0.5x"
+msgstr "0.5x"
+
+msgid "0.6x"
+msgstr "0.6x"
+
+msgid "0.7x"
+msgstr "0.7x"
+
+msgid "0.8x"
+msgstr "0.8x"
+
+msgid "0.9x"
+msgstr "0.9x"
 
 msgid "1 second"
 msgstr "1秒"
@@ -18,11 +36,29 @@ msgstr "1秒"
 msgid "1 thread"
 msgstr "1 线程"
 
+msgid "1% (Default)"
+msgstr "1%（默认）"
+
+msgid "1.1x"
+msgstr "1.1x"
+
 msgid "1.25x (800x600)"
 msgstr "1.25x（800x600）"
 
 msgid "1.25x Native"
 msgstr "1.25倍原生分辨率"
+
+msgid "1.2x"
+msgstr "1.2x"
+
+msgid "1.3x"
+msgstr "1.3x"
+
+msgid "1.4x"
+msgstr "1.4x"
+
+msgid "1.5x"
+msgstr "1.5x"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x（960x720）"
@@ -207,6 +243,9 @@ msgstr "28号"
 msgid "29th"
 msgstr "29号"
 
+msgid "2X"
+msgstr "2倍"
+
 msgid "2nd"
 msgstr "2号"
 
@@ -290,6 +329,9 @@ msgstr "四人手柄转接器"
 
 msgid "4 threads"
 msgstr "4 线程"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5x（1440x1080）"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -453,6 +495,9 @@ msgstr "ALSAThread"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX超分辨率"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "红青色镜预设（3D）"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "各向异性过滤"
 
@@ -483,6 +528,9 @@ msgstr "异步纹理流"
 msgid "AUDIO"
 msgstr "音频"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "音频缓冲区（样本）"
+
 msgid "AUDIO CHANNELS"
 msgstr "音频通道"
 
@@ -494,6 +542,9 @@ msgstr "音频格式"
 
 msgid "AUDIO LATENCY"
 msgstr "音频等待时间"
+
+msgid "AUDIO SYNC"
+msgstr "音频同步"
 
 msgid "AUTO FRAMESKIP"
 msgstr "自动跳帧"
@@ -509,6 +560,9 @@ msgstr "添加颜色到Game Boy游戏。"
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "调整全动态视频的纵横比。"
+
+msgid "Adjusts the positions of the screens."
+msgstr "调整屏幕的位置。"
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "影响模拟屏幕的缩放方式，仅限OpenGL渲染器。"
@@ -555,6 +609,12 @@ msgstr "允许用户更换纹理。"
 msgid "Always"
 msgstr "总是"
 
+msgid "Always enforce horizontal"
+msgstr "总是强制水平位置"
+
+msgid "Always enforce vertical"
+msgstr "总是强制竖直位置"
+
 msgid "Analog Controller"
 msgstr "模拟控制器"
 
@@ -567,11 +627,17 @@ msgstr "模拟操纵杆"
 msgid "Analog Joystick (Flystick)"
 msgstr "模拟操纵杆（飞行摇杆）"
 
+msgid "Angrylion"
+msgstr "Angrylion"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion（更好的兼容性）"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "应用FXAA抗锯齿算法来提高游戏的视觉质量。"
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "把操纵杆的输入值乘以一个乘数，以降低或提高响应性。"
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "应用视频视频滤镜来模拟各种NTSC电视信号。"
@@ -591,11 +657,17 @@ msgstr "方舟划桨"
 msgid "Armenia"
 msgstr "亚美尼亚"
 
+msgid "Arrange the dual screen layout."
+msgstr "排列双屏布局。"
+
 msgid "As Host (Default)"
 msgstr "作为主机(默认)"
 
 msgid "As Is"
 msgstr "就这样"
+
+msgid "As game specifies"
+msgstr "此游戏指定"
 
 msgid "August"
 msgstr "八月"
@@ -614,6 +686,9 @@ msgstr "自动标准（4:3隔行扫描/3:2逐行扫描）"
 
 msgid "Autodetect"
 msgstr "自动检测"
+
+msgid "Automatic"
+msgstr "自动"
 
 msgid "Automatic ratio"
 msgstr "比率自适应"
@@ -747,6 +822,9 @@ msgstr "仅限底部"
 msgid "Bottom Right"
 msgstr "右下"
 
+msgid "Bottom only"
+msgstr "仅底部"
+
 msgid "Brazil"
 msgstr "巴西"
 
@@ -774,6 +852,9 @@ msgstr "彩色滤镜"
 msgid "COLOR PALETTE"
 msgstr "调色板"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "调色板（2D）"
+
 msgid "CONSOLE COUNTRY"
 msgstr "国家"
 
@@ -783,17 +864,35 @@ msgstr "主机语言"
 msgid "CONSOLE REGION"
 msgstr "主机区域"
 
+msgid "CONSOLE TYPE"
+msgstr "控制台类型"
+
+msgid "CONTROLLER 1"
+msgstr "控制器1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "控制器1类型"
+
+msgid "CONTROLLER 2"
+msgstr "控制器2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "控制器2类型"
 
+msgid "CONTROLLER 3"
+msgstr "控制器3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "控制器3类型"
 
+msgid "CONTROLLER 4"
+msgstr "控制器4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "控制器组合键"
+
+msgid "CONTROLLER TYPE"
+msgstr "控制器类型"
 
 msgid "CONTROLLERS"
 msgstr "控制器"
@@ -897,6 +996,9 @@ msgstr "选择缩小的方法。"
 msgid "Choose mipmapping type."
 msgstr "选择贴图层级类型。"
 
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "选择Parallel N64图形插件。"
+
 msgid "Choose the audio output type."
 msgstr "选择音频输出类型。"
 
@@ -999,6 +1101,9 @@ msgstr "去隔行扫描"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "数字音频处理器"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "禁用4MB扩展内存"
+
 msgid "DISABLE CULLING"
 msgstr "禁用剔除"
 
@@ -1041,8 +1146,14 @@ msgstr "DS（默认）"
 msgid "DSi"
 msgstr "DSi"
 
+msgid "DSi (experiemental)"
+msgstr "DSi（实验）"
+
 msgid "DUAL CORE MODE"
 msgstr "DUAL CORE MODE"
+
+msgid "DUAL SCREEN"
+msgstr "双屏"
 
 msgid "DYNAREC CODE INVALIDATION"
 msgstr "DYNAREC代码无效"
@@ -1103,6 +1214,12 @@ msgstr "数字控制器（游戏手柄）"
 
 msgid "Digital Prime FBX"
 msgstr "数字优先FBX"
+
+msgid "Disable"
+msgstr "禁用"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "禁用以访问系统的设置，如时间和语言。"
 
 msgid "Disabled"
 msgstr "禁用"
@@ -1176,6 +1293,9 @@ msgstr "启用性能覆盖"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "启用PGXP校正"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "启用多边形分割"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "启用时间拉伸"
 
@@ -1194,6 +1314,12 @@ msgstr "埃及"
 msgid "El Salvador"
 msgstr "萨尔瓦多"
 
+msgid "Emphasize bottom"
+msgstr "强调底部"
+
+msgid "Emphasize top"
+msgstr "强调顶部"
+
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "模拟WiiMote横持。该模式下可以用L2模拟摇晃，用右摇杆模拟Nunchuk。"
 
@@ -1205,6 +1331,9 @@ msgstr "启用Cemu的性能覆盖。"
 
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "启用Gamecube引导动画和BIOS访问（需要相应用户目录中的IPL.bin BIOS）。"
+
+msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
+msgstr "启用MelonDS在两个屏幕上的显示. 一些相关的屏幕选项将被忽略."
 
 msgid "Enable No-interlacing Patches."
 msgstr "启用无交错补丁。"
@@ -1220,6 +1349,9 @@ msgstr "为具有跨两个屏幕交互的游戏启用游戏手柄视图。 使�
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "启用缓存、控制器事件等的通知。"
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "启用第二个音频限制器。以性能为代价提高音频质量。"
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "启用Dreamcast DSP以获得更精确的音频。仅推荐用于较快的系统。"
@@ -1287,6 +1419,12 @@ msgstr "增强。"
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "增强功能。3分精确到N64，标准更好。"
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "增强功能。启用改进的多边形分割。"
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "增强。当启用MIP贴图时，能提高远处纹理的清晰度。"
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "增强。以16:9的比例增加渲染分辨率。使3D对象更清晰。"
 
@@ -1335,14 +1473,23 @@ msgstr "增强。放大纹理。"
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "增强。放大屏幕纹理（仅限2D游戏）。"
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "增强。放大3D对象上的纹理。"
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "确保主机渲染的每一帧都显示在屏幕上。"
 
 msgid "Estonia"
 msgstr "爱沙尼亚"
 
+msgid "Even"
+msgstr "时空之轮 Odd/Even Bit Hack"
+
 msgid "Exclusive Ubershaders"
 msgstr "专有uber着色器"
+
+msgid "External"
+msgstr "外部的"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "快速磁盘传输速率"
@@ -1379,6 +1526,9 @@ msgstr "跳帧"
 
 msgid "FRAMESKIP"
 msgstr "跳帧"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "调整（GL64MK2 ONLY）"
 
 msgid "FRAMESKIP CONTROL"
 msgstr "跳帧控制"
@@ -1581,6 +1731,12 @@ msgstr "图形"
 msgid "GRAPHICS API"
 msgstr "图形API"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "图形插件"
+
+msgid "Game default"
+msgstr "游戏默认值"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "Wii U的GameCube适配器"
 
@@ -1610,6 +1766,12 @@ msgstr "德国"
 
 msgid "Giga"
 msgstr "Giga"
+
+msgid "Glide64"
+msgstr "Glide64"
+
+msgid "Gln64"
+msgstr "Gln64"
 
 msgid "Gray"
 msgstr "灰色"
@@ -1652,6 +1814,9 @@ msgstr "香港"
 
 msgid "Horizontal"
 msgstr "水平"
+
+msgid "How the window space is distributed between the screens."
+msgstr "如何在屏幕之间分配窗口空间。"
 
 msgid "Hungary"
 msgstr "匈牙利"
@@ -1830,7 +1995,13 @@ msgstr "吉尔吉斯斯坦"
 msgid "LAZY TEXTURE CACHING"
 msgstr "延迟纹理缓存"
 
+msgid "LCD FILTER"
+msgstr "LCD过滤"
+
 msgid "LCD GHOSTING EFFECT"
+msgstr "LCD重影效应"
+
+msgid "LCD GHOSTING EFFECTS"
 msgstr "LCD重影效应"
 
 msgid "LCD Ghosting (Accurate)"
@@ -1844,6 +2015,9 @@ msgstr "光枪"
 
 msgid "LIGHT GUNS"
 msgstr "光枪"
+
+msgid "LIMIT FRAME RATE"
+msgstr "限制帧速率"
 
 msgid "LINEAR UPSCALING"
 msgstr "线性放大"
@@ -1913,6 +2087,9 @@ msgstr "如果想手动在xemu.toml配置文件中输入本地地址和端口来
 
 msgid "Low"
 msgstr "低"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "较低的值可以减少音频延迟并提高性能，但可能会导致音频问题。"
 
 msgid "Luxembourg"
 msgstr "卢森堡"
@@ -2016,6 +2193,9 @@ msgstr "墨西哥"
 msgid "Minimum"
 msgstr "最小"
 
+msgid "Mirrored"
+msgstr "镜映"
+
 msgid "Modern Fightstick Style"
 msgstr "现代格斗风格"
 
@@ -2042,6 +2222,12 @@ msgstr "鼠标"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "比解释器快得多（但可能有问题）"
+
+msgid "N64"
+msgstr "N64"
+
+msgid "N64 3-point"
+msgstr "N64 3-point"
 
 msgid "NAT"
 msgstr "NAT（网络地址转换）"
@@ -2145,6 +2331,9 @@ msgstr "无 (默认)"
 msgid "No Buffer"
 msgstr "无缓冲"
 
+msgid "No Limit"
+msgstr "不受限"
+
 msgid "No Ubershaders"
 msgstr "无uber着色器"
 
@@ -2165,6 +2354,9 @@ msgstr "挪威"
 
 msgid "November"
 msgstr "十一月"
+
+msgid "OFF (Default)"
+msgstr "关闭（默认）"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "屏幕显示和通知"
@@ -2235,6 +2427,12 @@ msgstr "仅适用于受支持的游戏。较高的设置会增加系统要求。
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL (经典)"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL (计算着色器)"
+
 msgid "OpenGL (Default)"
 msgstr "OpenGL（默认）"
 
@@ -2252,6 +2450,9 @@ msgstr "原装硬件（FirebrandX）"
 
 msgid "Original resolution"
 msgstr "原始分辨率"
+
+msgid "Original screen positions"
+msgstr "原始屏幕位置"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "超频SNES的CPU（宇宙巡航3，Super R-Type）。"
@@ -2306,6 +2507,9 @@ msgstr "ParaLLEl-RDP"
 
 msgid "Paraguay"
 msgstr "巴拉圭"
+
+msgid "Parallel"
+msgstr "Parallel"
 
 msgid "Partial"
 msgstr "部分"
@@ -2385,6 +2589,9 @@ msgstr "预加载"
 msgid "Preload requires more RAM."
 msgstr "预加载需要更多的RAM。"
 
+msgid "Produces a clean LCD effect."
+msgstr "产生干净的LCD效果。"
+
 msgid "Puerto Rico"
 msgstr "波多黎各"
 
@@ -2399,6 +2606,9 @@ msgstr "卡塔尔"
 
 msgid "RDP PLUGIN"
 msgstr "RDP插件"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "读取每个帧的帧缓冲区（GLIDE64MK2）"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "减少精灵闪烁"
@@ -2478,6 +2688,9 @@ msgstr "某些游戏的需要。"
 msgid "Required for certain visual effects."
 msgstr "某些视觉效果所需。"
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "一些游戏内效果（Banjo Kazooie和DK64过渡）所需，可能会导致减速。"
+
 msgid "Requires BIOS file to be present."
 msgstr "要求存在BIOS文件。"
 
@@ -2486,6 +2699,12 @@ msgstr "重采样（音高变换）"
 
 msgid "Restored Wii VC"
 msgstr "复原版Wii虚拟平台"
+
+msgid "RetroPad (Default)"
+msgstr "复古手柄（默认设置）"
+
+msgid "Rice"
+msgstr "Rice"
 
 msgid "Right Stick"
 msgstr "右摇杆"
@@ -2501,6 +2720,9 @@ msgstr "旋转屏幕，适用于某些竖屏游戏。"
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "旋转四向杆（Q*Bert）"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "旋转屏幕，以模拟将DS侧向固定。"
 
 msgid "Runs \"skinning\" on the CPU instead of the GPU, means that draw calls from the game can more easily be combined, which often improves things."
 msgstr "在CPU而不是GPU上运行“蒙皮”, 这意味着可以更容易地组合游戏中的绘制调用, 这通常会改善情况."
@@ -2529,8 +2751,17 @@ msgstr "屏幕过滤"
 msgid "SCREEN SETTINGS"
 msgstr "屏幕设置"
 
+msgid "SCREEN SIZING"
+msgstr "屏幕尺寸"
+
+msgid "SCREEN SWAP"
+msgstr "虚拟交换"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "灵敏度"
 
 msgid "SENSOR BAR POSITION"
 msgstr "感应条位置"
@@ -2567,6 +2798,9 @@ msgstr "显示屏幕布局"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "跳过缓冲区效果"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "跳过DS系统菜单"
 
 msgid "SKIP GPU READBACKS"
 msgstr "跳过GPU回读"
@@ -2667,6 +2901,12 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "按比例缩放"
 
+msgid "Screen Resolution (Default)"
+msgstr "屏幕分辨率（默认）"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "如果禁用“使用固件设置”或未找到固件文件，则将使用选中的语言。"
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "选择用以操作触摸屏的输入类型"
 
@@ -2696,6 +2936,12 @@ msgstr "Sharp 1"
 
 msgid "Sharp 2"
 msgstr "Sharp 2"
+
+msgid "Sharpen"
+msgstr "锐化"
+
+msgid "Sharpen More"
+msgstr "强锐化"
 
 msgid "Show"
 msgstr "显示"
@@ -2774,6 +3020,9 @@ msgstr "平滑3D对象上的纹理。"
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "基于角度平滑远处3D对象上的纹理。"
+
+msgid "Smooths out textures on 3D objects."
+msgstr "平滑3D对象上的纹理。"
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "在屏幕上显示整个图片时使其平滑，纠正像素之间的位置关系。"
@@ -2859,6 +3108,9 @@ msgstr "环绕5.1声道"
 msgid "Surround 7.1"
 msgstr "环绕7.1声道"
 
+msgid "Swap the position of the dual displays."
+msgstr "交换双显示器的位置。"
+
 msgid "Sweden"
 msgstr "瑞典"
 
@@ -2895,8 +3147,14 @@ msgstr "纹理替换"
 msgid "TEXTURE SCALING"
 msgstr "纹理缩放"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "纹理平滑"
+
 msgid "TEXTURE UPSCALING"
 msgstr "纹理粗化"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "纹理粗化（RICE ONLY）"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "纹理放大（XBRZ）"
@@ -2942,6 +3200,9 @@ msgstr "泰国"
 
 msgid "The PSP will cull triangles that are outside a 4096x4096 clipping box, and also triangles crossing the Z=1 plane if clipping is enabled."
 msgstr "PSP将剔除4096x4096剪裁框外的三角形. 如果启用剪裁还将剔除穿过Z=1平面的三角形."
+
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "摇杆的中立位置周围的区域，在此区域内的输入将被忽略，可以帮助减少意外输入。"
 
 msgid "The day within the month of your birthday."
 msgstr "你生日当月的那一天。"
@@ -2994,6 +3255,9 @@ msgstr "仅限顶部"
 msgid "Top Right"
 msgstr "右上"
 
+msgid "Top only"
+msgstr "仅顶部"
+
 msgid "Touch Screen"
 msgstr "触摸屏"
 
@@ -3039,6 +3303,9 @@ msgstr "放大过滤器"
 msgid "USE DSP AUDIO"
 msgstr "使用DSP音频"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "使用固件设置"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "使用抢占帧机制"
 
@@ -3072,6 +3339,9 @@ msgstr "最多2 (默认)"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "一次上传整个纹理而非小块。能提高大多数游戏的性能。"
 
+msgid "Upscale textures on 3D objects."
+msgstr "放大3D物体上的纹理。"
+
 msgid "Uruguay"
 msgstr "乌拉圭"
 
@@ -3084,6 +3354,9 @@ msgstr "跟随主机"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "使用SSAA而不是MSAA来消除混叠, SSAA可能看起来更好, 但性能成本更高."
 
+msgid "Use language and username from the NDS Firmware"
+msgstr "使用NDS固件中的语言和用户名"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "使用抢占帧机制代替提前运行帧数机制，该机制只有在控制器状态改变时生效."
 
@@ -3092,6 +3365,15 @@ msgstr "用于消除手柄漂移或不必要输入，会影响所有控制器。
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "使手柄的移动更敏感或不敏感，会影响所有控制器。"
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "使用您的立体立体眼镜！"
+
+msgid "Useful for N64 style controllers."
+msgstr "适用于N64控制器。"
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "适用于N64风格的控制器，对于没有专门热键的控制器，热键功能有限。"
 
 msgid "Useful for speedruns/glitches."
 msgstr "对速通或者刷bug很有用。"
@@ -3237,11 +3519,41 @@ msgstr "ZCULL 精度"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "放大以隐藏黑色边框。每个游戏的边框不同。"
 
+msgid "bilinear"
+msgstr "双线性"
+
 msgid "black and white"
 msgstr "黑色/白色"
 
+msgid "black/blue"
+msgstr "黑色/蓝色"
+
+msgid "black/cyan"
+msgstr "黑色/青色"
+
+msgid "black/electric cyan"
+msgstr "黑色/铁青色"
+
+msgid "black/green"
+msgstr "黑色/绿色"
+
+msgid "black/magenta"
+msgstr "黑色/粉红"
+
+msgid "black/white"
+msgstr "黑色/白色"
+
+msgid "black/yellow"
+msgstr "黑色/黄色"
+
 msgid "blue sea"
 msgstr "蓝海"
+
+msgid "bottom only"
+msgstr "仅下屏"
+
+msgid "bottom/top"
+msgstr "下/上"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -3258,20 +3570,62 @@ msgstr "gba sp"
 msgid "green forest"
 msgstr "森林绿"
 
+msgid "green/magenta"
+msgstr "绿色/品红色"
+
 msgid "hot desert"
 msgstr "炎热沙漠"
+
+msgid "hybrid bottom ratio 2"
+msgstr "混合下屏比率2"
+
+msgid "hybrid bottom ratio 3"
+msgstr "混合下屏比率3"
+
+msgid "hybrid top ratio 2"
+msgstr "混合上屏比率2"
+
+msgid "hybrid top ratio 3"
+msgstr "混合上屏比率3"
+
+msgid "hybrid/bottom"
+msgstr "混合/下屏"
+
+msgid "hybrid/top"
+msgstr "混合/上屏"
+
+msgid "left/right"
+msgstr "左/右"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
+msgid "nearest"
+msgstr "最近的"
+
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original"
+msgstr "原始"
 
 msgid "original gameboy"
 msgstr "原始gameboy"
 
 msgid "pink dreams"
 msgstr "粉红色的梦"
+
+msgid "red/blue"
+msgstr "红色/蓝色"
+
+msgid "red/cyan"
+msgstr "红色/青色"
+
+msgid "red/electric cyan"
+msgstr "红色/铁青色"
+
+msgid "right/left"
+msgstr "右/左"
 
 msgid "royaltea"
 msgstr "royaltea"
@@ -3282,8 +3636,17 @@ msgstr "扫描行"
 msgid "standard"
 msgstr "标准"
 
+msgid "top only"
+msgstr "仅上屏"
+
+msgid "top/bottom"
+msgstr "上/下"
+
 msgid "triangular filter"
 msgstr "三角滤波器"
+
+msgid "trilinear"
+msgstr "三线性"
 
 msgid "wave filter"
 msgstr "滤波器"
@@ -3302,3 +3665,6 @@ msgstr "xBRZ（默认）"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ是一种锐化高级算法, Bicubic是一种平滑外观, Hybrid使用Bicubic来平滑区域."
+
+msgid "yellow/blue"
+msgstr "黄色/蓝色"

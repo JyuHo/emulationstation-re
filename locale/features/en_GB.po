@@ -27,6 +27,9 @@ msgstr "COLOUR FILTER"
 msgid "COLOR PALETTE"
 msgstr "COLOUR PALETTE"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "COLOUR PALETTE (2D)"
+
 msgid "Can be used to simulate colors of particular displays."
 msgstr "Can be used to simulate colours of particular displays."
 

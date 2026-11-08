@@ -9,8 +9,26 @@ msgstr "(FDS) Automaticky načítať stranu A disku"
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "(FDS) Rýchle načítanie disku"
 
+msgid "0 degrees"
+msgstr "0 stupňov"
+
 msgid "0% (Default)"
 msgstr "0% (predvolené)"
+
+msgid "0.5x"
+msgstr "0.5x"
+
+msgid "0.6x"
+msgstr "0.6x"
+
+msgid "0.7x"
+msgstr "0.7x"
+
+msgid "0.8x"
+msgstr "0.8x"
+
+msgid "0.9x"
+msgstr "0.9x"
 
 msgid "1 second"
 msgstr "1 sekunda"
@@ -18,11 +36,29 @@ msgstr "1 sekunda"
 msgid "1 thread"
 msgstr "1 vlákno"
 
+msgid "1% (Default)"
+msgstr "1% (predvolené)"
+
+msgid "1.1x"
+msgstr "1.1x"
+
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
 
 msgid "1.25x Native"
 msgstr "1.25x natívme"
+
+msgid "1.2x"
+msgstr "1.2x"
+
+msgid "1.3x"
+msgstr "1.3x"
+
+msgid "1.4x"
+msgstr "1.4x"
+
+msgid "1.5x"
+msgstr "1.5x"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -207,6 +243,9 @@ msgstr "28."
 msgid "29th"
 msgstr "29."
 
+msgid "2X"
+msgstr "2X"
+
 msgid "2nd"
 msgstr "2."
 
@@ -290,6 +329,9 @@ msgstr "Adaptér pre 4 hráčov"
 
 msgid "4 threads"
 msgstr "4 vlákna"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5x (1440x1080)"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -453,6 +495,9 @@ msgstr "ALSAThread"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX Super rozlíšenie"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "Anaglyfická predvoľba (3D)"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "Anizotropické filtrovanie"
 
@@ -483,6 +528,9 @@ msgstr "Asynchrónne streamovanie textúr"
 msgid "AUDIO"
 msgstr "Zvuk"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "Zvukový buffer (vzorky)"
+
 msgid "AUDIO CHANNELS"
 msgstr "Zvukové kanály"
 
@@ -494,6 +542,9 @@ msgstr "Formát zvuku"
 
 msgid "AUDIO LATENCY"
 msgstr "Latencia zvuku"
+
+msgid "AUDIO SYNC"
+msgstr "Synchronizácia zvuku"
 
 msgid "AUTO FRAMESKIP"
 msgstr "Auto preskočenie snímok"
@@ -509,6 +560,9 @@ msgstr "Pridať farbu pre hry Game Boy."
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Upraví pomer strán plného videa."
+
+msgid "Adjusts the positions of the screens."
+msgstr "Upravuje polohy obrazoviek."
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Ovplyvňuje ako sú emulované obrazovky škálované. Iba OpenGL renderer."
@@ -555,6 +609,12 @@ msgstr "Povolí užívateľom vymeniteľné textúry."
 msgid "Always"
 msgstr "Vždy"
 
+msgid "Always enforce horizontal"
+msgstr "Vždy vynútiť vodorovné"
+
+msgid "Always enforce vertical"
+msgstr "Vždy vynútiť zvislo"
+
 msgid "Analog Controller"
 msgstr "Analógový ovládača"
 
@@ -567,11 +627,17 @@ msgstr "Analógový joystick"
 msgid "Analog Joystick (Flystick)"
 msgstr "Analógový joystick (Flystick)"
 
+msgid "Angrylion"
+msgstr "Angrylion"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (najkompatibilnejší)"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Použije anti aliasingový algoritmus FXAA na zlepšenie vizuálnej kvality hier."
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "Použiť násobič pre vstup joysticku na zníženie alebo zvýšenie odozvy."
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Použiť video filter na napodobnenie rôznych TV signálov NTSC."
@@ -591,11 +657,17 @@ msgstr "Arkanoid paddle"
 msgid "Armenia"
 msgstr "Arménsko"
 
+msgid "Arrange the dual screen layout."
+msgstr "Usporiadať duálne rozloženie obrazovky."
+
 msgid "As Host (Default)"
 msgstr "Ako hostiteľ (Predvolené)"
 
 msgid "As Is"
 msgstr "Ako je"
+
+msgid "As game specifies"
+msgstr "Ako určí hra"
 
 msgid "August"
 msgstr "August"
@@ -614,6 +686,9 @@ msgstr "Automatický štandard (4:3 prekladané / 3:2 progresívne)"
 
 msgid "Autodetect"
 msgstr "Automatická detekcia"
+
+msgid "Automatic"
+msgstr "Automaticky"
 
 msgid "Automatic ratio"
 msgstr "Automatický pomer"
@@ -747,6 +822,9 @@ msgstr "Iba dolu"
 msgid "Bottom Right"
 msgstr "Dolu vpravo"
 
+msgid "Bottom only"
+msgstr "Iba dolu"
+
 msgid "Brazil"
 msgstr "Brazília"
 
@@ -774,6 +852,9 @@ msgstr "Farebný filter"
 msgid "COLOR PALETTE"
 msgstr "Farebná paleta"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "Farebná paleta (2D)"
+
 msgid "CONSOLE COUNTRY"
 msgstr "Krajina konzoly"
 
@@ -783,17 +864,35 @@ msgstr "Jazyk konzoly"
 msgid "CONSOLE REGION"
 msgstr "Región konzoly"
 
+msgid "CONSOLE TYPE"
+msgstr "Typ konzoly"
+
+msgid "CONTROLLER 1"
+msgstr "Ovládač 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "Typ ovládača 1"
+
+msgid "CONTROLLER 2"
+msgstr "Ovládač 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "Typ ovládača 2"
 
+msgid "CONTROLLER 3"
+msgstr "Ovládač 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "Typ ovládača 3"
 
+msgid "CONTROLLER 4"
+msgstr "Ovládač 4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "Kombinácia ovládača"
+
+msgid "CONTROLLER TYPE"
+msgstr "Typ ovládača"
 
 msgid "CONTROLLERS"
 msgstr "Ovládače"
@@ -897,6 +996,9 @@ msgstr "Metóda škálovania dolu."
 msgid "Choose mipmapping type."
 msgstr "Vyberte typ mipmappingu."
 
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "Vyberte grafický doplnok Parallel N64."
+
 msgid "Choose the audio output type."
 msgstr "Vyberte typ zvukového výstupu."
 
@@ -999,6 +1101,9 @@ msgstr "Odstraňovanie prekladania"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "Digitálny zvukový procesor"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "Zakázať 4 MB expansion RAM pack"
+
 msgid "DISABLE CULLING"
 msgstr "ZAKÁZAŤ CULLING"
 
@@ -1041,8 +1146,14 @@ msgstr "DS (predvolené)"
 msgid "DSi"
 msgstr "DSi"
 
+msgid "DSi (experiemental)"
+msgstr "DSi (experiementálne)"
+
 msgid "DUAL CORE MODE"
 msgstr "Dvojjadrový režim"
+
+msgid "DUAL SCREEN"
+msgstr "DUÁLNA OBRAZOVKA"
 
 msgid "DYNAREC CODE INVALIDATION"
 msgstr "Zneplatnenie kódu Dynarec"
@@ -1103,6 +1214,12 @@ msgstr "Digitálny ovládač (gamepad)"
 
 msgid "Digital Prime FBX"
 msgstr "Digital Prime FBX"
+
+msgid "Disable"
+msgstr "Zakázať"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "Zakázať prístup k systémovým nastaveniam ako čas a jazyk."
 
 msgid "Disabled"
 msgstr "Zakázané"
@@ -1176,6 +1293,9 @@ msgstr "Povoliť prekryv výkonnosti"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "Povoliť opravy PGXP"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "Povoliť rozdelenie polygónov"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "Povoliť rozťahovanie času"
 
@@ -1194,6 +1314,12 @@ msgstr "Egypt"
 msgid "El Salvador"
 msgstr "Salvádor"
 
+msgid "Emphasize bottom"
+msgstr "Zdôrazniť spodok"
+
+msgid "Emphasize top"
+msgstr "Zdôrazniť vrch"
+
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Emulovať Wiimote Sideway s L2 pre Shake a Nunchuk na R-stick."
 
@@ -1205,6 +1331,9 @@ msgstr "Povoliť prekrytie výkonnosti Cemu."
 
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "Povoliť animáciu zavádzania Gamecube a prístup k systému BIOS (vyžaduje IPL.bin BIOS v príslušnom používateľskom adresári)."
+
+msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
+msgstr "Povoliť MelonDS zobrazovať na dvoch obrazovkách. Niektoré súvisiace možnosti obrazovky budú ignorované."
 
 msgid "Enable No-interlacing Patches."
 msgstr "Povoliť neprekladané záplaty."
@@ -1220,6 +1349,9 @@ msgstr "Povoľte zobrazenie gamepadu pre hry, ktoré majú interakciu na dvoch o
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Povoliť upozornenia na vyrovnávaciu pamäť, udalosti ovládača atď."
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "Povoliť druhý obmedzovač zvuku. Zlepšuje kvalitu zvuku na úkor výkonu."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Povoliť Dreamcast DSP pre presnejší zvuk. Odporúča sa len pre rýchle systémy."
@@ -1287,6 +1419,12 @@ msgstr "Rozšírenie."
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "Rozšírenie. 3 body sú presné na N64, štandard je lepší."
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "Rozšírenie. Umožňuje vylepšené delenie polygónov."
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "Rozšírenie. Zlepšuje jasnosť vzdialených textúr, keď je povolený mip-mapping."
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "Rozšírenie. Zvýšiť rozlíšenie vykresľovania v pomere 16:9. Robí 3D objekty jasnejšie."
 
@@ -1335,14 +1473,23 @@ msgstr "Rozšírenie. Zväčšenie textúr."
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "Rozšírenie. Zväčší textúry obrazovky (iba 2D hry)"
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "Rozšírenie. Zväčší textúry na 3D objektoch."
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "Zabezpečte, aby každý snímok, ktorý konzola vykreslí, bol zobrazený na obrazovke.Zabezpečiť, aby sa na obrazovke zobrazil každý snímok, ktorý konzola vykreslí."
 
 msgid "Estonia"
 msgstr "Estónsko"
 
+msgid "Even"
+msgstr "Párne"
+
 msgid "Exclusive Ubershaders"
 msgstr "Exkluzívne Ubershaders"
+
+msgid "External"
+msgstr "Externé"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "Rýchla prenosová rýchlosť disku"
@@ -1379,6 +1526,9 @@ msgstr "PRESKAKOVANIE SNÍMKOV"
 
 msgid "FRAMESKIP"
 msgstr "Preskočenie snímok"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "Preskočenie snímok (iba GL64MK2)"
 
 msgid "FRAMESKIP CONTROL"
 msgstr "OVLÁDANIE PRESKAKOVANIA SNÍMKOV"
@@ -1581,6 +1731,12 @@ msgstr "Grafika"
 msgid "GRAPHICS API"
 msgstr "Grafické API"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "Grafický plugin"
+
+msgid "Game default"
+msgstr "Predvolené hrou"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "GameCube adaptér pre Wii U"
 
@@ -1610,6 +1766,12 @@ msgstr "Nemecko"
 
 msgid "Giga"
 msgstr "Giga"
+
+msgid "Glide64"
+msgstr "Glide64"
+
+msgid "Gln64"
+msgstr "Gln64"
 
 msgid "Gray"
 msgstr "Šedá"
@@ -1652,6 +1814,9 @@ msgstr "Hong Kong"
 
 msgid "Horizontal"
 msgstr "Vodorovne"
+
+msgid "How the window space is distributed between the screens."
+msgstr "Ako je rozmiestnený priestor okna medzi obrazovkami."
 
 msgid "Hungary"
 msgstr "Maďarsko"
@@ -1830,8 +1995,14 @@ msgstr "Kirgizsko"
 msgid "LAZY TEXTURE CACHING"
 msgstr "LENIVÉ CACHOVANIE TEXTÚR"
 
+msgid "LCD FILTER"
+msgstr "LCD filter"
+
 msgid "LCD GHOSTING EFFECT"
 msgstr "LCD efekt Duchovia"
+
+msgid "LCD GHOSTING EFFECTS"
+msgstr "LCD efekty Duchovia"
 
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD duchovia (presné)"
@@ -1844,6 +2015,9 @@ msgstr "Svetelná pištoľ"
 
 msgid "LIGHT GUNS"
 msgstr "Svetelné pištole"
+
+msgid "LIMIT FRAME RATE"
+msgstr "Obmedzenie snímok"
 
 msgid "LINEAR UPSCALING"
 msgstr "Lineárne škálovanie"
@@ -1913,6 +2087,9 @@ msgstr "Lokálna adresa a port pre príjem paketov. Nechajte prázdne, ak chcete
 
 msgid "Low"
 msgstr "Nízke"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "Nižšie hodnoty znižujú latenciu zvuku a zlepšujú výkon, ale môžu spôsobiť problémy so zvukom."
 
 msgid "Luxembourg"
 msgstr "Luxembursko"
@@ -2016,6 +2193,9 @@ msgstr "Mexiko"
 msgid "Minimum"
 msgstr "Minimálne"
 
+msgid "Mirrored"
+msgstr "Zrkadlové"
+
 msgid "Modern Fightstick Style"
 msgstr "Moderný štýl bojových palíc"
 
@@ -2042,6 +2222,12 @@ msgstr "Myš"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "Omnoho rýchlejšie ako interpreter (ale môže mať chyby)"
+
+msgid "N64"
+msgstr "N64"
+
+msgid "N64 3-point"
+msgstr "N64 3-bodový"
 
 msgid "NAT"
 msgstr "NAT"
@@ -2145,6 +2331,9 @@ msgstr "Nie (Predvolené)"
 msgid "No Buffer"
 msgstr "Bez vyrovnávacej pamäte"
 
+msgid "No Limit"
+msgstr "Bez obmedzenia"
+
 msgid "No Ubershaders"
 msgstr "Žiadne Ubershaders"
 
@@ -2165,6 +2354,9 @@ msgstr "Nórsko"
 
 msgid "November"
 msgstr "November"
+
+msgid "OFF (Default)"
+msgstr "Vypnuté (predvolené)"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "Zobrazenie na obrazovke a upozornenia"
@@ -2235,6 +2427,12 @@ msgstr "Iba podporované hry. Vyššie nastavenia zvyšujú systémové požiada
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL (klasické)"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL (vypočítať shader)"
+
 msgid "OpenGL (Default)"
 msgstr "OpenGL (predvolené)"
 
@@ -2252,6 +2450,9 @@ msgstr "Pôvodný hardvér (FirebrandX)"
 
 msgid "Original resolution"
 msgstr "Pôvodné rozlíšenie"
+
+msgid "Original screen positions"
+msgstr "Pôvodné polohy obrazovky"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "Pretaktovať SNES CPU (Gradius 3, Super R-Type)."
@@ -2306,6 +2507,9 @@ msgstr "ParaLLEl-RDP"
 
 msgid "Paraguay"
 msgstr "Paraguaj"
+
+msgid "Parallel"
+msgstr "Paralelné"
 
 msgid "Partial"
 msgstr "Čiastočné"
@@ -2385,6 +2589,9 @@ msgstr "Prednačítať"
 msgid "Preload requires more RAM."
 msgstr "Prednačítanie potrebuje viac RAM."
 
+msgid "Produces a clean LCD effect."
+msgstr "Vytvorí čistý LCD efekt."
+
 msgid "Puerto Rico"
 msgstr "Portoriko"
 
@@ -2399,6 +2606,9 @@ msgstr "Katar"
 
 msgid "RDP PLUGIN"
 msgstr "RDP plugin"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "Čítať framebuffer pri každej snímke (Glide64MK2)"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "Znížiť blikanie spritov"
@@ -2478,6 +2688,9 @@ msgstr "Vyžadované niektorými hrami."
 msgid "Required for certain visual effects."
 msgstr "Vyžadované pre niektoré vizuálne efekty."
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "Vyžaduje sa pre niektoré efekty v hre (prechody Banjo Kazooie a DK64), môže spôsobiť spomalenie."
+
 msgid "Requires BIOS file to be present."
 msgstr "Vyžaduje prítomnosť BIOS súboru."
 
@@ -2486,6 +2699,12 @@ msgstr "Resamplovanie (Pirch Shift)"
 
 msgid "Restored Wii VC"
 msgstr "Obnovené Wii VC"
+
+msgid "RetroPad (Default)"
+msgstr "RetroPad (predvolené)"
+
+msgid "Rice"
+msgstr "Rice"
 
 msgid "Right Stick"
 msgstr "Pravá páčka"
@@ -2501,6 +2720,9 @@ msgstr "Otočiť obrazovku, užitočné pre určité vertikálne homebrew hry.Ot
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Otočený 4-cestný joystick (Q*Bert)"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "Otáča obrazovky, aby simuloval držanie DS nabok."
 
 msgid "Runs \"skinning\" on the CPU instead of the GPU, means that draw calls from the game can more easily be combined, which often improves things."
 msgstr "Spúšťa „skinning“ na CPU namiesto GPU, čo znamená, že volania draw z hry sa dajú ľahšie kombinovať, čo často veci vylepšuje."
@@ -2529,8 +2751,17 @@ msgstr "Filtrovanie obrazovky"
 msgid "SCREEN SETTINGS"
 msgstr "Nastavenia obrazovky"
 
+msgid "SCREEN SIZING"
+msgstr "Veľkosť obrazovky"
+
+msgid "SCREEN SWAP"
+msgstr "Vymeniť obrazovku"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "Citlivosť"
 
 msgid "SENSOR BAR POSITION"
 msgstr "POZÍCIA SENZOROVÉHO PANELU"
@@ -2567,6 +2798,9 @@ msgstr "Zobraziť rozloženie obrazovky"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "PRESKOČIŤ EFEKTY VYROVNÁVACEJ PAMÄTE"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "Preskočiť DS systémové menu"
 
 msgid "SKIP GPU READBACKS"
 msgstr "PRESKOČIŤ GPU READBACKS"
@@ -2667,6 +2901,12 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Škálované"
 
+msgid "Screen Resolution (Default)"
+msgstr "Rozlíšenie obrazovky (predvolené)"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "Vybraný jazyk bude použitý ak je zakázané 'Použiť nastavenia firmvéru' alebo ak sa nenájde súbor firmvéru."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "Vyberte typ vstupu na navigáciu na dotykovej obrazovke"
 
@@ -2696,6 +2936,12 @@ msgstr "Ostré 1"
 
 msgid "Sharp 2"
 msgstr "Ostré 2"
+
+msgid "Sharpen"
+msgstr "Zostriť"
+
+msgid "Sharpen More"
+msgstr "Zostriť viac"
 
 msgid "Show"
 msgstr "Zobraziť"
@@ -2774,6 +3020,9 @@ msgstr "Vyhladiť textúry na 3D objektoch."
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "Hladké textúry na vzdialených 3D objektoch na základe uhla."
+
+msgid "Smooths out textures on 3D objects."
+msgstr "Vyhladí textúry na 3D objektoch."
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Vyhladí celkový obraz ako je zobrazený na obrazovke. Opraví polohy medzi bodmi."
@@ -2859,6 +3108,9 @@ msgstr "Surround 5.1"
 msgid "Surround 7.1"
 msgstr "Surround 7.1"
 
+msgid "Swap the position of the dual displays."
+msgstr "Vymení polohu duálnych obrazoviek."
+
 msgid "Sweden"
 msgstr "Švédsko"
 
@@ -2895,8 +3147,14 @@ msgstr "Náhrady textúr"
 msgid "TEXTURE SCALING"
 msgstr "ŠKÁLOVANIE TEXTÚR"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "Vyhladzovanie textúr"
+
 msgid "TEXTURE UPSCALING"
 msgstr "Zväčšovanie textúr"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "Zväčšovanie textúr (iba rice)"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "Zväčšovanie textúr (XBRZ)"
@@ -2942,6 +3200,9 @@ msgstr "Thajsko"
 
 msgid "The PSP will cull triangles that are outside a 4096x4096 clipping box, and also triangles crossing the Z=1 plane if clipping is enabled."
 msgstr "PSP orezáva trojuholníky, ktoré sú mimo orezávacieho boxu 4096x4096, a tiež trojuholníky prechádzajúce cez rovinu Z=1, ak je orezávanie povolené."
+
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "Oblasť okolo neutrálnej polohy joysticku, kde sa ignoruje vstup. Môže znížiť neželané vstupy."
 
 msgid "The day within the month of your birthday."
 msgstr "Deň v mesiaci vašich narodenín."
@@ -2994,6 +3255,9 @@ msgstr "Iba hore"
 msgid "Top Right"
 msgstr "Hore vpravo"
 
+msgid "Top only"
+msgstr "Iba hore"
+
 msgid "Touch Screen"
 msgstr "Dotyková obrazovka"
 
@@ -3039,6 +3303,9 @@ msgstr "Filter zväčšenia"
 msgid "USE DSP AUDIO"
 msgstr "Použiť DSP audio"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "Použiť nastavenia firmvéru"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "Použiť preemptívne snímky"
 
@@ -3072,6 +3339,9 @@ msgstr "Až do 2 (Predvolené)"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "Nahrá celé textúry naraz namiesto po malých častiach. Zlepší výkon vo väčšine hier."
 
+msgid "Upscale textures on 3D objects."
+msgstr "Zväčší textúry na 3D objektoch."
+
 msgid "Uruguay"
 msgstr "Uruguaj"
 
@@ -3084,6 +3354,9 @@ msgstr "Použiť hostiteľa"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Použiť SSAA namiesto MSAA pre anti-aliasing. SSAA môže vyzerať lepšie ale má vyššie náklady na výkon."
 
+msgid "Use language and username from the NDS Firmware"
+msgstr "Použiť jazyk a meno používateľa z firmvéru NDS"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Použiť preemptívne snímky namiesto run-ahead. Beží dopredu iba keď sa zmení stav ovládača."
 
@@ -3092,6 +3365,15 @@ msgstr "Použite na elimináciu driftu joysticku/nechceného vstupu. Ovplyvňuje
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "Použite na zvýšenie alebo zníženie citlivosti pohybu joysticku. Ovplyvňuje všetky ovládače."
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "Použite svoje fyzické anaglypth 3D okuliare!"
+
+msgid "Useful for N64 style controllers."
+msgstr "Užitočné pre ovládače typu N64."
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "Užitočné pre ovládače štýlu N64. Obmedzené klávesové skratky pre ovládače bez vyhradenej klávesovej skratky."
 
 msgid "Useful for speedruns/glitches."
 msgstr "Užitočné pre speedruns/glitche."
@@ -3237,11 +3519,41 @@ msgstr "Presnosť ZCULL"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Priblíži na skrytie čiernych okrajov. Okraje sú rôzne podľa hry."
 
+msgid "bilinear"
+msgstr "bilineárne"
+
 msgid "black and white"
 msgstr "čierna a biela"
 
+msgid "black/blue"
+msgstr "čierna/modrá"
+
+msgid "black/cyan"
+msgstr "čierna/az"
+
+msgid "black/electric cyan"
+msgstr "čierna/elektrická azúrová"
+
+msgid "black/green"
+msgstr "čierna/zelená"
+
+msgid "black/magenta"
+msgstr "čierna/purpurová"
+
+msgid "black/white"
+msgstr "čierna/biela"
+
+msgid "black/yellow"
+msgstr "čierna/žltá"
+
 msgid "blue sea"
 msgstr "modré more"
+
+msgid "bottom only"
+msgstr "iba dolu"
+
+msgid "bottom/top"
+msgstr "dolu/hore"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -3258,20 +3570,62 @@ msgstr "gba sp"
 msgid "green forest"
 msgstr "zelený les"
 
+msgid "green/magenta"
+msgstr "zelená/fialová"
+
 msgid "hot desert"
 msgstr "horúca púšť"
+
+msgid "hybrid bottom ratio 2"
+msgstr "hybridný spodný pomer 2"
+
+msgid "hybrid bottom ratio 3"
+msgstr "hybridný spodný pomer 3"
+
+msgid "hybrid top ratio 2"
+msgstr "hybridný vrchný pomer 2"
+
+msgid "hybrid top ratio 3"
+msgstr "hybridný vrchný pomer 3"
+
+msgid "hybrid/bottom"
+msgstr "hybrid/dolu"
+
+msgid "hybrid/top"
+msgstr "hybrid/hore"
+
+msgid "left/right"
+msgstr "vľavo/vpravo"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
+msgid "nearest"
+msgstr "najbližšie"
+
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original"
+msgstr "pôvodné"
 
 msgid "original gameboy"
 msgstr "pôvodný gameboy"
 
 msgid "pink dreams"
 msgstr "ružové sny"
+
+msgid "red/blue"
+msgstr "červená/modrá"
+
+msgid "red/cyan"
+msgstr "červená/azúrová"
+
+msgid "red/electric cyan"
+msgstr "červená/elektrická azúrová"
+
+msgid "right/left"
+msgstr "vpravo/vľavo"
 
 msgid "royaltea"
 msgstr "royaltea"
@@ -3282,8 +3636,17 @@ msgstr "scan riadky"
 msgid "standard"
 msgstr "štandardné"
 
+msgid "top only"
+msgstr "iba hore"
+
+msgid "top/bottom"
+msgstr "hore/dolu"
+
 msgid "triangular filter"
 msgstr "trojuholníkový filter"
+
+msgid "trilinear"
+msgstr "trilineárne"
 
 msgid "wave filter"
 msgstr "vlnový filter"
@@ -3302,3 +3665,6 @@ msgstr "xBRZ (predvolené)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - algoritmus zaostrujúceho upscalu, Bicubic - hladký vzhľad, Hybrid - používa bicubic pre hladké oblasti."
+
+msgid "yellow/blue"
+msgstr "žltá/modrá"

@@ -67,7 +67,7 @@ Generators
 
 | Emulator name (`es_systems.cfg`) | Generator | Notes |
 | --- | --- | --- |
-| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, vba-m (`vbam`), mgba, melondsds, mesen, fceumm, nestopia, snes9x, bsnes (and bsnes_hd), mupen64plus-next, swanstation, mednafen_psx (`mednafen_psx_hw`), pcsx_rearmed and flycast; any other core runs with the generic settings |
+| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, vba-m (`vbam`), mgba, melondsds, melonds, desmume, mesen, fceumm, nestopia, snes9x, bsnes (and bsnes_hd), mupen64plus-next, parallel_n64, vb (`mednafen_vb`), pokemini, swanstation, mednafen_psx (`mednafen_psx_hw`), pcsx_rearmed and flycast; any other core runs with the generic settings |
 | `duckstation` | DuckStation | PlayStation |
 | `pcsx2` | PCSX2 | PlayStation 2, x86_64 only |
 | `ppsspp` | PPSSPP | PSP |
@@ -78,6 +78,8 @@ Generators
 | `xenia-edge` | Xenia Edge | Xbox 360, x86_64 only |
 | `rpcs3` | RPCS3 | PlayStation 3, x86_64 only |
 | `eden` | Eden | Nintendo Switch, x86_64 only |
+| `melonds` | melonDS | Nintendo DS |
+| `mupen64plus` | Mupen64Plus | Nintendo 64; the core is the video plugin (`gliden64`, `glide64mk2`, `rice`) |
 
 Any other emulator keeps the `es_systems.cfg` command. Setting `eslauncher=0` in the ES
 configuration (`global.eslauncher`, `<system>.eslauncher` or for one game) also keeps it.
@@ -125,17 +127,22 @@ leaves the others as the player set them in the emulator's menus.
 | Xenia Edge | `xenia-edge/Xenia/xenia-edge.config.toml` (`XDG_DATA_HOME` is `xenia-edge/`) | `<saves>/xbox360` |
 | RPCS3 | `rpcs3/rpcs3/config.yml`, `vfs.yml`, `input_configs/global/Default.yml` (`XDG_CONFIG_HOME` is `rpcs3/`) | the PS3 hard disk `dev_hdd0` is `<saves>/ps3/dev_hdd0` |
 | Eden | `eden/eden/qt-config.ini` (`XDG_CONFIG_HOME` is `eden/`) | `XDG_DATA_HOME` is `<saves>/switch`: NAND and SD card in `<saves>/switch/eden` |
+| melonDS | `melonds/melonDS/melonDS.toml` (`XDG_CONFIG_HOME` is `melonds/`) | `<saves>/nds`, cheats in `<saves>/nds/cheats` |
+| Mupen64Plus | `mupen64plus/mupen64plus.cfg` (started with `--configdir`) | `<saves>/n64` |
 
 * BIOS: DuckStation looks at the root of the BIOS folder, then `psx/` (scph1001.bin, scph5501.bin...);
   PCSX2 in `ps2/`, then the root; xemu needs `mcpx_1.0.bin` and `Complex_4627.bin` at the root,
   and copies `xbox_hdd.qcow2` from there to `<saves>/xbox` the first time. Cemu's `keys.txt` is
   linked from `cemu/keys.txt` or the root. RPCS3 installs the PS3 firmware from `PS3UPDAT.PUP`
   (root or `ps3/`) before the first game. Eden's `keys/` folder links to `switch/`, which must
-  hold `prod.keys`; its firmware is installed from Eden's menu. A missing BIOS stops the launch
+  hold `prod.keys`; its firmware is installed from Eden's menu. melonDS uses `bios7.bin`,
+  `bios9.bin` and `firmware.bin` from the root when all three are there, else its own free BIOS.
+  Mupen64Plus reads the 64DD IPL `64DD_IPL.bin` from the root. A missing BIOS stops the launch
   with a message.
 * Options keep the names of batocera-launch (`duckstation_gfxbackend`, `pcsx2_ratio`,
   `internal_resolution`...), so the same `es_features.cfg` entries work. For PPSSPP,
-  `ppsspp.<section>.<key>` sets any key of `ppsspp.ini`.
+  `ppsspp.<section>.<key>` sets any key of `ppsspp.ini`, and `mupen64plus.<section>.<key>` any
+  key of `mupen64plus.cfg`.
   Eden has no batocera-launch generator: its options are `eden_backend`, `eden_resolution`,
   `eden_vsync`, `eden_ratio`, `eden_antialiasing`, `eden_scaling`, `eden_accuracy` (Eden's own
   values) and `eden_docked`.
@@ -143,7 +150,7 @@ leaves the others as the player set them in the emulator's menus.
   `SDL_GAMECONTROLLERCONFIG`, so the generators bind SDL's gamepad names and any pad works the way
   it was mapped in ES. A Flatpak gets this environment through `--env=` options.
   ES and the emulators read the pads through Linux evdev (`SDL_JOYSTICK_HIDAPI=0`), like
-  RetroArch's udev driver. Through evdev, SDL2 (Azahar, Xenia) and SDL3 (the other emulators)
+  RetroArch's udev driver. Through evdev, SDL2 (Azahar, Xenia, melonDS, Mupen64Plus) and SDL3 (the other emulators)
   give a pad the same GUID and the same button numbers as ES. SDL's HIDAPI drivers would give
   PlayStation, Switch or Xbox pads other GUIDs and numbers, which also differ between SDL2 and
   SDL3. If `SDL_JOYSTICK_HIDAPI` is set in the environment of ES, that value is used instead.
@@ -156,13 +163,15 @@ leaves the others as the player set them in the emulator's menus.
 * Hotkeys: the same as RetroArch, bound in the emulator to player 1's hotkey held with the other
   button (Start quits, B opens the menu or pauses, Y/X save and load a state...), where the
   emulator has the action; Eden gets them as its controller shortcuts. Without a pad, the keyboard
-  keys of batocera-launch. Azahar, Cemu, xemu, Xenia and RPCS3 cannot bind actions to a pad, so
+  keys of batocera-launch. Azahar, Cemu, xemu, Xenia, RPCS3, melonDS and Mupen64Plus cannot bind actions to a pad, so
   their command sets `closeOnHotkey`: while the game runs, ES watches the pads itself and closes
   the emulator when a player holds the hotkey and presses Start (SIGTERM to its process group,
   SIGKILL after 5 seconds). `exithotkey=0` turns this off. Their other hotkeys stay in the
   emulator's own menus.
 * Azahar binds player 1's pad input by input (button numbers and SDL GUID), as batocera-launch does;
-  Eden does the same for players 1 to 8.
+  Eden does the same for players 1 to 8, melonDS for player 1 (buttons and d-pad hat) and
+  Mupen64Plus for players 1 to 4, with batocera-launch's layouts: the generic one, or the N64 one
+  for Nintendo 64 pads and when `mupen64-controller<N>` is not `retropad`.
 * PCSX2: `fullboot=1` shows the BIOS intro (fast boot off).
 * Wii: emulated Wii Remotes by default; `emulatedwiimotes=0` for real ones. `controller_mode` adds
   an extension: `cc` or `pro` (Classic Controller), `in` (Nunchuk), `side` (held sideways).

@@ -9,8 +9,26 @@ msgstr "(FDS) OTOMATIS MUAT DISK SISI A"
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "(FDS) PERCEPAT PEMUATAN DISK"
 
+msgid "0 degrees"
+msgstr "0 Derajat"
+
 msgid "0% (Default)"
 msgstr "0% (Default / Bawaan)"
+
+msgid "0.5x"
+msgstr "0.5x"
+
+msgid "0.6x"
+msgstr "0.6x"
+
+msgid "0.7x"
+msgstr "0.7x"
+
+msgid "0.8x"
+msgstr "0.8x"
+
+msgid "0.9x"
+msgstr "0.9x"
 
 msgid "1 second"
 msgstr "1 detik"
@@ -18,11 +36,29 @@ msgstr "1 detik"
 msgid "1 thread"
 msgstr "1 thread / Utas"
 
+msgid "1% (Default)"
+msgstr "1% (Default / Bawaan)"
+
+msgid "1.1x"
+msgstr "1.1x"
+
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
 
 msgid "1.25x Native"
 msgstr "1.25x Native / Asli"
+
+msgid "1.2x"
+msgstr "1.2x"
+
+msgid "1.3x"
+msgstr "1.3x"
+
+msgid "1.4x"
+msgstr "1.4x"
+
+msgid "1.5x"
+msgstr "1.5x"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -207,6 +243,9 @@ msgstr "ke-28"
 msgid "29th"
 msgstr "ke-29"
 
+msgid "2X"
+msgstr "2X"
+
 msgid "2nd"
 msgstr "ke-2"
 
@@ -290,6 +329,9 @@ msgstr "ADAPTER 4 PEMAIN"
 
 msgid "4 threads"
 msgstr "4 threads"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5x (1440x1080)"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -453,6 +495,9 @@ msgstr "ALSAThread"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX Super Resolution"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "ANAGLYPH PRESET (3D)"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "PENYARINGAN ANISTROPIC"
 
@@ -483,6 +528,9 @@ msgstr "STREAMING TEKSTUR ASYNCHRONOUS-(ASINKRON)"
 msgid "AUDIO"
 msgstr "SUARA"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "SUARA BUFFER (SAMPLE)"
+
 msgid "AUDIO CHANNELS"
 msgstr "CHANNELS / SALURAN SUARA"
 
@@ -494,6 +542,9 @@ msgstr "FORMAT SUARA"
 
 msgid "AUDIO LATENCY"
 msgstr "LATENCY / JEDA SUARA"
+
+msgid "AUDIO SYNC"
+msgstr "SYNC SUARA"
 
 msgid "AUTO FRAMESKIP"
 msgstr "FRAMESKIP-(LOMPATI FRAME) OTOMATIS"
@@ -509,6 +560,9 @@ msgstr "Tambahkan warna pada permaianan Game Boy"
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Mengatur rasio layar untuk video/film di dalam game."
+
+msgid "Adjusts the positions of the screens."
+msgstr "Menyesuaikan posisi pada layar."
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Mempengaruhi cara layar emulasi diskalakan. Hanya renderer OpenGL."
@@ -555,6 +609,12 @@ msgstr "Mengizinkan tekstur yang dapat diganti pengguna."
 msgid "Always"
 msgstr "Selalu"
 
+msgid "Always enforce horizontal"
+msgstr "Selalu paksa horizontal"
+
+msgid "Always enforce vertical"
+msgstr "Selalu paksa vertikal"
+
 msgid "Analog Controller"
 msgstr "Kontroler Analog"
 
@@ -567,11 +627,17 @@ msgstr "Joystik Analog"
 msgid "Analog Joystick (Flystick)"
 msgstr "Joystick Analog (Flystick)"
 
+msgid "Angrylion"
+msgstr "Angrylion (Nama plugin/renderer video)"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (Paling Kompatibel)"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Menerapkan algoritma FXAA (anti-aliasing) untuk menghaluskan tepian objekdan meningkatkan kualitas visual game."
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "Gunakan nilai pengali pada input stik (joystick)untuk menurunkan atau menaikkan tingkat kemudahan respons."
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Gunakan filter video untuk meniru tampilan berbagai sinyal TV jadul (NTSC)."
@@ -591,11 +657,17 @@ msgstr "Paddle Arkanoid"
 msgid "Armenia"
 msgstr "Armenia"
 
+msgid "Arrange the dual screen layout."
+msgstr "Atur tata letak layar ganda.r"
+
 msgid "As Host (Default)"
 msgstr "Ikuti Host (Default / Bawaan)"
 
 msgid "As Is"
 msgstr "Apa Adanya"
+
+msgid "As game specifies"
+msgstr "Sesuai pengaturan game"
 
 msgid "August"
 msgstr "Agustus"
@@ -614,6 +686,9 @@ msgstr "Standar Otomatis (4:3 interlaced / 3:2 progressive)"
 
 msgid "Autodetect"
 msgstr "Deteksi Otomatis"
+
+msgid "Automatic"
+msgstr "Otomatis"
 
 msgid "Automatic ratio"
 msgstr "Rasio Layar Otomatis"
@@ -747,6 +822,9 @@ msgstr "Bawah Saja"
 msgid "Bottom Right"
 msgstr "Bawah Kanan"
 
+msgid "Bottom only"
+msgstr "Bawah Kanan"
+
 msgid "Brazil"
 msgstr "Brazil"
 
@@ -774,6 +852,9 @@ msgstr "PENYARING WARNA"
 msgid "COLOR PALETTE"
 msgstr "PALET WARNA"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "WARNA PALET (2D)"
+
 msgid "CONSOLE COUNTRY"
 msgstr "Negara Konsol"
 
@@ -783,17 +864,35 @@ msgstr "BAHASA KONSOL"
 msgid "CONSOLE REGION"
 msgstr "WILAYAH KONSOL"
 
+msgid "CONSOLE TYPE"
+msgstr "JENIS KONSOL"
+
+msgid "CONTROLLER 1"
+msgstr "Kontroler / Stik 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "Jenis Kontroler - Stik 1"
+
+msgid "CONTROLLER 2"
+msgstr "Kontroler / Stik 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "Jenis Kontroler / Stik 2"
 
+msgid "CONTROLLER 3"
+msgstr "Kontroler / Stik 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "Jenis Kontroler / Stik 3"
 
+msgid "CONTROLLER 4"
+msgstr "Kontroler / Stik 4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "KOMBINASI KONTROLER"
+
+msgid "CONTROLLER TYPE"
+msgstr "TIPE KONTROLER"
 
 msgid "CONTROLLERS"
 msgstr "Kontroler / Stik"
@@ -897,6 +996,9 @@ msgstr "Pilih metode pensekalaan ke-bawah"
 msgid "Choose mipmapping type."
 msgstr "Pilih jenis mipmapping (optimasi tekstur jarak jauh)."
 
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "Pilih plugin grafis Parallel N64."
+
 msgid "Choose the audio output type."
 msgstr "Pilih Tipe Keluaran Suara"
 
@@ -999,6 +1101,9 @@ msgstr "Deinterlacing"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "SUARA DIGITAL PROCESSOR"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "NONAKTIFKAN PAKET RAM EKSPANSI 4MB"
+
 msgid "DISABLE CULLING"
 msgstr "MATIKAN CULLING"
 
@@ -1041,8 +1146,14 @@ msgstr "DS (Bawaan) (Konsol Nintendo DS)"
 msgid "DSi"
 msgstr "DSi"
 
+msgid "DSi (experiemental)"
+msgstr "DSi (Eksperiment)"
+
 msgid "DUAL CORE MODE"
 msgstr "MODE DUAL CORE"
+
+msgid "DUAL SCREEN"
+msgstr "Layar Ganda"
 
 msgid "DYNAREC CODE INVALIDATION"
 msgstr "PEMBATALAN KODE DYNAREC"
@@ -1103,6 +1214,12 @@ msgstr "Kontroler Digital (Gamepad)"
 
 msgid "Digital Prime FBX"
 msgstr "Digital Prime FBX"
+
+msgid "Disable"
+msgstr "Matikan"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "Lewati pengaturan seperti waktu dan bahasa"
 
 msgid "Disabled"
 msgstr "Matikan"
@@ -1176,6 +1293,9 @@ msgstr "AKTIFKAN HAMPARAN PERFORMA"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "AKTIFKAN KOREKSI PGXP"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "AKTIFKAN PEMISAHAN POLYGON"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "AKTIFKAN PEREGANGAN WAKTUA"
 
@@ -1194,6 +1314,12 @@ msgstr "Mesir"
 msgid "El Salvador"
 msgstr "El Salvador"
 
+msgid "Emphasize bottom"
+msgstr "Menekan Bawah"
+
+msgid "Emphasize top"
+msgstr "Menekan Atas"
+
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Meniru Wiimote Sideway dengan L2 untuk Guncangan dan Nunchuk pada R-stick."
 
@@ -1205,6 +1331,9 @@ msgstr "Aktifkan hamparan performa Cemu's"
 
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "Aktifkan animasi boot Gamecube dan akses BIOS(memerlukan berkas BIOS IPL.bin di direktori pengguna yang sesuai)."
+
+msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
+msgstr "Aktifkan MelonDS untuk menampilkan game di dua layar.Beberapa opsi layar terkait akan diabaikan."
 
 msgid "Enable No-interlacing Patches."
 msgstr "Aktifkan Patch Tanpa Interlacing."
@@ -1220,6 +1349,9 @@ msgstr "Aktifkan tampilan gamepad untuk game yang memiliki interaksi di dua laya
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Aktifkan notifikasi cache, peristiwa pengontrol, dll."
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "Aktifkan pembatas audio kedua. Tingkatkan kualitas audio dengan biayaperforma."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Aktifkan Dreamcast DSP untuk Akurasi Suara, hanya rekomendasi untuksistem cepat"
@@ -1287,6 +1419,12 @@ msgstr "PENINGKATAN"
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "Meningkatkan. 3 poin akurat untuk N64, standar lebih baik."
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "Meningkatkan: aktifkan penyempurnaan pembagian poligon"
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "Meningkatkan. Peningkatan kejernihan jarak tekstur saat pemetaan mip diaktifkan."
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "Meningkatkan. Tingkatkan resolusi rendering saat dalam rasio 16:9. Membuat 3Dobjek lebih jelas."
 
@@ -1335,14 +1473,23 @@ msgstr "Meningkatkan. Textures kelas atas"
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "Meningkatkan. textures layar kelas atas (hanya game 2D)"
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "Meningkatkan. Peningkatan textures pada objek 3D."
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "Memastikan setiap frame gambar yang diproses konsol selalu ditampilkan ke layar."
 
 msgid "Estonia"
 msgstr "Estonia"
 
+msgid "Even"
+msgstr "Meskipun"
+
 msgid "Exclusive Ubershaders"
 msgstr "Ubershaders Langsung"
+
+msgid "External"
+msgstr "Bagian Dalam"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "RATA-RATA KECEPATAN TRANSFER DISK"
@@ -1379,6 +1526,9 @@ msgstr "Lompat Bingkai (Frame Skipping)"
 
 msgid "FRAMESKIP"
 msgstr "FRAMESKIP"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "FRAMESKIP (HANYA GL64MK2)"
 
 msgid "FRAMESKIP CONTROL"
 msgstr "Kontrol Lompat Bingkai"
@@ -1581,6 +1731,12 @@ msgstr "Grafis"
 msgid "GRAPHICS API"
 msgstr "GRAFIS API"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "Plugin Grafis"
+
+msgid "Game default"
+msgstr "Standar permainan"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "Adaptor GameCUbe untuk Wii u"
 
@@ -1610,6 +1766,12 @@ msgstr "Jerman"
 
 msgid "Giga"
 msgstr "Giga"
+
+msgid "Glide64"
+msgstr "Glide64 (Nama plugin grafis N64)"
+
+msgid "Gln64"
+msgstr "Gln64 (Nama plugin grafis N64)"
 
 msgid "Gray"
 msgstr "Abu-abu"
@@ -1652,6 +1814,9 @@ msgstr "Hong Kong"
 
 msgid "Horizontal"
 msgstr "Horizontal"
+
+msgid "How the window space is distributed between the screens."
+msgstr "Bagaimana ruang layar di-distribusikan antar tampilan"
 
 msgid "Hungary"
 msgstr "Hungaria"
@@ -1830,8 +1995,14 @@ msgstr "Kirgistan"
 msgid "LAZY TEXTURE CACHING"
 msgstr "Penyimpanan Tembolok Tekstur Lambat (Lazy Texture Caching)"
 
+msgid "LCD FILTER"
+msgstr "PENYARING LCD"
+
 msgid "LCD GHOSTING EFFECT"
 msgstr "LLCD EFEK GHOSTING"
+
+msgid "LCD GHOSTING EFFECTS"
+msgstr "LCD EFEK GHOSTING"
 
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD Ghosting (Akurasi)"
@@ -1844,6 +2015,9 @@ msgstr "PISTOL RINGAN"
 
 msgid "LIGHT GUNS"
 msgstr "Pistol Mainan (Lightgun)"
+
+msgid "LIMIT FRAME RATE"
+msgstr "BATASI FRAME RATE"
 
 msgid "LINEAR UPSCALING"
 msgstr "Peningkatan Ukuran Skala Linear (Linear Upscaling)"
@@ -1913,6 +2087,9 @@ msgstr "Alamat dan port lokal untuk menerima paket data.Biarkan kosong jika Anda
 
 msgid "Low"
 msgstr "Rendah"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "Nilai yang lebih rendah mengurangi latensi audio dan meningkatkan performa, tetapi dapat menyebabkan masalah audio."
 
 msgid "Luxembourg"
 msgstr "Luksemburg"
@@ -2016,6 +2193,9 @@ msgstr "Meksiko"
 msgid "Minimum"
 msgstr "Minimum"
 
+msgid "Mirrored"
+msgstr "Dicerminkan"
+
 msgid "Modern Fightstick Style"
 msgstr "Gaya Modern Fightstick"
 
@@ -2042,6 +2222,12 @@ msgstr "Mouse"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "Jauh lebih cepat daripada juru bahasa (tetapi mungkin memiliki masalah)."
+
+msgid "N64"
+msgstr "N64 (Konsol Nintendo 64)"
+
+msgid "N64 3-point"
+msgstr "N64 3-Poin"
 
 msgid "NAT"
 msgstr "NAT (Jenis pengaturan jaringan)"
@@ -2145,6 +2331,9 @@ msgstr "Tidak (Default / Bawaan)"
 msgid "No Buffer"
 msgstr "Tanpa Penyangga (No Buffer)"
 
+msgid "No Limit"
+msgstr "Tanpa Batas"
+
 msgid "No Ubershaders"
 msgstr "Tanpa Ubershaders"
 
@@ -2165,6 +2354,9 @@ msgstr "Norwagia"
 
 msgid "November"
 msgstr "November"
+
+msgid "OFF (Default)"
+msgstr "MATI (Default / Bawaan)"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "TAMPILAN DI LAYAR (OSD) & NOTIFIKASI"
@@ -2235,6 +2427,12 @@ msgstr "Hanya mendukung permainan, pengaturan tinggi meningkatan persyaratan sis
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL (Klasik)"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL (Compute shader)"
+
 msgid "OpenGL (Default)"
 msgstr "OpenGL (Standar)"
 
@@ -2252,6 +2450,9 @@ msgstr "Hardware Asli (FirebrandX)"
 
 msgid "Original resolution"
 msgstr "Resolusi Asli"
+
+msgid "Original screen positions"
+msgstr "Posisi layar asli"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "Overclock the SNES CPU (Gradius 3, Super Tipe-R)."
@@ -2306,6 +2507,9 @@ msgstr "ParaLLEl-RDP"
 
 msgid "Paraguay"
 msgstr "Paraguay"
+
+msgid "Parallel"
+msgstr "Paralel"
 
 msgid "Partial"
 msgstr "Sebagian / Parsial"
@@ -2385,6 +2589,9 @@ msgstr "Persiapan-pemuatan"
 msgid "Preload requires more RAM."
 msgstr "Persiapan-pemuatan membutuhkan RAM lebih"
 
+msgid "Produces a clean LCD effect."
+msgstr "Menghasilkan efek LCD bersih."
+
 msgid "Puerto Rico"
 msgstr "Puerto Riko"
 
@@ -2399,6 +2606,9 @@ msgstr "Qatar"
 
 msgid "RDP PLUGIN"
 msgstr "PLUGIN RDP"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "BACA FRAMEBUFFER SETIAP FRAME (GLIDE64MK2)"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "KURANGI FLICKERING SPRITE"
@@ -2478,6 +2688,9 @@ msgstr "Dibutuhkan oleh beberapa games"
 msgid "Required for certain visual effects."
 msgstr "Diperlukan untuk efek visual tertentu."
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "Diperlukan untuk beberapa efek dalam game (transisi Banjo Kazooie dan DK64), dapat menyebabkan perlambatan."
+
 msgid "Requires BIOS file to be present."
 msgstr "Membutuhkan file BIOS "
 
@@ -2486,6 +2699,12 @@ msgstr "Pengambilan Sampel Ulang / Resampling (Pitch Shift) (Pengaturan audio)"
 
 msgid "Restored Wii VC"
 msgstr "Wii VC (Virtual Console) yang Dipulihkan"
+
+msgid "RetroPad (Default)"
+msgstr "RetroPad (Bawaan)"
+
+msgid "Rice"
+msgstr "Rice (Nama plugin grafis N64)"
 
 msgid "Right Stick"
 msgstr "Stik Kanan"
@@ -2501,6 +2720,9 @@ msgstr "Putar layar, berguna untuk gameplay homebrew vertikal tertentu."
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Rotasi 4-Way Stick (Q*Bert"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "Putar layar untuk menahan DS ke samping"
 
 msgid "Runs \"skinning\" on the CPU instead of the GPU, means that draw calls from the game can more easily be combined, which often improves things."
 msgstr "enjalankan proses \"skinning\" pada CPU, bukan GPU,sehingga perintah gambar (draw calls) dari game dapat digabungkan dengan lebih mudahdan sering kali meningkatkan performa."
@@ -2529,8 +2751,17 @@ msgstr "PENYARINGAN LAYAR"
 msgid "SCREEN SETTINGS"
 msgstr "PENGATURAN LAYAR"
 
+msgid "SCREEN SIZING"
+msgstr "UKURAN LAYAR"
+
+msgid "SCREEN SWAP"
+msgstr "TUKAR LAYAR"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "SENSITIVITAS"
 
 msgid "SENSOR BAR POSITION"
 msgstr "POSISI SENSOR BAR (Untuk Nintendo Wii)"
@@ -2567,6 +2798,9 @@ msgstr "TAMPILKAN TATA LETAK LAYAR"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "LEWATI EFEK PENYANGGA (BUFFER EFFECTS) (Meningkatkan kecepatan grafis)"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "LEWATI MENU SISTEM DS"
 
 msgid "SKIP GPU READBACKS"
 msgstr "LEWATI PROSES BACA ULANG GPU (GPU READBACKS)"
@@ -2667,6 +2901,12 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Berskala"
 
+msgid "Screen Resolution (Default)"
+msgstr "Filter Interpolasi Scanline (SAI) (Efek garis TV tabung)"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "Bahasa terpilih akan digunakan jika opsi 'Gunakan Pengaturan Firmware' dimatikanatau jika berkas firmware tidak ditemukan."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "Pilih jenis masukan untuk menavigasi layar sentuh"
 
@@ -2696,6 +2936,12 @@ msgstr "Tajam 1"
 
 msgid "Sharp 2"
 msgstr "Tajam 2"
+
+msgid "Sharpen"
+msgstr "Tajam"
+
+msgid "Sharpen More"
+msgstr "Lebih Taham"
 
 msgid "Show"
 msgstr "Tampilkan"
@@ -2774,6 +3020,9 @@ msgstr "Tekstur halus pada objek 3D."
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "texture halus jarak antara objek 3d berdasarkan sudut pandang"
+
+msgid "Smooths out textures on 3D objects."
+msgstr "Menghaluskan tekstur pada objek 3D."
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Menghaluskan keseluruhan gambar yang ditampilkan di layar.Memperbaiki penyelarasan posisi antar piksel."
@@ -2859,6 +3108,9 @@ msgstr "Surround 5.1 (Sistem suara 5.1 saluran)"
 msgid "Surround 7.1"
 msgstr "Surround 7.1"
 
+msgid "Swap the position of the dual displays."
+msgstr "Tukar posisi tampilan ganda"
+
 msgid "Sweden"
 msgstr "Swedia"
 
@@ -2895,8 +3147,14 @@ msgstr "PENGGANTIAN TEKSTUR"
 msgid "TEXTURE SCALING"
 msgstr "PENYESUAIAN SKALA TEKSTUR"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "TEXTURE HALUS"
+
 msgid "TEXTURE UPSCALING"
 msgstr "MENINGKATKAN TEXTURE"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "PENINGKATAN TEKSTUR (HANYA BERAS)"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "PENINGKATAN TEKSTUR (XBRZ)"
@@ -2942,6 +3200,9 @@ msgstr "Thailand"
 
 msgid "The PSP will cull triangles that are outside a 4096x4096 clipping box, and also triangles crossing the Z=1 plane if clipping is enabled."
 msgstr "PSP akan membuang (cull) segitiga objek 3D yang berada di luar batas kotak 4096x4096,serta segitiga yang memotong bidang Z=1 jika fitur clipping diaktifkan."
+
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "Area di sekitar posisi tengah/netral stik di mana input diabaikan.Dapat membantu mengurangi pergerakan yang tidak disengaja (drift halus)."
 
 msgid "The day within the month of your birthday."
 msgstr "Tanggal hari dari bulan kelahiran Anda."
@@ -2994,6 +3255,9 @@ msgstr "Hanya Atas"
 msgid "Top Right"
 msgstr "Atas Kanan"
 
+msgid "Top only"
+msgstr "Hanya atas"
+
 msgid "Touch Screen"
 msgstr "Layar Sentuh"
 
@@ -3039,6 +3303,9 @@ msgstr "SARING UPSCALE"
 msgid "USE DSP AUDIO"
 msgstr "GUNAKAN AUDIO DSP"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "GUNAKAN PENGATURAN FIRMWARE"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "GUNAKAN BINGKAI PRE-EMPTIVE (Fitur pengurang jeda input/lag)"
 
@@ -3072,6 +3339,9 @@ msgstr "Hingga 2 (Default / Bawaan)"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "Mengunggah seluruh tekstur sekaligus, bukan dalam potongan-potongan kecil.Meningkatkan performa pada sebagian besar game."
 
+msgid "Upscale textures on 3D objects."
+msgstr "Peningkatan Skala textures pada 3D objects"
+
 msgid "Uruguay"
 msgstr "Uruguay"
 
@@ -3084,6 +3354,9 @@ msgstr "Gunakan Host / Komputer Utama"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Gunakan SSAA sebagai pengganti MSAA untuk penghalus tepi gambar (anti-aliasing).SSAA terlihat lebih bagus tetapi memerlukan performa yang jauh lebih tinggi."
 
+msgid "Use language and username from the NDS Firmware"
+msgstr "Gunakan bahasa dan nama pengguna dari Firmware NDS"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Gunakan bingkai preemptive sebagai pengganti run-ahead.Hanya berjalan mendahului (run-ahead) ketika status kontroler berubah."
 
@@ -3092,6 +3365,15 @@ msgstr "Gunakan untuk menghilangkan pergeseran stik (drift) atau input yang tida
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "Gunakan untuk membuat pergerakan stik menjadi lebih atau kurang sensitif.Berdampak pada semua kontroler."
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "Gunakan anaglypth 3D glasses anda!"
+
+msgid "Useful for N64 style controllers."
+msgstr "Berguna untuk kontroler bergaya N64."
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "Berguna untuk kontroler bergaya N64. Tombol pintas (hotkey) dibatasiuntuk kontroler yang tidak memiliki tombol pintas khusus."
 
 msgid "Useful for speedruns/glitches."
 msgstr "Berguna untuk speedruns/glitches."
@@ -3237,11 +3519,41 @@ msgstr "AKURASI ZCULL (Fitur perupaan grafis 3D)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Perbesar untuk menyembunyikan border, borders dapat berbeda setiap game"
 
+msgid "bilinear"
+msgstr "bilinear"
+
 msgid "black and white"
 msgstr "hitam dan putih"
 
+msgid "black/blue"
+msgstr "hitam/biru"
+
+msgid "black/cyan"
+msgstr "hitam/cyan"
+
+msgid "black/electric cyan"
+msgstr "hitam/elekrik cyan"
+
+msgid "black/green"
+msgstr "hitam/hijau"
+
+msgid "black/magenta"
+msgstr "hitam/magenta"
+
+msgid "black/white"
+msgstr "hitam/putih"
+
+msgid "black/yellow"
+msgstr "hitam/kuning"
+
 msgid "blue sea"
 msgstr "laut biru"
+
+msgid "bottom only"
+msgstr "hanya bawah"
+
+msgid "bottom/top"
+msgstr "bawah/atas"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (AS) (Model chip decoder video)"
@@ -3258,20 +3570,62 @@ msgstr "GBA SP"
 msgid "green forest"
 msgstr "hutan hijau"
 
+msgid "green/magenta"
+msgstr "hijau/magenta"
+
 msgid "hot desert"
 msgstr "hot desert"
+
+msgid "hybrid bottom ratio 2"
+msgstr "hibrida bawah rasio 2 "
+
+msgid "hybrid bottom ratio 3"
+msgstr "hibrida bawah rasio 3"
+
+msgid "hybrid top ratio 2"
+msgstr "gabung atas rasio 2"
+
+msgid "hybrid top ratio 3"
+msgstr "hibrida atas rasio 3"
+
+msgid "hybrid/bottom"
+msgstr "hibrida/bawah"
+
+msgid "hybrid/top"
+msgstr "hibrida/atas"
+
+msgid "left/right"
+msgstr "kiri/kanan"
 
 msgid "lottes crt"
 msgstr "lottes crt (Jenis shader TV tabung)"
 
+msgid "nearest"
+msgstr "mendekati"
+
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original"
+msgstr "asli"
 
 msgid "original gameboy"
 msgstr "gameboy asli"
 
 msgid "pink dreams"
 msgstr "pink dreams"
+
+msgid "red/blue"
+msgstr "merah/biru"
+
+msgid "red/cyan"
+msgstr "merah/cyan"
+
+msgid "red/electric cyan"
+msgstr "merah/electric cyan"
+
+msgid "right/left"
+msgstr "kanan/kiri"
 
 msgid "royaltea"
 msgstr "royaltea (Jenis shader/filter grafis)"
@@ -3282,8 +3636,17 @@ msgstr "garis pindai (scanlines) (Efek layar TV tabung)"
 msgid "standard"
 msgstr "standar / bawaan"
 
+msgid "top only"
+msgstr "hanya atas"
+
+msgid "top/bottom"
+msgstr "atas/bawah"
+
 msgid "triangular filter"
 msgstr "filter segitiga (triangular filter)"
+
+msgid "trilinear"
+msgstr "trilinear"
 
 msgid "wave filter"
 msgstr "filter gelombang"
@@ -3302,3 +3665,6 @@ msgstr "xBRZ (Default / Bawaan)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - algoritma upscale yang menajamkan gambar, Bicubic - tampilan yang halus,Hybrid - menggunakan bicubic khusus untuk area yang mulus."
+
+msgid "yellow/blue"
+msgstr "kuning/biru"

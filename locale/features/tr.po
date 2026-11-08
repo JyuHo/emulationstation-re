@@ -9,8 +9,26 @@ msgstr "(FDS) DİSK A TARAFINI OTOMATİK YÜKLE"
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "(FDS) HIZLI İLERİ SARMA İLE DİSK YÜKLENİYOR"
 
+msgid "0 degrees"
+msgstr "0 derece"
+
 msgid "0% (Default)"
 msgstr "0% (Varsayılan)"
+
+msgid "0.5x"
+msgstr "0.5x"
+
+msgid "0.6x"
+msgstr "0.6x"
+
+msgid "0.7x"
+msgstr "0.7x"
+
+msgid "0.8x"
+msgstr "0.8x"
+
+msgid "0.9x"
+msgstr "0.9x"
 
 msgid "1 second"
 msgstr "1 saniye"
@@ -18,11 +36,29 @@ msgstr "1 saniye"
 msgid "1 thread"
 msgstr "1 iş parçacığı"
 
+msgid "1% (Default)"
+msgstr "1% (Varsayılan)"
+
+msgid "1.1x"
+msgstr "1.1x"
+
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
 
 msgid "1.25x Native"
 msgstr "1.25x Doğal"
+
+msgid "1.2x"
+msgstr "1.2x"
+
+msgid "1.3x"
+msgstr "1.3x"
+
+msgid "1.4x"
+msgstr "1.4x"
+
+msgid "1.5x"
+msgstr "1.5x"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -207,6 +243,9 @@ msgstr "28."
 msgid "29th"
 msgstr "29."
 
+msgid "2X"
+msgstr "2X"
+
 msgid "2nd"
 msgstr "2."
 
@@ -290,6 +329,9 @@ msgstr "4 OYUNCU ADAPTÖR"
 
 msgid "4 threads"
 msgstr "4 iş parçacığı"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5x (1440x1080)"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -453,6 +495,9 @@ msgstr "ALSAThread"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD Fidelity FX Süper Çözünürlük"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "ANAGLİF ÖN AYAR (3D)"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "ANİZOTROPİK FİLTRELEME"
 
@@ -483,6 +528,9 @@ msgstr "EŞ ZAMANSIZ DOKU AKIŞI"
 msgid "AUDIO"
 msgstr "SES"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "SES ARABELLEĞİ (ÖRNEKLER)"
+
 msgid "AUDIO CHANNELS"
 msgstr "SES KANALLARI"
 
@@ -494,6 +542,9 @@ msgstr "SES BİÇİMİ"
 
 msgid "AUDIO LATENCY"
 msgstr "SES GECİKMESİ"
+
+msgid "AUDIO SYNC"
+msgstr "SES EŞİTLEMESİ"
 
 msgid "AUTO FRAMESKIP"
 msgstr "OTOMATİK KARE ATLA"
@@ -509,6 +560,9 @@ msgstr "Game Boy oyunlarına renk kat."
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Tam Hareketli Video filmlerinin en boy oranını ayarlar."
+
+msgid "Adjusts the positions of the screens."
+msgstr "Ekranların konumlarını ayarlar."
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Taklit tedilmiş ekranların nasıl ölçeklendirileceğini etkiler. Yalnızca OpenGL işleyici."
@@ -555,6 +609,12 @@ msgstr "Kullanıcının değiştirebileceği dokulara izin verir."
 msgid "Always"
 msgstr "Sürekli"
 
+msgid "Always enforce horizontal"
+msgstr "Sürekli yatay uygula"
+
+msgid "Always enforce vertical"
+msgstr "Sürekli dikey uygula"
+
 msgid "Analog Controller"
 msgstr "Analog Kontrolcü"
 
@@ -567,11 +627,17 @@ msgstr "Analog Joystick"
 msgid "Analog Joystick (Flystick)"
 msgstr "Analog Joystick (Flystick)"
 
+msgid "Angrylion"
+msgstr "Angrylion"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (En Uyumlu)"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Oyunların görsel kalitesini artırmak için FXAA kenar yumuşatma algoritmasını uygular."
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "Yanıt verme hızını azaltmak veya artırmak için kumanda kolunun girişine bir çarpan uygulayın."
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Çeşitli NTSC TV sinyallerini taklit etmek için bir video filtresi uygulayın."
@@ -591,11 +657,17 @@ msgstr "Arkanoid denetim kolu"
 msgid "Armenia"
 msgstr "Ermenistan"
 
+msgid "Arrange the dual screen layout."
+msgstr "Çift ekran düzenini düzenle."
+
 msgid "As Host (Default)"
 msgstr "Ana Bilgisayar Olarak (Varsayılan)"
 
 msgid "As Is"
 msgstr "Olduğu gibi"
+
+msgid "As game specifies"
+msgstr "Oyunun belirttiği gibi"
 
 msgid "August"
 msgstr "Ağustos"
@@ -614,6 +686,9 @@ msgstr "Otomatik Standart (4:3 geçmeli / 3:2 aşamalı)"
 
 msgid "Autodetect"
 msgstr "Otomatik algıla"
+
+msgid "Automatic"
+msgstr "Otomatik"
 
 msgid "Automatic ratio"
 msgstr "Otomatik oran"
@@ -747,6 +822,9 @@ msgstr "Sadece Alt"
 msgid "Bottom Right"
 msgstr "Sağ Alt"
 
+msgid "Bottom only"
+msgstr "Sadece alt"
+
 msgid "Brazil"
 msgstr "Brezilya"
 
@@ -774,6 +852,9 @@ msgstr "RENK FİLTRESİ"
 msgid "COLOR PALETTE"
 msgstr "RENK PALETİ"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "RENK PALETİ (2D)"
+
 msgid "CONSOLE COUNTRY"
 msgstr "KONSOL ÜLKESİ"
 
@@ -783,17 +864,35 @@ msgstr "KONSOL DİLİ"
 msgid "CONSOLE REGION"
 msgstr "KONSOL BÖLGESİ"
 
+msgid "CONSOLE TYPE"
+msgstr "KONSOL TÜRÜ"
+
+msgid "CONTROLLER 1"
+msgstr "KONTROLCÜ 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "KONTROLCÜ 1 TÜRÜ"
+
+msgid "CONTROLLER 2"
+msgstr "KONTROLCÜ 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "KONTROLCÜ 2 TÜRÜ"
 
+msgid "CONTROLLER 3"
+msgstr "KONTROLCÜ 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "KONTROLCÜ 3 TÜRÜ"
 
+msgid "CONTROLLER 4"
+msgstr "KONTROLCÜ 4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "KONTROLCÜ KOMBİNASYONU"
+
+msgid "CONTROLLER TYPE"
+msgstr "KONTROLCÜ TÜRÜ"
 
 msgid "CONTROLLERS"
 msgstr "KONTROLCÜLER"
@@ -897,6 +996,9 @@ msgstr "Ölçek küçültme yöntemini seç."
 msgid "Choose mipmapping type."
 msgstr "Eşleme türünü seçin."
 
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "Paralel N64 grafik eklentisini seçin."
+
 msgid "Choose the audio output type."
 msgstr "Ses çıkış türünü seçin."
 
@@ -999,6 +1101,9 @@ msgstr "TARAMASIZLAŞTIRMA"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "DİJİTAL SES İŞLEMCİSİ"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "4MB RAM GENİŞLETME PAKETİNİ DEVRE DIŞI BIRAK"
+
 msgid "DISABLE CULLING"
 msgstr "AYIKLAMAYI DEVRE DIŞI BIRAK"
 
@@ -1041,8 +1146,14 @@ msgstr "DS (Varsayılan)"
 msgid "DSi"
 msgstr "DSi"
 
+msgid "DSi (experiemental)"
+msgstr "DSi (deneysel)"
+
 msgid "DUAL CORE MODE"
 msgstr "ÇİFT ÇEKİRDEK MODU"
+
+msgid "DUAL SCREEN"
+msgstr "ÇİFT EKRAN"
 
 msgid "DYNAREC CODE INVALIDATION"
 msgstr "DİNAMİK YENİDEN DERLEYİCİ KODU ETKİSİZŞLEŞTİR"
@@ -1103,6 +1214,12 @@ msgstr "Dijital Kontrolcü (Oyun Kolu)"
 
 msgid "Digital Prime FBX"
 msgstr "Dijital Prime FBX"
+
+msgid "Disable"
+msgstr "Devre dışı bırak"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "Zaman ve dil gibi sistem ayarlarına erişmek için devre dışı bırak."
 
 msgid "Disabled"
 msgstr "Devre dışı"
@@ -1176,6 +1293,9 @@ msgstr "PERFORMANS YERLEŞİMİNİ ETKİNLEŞTİR"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "PGXP DÜZELTMELERİNİ ETKİNLEŞTİR"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "POLİGON BÖLMEYİ ETKİNLEŞTİR"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "ZAMAN UZATMAYI ETKİNLEŞTİR"
 
@@ -1194,6 +1314,12 @@ msgstr "Mısır"
 msgid "El Salvador"
 msgstr "El Salvador"
 
+msgid "Emphasize bottom"
+msgstr "Aşağıyı vurgula"
+
+msgid "Emphasize top"
+msgstr "Yukarıyı vurgula"
+
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Shake için L2 ve Nunchuk R-Stick'i Wiimote Sideway ile taklit et."
 
@@ -1205,6 +1331,9 @@ msgstr "Cemu performans kaplamasını etkinleştir."
 
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "Gamecube önyükleme animasyonunu ve BIOS erişimini etkinleştirin (uygun kullanıcı dizininde IPL.bin BIOS'u gerektirir)"
+
+msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
+msgstr "MelonDS iki ekranda görüntülenmesini etkinleştirin. Bazı ilgili ekran seçenekleri göz ardı edilecektir."
 
 msgid "Enable No-interlacing Patches."
 msgstr "Taramasız Yamaları Etkinleştir."
@@ -1220,6 +1349,9 @@ msgstr "İki ekran arasında etkileşime sahip oyunlar için oyun kumandası gö
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Önbellek, kontrolcü olayları vb. bildirimlerini etkinleştirin."
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "İkinci ses sınırlayıcıyı etkinleştir. Performans karşılığında ses kalitesini artırır."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Daha doğru ses için Dreamcast DSP'yi etkinleştir. Sadece hızlı sistemler için önerilir."
@@ -1287,6 +1419,12 @@ msgstr "İyileştirme."
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "İyileştirme. 3 nokta N64'e göre doğrudur, standart daha iyidir."
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "İyileştirme. Gelişmiş çokgen bölmeyi etkinleştirir."
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "İyileştirme. Mip-mapping etkinleştirildiğinde uzak dokuların netliğini artırır."
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "İyileştirme. 16:9 oranındayken işleme çözünürlüğünü arttır. 3B nesneleri daha net hale getirir."
 
@@ -1335,14 +1473,23 @@ msgstr "İyileştirme. Dokuları yükselt."
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "İyileştirme. Ekran dokularını yükselt (Sadece 2D oyunlar)."
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "İyileştirme. 3B nesnelerdeki dokuları yükselt."
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "Konsolun oluşturduğu her karenin ekranda görüntülendiğinden emin olun."
 
 msgid "Estonia"
 msgstr "Estonya"
 
+msgid "Even"
+msgstr "Çift"
+
 msgid "Exclusive Ubershaders"
 msgstr "Seçkin Üstün Gölgelendiriciler"
+
+msgid "External"
+msgstr "Harici"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "HIZLI DİSK AKTARIM HIZI"
@@ -1379,6 +1526,9 @@ msgstr "KARELERİ ATLA"
 
 msgid "FRAMESKIP"
 msgstr "KARE ATLA"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "KARE ATLA (SADECE GL64MK2)"
 
 msgid "FRAMESKIP CONTROL"
 msgstr "KARE ATLAMA KONTROLÜ"
@@ -1581,6 +1731,12 @@ msgstr "GRAFİKLER"
 msgid "GRAPHICS API"
 msgstr "GRAFİK API"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "GRAFİK EKLENTİSİ"
+
+msgid "Game default"
+msgstr "Oyun varsayılanı"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "Wii U için GameCube Adaptörü"
 
@@ -1610,6 +1766,12 @@ msgstr "Almanya"
 
 msgid "Giga"
 msgstr "Giga"
+
+msgid "Glide64"
+msgstr "Glide64"
+
+msgid "Gln64"
+msgstr "Gln64"
 
 msgid "Gray"
 msgstr "Gri"
@@ -1652,6 +1814,9 @@ msgstr "Hong Kong"
 
 msgid "Horizontal"
 msgstr "Yatay"
+
+msgid "How the window space is distributed between the screens."
+msgstr "Pencere alanı ekranlar arasında nasıl dağıtılacak."
 
 msgid "Hungary"
 msgstr "Macaristan"
@@ -1830,8 +1995,14 @@ msgstr "Kırgızistan"
 msgid "LAZY TEXTURE CACHING"
 msgstr "TEMBEL DOKU ÖNBELLEKMESİ"
 
+msgid "LCD FILTER"
+msgstr "LCD FİLTRESİ"
+
 msgid "LCD GHOSTING EFFECT"
 msgstr "LCD GÖLGELENME EFEKTİ"
+
+msgid "LCD GHOSTING EFFECTS"
+msgstr "LCD GÖLGELENME EFEKTLERİ"
 
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD Gölgelenmesi (Kesin)"
@@ -1844,6 +2015,9 @@ msgstr "IŞIN TABANCASI"
 
 msgid "LIGHT GUNS"
 msgstr "IŞIN TABANCALARI"
+
+msgid "LIMIT FRAME RATE"
+msgstr "KARE HIZINI SINIRLA"
 
 msgid "LINEAR UPSCALING"
 msgstr "DOĞRUSAL YÜKSELTME"
@@ -1913,6 +2087,9 @@ msgstr "Paketlerin alınacağı yerel adres ve bağlantı noktası. Xemu.toml ya
 
 msgid "Low"
 msgstr "Düşük"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "Daha düşük değerler ses gecikmesini azaltır ve performansı artırır ancak ses sorunlarına neden olabilir."
 
 msgid "Luxembourg"
 msgstr "Lüksemburg"
@@ -2016,6 +2193,9 @@ msgstr "Meksika"
 msgid "Minimum"
 msgstr "EN DÜŞÜK"
 
+msgid "Mirrored"
+msgstr "Yansıtılmış"
+
 msgid "Modern Fightstick Style"
 msgstr "Modern Fightstick Tarzı"
 
@@ -2042,6 +2222,12 @@ msgstr "Fare"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "Yorumcudan çok daha hızlı (ancak sorunları olabilir)."
+
+msgid "N64"
+msgstr "N64"
+
+msgid "N64 3-point"
+msgstr "N64 3-nokta"
 
 msgid "NAT"
 msgstr "NAT"
@@ -2145,6 +2331,9 @@ msgstr "Hayır (Varsayılan)"
 msgid "No Buffer"
 msgstr "Arabellek Yok"
 
+msgid "No Limit"
+msgstr "Sınırsız"
+
 msgid "No Ubershaders"
 msgstr "Üstün Gölgelendiciler Yok"
 
@@ -2165,6 +2354,9 @@ msgstr "Norveç"
 
 msgid "November"
 msgstr "Kasım"
+
+msgid "OFF (Default)"
+msgstr "KAPAT (Varsayılan)"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "EKRAN ÜZERİNDE GÖRÜNTÜLEME & BİLDİRİMLER"
@@ -2235,6 +2427,12 @@ msgstr "Sadece desteklenen oyunlar. Daha yüksek ayarlar sistem gereksinimlerini
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL (Klasik)"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL (Gölgelendirici hesap)"
+
 msgid "OpenGL (Default)"
 msgstr "OpenGL (Varsayılan)"
 
@@ -2252,6 +2450,9 @@ msgstr "Orijinal Donanım (FirebrandX)"
 
 msgid "Original resolution"
 msgstr "Orijinal çözünürlük"
+
+msgid "Original screen positions"
+msgstr "Orijinal ekran konumları"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "SNES işlemcisi hız aşımı (Gradius 3, Super R-Type)."
@@ -2306,6 +2507,9 @@ msgstr "ParaLLEl-RDP"
 
 msgid "Paraguay"
 msgstr "Paraguay"
+
+msgid "Parallel"
+msgstr "Parallel"
 
 msgid "Partial"
 msgstr "Kısmen"
@@ -2385,6 +2589,9 @@ msgstr "Önyükleme"
 msgid "Preload requires more RAM."
 msgstr "Önyükleme daha fazla RAM gerektirir."
 
+msgid "Produces a clean LCD effect."
+msgstr "Temiz bir LCD efekti üretir."
+
 msgid "Puerto Rico"
 msgstr "Porto Riko"
 
@@ -2399,6 +2606,9 @@ msgstr "Katar"
 
 msgid "RDP PLUGIN"
 msgstr "RDP EKLENTİSİ"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "HER KAREDE KARE ARABELLEĞİNİ OKU (GLIDE64MK2)"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "HAREKET TİTREŞMESİNİ AZALT"
@@ -2478,6 +2688,9 @@ msgstr "Bazı oyunlar için gereklidir."
 msgid "Required for certain visual effects."
 msgstr "Belirli görsel efektler için gereklidir."
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "Oyun içi bazı efektler için gerekli (Banjo Kazooie ve DK64 geçişleri), yavaşlamaya neden olabilir."
+
 msgid "Requires BIOS file to be present."
 msgstr "BIOS dosyasının mevcut olmasını gerektirir."
 
@@ -2486,6 +2699,12 @@ msgstr "Yeniden Örnekleyici (Pirch Kaydırma)"
 
 msgid "Restored Wii VC"
 msgstr "Geri Yüklenen Wii VC"
+
+msgid "RetroPad (Default)"
+msgstr "RetroPad (Varsayılan)"
+
+msgid "Rice"
+msgstr "Rice"
 
 msgid "Right Stick"
 msgstr "Sağ Çubuk"
@@ -2501,6 +2720,9 @@ msgstr "Ekranı döndür, bazı dikey oyunlarda kullanışlıdır."
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Döndürülmüş 4 Yönlü Çubuk (Q*Bert)"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "DS yan tutma simülasyonu için ekranları döndürür."
 
 msgid "Runs \"skinning\" on the CPU instead of the GPU, means that draw calls from the game can more easily be combined, which often improves things."
 msgstr "GPU yerine CPU ile \"skinning\" çalıştırır, bu oyundan gelen çizim çağrılarının kolay bir şekilde birleştirilebileceği anlamına gelir ve çoğu zaman işleri iyileştirir."
@@ -2529,8 +2751,17 @@ msgstr "EKRAN FİLTRELEMESİ"
 msgid "SCREEN SETTINGS"
 msgstr "EKRAN AYARLARI"
 
+msgid "SCREEN SIZING"
+msgstr "EKRAN BOYUTLANDIRMASI"
+
+msgid "SCREEN SWAP"
+msgstr "EKRAN DEĞİŞTİR"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "HASSASİYET"
 
 msgid "SENSOR BAR POSITION"
 msgstr "SENSÖR ÇUBUĞU KONUMU"
@@ -2567,6 +2798,9 @@ msgstr "EKRAN DÜZENİNİ GÖSTER"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "ARABELLEK EFEKTLERİNİ ATLA"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "DS SİSTEM MENÜSÜNÜ ATLA"
 
 msgid "SKIP GPU READBACKS"
 msgstr "GPU DOĞRULUĞUNU ATLA"
@@ -2667,6 +2901,12 @@ msgstr "ÖlçekMiktarı"
 msgid "Scaled"
 msgstr "Ölçeklenmiş"
 
+msgid "Screen Resolution (Default)"
+msgstr "Ekran Çözünürlüğü (Varsayılan)"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "'Ürün Yazılımı Ayarlarını Kullan' seçeneği devre dışı bırakılırsa veya ürün yazılımı dosyası bulunamazsa kullanılacak dili seçin."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "Dokunmatik ekranda gezinmek için giriş türünü seç"
 
@@ -2696,6 +2936,12 @@ msgstr "Keskin 1"
 
 msgid "Sharp 2"
 msgstr "Keskin 2"
+
+msgid "Sharpen"
+msgstr "Keskin"
+
+msgid "Sharpen More"
+msgstr "Daha Keskin"
 
 msgid "Show"
 msgstr "Göster"
@@ -2774,6 +3020,9 @@ msgstr "3D nesnelerde pürüzsüz dokular."
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "Açıya göre uzaktaki 3D nesnelerde pürüzsüz dokular."
+
+msgid "Smooths out textures on 3D objects."
+msgstr "3D nesnelerdeki dokuları pürüzsüzleştirir."
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Ekranda görüntülenen genel resmi düzgünleştirir. Pikseller arasındaki konumlandırmayı düzeltir."
@@ -2859,6 +3108,9 @@ msgstr "Surround 5.1"
 msgid "Surround 7.1"
 msgstr "Surround 7.1"
 
+msgid "Swap the position of the dual displays."
+msgstr "İkili ekranın konumunu değiştirin."
+
 msgid "Sweden"
 msgstr "İsveç"
 
@@ -2895,8 +3147,14 @@ msgstr "DOKU DEĞİŞİMLERİ"
 msgid "TEXTURE SCALING"
 msgstr "DOKU ÖLÇEKLENDİRMESİ"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "DOKU YUMUŞAT"
+
 msgid "TEXTURE UPSCALING"
 msgstr "DOKU YÜKSELTMESİ"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "DOKU YÜKSELTMESİ (YALNIZCA RICE)"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "DOKU YÜKSELTMESİ (XBRZ)"
@@ -2942,6 +3200,9 @@ msgstr "Tayland"
 
 msgid "The PSP will cull triangles that are outside a 4096x4096 clipping box, and also triangles crossing the Z=1 plane if clipping is enabled."
 msgstr "PSP, 4096x4096 kırpma kutusunun dışında kalan üçgenleri ve kırpma etkinleştirilmişse Z=1 düzlemini geçen üçgenleri ayıklayacaktır."
+
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "Girişin dikkate alınmadığı joystick'in nötr konumu etrafındaki alan. İstenmeyen girdilerin azaltılmasına yardımcı olabilir."
 
 msgid "The day within the month of your birthday."
 msgstr "Doğum gününüzün ayı içindeki gün."
@@ -2994,6 +3255,9 @@ msgstr "Sadece Üst"
 msgid "Top Right"
 msgstr "Sağ Üst"
 
+msgid "Top only"
+msgstr "Sadece üst"
+
 msgid "Touch Screen"
 msgstr "Dokunmatik Ekran"
 
@@ -3039,6 +3303,9 @@ msgstr "YÜKSELTME FİLTRESİ"
 msgid "USE DSP AUDIO"
 msgstr "DSP SES KULLAN"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "YAZILIM AYARLARINI KULLAN"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "ÖNLEYİCİ KARELER KULLAN"
 
@@ -3072,6 +3339,9 @@ msgstr "2 Kadar (Varsayılan)"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "Küçük parçalar yerine tüm dokuları tek seferde yükler. Çoğu oyunda performansı artırır."
 
+msgid "Upscale textures on 3D objects."
+msgstr "3D nesnelerde yükseltme."
+
 msgid "Uruguay"
 msgstr "Uruguay"
 
@@ -3084,6 +3354,9 @@ msgstr "Ana Bilgisayarı Kullan"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Kenar yumuşatma için MSAA yerine SSAA kullanın. SSAA daha iyi görünebilir ancak performans maliyeti daha yüksektir."
 
+msgid "Use language and username from the NDS Firmware"
+msgstr "NDS Ürün Yazılımındaki dili ve kullanıcı adını kullanın"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Önden giden kareler yerine, önleyici kareler kullan. Kontrolcü durumu değiştiğinde önden giden kare çalışır."
 
@@ -3092,6 +3365,15 @@ msgstr "Joystick sürüklenmesi / istenmeyen girişi kaldırmak için kullanın.
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "Joystick hareketini az ya da çok hassas hale getirmek için kullanın. Tüm kontrolcüleri etkiler."
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "Fiziksel anaglif 3D gözlüğünüzü kullanın!"
+
+msgid "Useful for N64 style controllers."
+msgstr "N64 tarzı kontrolcüler için kullanışlıdır."
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "N64 tarzı kontrolcüler için kullanışlıdır. Özel kısayol tuşu olmayan denetleyiciler için sınırlı kısayol tuşları."
 
 msgid "Useful for speedruns/glitches."
 msgstr "Hızlı çalıştırmalar/hatalar için kullanışlıdır."
@@ -3237,11 +3519,41 @@ msgstr "ZCULL DOĞRULUĞU"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Siyah kenarlıkları gizlemek için yakınlaştırır. Kenarlıklar oyuna göre farklıdır."
 
+msgid "bilinear"
+msgstr "çift doğrusal"
+
 msgid "black and white"
 msgstr "siyah ve beyaz"
 
+msgid "black/blue"
+msgstr "siyah/mavi"
+
+msgid "black/cyan"
+msgstr "siyah/camgöbeği"
+
+msgid "black/electric cyan"
+msgstr "siyah/elektrik camgöbeği"
+
+msgid "black/green"
+msgstr "siyah/yeşil"
+
+msgid "black/magenta"
+msgstr "siyah/eflatun"
+
+msgid "black/white"
+msgstr "siyah/beyaz"
+
+msgid "black/yellow"
+msgstr "siyah/sarı"
+
 msgid "blue sea"
 msgstr "mavi deniz"
+
+msgid "bottom only"
+msgstr "sadece alt"
+
+msgid "bottom/top"
+msgstr "alt/üst"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (ABD)"
@@ -3258,20 +3570,62 @@ msgstr "gba sp"
 msgid "green forest"
 msgstr "yeşil orman"
 
+msgid "green/magenta"
+msgstr "yeşil/eflatun"
+
 msgid "hot desert"
 msgstr "sıcak çöl"
+
+msgid "hybrid bottom ratio 2"
+msgstr "hibrit alt oran 2"
+
+msgid "hybrid bottom ratio 3"
+msgstr "hibrit alt oran 3"
+
+msgid "hybrid top ratio 2"
+msgstr "hibrit üst oran 2"
+
+msgid "hybrid top ratio 3"
+msgstr "hibrit üst oran 3"
+
+msgid "hybrid/bottom"
+msgstr "hibrit/alt"
+
+msgid "hybrid/top"
+msgstr "hibrit/üst"
+
+msgid "left/right"
+msgstr "sol/sağ"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
+msgid "nearest"
+msgstr "en yakın"
+
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original"
+msgstr "orijinal"
 
 msgid "original gameboy"
 msgstr "orijinal gameboy"
 
 msgid "pink dreams"
 msgstr "pembe rüyalar"
+
+msgid "red/blue"
+msgstr "kırmızı/mavi"
+
+msgid "red/cyan"
+msgstr "kırmızı/camgöbeği"
+
+msgid "red/electric cyan"
+msgstr "kırmızı/elektrik camgöbeği"
+
+msgid "right/left"
+msgstr "sağ/sol"
 
 msgid "royaltea"
 msgstr "royaltea"
@@ -3282,8 +3636,17 @@ msgstr "tarama çizgileri"
 msgid "standard"
 msgstr "standart"
 
+msgid "top only"
+msgstr "sadece üst"
+
+msgid "top/bottom"
+msgstr "üst/alt"
+
 msgid "triangular filter"
 msgstr "üçgensel filtre"
+
+msgid "trilinear"
+msgstr "üç doğrusal"
 
 msgid "wave filter"
 msgstr "dalga filtresi"
@@ -3302,3 +3665,6 @@ msgstr "xBRZ (Varsayılan)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - keskinleştirme yükseltme algoritması, Bikubik - pürüzsüz bir görünüm, Hibrit - pürüzsüz alanlar için bikubik kullanır."
+
+msgid "yellow/blue"
+msgstr "sarı/mavi"

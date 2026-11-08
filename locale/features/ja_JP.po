@@ -9,8 +9,26 @@ msgstr "(FDS) 自動でDISK SIDE A(Aメン)を読込む"
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "(FDS) ディスク読み込みを早送りする"
 
+msgid "0 degrees"
+msgstr "回転しない"
+
 msgid "0% (Default)"
 msgstr "0% (標準)"
+
+msgid "0.5x"
+msgstr "0.5x"
+
+msgid "0.6x"
+msgstr "0.6x"
+
+msgid "0.7x"
+msgstr "0.7x"
+
+msgid "0.8x"
+msgstr "0.8x"
+
+msgid "0.9x"
+msgstr "0.9x"
 
 msgid "1 second"
 msgstr "1 秒"
@@ -18,11 +36,29 @@ msgstr "1 秒"
 msgid "1 thread"
 msgstr "1 スレッド"
 
+msgid "1% (Default)"
+msgstr "1% (標準)"
+
+msgid "1.1x"
+msgstr "1.1x"
+
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
 
 msgid "1.25x Native"
 msgstr "1.25x 標準"
+
+msgid "1.2x"
+msgstr "1.2x"
+
+msgid "1.3x"
+msgstr "1.3x"
+
+msgid "1.4x"
+msgstr "1.4x"
+
+msgid "1.5x"
+msgstr "1.5x"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -207,6 +243,9 @@ msgstr "28"
 msgid "29th"
 msgstr "29"
 
+msgid "2X"
+msgstr "2X"
+
 msgid "2nd"
 msgstr "2"
 
@@ -290,6 +329,9 @@ msgstr "4プレーヤーアダプター"
 
 msgid "4 threads"
 msgstr "4 スレッド"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5x (1440x1080)"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -453,6 +495,9 @@ msgstr "ALSAThread"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX 超解像度"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "アナグリフ プリセット (3D)"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "異方性フィルタリング"
 
@@ -483,6 +528,9 @@ msgstr "非同期テクスチャ ストリーミング"
 msgid "AUDIO"
 msgstr "音声"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "音声バッファ（サンプル）"
+
 msgid "AUDIO CHANNELS"
 msgstr "音声チャンネル"
 
@@ -494,6 +542,9 @@ msgstr "オーディオ形式"
 
 msgid "AUDIO LATENCY"
 msgstr "音声 レイテンシー"
+
+msgid "AUDIO SYNC"
+msgstr "音声 同期"
 
 msgid "AUTO FRAMESKIP"
 msgstr "自動フレームスキップ"
@@ -509,6 +560,9 @@ msgstr "ゲームボーイのゲームに色を追加します"
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "フル モーション ビデオ (FMV)のアスペクト比を調整します"
+
+msgid "Adjusts the positions of the screens."
+msgstr "画面の位置を調整します"
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "エミュレートの画面のスケーリング方法に影響します(OpenGL レンダラーのみ)"
@@ -555,6 +609,12 @@ msgstr "ユーザーがテクスチャを置換可能にします"
 msgid "Always"
 msgstr "常に"
 
+msgid "Always enforce horizontal"
+msgstr "常に横並びに表示する"
+
+msgid "Always enforce vertical"
+msgstr "常に縦並びに表示する"
+
 msgid "Analog Controller"
 msgstr "アナログコントローラー"
 
@@ -567,11 +627,17 @@ msgstr "アナログジョイスティック"
 msgid "Analog Joystick (Flystick)"
 msgstr "アナログジョイスティック (Flystick)"
 
+msgid "Angrylion"
+msgstr "Angrylion"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (最も互換性がある)"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "FXAA を適用し、ゲームの視覚的品質を向上します"
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "ジョイスティックの入力に乗数を適用して、応答性を下げたり上げたりします"
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "ビデオ フィルターを適用して、さまざまな NTSC TV 信号を模倣します"
@@ -591,11 +657,17 @@ msgstr "アルカノイドパドル"
 msgid "Armenia"
 msgstr "アルメニア"
 
+msgid "Arrange the dual screen layout."
+msgstr "デュアルスクリーンレイアウトを配置します"
+
 msgid "As Host (Default)"
 msgstr "ホストとして (標準)"
 
 msgid "As Is"
 msgstr "そのまま"
+
+msgid "As game specifies"
+msgstr "ゲームの指定通り"
 
 msgid "August"
 msgstr "8月"
@@ -614,6 +686,9 @@ msgstr "自動 標準 (4:3 インターレース / 3:2 プログレッシブ)"
 
 msgid "Autodetect"
 msgstr "自動検出"
+
+msgid "Automatic"
+msgstr "自動"
 
 msgid "Automatic ratio"
 msgstr "自動比率"
@@ -747,6 +822,9 @@ msgstr "下画面のみ（切替不可）"
 msgid "Bottom Right"
 msgstr "右下"
 
+msgid "Bottom only"
+msgstr "下画面のみ（切替不可）"
+
 msgid "Brazil"
 msgstr "ブラジル"
 
@@ -774,6 +852,9 @@ msgstr "カラーフィルター"
 msgid "COLOR PALETTE"
 msgstr "カラーパレット"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "カラーパレット (2D)"
+
 msgid "CONSOLE COUNTRY"
 msgstr "コンソール 国 / 地域"
 
@@ -783,17 +864,35 @@ msgstr "コンソール言語"
 msgid "CONSOLE REGION"
 msgstr "コンソール リージョン"
 
+msgid "CONSOLE TYPE"
+msgstr "コンソール タイプ"
+
+msgid "CONTROLLER 1"
+msgstr "コントローラ 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "コントローラー 1 種類"
+
+msgid "CONTROLLER 2"
+msgstr "コントローラ 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "コントローラー 2 種類"
 
+msgid "CONTROLLER 3"
+msgstr "コントローラ 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "コントローラー 3 種類"
 
+msgid "CONTROLLER 4"
+msgstr "コントローラ 4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "コントローラーの組み合わせ"
+
+msgid "CONTROLLER TYPE"
+msgstr "コントローラー タイプ"
 
 msgid "CONTROLLERS"
 msgstr "コントローラー"
@@ -897,6 +996,9 @@ msgstr "ダウンスケーリング方法を選択します"
 msgid "Choose mipmapping type."
 msgstr "ミップマッピング タイプを選択します"
 
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "Parallel N64 グラフィックス プラグインを選択します"
+
 msgid "Choose the audio output type."
 msgstr "音声出力タイプを選択します"
 
@@ -999,6 +1101,9 @@ msgstr "インターレース解除"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "デジタル サウンド プロセッサ"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "4MB拡張RAMパックの無効化"
+
 msgid "DISABLE CULLING"
 msgstr "カリングを無効"
 
@@ -1041,8 +1146,14 @@ msgstr "DS (標準)"
 msgid "DSi"
 msgstr "DSi"
 
+msgid "DSi (experiemental)"
+msgstr "DSi（実験的）"
+
 msgid "DUAL CORE MODE"
 msgstr "デュアルコアモード"
+
+msgid "DUAL SCREEN"
+msgstr "デュアルスクリーン"
 
 msgid "DYNAREC CODE INVALIDATION"
 msgstr "ダイナレックコードの無効化"
@@ -1103,6 +1214,12 @@ msgstr "デジタルコントローラー（ゲームパッド）"
 
 msgid "Digital Prime FBX"
 msgstr "デジタルプライムFBX"
+
+msgid "Disable"
+msgstr "無効"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "時間や言語などの設定をスキップします"
 
 msgid "Disabled"
 msgstr "使用しない"
@@ -1176,6 +1293,9 @@ msgstr "オーバーレイを有効"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "PGXP 修正を有効"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "ポリゴン分割を有効"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "タイムストレッチを有効"
 
@@ -1194,6 +1314,12 @@ msgstr "エジプト"
 msgid "El Salvador"
 msgstr "エルサルバドル"
 
+msgid "Emphasize bottom"
+msgstr "下画面を強調表示"
+
+msgid "Emphasize top"
+msgstr "上画面を強調表示"
+
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Rスティックをヌンチャク、L2を振る動作としてWiiリモコンをエミュレートします"
 
@@ -1205,6 +1331,9 @@ msgstr "Cemuのオーバーレイを有効にします"
 
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "BIOSを使用します(Gamecube 起動アニメーションを表示)\nbios/GC/JAP(EUR,USA)フォルダに IPL.bin (BIOS) が必要です"
+
+msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
+msgstr "MelonDS を2画面表示できるようにします。一部の関連画面オプションは無視されます"
 
 msgid "Enable No-interlacing Patches."
 msgstr "インターレース解除パッチを使用します"
@@ -1220,6 +1349,9 @@ msgstr "２画面間で相互作用を行うゲームのゲームパッド 画�
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "キャッシュ、コントローライベントなどの通知を有効にします"
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "2番目の音声制限を有効にします。動作を犠牲にして音質を向上させます"
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "ドリームキャスト D.S.P.を有効にします(より正確な音声出力)高速システムにのみ推奨"
@@ -1287,6 +1419,12 @@ msgstr "強化：BIOS起動アニメーションを表示します"
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "強化：3ポイントモードはN64に正確であり、標準がより良いです"
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "強化：ポリゴン分割の改善化を有効にします"
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "強化：ミップマッピングの有効時、離れたテクスチャの明瞭さを改善します"
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "強化：16:9の比率でレンダリング解像度を上げます。 3Dオブジェクトをより明確にします"
 
@@ -1335,14 +1473,23 @@ msgstr "強化：テクスチャをアップスケールします"
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "強化：スクリーンテクスチャをアップスケール（2Dゲームのみ）"
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "強化：3Dオブジェクトのテクスチャをアップスケールします"
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "コンソールが表示するすべてのフレームが画面に表示されるようにします"
 
 msgid "Estonia"
 msgstr "エストニア"
 
+msgid "Even"
+msgstr "均一表示"
+
 msgid "Exclusive Ubershaders"
 msgstr "排他的(専用)US"
+
+msgid "External"
+msgstr "外部"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "高速ディスク転送速度"
@@ -1379,6 +1526,9 @@ msgstr "フレームスキップ"
 
 msgid "FRAMESKIP"
 msgstr "フレームスキップ"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "フレームスキップ [GL64MK2]"
 
 msgid "FRAMESKIP CONTROL"
 msgstr "フレームスキップ制御"
@@ -1581,6 +1731,12 @@ msgstr "グラフィック 設定"
 msgid "GRAPHICS API"
 msgstr "グラフィック API"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "グラフィック プラグイン"
+
+msgid "Game default"
+msgstr "基本設定"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "Wii U用ゲームキューブコントローラ接続タップ"
 
@@ -1610,6 +1766,12 @@ msgstr "ドイツ"
 
 msgid "Giga"
 msgstr "ギガ モード"
+
+msgid "Glide64"
+msgstr "Glide64"
+
+msgid "Gln64"
+msgstr "Gln64"
 
 msgid "Gray"
 msgstr "グレー"
@@ -1652,6 +1814,9 @@ msgstr "香港"
 
 msgid "Horizontal"
 msgstr "横表示"
+
+msgid "How the window space is distributed between the screens."
+msgstr "画面間の表示領域の配分方法"
 
 msgid "Hungary"
 msgstr "ハンガリー"
@@ -1830,7 +1995,13 @@ msgstr "キルギス"
 msgid "LAZY TEXTURE CACHING"
 msgstr "遅延テクスチャキャッシュ"
 
+msgid "LCD FILTER"
+msgstr "LCD フィルター"
+
 msgid "LCD GHOSTING EFFECT"
+msgstr "LCD ゴーストエフェクト"
+
+msgid "LCD GHOSTING EFFECTS"
 msgstr "LCD ゴーストエフェクト"
 
 msgid "LCD Ghosting (Accurate)"
@@ -1844,6 +2015,9 @@ msgstr "ライトガン(ガンコン)"
 
 msgid "LIGHT GUNS"
 msgstr "ライトガン(ガンコン)"
+
+msgid "LIMIT FRAME RATE"
+msgstr "フレームレート制限"
 
 msgid "LINEAR UPSCALING"
 msgstr "リニアアップスケーリング"
@@ -1913,6 +2087,9 @@ msgstr "パケットを受信するローカル アドレスとポート。 xemu
 
 msgid "Low"
 msgstr "小"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "数値を下げると、動作向上しますが音声の不具合がでる場合があります"
 
 msgid "Luxembourg"
 msgstr "ルクセンブルク"
@@ -2016,6 +2193,9 @@ msgstr "メキシコ"
 msgid "Minimum"
 msgstr "最低"
 
+msgid "Mirrored"
+msgstr "ミラーリング"
+
 msgid "Modern Fightstick Style"
 msgstr "ファイトスティック"
 
@@ -2042,6 +2222,12 @@ msgstr "マウス"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "インタプリタよりもはるかに高速です（問題がでる可能性もあり）"
+
+msgid "N64"
+msgstr "N64"
+
+msgid "N64 3-point"
+msgstr "N64 3ポイントモード"
 
 msgid "NAT"
 msgstr "NAT"
@@ -2145,6 +2331,9 @@ msgstr "いいえ(標準)"
 msgid "No Buffer"
 msgstr "バッファなし"
 
+msgid "No Limit"
+msgstr "制限しない"
+
 msgid "No Ubershaders"
 msgstr "使用しない"
 
@@ -2165,6 +2354,9 @@ msgstr "ノルウェー"
 
 msgid "November"
 msgstr "11月"
+
+msgid "OFF (Default)"
+msgstr "使用しない (標準)"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "オンスクリーンディスプレイの表示と通知"
@@ -2235,6 +2427,12 @@ msgstr "対応しているゲームのみ。設定を高くすると、システ
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL（クラシック）"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL（コンピュートシェーダ）"
+
 msgid "OpenGL (Default)"
 msgstr "OpenGL (標準)"
 
@@ -2252,6 +2450,9 @@ msgstr "オリジナルハードウェア (FirebrandX)"
 
 msgid "Original resolution"
 msgstr "オリジナル解像度"
+
+msgid "Original screen positions"
+msgstr "実機の画面位置で表示する"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "スーファミCPUのオーバークロック(グラディウス3,スーパーRタイプ)"
@@ -2306,6 +2507,9 @@ msgstr "ParaLLEl-RDP"
 
 msgid "Paraguay"
 msgstr "パラグアイ"
+
+msgid "Parallel"
+msgstr "平行"
 
 msgid "Partial"
 msgstr "部分的"
@@ -2385,6 +2589,9 @@ msgstr "自動読取"
 msgid "Preload requires more RAM."
 msgstr "より多くのRAMが必要です"
 
+msgid "Produces a clean LCD effect."
+msgstr "すっきりとしたLCD効果を生み出します"
+
 msgid "Puerto Rico"
 msgstr "プエルトリコ"
 
@@ -2399,6 +2606,9 @@ msgstr "カタール"
 
 msgid "RDP PLUGIN"
 msgstr "RDP プラグイン"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "フレームごとにバッファを読み取る(GLIDE64MK2)"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "スプライトのちらつきの軽減"
@@ -2478,6 +2688,9 @@ msgstr "一部のゲームで必要です"
 msgid "Required for certain visual effects."
 msgstr "特定の視覚効果に必要です"
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "ゲーム内の一部の効果(バンジョーとカズーイ、DK64に必要) 速度低下の可能性有り"
+
 msgid "Requires BIOS file to be present."
 msgstr "BIOSファイルが必要です"
 
@@ -2486,6 +2699,12 @@ msgstr "リサンプリング（ピッチシフト）"
 
 msgid "Restored Wii VC"
 msgstr "復元済Wii VC"
+
+msgid "RetroPad (Default)"
+msgstr "レトロパッド (標準)"
+
+msgid "Rice"
+msgstr "Rice"
 
 msgid "Right Stick"
 msgstr "Rスティック"
@@ -2501,6 +2720,9 @@ msgstr "画面を回転します。特定の垂直ゲームプレイ環境構築
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "回転式ジョイスティック (Q*Bert)"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "DS を横向きに持つようにするために、画面を回転します"
 
 msgid "Runs \"skinning\" on the CPU instead of the GPU, means that draw calls from the game can more easily be combined, which often improves things."
 msgstr "GPU ではなく CPU で「スキニング」を実行すると、ゲームからの描画呼び出しをより簡単に組み合わせることができるため、多くの場合、状況が改善されます"
@@ -2529,8 +2751,17 @@ msgstr "スクリーンフィルタリング"
 msgid "SCREEN SETTINGS"
 msgstr "画面設定"
 
+msgid "SCREEN SIZING"
+msgstr "個々の画面サイズ"
+
+msgid "SCREEN SWAP"
+msgstr "画面の入替"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "感度"
 
 msgid "SENSOR BAR POSITION"
 msgstr "センサーバーの位置"
@@ -2567,6 +2798,9 @@ msgstr "画面レイアウト表示"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "バッファエフェクトを省く"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "DSシステムメニューをスキップ"
 
 msgid "SKIP GPU READBACKS"
 msgstr "GPUリードバックをスキップ"
@@ -2667,6 +2901,12 @@ msgstr "スケールを固定"
 msgid "Scaled"
 msgstr "拡大"
 
+msgid "Screen Resolution (Default)"
+msgstr "画面解像度 (標準)"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "[ファームウェア設定を使用] が無効、またはファームウェア ファイルが見つからない場合は、使用する言語を選択します"
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "入力タイプを選択してタッチスクリーンを操作します"
 
@@ -2696,6 +2936,12 @@ msgstr "シャープ 1"
 
 msgid "Sharp 2"
 msgstr "シャープ 2"
+
+msgid "Sharpen"
+msgstr "シャープ化"
+
+msgid "Sharpen More"
+msgstr "もっとシャープ化"
 
 msgid "Show"
 msgstr "表示"
@@ -2774,6 +3020,9 @@ msgstr "3Dオブジェクトのテクスチャを滑らかにします"
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "角度に基づいて、離れた3Dオブジェクトのテクスチャを滑らかにします"
+
+msgid "Smooths out textures on 3D objects."
+msgstr "3Dオブジェクトのテクスチャを滑らかにします"
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "画面に表示される画像全体を滑らかにして、ピクセル間の位置を修正します"
@@ -2859,6 +3108,9 @@ msgstr "5.1ch サラウンド"
 msgid "Surround 7.1"
 msgstr "7.1ch サラウンド"
 
+msgid "Swap the position of the dual displays."
+msgstr "デュアルディスプレイの位置を入れ替えます"
+
 msgid "Sweden"
 msgstr "スウェーデン"
 
@@ -2895,8 +3147,14 @@ msgstr "テクスチャ置換の可否"
 msgid "TEXTURE SCALING"
 msgstr "テクスチャスケーリング"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "テクスチャスムージング"
+
 msgid "TEXTURE UPSCALING"
 msgstr "テクスチャアップスケーリング"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "テクスチャアップスケーリング [RICE]"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "テクスチャアップスケーリング [XBRZ]"
@@ -2942,6 +3200,9 @@ msgstr "タイ"
 
 msgid "The PSP will cull triangles that are outside a 4096x4096 clipping box, and also triangles crossing the Z=1 plane if clipping is enabled."
 msgstr "PSP は、4096 x 4096 クリッピング ボックスの外側にある三角形を除去します。また、クリッピングが有効になっている場合は、Z = 1 平面と交差する三角形も除去します"
+
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "ジョイスティックの中立位置付近の入力が無視される領域。意図しない入力を減らすことができます"
 
 msgid "The day within the month of your birthday."
 msgstr "あなたの誕生日"
@@ -2994,6 +3255,9 @@ msgstr "上画面のみ（切替不可）"
 msgid "Top Right"
 msgstr "右上"
 
+msgid "Top only"
+msgstr "上画面のみ（切替不可）"
+
 msgid "Touch Screen"
 msgstr "タッチスクリーン"
 
@@ -3039,6 +3303,9 @@ msgstr "アップスケールフィルター"
 msgid "USE DSP AUDIO"
 msgstr "DSP オーディオを使用"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "ファームウェア設定を使用"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "プリエンプティブフレームを使用"
 
@@ -3072,6 +3339,9 @@ msgstr "最大２個（標準）"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "テクスチャ全体を一度に先読みします。ゲームのが向上します"
 
+msgid "Upscale textures on 3D objects."
+msgstr "3Dオブジェクトのテクスチャをアップスケールします"
+
 msgid "Uruguay"
 msgstr "ウルグアイ"
 
@@ -3084,6 +3354,9 @@ msgstr "使用するホスト"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "アンチエイリアシングには MSAA ではなく SSAA を使用します。 SSAA は見た目は良くなりますが、パフォーマンスのコストが高くなります"
 
+msgid "Use language and username from the NDS Firmware"
+msgstr "NDS ファームウェアの言語とユーザー名を使用します"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "先読みの代わりにプリエンプティブフレームを使用します。 コントローラの状態変化時にのみ先に実行されます。"
 
@@ -3092,6 +3365,15 @@ msgstr "ジョイスティックのドリフトや不要な入力を排除する
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "ジョイスティックの動きを敏感にするために使用します。全コントローラーに影響を与えます"
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "実際にアナグリプス3Dメガネを使用してください！"
+
+msgid "Useful for N64 style controllers."
+msgstr "N64 スタイルのコントローラーを使うときに便利です"
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "N64 スタイルのコントローラーを使うときに便利です\nホットキー専用ボタンがない場合のホットキーを限定します"
 
 msgid "Useful for speedruns/glitches."
 msgstr "タイムアタック／バグに便利です"
@@ -3237,11 +3519,41 @@ msgstr "ZCULL 精度"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "拡大して黒い境界線を隠します（境界線はゲームごとに異なります）"
 
+msgid "bilinear"
+msgstr "バイリニア"
+
 msgid "black and white"
 msgstr "黒と白"
 
+msgid "black/blue"
+msgstr "黒/青"
+
+msgid "black/cyan"
+msgstr "黒/シアン"
+
+msgid "black/electric cyan"
+msgstr "黒/鮮やかなシアン"
+
+msgid "black/green"
+msgstr "黒/緑"
+
+msgid "black/magenta"
+msgstr "黒/マゼンタ"
+
+msgid "black/white"
+msgstr "黒/白"
+
+msgid "black/yellow"
+msgstr "黒/黄"
+
 msgid "blue sea"
 msgstr "シーブルー"
+
+msgid "bottom only"
+msgstr "下画面のみ（切替不可）"
+
+msgid "bottom/top"
+msgstr "下 / 上"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -3258,20 +3570,62 @@ msgstr "GBA SP"
 msgid "green forest"
 msgstr "グリーンフォレスト"
 
+msgid "green/magenta"
+msgstr "緑/マゼンタ"
+
 msgid "hot desert"
 msgstr "hot desert"
+
+msgid "hybrid bottom ratio 2"
+msgstr "ハイブリッド下/上比率2"
+
+msgid "hybrid bottom ratio 3"
+msgstr "ハイブリッド下/上比率3"
+
+msgid "hybrid top ratio 2"
+msgstr "ハイブリッド上/下比率2"
+
+msgid "hybrid top ratio 3"
+msgstr "ハイブリッド上/下比率3"
+
+msgid "hybrid/bottom"
+msgstr "ハイブリッド/ 下"
+
+msgid "hybrid/top"
+msgstr "ハイブリッド/ 上"
+
+msgid "left/right"
+msgstr "左(上画面) / 右(下画面)"
 
 msgid "lottes crt"
 msgstr "Lotte CRT"
 
+msgid "nearest"
+msgstr "最近傍"
+
 msgid "nxagss"
 msgstr "NxAGSS"
+
+msgid "original"
+msgstr "オリジナル"
 
 msgid "original gameboy"
 msgstr "オリジナルゲームボーイ"
 
 msgid "pink dreams"
 msgstr "ピンクドリーム"
+
+msgid "red/blue"
+msgstr "赤/青"
+
+msgid "red/cyan"
+msgstr "赤/シアン"
+
+msgid "red/electric cyan"
+msgstr "赤/鮮やかなシアン"
+
+msgid "right/left"
+msgstr "右(上画面) / 左(下画面)"
 
 msgid "royaltea"
 msgstr "ロイヤルティー"
@@ -3282,8 +3636,17 @@ msgstr "スキャンライン"
 msgid "standard"
 msgstr "標準"
 
+msgid "top only"
+msgstr "上画面のみ（切替不可）"
+
+msgid "top/bottom"
+msgstr "上 / 下"
+
 msgid "triangular filter"
 msgstr "三角フィルタ"
+
+msgid "trilinear"
+msgstr "トライリニア"
 
 msgid "wave filter"
 msgstr "波形フィルタ"
@@ -3302,3 +3665,6 @@ msgstr "xBRZ (標準)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - シャープニングのアップスケールアルゴリズム\nバイキュービック - 滑らかな外観\nハイブリッド - 滑らかな領域にバイキュービックを使用"
+
+msgid "yellow/blue"
+msgstr "黄/青"

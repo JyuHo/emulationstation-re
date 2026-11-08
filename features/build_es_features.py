@@ -43,6 +43,8 @@ EMULATORS = {
     'dolphin': 'dolphin',
     'duckstation': 'duckstation',
     'eden': 'eden',
+    'melonds': 'melonds',
+    'mupen64plus': 'mupen64plus',
     'pcsx2': 'pcsx2',
     'ppsspp': 'ppsspp',
     'rpcs3': 'rpcs3',
@@ -56,6 +58,7 @@ CORE_ALIASES = {
     'libretro': {
         'mednafen_psx': ['mednafen_psx_hw'],
         'vba-m': ['vbam'],
+        'vb': ['mednafen_vb'],
     },
 }
 

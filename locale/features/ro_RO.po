@@ -9,8 +9,26 @@ msgstr "(FDS) ÎNCARCĂ AUTOMAT FAȚA A"
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "(FDS) ÎNCĂRCARE RAPIDĂ DE PE DISC"
 
+msgid "0 degrees"
+msgstr "0 grade"
+
 msgid "0% (Default)"
 msgstr "0% (Implicit)"
+
+msgid "0.5x"
+msgstr "0.5x"
+
+msgid "0.6x"
+msgstr "0.6x"
+
+msgid "0.7x"
+msgstr "0.7x"
+
+msgid "0.8x"
+msgstr "0.8x"
+
+msgid "0.9x"
+msgstr "0.9x"
 
 msgid "1 second"
 msgstr "1 secundă"
@@ -18,11 +36,29 @@ msgstr "1 secundă"
 msgid "1 thread"
 msgstr "1 fir"
 
+msgid "1% (Default)"
+msgstr "1% (Implicit)"
+
+msgid "1.1x"
+msgstr "1.1x"
+
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
 
 msgid "1.25x Native"
 msgstr "1.25x Nativ"
+
+msgid "1.2x"
+msgstr "1.2x"
+
+msgid "1.3x"
+msgstr "1.3x"
+
+msgid "1.4x"
+msgstr "1.4x"
+
+msgid "1.5x"
+msgstr "1.5x"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -207,6 +243,9 @@ msgstr "28"
 msgid "29th"
 msgstr "29"
 
+msgid "2X"
+msgstr "2X"
+
 msgid "2nd"
 msgstr "2"
 
@@ -290,6 +329,9 @@ msgstr "ADAPTOR 4 JUCĂTORI"
 
 msgid "4 threads"
 msgstr "4 fire"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5x (1440x1080)"
 
 msgid "4096MB"
 msgstr "4096MO"
@@ -453,6 +495,9 @@ msgstr "ALSAThread"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "Rezoluție AMD FidelityFX Super"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "PROFILE ANAGLYPH (3D)"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "FILTRARE ANISOTROPICĂ"
 
@@ -483,6 +528,9 @@ msgstr "STREAMING DE TEXTURI ASINCRON"
 msgid "AUDIO"
 msgstr "AUDIO"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "BUFFER AUDIO (EȘANTIOANE)"
+
 msgid "AUDIO CHANNELS"
 msgstr "CANALE AUDIO"
 
@@ -494,6 +542,9 @@ msgstr "FORMAT AUDIO"
 
 msgid "AUDIO LATENCY"
 msgstr "LATENȚĂ AUDIO"
+
+msgid "AUDIO SYNC"
+msgstr "SINCRONIZARE AUDIO"
 
 msgid "AUTO FRAMESKIP"
 msgstr "OMITERE CADRE AUTOMATĂ"
@@ -509,6 +560,9 @@ msgstr "Adaugă culoare jocurilor Game Boy."
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Ajustează raportul de aspect al filmelor."
+
+msgid "Adjusts the positions of the screens."
+msgstr "Ajustează pozițiile ecranelor."
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Afectează scalarea ecranelor emulate. Doar pentru OpenGL."
@@ -555,6 +609,12 @@ msgstr "Permite texturi înlocuibile de utilizator."
 msgid "Always"
 msgstr "Mereu"
 
+msgid "Always enforce horizontal"
+msgstr "Impune mereu orizontal"
+
+msgid "Always enforce vertical"
+msgstr "Impune mereu vertical"
+
 msgid "Analog Controller"
 msgstr "Controler analogic"
 
@@ -567,11 +627,17 @@ msgstr "Joystick analogic"
 msgid "Analog Joystick (Flystick)"
 msgstr "Joystick analogic (Flystick)"
 
+msgid "Angrylion"
+msgstr "Angrylion"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (Cel mai compatibil)"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Aplică algoritmul anti-aliasing FXAA pentru a îmbunătăți calitatea vizuală a jocurilor."
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "Aplică un multiplicator la intrarea joystick-ului pentru a scădea sau a crește gradul de reacție."
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Aplică un filtru video care să imite diverse semnale TV NTSC."
@@ -591,11 +657,17 @@ msgstr "Paletă Arkanoid"
 msgid "Armenia"
 msgstr "Armenia"
 
+msgid "Arrange the dual screen layout."
+msgstr "Aranjează amplasarea cu două ecrane."
+
 msgid "As Host (Default)"
 msgstr "Ca gazdă (implicit)"
 
 msgid "As Is"
 msgstr "Așa cum sunt"
+
+msgid "As game specifies"
+msgstr "Așa cum specifică jocul"
 
 msgid "August"
 msgstr "August"
@@ -614,6 +686,9 @@ msgstr "Auto Standard (4:3 intercalat / 3:2 progresiv)"
 
 msgid "Autodetect"
 msgstr "Detectează automat"
+
+msgid "Automatic"
+msgstr "Automat"
 
 msgid "Automatic ratio"
 msgstr "Raport automat"
@@ -747,6 +822,9 @@ msgstr "Doar jos"
 msgid "Bottom Right"
 msgstr "Dreapta jos"
 
+msgid "Bottom only"
+msgstr "Doar jos"
+
 msgid "Brazil"
 msgstr "Brazilia"
 
@@ -774,6 +852,9 @@ msgstr "FILTRU DE CULOARE"
 msgid "COLOR PALETTE"
 msgstr "PALETA DE CULOARE"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "PALETA DE CULOARE (2D)"
+
 msgid "CONSOLE COUNTRY"
 msgstr "ȚARA CONSOLEI"
 
@@ -783,17 +864,35 @@ msgstr "LIMBA CONSOLEI"
 msgid "CONSOLE REGION"
 msgstr "REGIUNE CONSOLĂ"
 
+msgid "CONSOLE TYPE"
+msgstr "TIP CONSOLĂ"
+
+msgid "CONTROLLER 1"
+msgstr "CONTROLER 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "TIP CONTROLER 1"
+
+msgid "CONTROLLER 2"
+msgstr "CONTROLER 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "TIP CONTROLER 2"
 
+msgid "CONTROLLER 3"
+msgstr "CONTROLER 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "TIP CONTROLER 3"
 
+msgid "CONTROLLER 4"
+msgstr "CONTROLER 4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "COMBINAȚIE CONTROLER"
+
+msgid "CONTROLLER TYPE"
+msgstr "TIP CONTROLER"
 
 msgid "CONTROLLERS"
 msgstr "CONTROLERE"
@@ -897,6 +996,9 @@ msgstr "Alege metoda de downscale."
 msgid "Choose mipmapping type."
 msgstr "Alege tip mip-mapping."
 
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "Alege plugin-ul grafic Parallel N64."
+
 msgid "Choose the audio output type."
 msgstr "Alege tipul de ieșire audio."
 
@@ -999,6 +1101,9 @@ msgstr "DEINTERCALARE"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "PROCESOR DE SUNET DIGITAL"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "DEZACTIVEAZĂ PACHETUL DE EXPANSIUNE RAM DE 4MO"
+
 msgid "DISABLE CULLING"
 msgstr "DEZACTIVEAZĂ CULLING"
 
@@ -1041,8 +1146,14 @@ msgstr "DS (Implicit)"
 msgid "DSi"
 msgstr "DSi"
 
+msgid "DSi (experiemental)"
+msgstr "DSi (experiemental)"
+
 msgid "DUAL CORE MODE"
 msgstr "MOD CU DOUĂ NUCLEE"
+
+msgid "DUAL SCREEN"
+msgstr "ECRAN DUAL"
 
 msgid "DYNAREC CODE INVALIDATION"
 msgstr "INVALIDAREA CODULUI DYNAREC"
@@ -1103,6 +1214,12 @@ msgstr "Controler digital (Gamepad)"
 
 msgid "Digital Prime FBX"
 msgstr "Digital Prime FBX"
+
+msgid "Disable"
+msgstr "Dezactivat"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "Dezactivează pentru a accesa setările sistemului, cum ar fi ora și limba."
 
 msgid "Disabled"
 msgstr "Dezactivat"
@@ -1176,6 +1293,9 @@ msgstr "ACTIVEAZĂ AFIȘAJUL DE PERFORMANȚĂ"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "ACTIVEAZĂ CORECȚII PGXP"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "ACTIVEAZĂ SEPARAREA POLIGOANELOR"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "ACTIVEAZĂ ÎNTINDEREA TIMPULUI"
 
@@ -1194,6 +1314,12 @@ msgstr "Egipt"
 msgid "El Salvador"
 msgstr "El Salvador"
 
+msgid "Emphasize bottom"
+msgstr "Evidențiază-l pe cele de jos"
+
+msgid "Emphasize top"
+msgstr "Evidențiază-l pe cele de sus"
+
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Emulează o telecomandă de Wii orizontală cu L2 pentru mișcare și Nunchuk pe maneta dreaptă."
 
@@ -1205,6 +1331,9 @@ msgstr "Activează afișajul de performanță Cemu."
 
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "Activează animația la boot și accesul la BIOS pentru Gamecube (necesită BIOS IPL.bin în directorul potrivit)."
+
+msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
+msgstr "Permite MelonDS să afișeze pe două ecrane. Unele setări de ecran înrudite vor fi ignorate."
 
 msgid "Enable No-interlacing Patches."
 msgstr "Activează patch-uri de ne-intercalare."
@@ -1220,6 +1349,9 @@ msgstr "Activează vizualizarea de gamepad pentru jocurile care au interacțiune
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Activează notificările de cache, evenimente controler etc."
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "Activează al doilea limitator audio. Îmbunătățește calitatea audio cu costul performanței."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Activează DSP-ul Dreamcast pentru un sunet mai precis. Recomandat doar pentru sistemele rapide."
@@ -1287,6 +1419,12 @@ msgstr "Îmbunătățit."
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "Îmbunătățire. Cu 3 puncte este precis pentru N64, standard este mai bun."
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "Îmbunătățire. Activează separarea mai bună a poligoanelor."
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "Îmbunătățire. Îmbunătățește claritatea texturilor distante când mip-mapping este activat."
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "Îmbunătățire. Crește rezoluția de redare în aspectul 16:9. Face obiectele 3D mai clare."
 
@@ -1335,14 +1473,23 @@ msgstr "Îmbunătățire. Scalează în sus texturile."
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "Îmbunătățire. Scalează în sus texturile de pe ecran (doar pentru jocurile 2D)."
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "Îmbunătățire. Scalează în sus texturile pe obiectele 3D."
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "Asigură-te că fiecare cadru redat de consolă este afișat pe ecran."
 
 msgid "Estonia"
 msgstr "Estonia"
 
+msgid "Even"
+msgstr "În mod egal"
+
 msgid "Exclusive Ubershaders"
 msgstr "Ubershadere exclusive"
+
+msgid "External"
+msgstr "Extern"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "RATĂ MARE DE TRANSFER DISC"
@@ -1379,6 +1526,9 @@ msgstr "OMITERE CADRE"
 
 msgid "FRAMESKIP"
 msgstr "OMITE CADRE"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "OMITERE CADRE (DOAR GL64MK2)"
 
 msgid "FRAMESKIP CONTROL"
 msgstr "CONTROL OMITERE CADRE"
@@ -1581,6 +1731,12 @@ msgstr "GRAFICĂ"
 msgid "GRAPHICS API"
 msgstr "API GRAFIC"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "PLUGIN GRAFIC"
+
+msgid "Game default"
+msgstr "Implicitul jocului"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "Adaptor GameCube pentru Wii U"
 
@@ -1610,6 +1766,12 @@ msgstr "Germania"
 
 msgid "Giga"
 msgstr "Giga"
+
+msgid "Glide64"
+msgstr "Glide64"
+
+msgid "Gln64"
+msgstr "Gln64"
 
 msgid "Gray"
 msgstr "Gri"
@@ -1652,6 +1814,9 @@ msgstr "Hong Kong"
 
 msgid "Horizontal"
 msgstr "Orizontal"
+
+msgid "How the window space is distributed between the screens."
+msgstr "Cum este distribuit spațiul ferestrei între ecrane."
 
 msgid "Hungary"
 msgstr "Ungaria"
@@ -1830,8 +1995,14 @@ msgstr "Kîrgîzstan"
 msgid "LAZY TEXTURE CACHING"
 msgstr "CACHE TEXTURĂ LENEȘ"
 
+msgid "LCD FILTER"
+msgstr "FILTRU LCD"
+
 msgid "LCD GHOSTING EFFECT"
 msgstr "EFECT PERSISTENȚĂ LCD"
+
+msgid "LCD GHOSTING EFFECTS"
+msgstr "EFECTE DE PERSISTENȚĂ LCD"
 
 msgid "LCD Ghosting (Accurate)"
 msgstr "Persistență LCD (Precis)"
@@ -1844,6 +2015,9 @@ msgstr "PISTOL LUMINOS"
 
 msgid "LIGHT GUNS"
 msgstr "PISTOALE LUMINOASE"
+
+msgid "LIMIT FRAME RATE"
+msgstr "LIMITEAZĂ RATA DE CADRE"
 
 msgid "LINEAR UPSCALING"
 msgstr "UPSCALING LINIAR"
@@ -1913,6 +2087,9 @@ msgstr "Adresa și portul locale pentru a primi pachetele. Lasă liber dacă vre
 
 msgid "Low"
 msgstr "Redus"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "Valori mai mici reduc latența audio și îmbunătățesc performanța, dar pot cauza probleme audio."
 
 msgid "Luxembourg"
 msgstr "Luxemburg"
@@ -2016,6 +2193,9 @@ msgstr "Mexic"
 msgid "Minimum"
 msgstr "Minimă"
 
+msgid "Mirrored"
+msgstr "Oglindit"
+
 msgid "Modern Fightstick Style"
 msgstr "Stil Fightstick modern"
 
@@ -2042,6 +2222,12 @@ msgstr "Maus"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "Mult mai rapid decât interpretorul (dar poate avea probleme)."
+
+msgid "N64"
+msgstr "N64"
+
+msgid "N64 3-point"
+msgstr "N64 3-puncte"
 
 msgid "NAT"
 msgstr "NAT"
@@ -2145,6 +2331,9 @@ msgstr "Nu (implicit)"
 msgid "No Buffer"
 msgstr "Fără buffer"
 
+msgid "No Limit"
+msgstr "Fără limită"
+
 msgid "No Ubershaders"
 msgstr "Fără ubershadere"
 
@@ -2165,6 +2354,9 @@ msgstr "Norvegia"
 
 msgid "November"
 msgstr "Noiembrie"
+
+msgid "OFF (Default)"
+msgstr "NU (Implicit)"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "AFIȘARE PE ECRAN ȘI NOTIFICĂRI"
@@ -2235,6 +2427,12 @@ msgstr "Doar jocurile suportate. Setările mai înalte afectează necesarul de s
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL (Clasic)"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL (Compute shader)"
+
 msgid "OpenGL (Default)"
 msgstr "OpenGL (Implicit)"
 
@@ -2252,6 +2450,9 @@ msgstr "Hardware original (FirebrandX)"
 
 msgid "Original resolution"
 msgstr "Rezoluția originală"
+
+msgid "Original screen positions"
+msgstr "Poziții ecran original"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "Overclockează CPU-ul SNES-ului (Gradius 3, Super R-Type)."
@@ -2306,6 +2507,9 @@ msgstr "ParaLLEl-RDP"
 
 msgid "Paraguay"
 msgstr "Paraguay"
+
+msgid "Parallel"
+msgstr "Parallel"
 
 msgid "Partial"
 msgstr "Parțială"
@@ -2385,6 +2589,9 @@ msgstr "Preîncarcă"
 msgid "Preload requires more RAM."
 msgstr "Pre-încărcarea necesită mai mult RAM."
 
+msgid "Produces a clean LCD effect."
+msgstr "Produce un efect de LCD curat."
+
 msgid "Puerto Rico"
 msgstr "Puerto Rico"
 
@@ -2399,6 +2606,9 @@ msgstr "Qatar"
 
 msgid "RDP PLUGIN"
 msgstr "PLUGIN RDP"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "CITEȘTE BUFFER-UL DE CADRE LA FIECARE CADRU (GLIDE64MK2)"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "REDU PÂLPÂIREA SPRITE-URILOR"
@@ -2478,6 +2688,9 @@ msgstr "Necesar pentru unele jocuri."
 msgid "Required for certain visual effects."
 msgstr "Necesar pentru anumite efecte vizuale."
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "Necesar pentru unele efecte din joc (tranziții Banjo Kazooie sau DK64), poate cauza încetiniri."
+
 msgid "Requires BIOS file to be present."
 msgstr "Necesită prezența unui fișier BIOS."
 
@@ -2486,6 +2699,12 @@ msgstr "Reeșantionare (Pirch Shift)"
 
 msgid "Restored Wii VC"
 msgstr "Wii VC restaurat"
+
+msgid "RetroPad (Default)"
+msgstr "RetroPad (Implicit)"
+
+msgid "Rice"
+msgstr "Rice"
 
 msgid "Right Stick"
 msgstr "Maneta dreaptă"
@@ -2501,6 +2720,9 @@ msgstr "Rotește ecranul, util pentru unele jocuri homebrew verticale."
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Manetă în 4 direcții rotită (Q*Bert)"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "Rotește ecranele, pentru a simula ținerea unui DS vertical."
 
 msgid "Runs \"skinning\" on the CPU instead of the GPU, means that draw calls from the game can more easily be combined, which often improves things."
 msgstr "Rulează „skinning” pe CPU în loc de GPU, înseamnă că apelurile de desenare din joc pot fi combinate mai ușor, care de regulă îmbunătățește lucrurile."
@@ -2529,8 +2751,17 @@ msgstr "FILTRAREA ECRANULUI"
 msgid "SCREEN SETTINGS"
 msgstr "SETĂRI ECRAN"
 
+msgid "SCREEN SIZING"
+msgstr "DIMENSIONAREA ECRANULUI"
+
+msgid "SCREEN SWAP"
+msgstr "INTERSCHIMBARE ECRANE"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "SENSIBILITATE"
 
 msgid "SENSOR BAR POSITION"
 msgstr "POZIȚIE BARĂ INFRAROȘIE"
@@ -2567,6 +2798,9 @@ msgstr "AFIȘEAZĂ ARANJAREA ECRANULUI"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "OMITE EFECTELE DE BUFFER"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "OMITE MENIUL DE SISTEM DS"
 
 msgid "SKIP GPU READBACKS"
 msgstr "OMITE READBACK GPU"
@@ -2667,6 +2901,12 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Scalat"
 
+msgid "Screen Resolution (Default)"
+msgstr "Rezoluția ecranului (Implicit)"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "Limba aleasă va fi folosită dacă „Folosește setările din firmware” este dezactivată sau fișierul cu firmware-ul nu a fost găsit."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "Alege tipul de intrare pentru navigarea pe ecranul tactil"
 
@@ -2696,6 +2936,12 @@ msgstr "Clar 1"
 
 msgid "Sharp 2"
 msgstr "Clar 2"
+
+msgid "Sharpen"
+msgstr "Mărește claritatea"
+
+msgid "Sharpen More"
+msgstr "Mărește claritatea mai mult"
 
 msgid "Show"
 msgstr "Afișează"
@@ -2774,6 +3020,9 @@ msgstr "Netezește texturile pe obiectele 3D."
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "Netezește texturile de pe obiectele 3D distante bazat pe unghi."
+
+msgid "Smooths out textures on 3D objects."
+msgstr "Netezește texturile pe obiectele 3D."
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Netezește imaginea per total pe măsură ce este afișată pe ecran. Corectează poziționarea dintre pixeli."
@@ -2859,6 +3108,9 @@ msgstr "Surround 5.1"
 msgid "Surround 7.1"
 msgstr "Surround 7.1"
 
+msgid "Swap the position of the dual displays."
+msgstr "Interschimbă poziția ecranelor."
+
 msgid "Sweden"
 msgstr "Suedia"
 
@@ -2895,8 +3147,14 @@ msgstr "ÎNLOCUIRI DE TEXTURI"
 msgid "TEXTURE SCALING"
 msgstr "SCALARE TEXTURĂ"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "NETEZIREA TEXTURILOR"
+
 msgid "TEXTURE UPSCALING"
 msgstr "UPSCALING TEXTURI"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "UPSCALING TEXTURI (DOAR RICE)"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "UPSCALING TEXTURI (XBRZ)"
@@ -2942,6 +3200,9 @@ msgstr "Tailanda"
 
 msgid "The PSP will cull triangles that are outside a 4096x4096 clipping box, and also triangles crossing the Z=1 plane if clipping is enabled."
 msgstr "PSP-ul va sacrifica triunghiurile care sunt în afara unei cutii de decupare de 4096x4096 și triunghiurile care trec planul Z=1 dacă decuparea este activată."
+
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "Zona din jurul poziției neutre a joystick-ului unde intrarea este ignorată. Poate ajuta să reducă mișcările nedorite."
 
 msgid "The day within the month of your birthday."
 msgstr "Ziua din luna ta de naștere."
@@ -2994,6 +3255,9 @@ msgstr "Doar deasupra"
 msgid "Top Right"
 msgstr "Dreapta sus"
 
+msgid "Top only"
+msgstr "Doar sus"
+
 msgid "Touch Screen"
 msgstr "Ecran tactil"
 
@@ -3039,6 +3303,9 @@ msgstr "FILTRU UPSCALE"
 msgid "USE DSP AUDIO"
 msgstr "FOLOSEȘTE DSP AUDIO"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "FOLOSEȘTE SETĂRILE DIN FIRMWARE"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "FOLOSEȘTE CADRE PREEMPTIVE"
 
@@ -3072,6 +3339,9 @@ msgstr "Până la 2 (implicit)"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "Încarcă texturile întregi deodată în loc de bucăți mai mici. Îmbunătățește performanța în majoritatea jocurilor."
 
+msgid "Upscale textures on 3D objects."
+msgstr "Fă upscale la texturi pe obiectele 3D."
+
 msgid "Uruguay"
 msgstr "Uruguay"
 
@@ -3084,6 +3354,9 @@ msgstr "Folosește gazda"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Folosește SSAA în loc de MSAA pentru anti-aliasing. SSAA poate să arate mai bine, dar are un cost de performanță mai mare."
 
+msgid "Use language and username from the NDS Firmware"
+msgstr "Folosește limba și numele de utilizator din firmware-ul NDS"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Folosește cadre preemptive în loc de cele pre-rulate. Va pre-rula doar când starea controlerului se schimbă."
 
@@ -3092,6 +3365,15 @@ msgstr "Folosit pentru a elimina deplasarea nedorită a joystick-ului. Are efect
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "Folosit pentru a face mișcarea să răspundă mai rapid sau mai încet față de joystick-ul. Are efect pe toate controlerele."
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "Folosește-ți proprii tăi ochelari 3D anaglyph!"
+
+msgid "Useful for N64 style controllers."
+msgstr "Util pentru controlerele tip N64."
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "Util pentru controlerele tip N64. Taste rapide limitate pentru controlerele fără buton rapid dedicat."
 
 msgid "Useful for speedruns/glitches."
 msgstr "Util pentru jocuri rapide/probleme."
@@ -3237,11 +3519,41 @@ msgstr "ACURATEȚE ZCULL"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Mărește pentru a ascunde marginile negre. Marginile sunt diferite per joc."
 
+msgid "bilinear"
+msgstr "bilinear"
+
 msgid "black and white"
 msgstr "negru și alb"
 
+msgid "black/blue"
+msgstr "negru/albastru"
+
+msgid "black/cyan"
+msgstr "negru/cyan"
+
+msgid "black/electric cyan"
+msgstr "negru/cyan electric"
+
+msgid "black/green"
+msgstr "negru/verde"
+
+msgid "black/magenta"
+msgstr "negru/magenta"
+
+msgid "black/white"
+msgstr "negru/alb"
+
+msgid "black/yellow"
+msgstr "negru/galben"
+
 msgid "blue sea"
 msgstr "mare albastră"
+
+msgid "bottom only"
+msgstr "doar jos"
+
+msgid "bottom/top"
+msgstr "jos/sus"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -3258,20 +3570,62 @@ msgstr "gba sp"
 msgid "green forest"
 msgstr "pădure verde"
 
+msgid "green/magenta"
+msgstr "verde/magenta"
+
 msgid "hot desert"
 msgstr "deșert fierbinte"
+
+msgid "hybrid bottom ratio 2"
+msgstr "hibrid jos raport 2"
+
+msgid "hybrid bottom ratio 3"
+msgstr "hibrid jos raport 3"
+
+msgid "hybrid top ratio 2"
+msgstr "hibrid sus raport 2"
+
+msgid "hybrid top ratio 3"
+msgstr "hibrid sus raport 3"
+
+msgid "hybrid/bottom"
+msgstr "hibrid/jos"
+
+msgid "hybrid/top"
+msgstr "hibrid/sus"
+
+msgid "left/right"
+msgstr "stânga/dreapta"
 
 msgid "lottes crt"
 msgstr "crt lottes"
 
+msgid "nearest"
+msgstr "cel mai apropiat"
+
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original"
+msgstr "original"
 
 msgid "original gameboy"
 msgstr "gameboy original"
 
 msgid "pink dreams"
 msgstr "vise roz"
+
+msgid "red/blue"
+msgstr "roșu/albastru"
+
+msgid "red/cyan"
+msgstr "roșu/cyan"
+
+msgid "red/electric cyan"
+msgstr "roșu/cyan electric"
+
+msgid "right/left"
+msgstr "dreapta/stânga"
 
 msgid "royaltea"
 msgstr "royaltea"
@@ -3282,8 +3636,17 @@ msgstr "linii scanare"
 msgid "standard"
 msgstr "standard"
 
+msgid "top only"
+msgstr "doar sus"
+
+msgid "top/bottom"
+msgstr "sus/jos"
+
 msgid "triangular filter"
 msgstr "filtru triunghiular"
+
+msgid "trilinear"
+msgstr "trilinear"
 
 msgid "wave filter"
 msgstr "filtru în valuri"
@@ -3302,3 +3665,6 @@ msgstr "xBRZ (Implicit)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - un algoritm de upscaling de clarificare, Bicubic - un aspect neted, Hybrid - folosește bicubic pentru ariile netede."
+
+msgid "yellow/blue"
+msgstr "galben/albastru"

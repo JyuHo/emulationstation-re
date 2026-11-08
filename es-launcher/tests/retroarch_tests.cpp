@@ -518,6 +518,34 @@ static void testCoreProfiles()
 		CHECK(core.deviceType(ctx, 1) == "1");
 		CHECK(core.analogDpadMode(ctx, pad) == 1);
 	}
+	// ParallelN64: GLideN64 unless Vulkan, the 64DD boots its IPL
+	{
+		ConfigFile o;
+		ctx.game.system = "n64dd";
+		ctx.settings = Settings({ { "gfxbackend", "vulkan" } }, {}, {});
+		coreProfile("parallel_n64").setCoreOptions(ctx, o);
+		CHECK(o.get("parallel-n64-gfxplugin") == "parallel");
+		CHECK(o.get("parallel-n64-boot-device") == "64DD IPL");
+		CHECK(o.get("parallel-n64-pak1") == "memory");
+		CHECK(coreProfile("parallel_n64").analogDpadMode(ctx, pad) == 0);
+	}
+
+	// DeSmuME, Beetle VB (under both names), PokeMini
+	{
+		ConfigFile o;
+		ctx.settings = Settings({ { "screens_layout", "left/right" }, { "2d_color_mode", "black & white" } }, {}, {});
+		coreProfile("desmume").setCoreOptions(ctx, o);
+		CHECK(o.get("desmume_screens_layout") == "left/right");
+		CHECK(o.get("desmume_pointer_device_r") == "emulated");
+		coreProfile("mednafen_vb").setCoreOptions(ctx, o);
+		CHECK(o.get("vb_color_mode") == "black & white");
+		coreProfile("pokemini").setCoreOptions(ctx, o);
+		ctx.settings = Settings({ { "melonds_screen_layout", "Hybrid Bottom-Ratio3" } }, {}, {});
+		coreProfile("melonds").setCoreOptions(ctx, o);
+		CHECK(o.get("melonds_screen_layout") == "Hybrid Bottom");
+		CHECK(o.get("melonds_hybrid_ratio") == "3");
+		CHECK(o.get("pokemini_lcdfilter") == "dotmatrix");
+	}
 }
 
 void tests::runRetroArchTests()
