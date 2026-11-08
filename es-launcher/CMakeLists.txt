@@ -25,6 +25,7 @@ option(ES_LAUNCHER_TESTS "Build the es-launcher tests" ${ES_LAUNCHER_STANDALONE}
 # tests use, so that the tests can reach the internal classes the library does not export.
 add_library(es-launcher-objects OBJECT
     src/Command.cpp
+    src/EvdevLayout.cpp
     src/Generator.cpp
     src/LaunchContext.cpp
     src/Launcher.cpp

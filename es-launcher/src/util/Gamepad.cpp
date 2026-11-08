@@ -168,6 +168,8 @@ namespace es::launcher::util
 	{
 		if (const char* hidapi = std::getenv("SDL_JOYSTICK_HIDAPI"); hidapi == nullptr || hidapi[0] == 0)
 			cmd.env["SDL_JOYSTICK_HIDAPI"] = "0";
+		if (const char* hats = std::getenv("SDL_JOYSTICK_LINUX_DIGITAL_HATS"); hats == nullptr || hats[0] == 0)
+			cmd.env["SDL_JOYSTICK_LINUX_DIGITAL_HATS"] = "1";
 		cmd.env["SDL_GAMECONTROLLERCONFIG"] = gameControllerConfig(controllers);
 	}
 

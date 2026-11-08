@@ -3,9 +3,11 @@
 // Copyright (c) 2026 The EmulationStation-RE contributors.
 
 #include "Check.h"
+#include "es-launcher/EvdevLayout.h"
 #include "es-launcher/Launcher.h"
 
 #include <algorithm>
+#include <linux/input.h>
 #include <cstdio>
 #include <functional>
 #include <string>
@@ -177,8 +179,51 @@ static void testSettingsPrefix()
 	CHECK(!raw.contains("audio_driver"));        // "auto" is not set
 }
 
+static void testEvdevLayout()
+{
+	using es::launcher::EvdevLayout;
+	using es::launcher::InputBinding;
+	using Type = InputBinding::Type;
+
+	// a pad with a button below BTN_JOYSTICK (BTN_0), a d-pad hat and an axis above ABS_MISC
+	EvdevLayout layout = EvdevLayout::fromCapabilities("Pad",
+		{ BTN_SOUTH, BTN_EAST, BTN_0 },
+		{ { ABS_X, -32768, 32767 }, { ABS_Y, -32768, 32767 }, { ABS_HAT0X, -1, 1 }, { ABS_HAT0Y, -1, 1 }, { ABS_MISC, 0, 255 } });
+	CHECK(!layout.sameNumbering());
+
+	// SDL: south 0, east 1, BTN_0 2; udev: BTN_0 0, south 1, east 2
+	CHECK(layout.sdlToUdev(InputBinding{ Type::Button, 0, 1 })->id == 1);
+	CHECK(layout.sdlToUdev(InputBinding{ Type::Button, 2, 1 })->id == 0);
+	CHECK(layout.udevToSdl(InputBinding{ Type::Button, 0, 1 })->id == 2);
+	CHECK(!layout.sdlToUdev(InputBinding{ Type::Button, 3, 1 }));
+
+	// axes: the same below ABS_MISC, none above for udev
+	CHECK(layout.sdlToUdev(InputBinding{ Type::Axis, 1, -1 })->id == 1);
+	CHECK(layout.sdlToUdev(InputBinding{ Type::Axis, 1, -1 })->value == -1);
+	CHECK(!layout.sdlToUdev(InputBinding{ Type::Axis, 2, 1 }));
+
+	// hat 0 both ways, keys unchanged
+	CHECK(layout.sdlToUdev(InputBinding{ Type::Hat, 0, 4 })->id == 0);
+	CHECK(layout.udevToSdl(InputBinding{ Type::Hat, 0, 4 })->value == 4);
+	CHECK(layout.sdlToUdev(InputBinding{ Type::Key, 97, 1 })->id == 97);
+
+	// a usual pad: both agree
+	EvdevLayout usual = EvdevLayout::fromCapabilities("Pad", { BTN_SOUTH, BTN_EAST, BTN_START },
+		{ { ABS_X, -32768, 32767 }, { ABS_HAT0X, -1, 1 }, { ABS_HAT0Y, -1, 1 } });
+	CHECK(usual.sameNumbering());
+
+	// hat 1 alone: SDL hat 0, udev hat 1
+	EvdevLayout secondHat = EvdevLayout::fromCapabilities("Pad", { BTN_SOUTH }, { { ABS_HAT1X, -1, 1 }, { ABS_HAT1Y, -1, 1 } });
+	CHECK(secondHat.sdlToUdev(InputBinding{ Type::Hat, 0, 1 })->id == 1);
+	CHECK(secondHat.udevToSdl(InputBinding{ Type::Hat, 1, 1 })->id == 0);
+
+	// a device ES cannot read
+	CHECK(!EvdevLayout::read("/nonexistent"));
+}
+
 void tests::runLauncherTests()
 {
+	testEvdevLayout();
 	testShellQuote();
 	testShellLine();
 	testSettings();

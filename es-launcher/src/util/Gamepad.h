@@ -62,6 +62,8 @@ namespace es::launcher::util
 	//   axes, and SDL2 and SDL3 do not drive the same pads through HIDAPI. Through evdev, SDL2 and
 	//   SDL3 give a pad the same GUID and the same numbers. A SDL_JOYSTICK_HIDAPI set in the
 	//   environment of ES wins, as it does in ES.
+	// - SDL_JOYSTICK_LINUX_DIGITAL_HATS=1: every hat is a hat, as in ES and RetroArch (SDL would
+	//   otherwise guess, and could turn a d-pad into two axes).
 	// - SDL_GAMECONTROLLERCONFIG: the mapping of each pad in ES (gameControllerConfig()).
 	void setPadEnvironment(Command& cmd, const std::vector<Controller>& controllers);
 

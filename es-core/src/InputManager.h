@@ -104,6 +104,9 @@ private:
 	bool loadFromSdlMapping(InputConfig* config, const std::string& mapping);
 
 	bool tryLoadInputConfig(std::string path, InputConfig* config, bool allowApproximate = true);
+	// Batocera's mappings (es_input_batocera.cfg): their GUIDs have no name CRC, their names are
+	// the evdev names and they number the controls as RetroArch's udev driver (EvdevLayout)
+	bool tryLoadBatoceraInputConfig(const std::string& path, InputConfig* config);
 
 	void clearJoysticks();
 	void rebuildAllJoysticks(bool deinit = true);

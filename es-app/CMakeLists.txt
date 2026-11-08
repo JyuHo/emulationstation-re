@@ -243,6 +243,7 @@ set_target_properties(emulationstation PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMA
 add_custom_command(TARGET emulationstation POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E create_symlink ${CMAKE_SOURCE_DIR}/resources ${CMAKE_BINARY_DIR}/resources
     COMMAND ${CMAKE_COMMAND} -E create_symlink ${CMAKE_SOURCE_DIR}/features/es_features.cfg ${CMAKE_BINARY_DIR}/es_features.cfg
+    COMMAND ${CMAKE_COMMAND} -E create_symlink ${CMAKE_SOURCE_DIR}/controllers/es_input_batocera.cfg ${CMAKE_BINARY_DIR}/es_input_batocera.cfg
     VERBATIM)
 
 #-------------------------------------------------------------------------------
@@ -307,6 +308,9 @@ install(DIRECTORY ${CMAKE_SOURCE_DIR}/resources
 # Options of each emulator in the per system and per game settings (features/build_es_features.py).
 # A user es_features.cfg in ~/.config/emulationstation replaces it; es_features_*.cfg files add to it.
 install(FILES ${CMAKE_SOURCE_DIR}/features/es_features.cfg
+    DESTINATION ${CMAKE_INSTALL_DATADIR}/emulationstation)
+# Batocera's controller mappings, used for a pad the player has not mapped (InputManager)
+install(FILES ${CMAKE_SOURCE_DIR}/controllers/es_input_batocera.cfg
     DESTINATION ${CMAKE_INSTALL_DATADIR}/emulationstation)
 
 # Updates from the menu: es-re-update installs the latest release, pkexec runs it as root
