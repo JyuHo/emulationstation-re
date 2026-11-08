@@ -3,10 +3,8 @@
 // Copyright (c) 2026 The EmulationStation-RE contributors.
 // Adapted from batocera-launch (batocera_launch_libretro/cores/), Copyright (c) 2026 The Batocera Team.
 //
-// Profiles for the cores of the first systems: gambatte and vba-m (gb, gbc, gba), mgba (gba),
-// melondsds and melonds (nds), mesen, fceumm and nestopia (nes), snes9x and bsnes (snes), mupen64plus-next
-// and parallel_n64 (n64), desmume (nds), vb (virtualboy), pokemini, swanstation, mednafen_psx and
-// pcsx_rearmed (psx), flycast (dreamcast). Light gun and wheel handling is left out for now.
+// Profiles of libretro cores, one class per core; coreProfile() lists the names each one
+// answers to (Batocera's and the library's). Light gun and wheel handling is left out for now.
 
 #include "retroarch/Cores.h"
 
@@ -748,6 +746,237 @@ namespace es::launcher::retroarch
 		}
 	};
 
+	// Mega Drive pads (8BitDo M30, Retro-Bit Saturn) whose buttons RetroArch must move: the six
+	// face buttons in the Mega Drive order
+	static bool isMegaDrivePad(const Controller& pad)
+	{
+		static constexpr std::array guids = {
+			"05000000c82d00005106000000010000", "03000000c82d00000650000011010000", "050000005e0400008e02000030110000",
+			"03000000c82d00000150000011010000", "05000000c82d00000151000000010000", "0500000049190000020400001b010000",
+		};
+		static constexpr std::array names = {
+			"8BitDo M30 gamepad", "8Bitdo  8BitDo M30 gamepad", "8BitDo M30 Modkit", "8Bitdo  8BitDo M30 Modkit",
+			"Retro Bit Bluetooth Controller",
+		};
+		return std::ranges::find(guids, pad.guid) != guids.end() && std::ranges::find(names, pad.name) != names.end();
+	}
+
+	// Genesis Plus GX and PicoDrive: the Mega Drive layout for those pads, or when the player
+	// picked it (<prefix>_controller<N>_mapping, players 1 to 4)
+	class MegaDriveCore : public Core
+	{
+	public:
+		explicit MegaDriveCore(std::array<const char*, 4> mappingOptions) : mMappingOptions(mappingOptions) { }
+
+		void setConfig(const LaunchContext& ctx, ConfigFile& config) const override
+		{
+			static const std::pair<const char*, const char*> remap[] = {
+				{ "btn_a", "0" }, { "btn_b", "1" }, { "btn_x", "9" }, { "btn_y", "10" }, { "btn_l", "11" }, { "btn_r", "8" },
+			};
+
+			for (const Controller& pad : ctx.controllers)
+			{
+				if (pad.player < 1 || pad.player > 4)
+					continue;
+
+				if (isMegaDrivePad(pad) || settingOr(ctx, mMappingOptions[pad.player - 1], "retropad") != "retropad")
+				{
+					for (const auto& [button, value] : remap)
+						config.set("input_player" + std::to_string(pad.player) + "_" + button, value);
+				}
+			}
+		}
+
+	private:
+		std::array<const char*, 4> mMappingOptions;
+	};
+
+	static bool isMegaDrive(const LaunchContext& ctx)
+	{
+		return ctx.game.system == "megadrive" || ctx.game.system == "genesis";
+	}
+
+	static bool isMegaCD(const LaunchContext& ctx)
+	{
+		return ctx.game.system == "megacd" || ctx.game.system == "segacd";
+	}
+
+	class GenesisPlusGX : public MegaDriveCore
+	{
+	public:
+		explicit GenesisPlusGX(bool masterSystemPads)
+			: MegaDriveCore({ "gx_controller1_mapping", "gx_controller2_mapping", "gx_controller3_mapping", "gx_controller4_mapping" })
+			, mMasterSystemPads(masterSystemPads)
+		{
+		}
+
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			const std::string& system = ctx.game.system;
+			bool msu = system == "megadrive-msu";
+
+			o.set("genesis_plus_gx_system_bram", "per game");   // one backup RAM file per game
+			option(ctx, o, "genesis_plus_gx_region_detect", "gpgx_region", "auto");
+			option(ctx, o, "genesis_plus_gx_no_sprite_limit", "gpgx_no_sprite_limit", "disabled");
+
+			std::string ntsc = "disabled";
+			if (isMegaDrive(ctx))
+				ntsc = settingOr(ctx, "gpgx_blargg_filter_md", "disabled");
+			else if (system == "mastersystem")
+				ntsc = settingOr(ctx, "gpgx_blargg_filter_ms", "disabled");
+			o.set("genesis_plus_gx_blargg_ntsc_filter", ntsc);
+
+			std::string cursor = "disabled";
+			if (isMegaDrive(ctx))
+				cursor = settingOr(ctx, "gun_cursor_md", "disabled");
+			else if (system == "mastersystem")
+				cursor = settingOr(ctx, "gun_cursor_ms", "disabled");
+			o.set("genesis_plus_gx_gun_cursor", cursor);
+
+			option(ctx, o, "genesis_plus_gx_ym2612", "gpgx_fm", "mame (ym2612)");
+			std::string ym2413 = settingOr(ctx, "ym2413", "automatic");
+			o.set("genesis_plus_gx_ym2413", ym2413 == "automatic" ? "auto" : ym2413);
+
+			option(ctx, o, "genesis_plus_gx_lcd_filter", "lcd_filter", "disabled");
+			option(ctx, o, "genesis_plus_gx_gg_extra", "gg_extra", "disabled");
+
+			// MSU-MD needs the Mega-CD add-on, and its CD audio is louder than the Mega-CD's
+			option(ctx, o, "genesis_plus_gx_add_on", "gpgx_cd_add_on", msu ? "sega/mega cd" : "auto");
+			option(ctx, o, "genesis_plus_gx_cdda_volume", "gpgx_cdda_volume", msu ? "70" : "100");
+		}
+
+		std::optional<std::string> deviceType(const LaunchContext& ctx, int player) const override
+		{
+			if (player != 1 && player != 2)
+				return std::nullopt;
+			if (isMegaDrive(ctx))   // 513: six button pad
+				return settingOr(ctx, player == 1 ? "controller1_md" : "controller2_md", "513");
+			if (mMasterSystemPads && ctx.game.system == "mastersystem")
+				return settingOr(ctx, player == 1 ? "controller1_ms" : "controller2_ms", "769");
+			return std::nullopt;
+		}
+
+	private:
+		bool mMasterSystemPads;   // the Master System controller types: not the expanded build
+	};
+
+	class PicoDrive : public MegaDriveCore
+	{
+	public:
+		PicoDrive() : MegaDriveCore({ "pd_controller1_mapping", "pd_controller2_mapping", "pd_controller3_mapping", "pd_controller4_mapping" }) { }
+
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "picodrive_sprlim", "enabled");
+			option(ctx, o, "picodrive_renderer", "accurate");
+			option(ctx, o, "picodrive_input1", "picodrive_controller1", "6 button pad");
+			option(ctx, o, "picodrive_input2", "picodrive_controller2", "6 button pad");
+			// the Backup RAM cartridge, for the Mega-CD games that save on it (Shining Force CD)
+			o.set("picodrive_ramcart", isMegaCD(ctx) ? "enabled" : "disabled");
+		}
+
+		bool supportsRewindAndRunAhead(const LaunchContext& ctx) const override
+		{
+			return ctx.game.system != "sega32x";
+		}
+	};
+
+	// Saturn controller type of player 1 or 2. Beetle Saturn's 3D pad is 261, YabaSanshiro's 5:
+	// the option is shared, so each core reads the other's value too.
+	static std::optional<std::string> saturnDevice(const LaunchContext& ctx, int player, bool yabasanshiro)
+	{
+		if (ctx.game.system != "saturn" || (player != 1 && player != 2))
+			return std::nullopt;
+		std::string device = settingOr(ctx, player == 1 ? "controller1_saturn" : "controller2_saturn", "1");
+		if (yabasanshiro && device == "261")
+			return "5";
+		if (!yabasanshiro && device == "5")
+			return "261";
+		return device;
+	}
+
+	class BeetleSaturn : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "beetle_saturn_virtuagun_crosshair", "beetle-saturn_crosshair", "Off");
+			o.set("beetle_saturn_analog_stick_deadzone", "15%");
+		}
+
+		std::optional<std::string> deviceType(const LaunchContext& ctx, int player) const override
+		{
+			return saturnDevice(ctx, player, false);
+		}
+	};
+
+	// two ports of 6: none, port 1, port 2 or both
+	static std::pair<const char*, const char*> multitapPorts(const std::string& value)
+	{
+		bool port1 = value == "port1" || value == "port12";
+		bool port2 = value == "port2" || value == "port12";
+		return { port1 ? "enabled" : "disabled", port2 ? "enabled" : "disabled" };
+	}
+
+	class YabaSanshiro : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "yabasanshiro_resolution_mode", "resolution_mode", "original");
+			option(ctx, o, "yabasanshiro_rbg_resolution_mode", "yabasanshiro_rbg_resolution", "original");
+			auto [port1, port2] = multitapPorts(settingOr(ctx, "multitap_yabasanshiro", ""));
+			o.set("yabasanshiro_multitap_port1", port1);
+			o.set("yabasanshiro_multitap_port2", port2);
+			option(ctx, o, "yabasanshiro_system_language", "yabasanshiro_language", "english");
+		}
+
+		// the core swaps the shoulder buttons
+		void adjustButtons(const LaunchContext& /*ctx*/, const Controller& /*pad*/, ButtonMap& buttons) const override
+		{
+			for (auto& [es, ra] : buttons)
+			{
+				if (es == "pageup")
+					ra = "r";
+				else if (es == "pagedown")
+					ra = "l";
+			}
+		}
+
+		// it needs the compatibility GL driver
+		std::string defaultVideoDriver(const std::string& generic) const override
+		{
+			return generic == "glcore" ? "gl" : generic;
+		}
+
+		std::optional<std::string> deviceType(const LaunchContext& ctx, int player) const override
+		{
+			return saturnDevice(ctx, player, true);
+		}
+	};
+
+	class Kronos : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "kronos_resolution_mode", "kronos_resolution", "original");
+			option(ctx, o, "kronos_meshmode", "disabled");
+			option(ctx, o, "kronos_bandingmode", "disabled");
+			option(ctx, o, "kronos_use_beetle_saves", "enabled");
+			auto [port1, port2] = multitapPorts(settingOr(ctx, "kronos_multitap", ""));
+			o.set("kronos_multitap_port1", port1);
+			o.set("kronos_multitap_port2", port2);
+			option(ctx, o, "kronos_language_id", "English");
+		}
+
+		// it needs the core GL driver
+		std::string defaultVideoDriver(const std::string& generic) const override
+		{
+			return generic == "gl" ? "glcore" : generic;
+		}
+	};
+
 	// ---------------------------------------------------------------------------------------------
 
 	const Core& coreProfile(std::string_view core)
@@ -782,6 +1011,16 @@ namespace es::launcher::retroarch
 			m.emplace("vb", std::make_unique<VirtualBoy>());
 			m.emplace("mednafen_vb", std::make_unique<VirtualBoy>());
 			m.emplace("pokemini", std::make_unique<PokeMini>());
+			// Batocera's names, then the libraries' (genesis_plus_gx_libretro.so...)
+			m.emplace("genesisplusgx", std::make_unique<GenesisPlusGX>(true));
+			m.emplace("genesis_plus_gx", std::make_unique<GenesisPlusGX>(true));
+			m.emplace("genesisplusgx-expanded", std::make_unique<GenesisPlusGX>(false));
+			m.emplace("genesis_plus_gx_expanded", std::make_unique<GenesisPlusGX>(false));
+			m.emplace("picodrive", std::make_unique<PicoDrive>());
+			m.emplace("beetle-saturn", std::make_unique<BeetleSaturn>());
+			m.emplace("mednafen_saturn", std::make_unique<BeetleSaturn>());
+			m.emplace("yabasanshiro", std::make_unique<YabaSanshiro>());
+			m.emplace("kronos", std::make_unique<Kronos>());
 			return m;
 		}();
 		static const Core generic;

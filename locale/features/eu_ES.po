@@ -342,8 +342,17 @@ msgstr "45s"
 msgid "48MB"
 msgstr "48MB"
 
+msgid "4:3 (Default)"
+msgstr "4:3 (Lehenetsia)"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "4:3 ERRENDATZE-BEREIZMENA"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4X"
 
 msgid "4th"
 msgstr "4.a"
@@ -423,6 +432,9 @@ msgstr "6x Jatorrizkoa (~2160p/4K)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x jatorrizkoa (1536 x 1152)"
 
+msgid "720p"
+msgstr "720p"
+
 msgid "72MB"
 msgstr "72MB"
 
@@ -443,6 +455,9 @@ msgstr "7x Jatorrizkoa (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x jatorrizkoa (1792 x 1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "8.a"
@@ -467,6 +482,12 @@ msgstr "8x jatorrizkoa (2048 x 1536)"
 
 msgid "90 degrees"
 msgstr "90 gradu"
+
+msgid "90 degrees clockwise"
+msgstr "90 gradu erlojuaren orratzen noranzkoan"
+
+msgid "90 degrees counter-clockwise"
+msgstr "90 gradu erlojuaren orratzen aurkako noranzkoan"
 
 msgid "96MB"
 msgstr "96MB"
@@ -558,6 +579,9 @@ msgstr "Moldagarria (goiko eremua lehenik)"
 msgid "Add color to Game Boy games."
 msgstr "Gehitu kolorea Game Boy jokoei."
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "Doitu CD audioaren nahasketa. MSU-MD-n, kartutxotik datozen soinu-efektuei ez die eragiten."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Doitzen du Full Motion Video (FMV) filmen aspektu-erlazioa."
 
@@ -600,6 +624,9 @@ msgstr "Kurba horien kalitate bisuala murriztea ahalbidetzen du, errendimendu ho
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "5 edo 8 aginte-kontrol arte onartzen ditu, bateragarriak diren jokoetan."
 
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "7 edo 12 aginte-kontrol arte onartzen ditu, bateragarriak diren jokoetan."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "8 aginte-kontrol arte onartzen ditu, bateragarriak diren jokoetan."
 
@@ -641,6 +668,9 @@ msgstr "Aplikatu biderkatzaile bat joystickaren sarrerari, erantzuna moteldu edo
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Aplikatu bideo-iragazki bat hainbat NTSC telebista-seinale imitatzeko."
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "Aplikatu Gouraud itzaleztatzea itzaleztatze lauaren ordez."
 
 msgid "Approximate (Fast)"
 msgstr "Gutxi gorabeherakoa (azkarra)"
@@ -707,6 +737,9 @@ msgstr "Azerbaijan"
 
 msgid "BILINEAR FILTERING"
 msgstr "IRAGAZKETA BILINEALA"
+
+msgid "BIOS Language"
+msgstr "BIOSaren hizkuntza"
 
 msgid "BIRTH DAY"
 msgstr "JAIOTZE-EGUNA"
@@ -840,6 +873,12 @@ msgstr "Bufferreko errendatzea"
 msgid "Bulgaria"
 msgstr "Bulgaria"
 
+msgid "CD ADD-ON"
+msgstr "CD GEHIGARRIA"
+
+msgid "CD-DA VOLUME"
+msgstr "CD-DA BOLUMENA"
+
 msgid "CHEATS"
 msgstr "TRANPAK"
 
@@ -870,11 +909,17 @@ msgstr "KONTSOLA MOTA"
 msgid "CONTROLLER 1"
 msgstr "1. AGINTE-KONTROLA"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "1. AGINTE-KONTROLAREN SARRERA-ESLEIPENA"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "1. AGINTE-KONTROLAREN MOTA"
 
 msgid "CONTROLLER 2"
 msgstr "2. AGINTE-KONTROLA"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "2. AGINTE-KONTROLAREN SARRERA-ESLEIPENA"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "2. AGINTE-KONTROLAREN MOTA"
@@ -882,11 +927,17 @@ msgstr "2. AGINTE-KONTROLAREN MOTA"
 msgid "CONTROLLER 3"
 msgstr "3. AGINTE-KONTROLA"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "3. AGINTE-KONTROLAREN SARRERA-ESLEIPENA"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "3. AGINTE-KONTROLAREN MOTA"
 
 msgid "CONTROLLER 4"
 msgstr "4. AGINTE-KONTROLA"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "4. AGINTE-KONTROLAREN SARRERA-ESLEIPENA"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "AGINTE-KONTROLEN KONBINAZIOA"
@@ -972,6 +1023,12 @@ msgstr "Aldatu jokoaren hizkuntza."
 msgid "Change the output resolution ratio."
 msgstr "Aldatu irteeraren bereizmen-erlazioa."
 
+msgid "Change the rotation of the rendered image."
+msgstr "Aldatu errendatutako irudiaren biraketa."
+
+msgid "Change the system's language."
+msgstr "Aldatu sistemaren hizkuntza."
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "Aldatu GameCube ataka birtualetan konektatuta dagoena."
 
@@ -990,11 +1047,17 @@ msgstr "Txinera"
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Aukeratu kontsolaren hizkuntza. Baliteke joko guztiek hizkuntza-aukera hori ez onartzea."
 
+msgid "Choose deinterlace option."
+msgstr "Aukeratu desgurutzelarkatze-aukera."
+
 msgid "Choose downscaling method."
 msgstr "Aukeratu bereizmena txikitzeko metodoa."
 
 msgid "Choose mipmapping type."
 msgstr "Aukeratu mipmapping mota."
+
+msgid "Choose system BIOS language."
+msgstr "Aukeratu sistemaren BIOSaren hizkuntza."
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Aukeratu Parallel N64 plugin grafikoa."
@@ -1010,6 +1073,9 @@ msgstr "Aukeratu sistema-mezuen kokapena pantailan."
 
 msgid "Choose the scaling mode for the game screen."
 msgstr "Aukeratu jokoaren pantailaren eskalatze modua."
+
+msgid "Choose to render meshes as transparent polygons."
+msgstr "Aukeratu sareak poligono garden gisa errendatzea."
 
 msgid "Choose upscaling method."
 msgstr "Aukeratu bereizmena handitzeko metodoa."
@@ -1077,6 +1143,9 @@ msgstr "Costa Rica"
 msgid "Croatia"
 msgstr "Kroazia"
 
+msgid "Cross"
+msgstr "Gurutzea"
+
 msgid "Current language"
 msgstr "Uneko hizkuntza"
 
@@ -1094,6 +1163,9 @@ msgstr "ZONA HILA"
 
 msgid "DEFAULT POWER ON RAM STATE"
 msgstr "RAMAREN EGOERA LEHENETSIA PIZTEAN"
+
+msgid "DEINTERLACE"
+msgstr "DESGURUTZELARKATU"
 
 msgid "DEINTERLACING"
 msgstr "DESGURUTZELARKATZEA"
@@ -1173,6 +1245,9 @@ msgstr "Arrosa iluna"
 msgid "Dark Purple"
 msgstr "More iluna"
 
+msgid "De-Interlaced"
+msgstr "Desgurutzelarkatua"
+
 msgid "December"
 msgstr "Abendua"
 
@@ -1206,6 +1281,9 @@ msgstr "Kurtsorea beheko pantailan nola agertu behar den zehazten du."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Sistemaren abiadura eta aurrez exekutatzeko (runahead) portaera zehazten ditu."
 
+msgid "Deutsch"
+msgstr "Deutsch"
+
 msgid "Digital Controller"
 msgstr "Aginte-kontrol digitala"
 
@@ -1238,6 +1316,9 @@ msgstr "Errepublika Dominikarra"
 
 msgid "Don't Override"
 msgstr "Ez gainidatzi"
+
+msgid "Dot"
+msgstr "Puntua"
 
 msgid "Double buffering"
 msgstr "Buffer bikoitza"
@@ -1304,6 +1385,9 @@ msgstr "GAITU PANTAILA ZABALERAKO ADABAKIAK"
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "ERRENDATZE-BEREIZMEN HOBETUA"
+
+msgid "EXTENDED SCREEN"
+msgstr "PANTAILA HEDATUA"
 
 msgid "Ecuador"
 msgstr "Ekuador"
@@ -1413,6 +1497,9 @@ msgstr "Ingelesa (Lehenetsia)"
 msgid "English/Japanese"
 msgstr "Ingelesa/Japoniera"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "Soinu-irteera hobetuaren euskarria joko bateragarrientzat."
+
 msgid "Enhancement."
 msgstr "Hobekuntza."
 
@@ -1445,6 +1532,9 @@ msgstr "Hobekuntza. Kendu lerroko zortzi spriteren muga."
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "Hobekuntza. Kendu lerroko zortzi spriteren muga."
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "Hobekuntza. Kendu lerroko laurogei spriteren muga."
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Hobekuntza. Kendu lerroko hogeita hamabi spriteren muga. Joko batzuk blokeatzen ditu."
@@ -1488,6 +1578,9 @@ msgstr "Bikoitia"
 msgid "Exclusive Ubershaders"
 msgstr "Ubershader esklusiboak"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "Zabaldu jokoaren pantaila-eremua, Master Systemen antzera."
+
 msgid "External"
 msgstr "Kanpokoa"
 
@@ -1502,6 +1595,9 @@ msgstr "FIFO Erlaxatua"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "FIRMWARE EZARPENAK"
+
+msgid "FM SYNTHESIZER"
+msgstr "FM SINTETIZAGAILUA"
 
 msgid "FMV ASPECT RATIO"
 msgstr "FMV ASPEKTU-ERLAZIOA"
@@ -1749,6 +1845,9 @@ msgstr "GamePad + 4 Pro Controller"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "GamePad + 4 Wiimote etzan"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "Jokoak normala baino azkarrago/motelago ibil daitezke eskualde okerra hautatzen bada."
+
 msgid "Gaussian"
 msgstr "Gaussiarra"
 
@@ -1838,6 +1937,12 @@ msgstr "Ubershader hibridoak"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IMPROVED BANDING"
+msgstr "BANDAKETA HOBETUA"
+
+msgid "IMPROVED MESH"
+msgstr "SARE HOBETUA"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "POLIGONOEN ZATIKETA HOBETUA"
@@ -1950,6 +2055,33 @@ msgstr "Japoniera"
 msgid "Jordan"
 msgstr "Jordania"
 
+msgid "Joypad 2 Button"
+msgstr "Joypada, 2 botoi"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "Joypada, 2 botoi + Master Tap"
+
+msgid "Joypad 3 Button"
+msgstr "Joypada, 3 botoi"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "Joypada, 3 botoi + 4-WayPlay"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "Joypada, 3 botoi + Teamplayer"
+
+msgid "Joypad 6 Button"
+msgstr "Joypada, 6 botoi"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "Joypada, 6 botoi + 4-WayPlay"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "Joypada, 6 botoi + Teamplayer"
+
+msgid "Joypad Auto"
+msgstr "Joypad Auto"
+
 msgid "Joystick"
 msgstr "Joystick"
 
@@ -1980,6 +2112,9 @@ msgstr "Konami Justifier (P2)"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "Konami Justifier P2 2. aginte-kontroletik kateatuta konektatzen da, eta sistemarentzat 3. ataka da."
 
+msgid "Konami Justifiers"
+msgstr "Konami Justifier-ak"
+
 msgid "Korea"
 msgstr "Korea"
 
@@ -2004,6 +2139,9 @@ msgstr "LCD IZPI-EFEKTUA (GHOSTING)"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "LCD IZPI-EFEKTUAK (GHOSTING)"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "LCD IZPI-IRAGAZKIA (GHOSTING)"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD Ghosting (Zehatza)"
 
@@ -2012,6 +2150,9 @@ msgstr "LCD Ghosting (Azkarra)"
 
 msgid "LIGHT GUN"
 msgstr "ARGI-PISTOLA"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "ARGI-PISTOLAREN MIRA"
 
 msgid "LIGHT GUNS"
 msgstr "ARGI-PISTOLAK"
@@ -2058,6 +2199,9 @@ msgstr "Urdin argia"
 msgid "Light Green"
 msgstr "Berde argia"
 
+msgid "Light Phaser"
+msgstr "Light Phaser"
+
 msgid "Light Pink"
 msgstr "Arrosa argia"
 
@@ -2096,6 +2240,15 @@ msgstr "Luxenburgo"
 
 msgid "M.A.C.S. Rifle"
 msgstr "M.A.C.S. fusila"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (YM3438 hobetua)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "ESKUZKO TESTURA-LAGINKETA"
@@ -2184,6 +2337,15 @@ msgstr "Ertaina"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "MegaSD"
+msgstr "MegaSD"
+
+msgid "Megadrive"
+msgstr "Megadrive"
+
+msgid "Menacer Light Gun"
+msgstr "Menacer argi-pistola"
+
 msgid "Merge"
 msgstr "Bateratu"
 
@@ -2271,6 +2433,9 @@ msgstr "NTSC IRAGAZKIA"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2352,8 +2517,17 @@ msgstr "Normala (Lehenetsia)"
 msgid "Norway"
 msgstr "Norvegia"
 
+msgid "Not all games support 3D pad."
+msgstr "Joko guztiek ez dute 3D pada onartzen."
+
 msgid "November"
 msgstr "Azaroa"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "DESAKTIBATUTA (LEHENETSIA)"
@@ -2411,6 +2585,9 @@ msgstr "Aktibatuta (abiadura-hacka)"
 
 msgid "On (Vulkan Only)"
 msgstr "Aktibatuta (Vulkan soilik)"
+
+msgid "On (forced)"
+msgstr "Aktibatuta (behartuta)"
 
 msgid "Only Overscan Area"
 msgstr "Overscan eremua soilik"
@@ -2489,6 +2666,9 @@ msgstr "HOBETSITAKO SPU HARIAK"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM estiloa (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "Paddle kontrola"
 
 msgid "Paddle can only be used in port 2."
 msgstr "Paddlea 2. atakan soilik erabil daiteke."
@@ -2682,6 +2862,9 @@ msgstr "Poligono dardaratiak eta testura deformatuak murrizten ditu."
 msgid "Relaxed (Fastest)"
 msgstr "Malgua (azkarrena)"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "Ordeztu sare-gardentasuna benetako gardentasunarekin."
+
 msgid "Required by some games."
 msgstr "Joko batzuek eskatzen dute."
 
@@ -2702,6 +2885,9 @@ msgstr "Wii VC lehengoratua"
 
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Lehenetsia)"
+
+msgid "Retropad (Default)"
+msgstr "Retropad (Lehenetsia)"
 
 msgid "Rice"
 msgstr "Rice"
@@ -2889,6 +3075,12 @@ msgstr "SISTEMAREN MEMORIA"
 msgid "Safe (Default)"
 msgstr "Segurua (Lehenetsia)"
 
+msgid "Saturn 3D Pad"
+msgstr "Saturn 3D pada"
+
+msgid "Saturn Pad"
+msgstr "Saturn pada"
+
 msgid "Saudi Arabia"
 msgstr "Saudi Arabia"
 
@@ -2903,6 +3095,9 @@ msgstr "Eskalatua"
 
 msgid "Screen Resolution (Default)"
 msgstr "Pantailaren bereizmena (Lehenetsia)"
+
+msgid "Sega/Mega CD"
+msgstr "Sega/Mega CD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Hautatutako hizkuntza erabiliko da 'Erabili firmwarearen ezarpenak' desgaituta badago edo firmware-fitxategia aurkitu ez bada."
@@ -3038,6 +3233,9 @@ msgstr "Joko batzuek arazoak dituzte animazioa erakustean; beste batzuek behar d
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "Soinu-sorgailua. MAME azkarragoa da eta Nuked zikloz ziklo zehatza. Jatorrizko modeloak YM2612 erabiltzen zuen, eta geroko bertsioek YM3438."
 
 msgid "South Africa"
 msgstr "Hego Afrika"
@@ -3176,6 +3374,9 @@ msgstr "UKITZE MODUA"
 
 msgid "TOUCH SCREEN MODE"
 msgstr "UKIPEN-PANTAILAREN MODUA"
+
+msgid "TRANSPARENT MESHES"
+msgstr "SARE GARDENAK"
 
 msgid "TRILINEAR FILTERING"
 msgstr "IRAGAZKETA TRILINEALA"
@@ -3350,6 +3551,9 @@ msgstr "Erabili joystick analogikoak gurutzeaz gain DualShock aginte-kontroletan
 
 msgid "Use Host"
 msgstr "Erabili ostalaria"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "Erabili Megadrive, 6 botoiko Megadrive estiloko aginte-kontrol baten sarrerak automatikoki esleitzeko."
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Erabili SSAA MSAAren ordez antialiasingerako. SSAAk itxura hobea izan dezake, baina errendimendu-kostu handiagoa du."

@@ -342,8 +342,17 @@ msgstr "45秒"
 msgid "48MB"
 msgstr "48MB"
 
+msgid "4:3 (Default)"
+msgstr "4:3 (預設)"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "4:3 算繪解析度"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4X"
 
 msgid "4th"
 msgstr "4th"
@@ -423,6 +432,9 @@ msgstr "6x 原生解析度 (~2160p/4K)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x 原生解析度 (1536 x 1152)"
 
+msgid "720p"
+msgstr "720p"
+
 msgid "72MB"
 msgstr "72MB"
 
@@ -443,6 +455,9 @@ msgstr "7x 原生解析度 (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x 原生解析度 (1792x1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "8th"
@@ -558,6 +573,9 @@ msgstr "自動調整 (上方優先)"
 msgid "Add color to Game Boy games."
 msgstr "為 Game Boy 遊戲增加顏色。"
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "調整CD混音，但在MSU-MD中卡匣來源的音效不受影響。"
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "調整全動態影片的長寬比。"
 
@@ -600,6 +618,9 @@ msgstr "允許降低這些曲線的畫質，以提升效能。"
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "允許在支援的遊戲使用5到8個控制器。"
 
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "允許在支援的遊戲使用7到12個控制器。"
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "允許在支援的遊戲使用最多8個控制器。"
 
@@ -641,6 +662,9 @@ msgstr "對搖桿的輸入應用乘數來降低或增加反應能力。"
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "應用後製效果。"
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "應用 Gouraud 著色而不是平面著色。"
 
 msgid "Approximate (Fast)"
 msgstr "近似（快速）"
@@ -707,6 +731,9 @@ msgstr "Azerbaijan"
 
 msgid "BILINEAR FILTERING"
 msgstr "雙線性濾鏡"
+
+msgid "BIOS Language"
+msgstr "BIOS 語系"
 
 msgid "BIRTH DAY"
 msgstr "生日"
@@ -831,6 +858,12 @@ msgstr "緩衝算繪"
 msgid "Bulgaria"
 msgstr "Bulgaria"
 
+msgid "CD ADD-ON"
+msgstr "CD光碟附加組件"
+
+msgid "CD-DA VOLUME"
+msgstr "CD-DA音量"
+
 msgid "CHEATS"
 msgstr "作弊碼"
 
@@ -861,11 +894,17 @@ msgstr "主機類型"
 msgid "CONTROLLER 1"
 msgstr "控制器1"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "控制器1輸入映射"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "控制器1類型"
 
 msgid "CONTROLLER 2"
 msgstr "控制器2"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "控制器2輸入映射"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "控制器2類型"
@@ -873,11 +912,17 @@ msgstr "控制器2類型"
 msgid "CONTROLLER 3"
 msgstr "控制器3"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "控制器3輸入映射"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "控制器3類型"
 
 msgid "CONTROLLER 4"
 msgstr "控制器4"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "控制器4輸入映射"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "控制器組合"
@@ -954,6 +999,9 @@ msgstr "變更遊戲語言。"
 msgid "Change the output resolution ratio."
 msgstr "變更輸出解析度比率。"
 
+msgid "Change the system's language."
+msgstr "變更系統語言。"
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "變更插入虛擬 GameCube 連接埠的設備。"
 
@@ -977,6 +1025,9 @@ msgstr "選擇縮小的方法。"
 
 msgid "Choose mipmapping type."
 msgstr "選擇 mipmapping 類型。"
+
+msgid "Choose system BIOS language."
+msgstr "選擇系統 BIOS 語言。"
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "選擇並行 N64 圖形插件。"
@@ -1052,6 +1103,9 @@ msgstr "Costa Rica"
 
 msgid "Croatia"
 msgstr "Croatia"
+
+msgid "Cross"
+msgstr "交叉"
 
 msgid "Current language"
 msgstr "目前語言"
@@ -1176,6 +1230,9 @@ msgstr "確定遊標在底部螢幕上的顯示方式。"
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "確定系統的速度和超前行為。"
 
+msgid "Deutsch"
+msgstr "Deutsch"
+
 msgid "Digital Controller"
 msgstr "數位控制器"
 
@@ -1205,6 +1262,9 @@ msgstr "Dominican Republic"
 
 msgid "Don't Override"
 msgstr "不要覆寫"
+
+msgid "Dot"
+msgstr "點"
 
 msgid "Double buffering"
 msgstr "雙重緩衝"
@@ -1271,6 +1331,9 @@ msgstr "啟用寬螢幕補丁"
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "加強型算繪解析度"
+
+msgid "EXTENDED SCREEN"
+msgstr "擴充螢幕"
 
 msgid "Ecuador"
 msgstr "Ecuador"
@@ -1377,6 +1440,9 @@ msgstr "英語(預設)"
 msgid "English/Japanese"
 msgstr "英語/日語"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "增強相容遊戲的聲音輸出支援。"
+
 msgid "Enhancement."
 msgstr "增強。"
 
@@ -1409,6 +1475,9 @@ msgstr "增強。取消每行八個精靈的限制。"
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "增強。取消每行八個精靈的限制。"
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "增強。取消每行80個精靈的限制。"
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "增強。取消每行32個精靈的限制，某些遊戲可能崩潰。"
@@ -1452,6 +1521,9 @@ msgstr "平的"
 msgid "Exclusive Ubershaders"
 msgstr "獨家超級著色器"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "擴充套件遊戲螢幕區域，類似於主系統。"
+
 msgid "External"
 msgstr "外部的"
 
@@ -1466,6 +1538,9 @@ msgstr "先進先出放鬆"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "韌體設定"
+
+msgid "FM SYNTHESIZER"
+msgstr "FM合成器"
 
 msgid "FMV ASPECT RATIO"
 msgstr "FMV 長寬比"
@@ -1713,6 +1788,9 @@ msgstr "遊戲手把 + 4 Pro控制器"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "遊戲手把 + 4橫持Wiimote"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "如果選擇了錯誤的區域，遊戲運行速度可能會比正常情況更快/更慢。"
+
 msgid "Gaussian"
 msgstr "高斯"
 
@@ -1799,6 +1877,12 @@ msgstr "Hybrid Ubershaders"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IMPROVED BANDING"
+msgstr "IMPROVED BANDING"
+
+msgid "IMPROVED MESH"
+msgstr "IMPROVED MESH"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "改進的多邊形分割"
@@ -1911,6 +1995,33 @@ msgstr "日語"
 msgid "Jordan"
 msgstr "Jordan"
 
+msgid "Joypad 2 Button"
+msgstr "雙鍵手把"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "雙鍵手把 + Master Tap"
+
+msgid "Joypad 3 Button"
+msgstr "三鍵手把"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "三鍵手把 + 4-WayPlay"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "三鍵手把 + Teamplayer"
+
+msgid "Joypad 6 Button"
+msgstr "六鍵手把"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "六鍵手把 + 4-WayPlay"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "六鍵手把 + Teamplayer"
+
+msgid "Joypad Auto"
+msgstr "手把自動"
+
 msgid "Joystick"
 msgstr "搖桿"
 
@@ -1941,6 +2052,9 @@ msgstr "Konami Justifier (P2)"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "Konami Justifier P2 與控制器2以菊花鏈形式連接，系統中顯示為連接埠3。"
 
+msgid "Konami Justifiers"
+msgstr "Konami Justifiers"
+
 msgid "Korea"
 msgstr "Korea"
 
@@ -1965,6 +2079,9 @@ msgstr "LCD重影效果"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "LCD重影效果"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "LCD重影濾鏡"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD重影(精確)"
 
@@ -1973,6 +2090,9 @@ msgstr "LCD重影(快速)"
 
 msgid "LIGHT GUN"
 msgstr "光槍"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "光槍十字準星"
 
 msgid "LIGHT GUNS"
 msgstr "光槍"
@@ -2019,6 +2139,9 @@ msgstr "Light Blue"
 msgid "Light Green"
 msgstr "Light Green"
 
+msgid "Light Phaser"
+msgstr "Light Phaser"
+
 msgid "Light Pink"
 msgstr "Light Pink"
 
@@ -2057,6 +2180,15 @@ msgstr "Luxembourg"
 
 msgid "M.A.C.S. Rifle"
 msgstr "M.A.C.S. Rifle"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (Enhanced YM3438)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "手動紋理採樣"
@@ -2141,6 +2273,15 @@ msgstr "中"
 
 msgid "Mega"
 msgstr "Mega"
+
+msgid "MegaSD"
+msgstr "MegaSD"
+
+msgid "Megadrive"
+msgstr "Megadrive"
+
+msgid "Menacer Light Gun"
+msgstr "Menacer光槍"
 
 msgid "Merge"
 msgstr "合併"
@@ -2229,6 +2370,9 @@ msgstr "NTSC 過濾器"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2310,8 +2454,17 @@ msgstr "正常 (預設)"
 msgid "Norway"
 msgstr "Norway"
 
+msgid "Not all games support 3D pad."
+msgstr "並非所有遊戲支援3D手把。"
+
 msgid "November"
 msgstr "十一月"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "關(預設)"
@@ -2363,6 +2516,9 @@ msgstr "開啟(快速)"
 
 msgid "On (Vulkan Only)"
 msgstr "開啟(僅限Vulkan)"
+
+msgid "On (forced)"
+msgstr "開啟(強制)"
 
 msgid "Only Overscan Area"
 msgstr "僅限過掃描區域"
@@ -2441,6 +2597,9 @@ msgstr "首選 SPU 執行緒"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM Style (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "踏板控制"
 
 msgid "Paddle can only be used in port 2."
 msgstr "踏板僅可在連接埠 2 使用。"
@@ -2631,6 +2790,9 @@ msgstr "減少搖晃的多邊形和扭曲的紋理。"
 msgid "Relaxed (Fastest)"
 msgstr "Relaxed（最快）"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "用真實透明度取代網狀透明度。"
+
 msgid "Required by some games."
 msgstr "某些遊戲需要。"
 
@@ -2648,6 +2810,9 @@ msgstr "重採樣（音高變化）"
 
 msgid "RetroPad (Default)"
 msgstr "RetroPad (預設)"
+
+msgid "Retropad (Default)"
+msgstr "Retropad (預設)"
 
 msgid "Rice"
 msgstr "Rice"
@@ -2829,6 +2994,12 @@ msgstr "系統記憶體"
 msgid "Safe (Default)"
 msgstr "安全（預設）"
 
+msgid "Saturn 3D Pad"
+msgstr "世嘉土星3D手把"
+
+msgid "Saturn Pad"
+msgstr "世嘉土星手把"
+
 msgid "Saudi Arabia"
 msgstr "Saudi Arabia"
 
@@ -2843,6 +3014,9 @@ msgstr "已縮放"
 
 msgid "Screen Resolution (Default)"
 msgstr "螢幕解析度（預設）"
+
+msgid "Sega/Mega CD"
+msgstr "Sega/Mega CD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "如果停用「使用韌體設定」或未找到韌體文件，則將使用選擇語言。"
@@ -2972,6 +3146,9 @@ msgstr "有些遊戲在播放動畫時會有問題，有些則需要。"
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "聲音發生器。MAME速度更快，週期精確。最初的型號使用YM2612，而後來的版本使用YM3438。"
 
 msgid "South Africa"
 msgstr "South Africa"
@@ -3263,6 +3440,9 @@ msgstr "除了D-Pad之外，DualShock控制器還可以使用模擬搖桿。"
 
 msgid "Use Host"
 msgstr "使用主機"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "使用Megadrive自動對映帶有6個按鈕佈局的Megadrive風格控制器的輸入。"
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "使用SSAA而不是MSAA消除鋸齒。SSAA可能看起來更好，但效能成本更高。"

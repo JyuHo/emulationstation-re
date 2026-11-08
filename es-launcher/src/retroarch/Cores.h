@@ -39,6 +39,12 @@ namespace es::launcher::retroarch
 		// input_playerN_analog_dpad_mode: 1 makes the left stick drive the d-pad
 		virtual int analogDpadMode(const LaunchContext& ctx, const Controller& pad) const;
 
+		// The video driver when the player chose none: generic is the one for any core
+		virtual std::string defaultVideoDriver(const std::string& generic) const { return generic; }
+
+		// false when rewinding and run-ahead break the core for this system
+		virtual bool supportsRewindAndRunAhead(const LaunchContext& /*ctx*/) const { return true; }
+
 		// input_libretro_device_pN, when the core needs another device than the RetroPad
 		virtual std::optional<std::string> deviceType(const LaunchContext& /*ctx*/, int /*player*/) const { return std::nullopt; }
 	};

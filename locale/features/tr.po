@@ -342,8 +342,17 @@ msgstr "45s"
 msgid "48MB"
 msgstr "48MB"
 
+msgid "4:3 (Default)"
+msgstr "4:3 (Varsayılan)"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "4:3 İŞLEME ÇÖZÜNÜRLÜĞÜ"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4X"
 
 msgid "4th"
 msgstr "4."
@@ -423,6 +432,9 @@ msgstr "6x Doğal (~2160p/4K)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x doğal (1536 x 1152)"
 
+msgid "720p"
+msgstr "720p"
+
 msgid "72MB"
 msgstr "72MB"
 
@@ -443,6 +455,9 @@ msgstr "7x Doğal (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x doğal (1792 x 1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "8."
@@ -467,6 +482,12 @@ msgstr "8x doğal (2048 x 1536)"
 
 msgid "90 degrees"
 msgstr "90 derece"
+
+msgid "90 degrees clockwise"
+msgstr "saat yönünde 90 derece"
+
+msgid "90 degrees counter-clockwise"
+msgstr "saat yönünün tersine 90 derece"
 
 msgid "96MB"
 msgstr "96MB"
@@ -558,6 +579,9 @@ msgstr "Uyarlanabilir (Önce En Üst Alan)"
 msgid "Add color to Game Boy games."
 msgstr "Game Boy oyunlarına renk kat."
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "CD sesinin karışımını ayarla. MSU-MD'de kartuş kaynaklı ses efektleri etkilenmez."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Tam Hareketli Video filmlerinin en boy oranını ayarlar."
 
@@ -600,6 +624,9 @@ msgstr "Daha yüksek performans için bu eğrilerin görsel kalitesinin azaltıl
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "Desteklenen oyunlarda 5 veya 8 kontrolcüye izin verir."
 
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "Desteklenen oyunlarda 7 veya 12 kontrolcüye izin verir."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Desteklenen oyunlarda 8 kontrolcüye izin verir."
 
@@ -641,6 +668,9 @@ msgstr "Yanıt verme hızını azaltmak veya artırmak için kumanda kolunun gir
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Çeşitli NTSC TV sinyallerini taklit etmek için bir video filtresi uygulayın."
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "Düz gölgeleme yerine gouraud gölgeleme uygulayın."
 
 msgid "Approximate (Fast)"
 msgstr "Yaklaşık (Hızlı)"
@@ -707,6 +737,9 @@ msgstr "Azerbaycan"
 
 msgid "BILINEAR FILTERING"
 msgstr "ÇİFT DOĞRUSAL FİLTRELEME"
+
+msgid "BIOS Language"
+msgstr "BIOS Dili"
 
 msgid "BIRTH DAY"
 msgstr "DOĞUM GÜNÜ"
@@ -840,6 +873,12 @@ msgstr "Arabelleğe alınmış görsel işleme"
 msgid "Bulgaria"
 msgstr "Bulgaristan"
 
+msgid "CD ADD-ON"
+msgstr "CD EKLENTİSİ"
+
+msgid "CD-DA VOLUME"
+msgstr "CD-DA SESİ"
+
 msgid "CHEATS"
 msgstr "HİLELER"
 
@@ -870,11 +909,17 @@ msgstr "KONSOL TÜRÜ"
 msgid "CONTROLLER 1"
 msgstr "KONTROLCÜ 1"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "KONTROLCÜ 1 GİRİŞ EŞLEMESİ"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "KONTROLCÜ 1 TÜRÜ"
 
 msgid "CONTROLLER 2"
 msgstr "KONTROLCÜ 2"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "KONTROLCÜ 2 GİRİŞ EŞLEMESİ"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "KONTROLCÜ 2 TÜRÜ"
@@ -882,11 +927,17 @@ msgstr "KONTROLCÜ 2 TÜRÜ"
 msgid "CONTROLLER 3"
 msgstr "KONTROLCÜ 3"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "KONTROLCÜ 3 GİRİŞ EŞLEMESİ"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "KONTROLCÜ 3 TÜRÜ"
 
 msgid "CONTROLLER 4"
 msgstr "KONTROLCÜ 4"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "KONTROLCÜ 4 GİRİŞ EŞLEMESİ"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "KONTROLCÜ KOMBİNASYONU"
@@ -972,6 +1023,12 @@ msgstr "Oyunun dilini değiştir."
 msgid "Change the output resolution ratio."
 msgstr "Çıkış çözünürlüğü oranını değiştir."
 
+msgid "Change the rotation of the rendered image."
+msgstr "Oluşturulan görüntünün yönünü değiştirin."
+
+msgid "Change the system's language."
+msgstr "Sistem dilini değiştir."
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "Sanal GameCube bağlantı noktalarına takılanları değiştir."
 
@@ -990,11 +1047,17 @@ msgstr "Çince"
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Konsol dilini seçin. Tüm oyunlar dil seçimini desteklemeyebilir."
 
+msgid "Choose deinterlace option."
+msgstr "Taramasızlaştırma seçeneği seç."
+
 msgid "Choose downscaling method."
 msgstr "Ölçek küçültme yöntemini seç."
 
 msgid "Choose mipmapping type."
 msgstr "Eşleme türünü seçin."
+
+msgid "Choose system BIOS language."
+msgstr "Sistem BIOS dilini seçin."
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Paralel N64 grafik eklentisini seçin."
@@ -1010,6 +1073,9 @@ msgstr "Sistem mesajları için ekrandaki konumu seçin."
 
 msgid "Choose the scaling mode for the game screen."
 msgstr "Oyun ekranı için ölçeklendirme modunu seç."
+
+msgid "Choose to render meshes as transparent polygons."
+msgstr "Kafesleri saydam çokgenler olarak oluşturmayı seçin."
 
 msgid "Choose upscaling method."
 msgstr "Yükseltme yöntemini seç."
@@ -1077,6 +1143,9 @@ msgstr "Kosta Rika"
 msgid "Croatia"
 msgstr "Hırvatistan"
 
+msgid "Cross"
+msgstr "Çapraz"
+
 msgid "Current language"
 msgstr "Mevcut dil"
 
@@ -1094,6 +1163,9 @@ msgstr "ÖLÜ BÖLGE"
 
 msgid "DEFAULT POWER ON RAM STATE"
 msgstr "VARSAYILAN GÜÇ AÇIK RAM DURUMU"
+
+msgid "DEINTERLACE"
+msgstr "TARAMASIZLAŞTIR"
 
 msgid "DEINTERLACING"
 msgstr "TARAMASIZLAŞTIRMA"
@@ -1173,6 +1245,9 @@ msgstr "Koyu Pembe"
 msgid "Dark Purple"
 msgstr "Koyu Mor"
 
+msgid "De-Interlaced"
+msgstr "Taramasızlaştır"
+
 msgid "December"
 msgstr "Aralık"
 
@@ -1206,6 +1281,9 @@ msgstr "İmlecin alt ekranda nasıl görünmesi gerektiğini belirler."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Sistemin hızını ve ilerleme davranışını belirler."
 
+msgid "Deutsch"
+msgstr "Almanca"
+
 msgid "Digital Controller"
 msgstr "Dijital Kontrolcü"
 
@@ -1238,6 +1316,9 @@ msgstr "Dominik Cumhuriyeti"
 
 msgid "Don't Override"
 msgstr "Geçersiz Kılınmasın"
+
+msgid "Dot"
+msgstr "Nokta"
 
 msgid "Double buffering"
 msgstr "Çift arabellek"
@@ -1304,6 +1385,9 @@ msgstr "GENİŞ EKRAN YAMALARINI ETKİNLEŞTİR"
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "GELİŞMİŞ İŞLEME ÇÖZÜNÜRLÜĞÜ"
+
+msgid "EXTENDED SCREEN"
+msgstr "GENİŞLETİLMİŞ EKRAN"
 
 msgid "Ecuador"
 msgstr "Ekvador"
@@ -1413,6 +1497,9 @@ msgstr "İngilizce (Varsayılan)"
 msgid "English/Japanese"
 msgstr "İngilizce/Japonca"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "Uyumlu oyunlar için geliştirilmiş ses çıkışı desteği."
+
 msgid "Enhancement."
 msgstr "İyileştirme."
 
@@ -1445,6 +1532,9 @@ msgstr "İyileştirme. Satır başına sekiz karakter sınırını kaldırın."
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "İyileştirme. Satır sınırına göre sekiz karakteri kaldırın."
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "İyileştirme. Satır sınırı başına seksen karakteri kaldır."
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "İyileştirme. Satır başına otuz iki karakter sınırını kaldırın. Belirli oyunları arızalandırıyor."
@@ -1488,6 +1578,9 @@ msgstr "Çift"
 msgid "Exclusive Ubershaders"
 msgstr "Seçkin Üstün Gölgelendiriciler"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "Master System'e benzer şekilde oyun ekranı alanını genişletin."
+
 msgid "External"
 msgstr "Harici"
 
@@ -1502,6 +1595,9 @@ msgstr "FIFO Relaxed"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "YAZILIM AYARLARI"
+
+msgid "FM SYNTHESIZER"
+msgstr "FM SENTEZLEYİCİ"
 
 msgid "FMV ASPECT RATIO"
 msgstr "FMV EN BOY ORANI"
@@ -1749,6 +1845,9 @@ msgstr "OyunKolu + 4 Pro Kontrolcü"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "OyunKolu + 4 Sideway Wiimote"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "Yanlış bölge seçilirse oyunlar normalden daha hızlı/yavaş çalışabilir."
+
 msgid "Gaussian"
 msgstr "Gauss"
 
@@ -1838,6 +1937,12 @@ msgstr "Hibrit Üstün Gölgelendiriciler"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IMPROVED BANDING"
+msgstr "GELİŞMİŞ BANTLAMA"
+
+msgid "IMPROVED MESH"
+msgstr "GELİŞTİRİLMİŞ ÖRGÜ"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "GELİŞTİRİLMİŞ POLİGON AYRIMI"
@@ -1950,6 +2055,33 @@ msgstr "Japonca"
 msgid "Jordan"
 msgstr "Ürdün"
 
+msgid "Joypad 2 Button"
+msgstr "Joypad 2 Tuş"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "Joypad 2 Tuş + Master Tap"
+
+msgid "Joypad 3 Button"
+msgstr "Joypad 3 Tuş"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "Joypad 3 Tuş + 4-WayPlay"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "Joypad 3 Tuş + Takımoyuncusu"
+
+msgid "Joypad 6 Button"
+msgstr "Joypad 6 Tuş"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "Joypad 6 Tuş + 4-WayPlay"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "Joypad 6 Tuş + Takımoyuncusu"
+
+msgid "Joypad Auto"
+msgstr "Joypad Otomatik"
+
 msgid "Joystick"
 msgstr "Joystick"
 
@@ -1980,6 +2112,9 @@ msgstr "Konami Justifier (P2)"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "Konami Justifier P2, kontrolcü 2 ile zincirlidir, sisteme 3 numaralı port olarak görünür."
 
+msgid "Konami Justifiers"
+msgstr "Konami Justifiers"
+
 msgid "Korea"
 msgstr "Kore"
 
@@ -2004,6 +2139,9 @@ msgstr "LCD GÖLGELENME EFEKTİ"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "LCD GÖLGELENME EFEKTLERİ"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "LCD GÖLGELENME FİLTRESİ"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD Gölgelenmesi (Kesin)"
 
@@ -2012,6 +2150,9 @@ msgstr "LCD Gölgelenmesi (Hızlı)"
 
 msgid "LIGHT GUN"
 msgstr "IŞIN TABANCASI"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "IŞIN TABANCASI NİŞANGAHI"
 
 msgid "LIGHT GUNS"
 msgstr "IŞIN TABANCALARI"
@@ -2058,6 +2199,9 @@ msgstr "Açık Mavi"
 msgid "Light Green"
 msgstr "Açık Yeşil"
 
+msgid "Light Phaser"
+msgstr "Işık Fazeri"
+
 msgid "Light Pink"
 msgstr "Açık Pembe"
 
@@ -2096,6 +2240,15 @@ msgstr "Lüksemburg"
 
 msgid "M.A.C.S. Rifle"
 msgstr "M.A.C.S. Tüfek"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (Gelişmiş YM3438)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "EL İLE DOKU ÖRNEKLEMESİ"
@@ -2184,6 +2337,15 @@ msgstr "Orta"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "MegaSD"
+msgstr "MegaSD"
+
+msgid "Megadrive"
+msgstr "Megadrive"
+
+msgid "Menacer Light Gun"
+msgstr "Menacer Işın Tabancası"
+
 msgid "Merge"
 msgstr "Birleştir"
 
@@ -2271,6 +2433,9 @@ msgstr "NTSC FİLTRE"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2352,8 +2517,17 @@ msgstr "Normal (Varsayılan)"
 msgid "Norway"
 msgstr "Norveç"
 
+msgid "Not all games support 3D pad."
+msgstr "Tüm oyunlar 3D pad'i desteklemez."
+
 msgid "November"
 msgstr "Kasım"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "KAPAT (Varsayılan)"
@@ -2411,6 +2585,9 @@ msgstr "Açık (Hız geliştirmesi)"
 
 msgid "On (Vulkan Only)"
 msgstr "Açık (Sadece Vulkan)"
+
+msgid "On (forced)"
+msgstr "Açık (zorla)"
 
 msgid "Only Overscan Area"
 msgstr "Sadece Aşırı Tarama Alanı"
@@ -2489,6 +2666,9 @@ msgstr "TERCİH EDİLEN SPU İŞ PARÇACIKLARI"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM Stili (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "Denetim kolu Kontrolü"
 
 msgid "Paddle can only be used in port 2."
 msgstr "Denetim kolu sadece port 2 de kullanılabilir."
@@ -2682,6 +2862,9 @@ msgstr "Titreyen çokgenleri ve çarpık dokuları azaltır."
 msgid "Relaxed (Fastest)"
 msgstr "Rahat (En Hızlı)"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "Örgülü saydamlığı gerçek saydamlıkla değiştirin."
+
 msgid "Required by some games."
 msgstr "Bazı oyunlar için gereklidir."
 
@@ -2702,6 +2885,9 @@ msgstr "Geri Yüklenen Wii VC"
 
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Varsayılan)"
+
+msgid "Retropad (Default)"
+msgstr "Retropad (Varsayılan)"
 
 msgid "Rice"
 msgstr "Rice"
@@ -2889,6 +3075,12 @@ msgstr "SİSTEM BELLEĞİ"
 msgid "Safe (Default)"
 msgstr "Güvenli (Varsayılan)"
 
+msgid "Saturn 3D Pad"
+msgstr "Saturn 3D Pad"
+
+msgid "Saturn Pad"
+msgstr "Saturn Pad"
+
 msgid "Saudi Arabia"
 msgstr "Suudi Arabistan"
 
@@ -2903,6 +3095,9 @@ msgstr "Ölçeklenmiş"
 
 msgid "Screen Resolution (Default)"
 msgstr "Ekran Çözünürlüğü (Varsayılan)"
+
+msgid "Sega/Mega CD"
+msgstr "Sega/Mega CD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "'Ürün Yazılımı Ayarlarını Kullan' seçeneği devre dışı bırakılırsa veya ürün yazılımı dosyası bulunamazsa kullanılacak dili seçin."
@@ -3038,6 +3233,9 @@ msgstr "Bazı oyunlarda animasyon gösterildiğinde sorunlar olabilir, bazılar�
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "Ses üreteci. MAME daha hızlıdır ve Nuked döngüsel olarak doğrudur. Orijinal model YM2612 kullanırken daha sonraki revizyonlar YM3438 kullandı."
 
 msgid "South Africa"
 msgstr "Güney Afrika"
@@ -3176,6 +3374,9 @@ msgstr "DOKUNMATİK MOD"
 
 msgid "TOUCH SCREEN MODE"
 msgstr "DOKUNMATİK EKRAN MODU"
+
+msgid "TRANSPARENT MESHES"
+msgstr "ŞEFFAF KAFESLER"
 
 msgid "TRILINEAR FILTERING"
 msgstr "ÜÇ DOĞRUSAL FİLTRELEME"
@@ -3350,6 +3551,9 @@ msgstr "DualShock kontrolcüleri için D-Pad'e ek olarak Analog joystick kullan�
 
 msgid "Use Host"
 msgstr "Ana Bilgisayarı Kullan"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "6 düğme düzenine sahip Megadrive tarzı kontrolcü girişlerini otomatik olarak eşlemek için Megadrive kullanın."
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Kenar yumuşatma için MSAA yerine SSAA kullanın. SSAA daha iyi görünebilir ancak performans maliyeti daha yüksektir."

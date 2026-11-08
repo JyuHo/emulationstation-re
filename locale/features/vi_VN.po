@@ -342,8 +342,17 @@ msgstr "45s"
 msgid "48MB"
 msgstr "48MB"
 
+msgid "4:3 (Default)"
+msgstr "4:3 (Mặc định)"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "ĐỘ PHÂN GIẢI KẾT XUẤT 4:3"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4X"
 
 msgid "4th"
 msgstr "4"
@@ -423,6 +432,9 @@ msgstr "6x Native (~2160p/4K)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x native (1536 x 1152)"
 
+msgid "720p"
+msgstr "720p"
+
 msgid "72MB"
 msgstr "72MB"
 
@@ -443,6 +455,9 @@ msgstr "7x Native (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x native (1792 x 1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "8"
@@ -558,6 +573,9 @@ msgstr "Adaptive (Top Field First)"
 msgid "Add color to Game Boy games."
 msgstr "Thêm màu sắc vào các trò chơi Game Boy."
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "Điều chỉnh trộn âm thanh CD. Trong MSU-MD, hiệu ứng âm thanh không bị ảnh hưởng."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Điều chỉnh tỷ lệ khung hình của phim Full Motion Video."
 
@@ -593,6 +611,9 @@ msgstr "Cho phép tải các trò chơi được bảo vệ mà không cần th�
 
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "Cho phép tối đa 5 hoặc 8 bộ điều khiển trong các trò chơi được hỗ trợ."
+
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "Cho phép tối đa 7 hoặc 12 bộ điều khiển trong các trò chơi được hỗ trợ."
 
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Cho phép tối đa 8 bộ điều khiển trong các trò chơi được hỗ trợ."
@@ -635,6 +656,9 @@ msgstr "Áp dụng hệ số nhân cho đầu vào của cần điều khiển �
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Áp dụng bộ lọc video để bắt chước các tín hiệu TV NTSC khác nhau."
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "Áp dụng đổ bóng gouraud thay vì đổ bóng phẳng."
 
 msgid "Approximate (Fast)"
 msgstr "Gần đúng (Nhanh)"
@@ -698,6 +722,9 @@ msgstr "Azerbaijan"
 
 msgid "BILINEAR FILTERING"
 msgstr "BILINEAR FILTERING"
+
+msgid "BIOS Language"
+msgstr "Ngôn ngữ BIOS"
 
 msgid "BIRTH DAY"
 msgstr "NGÀY SINH"
@@ -819,6 +846,12 @@ msgstr "Buffered rendering"
 msgid "Bulgaria"
 msgstr "Bulgaria"
 
+msgid "CD ADD-ON"
+msgstr "CD ADD-ON"
+
+msgid "CD-DA VOLUME"
+msgstr "ÂM LƯỢNG CD-DA"
+
 msgid "CHEATS"
 msgstr "GIAN LẬN"
 
@@ -849,11 +882,17 @@ msgstr "LOẠI CONSOLE"
 msgid "CONTROLLER 1"
 msgstr "BỘ ĐIỀU KHIỂN 1"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "BỐ CỤC PHÍM BỘ ĐIỀU KHIỂN 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "LOẠI CỦA BỘ ĐIỀU KHIỂN 1"
 
 msgid "CONTROLLER 2"
 msgstr "BỘ ĐIỀU KHIỂN 2"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "BỐ CỤC PHÍM BỘ ĐIỀU KHIỂN 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "LOẠI CỦA BỘ ĐIỀU KHIỂN 2"
@@ -861,11 +900,17 @@ msgstr "LOẠI CỦA BỘ ĐIỀU KHIỂN 2"
 msgid "CONTROLLER 3"
 msgstr "BỘ ĐIỀU KHIỂN 3"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "BỐ CỤC PHÍM BỘ ĐIỀU KHIỂN 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "LOẠI CỦA BỘ ĐIỀU KHIỂN 3"
 
 msgid "CONTROLLER 4"
 msgstr "BỘ ĐIỀU KHIỂN 4"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "BỐ CỤC PHÍM BỘ ĐIỀU KHIỂN 4"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "KẾT HỢP ĐIỀU KHIỂN"
@@ -939,6 +984,9 @@ msgstr "Thay đổi ngôn ngữ của trò chơi."
 msgid "Change the output resolution ratio."
 msgstr "Thay đổi tỷ lệ độ phân giải đầu ra."
 
+msgid "Change the system's language."
+msgstr "Thay đổi ngôn ngữ của hệ thống."
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "Thay đổi những gì được cắm vào cổng GameCube ảo."
 
@@ -959,6 +1007,9 @@ msgstr "Chọn phương pháp giảm cấp."
 
 msgid "Choose mipmapping type."
 msgstr "Chọn loại ánh xạ mipmapping."
+
+msgid "Choose system BIOS language."
+msgstr "Chọn ngôn ngữ BIOS hệ thống."
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Chọn plugin đồ họa N64 song song."
@@ -1031,6 +1082,9 @@ msgstr "Costa Rica"
 
 msgid "Croatia"
 msgstr "Croatia"
+
+msgid "Cross"
+msgstr "Chéo"
 
 msgid "Current language"
 msgstr "Ngôn ngữ hiện tại"
@@ -1155,6 +1209,9 @@ msgstr "Xác định cách con trỏ xuất hiện trên màn hình."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Xác định tốc độ và thành phần chạy trước của hệ thống."
 
+msgid "Deutsch"
+msgstr "Tiếng Đức"
+
 msgid "Digital Controller"
 msgstr "Digital Controller"
 
@@ -1184,6 +1241,9 @@ msgstr "Cộng hòa Dominican"
 
 msgid "Don't Override"
 msgstr "Không ghi đè"
+
+msgid "Dot"
+msgstr "Chấm"
 
 msgid "Double buffering"
 msgstr "Bộ đệm kép"
@@ -1250,6 +1310,9 @@ msgstr "BẬT BẢN VÁ MÀN HÌNH RỘNG"
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "TĂNG CƯỜNG ĐỘ PHÂN GIẢI KẾT XUẤT"
+
+msgid "EXTENDED SCREEN"
+msgstr "MỞ RỘNG MÀN HÌNH"
 
 msgid "Ecuador"
 msgstr "Ecuador"
@@ -1356,6 +1419,9 @@ msgstr "Tiếng Anh (Mặc định)"
 msgid "English/Japanese"
 msgstr "Tiếng Anh/Tiếng Nhật"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "Tăng cường hỗ trợ đầu ra âm thanh cho các trò chơi tương thích."
+
 msgid "Enhancement."
 msgstr "Tăng cường."
 
@@ -1388,6 +1454,9 @@ msgstr "Tăng cường. Bỏ giới hạn 8 sprite mỗi dòng."
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "Tăng cường. Hủy bỏ tám sprites trên mỗi giới hạn dòng."
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "Tăng cường. Hủy bỏ giới hạn tám mươi sprites trên mỗi dòng."
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Tăng cường. Loại bỏ giới hạn ba mươi hai họa tiết trên mỗi dòng. Có thể xảy ra sự cố với một số trò chơi nhất định."
@@ -1431,6 +1500,9 @@ msgstr "Như nhau"
 msgid "Exclusive Ubershaders"
 msgstr "Ubershaders chọn lọc"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "Mở rộng khu vực màn hình trò chơi, tương tự như Master System."
+
 msgid "External"
 msgstr "External"
 
@@ -1445,6 +1517,9 @@ msgstr "FIFO Relaxed"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "CÀI ĐẶT FIRMWARE"
+
+msgid "FM SYNTHESIZER"
+msgstr "FM SYNTHESIZER"
 
 msgid "FMV ASPECT RATIO"
 msgstr "TỶ LỆ KHUNG HÌNH FMV"
@@ -1680,6 +1755,9 @@ msgstr "GamePad + 4 Pro Controller"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "GamePad + 4 Sideway Wiimote"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "Trò chơi có thể chạy nhanh hơn/chậm hơn bình thường nếu chọn sai vùng."
+
 msgid "Gaussian"
 msgstr "Gaussian"
 
@@ -1763,6 +1841,12 @@ msgstr "Hybrid Ubershaders"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IMPROVED BANDING"
+msgstr "CẢI THIỆN DẢI"
+
+msgid "IMPROVED MESH"
+msgstr "CẢI THIỆN LƯỚI"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "CẢI THIỆN TÁCH ĐA GIÁC"
@@ -1869,6 +1953,33 @@ msgstr "Tiếng Nhật"
 msgid "Jordan"
 msgstr "Jordan"
 
+msgid "Joypad 2 Button"
+msgstr "Joypad 2 nút"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "Joypad 2 nút + Master Tap"
+
+msgid "Joypad 3 Button"
+msgstr "Joypad 3 nút"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "Joypad 3 nút + 4-WayPlay"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "Joypad 3 nút + Teamplayer"
+
+msgid "Joypad 6 Button"
+msgstr "Joypad 6 nút"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "Joypad 6 nút + 4-WayPlay"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "Joypad 6 nút + Teamplayer"
+
+msgid "Joypad Auto"
+msgstr "Joypad tự động"
+
 msgid "Joystick"
 msgstr "Cần điều khiển"
 
@@ -1899,6 +2010,9 @@ msgstr "Konami Justifier (P2)"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "Konami Justifier P2 được lấy từ bộ điều khiển 2, xuất hiện dưới dạng cổng 3 tới hệ thống."
 
+msgid "Konami Justifiers"
+msgstr "Konami Justifiers"
+
 msgid "Korea"
 msgstr "Hàn Quốc"
 
@@ -1920,6 +2034,9 @@ msgstr "HIỆU ỨNG BÓNG MA LCD"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "HIỆU ỨNG LCD GHOSTING"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "BỘ LỌC LCD GHOSTING"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD Ghosting (Chính xác)"
 
@@ -1928,6 +2045,9 @@ msgstr "LCD Ghosting (Nhanh)"
 
 msgid "LIGHT GUN"
 msgstr "LIGHT GUN"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "TÂM NGẮM LIGHT GUN"
 
 msgid "LIGHT GUNS"
 msgstr "LIGHT GUNS"
@@ -1974,6 +2094,9 @@ msgstr "Xanh da trời sáng"
 msgid "Light Green"
 msgstr "Xanh lá cây sáng"
 
+msgid "Light Phaser"
+msgstr "Light Phaser"
+
 msgid "Light Pink"
 msgstr "Hồng sáng"
 
@@ -2012,6 +2135,15 @@ msgstr "Luxembourg"
 
 msgid "M.A.C.S. Rifle"
 msgstr "M.A.C.S. Rifle"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (YM3438 Tăng cường)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "LẤY MẪU HỌA TIẾT THỦ CÔNG"
@@ -2096,6 +2228,15 @@ msgstr "Trung bình"
 
 msgid "Mega"
 msgstr "Mega"
+
+msgid "MegaSD"
+msgstr "MegaSD"
+
+msgid "Megadrive"
+msgstr "Megadrive"
+
+msgid "Menacer Light Gun"
+msgstr "Menacer Light Gun"
 
 msgid "Merge"
 msgstr "Hợp nhất"
@@ -2184,6 +2325,9 @@ msgstr "BỘ LỌC NTSC"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2259,8 +2403,17 @@ msgstr "Bình thường (Mặc định)"
 msgid "Norway"
 msgstr "Na Uy"
 
+msgid "Not all games support 3D pad."
+msgstr "Không phải tất cả các trò chơi đều hỗ trợ pad 3D."
+
 msgid "November"
 msgstr "Tháng 11"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "TẮT (Mặc định)"
@@ -2312,6 +2465,9 @@ msgstr "Bật (Hack tốc độ)"
 
 msgid "On (Vulkan Only)"
 msgstr "Bật (chỉ Vulkan)"
+
+msgid "On (forced)"
+msgstr "Bật (bắt buộc)"
 
 msgid "Only Overscan Area"
 msgstr "Only Overscan Area"
@@ -2387,6 +2543,9 @@ msgstr "PREFERRED SPU THREADS"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM Style (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "Paddle Control"
 
 msgid "Paddle can only be used in port 2."
 msgstr "Paddle chỉ có thể được sử dụng tại cổng 2."
@@ -2574,6 +2733,9 @@ msgstr "Giảm đa giác và kết cấu cong vênh."
 msgid "Relaxed (Fastest)"
 msgstr "Thư giãn (Nhanh nhất)"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "Thay thế trong suốt dạng lưới bằng trong suốt thực."
+
 msgid "Required by some games."
 msgstr "Được yêu cầu bởi một số trò chơi."
 
@@ -2590,6 +2752,9 @@ msgid "Resampling (Pirch Shift)"
 msgstr "Resampling (Pirch Shift)"
 
 msgid "RetroPad (Default)"
+msgstr "Retropad (Mặc định)"
+
+msgid "Retropad (Default)"
 msgstr "Retropad (Mặc định)"
 
 msgid "Rice"
@@ -2754,6 +2919,12 @@ msgstr "BỘ NHỚ HỆ THỐNG"
 msgid "Safe (Default)"
 msgstr "An toàn (Mặc định)"
 
+msgid "Saturn 3D Pad"
+msgstr "Saturn 3D Pad"
+
+msgid "Saturn Pad"
+msgstr "Saturn Pad"
+
 msgid "Saudi Arabia"
 msgstr "Ả Rập Saudi"
 
@@ -2768,6 +2939,9 @@ msgstr "Scaled"
 
 msgid "Screen Resolution (Default)"
 msgstr "Độ phân giải màn hình (Mặc định)"
+
+msgid "Sega/Mega CD"
+msgstr "Sega/Mega CD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Chọn ngôn ngữ sẽ được sử dụng nếu 'Sử dụng cài đặt chương trình cơ sở' bị tắt hoặc nếu không tìm thấy tệp chương trình cơ sở."
@@ -2897,6 +3071,9 @@ msgstr "Một số trò chơi gặp sự cố khi hiển thị hoạt ảnh, m�
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "Tạo âm thanh. MAME nhanh hơn và Nuked có chu kỳ chính xác. Mẫu ban đầu sử dụng YM2612 trong khi các phiên bản sau này sử dụng YM3438."
 
 msgid "South Africa"
 msgstr "Nam Phi"
@@ -3179,6 +3356,9 @@ msgstr "Sử dụng cần điều khiển Analog ngoài D-Pad cho bộ điều k
 
 msgid "Use Host"
 msgstr "Sử dụng Máy chủ"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "Sử dụng Megadrive để tự động hóa phím bấm cho bộ điều khiển kiểu Megadrive có bố cục 6 nút."
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Sử dụng SSAA thay vì MSAA để khử răng cưa. SSAA có thể trông đẹp hơn nhưng sẽ làm giảm hiệu năng toàn hệ thống."

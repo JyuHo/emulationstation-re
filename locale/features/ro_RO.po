@@ -342,8 +342,17 @@ msgstr "45s"
 msgid "48MB"
 msgstr "48MO"
 
+msgid "4:3 (Default)"
+msgstr "4:3 (Implicit)"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "REZOLUȚIE DE RANDARE 4:3"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4X"
 
 msgid "4th"
 msgstr "4"
@@ -423,6 +432,9 @@ msgstr "6x nativ (~2160p/4K)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x nativ (1536 x 1152)"
 
+msgid "720p"
+msgstr "720p"
+
 msgid "72MB"
 msgstr "72MO"
 
@@ -443,6 +455,9 @@ msgstr "7x nativ (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x nativ (1792 x 1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "8"
@@ -467,6 +482,12 @@ msgstr "8x nativ (2048 x 1536)"
 
 msgid "90 degrees"
 msgstr "90 de grade"
+
+msgid "90 degrees clockwise"
+msgstr "90 de grade orar"
+
+msgid "90 degrees counter-clockwise"
+msgstr "90 de grade anti-orar"
 
 msgid "96MB"
 msgstr "96MO"
@@ -558,6 +579,9 @@ msgstr "Adaptiv (Rândul de sus mai întâi)"
 msgid "Add color to Game Boy games."
 msgstr "Adaugă culoare jocurilor Game Boy."
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "Ajustează mixul de audio CD. În MSU-MD, efectele sonore citite din cartelă nu sunt afectate."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Ajustează raportul de aspect al filmelor."
 
@@ -600,6 +624,9 @@ msgstr "Permite reducerea calității vizuale ale acestor curbe pentru o perform
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "Permite până la 5 sau 8 controlere în jocurile suportate."
 
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "Permite până la 7-12 controlere în jocurile suportate."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Permite până la 8 controlere în jocurile suportate."
 
@@ -641,6 +668,9 @@ msgstr "Aplică un multiplicator la intrarea joystick-ului pentru a scădea sau 
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Aplică un filtru video care să imite diverse semnale TV NTSC."
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "Aplică umbrire gouraud în loc de umbrire plată."
 
 msgid "Approximate (Fast)"
 msgstr "Aproximativă (Rapid)"
@@ -707,6 +737,9 @@ msgstr "Azerbaijan"
 
 msgid "BILINEAR FILTERING"
 msgstr "FILTRARE BILINEARĂ"
+
+msgid "BIOS Language"
+msgstr "Limbă BIOS"
 
 msgid "BIRTH DAY"
 msgstr "ZIUA DE NAȘTERE"
@@ -840,6 +873,12 @@ msgstr "Redare cu buffer"
 msgid "Bulgaria"
 msgstr "Bulgaria"
 
+msgid "CD ADD-ON"
+msgstr "CD ADD-ON"
+
+msgid "CD-DA VOLUME"
+msgstr "VOLUM CD-DA"
+
 msgid "CHEATS"
 msgstr "CHEAT-URI"
 
@@ -870,11 +909,17 @@ msgstr "TIP CONSOLĂ"
 msgid "CONTROLLER 1"
 msgstr "CONTROLER 1"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "ASOCIERI CONTROLER 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "TIP CONTROLER 1"
 
 msgid "CONTROLLER 2"
 msgstr "CONTROLER 2"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "ASOCIERI CONTROLER 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "TIP CONTROLER 2"
@@ -882,11 +927,17 @@ msgstr "TIP CONTROLER 2"
 msgid "CONTROLLER 3"
 msgstr "CONTROLER 3"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "ASOCIERI CONTROLER 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "TIP CONTROLER 3"
 
 msgid "CONTROLLER 4"
 msgstr "CONTROLER 4"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "ASOCIERI CONTROLER 4"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "COMBINAȚIE CONTROLER"
@@ -972,6 +1023,12 @@ msgstr "Schimbă limba jocului."
 msgid "Change the output resolution ratio."
 msgstr "Schimbă raportul de aspect al rezoluției de ieșire."
 
+msgid "Change the rotation of the rendered image."
+msgstr "Schimbă rotația imaginii redate."
+
+msgid "Change the system's language."
+msgstr "Schimbă limba sistemului."
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "Schimbă ce este conectat în porturile virtuale ale GameCube."
 
@@ -990,11 +1047,17 @@ msgstr "Chineză"
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Alege limba consolei. Nu toate jocurile suportă alegerea limbii."
 
+msgid "Choose deinterlace option."
+msgstr "Alege opțiunea de deintercalare."
+
 msgid "Choose downscaling method."
 msgstr "Alege metoda de downscale."
 
 msgid "Choose mipmapping type."
 msgstr "Alege tip mip-mapping."
+
+msgid "Choose system BIOS language."
+msgstr "Alege limba BIOS-ului de sistem."
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Alege plugin-ul grafic Parallel N64."
@@ -1010,6 +1073,9 @@ msgstr "Alege poziția pe ecran a mesajelor de sistem."
 
 msgid "Choose the scaling mode for the game screen."
 msgstr "Alege modul de scalare pentru ecranul jocului."
+
+msgid "Choose to render meshes as transparent polygons."
+msgstr "Alege să randezi mesh-urile ca poligoane transparente."
 
 msgid "Choose upscaling method."
 msgstr "Alege o metodă de upscale."
@@ -1077,6 +1143,9 @@ msgstr "Costa Rica"
 msgid "Croatia"
 msgstr "Croația"
 
+msgid "Cross"
+msgstr "Cruce"
+
 msgid "Current language"
 msgstr "Limba curentă"
 
@@ -1094,6 +1163,9 @@ msgstr "ZONĂ MOARTĂ"
 
 msgid "DEFAULT POWER ON RAM STATE"
 msgstr "STAREA IMPLICITĂ A RAM-ULUI LA PORNIRE"
+
+msgid "DEINTERLACE"
+msgstr "DEINTERCALARE"
 
 msgid "DEINTERLACING"
 msgstr "DEINTERCALARE"
@@ -1173,6 +1245,9 @@ msgstr "Roz închis"
 msgid "Dark Purple"
 msgstr "Mov închis"
 
+msgid "De-Interlaced"
+msgstr "Deintercalat"
+
 msgid "December"
 msgstr "Decembrie"
 
@@ -1206,6 +1281,9 @@ msgstr "Determină cum trebuie să apară cursorul pe ecranul de jos."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Determină viteza și comportamentul sistemului la pre-rulare."
 
+msgid "Deutsch"
+msgstr "Nemțește"
+
 msgid "Digital Controller"
 msgstr "Controler digital"
 
@@ -1238,6 +1316,9 @@ msgstr "Republica Dominicană"
 
 msgid "Don't Override"
 msgstr "Nu înlocui"
+
+msgid "Dot"
+msgstr "Punct"
 
 msgid "Double buffering"
 msgstr "Buffering dublu"
@@ -1304,6 +1385,9 @@ msgstr "ACTIVEAZĂ PATCH-URI PENTRU ECRAN LAN"
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "REZOLUȚIE DE REDARE ÎMBUNĂTĂȚITĂ"
+
+msgid "EXTENDED SCREEN"
+msgstr "ECRAN EXTINS"
 
 msgid "Ecuador"
 msgstr "Ecuador"
@@ -1413,6 +1497,9 @@ msgstr "Engleză (Implicit)"
 msgid "English/Japanese"
 msgstr "Engleză/Japoneză"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "Suport pentru ieșire de sunet îmbunătățită pentru jocurile compatibile."
+
 msgid "Enhancement."
 msgstr "Îmbunătățit."
 
@@ -1445,6 +1532,9 @@ msgstr "Îmbunătățire. Elimină limita de opt sprite-uri per linie."
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "Îmbunătățire. Elimină limita de opt sprite-uri per linie."
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "Îmbunătățire. Elimină limita de optzeci de sprite-uri per linie."
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Îmbunătățire. Elimină limita de treizeci și două de sprite-uri per linie. Poate crăpa anumite jocuri."
@@ -1488,6 +1578,9 @@ msgstr "În mod egal"
 msgid "Exclusive Ubershaders"
 msgstr "Ubershadere exclusive"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "Extinde aria de joc a ecranului, similar cu Master System."
+
 msgid "External"
 msgstr "Extern"
 
@@ -1502,6 +1595,9 @@ msgstr "FIFO Relaxat"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "SETĂRI FIRMWARE"
+
+msgid "FM SYNTHESIZER"
+msgstr "SINTETIZATOR FM"
 
 msgid "FMV ASPECT RATIO"
 msgstr "RAPORT ASPECT FILME"
@@ -1749,6 +1845,9 @@ msgstr "GamePad + 4 Pro Controller"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "GamePad + 4 Sideway Wiimote"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "Jocurile pot rula mai repede/încet decât normal dacă regiunea este incorect selectată."
+
 msgid "Gaussian"
 msgstr "Gausiană"
 
@@ -1838,6 +1937,12 @@ msgstr "Ubershadere hibride"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IMPROVED BANDING"
+msgstr "BANDING ÎMBUNĂTĂȚIT"
+
+msgid "IMPROVED MESH"
+msgstr "PLASĂ ÎMBUNĂTĂȚITĂ"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "SEPARARE ÎMBUNĂTĂȚITĂ A POLIGOANELOR"
@@ -1950,6 +2055,33 @@ msgstr "Japoneză"
 msgid "Jordan"
 msgstr "Iordania"
 
+msgid "Joypad 2 Button"
+msgstr "Joypad 2 Butoane"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "Joypad 2 Butoane + Master Tap"
+
+msgid "Joypad 3 Button"
+msgstr "Joypad 3 Butoane"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "Joypad 3 Butoane + 4-WayPlay"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "Joypad 3 Butoane + Teamplayer"
+
+msgid "Joypad 6 Button"
+msgstr "Joypad 6 Butoane"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "Joypad 6 Butoane + 4-WayPlay"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "Joypad 6 Butoane + Teamplayer"
+
+msgid "Joypad Auto"
+msgstr "Joypad Auto"
+
 msgid "Joystick"
 msgstr "Joystick"
 
@@ -1980,6 +2112,9 @@ msgstr "Konami Justifier (P2)"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "Konami Justifier P2 este înlănțuit din controlerul 2, apare ca portul 3 pentru sistem."
 
+msgid "Konami Justifiers"
+msgstr "Konami Justifiers"
+
 msgid "Korea"
 msgstr "Coreea"
 
@@ -2004,6 +2139,9 @@ msgstr "EFECT PERSISTENȚĂ LCD"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "EFECTE DE PERSISTENȚĂ LCD"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "FILTRU PERSISTENȚĂ LCD"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "Persistență LCD (Precis)"
 
@@ -2012,6 +2150,9 @@ msgstr "Persistență LCD (Rapid)"
 
 msgid "LIGHT GUN"
 msgstr "PISTOL LUMINOS"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "RETICUL PISTOL LUMINOS"
 
 msgid "LIGHT GUNS"
 msgstr "PISTOALE LUMINOASE"
@@ -2058,6 +2199,9 @@ msgstr "Albastru deschis"
 msgid "Light Green"
 msgstr "Verde deschis"
 
+msgid "Light Phaser"
+msgstr "Light Phaser"
+
 msgid "Light Pink"
 msgstr "Roz deschis"
 
@@ -2096,6 +2240,15 @@ msgstr "Luxemburg"
 
 msgid "M.A.C.S. Rifle"
 msgstr "M.A.C.S. Rifle"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (YM3438 îmbunătățit)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "EȘANTIONARE MANUALĂ A TEXTURILOR"
@@ -2184,6 +2337,15 @@ msgstr "Mediu"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "MegaSD"
+msgstr "MegaSD"
+
+msgid "Megadrive"
+msgstr "Megadrive"
+
+msgid "Menacer Light Gun"
+msgstr "Pistol luminos Menacer"
+
 msgid "Merge"
 msgstr "Combină"
 
@@ -2271,6 +2433,9 @@ msgstr "FILTRU NTSC"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2352,8 +2517,17 @@ msgstr "Normală (Implicit)"
 msgid "Norway"
 msgstr "Norvegia"
 
+msgid "Not all games support 3D pad."
+msgstr "Nu toate jocurile suportă pad 3D."
+
 msgid "November"
 msgstr "Noiembrie"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "NU (Implicit)"
@@ -2411,6 +2585,9 @@ msgstr "Activat (hack viteză)"
 
 msgid "On (Vulkan Only)"
 msgstr "On (doar pentru Vulkan)"
+
+msgid "On (forced)"
+msgstr "Pornit (forțat)"
 
 msgid "Only Overscan Area"
 msgstr "Doar aria de overscan"
@@ -2489,6 +2666,9 @@ msgstr "FIRE DE EXECUȚIE SPU PREFERATE"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "Stil PVM (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "Control Paddle"
 
 msgid "Paddle can only be used in port 2."
 msgstr "Paleta se poate utiliza doar în portul 2."
@@ -2682,6 +2862,9 @@ msgstr "Reduce poligoanele mișcătoare și texturile deformate."
 msgid "Relaxed (Fastest)"
 msgstr "Relaxat (Cea mai rapidă)"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "Înlocuiește transparența plasă cu transparență reală."
+
 msgid "Required by some games."
 msgstr "Necesar pentru unele jocuri."
 
@@ -2702,6 +2885,9 @@ msgstr "Wii VC restaurat"
 
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Implicit)"
+
+msgid "Retropad (Default)"
+msgstr "Retropad (Implicit)"
 
 msgid "Rice"
 msgstr "Rice"
@@ -2889,6 +3075,12 @@ msgstr "MEMORIE SISTEM"
 msgid "Safe (Default)"
 msgstr "Sigur (Implicit)"
 
+msgid "Saturn 3D Pad"
+msgstr "Pad Saturn 3D"
+
+msgid "Saturn Pad"
+msgstr "Pad Saturn"
+
 msgid "Saudi Arabia"
 msgstr "Arabia Saudită"
 
@@ -2903,6 +3095,9 @@ msgstr "Scalat"
 
 msgid "Screen Resolution (Default)"
 msgstr "Rezoluția ecranului (Implicit)"
+
+msgid "Sega/Mega CD"
+msgstr "Sega/Mega CD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Limba aleasă va fi folosită dacă „Folosește setările din firmware” este dezactivată sau fișierul cu firmware-ul nu a fost găsit."
@@ -3038,6 +3233,9 @@ msgstr "Unele jocuri au probleme când animația este afișată, altele o necesi
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "Generator de sunet. MAME este mai rapid și Nuked este mai precis per ciclu. Modelul original folosea YM2612, în timp ce modelele următoare foloseau YM3438."
 
 msgid "South Africa"
 msgstr "Africa de Sud"
@@ -3176,6 +3374,9 @@ msgstr "MOD ATINGERE"
 
 msgid "TOUCH SCREEN MODE"
 msgstr "MOD ECRAN TACTIL"
+
+msgid "TRANSPARENT MESHES"
+msgstr "MESH-URI TRANSPARENTE"
 
 msgid "TRILINEAR FILTERING"
 msgstr "FILTRARE TRILINEARĂ"
@@ -3350,6 +3551,9 @@ msgstr "Folosește joystick-urile analogice pe lângă D-Pad pentru controlerele
 
 msgid "Use Host"
 msgstr "Folosește gazda"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "Folosește Megadrive pentru a asocia automat intrările pentru un controler stil Megadrive cu 6 butoane."
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Folosește SSAA în loc de MSAA pentru anti-aliasing. SSAA poate să arate mai bine, dar are un cost de performanță mai mare."
