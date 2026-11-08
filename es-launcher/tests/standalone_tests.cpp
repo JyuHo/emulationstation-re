@@ -18,6 +18,8 @@
 #include "xenia/XeniaGenerator.h"
 #include "rpcs3/Rpcs3Generator.h"
 #include "eden/EdenGenerator.h"
+#include "melonds/MelonDSGenerator.h"
+#include "mupen64plus/Mupen64PlusGenerator.h"
 #include "util/YamlFile.h"
 
 #include <pugixml.hpp>
@@ -91,6 +93,11 @@ static void testIniFile()
 	ini.save(tmp.path / "sub" / "a.ini");
 	CHECK(IniFile::load(tmp.path / "sub" / "a.ini").get("New", "Key") == "value");
 	CHECK(!fs::exists(tmp.path / "sub" / "a.ini.tmp"));
+
+	// keys outside any section stay at the top, even when added last (TOML)
+	IniFile toml = IniFile::parse("[Emu]\nDirectBoot = true\n");
+	toml.set("", "LimitFPS", "true");
+	CHECK(toml.toString() == "LimitFPS = true\n\n[Emu]\nDirectBoot = true\n");
 }
 
 static void testGamepad()
@@ -720,6 +727,91 @@ static void testEden()
 	CHECK(es::launcher::eden::EdenGenerator::edenGuid("0300ABCD5E0400008E02000010010000") == "030000005e0400008e02000010010000");
 }
 
+static void testMelonDS()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "melonDS", "#!/bin/sh\n", true);
+
+	LaunchContext ctx = makeContext(tmp.path, "melonds", "nds", "/roms/nds/Mario.nds");
+	ctx.settings = Settings({}, { { "melonds_renderer", "1" }, { "melonds_layout", "2" } }, {});
+
+	Command cmd = Launch(ctx).prepare();
+	CHECK(cmd.closeOnHotkey == true);
+	CHECK(cmd.argv.size() >= 3 && cmd.argv[cmd.argv.size() - 2] == "-f");
+	CHECK(cmd.argv.back() == "/roms/nds/Mario.nds");
+	CHECK(cmd.env["XDG_CONFIG_HOME"] == (tmp.path / "emulators" / "melonds").string());
+
+	fs::path file = tmp.path / "emulators" / "melonds" / "melonDS" / "melonDS.toml";
+	IniFile toml = IniFile::load(file);
+	CHECK(readFile(file).starts_with("MouseHide = false\n"));   // top-level keys first
+	CHECK(toml.get("3D", "Renderer") == "1");
+	CHECK(toml.get("Screen", "UseGL") == "true");
+	CHECK(toml.get("Instance0.Window0", "ScreenLayout") == "2");
+	CHECK(toml.get("Emu", "ExternalBIOSEnable") == "false");   // no BIOS: melonDS's own
+	CHECK(toml.get("Instance0", "SaveFilePath") == "\"" + (tmp.path / "saves" / "nds").string() + "\"");
+
+	// player 1's pad: buttons by number, hats as 0x100 | hat << 4 | direction
+	CHECK(toml.get("Instance0.Joystick", "A") == "0");
+	CHECK(toml.get("Instance0.Joystick", "Start") == "7");
+	CHECK(toml.get("Instance0.Joystick", "Up") == "257");
+	CHECK(toml.get("Instance0.Joystick", "Left") == "264");
+
+	// with the three BIOS files, the real BIOS
+	for (const char* bios : { "bios7.bin", "bios9.bin", "firmware.bin" })
+		writeFile(tmp.path / "bios" / bios, "");
+	Launch(ctx).prepare();
+	CHECK(IniFile::load(file).get("Emu", "ExternalBIOSEnable") == "true");
+}
+
+static void testMupen64Plus()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "mupen64plus", "#!/bin/sh\n", true);
+
+	LaunchContext ctx = makeContext(tmp.path, "mupen64plus", "n64", "/roms/n64/Mario.z64");
+	ctx.core = "glide64mk2";
+	ctx.controllers = { makePad(1, 0) };
+	ctx.settings = Settings({ { "ratio", "16/9" } }, { { "mupen64plus.Core.R4300Emulator", "2" } }, {});
+
+	Command cmd = Launch(ctx).prepare();
+	CHECK(cmd.closeOnHotkey == true);
+	CHECK(cmd.argv.back() == "/roms/n64/Mario.z64");
+	CHECK(std::ranges::find(cmd.argv, "mupen64plus-video-glide64mk2") != cmd.argv.end());
+	CHECK(std::ranges::find(cmd.argv, (tmp.path / "emulators" / "mupen64plus").string()) != cmd.argv.end());
+
+	IniFile ini = IniFile::load(tmp.path / "emulators" / "mupen64plus" / "mupen64plus.cfg");
+	CHECK(ini.get("Core", "Version") == "1.01");
+	CHECK(ini.get("Core", "SaveStatePath") == (tmp.path / "saves" / "n64").string());
+	CHECK(ini.get("Core", "R4300Emulator") == "2");
+	CHECK(ini.get("Video-Glide64mk2", "aspect") == "1");
+	CHECK(ini.get("Video-GLideN64", "AspectRatio") == "2");
+	CHECK(ini.get("CoreEvents", "Joy Mapping Stop") == "");
+
+	CHECK(ini.get("Input-SDL-Control1", "plugged") == "True");
+	CHECK(ini.get("Input-SDL-Control1", "device") == "0");
+	CHECK(ini.get("Input-SDL-Control1", "A Button") == "\"button(1)\"");     // ES b
+	CHECK(ini.get("Input-SDL-Control1", "Z Trig") == "\"axis(2+)\"");        // ES l2
+	CHECK(ini.get("Input-SDL-Control1", "DPad U") == "\"hat(0 Up)\"");
+	CHECK(ini.get("Input-SDL-Control1", "X Axis") == "\"axis(0-,0+)\"");
+	CHECK(ini.get("Input-SDL-Control1", "AnalogPeak") == "32768,32768");
+	CHECK(ini.get("Input-SDL-Control1", "AnalogDeadzone") == "328,328");
+	CHECK(ini.get("Input-SDL-Control2", "plugged") == "False");
+
+	// the N64 layout, chosen in the options
+	ctx.settings = Settings({ { "mupen64-controller1", "n64" } }, {}, {});
+	auto n64 = mupen64plus::Mupen64PlusGenerator::padBindings(ctx, ctx.controllers.front());
+	CHECK(n64["B Button"] == "button(0)");      // ES a
+	CHECK(n64["Z Trig"] == "button(6)");        // ES select
+	CHECK(n64["C Button D"] == "axis(2+)");     // ES l2
+
+	// without a video plugin, Mupen64Plus's default one
+	ctx.core.clear();
+	cmd = Launch(ctx).prepare();
+	CHECK(std::ranges::find(cmd.argv, "--gfx") == cmd.argv.end());
+}
+
 void tests::runStandaloneTests()
 {
 	testIniFile();
@@ -737,4 +829,6 @@ void tests::runStandaloneTests()
 	testCommandBefore();
 	testRpcs3();
 	testEden();
+	testMelonDS();
+	testMupen64Plus();
 }

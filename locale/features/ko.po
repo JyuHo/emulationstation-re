@@ -9,8 +9,26 @@ msgstr "(FDS) 디스크 A면 자동 로드"
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "(FDS) 빨리 감기 디스크 로딩"
 
+msgid "0 degrees"
+msgstr "0°"
+
 msgid "0% (Default)"
 msgstr "0% (기본)"
+
+msgid "0.5x"
+msgstr "0.5배"
+
+msgid "0.6x"
+msgstr "0.6배"
+
+msgid "0.7x"
+msgstr "0.7배"
+
+msgid "0.8x"
+msgstr "0.8배"
+
+msgid "0.9x"
+msgstr "0.9배"
 
 msgid "1 second"
 msgstr "1 초"
@@ -18,11 +36,29 @@ msgstr "1 초"
 msgid "1 thread"
 msgstr "1 스레드"
 
+msgid "1% (Default)"
+msgstr "1% (기본)"
+
+msgid "1.1x"
+msgstr "1.1배"
+
 msgid "1.25x (800x600)"
 msgstr "1.25배 (800x600)"
 
 msgid "1.25x Native"
 msgstr "1.25배 원본"
+
+msgid "1.2x"
+msgstr "1.2배"
+
+msgid "1.3x"
+msgstr "1.3배"
+
+msgid "1.4x"
+msgstr "1.4배"
+
+msgid "1.5x"
+msgstr "1.5배"
 
 msgid "1.5x (960x720)"
 msgstr "1.5배 (960x720)"
@@ -207,6 +243,9 @@ msgstr "28일"
 msgid "29th"
 msgstr "29일"
 
+msgid "2X"
+msgstr "2배"
+
 msgid "2nd"
 msgstr "2일"
 
@@ -290,6 +329,9 @@ msgstr "4 플레이어 어댑터"
 
 msgid "4 threads"
 msgstr "4 스레드"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5배 (1440x1080)"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -453,6 +495,9 @@ msgstr "고급 리눅스 사운드 아키텍처 스레드"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX 슈퍼 해상도"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "애너글리프 사전 설정 (3D)"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "비등방성 필터링"
 
@@ -483,6 +528,9 @@ msgstr "비동기 텍스처 스트리밍"
 msgid "AUDIO"
 msgstr "오디오"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "오디오 버퍼 (샘플)"
+
 msgid "AUDIO CHANNELS"
 msgstr "오디오 채널"
 
@@ -494,6 +542,9 @@ msgstr "오디오 형식"
 
 msgid "AUDIO LATENCY"
 msgstr "오디오 지연"
+
+msgid "AUDIO SYNC"
+msgstr "오디오 동기화"
 
 msgid "AUTO FRAMESKIP"
 msgstr "자동 프레임 건너뛰기"
@@ -509,6 +560,9 @@ msgstr "게임보이 게임에 색상을 추가합니다."
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "전체 모션 비디오의 화면비를 조정합니다."
+
+msgid "Adjusts the positions of the screens."
+msgstr "화면의 위치를 조정합니다."
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "에뮬레이트된 화면의 크기 조절 방식에 영향을 줍니다. OpenGL 렌더러만 해당합니다."
@@ -555,6 +609,12 @@ msgstr "사용자가 텍스처를 교체할 수 있습니다."
 msgid "Always"
 msgstr "항상"
 
+msgid "Always enforce horizontal"
+msgstr "항상 수평 유지"
+
+msgid "Always enforce vertical"
+msgstr "항상 수직 유지"
+
 msgid "Analog Controller"
 msgstr "아날로그 컨트롤러"
 
@@ -567,11 +627,17 @@ msgstr "아날로그 조이스틱"
 msgid "Analog Joystick (Flystick)"
 msgstr "아날로그 조이스틱 (플라이스틱)"
 
+msgid "Angrylion"
+msgstr "앵그리라이언"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "앵그리라이언 (가장 호환됨)"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "FXAA 안티에일리어싱 알고리즘을 적용하여 게임의 시각적 품질을 향상시킵니다."
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "조이스틱의 입력에 승수를 적용하여 반응성을 낮추거나 높입니다."
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "다양한 NTSC TV 신호를 모방하기 위해 비디오 필터를 적용합니다."
@@ -591,11 +657,17 @@ msgstr "알카노이드 패들"
 msgid "Armenia"
 msgstr "아르메니아"
 
+msgid "Arrange the dual screen layout."
+msgstr "듀얼 스크린 레이아웃을 처리합니다."
+
 msgid "As Host (Default)"
 msgstr "호스트 (기본값)"
 
 msgid "As Is"
 msgstr "있는 그대로"
+
+msgid "As game specifies"
+msgstr "게임이 지정한 대로"
 
 msgid "August"
 msgstr "8월"
@@ -614,6 +686,9 @@ msgstr "자동 표준 (4:3 인터레이스 / 3:2 프로그레시브)"
 
 msgid "Autodetect"
 msgstr "자동 감지"
+
+msgid "Automatic"
+msgstr "자동"
 
 msgid "Automatic ratio"
 msgstr "자동비율"
@@ -747,6 +822,9 @@ msgstr "하단만"
 msgid "Bottom Right"
 msgstr "오른쪽 하단"
 
+msgid "Bottom only"
+msgstr "하단만"
+
 msgid "Brazil"
 msgstr "브라질"
 
@@ -774,6 +852,9 @@ msgstr "컬러 필터"
 msgid "COLOR PALETTE"
 msgstr "색상 팔레트"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "색상 팔레트 (2D)"
+
 msgid "CONSOLE COUNTRY"
 msgstr "콘솔 국가"
 
@@ -783,17 +864,35 @@ msgstr "콘솔 언어"
 msgid "CONSOLE REGION"
 msgstr "콘솔 지역"
 
+msgid "CONSOLE TYPE"
+msgstr "콘솔 유형"
+
+msgid "CONTROLLER 1"
+msgstr "컨트롤러 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "컨트롤러 1 유형"
+
+msgid "CONTROLLER 2"
+msgstr "컨트롤러 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "컨트롤러 2 유형"
 
+msgid "CONTROLLER 3"
+msgstr "컨트롤러 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "컨트롤러 3 유형"
 
+msgid "CONTROLLER 4"
+msgstr "컨트롤러 4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "컨트롤러 조합"
+
+msgid "CONTROLLER TYPE"
+msgstr "컨트롤러 유형"
 
 msgid "CONTROLLERS"
 msgstr "컨트롤러"
@@ -897,6 +996,9 @@ msgstr "다운스케일링 방법을 선택하세요."
 msgid "Choose mipmapping type."
 msgstr "밉맵 유형을 선택하세요."
 
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "Parallel N64 그래픽 플러그인을 선택하세요."
+
 msgid "Choose the audio output type."
 msgstr "오디오 출력 유형을 선택하세요."
 
@@ -999,6 +1101,9 @@ msgstr "디인터레이스"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "디지털 사운드 프로세서"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "4MB 확장 램 팩 비활성화"
+
 msgid "DISABLE CULLING"
 msgstr "컬링 비활성화"
 
@@ -1041,8 +1146,14 @@ msgstr "DS (기본)"
 msgid "DSi"
 msgstr "DSi"
 
+msgid "DSi (experiemental)"
+msgstr "DSi (실험적)"
+
 msgid "DUAL CORE MODE"
 msgstr "듀얼 코어 모드"
+
+msgid "DUAL SCREEN"
+msgstr "듀얼 스크린"
 
 msgid "DYNAREC CODE INVALIDATION"
 msgstr "동적 재컴파일 코드 무효화"
@@ -1103,6 +1214,12 @@ msgstr "디지털 컨트롤러 (게임패드)"
 
 msgid "Digital Prime FBX"
 msgstr "디지털 프라임 FBX"
+
+msgid "Disable"
+msgstr "비활성화"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "시간, 언어 등 시스템 설정에 대한 접속을 비활성화합니다."
 
 msgid "Disabled"
 msgstr "비활성화"
@@ -1176,6 +1293,9 @@ msgstr "성능 오버레이 활성화"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "PGXP 수정 활성화"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "다각형 분할 활성화"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "타임 스트레칭 활성화"
 
@@ -1194,6 +1314,12 @@ msgstr "이집트"
 msgid "El Salvador"
 msgstr "엘살바도르"
 
+msgid "Emphasize bottom"
+msgstr "하단 강조"
+
+msgid "Emphasize top"
+msgstr "상단 강조"
+
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "L2 버튼의 흔들기와 R 스틱의 눈챠크를 사용하여 위모컨 사이드웨이를 에뮬레이트합니다."
 
@@ -1205,6 +1331,9 @@ msgstr "Cemu의 성능 오버레이를 활성화합니다."
 
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "게임큐브 부팅 애니메이션과 바이오스 접속을 활성화합니다(적절한 사용자 디렉토리에 IPL.bin 바이오스 필요함)."
+
+msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
+msgstr "MelonDS에서 두 개 이상의 화면을 표시할 수 있도록 설정합니다. 일부 관련 화면 옵션은 무시됩니다."
 
 msgid "Enable No-interlacing Patches."
 msgstr "비인터레이스 패치를 활성화합니다."
@@ -1220,6 +1349,9 @@ msgstr "두 화면 간 상호 작용이 있는 게임의 경우 게임패드 보
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "캐시, 컨트롤러 이벤트 등에 대한 알림을 활성화합니다."
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "두 번째 오디오 리미터를 활성화합니다. 성능 저하로 오디오 품질을 향상시킵니다."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "더 정확한 오디오를 위해 드림캐스트 DSP를 활성화합니다. 빠른 시스템에만 권장됩니다."
@@ -1287,6 +1419,12 @@ msgstr "향상."
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "향상. 3개의 점은 N64에 정확하며 표준이 더 좋습니다."
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "향상. 향상된 폴리곤 분할을 활성화합니다."
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "향상. 밉매핑을 사용하도록 설정한 경우 멀리 있는 텍스처의 선명도를 향상합니다."
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "향상. 16:9 비율일 때 렌더링 해상도를 높입니다. 3D 개체를 더 명확하게 만듭니다."
 
@@ -1335,14 +1473,23 @@ msgstr "향상. 고급 텍스처."
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "향상. 화면 텍스처를 업스케일합니다 (2D 게임만 해당)."
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "향상. 3D 개체의 텍스처를 업스케일합니다."
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "콘솔이 렌더링하는 모든 프레임이 화면에 표시되는지 확인하세요."
 
 msgid "Estonia"
 msgstr "에스토니아"
 
+msgid "Even"
+msgstr "일정"
+
 msgid "Exclusive Ubershaders"
 msgstr "우버셰이더 전용"
+
+msgid "External"
+msgstr "외부"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "빠른 디스크 전송 속도"
@@ -1379,6 +1526,9 @@ msgstr "프레임 건너뛰기"
 
 msgid "FRAMESKIP"
 msgstr "프레임 건너뛰기"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "프레임 건너뛰기 (GL64MK2 전용)"
 
 msgid "FRAMESKIP CONTROL"
 msgstr "프레임스킵 제어"
@@ -1581,6 +1731,12 @@ msgstr "그래픽"
 msgid "GRAPHICS API"
 msgstr "그래픽 API"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "그래픽 플러그인"
+
+msgid "Game default"
+msgstr "게임 기본값"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "Wii U용 게임큐브 어댑터"
 
@@ -1610,6 +1766,12 @@ msgstr "독일"
 
 msgid "Giga"
 msgstr "기가"
+
+msgid "Glide64"
+msgstr "글라이드64"
+
+msgid "Gln64"
+msgstr "Gln64"
 
 msgid "Gray"
 msgstr "회색"
@@ -1652,6 +1814,9 @@ msgstr "홍콩"
 
 msgid "Horizontal"
 msgstr "수평 (가로)"
+
+msgid "How the window space is distributed between the screens."
+msgstr "창 공간이 화면 사이에 분산되는 방식입니다."
 
 msgid "Hungary"
 msgstr "헝가리"
@@ -1830,7 +1995,13 @@ msgstr "키르기스스탄"
 msgid "LAZY TEXTURE CACHING"
 msgstr "레이지 텍스처 캐싱"
 
+msgid "LCD FILTER"
+msgstr "LCD 필터"
+
 msgid "LCD GHOSTING EFFECT"
+msgstr "LCD 고스팅 효과"
+
+msgid "LCD GHOSTING EFFECTS"
 msgstr "LCD 고스팅 효과"
 
 msgid "LCD Ghosting (Accurate)"
@@ -1844,6 +2015,9 @@ msgstr "라이트 건"
 
 msgid "LIGHT GUNS"
 msgstr "라이트 건"
+
+msgid "LIMIT FRAME RATE"
+msgstr "프레임 속도 제한"
 
 msgid "LINEAR UPSCALING"
 msgstr "선형 업스케일러"
@@ -1913,6 +2087,9 @@ msgstr "패킷을 수신할 로컬 주소와 포트입니다. xemu.toml 구성 �
 
 msgid "Low"
 msgstr "낮음"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "값이 낮을수록 오디오 대기 시간이 줄어들고 성능이 향상되지만, 오디오 문제가 발생할 수 있습니다."
 
 msgid "Luxembourg"
 msgstr "룩셈부르크"
@@ -2016,6 +2193,9 @@ msgstr "멕시코"
 msgid "Minimum"
 msgstr "최소"
 
+msgid "Mirrored"
+msgstr "거울"
+
 msgid "Modern Fightstick Style"
 msgstr "현대식 파이트 스틱 스타일"
 
@@ -2042,6 +2222,12 @@ msgstr "마우스"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "해석기보다 훨씬 빠릅니다 (그러나 문제가있을 수 있음)."
+
+msgid "N64"
+msgstr "N64"
+
+msgid "N64 3-point"
+msgstr "N64 3 점"
 
 msgid "NAT"
 msgstr "NAT"
@@ -2145,6 +2331,9 @@ msgstr "아니오 (기본)"
 msgid "No Buffer"
 msgstr "버퍼 없음"
 
+msgid "No Limit"
+msgstr "제한 없음"
+
 msgid "No Ubershaders"
 msgstr "우버셰이더 없음"
 
@@ -2165,6 +2354,9 @@ msgstr "노르웨이"
 
 msgid "November"
 msgstr "11월"
+
+msgid "OFF (Default)"
+msgstr "끄기 (기본)"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "화면 디스플레이 및 알림"
@@ -2235,6 +2427,12 @@ msgstr "지원되는 게임만 있습니다. 설정이 높을수록 시스템 �
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL (클래식)"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL (컴퓨트 셰이더)"
+
 msgid "OpenGL (Default)"
 msgstr "OpenGL (기본)"
 
@@ -2252,6 +2450,9 @@ msgstr "오리지널 하드웨어 (파이어브랜드X)"
 
 msgid "Original resolution"
 msgstr "오리지널 해상도"
+
+msgid "Original screen positions"
+msgstr "오리지널 화면 위치"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "SNES CPU (그라디우스 3, 슈퍼 R 타입)를 오버 클럭합니다."
@@ -2306,6 +2507,9 @@ msgstr "병렬-RDP"
 
 msgid "Paraguay"
 msgstr "파라과이"
+
+msgid "Parallel"
+msgstr "병렬"
 
 msgid "Partial"
 msgstr "부분적"
@@ -2385,6 +2589,9 @@ msgstr "사전 로드"
 msgid "Preload requires more RAM."
 msgstr "사전 로드에는 더 많은 램이 필요합니다."
 
+msgid "Produces a clean LCD effect."
+msgstr "깨끗한 LCD 효과를 생성합니다."
+
 msgid "Puerto Rico"
 msgstr "푸에르토리코"
 
@@ -2399,6 +2606,9 @@ msgstr "카타르"
 
 msgid "RDP PLUGIN"
 msgstr "RDP 플러그인"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "프레임마다 프레임 버퍼 읽기 (GLIDE64MK2)"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "스프라이트 깜빡임 감소"
@@ -2478,6 +2688,9 @@ msgstr "일부 게임에서 필요합니다."
 msgid "Required for certain visual effects."
 msgstr "특정 시각 효과에 필요합니다."
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "일부 게임(반조 카주이 및 동키콩 64 전환) 내 효과에 필요하며, 속도가 느려질 수 있습니다."
+
 msgid "Requires BIOS file to be present."
 msgstr "바이오스 파일이 있어야 합니다."
 
@@ -2486,6 +2699,12 @@ msgstr "리샘플링 (피치 시프트)"
 
 msgid "Restored Wii VC"
 msgstr "복원된 Wii VC"
+
+msgid "RetroPad (Default)"
+msgstr "레트로패드 (기본)"
+
+msgid "Rice"
+msgstr "Rice"
 
 msgid "Right Stick"
 msgstr "오른쪽 스틱"
@@ -2501,6 +2720,9 @@ msgstr "화면을 회전하면, 특정 수직 게임플레이 홈브류에 유�
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "회전식 4방향 스틱 (Q*버트)"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "DS를 옆으로 잡는 것과 같은 효과를 내기 위해 화면을 회전합니다."
 
 msgid "Runs \"skinning\" on the CPU instead of the GPU, means that draw calls from the game can more easily be combined, which often improves things."
 msgstr "GPU 대신 CPU에서 \"스키닝\"을 실행하면 게임의 드로우 콜을 더 쉽게 결합할 수 있어 성능이 향상되는 경우가 많습니다."
@@ -2529,8 +2751,17 @@ msgstr "화면 필터링"
 msgid "SCREEN SETTINGS"
 msgstr "화면 설정"
 
+msgid "SCREEN SIZING"
+msgstr "화면 크기 조정"
+
+msgid "SCREEN SWAP"
+msgstr "화면 교체"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "감도"
 
 msgid "SENSOR BAR POSITION"
 msgstr "센서바 위치"
@@ -2567,6 +2798,9 @@ msgstr "화면 레이아웃 표시"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "버퍼 효과 건너뛰기"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "DS 시스템 메뉴 건너뛰기"
 
 msgid "SKIP GPU READBACKS"
 msgstr "GPU 리드백 건너뛰기"
@@ -2667,6 +2901,12 @@ msgstr "스케일포스"
 msgid "Scaled"
 msgstr "스케일"
 
+msgid "Screen Resolution (Default)"
+msgstr "화면 해상도 (기본)"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "'펌웨어 설정 사용'이 비활성화되어 있거나 펌웨어 파일을 찾을 수 없는 경우 언어 선택이 사용됩니다."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "터치 스크린을 탐색하려면 입력 유형을 선택"
 
@@ -2696,6 +2936,12 @@ msgstr "선명함 1"
 
 msgid "Sharp 2"
 msgstr "선명함 2"
+
+msgid "Sharpen"
+msgstr "선명하게"
+
+msgid "Sharpen More"
+msgstr "더 선명하게"
 
 msgid "Show"
 msgstr "표시"
@@ -2774,6 +3020,9 @@ msgstr "3D 개체의 부드러운 텍스처."
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "각도에 따라 멀리 떨어진 3D 개체의 부드러운 텍스처."
+
+msgid "Smooths out textures on 3D objects."
+msgstr "3D 개체의 텍스처를 부드럽게 만듭니다."
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "화면에 표시되는 전체 그림을 부드럽게 합니다. 픽셀 간의 위치를 ​​수정합니다."
@@ -2859,6 +3108,9 @@ msgstr "서라운드 5.1"
 msgid "Surround 7.1"
 msgstr "서라운드 7.1"
 
+msgid "Swap the position of the dual displays."
+msgstr "듀얼 디스플레이의 위치를 바꿉니다."
+
 msgid "Sweden"
 msgstr "스웨덴"
 
@@ -2895,8 +3147,14 @@ msgstr "텍스처 교체"
 msgid "TEXTURE SCALING"
 msgstr "텍스처 스케일링"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "텍스처 스무딩"
+
 msgid "TEXTURE UPSCALING"
 msgstr "텍스처 업스케일링"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "텍스처 업스케일링 (RICE 전용)"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "텍스처 업스케일링 (XBRZ)"
@@ -2942,6 +3200,9 @@ msgstr "태국"
 
 msgid "The PSP will cull triangles that are outside a 4096x4096 clipping box, and also triangles crossing the Z=1 plane if clipping is enabled."
 msgstr "PSP는 4096x4096 클리핑 상자 외부에 있는 삼각형을 제거하고, 클리핑이 활성화된 경우 Z=1 평면을 교차하는 삼각형도 제거합니다."
+
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "조이스틱의 중립 위치 주변에서 입력이 무시되는 영역입니다. 의도치 않은 입력을 줄이는 데 도움이 될 수 있습니다."
 
 msgid "The day within the month of your birthday."
 msgstr "생일 날짜."
@@ -2994,6 +3255,9 @@ msgstr "상단만"
 msgid "Top Right"
 msgstr "오른쪽 상단"
 
+msgid "Top only"
+msgstr "상단만"
+
 msgid "Touch Screen"
 msgstr "터치 스크린"
 
@@ -3039,6 +3303,9 @@ msgstr "업스케일 필터"
 msgid "USE DSP AUDIO"
 msgstr "DSP 오디오 사용"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "펌웨어 설정 사용"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "선제적 프레임 사용"
 
@@ -3072,6 +3339,9 @@ msgstr "최대 2개 (기본)"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "작은 조각 대신 전체 텍스처를 한 번에 업로드합니다. 대부분 게임에서 성능이 향상됩니다."
 
+msgid "Upscale textures on 3D objects."
+msgstr "3D 개체에 고급스러운 텍스처를 적용합니다."
+
 msgid "Uruguay"
 msgstr "우루과이"
 
@@ -3084,6 +3354,9 @@ msgstr "호스트 사용"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "안티에일리어싱을 위해 MSAA 대신 SSAA를 사용합니다. SSAA는 보기에는 더 좋지만 성능 비용이 더 높습니다."
 
+msgid "Use language and username from the NDS Firmware"
+msgstr "NDS 펌웨어의 언어, 사용자 이름 사용"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "런-어헤드 대신 선점형 프레임을 사용합니다. 컨트롤러 상태가 변경될 때만 선점합니다."
 
@@ -3092,6 +3365,15 @@ msgstr "조이스틱 드리프트/원치 않는 입력을 제거하는 데 사�
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "조이스틱 움직임을 더 민감하게 또는 덜 민감하게 만드는 데 사용합니다. 모든 컨트롤러에 영향을 미칩니다."
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "실제 애너글리프 3D 안경을 사용하십시오!"
+
+msgid "Useful for N64 style controllers."
+msgstr "N64 스타일 컨트롤러에 유용합니다."
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "N64 스타일 컨트롤러에 유용합니다. 전용 단축키가 없는 컨트롤러의 경우 단축키가 제한적입니다."
 
 msgid "Useful for speedruns/glitches."
 msgstr "스피드런/글리치에 유용합니다."
@@ -3237,11 +3519,41 @@ msgstr "ZCULL 정확도"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "확대/축소하여 검은색 테두리를 숨깁니다. 테두리는 게임마다 다릅니다."
 
+msgid "bilinear"
+msgstr "이중선형"
+
 msgid "black and white"
 msgstr "검정색과 흰색"
 
+msgid "black/blue"
+msgstr "검정색/파란색"
+
+msgid "black/cyan"
+msgstr "검정색/청록색"
+
+msgid "black/electric cyan"
+msgstr "검정색/일렉트릭 청록색"
+
+msgid "black/green"
+msgstr "검정색/초록색"
+
+msgid "black/magenta"
+msgstr "검정색/자홍색"
+
+msgid "black/white"
+msgstr "검정색/흰색"
+
+msgid "black/yellow"
+msgstr "검정색/노란색"
+
 msgid "blue sea"
 msgstr "푸른 바다"
+
+msgid "bottom only"
+msgstr "하단만"
+
+msgid "bottom/top"
+msgstr "하단/상단"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -3258,20 +3570,62 @@ msgstr "게임보이 어드밴스 스페셜"
 msgid "green forest"
 msgstr "푸른 숲"
 
+msgid "green/magenta"
+msgstr "초록색/자홍색"
+
 msgid "hot desert"
 msgstr "뜨거운 사막"
+
+msgid "hybrid bottom ratio 2"
+msgstr "하이브리드 하단 비율 2"
+
+msgid "hybrid bottom ratio 3"
+msgstr "하이브리드 하단 비율 3"
+
+msgid "hybrid top ratio 2"
+msgstr "하이브리드 상단 비율 2"
+
+msgid "hybrid top ratio 3"
+msgstr "하이브리드 상단 비율 3"
+
+msgid "hybrid/bottom"
+msgstr "하이브리드/하단"
+
+msgid "hybrid/top"
+msgstr "하이브리드/상단"
+
+msgid "left/right"
+msgstr "왼쪽/오른쪽"
 
 msgid "lottes crt"
 msgstr "로테 CRT"
 
+msgid "nearest"
+msgstr "최근접"
+
 msgid "nxagss"
 msgstr "회전 격자 슈퍼 샘플링"
+
+msgid "original"
+msgstr "오리지널"
 
 msgid "original gameboy"
 msgstr "오리지널 게임보이"
 
 msgid "pink dreams"
 msgstr "핑크 드림"
+
+msgid "red/blue"
+msgstr "빨간색/파란색"
+
+msgid "red/cyan"
+msgstr "빨간색/청록색"
+
+msgid "red/electric cyan"
+msgstr "빨간색/일렉트릭 사이앤"
+
+msgid "right/left"
+msgstr "오른쪽/왼쪽"
 
 msgid "royaltea"
 msgstr "로얄티"
@@ -3282,8 +3636,17 @@ msgstr "스캔라인"
 msgid "standard"
 msgstr "표준"
 
+msgid "top only"
+msgstr "상단만"
+
+msgid "top/bottom"
+msgstr "상단/하단"
+
 msgid "triangular filter"
 msgstr "삼각 필터"
+
+msgid "trilinear"
+msgstr "삼중선형"
 
 msgid "wave filter"
 msgstr "웨이브 필터"
@@ -3302,3 +3665,6 @@ msgstr "xBRZ (기본)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - 선명도를 높이는 고급 알고리즘, Bicubic - 매끄러운 모양, Hybrid - 매끄러운 영역에 Bicubic을 사용합니다."
+
+msgid "yellow/blue"
+msgstr "노란색/파란색"

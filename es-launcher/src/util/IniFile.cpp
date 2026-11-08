@@ -94,6 +94,10 @@ namespace es::launcher::util
 		if (Section* existing = find(section))
 			return *existing;
 
+		// the keys before the first header belong to no section: they must stay first
+		if (section.empty())
+			return *mSections.insert(mSections.begin(), Section{ {}, {} });
+
 		mSections.push_back({ std::string(section), {} });
 		return mSections.back();
 	}

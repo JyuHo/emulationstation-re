@@ -4,9 +4,9 @@
 // Adapted from batocera-launch (batocera_launch_libretro/cores/), Copyright (c) 2026 The Batocera Team.
 //
 // Profiles for the cores of the first systems: gambatte and vba-m (gb, gbc, gba), mgba (gba),
-// melondsds (nds), mesen, fceumm and nestopia (nes), snes9x and bsnes (snes), mupen64plus-next
-// (n64), swanstation, mednafen_psx and pcsx_rearmed (psx), flycast (dreamcast). Light gun and
-// wheel handling is left out for now.
+// melondsds and melonds (nds), mesen, fceumm and nestopia (nes), snes9x and bsnes (snes), mupen64plus-next
+// and parallel_n64 (n64), desmume (nds), vb (virtualboy), pokemini, swanstation, mednafen_psx and
+// pcsx_rearmed (psx), flycast (dreamcast). Light gun and wheel handling is left out for now.
 
 #include "retroarch/Cores.h"
 
@@ -198,6 +198,67 @@ namespace es::launcher::retroarch
 		}
 	};
 
+	class Desmume : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			o.set("desmume_pointer_device_r", "emulated");   // the stylus on the right stick
+			option(ctx, o, "desmume_internal_resolution", "internal_resolution_desmume", "256x192");
+			option(ctx, o, "desmume_gfx_multisampling", "multisampling", "disabled");
+			option(ctx, o, "desmume_gfx_texture_smoothing", "texture_smoothing", "disabled");
+			option(ctx, o, "desmume_gfx_texture_scaling", "texture_scaling", "1");
+			option(ctx, o, "desmume_frameskip", "frameskip_desmume", "0");
+			option(ctx, o, "desmume_screens_layout", "screens_layout", "top/bottom");
+		}
+	};
+
+	// the older melonDS core (melonDS DS is MelonDSDS)
+	class MelonDS : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "melonds_console_mode", "DS");
+			option(ctx, o, "melonds_language", "English");
+			option(ctx, o, "melonds_use_fw_settings", "disabled");
+			o.set("melonds_threaded_renderer", "enabled");
+			option(ctx, o, "melonds_touch_mode", "Joystick");
+			option(ctx, o, "melonds_boot_directly", "enabled");
+
+			// "Hybrid Top-Ratio3": the layout and the size of the large screen
+			std::string layout = settingOr(ctx, "melonds_screen_layout", "Top/Bottom");
+			std::string ratio = "2";
+			if (layout.starts_with("Hybrid ") && layout.find("-Ratio") != std::string::npos)
+			{
+				ratio = layout.substr(layout.find("-Ratio") + 6);
+				layout = layout.substr(0, layout.find("-Ratio"));
+			}
+			o.set("melonds_screen_layout", layout);
+			o.set("melonds_hybrid_ratio", ratio);
+		}
+	};
+
+	class VirtualBoy : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "vb_color_mode", "2d_color_mode", "black & red");
+			option(ctx, o, "vb_anaglyph_preset", "3d_color_mode", "disabled");
+		}
+	};
+
+	class PokeMini : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "pokemini_lcdfilter", "dotmatrix");
+			option(ctx, o, "pokemini_lcdmode", "analog");
+		}
+	};
+
 	class Mesen : public Core
 	{
 	public:
@@ -348,9 +409,13 @@ namespace es::launcher::retroarch
 		return std::ranges::find(guids, pad.guid) != guids.end() && std::ranges::find(names, pad.name) != names.end();
 	}
 
-	class Mupen64PlusNext : public AnalogCore
+	// Mupen64Plus-Next and ParallelN64: Z on L1 for pads without a right trigger, and the buttons
+	// moved around for Nintendo 64 pads or when the player picked an N64 controller layout
+	class N64Core : public AnalogCore
 	{
 	public:
+		explicit N64Core(std::string controllerOption) : mControllerOption(std::move(controllerOption)) { }
+
 		void adjustButtons(const LaunchContext& ctx, const Controller& pad, ButtonMap& buttons) const override
 		{
 			// Z matters: without a right trigger, put it on L1
@@ -378,13 +443,22 @@ namespace es::launcher::retroarch
 				if (pad.player > 4)
 					break;
 
-				if (isN64Pad(pad) || settingOr(ctx, "mupen64plus-controller" + std::to_string(pad.player), "retropad") != "retropad")
+				if (isN64Pad(pad) || settingOr(ctx, mControllerOption + std::to_string(pad.player), "retropad") != "retropad")
 				{
 					for (const auto& [button, value] : remap)
 						config.set("input_player" + std::to_string(pad.player) + "_" + button, value);
 				}
 			}
 		}
+
+	private:
+		std::string mControllerOption;   // "<core>-controller", followed by the player number
+	};
+
+	class Mupen64PlusNext : public N64Core
+	{
+	public:
+		Mupen64PlusNext() : N64Core("mupen64plus-controller") { }
 
 		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
 		{
@@ -419,6 +493,42 @@ namespace es::launcher::retroarch
 			option(ctx, o, "mupen64plus-parallel-rdp-upscaling", "1x");
 			option(ctx, o, "mupen64plus-astick-deadzone", "mupen64plus-deadzone", "15");
 			option(ctx, o, "mupen64plus-astick-sensitivity", "mupen64plus-sensitivity", "100");
+		}
+	};
+
+	class ParallelN64 : public N64Core
+	{
+	public:
+		ParallelN64() : N64Core("parallel-n64-controller") { }
+
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			bool dd = ctx.game.system == "n64dd";
+			o.set("parallel-n64-64dd-hardware", dd ? "enabled" : "disabled");
+			o.set("parallel-n64-boot-device", dd ? "64DD IPL" : "Default");
+
+			option(ctx, o, "parallel-n64-gfxplugin", settingOr(ctx, "gfxbackend", "") == "vulkan" ? "parallel" : "gliden64");
+			option(ctx, o, "parallel-n64-screensize", "320x240");
+			option(ctx, o, "parallel-n64-upscaling", "1x");
+
+			// widescreen hack only when the player asked for it, in 16/9 and without decoration
+			bool wide = settingOr(ctx, "parallel-n64-aspectratiohint", "") == "widescreen" && settingOr(ctx, "ratio", "") == "16/9" && noBezel(ctx);
+			o.set("parallel-n64-aspectratiohint", wide ? "widescreen" : "normal");
+
+			option(ctx, o, "parallel-n64-filtering", "automatic");
+
+			for (int pak = 1; pak <= 4; ++pak)
+			{
+				std::string key = "parallel-n64-pak" + std::to_string(pak);
+				std::string fallback = pak == 1 ? "memory" : "none";
+				std::string value = settingOr(ctx, key, fallback);
+				if (value == "auto_rumble")
+					value = fallback;   // needs the game database, not available yet
+				o.set(key, value);
+			}
+
+			option(ctx, o, "parallel-n64-astick-deadzone", "parallel-n64-deadzone", "15");
+			option(ctx, o, "parallel-n64-astick-sensitivity", "parallel-n64-sensitivity", "100");
 		}
 	};
 
@@ -665,6 +775,13 @@ namespace es::launcher::retroarch
 			m.emplace("mednafen_psx_hw", std::make_unique<MednafenPsx>());
 			m.emplace("mednafen_psx", std::make_unique<MednafenPsx>());
 			m.emplace("pcsx_rearmed", std::make_unique<PcsxRearmed>());
+			m.emplace("parallel_n64", std::make_unique<ParallelN64>());
+			m.emplace("desmume", std::make_unique<Desmume>());
+			m.emplace("melonds", std::make_unique<MelonDS>());
+			// Batocera calls Beetle VB "vb", the library is mednafen_vb_libretro.so
+			m.emplace("vb", std::make_unique<VirtualBoy>());
+			m.emplace("mednafen_vb", std::make_unique<VirtualBoy>());
+			m.emplace("pokemini", std::make_unique<PokeMini>());
 			return m;
 		}();
 		static const Core generic;

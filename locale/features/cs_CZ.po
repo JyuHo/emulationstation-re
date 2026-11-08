@@ -9,8 +9,26 @@ msgstr "(FDS) AUTOMATICKY NAČTE STRANU DISKU A"
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "(FDS) RYCHLÉ NAČÍTÁNÍ DISKU VPŘED"
 
+msgid "0 degrees"
+msgstr "0 stupňů"
+
 msgid "0% (Default)"
 msgstr "0% (výchozí)"
+
+msgid "0.5x"
+msgstr "0.5x"
+
+msgid "0.6x"
+msgstr "0.6x"
+
+msgid "0.7x"
+msgstr "0.7x"
+
+msgid "0.8x"
+msgstr "0.8x"
+
+msgid "0.9x"
+msgstr "0.9x"
 
 msgid "1 second"
 msgstr "1 sekunda"
@@ -18,11 +36,29 @@ msgstr "1 sekunda"
 msgid "1 thread"
 msgstr "1 vlákno"
 
+msgid "1% (Default)"
+msgstr "1 % (výchozí)"
+
+msgid "1.1x"
+msgstr "1.1x"
+
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
 
 msgid "1.25x Native"
 msgstr "1,25x nativní"
+
+msgid "1.2x"
+msgstr "1.2x"
+
+msgid "1.3x"
+msgstr "1.3x"
+
+msgid "1.4x"
+msgstr "1.4x"
+
+msgid "1.5x"
+msgstr "1.5x"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -207,6 +243,9 @@ msgstr "28."
 msgid "29th"
 msgstr "29."
 
+msgid "2X"
+msgstr "2X"
+
 msgid "2nd"
 msgstr "2."
 
@@ -290,6 +329,9 @@ msgstr "ADAPTÉR PRO 4 HRÁČE"
 
 msgid "4 threads"
 msgstr "4 vlákna"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5x (1440x1080)"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -453,6 +495,9 @@ msgstr "Vlákno ALSA"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX Super rozlišení"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "PŘEDVOLBA ANAGLYFU (3D)"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "ANIZOTROPNÍ FILTROVÁNÍ"
 
@@ -483,6 +528,9 @@ msgstr "ASYNCHRONNÍ STREAMOVÁNÍ TEXTUR"
 msgid "AUDIO"
 msgstr "Zvuk"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "VYROVNÁVACÍ PAMĚŤ ZVUKU (VZORKY)"
+
 msgid "AUDIO CHANNELS"
 msgstr "Kanály zvuku"
 
@@ -494,6 +542,9 @@ msgstr "FORMÁT ZVUKU"
 
 msgid "AUDIO LATENCY"
 msgstr "Zpoždění zvuku"
+
+msgid "AUDIO SYNC"
+msgstr "Synchronizace zvuku"
 
 msgid "AUTO FRAMESKIP"
 msgstr "AUTO. PŘESKOČENÍ SNÍMKU"
@@ -509,6 +560,9 @@ msgstr "Přidání barev do her pro Game Boy."
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Upravuje poměr stran filmů Video v plném pohybu."
+
+msgid "Adjusts the positions of the screens."
+msgstr "Upravuje polohu obrazovek."
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Ovlivňuje způsob škálování emulovaných obrazovek. Pouze pro vykreslování v OpenGL."
@@ -552,6 +606,12 @@ msgstr "Umožňuje uživatelsky vyměnitelné textury."
 msgid "Always"
 msgstr "Vždy"
 
+msgid "Always enforce horizontal"
+msgstr "Vždy prosazovat horizontální"
+
+msgid "Always enforce vertical"
+msgstr "Vždy prosazovat vertikální"
+
 msgid "Analog Controller"
 msgstr "Analogový ovladač"
 
@@ -564,11 +624,17 @@ msgstr "Analogový Joystick"
 msgid "Analog Joystick (Flystick)"
 msgstr "Analogový Joystick (Flystick)"
 
+msgid "Angrylion"
+msgstr "Angrylion"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (více kompatibilní)"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Aplikuje algoritmus vyhlazování FXAA pro zlepšení vizuální kvality her."
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "Použijte násobitel na vstup joysticku, abyste snížili nebo zvýšili odezvu."
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Použijte video filtr pro napodobení různých televizních signálů NTSC."
@@ -588,11 +654,17 @@ msgstr "Pádlo Arkanoid"
 msgid "Armenia"
 msgstr "Arménie"
 
+msgid "Arrange the dual screen layout."
+msgstr "Uspořádejte rozložení dvou obrazovek."
+
 msgid "As Host (Default)"
 msgstr "Jako hostitel (výchozí)"
 
 msgid "As Is"
 msgstr "Jak Je"
+
+msgid "As game specifies"
+msgstr "Jak je uvedeno ve hře"
 
 msgid "August"
 msgstr "Srpen"
@@ -611,6 +683,9 @@ msgstr "Automatický standard (4:3 prokládaný / 3:2 progresivní)"
 
 msgid "Autodetect"
 msgstr "Auto. detekce"
+
+msgid "Automatic"
+msgstr "Automatické"
 
 msgid "Automatic ratio"
 msgstr "Automatický poměr"
@@ -732,6 +807,9 @@ msgstr "Dolní (výchozí)"
 msgid "Bottom Only"
 msgstr "Pouze dole"
 
+msgid "Bottom only"
+msgstr "Pouze spodní"
+
 msgid "Brazil"
 msgstr "Brazilie"
 
@@ -759,6 +837,9 @@ msgstr "BAREVNÝ FILTR"
 msgid "COLOR PALETTE"
 msgstr "PALETA BAREV"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "PALETA BAREV (2D)"
+
 msgid "CONSOLE COUNTRY"
 msgstr "ZEMĚ KONZOLE"
 
@@ -768,17 +849,35 @@ msgstr "JAZYK KONZOLY"
 msgid "CONSOLE REGION"
 msgstr "REGION KONZOLE"
 
+msgid "CONSOLE TYPE"
+msgstr "TYP KONZOLE"
+
+msgid "CONTROLLER 1"
+msgstr "OVLADAČ 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "TYP OVLADAČE 1"
+
+msgid "CONTROLLER 2"
+msgstr "OVLADAČ 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "TYP OVLADAČE 2"
 
+msgid "CONTROLLER 3"
+msgstr "OVLADAČ 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "TYP OVLADAČE 3"
 
+msgid "CONTROLLER 4"
+msgstr "OVLADAČ 4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "KOMBINACE OVLADAČE"
+
+msgid "CONTROLLER TYPE"
+msgstr "TYP OVLADAČE"
 
 msgid "CONTROLLERS"
 msgstr "OVLADAČE"
@@ -866,6 +965,9 @@ msgstr "Zvolte metodu snižování měřítka."
 
 msgid "Choose mipmapping type."
 msgstr "Zvolte typ mipmapování."
+
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "Vyberte zásuvný modul Paralelní grafika N64."
 
 msgid "Choose the audio output type."
 msgstr "Vyberte typ zvukového výstupu."
@@ -960,6 +1062,9 @@ msgstr "DEINTERLACE"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "DIGITÁLNÍ ZVUKOVÝ PROCESOR"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "ZAKÁZÁNÍ 4MB ROZŠIŘUJÍCÍHO BALÍČKU RAM"
+
 msgid "DISABLE INTERLACING"
 msgstr "ZAKÁZAT PROKLÁDÁNÍ"
 
@@ -998,6 +1103,9 @@ msgstr "DS (výchozí)"
 
 msgid "DSi"
 msgstr "DSi"
+
+msgid "DSi (experiemental)"
+msgstr "DSi (experimentální)"
 
 msgid "DUAL CORE MODE"
 msgstr "REŽIM DVOJITÉHO JÁDRA"
@@ -1058,6 +1166,12 @@ msgstr "Digitální Ovladač"
 
 msgid "Digital Controller (Gamepad)"
 msgstr "Digitální ovladač (Gamepad)"
+
+msgid "Disable"
+msgstr "Zakázat"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "Zakázat přístup k nastavení systému, jako je čas a jazyk."
 
 msgid "Disabled"
 msgstr "Zakázáno"
@@ -1131,6 +1245,9 @@ msgstr "POVOLIT PŘEKRYTÍ VÝKONU"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "POVOLIT OPRAVY PGXP"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "POVOLIT DĚLENÍ POLYGONŮ"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "UMOŽNIT ČASOVÉ PROTAŽENÍ"
 
@@ -1148,6 +1265,12 @@ msgstr "Egypt"
 
 msgid "El Salvador"
 msgstr "Salvador"
+
+msgid "Emphasize bottom"
+msgstr "Zdůraznění spodní části"
+
+msgid "Emphasize top"
+msgstr "Zdůraznění vrcholu"
 
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Emuluje Wiimote Sideway pomocí L2 pro Shake and Nunchuk na R-sticku."
@@ -1175,6 +1298,9 @@ msgstr "Povoluje zobrazení gamepadu pro hry, které mají interakci na dvou obr
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Povolení oznámení o událostech mezipaměti, řadiče atd."
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "Povolit druhý omezovač zvuku. Zlepšuje kvalitu zvuku na úkor výkonu."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Povolte Dreamcast DSP pro přesnější zvuk. Doporučeno pouze pro rychlé systémy."
@@ -1242,6 +1368,12 @@ msgstr "Vylepšení."
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "Vylepšení. 3 body jsou přesné pro N64, standardní je lepší."
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "Vylepšení. Umožňuje vylepšené dělení polygonů."
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "Vylepšení. Zlepšuje zřetelnost vzdálených textur při zapnutém mip-mapování."
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "Vylepšení. Zvyšuje rozlišení vykreslování v poměru 16:9. 3D objekty jsou zřetelnější."
 
@@ -1290,14 +1422,23 @@ msgstr "Vylepšení. Špičkové textury."
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "Vylepšení. Zvětšuje textury obrazovky (pouze 2D hry)."
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "Vylepšení. Zvětšuje rozlišení textur 3D objektů."
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "Zajistěte, aby se každý snímek, který konzola vykreslí, zobrazil na obrazovce."
 
 msgid "Estonia"
 msgstr "Estonsko"
 
+msgid "Even"
+msgstr "Dokonce"
+
 msgid "Exclusive Ubershaders"
 msgstr "Exkluzivní Ubershadery"
+
+msgid "External"
+msgstr "Externí"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "RYCHLÁ PŘENOSOVÁ RYCHLOST DISKU"
@@ -1331,6 +1472,9 @@ msgstr "SNÍMKOVÁ FREKVENCE"
 
 msgid "FRAMESKIP"
 msgstr "PŘESKOČENÍ SNÍMKU"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "PŘESKOČIT SNÍMEK (POUZE GL64MK2)"
 
 msgid "FXAA"
 msgstr "FXAA"
@@ -1524,6 +1668,12 @@ msgstr "GRAFIKA"
 msgid "GRAPHICS API"
 msgstr "API GRAFIKA"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "GRAFICKÝ PLUGIN"
+
+msgid "Game default"
+msgstr "Výchozí stav hry"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "Adaptér GameCube pro Wii U"
 
@@ -1553,6 +1703,12 @@ msgstr "Německo"
 
 msgid "Giga"
 msgstr "Giga"
+
+msgid "Glide64"
+msgstr "Glide64"
+
+msgid "Gln64"
+msgstr "Gln64"
 
 msgid "Gray"
 msgstr "Šedá"
@@ -1589,6 +1745,9 @@ msgstr "Hong Kong"
 
 msgid "Horizontal"
 msgstr "Horizontální"
+
+msgid "How the window space is distributed between the screens."
+msgstr "Jak je prostor okna rozdělen mezi obrazovky."
 
 msgid "Hungary"
 msgstr "Maďarsko"
@@ -1758,8 +1917,14 @@ msgstr "Kuvajt"
 msgid "Kyrgyzstan"
 msgstr "Kyrgyzstán"
 
+msgid "LCD FILTER"
+msgstr "LCD FILTR"
+
 msgid "LCD GHOSTING EFFECT"
 msgstr "EFEKT DUCHŮ NA LCD"
+
+msgid "LCD GHOSTING EFFECTS"
+msgstr "EFEKTY DUCHŮ LCD"
 
 msgid "LCD Ghosting (Accurate)"
 msgstr "Duchovost LCD (Přesná)"
@@ -1772,6 +1937,9 @@ msgstr "SVĚTELNÁ ZBRAŇ"
 
 msgid "LIGHT GUNS"
 msgstr "SVĚTELNÉ ZBRANĚ"
+
+msgid "LIMIT FRAME RATE"
+msgstr "OMEZENÍ SNÍMKOVÉ FREKVENCE"
 
 msgid "LINEAR UPSCALING"
 msgstr "LINEÁRNÍ UPSCALING"
@@ -1841,6 +2009,9 @@ msgstr "Místní adresa a port pro příjem paketů. Pokud je chcete zadat ručn
 
 msgid "Low"
 msgstr "Nízká"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "Nižší hodnoty snižují zpoždění zvuku a zlepšují výkon, ale mohou způsobit problémy se zvukem."
 
 msgid "Luxembourg"
 msgstr "Lucembursko"
@@ -1941,6 +2112,9 @@ msgstr "Mexiko"
 msgid "Minimum"
 msgstr "Minimální"
 
+msgid "Mirrored"
+msgstr "Zrcadlové"
+
 msgid "Modern Fightstick Style"
 msgstr "Moderní Styl Bojových Holí"
 
@@ -1967,6 +2141,12 @@ msgstr "Myš"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "Mnohem rychlejší než tlumočník (ale může mít problémy)."
+
+msgid "N64"
+msgstr "N64"
+
+msgid "N64 3-point"
+msgstr "N64 3-bodový"
 
 msgid "NAT"
 msgstr "NAT"
@@ -2064,6 +2244,9 @@ msgstr "Nový Zéland"
 msgid "Nicaragua"
 msgstr "Nikaragua"
 
+msgid "No Limit"
+msgstr "Bez Limitu"
+
 msgid "No Ubershaders"
 msgstr "Žádné Ubershadery"
 
@@ -2084,6 +2267,9 @@ msgstr "Norsko"
 
 msgid "November"
 msgstr "Listopad"
+
+msgid "OFF (Default)"
+msgstr "Vypnuto (výchozí)"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "Zobrazení na obrazovce a upozornění"
@@ -2148,6 +2334,12 @@ msgstr "Pouze podporované hry. Vyšší nastavení zvyšují systémové požad
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL (klasický)"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL (Compute shader)"
+
 msgid "OpenGL (Default)"
 msgstr "OpenGL (Výchozí)"
 
@@ -2165,6 +2357,9 @@ msgstr "Originální Hardware (FirebrandX)"
 
 msgid "Original resolution"
 msgstr "Původní rozlišení"
+
+msgid "Original screen positions"
+msgstr "Původní pozice obrazovky"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "Přetaktování CPU SNESu (Gradius 3, Super R-Type)."
@@ -2216,6 +2411,9 @@ msgstr "ParaLLEl-RDP"
 
 msgid "Paraguay"
 msgstr "Paraguay"
+
+msgid "Parallel"
+msgstr "Paralelní"
 
 msgid "Partial"
 msgstr "Částečně"
@@ -2295,6 +2493,9 @@ msgstr "Předzatížení"
 msgid "Preload requires more RAM."
 msgstr "Předzatížení vyžaduje více paměti RAM."
 
+msgid "Produces a clean LCD effect."
+msgstr "Vytváří čistý efekt LCD."
+
 msgid "Puerto Rico"
 msgstr "Portoriko"
 
@@ -2309,6 +2510,9 @@ msgstr "Katar"
 
 msgid "RDP PLUGIN"
 msgstr "PLUGIN RDP"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "ČTENÍ Z VYR. PAMĚTI SNÍMKU KAŽDÝ SNÍMEK (GLIDE64MK2)"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "SNÍŽENÍ BLIKÁNÍ SPRITU"
@@ -2382,11 +2586,20 @@ msgstr "Vyžadováno v některých hrách."
 msgid "Required for certain visual effects."
 msgstr "Vyžadováno pro některé vizuální efekty."
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "Vyžadováno pro některé efekty ve hře (přechody Banjo Kazooie a DK64), může způsobit zpomalení."
+
 msgid "Requires BIOS file to be present."
 msgstr "Vyžaduje přítomnost souboru BIOS."
 
 msgid "Resampling (Pirch Shift)"
 msgstr "Převzorkování (Pirchův posun)"
+
+msgid "RetroPad (Default)"
+msgstr "RetroPad (Výchozí)"
+
+msgid "Rice"
+msgstr "Rýže"
 
 msgid "Right Stick"
 msgstr "Pravá Tyč"
@@ -2402,6 +2615,9 @@ msgstr "Otáčení obrazovky, užitečné pro vertikální hraní, některých d
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Otočná 4-Cestná Tyč (Q*Bert)"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "Otáčí obrazovky a simuluje tak držení DS na stranu."
 
 msgid "Russia"
 msgstr "Rusko"
@@ -2427,8 +2643,17 @@ msgstr "Filtrování obrazovky"
 msgid "SCREEN SETTINGS"
 msgstr "Nastavení obrazovky"
 
+msgid "SCREEN SIZING"
+msgstr "DIMENZOVÁNÍ OBRAZOVKY"
+
+msgid "SCREEN SWAP"
+msgstr "VÝMĚNA OBRAZOVKY"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "CITLIVOST"
 
 msgid "SENSOR BAR POSITION"
 msgstr "POLOHA SENZOROVÉ LIŠTY"
@@ -2462,6 +2687,9 @@ msgstr "ZOBRAZIT ZPRÁVY NA DISPLEJI"
 
 msgid "SHOW SCREEN LAYOUT"
 msgstr "Zobrazit rozložení obrazovky"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "PŘESKOČIT SYSTÉMOVÉ MENU DS"
 
 msgid "SLEEP TIMERS ACCURACY"
 msgstr "PŘESNOST ČASOVAČŮ SPÁNKU"
@@ -2547,6 +2775,12 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Měřítko"
 
+msgid "Screen Resolution (Default)"
+msgstr "Rozlišení obrazovky (Výchozí)"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "Zvolený jazyk se použije, pokud je položka \"Použít nastavení firmwaru\" vypnutá nebo pokud nebyl nalezen soubor firmwaru."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "Výběr typu vstupu pro navigaci na dotykové obrazovce"
 
@@ -2576,6 +2810,12 @@ msgstr "Ostrý 1"
 
 msgid "Sharp 2"
 msgstr "Ostrý 2"
+
+msgid "Sharpen"
+msgstr "Zaostřit"
+
+msgid "Sharpen More"
+msgstr "Více Zaostřit"
 
 msgid "Show"
 msgstr "Zobrazit"
@@ -2648,6 +2888,9 @@ msgstr "Hladké textury na 3D objektech."
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "Vyhlazení textur na vzdálených 3D objektech na základě úhlu."
+
+msgid "Smooths out textures on 3D objects."
+msgstr "Vyhlazuje textury 3D objektů."
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Vyhlazuje celkový obraz zobrazený na obrazovce. Upravuje polohu mezi pixely."
@@ -2733,6 +2976,9 @@ msgstr "Surround 5.1"
 msgid "Surround 7.1"
 msgstr "Surround 7.1"
 
+msgid "Swap the position of the dual displays."
+msgstr "Vyměnit polohu dvou displejů."
+
 msgid "Sweden"
 msgstr "Švédsko"
 
@@ -2763,8 +3009,14 @@ msgstr "PŘEDNAČÍTÁNÍ TEXTUR"
 msgid "TEXTURE REPLACEMENTS"
 msgstr "NAHRAZENÍ TEXTUR"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "VYHLAZOVÁNÍ TEXTUR"
+
 msgid "TEXTURE UPSCALING"
 msgstr "ZVĚTŠENÍ MĚŘÍTKA TEXTURY"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "ZVÝŠENÍ MĚŘÍTKA TEXTURY (POUZE RÝŽE)"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "UPSCALING TEXTUR (XBRZ)"
@@ -2808,6 +3060,9 @@ msgstr "Tchaj-wan"
 msgid "Thailand"
 msgstr "Thajsko"
 
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "Oblast kolem neutrální polohy joysticku, kde se vstupy ignorují. Může pomoci omezit nechtěné vstupy."
+
 msgid "The day within the month of your birthday."
 msgstr "Den v měsíci vašich narozenin."
 
@@ -2843,6 +3098,9 @@ msgstr "Horní"
 
 msgid "Top Only"
 msgstr "Pouze nahoře"
+
+msgid "Top only"
+msgstr "Pouze horní"
 
 msgid "Touch Screen"
 msgstr "Dotyková Obrazovka"
@@ -2889,6 +3147,9 @@ msgstr "FILTR UPSCALINGU"
 msgid "USE DSP AUDIO"
 msgstr "POUŽITÍ ZVUK DSP"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "POUŽÍT NASTAVENÍ FIRMWARU"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "POUŽITÍ PREEMPTIVNÍCH RÁMCŮ"
 
@@ -2916,6 +3177,9 @@ msgstr "Do časového limitu"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "Nahrává celé textury najednou místo malých částí. Zlepšuje výkon ve většině her."
 
+msgid "Upscale textures on 3D objects."
+msgstr "Vylepší rozlišení textur na 3D objektech."
+
 msgid "Uruguay"
 msgstr "Uruguay"
 
@@ -2928,6 +3192,9 @@ msgstr "Použit hostitele"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Pro vyhlazování použijte SSAA místo MSAA. SSAA může vypadat lépe, ale má vyšší náklady na výkon."
 
+msgid "Use language and username from the NDS Firmware"
+msgstr "Použití jazyka a uživatelského jména z firmwaru NDS"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Používejte preemptivní rámce namísto run-ahead. Běží dopředu pouze při změně stavu řadiče."
 
@@ -2936,6 +3203,15 @@ msgstr "Slouží k eliminaci driftu joysticku/nežádoucího vstupu. Působí na
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "Slouží k nastavení větší nebo menší citlivosti pohybu joysticku. Působí na všechny ovladače."
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "Použít anaglyfní 3D brýle!"
+
+msgid "Useful for N64 style controllers."
+msgstr "Užitečné pro ovladače typu N64."
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "Užitečné pro ovladače typu N64. Omezené klávesové zkratky pro ovladače bez vyhrazené klávesové zkratky."
 
 msgid "Useful for speedruns/glitches."
 msgstr "Užitečné pro rychlé běhy/zadrhávání."
@@ -3072,11 +3348,41 @@ msgstr "PŘESNOST ZCULL"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Přiblíží a skryje černé okraje. Ohraničení se liší podle hry."
 
+msgid "bilinear"
+msgstr "bilineární"
+
 msgid "black and white"
 msgstr "černá a bílá"
 
+msgid "black/blue"
+msgstr "černá/modrá"
+
+msgid "black/cyan"
+msgstr "černá/azurová"
+
+msgid "black/electric cyan"
+msgstr "černá/elektricky azurová"
+
+msgid "black/green"
+msgstr "černá/zelená"
+
+msgid "black/magenta"
+msgstr "černá/purpurová"
+
+msgid "black/white"
+msgstr "černá/bílá"
+
+msgid "black/yellow"
+msgstr "černá/žlutá"
+
 msgid "blue sea"
 msgstr "modré moře"
+
+msgid "bottom only"
+msgstr "pouze dolní"
+
+msgid "bottom/top"
+msgstr "dolní/horní"
 
 msgid "dark knight"
 msgstr "temný rytíř"
@@ -3090,14 +3396,44 @@ msgstr "gba sp"
 msgid "green forest"
 msgstr "zelený les"
 
+msgid "green/magenta"
+msgstr "zelená/purpurová"
+
 msgid "hot desert"
 msgstr "horká poušť"
+
+msgid "hybrid bottom ratio 2"
+msgstr "hybridní spodní poměr 2"
+
+msgid "hybrid bottom ratio 3"
+msgstr "hybridní spodní poměr 3"
+
+msgid "hybrid top ratio 2"
+msgstr "hybridní horní poměr 2"
+
+msgid "hybrid top ratio 3"
+msgstr "hybridní horní poměr 3"
+
+msgid "hybrid/bottom"
+msgstr "hybridní/dolní"
+
+msgid "hybrid/top"
+msgstr "hybridní/horní"
+
+msgid "left/right"
+msgstr "vlevo/vpravo"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
+msgid "nearest"
+msgstr "nejbližší"
+
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original"
+msgstr "originální"
 
 msgid "original gameboy"
 msgstr "originál gameboy"
@@ -3105,14 +3441,35 @@ msgstr "originál gameboy"
 msgid "pink dreams"
 msgstr "růžové sny"
 
+msgid "red/blue"
+msgstr "červená/modrá"
+
+msgid "red/cyan"
+msgstr "červená/azurová"
+
+msgid "red/electric cyan"
+msgstr "červená/elektricky azurová"
+
+msgid "right/left"
+msgstr "vpravo/vlevo"
+
 msgid "scanlines"
 msgstr "skenovací linky"
 
 msgid "standard"
 msgstr "standardní"
 
+msgid "top only"
+msgstr "pouze horní"
+
+msgid "top/bottom"
+msgstr "horní/dolní"
+
 msgid "triangular filter"
 msgstr "trojúhelníkový filtr"
+
+msgid "trilinear"
+msgstr "trilineární"
 
 msgid "wave filter"
 msgstr "vlnový filtr"
@@ -3128,3 +3485,6 @@ msgstr "xBR (velmi pomalé, bez prolínání hran)"
 
 msgid "xBRZ (Default)"
 msgstr "xBRZ (výchozí)"
+
+msgid "yellow/blue"
+msgstr "žlutá/modrá"

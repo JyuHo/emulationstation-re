@@ -9,8 +9,26 @@ msgstr "(FDS) AUTOMATICALLY LOAD DISK SIDE A"
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "(FDS) FAST FORWARD DISK LOADING"
 
+msgid "0 degrees"
+msgstr "0 độ"
+
 msgid "0% (Default)"
 msgstr "0% (Mặc định)"
+
+msgid "0.5x"
+msgstr "0.5x"
+
+msgid "0.6x"
+msgstr "0.6x"
+
+msgid "0.7x"
+msgstr "0.7x"
+
+msgid "0.8x"
+msgstr "0.8x"
+
+msgid "0.9x"
+msgstr "0.9x"
 
 msgid "1 second"
 msgstr "1 giây"
@@ -18,11 +36,29 @@ msgstr "1 giây"
 msgid "1 thread"
 msgstr "1 luồng"
 
+msgid "1% (Default)"
+msgstr "1% (Mặc định)"
+
+msgid "1.1x"
+msgstr "1.1x"
+
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
 
 msgid "1.25x Native"
 msgstr "1.25x Native"
+
+msgid "1.2x"
+msgstr "1.2x"
+
+msgid "1.3x"
+msgstr "1.3x"
+
+msgid "1.4x"
+msgstr "1.4x"
+
+msgid "1.5x"
+msgstr "1.5x"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -207,6 +243,9 @@ msgstr "28"
 msgid "29th"
 msgstr "29"
 
+msgid "2X"
+msgstr "2X"
+
 msgid "2nd"
 msgstr "2"
 
@@ -290,6 +329,9 @@ msgstr "BỘ CHUYỂN ĐỔI 4 NGƯỜI CHƠI"
 
 msgid "4 threads"
 msgstr "4 luồng"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5x (1440x1080)"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -453,6 +495,9 @@ msgstr "ALSAThread"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD Fidelityfx Siêu phân giải"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "ANAGLYPH PRESET (3D)"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "LỌC ANISOTROPIC"
 
@@ -483,6 +528,9 @@ msgstr "ASYNCHRONOUS TEXTURE STREAMING"
 msgid "AUDIO"
 msgstr "ÂM THANH"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "BỘ ĐỆM ÂM THANH (MẪU)"
+
 msgid "AUDIO CHANNELS"
 msgstr "KÊNH ÂM THANH"
 
@@ -494,6 +542,9 @@ msgstr "ĐỊNH DẠNG ÂM THANH"
 
 msgid "AUDIO LATENCY"
 msgstr "ĐỘ TRỄ ÂM THANH"
+
+msgid "AUDIO SYNC"
+msgstr "ĐỒNG BỘ HÓA ÂM THANH"
 
 msgid "AUTO FRAMESKIP"
 msgstr "BỎ QUA KHUNG HÌNH TỰ ĐỘNG"
@@ -509,6 +560,9 @@ msgstr "Thêm màu sắc vào các trò chơi Game Boy."
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Điều chỉnh tỷ lệ khung hình của phim Full Motion Video."
+
+msgid "Adjusts the positions of the screens."
+msgstr "Điều chỉnh vị trí của các màn hình."
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Ảnh hưởng đến cách các màn hình được mô phỏng được chia tỷ lệ.Chỉ kết xuất OpenGL.Ảnh hưởng đến cách thu nhỏ màn hình mô phỏng. Chỉ trình kết xuất OpenGL."
@@ -549,6 +603,12 @@ msgstr "Cho phép người dùng có thể thay thế họa tiết."
 msgid "Always"
 msgstr "Luôn luôn"
 
+msgid "Always enforce horizontal"
+msgstr "Luôn theo chiều ngang"
+
+msgid "Always enforce vertical"
+msgstr "Luôn theo chiều dọc"
+
 msgid "Analog Controller"
 msgstr "Analog Controller"
 
@@ -561,11 +621,17 @@ msgstr "Analog Joystick"
 msgid "Analog Joystick (Flystick)"
 msgstr "Analog Joystick (Flystick)"
 
+msgid "Angrylion"
+msgstr "Angrylion"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (Tương thích nhất)"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Áp dụng thuật toán khử răng cưa FXAA để cải thiện chất lượng hình ảnh của trò chơi."
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "Áp dụng hệ số nhân cho đầu vào của cần điều khiển để giảm hoặc tăng khả năng phản hồi."
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Áp dụng bộ lọc video để bắt chước các tín hiệu TV NTSC khác nhau."
@@ -585,8 +651,14 @@ msgstr "Arkanoid paddle"
 msgid "Armenia"
 msgstr "Armenia"
 
+msgid "Arrange the dual screen layout."
+msgstr "Sắp xếp bố cục màn hình kép."
+
 msgid "As Is"
 msgstr "Như là"
+
+msgid "As game specifies"
+msgstr "Như trò chơi chỉ định"
 
 msgid "August"
 msgstr "Tháng 8"
@@ -605,6 +677,9 @@ msgstr "Tiêu chuẩn tự động (4:3 xen kẽ / 3:2 lũy tiến)"
 
 msgid "Autodetect"
 msgstr "Tự phát hiện"
+
+msgid "Automatic"
+msgstr "Tự động"
 
 msgid "Automatic ratio"
 msgstr "Tỷ lệ tự động"
@@ -726,6 +801,9 @@ msgstr "Dưới (Mặc định)"
 msgid "Bottom Only"
 msgstr "Chỉ bên dưới"
 
+msgid "Bottom only"
+msgstr "Chỉ bên dưới"
+
 msgid "Brazil"
 msgstr "Brazil"
 
@@ -753,6 +831,9 @@ msgstr "BỘ LỌC MÀU"
 msgid "COLOR PALETTE"
 msgstr "BẢNG MÀU"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "BẢNG MÀU (2D)"
+
 msgid "CONSOLE COUNTRY"
 msgstr "CONSOLE COUNTRY"
 
@@ -762,17 +843,35 @@ msgstr "NGÔN NGỮ CONSOLE"
 msgid "CONSOLE REGION"
 msgstr "CONSOLE REGION"
 
+msgid "CONSOLE TYPE"
+msgstr "LOẠI CONSOLE"
+
+msgid "CONTROLLER 1"
+msgstr "BỘ ĐIỀU KHIỂN 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "LOẠI CỦA BỘ ĐIỀU KHIỂN 1"
+
+msgid "CONTROLLER 2"
+msgstr "BỘ ĐIỀU KHIỂN 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "LOẠI CỦA BỘ ĐIỀU KHIỂN 2"
 
+msgid "CONTROLLER 3"
+msgstr "BỘ ĐIỀU KHIỂN 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "LOẠI CỦA BỘ ĐIỀU KHIỂN 3"
 
+msgid "CONTROLLER 4"
+msgstr "BỘ ĐIỀU KHIỂN 4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "KẾT HỢP ĐIỀU KHIỂN"
+
+msgid "CONTROLLER TYPE"
+msgstr "LOẠI ĐIỀU KHIỂN"
 
 msgid "CONTROLLERS"
 msgstr "BỘ ĐIỀU KHIỂN"
@@ -860,6 +959,9 @@ msgstr "Chọn phương pháp giảm cấp."
 
 msgid "Choose mipmapping type."
 msgstr "Chọn loại ánh xạ mipmapping."
+
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "Chọn plugin đồ họa N64 song song."
 
 msgid "Choose the audio output type."
 msgstr "Chọn loại đầu ra âm thanh."
@@ -954,6 +1056,9 @@ msgstr "KHỬ XEN KẼ"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "BỘ XỬ LÝ ÂM THANH KỸ THUẬT SỐ"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "TẮT GÓI RAM MỞ RỘNG 4MB"
+
 msgid "DISABLE INTERLACING"
 msgstr "DISABLE INTERLACING"
 
@@ -992,6 +1097,9 @@ msgstr "DS (Mặc định)"
 
 msgid "DSi"
 msgstr "DSi"
+
+msgid "DSi (experiemental)"
+msgstr "DSi (thử nghiệm)"
 
 msgid "DUAL CORE MODE"
 msgstr "CHẾ ĐỘ LÕI KÉP"
@@ -1052,6 +1160,12 @@ msgstr "Digital Controller"
 
 msgid "Digital Controller (Gamepad)"
 msgstr "Digital Controller (Gamepad)"
+
+msgid "Disable"
+msgstr "Vô hiệu hóa"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "Tắt quyền truy cập vào cài đặt hệ thống, như thời gian và ngôn ngữ."
 
 msgid "Disabled"
 msgstr "Tắt"
@@ -1125,6 +1239,9 @@ msgstr "BẬT LỚP HIỆU SUẤT"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "BẬT HIỆU CHỈNH PGXP"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "BẬT TÁCH ĐA GIÁC"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "CHO PHÉP KÉO DÀI THỜI GIAN"
 
@@ -1142,6 +1259,12 @@ msgstr "Ai Cập"
 
 msgid "El Salvador"
 msgstr "El Salvador"
+
+msgid "Emphasize bottom"
+msgstr "Emphasize bottom"
+
+msgid "Emphasize top"
+msgstr "Emphasize top"
 
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Mô phỏng Wiimote Sideway với L2 cho Shake và Nunchuk trên R-stick."
@@ -1169,6 +1292,9 @@ msgstr "Bật chế độ xem gamepad cho các trò chơi có tương tác trên
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Bật thông báo về bộ đệm, sự kiện của bộ điều khiển, v.v."
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "Bật bộ giới hạn âm thanh thứ hai. Cải thiện chất lượng âm thanh nhưng giảm hiệu năng."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Kích hoạt Dreamcast DSP để có âm thanh chính xác hơn. Chỉ khuyên dùng cho các hệ thống nhanh."
@@ -1236,6 +1362,12 @@ msgstr "Tăng cường."
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "Tăng cường. 3 điểm chính xác với N64, chế độ tiêu chuẩn cho chất lượng cao hơn."
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "Tăng cường. Cải thiện phân tách đa giác."
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "Tăng cường. Cải thiện độ rõ nét của họa tiết ở xa khi bật mip-mapping."
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "Tăng cường. Tăng độ phân giải kết xuất khi ở tỷ lệ 16:9. Làm cho các đối tượng 3D rõ ràng hơn."
 
@@ -1284,14 +1416,23 @@ msgstr "Tăng cường. Nâng cấp họa tiết."
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "Tăng cường. Cải thiện chi tiết trên màn hình (chỉ trò chơi 2D)."
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "Tăng cường. Nâng cao kết cấu trên các đối tượng 3D."
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "Đảm bảo mọi khung hình mà bảng điều khiển hiển thị đều được hiển thị trên màn hình."
 
 msgid "Estonia"
 msgstr "Estonia"
 
+msgid "Even"
+msgstr "Như nhau"
+
 msgid "Exclusive Ubershaders"
 msgstr "Ubershaders chọn lọc"
+
+msgid "External"
+msgstr "External"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "FAST DISK TRANSFER RATE"
@@ -1325,6 +1466,9 @@ msgstr "TỐC ĐỘ KHUNG HÌNH"
 
 msgid "FRAMESKIP"
 msgstr "BỎ QUA KHUNG HÌNH"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "FRAMESKIP (GL64MK2 ONLY)"
 
 msgid "FXAA"
 msgstr "FXAA"
@@ -1518,6 +1662,12 @@ msgstr "ĐỒ HỌA"
 msgid "GRAPHICS API"
 msgstr "API ĐỒ HỌA"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "PLUGIN ĐỒ HỌA"
+
+msgid "Game default"
+msgstr "Trò chơi mặc định"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "GameCube Adapter cho Wii U"
 
@@ -1547,6 +1697,12 @@ msgstr "Đức"
 
 msgid "Giga"
 msgstr "Giga"
+
+msgid "Glide64"
+msgstr "GLIDE64"
+
+msgid "Gln64"
+msgstr "GLN64"
 
 msgid "Gray"
 msgstr "Xám"
@@ -1583,6 +1739,9 @@ msgstr "Hồng Kông"
 
 msgid "Horizontal"
 msgstr "Nằm ngang"
+
+msgid "How the window space is distributed between the screens."
+msgstr "Cách phân bổ không gian cửa sổ giữa các màn hình."
 
 msgid "Hungary"
 msgstr "Hungary"
@@ -1752,8 +1911,14 @@ msgstr "Kuwait"
 msgid "Kyrgyzstan"
 msgstr "Kyrgyzstan"
 
+msgid "LCD FILTER"
+msgstr "BỘ LỌC LCD"
+
 msgid "LCD GHOSTING EFFECT"
 msgstr "HIỆU ỨNG BÓNG MA LCD"
+
+msgid "LCD GHOSTING EFFECTS"
+msgstr "HIỆU ỨNG LCD GHOSTING"
 
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD Ghosting (Chính xác)"
@@ -1766,6 +1931,9 @@ msgstr "LIGHT GUN"
 
 msgid "LIGHT GUNS"
 msgstr "LIGHT GUNS"
+
+msgid "LIMIT FRAME RATE"
+msgstr "GIỚI HẠN TỶ LỆ KHUNG HÌNH"
 
 msgid "LINEAR UPSCALING"
 msgstr "LINEAR UPSCALING"
@@ -1835,6 +2003,9 @@ msgstr "Địa chỉ cục bộ và cổng để nhận gói tin. Để trống 
 
 msgid "Low"
 msgstr "Thấp"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "Giá trị thấp hơn giúp giảm độ trễ âm thanh và cải thiện hiệu suất nhưng có thể gây ra sự cố âm thanh."
 
 msgid "Luxembourg"
 msgstr "Luxembourg"
@@ -1935,6 +2106,9 @@ msgstr "Mexico"
 msgid "Minimum"
 msgstr "Tối thiểu"
 
+msgid "Mirrored"
+msgstr "Mirrored"
+
 msgid "Modern Fightstick Style"
 msgstr "Phong cách chiến đấu hiện đại"
 
@@ -1961,6 +2135,12 @@ msgstr "Chuột"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "Nhanh hơn nhiều so với trình biên dịch (nhưng có thể có vấn đề)."
+
+msgid "N64"
+msgstr "N64"
+
+msgid "N64 3-point"
+msgstr "N64 3 điểm"
 
 msgid "NAT"
 msgstr "NAT"
@@ -2058,6 +2238,9 @@ msgstr "New Zealand"
 msgid "Nicaragua"
 msgstr "Nicaragua"
 
+msgid "No Limit"
+msgstr "Không giới hạn"
+
 msgid "No Ubershaders"
 msgstr "Không Ubershaders"
 
@@ -2078,6 +2261,9 @@ msgstr "Na Uy"
 
 msgid "November"
 msgstr "Tháng 11"
+
+msgid "OFF (Default)"
+msgstr "TẮT (Mặc định)"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "HIỂN THỊ TRÊN MÀN HÌNH & THÔNG BÁO"
@@ -2142,6 +2328,12 @@ msgstr "Chỉ các trò chơi được hỗ trợ. Cài đặt cao hơn tăng y�
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL (Cổ điển)"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL (Tính toán Shader)"
+
 msgid "OpenGL (Default)"
 msgstr "OpenGL (Mặc định)"
 
@@ -2159,6 +2351,9 @@ msgstr "Original Hardware (FirebrandX)"
 
 msgid "Original resolution"
 msgstr "Độ phân giải ban đầu"
+
+msgid "Original screen positions"
+msgstr "Vị trí màn hình gốc"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "Ép xung CPU SNES (Gradius 3, Super R-Type)."
@@ -2210,6 +2405,9 @@ msgstr "ParaLLEl-RDP"
 
 msgid "Paraguay"
 msgstr "Paraguay"
+
+msgid "Parallel"
+msgstr "Song song"
 
 msgid "Partial"
 msgstr "Một phần"
@@ -2289,6 +2487,9 @@ msgstr "Tải trước"
 msgid "Preload requires more RAM."
 msgstr "Tải trước yêu cầu nhiều RAM hơn."
 
+msgid "Produces a clean LCD effect."
+msgstr "Tạo hiệu ứng LCD rõ ràng."
+
 msgid "Puerto Rico"
 msgstr "Puerto Rico"
 
@@ -2303,6 +2504,9 @@ msgstr "Qatar"
 
 msgid "RDP PLUGIN"
 msgstr "RDP PLUGIN"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "GIẢM HỌA TIẾT NHẤP NHÁY"
@@ -2376,11 +2580,20 @@ msgstr "Được yêu cầu bởi một số trò chơi."
 msgid "Required for certain visual effects."
 msgstr "Cần thiết cho các hiệu ứng hình ảnh nhất định."
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "Cần thiết cho một số hiệu ứng trong trò chơi (chuyển tiếp Banjo Kazooie và DK64), có thể làm chậm hệ thống."
+
 msgid "Requires BIOS file to be present."
 msgstr "Yêu cầu tập tin BIOS phải có sẵn."
 
 msgid "Resampling (Pirch Shift)"
 msgstr "Resampling (Pirch Shift)"
+
+msgid "RetroPad (Default)"
+msgstr "Retropad (Mặc định)"
+
+msgid "Rice"
+msgstr "Rice"
 
 msgid "Right Stick"
 msgstr "Cần phải"
@@ -2396,6 +2609,9 @@ msgstr "Xoay màn hình, hữu ích cho một số trò chơi thẳng đứng nh
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Rotated 4-Way Stick (Q*Bert)"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "Xoay màn hình để mô phỏng việc giữ DS sang một bên."
 
 msgid "Russia"
 msgstr "Nga"
@@ -2421,8 +2637,17 @@ msgstr "LỌC MÀN HÌNH"
 msgid "SCREEN SETTINGS"
 msgstr "CÀI ĐẶT MÀN HÌNH"
 
+msgid "SCREEN SIZING"
+msgstr "KÍCH THƯỚC MÀN HÌNH"
+
+msgid "SCREEN SWAP"
+msgstr "HOÁN ĐỔI MÀN HÌNH"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "ĐỘ NHẠY"
 
 msgid "SENSOR BAR POSITION"
 msgstr "VỊ TRÍ THANH CẢM BIẾN"
@@ -2456,6 +2681,9 @@ msgstr "BẬT HIỂN THỊ TIN NHẮN TRÊN MÀN HÌNH"
 
 msgid "SHOW SCREEN LAYOUT"
 msgstr "HIỂN THỊ BỐ CỤC MÀN HÌNH"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "BỎ QUA MENU HỆ THỐNG DS"
 
 msgid "SMAA"
 msgstr "SMAA"
@@ -2538,6 +2766,12 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Scaled"
 
+msgid "Screen Resolution (Default)"
+msgstr "Độ phân giải màn hình (Mặc định)"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "Chọn ngôn ngữ sẽ được sử dụng nếu 'Sử dụng cài đặt chương trình cơ sở' bị tắt hoặc nếu không tìm thấy tệp chương trình cơ sở."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "Chọn đầu vào để điều hướng màn hình cảm ứng"
 
@@ -2567,6 +2801,12 @@ msgstr "Sắc 1"
 
 msgid "Sharp 2"
 msgstr "Sắc 2"
+
+msgid "Sharpen"
+msgstr "Sharpen"
+
+msgid "Sharpen More"
+msgstr "Sharpen More"
 
 msgid "Show"
 msgstr "Hiện"
@@ -2639,6 +2879,9 @@ msgstr "Làm mượt họa tiết trên các đối tượng 3D."
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "Kết cấu mượt mà trên các đối tượng 3D xa dựa trên góc."
+
+msgid "Smooths out textures on 3D objects."
+msgstr "Làm mịn kết cấu trên các đối tượng 3D."
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Làm mịn hình ảnh tổng thể khi nó được hiển thị trên màn hình. Sửa vị trí giữa các pixel."
@@ -2724,6 +2967,9 @@ msgstr "Surround 5.1"
 msgid "Surround 7.1"
 msgstr "Surround 7.1"
 
+msgid "Swap the position of the dual displays."
+msgstr "Hoán đổi vị trí của màn hình kép."
+
 msgid "Sweden"
 msgstr "Thụy Điển"
 
@@ -2754,8 +3000,14 @@ msgstr "TEXTURE PRELOADING"
 msgid "TEXTURE REPLACEMENTS"
 msgstr "THAY THẾ HỌA TIẾT"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "TEXTURE SMOOTHING"
+
 msgid "TEXTURE UPSCALING"
 msgstr "NÂNG CẤP HỌA TIẾT"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "TEXTURE UPSCALING (RICE ONLY)"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "TEXTURE UPSCALING (XBRZ)"
@@ -2799,6 +3051,9 @@ msgstr "Đài Loan"
 msgid "Thailand"
 msgstr "Thái Lan"
 
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+
 msgid "The day within the month of your birthday."
 msgstr "Ngày sinh của bạn."
 
@@ -2833,6 +3088,9 @@ msgid "Top"
 msgstr "Trên"
 
 msgid "Top Only"
+msgstr "Chỉ bên trên"
+
+msgid "Top only"
 msgstr "Chỉ bên trên"
 
 msgid "Touch Screen"
@@ -2880,6 +3138,9 @@ msgstr "BỘ LỌC CAO CẤP"
 msgid "USE DSP AUDIO"
 msgstr "SỬ DỤNG ÂM THANH DSP"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "SỬ DỤNG CÀI ĐẶT FIRMWARE"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "SỬ DỤNG KHUNG KHÁM PHÁ TRƯỚC"
 
@@ -2907,6 +3168,9 @@ msgstr "Cho đến khi hết thời gian"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "Tải lên toàn bộ họa tiết cùng một lúc thay vì từng phần nhỏ. Cải thiện hiệu suất trong hầu hết các trò chơi."
 
+msgid "Upscale textures on 3D objects."
+msgstr "Nâng cấp họa tiết trên các vật thể 3D."
+
 msgid "Uruguay"
 msgstr "Uruguay"
 
@@ -2919,6 +3183,9 @@ msgstr "Sử dụng Máy chủ"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Sử dụng SSAA thay vì MSAA để khử răng cưa. SSAA có thể trông đẹp hơn nhưng sẽ làm giảm hiệu năng toàn hệ thống."
 
+msgid "Use language and username from the NDS Firmware"
+msgstr "Sử dụng ngôn ngữ và tên người dùng từ Firmware NDS"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Sử dụng các khung ưu tiên thay vì chạy về phía trước. Chỉ chạy về phía trước khi trạng thái bộ điều khiển thay đổi."
 
@@ -2927,6 +3194,15 @@ msgstr "Sử dụng để loại bỏ hiện tượng trôi cần điều khiể
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "Sử dụng để làm cho chuyển động của cần điều khiển trở nên nhạy hơn hoặc ít nhạy hơn. Có hiệu lực trên tất cả các bộ điều khiển."
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "Sử dụng kính 3D tương phản vật lý của bạn!"
+
+msgid "Useful for N64 style controllers."
+msgstr "Hữu ích cho bộ điều khiển kiểu N64."
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "Hữu ích cho bộ điều khiển kiểu N64. Hạn chế phím nóng cho bộ điều khiển không có phím nóng chuyên dụng."
 
 msgid "Useful for speedruns/glitches."
 msgstr "Hữu ích khi speedruns/glitches."
@@ -3057,11 +3333,41 @@ msgstr "ZCULL ACCURACY"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Phóng to để ẩn đường viền đen. Đường viền khác nhau với mỗi trò chơi."
 
+msgid "bilinear"
+msgstr "bilinear"
+
 msgid "black and white"
 msgstr "đen và trắng"
 
+msgid "black/blue"
+msgstr "đen/xanh da trời"
+
+msgid "black/cyan"
+msgstr "đen/lục lam"
+
+msgid "black/electric cyan"
+msgstr "đen/lục lam điện"
+
+msgid "black/green"
+msgstr "đen/xanh lá cây"
+
+msgid "black/magenta"
+msgstr "đen/đỏ tươi"
+
+msgid "black/white"
+msgstr "đen/trắng"
+
+msgid "black/yellow"
+msgstr "đen/vàng"
+
 msgid "blue sea"
 msgstr "xanh biển"
+
+msgid "bottom only"
+msgstr "chỉ dưới"
+
+msgid "bottom/top"
+msgstr "dưới/trên"
 
 msgid "dark knight"
 msgstr "hiệp sĩ bóng đêm"
@@ -3075,14 +3381,44 @@ msgstr "gba sp"
 msgid "green forest"
 msgstr "rừng xanh"
 
+msgid "green/magenta"
+msgstr "xanh lá cây/đỏ tươi"
+
 msgid "hot desert"
 msgstr "sa mạc nóng"
+
+msgid "hybrid bottom ratio 2"
+msgstr "hybrid dưới tỷ lệ 2"
+
+msgid "hybrid bottom ratio 3"
+msgstr "hybrid dưới tỷ lệ 3"
+
+msgid "hybrid top ratio 2"
+msgstr "hybrid trên tỷ lệ 2"
+
+msgid "hybrid top ratio 3"
+msgstr "hybrid trên tỷ lệ 3"
+
+msgid "hybrid/bottom"
+msgstr "lai/dưới"
+
+msgid "hybrid/top"
+msgstr "lai/trên"
+
+msgid "left/right"
+msgstr "trái/phải"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
+msgid "nearest"
+msgstr "nearest"
+
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original"
+msgstr "original"
 
 msgid "original gameboy"
 msgstr "original gameboy"
@@ -3090,14 +3426,35 @@ msgstr "original gameboy"
 msgid "pink dreams"
 msgstr "hồng mộng mơ"
 
+msgid "red/blue"
+msgstr "đỏ/xanh da trời"
+
+msgid "red/cyan"
+msgstr "đỏ/lục lam"
+
+msgid "red/electric cyan"
+msgstr "đỏ/lục lam điện"
+
+msgid "right/left"
+msgstr "phải/trái"
+
 msgid "scanlines"
 msgstr "scanlines"
 
 msgid "standard"
 msgstr "tiêu chuẩn"
 
+msgid "top only"
+msgstr "chỉ trên"
+
+msgid "top/bottom"
+msgstr "trên/dưới"
+
 msgid "triangular filter"
 msgstr "bộ lọc hình tam giác"
+
+msgid "trilinear"
+msgstr "trilinear"
 
 msgid "wave filter"
 msgstr "bộ lọc sóng"
@@ -3113,3 +3470,6 @@ msgstr "xBR (Rất chậm, No Edge Blending)"
 
 msgid "xBRZ (Default)"
 msgstr "xBRZ (Mặc định)"
+
+msgid "yellow/blue"
+msgstr "vàng/xanh da trời"

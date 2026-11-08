@@ -9,8 +9,26 @@ msgstr "(نظام قرص نينتندو) تشغيل جهة القرص A تِلق
 msgid "(FDS) FAST FORWARD DISK LOADING"
 msgstr "تحميل سريع للقرص الأمامي"
 
+msgid "0 degrees"
+msgstr "0 درجة"
+
 msgid "0% (Default)"
 msgstr "0% (افتراضي)"
+
+msgid "0.5x"
+msgstr "0.5x"
+
+msgid "0.6x"
+msgstr "0.6x"
+
+msgid "0.7x"
+msgstr "0.7x"
+
+msgid "0.8x"
+msgstr "0.8x"
+
+msgid "0.9x"
+msgstr "0.9x"
 
 msgid "1 second"
 msgstr "ثانية واحدة"
@@ -18,11 +36,29 @@ msgstr "ثانية واحدة"
 msgid "1 thread"
 msgstr "منفذ واحد"
 
+msgid "1% (Default)"
+msgstr "1% (افتراضي)"
+
+msgid "1.1x"
+msgstr "1.1x"
+
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
 
 msgid "1.25x Native"
 msgstr "1.25x أصلي"
+
+msgid "1.2x"
+msgstr "1.2x"
+
+msgid "1.3x"
+msgstr "1.3x"
+
+msgid "1.4x"
+msgstr "1.4x"
+
+msgid "1.5x"
+msgstr "1.5x"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -207,6 +243,9 @@ msgstr "الثامن والعشرون"
 msgid "29th"
 msgstr "التاسع والعشرون"
 
+msgid "2X"
+msgstr "×٢"
+
 msgid "2nd"
 msgstr "الثاني"
 
@@ -290,6 +329,9 @@ msgstr "محول 4 لاعبين"
 
 msgid "4 threads"
 msgstr "4 مسارات"
+
+msgid "4.5x (1440x1080)"
+msgstr "4.5x (1440x1080)"
 
 msgid "4096MB"
 msgstr "4096 م.ب"
@@ -453,6 +495,9 @@ msgstr "ALSAThread"
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX Super Resolution"
 
+msgid "ANAGLYPH PRESET (3D)"
+msgstr "إعداد Anaglyph المسبق (ثلاثي الأبعاد)"
+
 msgid "ANISOTROPIC FILTERING"
 msgstr "ترشيح متباين الخواص"
 
@@ -483,6 +528,9 @@ msgstr "بث الخامات غير المتزامن"
 msgid "AUDIO"
 msgstr "الصوت"
 
+msgid "AUDIO BUFFER (SAMPLES)"
+msgstr "مخزن الصوت المؤقت (عينات)"
+
 msgid "AUDIO CHANNELS"
 msgstr "قنوات الصوت"
 
@@ -494,6 +542,9 @@ msgstr "صيغة صوتية"
 
 msgid "AUDIO LATENCY"
 msgstr "تأخير الصوت"
+
+msgid "AUDIO SYNC"
+msgstr "مزامنة الصوت"
 
 msgid "AUTO FRAMESKIP"
 msgstr "تخطي الإطارات التلقائي"
@@ -509,6 +560,9 @@ msgstr "أضف لوناً لألعاب الجيم بوي."
 
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "يضبط نسبة العرض إلى الارتفاع لأفلام الفيديو كاملة الحركة (FMV)."
+
+msgid "Adjusts the positions of the screens."
+msgstr "يضبط مواضع الشاشات."
 
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "يؤثر على كيفية مقياس الشاشات المحاكية. محول OpenGL فقط."
@@ -555,6 +609,12 @@ msgstr "يسمح للأنسجة القابلة للاستبدال من قبل ا
 msgid "Always"
 msgstr "دائمًا"
 
+msgid "Always enforce horizontal"
+msgstr "فرض أفقية دائمًا"
+
+msgid "Always enforce vertical"
+msgstr "فرض عمودية دائمًا"
+
 msgid "Analog Controller"
 msgstr "وحدة تحكم تناظرية(أنلوج)"
 
@@ -567,11 +627,17 @@ msgstr "ذراع التحكم التناظرية"
 msgid "Analog Joystick (Flystick)"
 msgstr "عصا تحكم تناظرية (Flystick)"
 
+msgid "Angrylion"
+msgstr "أنغريلون"
+
 msgid "Angrylion (Most Compatible)"
 msgstr "أنغريلون (الأكثر توافقًا)"
 
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "يطبق خوارزمية FXAA لتقليل الحواف المتعرجة وتحسين جودة الصورة."
+
+msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
+msgstr "تطبيق مضاعف لمدخلات عصا التحكم لتقليل أو زيادة الاستجابة."
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "تطبيق مرشح فيديو لتقليد إشارات NTSC المختلفة."
@@ -591,11 +657,17 @@ msgstr "مضرب أركانونيد"
 msgid "Armenia"
 msgstr "أرمينيا"
 
+msgid "Arrange the dual screen layout."
+msgstr "ترتيب تخطيط الشاشة المزدوجة."
+
 msgid "As Host (Default)"
 msgstr "كمضيف (الافتراضي)"
 
 msgid "As Is"
 msgstr "كما هو"
+
+msgid "As game specifies"
+msgstr "حسب ما تحدد اللعبة"
 
 msgid "August"
 msgstr "أغسطس"
@@ -614,6 +686,9 @@ msgstr "أوتو قياسي (4:3 متداخل / 3:2 تقدمي)"
 
 msgid "Autodetect"
 msgstr "كشف تلقائي"
+
+msgid "Automatic"
+msgstr "تلقائي"
 
 msgid "Automatic ratio"
 msgstr "نسبة تلقائية"
@@ -747,6 +822,9 @@ msgstr "سفلى فقط"
 msgid "Bottom Right"
 msgstr "سفلى يمين"
 
+msgid "Bottom only"
+msgstr "أسفل فقط"
+
 msgid "Brazil"
 msgstr "البرازيل"
 
@@ -774,6 +852,9 @@ msgstr "مرشح اللون"
 msgid "COLOR PALETTE"
 msgstr "لوحة الألوان"
 
+msgid "COLOR PALETTE (2D)"
+msgstr "لوح الألوان (ثنائية الأبعاد)"
+
 msgid "CONSOLE COUNTRY"
 msgstr "دولة الجهاز"
 
@@ -783,17 +864,35 @@ msgstr "لغة جهاز الكونسول"
 msgid "CONSOLE REGION"
 msgstr "منطقة جهاز الكونسول"
 
+msgid "CONSOLE TYPE"
+msgstr "نوع الجهاز"
+
+msgid "CONTROLLER 1"
+msgstr "وحدة التحكم 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "نوع وحدة التحكم ١"
+
+msgid "CONTROLLER 2"
+msgstr "وحدة التحكم 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "نوع وحدة التحكم ٢"
 
+msgid "CONTROLLER 3"
+msgstr "وحدة التحكم 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "نوع وحدة التحكم 3"
 
+msgid "CONTROLLER 4"
+msgstr "وحدة التحكم 4"
+
 msgid "CONTROLLER COMBINATION"
 msgstr "مزيج وحدات التحكم"
+
+msgid "CONTROLLER TYPE"
+msgstr "نوع وحدة التحكم"
 
 msgid "CONTROLLERS"
 msgstr "وحدات التحكم"
@@ -897,6 +996,9 @@ msgstr "اختر طريقة تصغير الدقة (Downscaling)."
 msgid "Choose mipmapping type."
 msgstr "اختر نوع Mipmapping."
 
+msgid "Choose the Parallel N64 graphics plugin."
+msgstr "اختر إضافة رسومات Parallel N64."
+
 msgid "Choose the audio output type."
 msgstr "اختر نوع خرج الصوت."
 
@@ -999,6 +1101,9 @@ msgstr "إزالة التشابك"
 msgid "DIGITAL SOUND PROCESSOR"
 msgstr "معالج الصوت الرقمي"
 
+msgid "DISABLE 4MB EXPANSION RAM PACK"
+msgstr "تعطيل حزمة توسعة RAM بسعة 4 ميجابايت"
+
 msgid "DISABLE CULLING"
 msgstr "تعطيل الحذف"
 
@@ -1041,8 +1146,14 @@ msgstr "‫DS (افتراضي)"
 msgid "DSi"
 msgstr "DSi"
 
+msgid "DSi (experiemental)"
+msgstr "DSi (تجريبي)"
+
 msgid "DUAL CORE MODE"
 msgstr "وضع النواة المزدوجة"
+
+msgid "DUAL SCREEN"
+msgstr "شاشة مزدوجة"
 
 msgid "DYNAREC CODE INVALIDATION"
 msgstr "إبطال كود Dynarec"
@@ -1103,6 +1214,12 @@ msgstr "وحدة تحكم رقمية (ذراع ألعاب)"
 
 msgid "Digital Prime FBX"
 msgstr "Digital Prime FBX"
+
+msgid "Disable"
+msgstr "تعطيل"
+
+msgid "Disable to access the system's settings, like time and language."
+msgstr "قم بالتعطيل للوصول إلى إعدادات النظام، مثل الوقت واللغة."
 
 msgid "Disabled"
 msgstr "معطل"
@@ -1176,6 +1293,9 @@ msgstr "تمكين تراكب الأداء"
 msgid "ENABLE PGXP CORRECTIONS"
 msgstr "تمكين تصحيحات PGXP"
 
+msgid "ENABLE POLYGON SPLITTING"
+msgstr "تمكين تقسيم المضلعات"
+
 msgid "ENABLE TIME STRETCHING"
 msgstr "تمكين تمديد الوقت"
 
@@ -1194,6 +1314,12 @@ msgstr "مصر"
 msgid "El Salvador"
 msgstr "السلفادور"
 
+msgid "Emphasize bottom"
+msgstr "التأكيد على الجزء السفلي"
+
+msgid "Emphasize top"
+msgstr "التأكيد على الجزء العلوي"
+
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "محاكاة Wiimote أفقي مع L2 للهز و Nunchuk على العصا اليمنى."
 
@@ -1205,6 +1331,9 @@ msgstr "تمكين تراكب أداء Cemu."
 
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "تمكين رسوم إقلاع Gamecube والوصول إلى BIOS (يتطلب BIOS بصيغة IPL.bin في دليل المستخدم المناسب)."
+
+msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
+msgstr "تمكين MelonDS لعرض الشاشتين. بعض خيارات الشاشة المرتبطة ستُتجاهل."
 
 msgid "Enable No-interlacing Patches."
 msgstr "تمكين تصحيحات إلغاء التشابك."
@@ -1220,6 +1349,9 @@ msgstr "تفعيل عرض لوحة الألعاب للألعاب التي تتف
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "تفعيل إشعارات ذاكرة التخزين المؤقت، أحداث وحدة التحكم، إلخ."
+
+msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
+msgstr "تفعيل مقيد الصوت الثاني. يُحسن جودة الصوت على حساب الأداء."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "تفعيل Dreamcast DSP للحصول على صوت أكثر دقة. يُنصح به فقط للأنظمة السريعة."
@@ -1287,6 +1419,12 @@ msgstr "التحسين."
 msgid "Enhancement. 3 point is accurate to N64, standard is better."
 msgstr "تحسين. الثلاث نقاط أدق لـ N64، لكن القياسي أفضل."
 
+msgid "Enhancement. Enables improved polygon splitting."
+msgstr "تحسين. يُفعل تقسيم المضلعات المحسّن."
+
+msgid "Enhancement. Improves clarity of distant textures when mip-mapping is enabled."
+msgstr "تحسين. يُحسن وضوح الإكساءات البعيدة عند تفعيل الـ mip-mapping."
+
 msgid "Enhancement. Increase the rendering resolution when in 16:9 ratio. Makes 3D objects clearer."
 msgstr "تحسين. زيادة دقة التصيير في تحجيم ٩:١٦. يجعل الكائنات ثلاثة الأبعاد أوضح."
 
@@ -1335,14 +1473,23 @@ msgstr "تحسين. رفع دقة الإكساءات."
 msgid "Enhancement. Upscales screen textures (2D games only)."
 msgstr "تحسين. رفع دقة إكساءات الشاشة (للألعاب ثنائية الأبعاد فقط)."
 
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "تحسين. رفع دقة إكساءات الكائنات ثلاثية الأبعاد."
+
 msgid "Ensure every frame the console renders is displayed to screen."
 msgstr "تأكد من عرض كل إطار تقوم المنصة بإنشائه على الشاشة."
 
 msgid "Estonia"
 msgstr "إستونيا"
 
+msgid "Even"
+msgstr "زوجي"
+
 msgid "Exclusive Ubershaders"
 msgstr "Ubershaders حصرية"
+
+msgid "External"
+msgstr "خارجي"
 
 msgid "FAST DISK TRANSFER RATE"
 msgstr "معدل نقل سريع للقرص"
@@ -1379,6 +1526,9 @@ msgstr "تخطي الإطارات"
 
 msgid "FRAMESKIP"
 msgstr "تخطي الإطارات"
+
+msgid "FRAMESKIP (GL64MK2 ONLY)"
+msgstr "تخطي الإطارات (GL64MK2 فقط)"
 
 msgid "FRAMESKIP CONTROL"
 msgstr "التحكم بتخطي الإطارات"
@@ -1581,6 +1731,12 @@ msgstr "الرسومات"
 msgid "GRAPHICS API"
 msgstr "واجهة برمجة تطبيقات الرسومات"
 
+msgid "GRAPHICS PLUGIN"
+msgstr "إضافة الرسومات"
+
+msgid "Game default"
+msgstr "افتراضي اللعبة"
+
 msgid "GameCube Adapter for Wii U"
 msgstr "محول جيم كيوب لـ Wii U"
 
@@ -1610,6 +1766,12 @@ msgstr "ألمانيا"
 
 msgid "Giga"
 msgstr "جيجا"
+
+msgid "Glide64"
+msgstr "Glide64"
+
+msgid "Gln64"
+msgstr "Gln64"
 
 msgid "Gray"
 msgstr "رمادي"
@@ -1652,6 +1814,9 @@ msgstr "هونج كونج"
 
 msgid "Horizontal"
 msgstr "أفقي"
+
+msgid "How the window space is distributed between the screens."
+msgstr "كيفية توزيع مساحة النافذة بين الشاشات."
 
 msgid "Hungary"
 msgstr "هنغاريا"
@@ -1830,8 +1995,14 @@ msgstr "قرغيزستان"
 msgid "LAZY TEXTURE CACHING"
 msgstr "تخزين الإكساءات المؤقت المتأخر"
 
+msgid "LCD FILTER"
+msgstr "فلتر LCD"
+
 msgid "LCD GHOSTING EFFECT"
 msgstr "تأثير خيال LCD"
+
+msgid "LCD GHOSTING EFFECTS"
+msgstr "تأثيرات خيال LCD"
 
 msgid "LCD Ghosting (Accurate)"
 msgstr "خيال LCD (دقيق)"
@@ -1844,6 +2015,9 @@ msgstr "المسدس الضوئي"
 
 msgid "LIGHT GUNS"
 msgstr "مسدسات الضوء"
+
+msgid "LIMIT FRAME RATE"
+msgstr "تقييد معدل الإطارات"
 
 msgid "LINEAR UPSCALING"
 msgstr "ترقية خطية"
@@ -1913,6 +2087,9 @@ msgstr "العنوان المحلي والمنفذ لاستقبال الحزم �
 
 msgid "Low"
 msgstr "منخفض"
+
+msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
+msgstr "القيم الأقل تقلل من تأخير الصوت وتحسن الأداء، ولكنها قد تسبب مشاكل في الصوت."
 
 msgid "Luxembourg"
 msgstr "لوكسمبورغ"
@@ -2016,6 +2193,9 @@ msgstr "المكسيك"
 msgid "Minimum"
 msgstr "الحد الأدنى"
 
+msgid "Mirrored"
+msgstr "معكوس"
+
 msgid "Modern Fightstick Style"
 msgstr "نمط Fightstick الحديث"
 
@@ -2042,6 +2222,12 @@ msgstr "الفأرة"
 
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "أسرع بكثير من المترجم (ولكن قد تكون به مشاكل)."
+
+msgid "N64"
+msgstr "N64"
+
+msgid "N64 3-point"
+msgstr "N64 ثلاثي النقاط"
 
 msgid "NAT"
 msgstr "NAT"
@@ -2145,6 +2331,9 @@ msgstr "لا (افتراضي)"
 msgid "No Buffer"
 msgstr "بدون مخزن مؤقت"
 
+msgid "No Limit"
+msgstr "بلا حد"
+
 msgid "No Ubershaders"
 msgstr "بدون Ubershaders"
 
@@ -2165,6 +2354,9 @@ msgstr "النرويج"
 
 msgid "November"
 msgstr "نوفمبر"
+
+msgid "OFF (Default)"
+msgstr "إيقاف (الإفتراضي)"
 
 msgid "ON-SCREEN DISPLAY & NOTIFCATIONS"
 msgstr "العرض على الشاشة والإشعارات"
@@ -2235,6 +2427,12 @@ msgstr "الألعاب المدعومة فقط. تؤدي الإعدادات ال
 msgid "OpenGL"
 msgstr "أوبن جي إل"
 
+msgid "OpenGL (Classic)"
+msgstr "OpenGL (كلاسيكي)"
+
+msgid "OpenGL (Compute shader)"
+msgstr "OpenGL (مظلل الحساب)"
+
 msgid "OpenGL (Default)"
 msgstr "أوبن جي إل (افتراضي)"
 
@@ -2252,6 +2450,9 @@ msgstr "الأجهزة الأصلية (FirebrandX)"
 
 msgid "Original resolution"
 msgstr "الدقة الأصلية"
+
+msgid "Original screen positions"
+msgstr "مواضع الشاشة الأصلية"
 
 msgid "Overclock the SNES CPU (Gradius 3, Super R-Type)."
 msgstr "كسر سرعة وحدة المعالجة المركزية SNES (Gradius 3، Super R-Type)."
@@ -2306,6 +2507,9 @@ msgstr "ParaLLEl-RDP"
 
 msgid "Paraguay"
 msgstr "باراغواي"
+
+msgid "Parallel"
+msgstr "متوازي"
 
 msgid "Partial"
 msgstr "جزئي"
@@ -2385,6 +2589,9 @@ msgstr "التحميل المسبق"
 msgid "Preload requires more RAM."
 msgstr "التحميل المسبق يتطلب ذاكرة وصول عشوائي أكبر."
 
+msgid "Produces a clean LCD effect."
+msgstr "ينتج تأثير شاشة LCD نظيفة."
+
 msgid "Puerto Rico"
 msgstr "بورتوريكو"
 
@@ -2399,6 +2606,9 @@ msgstr "قطر"
 
 msgid "RDP PLUGIN"
 msgstr "إضافة RDP"
+
+msgid "READ FRAMEBUFFER EVERY FRAME (GLIDE64MK2)"
+msgstr "قراءة المخزن المؤقت للإطار في كل إطار (GLIDE64MK2)"
 
 msgid "REDUCE SPRITE FLICKERING"
 msgstr "تقليل وميض الكائنات (Sprite)"
@@ -2478,6 +2688,9 @@ msgstr "مطلوب من بعض الألعاب."
 msgid "Required for certain visual effects."
 msgstr "مطلوب لمؤثرات بصرية معينة."
 
+msgid "Required for some effects in-game (Banjo Kazooie and DK64 transitions), can cause slowdown."
+msgstr "مطلوب لبعض التأثيرات داخل اللعبة (انتقالات Banjo Kazooie وDK64)، قد يسبب تباطؤًا."
+
 msgid "Requires BIOS file to be present."
 msgstr "يتطلب وجود ملف BIOS."
 
@@ -2486,6 +2699,12 @@ msgstr "إعادة أخذ العينات (Pitch Shift)"
 
 msgid "Restored Wii VC"
 msgstr "Wii VC مستعاد"
+
+msgid "RetroPad (Default)"
+msgstr "RetroPad (افتراضي)"
+
+msgid "Rice"
+msgstr "Rice"
 
 msgid "Right Stick"
 msgstr "العصا اليمنى"
@@ -2501,6 +2720,9 @@ msgstr "تدوير الشاشة، مفيد لبعض الألعاب المنزل�
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "عصا رباعية الاتجاهات مدورة (Q*Bert)"
+
+msgid "Rotates the screens, to simulate holding the DS sideways."
+msgstr "يدور الشاشات لمحاكاة حمل جهاز DS بشكل جانبي."
 
 msgid "Runs \"skinning\" on the CPU instead of the GPU, means that draw calls from the game can more easily be combined, which often improves things."
 msgstr "ينفذ 'التغليف' (skinning) على وحدة المعالجة المركزية بدلاً من وحدة معالجة الرسومات، مما يعني أن استدعاءات الرسم من اللعبة يمكن دمجها بسهولة أكبر، وغالبًا ما يحسن الأمور."
@@ -2529,8 +2751,17 @@ msgstr "تنقية الشاشة"
 msgid "SCREEN SETTINGS"
 msgstr "إعدادات الشاشة"
 
+msgid "SCREEN SIZING"
+msgstr "تحديد مقاس الشاشة"
+
+msgid "SCREEN SWAP"
+msgstr "تبديل الشاشة"
+
 msgid "SDL2"
 msgstr "SDL2"
+
+msgid "SENSITIVITY"
+msgstr "الحساسية"
 
 msgid "SENSOR BAR POSITION"
 msgstr "موضع شريط الاستشعار"
@@ -2567,6 +2798,9 @@ msgstr "إظهار تخطيط الشاشة"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "تخطي تأثيرات المخزن المؤقت"
+
+msgid "SKIP DS SYSTEM MENU"
+msgstr "تخطي قائمة نظام DS"
 
 msgid "SKIP GPU READBACKS"
 msgstr "تخطي إعادة قراءات وحدة معالجة الرسومات"
@@ -2667,6 +2901,12 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "مقاس"
 
+msgid "Screen Resolution (Default)"
+msgstr "دقة الشاشة (افتراضي)"
+
+msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
+msgstr "اختر لغة ستستخدم إذا كان \"استخدم إعدادات البرامج الثابتة(FIRMWARE)\" معطل أو ملف البرامج الثابتة(FIRMWARE) غير موجود."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "حدد نوع الإدخال للتنقل في شاشة اللمس"
 
@@ -2696,6 +2936,12 @@ msgstr "حاد 1"
 
 msgid "Sharp 2"
 msgstr "حاد 2"
+
+msgid "Sharpen"
+msgstr "توضيح"
+
+msgid "Sharpen More"
+msgstr "توضيح أكثر"
 
 msgid "Show"
 msgstr "عرض"
@@ -2774,6 +3020,9 @@ msgstr "تنعيم القوام على الكائنات ثلاثية الأبع�
 
 msgid "Smooth textures on distant 3D objects based on angle."
 msgstr "تنعيم القوام على الكائنات ثلاثية الأبعاد البعيدة بناءً على الزاوية."
+
+msgid "Smooths out textures on 3D objects."
+msgstr "ينعم القوام على الكائنات ثلاثية الأبعاد."
 
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "ينعم الصورة العامة كما تظهر على الشاشة. يصحح المواضع بين البكسلات."
@@ -2859,6 +3108,9 @@ msgstr "محيطي ٥.١"
 msgid "Surround 7.1"
 msgstr "محيطي ٧.١"
 
+msgid "Swap the position of the dual displays."
+msgstr "تبديل موضع الشاشتين المزدوجتين."
+
 msgid "Sweden"
 msgstr "السويد"
 
@@ -2895,8 +3147,14 @@ msgstr "استبدالات النسيج"
 msgid "TEXTURE SCALING"
 msgstr "تحجيم النسيج"
 
+msgid "TEXTURE SMOOTHING"
+msgstr "تنعيم النسيج"
+
 msgid "TEXTURE UPSCALING"
 msgstr "ترقية النسيج"
+
+msgid "TEXTURE UPSCALING (RICE ONLY)"
+msgstr "ترقية نسيج (RICE فقط)"
 
 msgid "TEXTURE UPSCALING (XBRZ)"
 msgstr "ترقية نسيج (XBRZ)"
@@ -2942,6 +3200,9 @@ msgstr "تايلاند"
 
 msgid "The PSP will cull triangles that are outside a 4096x4096 clipping box, and also triangles crossing the Z=1 plane if clipping is enabled."
 msgstr "سيزيل PSP المثلثات الموجودة خارج صندوق القطع 4096x4096، وكذلك المثلثات التي تعبر المستوى Z=1 إذا تم تمكين القطع."
+
+msgid "The area around the joystick's neutral position where input is ignored. Can help reduce unintended inputs."
+msgstr "المنطقة حول موضع عصا التحكم المحايدة حيث يتم تجاهل الإدخال. يمكن أن يساعد في تقليل المدخلات غير المقصودة."
 
 msgid "The day within the month of your birthday."
 msgstr "اليوم في شهر ميلادك اليوم في شهر ميلادك."
@@ -2994,6 +3255,9 @@ msgstr "الأعلى فقط"
 msgid "Top Right"
 msgstr "أعلى اليمين"
 
+msgid "Top only"
+msgstr "الأعلى فقط"
+
 msgid "Touch Screen"
 msgstr "شاشة اللمس"
 
@@ -3039,6 +3303,9 @@ msgstr "UPSCALE مرشح تكبير الرسومات"
 msgid "USE DSP AUDIO"
 msgstr "DSP AUDIO استخدم"
 
+msgid "USE FIRMWARE SETTINGS"
+msgstr "استخدم إعدادات البرامج الثابتة(FIRMWARE)"
+
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "استخدم الأطر الاستباقية"
 
@@ -3072,6 +3339,9 @@ msgstr "حتى 2 (افتراضي)"
 msgid "Uploads entire textures at once instead of small pieces. Improves performance in most games."
 msgstr "يُحمّل القوام كاملةً دفعةً واحدةً بدلًا من أجزاء صغيرة. يُحسّن الأداء في معظم الألعاب."
 
+msgid "Upscale textures on 3D objects."
+msgstr "تحسين القوام على الكائنات ثلاثية الأبعاد."
+
 msgid "Uruguay"
 msgstr "أوروغواي"
 
@@ -3084,6 +3354,9 @@ msgstr "استخدم المضيف"
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "استخدم SSAA بدلاً من MSAA لمكافحة التعرجات. قد تبدو SSAA أفضل ولكنها ذات تكلفة أداء أعلى."
 
+msgid "Use language and username from the NDS Firmware"
+msgstr ".الثابت NDS استخدم اللغة واسم المستخدم من برنامج"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "استخدم الإطارات الاستباقية (preemptive frames) بدلاً من تقنية \"التشغيل المسبق\" (run-ahead)؛ حيث يتم التشغيل المسبق فقط عند تغير حالة وحدة التحكم."
 
@@ -3092,6 +3365,15 @@ msgstr "يُستخدم لإزالة انحراف عصا التحكم/الإدخ�
 
 msgid "Use to make joystick movement more or less sensitive. Effects all controllers."
 msgstr "يُستخدم لزيادة أو تقليل حساسية حركة عصا التحكم. يؤثر على جميع وحدات التحكم."
+
+msgid "Use your physical anaglypth 3D glasses!"
+msgstr "استخدم نظاراتك ثلاثية الأبعاد الفيزيائية!"
+
+msgid "Useful for N64 style controllers."
+msgstr "مفيد لوحدات التحكم من طراز N64."
+
+msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
+msgstr "مفيد لوحدات التحكم التي تتبع نمط N64. خيارات محدودة لمفاتيح الاختصار في وحدات التحكم التي لا تحتوي على مفتاح مخصص لهذا الغرض."
 
 msgid "Useful for speedruns/glitches."
 msgstr "مفيد لسباقات السرعة/الأعطال."
@@ -3237,11 +3519,41 @@ msgstr "ZCULL دقة"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "يُجري تقريبًا للصورة لإخفاء الحواف السوداء. تختلف هذه الحواف من لعبة لأخرى."
 
+msgid "bilinear"
+msgstr "bilinear مرشح بنية"
+
 msgid "black and white"
 msgstr "أسود و أبيض"
 
+msgid "black/blue"
+msgstr "أسود/أزرق"
+
+msgid "black/cyan"
+msgstr "أسود/سماوي"
+
+msgid "black/electric cyan"
+msgstr "أسود/سماوي كهربائي"
+
+msgid "black/green"
+msgstr "أسود/أخضر"
+
+msgid "black/magenta"
+msgstr "أسود/أرجواني"
+
+msgid "black/white"
+msgstr "أسود/أبيض"
+
+msgid "black/yellow"
+msgstr "أسود/أصفر"
+
 msgid "blue sea"
 msgstr "بحر ازرق"
+
+msgid "bottom only"
+msgstr "أسفل فقط"
+
+msgid "bottom/top"
+msgstr "أسفل/فوق"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (الولايات المتحدة)"
@@ -3258,20 +3570,62 @@ msgstr "جهاز جيم بوي أدفانس SP"
 msgid "green forest"
 msgstr "الغابة الخضراء"
 
+msgid "green/magenta"
+msgstr "أخضر/أرجواني"
+
 msgid "hot desert"
 msgstr "الصحراء الحارة"
+
+msgid "hybrid bottom ratio 2"
+msgstr "نسبة أسفل هجينة 2"
+
+msgid "hybrid bottom ratio 3"
+msgstr "نسبة أسفل هجينة 3"
+
+msgid "hybrid top ratio 2"
+msgstr "نسبة أعلى هجينة 2"
+
+msgid "hybrid top ratio 3"
+msgstr "نسبة أعلى هجينة 3"
+
+msgid "hybrid/bottom"
+msgstr "هجين/أسفل"
+
+msgid "hybrid/top"
+msgstr "هجين/فوق"
+
+msgid "left/right"
+msgstr "يمين/يسار"
 
 msgid "lottes crt"
 msgstr "lottes crt مرشح"
 
+msgid "nearest"
+msgstr "nearest مرشح بنية"
+
 msgid "nxagss"
 msgstr "nxagss تظليل"
+
+msgid "original"
+msgstr "أصلي"
 
 msgid "original gameboy"
 msgstr "جيم بوي الأصلي"
 
 msgid "pink dreams"
 msgstr "الأحلام الوردية"
+
+msgid "red/blue"
+msgstr "أحمر/أزرق"
+
+msgid "red/cyan"
+msgstr "أحمر/سماوي"
+
+msgid "red/electric cyan"
+msgstr "أحمر/سماوي كهربائي"
+
+msgid "right/left"
+msgstr "يسار/يمين"
 
 msgid "royaltea"
 msgstr "رويال تي"
@@ -3282,8 +3636,17 @@ msgstr "خطوط المسح الضوئي"
 msgid "standard"
 msgstr "قياسي"
 
+msgid "top only"
+msgstr "فوق فقط"
+
+msgid "top/bottom"
+msgstr "فوق/أسفل"
+
 msgid "triangular filter"
 msgstr "مرشح مثلثي"
+
+msgid "trilinear"
+msgstr "ثلاثي الخطوط"
 
 msgid "wave filter"
 msgstr "مرشح الموجة"
@@ -3302,3 +3665,6 @@ msgstr "(افتراضي) xBRZ"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - خوارزمية لرفع الدقة مع تعزيز الحدة، Bicubic - مظهر ناعم، Hybrid - تستخدم تقنية Bicubic للمناطق الناعمة."
+
+msgid "yellow/blue"
+msgstr "أصفر/أزرق"

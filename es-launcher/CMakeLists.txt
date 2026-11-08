@@ -48,6 +48,8 @@ add_library(es-launcher-objects OBJECT
     src/xenia/XeniaGenerator.cpp
     src/rpcs3/Rpcs3Generator.cpp
     src/eden/EdenGenerator.cpp
+    src/melonds/MelonDSGenerator.cpp
+    src/mupen64plus/Mupen64PlusGenerator.cpp
     # Cemu's settings are XML: the copy of pugixml ES ships, built in with hidden symbols
     ${CMAKE_CURRENT_SOURCE_DIR}/../external/pugixml/src/pugixml.cpp
 )

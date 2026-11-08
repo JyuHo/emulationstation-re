@@ -27,6 +27,9 @@ msgstr "Pelkkiä nollia (oletus)"
 msgid "All 1s"
 msgstr "Pelkkiä ykkösiä"
 
+msgid "Arrange the dual screen layout."
+msgstr "Määrittele kahden näytön asettelu."
+
 msgid "Autodetect"
 msgstr "Havaitse automaattisesti"
 
@@ -95,6 +98,9 @@ msgstr "Parannus. Nostattaa renderöitävää resoluutiota. Saa 3D-kohteet näyt
 
 msgid "Enhancement. Remove the eight sprite per line limit."
 msgstr "Parannus. Poista kahdeksan spriten rajoitus per näytönviiva."
+
+msgid "Enhancement. Upscales textures on 3D objects."
+msgstr "Parannus. Kasvattaa 3D-kohteiden tekstuureja."
 
 msgid "FRAMESKIP"
 msgstr "KUVANOHITUS"
