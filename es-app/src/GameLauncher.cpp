@@ -177,6 +177,12 @@ namespace GameLauncher
 
 	std::unique_ptr<launcher::Launch> create(FileData* game, const LaunchGameOptions& options)
 	{
+		// A game shown in a collection (favorites, last played, all games...) belongs to the
+		// collection's system there: it runs as the game of its own system, with that system's
+		// settings and decorations
+		if (game != nullptr)
+			game = game->getSourceFileData();
+
 		if (game == nullptr || game->getSystem() == nullptr)
 			return nullptr;
 

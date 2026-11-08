@@ -168,8 +168,9 @@ namespace bezelproject
 
 		// The system's own bezel, for the games without one
 		std::string systemUrl = systemBezelUrl(system);
-		if (!systemUrl.empty() && !Utils::FileSystem::exists(systemBezelPath(name), false))
-			download(systemUrl, systemBezelPath(name));
+		bool hasSystemBezel = Utils::FileSystem::exists(systemBezelPath(name), false);
+		if (!systemUrl.empty() && !hasSystemBezel)
+			hasSystemBezel = download(systemUrl, systemBezelPath(name));
 
 		// The ROMs that have a bezel
 		std::vector<std::pair<std::string, Bezel>> wanted;
@@ -211,12 +212,14 @@ namespace bezelproject
 				return { _("Too many downloads failed"), 1 };
 		}
 
-		LOG(LogInfo) << "TheBezelProject: " << name << ": " << wanted.size() << " games with a bezel, " << copied << " downloaded, " << failures << " failed";
+		LOG(LogInfo) << "TheBezelProject: " << name << ": " << wanted.size() << " games with a bezel, " << copied << " downloaded, "
+			<< failures << " failed, system bezel " << (hasSystemBezel ? "present" : "missing");
 
-		if (wanted.empty() && !Utils::FileSystem::exists(systemBezelPath(name), false))
+		if (wanted.empty() && !hasSystemBezel)
 			return { _("None of your games has a bezel"), 1 };
 
-		return { Utils::String::format(_("%d bezels").c_str(), (int)wanted.size()), 0 };
+		// The games without a bezel of their own get the system's
+		return { Utils::String::format(_("%d games with their own bezel").c_str(), (int)wanted.size() - failures), 0 };
 	}
 
 	std::pair<std::string, int> remove(const std::string& name)
