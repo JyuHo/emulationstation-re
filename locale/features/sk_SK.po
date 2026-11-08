@@ -501,6 +501,9 @@ msgstr "9."
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ADJUST POWERPC FREQUENCY"
+msgstr "Upraviť frekvenciu PowerPC"
+
 msgid "ADVANCED OPTIONS"
 msgstr "Pokročilé voľby"
 
@@ -536,6 +539,9 @@ msgstr "Režim anti aliasingu"
 
 msgid "ANTI-BLUR"
 msgstr "Anti rozmazanie"
+
+msgid "ARI/D93 (recommended for all JP developed games)"
+msgstr "ARI/D93 (odporúčané pre všetky JP hry)"
 
 msgid "ASMJIT Recompiler"
 msgstr "ASMJIT recompiler"
@@ -681,6 +687,18 @@ msgstr "Približné (rýchle)"
 msgid "April"
 msgstr "Apríl"
 
+msgid "Arcade MVS Europe"
+msgstr "Arcade MVS Európa"
+
+msgid "Arcade MVS Japan"
+msgstr "Arcade MVS Japonsko"
+
+msgid "Arcade MVS USA"
+msgstr "Arcade MVS USA"
+
+msgid "Arcade Universe BIOS (Cheats)"
+msgstr "Arcade Universe BIOS (cheaty)"
+
 msgid "Argentina"
 msgstr "Argentína"
 
@@ -741,6 +759,9 @@ msgstr "Azerbajdžan"
 msgid "BILINEAR FILTERING"
 msgstr "Bilineárne filtrovanie"
 
+msgid "BIOS LANGUAGE"
+msgstr "Jazyk BIOSu"
+
 msgid "BIOS Language"
 msgstr "Jazyk BIOSu"
 
@@ -758,6 +779,15 @@ msgstr "Blend režim vysokého rozlíšenia"
 
 msgid "BLENDING ACCURACY"
 msgstr "Presnosť miešania"
+
+msgid "BT601_525/D65 (recommended for all US developed games)"
+msgstr "BT601_525/D65 (odporúčané pre všetky US hry"
+
+msgid "BT601_525/D93"
+msgstr "BT601_525/D93"
+
+msgid "BT601_625/D65 (recommended for all EUR/AUS developed games)"
+msgstr "BT601_625/D65 (odporúčané pre všetky EUR/AUS hry)"
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "BUFFER GRAFICKÝCH PRÍKAZOV"
@@ -806,6 +836,9 @@ msgstr "Bilineárne (ostré)"
 
 msgid "Bilinear (Smooth)"
 msgstr "Bilineárne (plynulé)"
+
+msgid "Biquintic"
+msgstr "Bikvintické"
 
 msgid "Bisqwit 2x"
 msgstr "Bisqwit 2x"
@@ -881,6 +914,15 @@ msgstr "CD doplnok"
 
 msgid "CD-DA VOLUME"
 msgstr "CD-DA hlasitosť"
+
+msgid "CDZ"
+msgstr "CDZ"
+
+msgid "CDZ MAME"
+msgstr "CDZ MAME"
+
+msgid "CDZ Universe 3.3"
+msgstr "CDZ Universe 3.3"
 
 msgid "CHEATS"
 msgstr "Cheaty"
@@ -960,6 +1002,9 @@ msgstr "Konvertovať na 16-bit"
 msgid "CPU"
 msgstr "CPU"
 
+msgid "CPU CLOCK"
+msgstr "Frekvencia CPU"
+
 msgid "CPU CORE"
 msgstr "Jadro CPU"
 
@@ -998,6 +1043,12 @@ msgstr "Cachovaný interpreter (rýchlejšie)"
 
 msgid "Can be used to simulate colors of particular displays."
 msgstr "Môže sa použiť na simuláciu farieb niektorých obrazoviek."
+
+msgid "Can change the language of some games."
+msgstr "Môže zmeniť jazyk niektorých hier."
+
+msgid "Can fix slowdown. Only works on some drivers."
+msgstr "Môže opraviť spomalenie. Funguje iba na niektorých ovládačoch."
 
 msgid "Can prevent audio skips on button presses when using run-ahead."
 msgstr "Zabraňuje preskakovaniu zvuku pri stlačení tlačidla pri behu napred."
@@ -1062,6 +1113,9 @@ msgstr "Vyberte typ mipmappingu."
 msgid "Choose system BIOS language."
 msgstr "Vybrať jazyk BIOSu."
 
+msgid "Choose the Dreamcast console region."
+msgstr "Vyberte región konzoly Dreamcast."
+
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Vyberte grafický doplnok Parallel N64."
 
@@ -1118,6 +1172,12 @@ msgstr "Composite Direct (FirebrandX)"
 
 msgid "Config"
 msgstr "Nastavenie"
+
+msgid "Console AES Japan"
+msgstr "Konzola AES Japonsko"
+
+msgid "Console AES World"
+msgstr "Konzola AES svet"
 
 msgid "Control the texture filtering of the emulation."
 msgstr "Ovládanie filtrovania textúr emulácie."
@@ -1329,6 +1389,9 @@ msgstr "Dvojité bufferovanie"
 msgid "Double the rendering resolution."
 msgstr "Zdvojnásobiť renderovacie rozlíšenie."
 
+msgid "Dreamcast BIOS's language setting. Can change the language of some games. Some games default to Japanese."
+msgstr "Nastavenie jazyka Dreamcast BIOS. Môže zmeniť jazyk niektorých hier. Niektoré hry sú štandardne nastavené na japončinu."
+
 msgid "DualShock Controller"
 msgstr "DualShock ovládač"
 
@@ -1430,6 +1493,9 @@ msgstr "Povoliť pripojenie cache. Môže zlepšiť výkon a kompatibilitu v nie
 
 msgid "Enable controller rumble capabilities if supported by the controller."
 msgstr "Povoliť schopnosti vibrácií, ak ich podporuje ovládač."
+
+msgid "Enable crosshairs in shooting games for the selected players."
+msgstr "Povoliť nitkový kríž v strieľačkách pre vybraných hráčov."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "Povoľte zobrazenie gamepadu pre hry, ktoré majú interakciu na dvoch obrazovkách. Na prepínanie obrazoviek použite Hotkey+R2."
@@ -1577,6 +1643,9 @@ msgstr "Zabezpečte, aby každý snímok, ktorý konzola vykreslí, bol zobrazen
 
 msgid "Estonia"
 msgstr "Estónsko"
+
+msgid "Europe"
+msgstr "Európa"
 
 msgid "Even"
 msgstr "Párne"
@@ -1905,6 +1974,9 @@ msgstr "HLE (najrýchlejšie)"
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack. Zvýši rýchlosť väčšiny PAL hier o 17 percent."
 
+msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
+msgstr "Pomáha s poškodením textúr a problémami s hĺbkou na AMD GPU. Môže pomôcť aj Intel GPU v niektorých prípadoch."
+
 msgid "Hermite"
 msgstr "Hermit"
 
@@ -1952,6 +2024,9 @@ msgstr "VYLEPŠENÁ SIEŤ"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "VYLEPŠENÉ DELENIE POLYGÓNOV"
+
+msgid "INPUT INTERFACE"
+msgstr "Vstupné rozhranie"
 
 msgid "INTEGER SCALING"
 msgstr "Celočíselná mierka"
@@ -2109,6 +2184,12 @@ msgstr "Keňa"
 msgid "Keyboard"
 msgstr "Klávesnica"
 
+msgid "Keyboard passthrough"
+msgstr "Prechod klávesnice"
+
+msgid "Keyboard shortcuts unavailable if passing through the keyboard."
+msgstr "Pri prechode cez klávesnicu nie sú klávesové skratky k dispozícii."
+
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
 
@@ -2265,6 +2346,9 @@ msgstr "Manuálne vzorkovanie textúr"
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "Maximálna úspora energie procesora"
 
+msgid "MEMORY CARD MODE"
+msgstr "Režim pamäťovej karty"
+
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "Jednotka správy pamäte"
 
@@ -2403,8 +2487,17 @@ msgstr "N64 3-bodový"
 msgid "NAT"
 msgstr "NAT"
 
+msgid "NATIVE DEPTH INTERPOLATION"
+msgstr "NATÍVNA INTERPOLÁCIA HĹBKY"
+
 msgid "NDS VERSION"
 msgstr "Verzia NDS"
+
+msgid "NEO GEO BIOS"
+msgstr "NEO GEO BIOS"
+
+msgid "NEO GEO CD BIOS"
+msgstr "NEO GEO CD BIOS"
 
 msgid "NES Gamepad"
 msgstr "NES gamepad"
@@ -2514,8 +2607,14 @@ msgstr "Žiadne Ubershaders"
 msgid "No licenses enabled"
 msgstr "Žiadna licencia nepovolená"
 
+msgid "No skipping"
+msgstr "Bez preskočenia"
+
 msgid "None (Default)"
 msgstr "Žiadne (predvolené)"
+
+msgid "None/Sharp Pixels"
+msgstr "Žiadne/ostré body"
 
 msgid "Normal"
 msgstr "Normálne"
@@ -2646,6 +2745,15 @@ msgstr "Pretaktovať SNES CPU (Gradius 3, Super R-Type)."
 msgid "Overrides the language mode of the emulated console."
 msgstr "Prepíše jazykový režim emulovanej konzoly."
 
+msgid "P1 & P2"
+msgstr "P1 & P2"
+
+msgid "P1 only"
+msgstr "Iba P1"
+
+msgid "P2 only"
+msgstr "Iba P2"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2657,6 +2765,9 @@ msgstr "PCE joypad"
 
 msgid "PCE Mouse"
 msgstr "PCE myš"
+
+msgid "PER-GAME SAVES"
+msgstr "Uloženia podľa hry"
 
 msgid "PERFORMANCE"
 msgstr "VÝKON"
@@ -2681,6 +2792,9 @@ msgstr "Preferované SPU thready"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM štýl (FirebrandX)"
+
+msgid "PVM_20M2U/D93"
+msgstr "PVM_20M2U/D93"
 
 msgid "Paddle Control"
 msgstr "Ovládač paddle"
@@ -2729,6 +2843,9 @@ msgstr "Za 1s, 60s celkovo (660MB|120MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "Za 1s, 90s celkovo (990MB|180MB)"
+
+msgid "Per-game"
+msgstr "Podľa hry"
 
 msgid "Peru"
 msgstr "Peru"
@@ -2798,6 +2915,9 @@ msgstr "Pulse (predvolené)"
 
 msgid "Pure Interpreter (Most Accurate)"
 msgstr "Čistý interpreter (najpresnejší)"
+
+msgid "QUAD RENDERING"
+msgstr "Štvorité renderovanie"
 
 msgid "Qatar"
 msgstr "Katar"
@@ -2904,6 +3024,9 @@ msgstr "Obnovené Wii VC"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (predvolené)"
 
+msgid "Retropad"
+msgstr "Retropad"
+
 msgid "Retropad (Default)"
 msgstr "Retropad (predvolené)"
 
@@ -2924,6 +3047,9 @@ msgstr "Otočiť obrazovku, užitočné pre určité vertikálne homebrew hry.Ot
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Otočený 4-cestný joystick (Q*Bert)"
+
+msgid "Rotates screen by 90 degrees. Intended for rotating displays."
+msgstr "Otočí obrazovku o 90 stupňov. Určené pre otočné displeje."
 
 msgid "Rotates the screens, to simulate holding the DS sideways."
 msgstr "Otáča obrazovky, aby simuloval držanie DS nabok."
@@ -2951,6 +3077,9 @@ msgstr "Režim škálovania"
 
 msgid "SCREEN FILTERING"
 msgstr "Filtrovanie obrazovky"
+
+msgid "SCREEN ORIENTATION"
+msgstr "Orientácia obrazovky"
 
 msgid "SCREEN SETTINGS"
 msgstr "Nastavenia obrazovky"
@@ -3144,6 +3273,9 @@ msgstr "Nastavte veľkosť brány virtuálnych joystickov. Menší zvyšuje citl
 msgid "Shader Interpreter only"
 msgstr "Iba interpreter shadera"
 
+msgid "Shared"
+msgstr "Zdieľané"
+
 msgid "Sharp 1"
 msgstr "Ostré 1"
 
@@ -3173,6 +3305,9 @@ msgstr "Zjednodušená čínština"
 
 msgid "Simulate LCD color inaccuracy."
 msgstr "Simulovať nepresnosť farieb LCD."
+
+msgid "Simultaneous"
+msgstr "Súčasné"
 
 msgid "Singapore"
 msgstr "Singapur"
@@ -3519,6 +3654,9 @@ msgstr "UDP tunel"
 msgid "UPSCALE FILTER"
 msgstr "Filter zväčšenia"
 
+msgid "USA"
+msgstr "USA"
+
 msgid "USE DSP AUDIO"
 msgstr "Použiť DSP audio"
 
@@ -3536,6 +3674,9 @@ msgstr "Ukrajina"
 
 msgid "Ultra"
 msgstr "Ultra"
+
+msgid "Universe BIOS is not compatible with cheats."
+msgstr "Universe BIOS nie je kompatibilný s cheatmi."
 
 msgid "Unlimited"
 msgstr "Bez obmedzenia"
@@ -3579,6 +3720,9 @@ msgstr "Použiť SSAA namiesto MSAA pre anti-aliasing. SSAA môže vyzerať lep�
 msgid "Use language and username from the NDS Firmware"
 msgstr "Použiť jazyk a meno používateľa z firmvéru NDS"
 
+msgid "Use one save file per game."
+msgstr "Použiť jeden súbor uloženia pre hru."
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Použiť preemptívne snímky namiesto run-ahead. Beží dopredu iba keď sa zmení stav ovládača."
 
@@ -3597,6 +3741,9 @@ msgstr "Užitočné pre ovládače typu N64."
 msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
 msgstr "Užitočné pre ovládače štýlu N64. Obmedzené klávesové skratky pre ovládače bez vyhradenej klávesovej skratky."
 
+msgid "Useful for certain arcade games."
+msgstr "Užitočné pre niektoré arcade hry."
+
 msgid "Useful for speedruns/glitches."
 msgstr "Užitočné pre speedruns/glitche."
 
@@ -3614,6 +3761,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "Preskočiť VBI"
+
+msgid "VERTICAL ROTATION (TATE)"
+msgstr "Zvislá rotácia (tate)"
 
 msgid "VIDEO FILTERS"
 msgstr "Video filtre"
@@ -3650,6 +3800,9 @@ msgstr "Upozorniť na problémy BIOSu"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "Upozorniť na nepodporované funkcie"
+
+msgid "WHEELS"
+msgstr "Kolieska"
 
 msgid "WIDESCREEN"
 msgstr "Širokouhlé"

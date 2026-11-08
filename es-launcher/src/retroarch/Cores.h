@@ -45,6 +45,9 @@ namespace es::launcher::retroarch
 		// false when rewinding and run-ahead break the core for this system
 		virtual bool supportsRewindAndRunAhead(const LaunchContext& /*ctx*/) const { return true; }
 
+		// Arguments of RetroArch before the game ("--subsystem neocd")
+		virtual std::vector<std::string> commandArguments(const LaunchContext& /*ctx*/) const { return {}; }
+
 		// input_libretro_device_pN, when the core needs another device than the RetroPad
 		virtual std::optional<std::string> deviceType(const LaunchContext& /*ctx*/, int /*player*/) const { return std::nullopt; }
 	};

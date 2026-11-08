@@ -45,6 +45,7 @@ EMULATORS = {
     'eden': 'eden',
     'melonds': 'melonds',
     'mupen64plus': 'mupen64plus',
+    'supermodel': 'supermodel',
     'ymir': 'ymir',
     'pcsx2': 'pcsx2',
     'ppsspp': 'ppsspp',
@@ -65,6 +66,7 @@ CORE_ALIASES = {
         'beetle-saturn': ['mednafen_saturn'],
         'pce': ['mednafen_pce'],
         'pce_fast': ['mednafen_pce_fast'],
+        'mame078plus': ['mame2003_plus'],
     },
 }
 

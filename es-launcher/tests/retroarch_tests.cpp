@@ -656,6 +656,51 @@ static void testCoreProfiles()
 		CHECK(o.get("wswan_rotate_display") == "portrait");
 		CHECK(config.get("wswan_rotate_display") == "portrait");
 	}
+
+	// Arcade: FBNeo (Neo Geo BIOS, Neo Geo CD subsystem), MAME 2003-Plus, NeoCD, Flycast boards
+	{
+		ConfigFile o;
+		ConfigFile config;
+		ctx.game.system = "neogeo";
+		ctx.game.rom = "/roms/neogeo/mslug.zip";
+		ctx.settings = Settings({ { "fbneo-neogeo-mode-switch", "AES Japan" }, { "fbneo-frameskip", "1" } }, {}, {});
+		const Core& fbneo = coreProfile("fbneo");
+		fbneo.setCoreOptions(ctx, o);
+		fbneo.setConfig(ctx, config);
+		CHECK(o.get("fbneo-neogeo-mode") == "DIPSWITCH");
+		CHECK(o.get("fbneo-dipswitch-mslug-BIOS") == "AES Japan");
+		CHECK(o.get("fbneo-frameskip-type") == "Fixed");
+		CHECK(o.get("fbneo-memcard-mode") == "per-game");
+		CHECK(config.get("input_player1_select") == "num5");
+		CHECK(fbneo.commandArguments(ctx).empty());
+		ctx.game.system = "neogeocd";
+		CHECK((fbneo.commandArguments(ctx) == std::vector<std::string>{ "--subsystem", "neocd" }));
+
+		ctx.settings = Settings({}, {}, {});
+		ctx.game.system = "neogeo";
+		fbneo.setCoreOptions(ctx, o);
+		CHECK(o.get("fbneo-neogeo-mode") == "UNIBIOS");
+
+		ctx.game.system = "mame";
+		coreProfile("mame2003_plus").setCoreOptions(ctx, o);
+		CHECK(o.get("mame2003-plus_skip_disclaimer") == "enabled");
+		CHECK(o.get("mame2003-plus_neogeo_bios") == "unibios33");
+
+		ctx.game.system = "neogeocd";
+		coreProfile("neocd").setCoreOptions(ctx, o);
+		CHECK(o.get("neocd_per_content_saves") == "On");
+
+		ctx.game.system = "naomi";
+		ctx.settings = Settings({ { "screen_rotation_naomi", "vertical" }, { "reicast_allow_service_buttons", "enabled" } }, {}, {});
+		coreProfile("flycast").setCoreOptions(ctx, o);
+		CHECK(o.get("reicast_screen_rotation") == "vertical");
+		ButtonMap buttons = { { "l3", "l3" }, { "r3", "r3" } };
+		coreProfile("flycast").adjustButtons(ctx, pad, buttons);
+		CHECK(buttons[0].second == "r3");
+		ctx.game.system = "dreamcast";
+		coreProfile("flycast").setCoreOptions(ctx, o);
+		CHECK(o.get("reicast_screen_rotation") == "horizontal");
+	}
 }
 
 void tests::runRetroArchTests()

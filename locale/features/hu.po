@@ -501,6 +501,9 @@ msgstr "9."
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ADJUST POWERPC FREQUENCY"
+msgstr "POWERPC FREKVENCIA BEÁLLÍTÁSA"
+
 msgid "ADVANCED OPTIONS"
 msgstr "BŐVÍTETT OPCIÓK"
 
@@ -536,6 +539,9 @@ msgstr "ÉLSIMITÁS MÓD"
 
 msgid "ANTI-BLUR"
 msgstr "ANTI-BLUR"
+
+msgid "ARI/D93 (recommended for all JP developed games)"
+msgstr "ARI/D93 (ajánlott minden japán fejlesztésű játékhoz)"
 
 msgid "ASMJIT Recompiler"
 msgstr "ASMJIT Újrafordító"
@@ -681,6 +687,18 @@ msgstr "Hozzávetőleges (gyors)"
 msgid "April"
 msgstr "Április"
 
+msgid "Arcade MVS Europe"
+msgstr "Arcade MVS Europa"
+
+msgid "Arcade MVS Japan"
+msgstr "Arcade MVS Japán"
+
+msgid "Arcade MVS USA"
+msgstr "Arcade MVS USA"
+
+msgid "Arcade Universe BIOS (Cheats)"
+msgstr "Arcade Universe BIOS (Csalások)"
+
 msgid "Argentina"
 msgstr "Argentína"
 
@@ -741,6 +759,9 @@ msgstr "Azerbajdzsán"
 msgid "BILINEAR FILTERING"
 msgstr "BILINEÁRIS SZŰRÉS"
 
+msgid "BIOS LANGUAGE"
+msgstr "BIOS NYELVE"
+
 msgid "BIOS Language"
 msgstr "BIOS nyelv"
 
@@ -758,6 +779,15 @@ msgstr "NAGYFELBONTÁSÚ MÓD KEVERÉSE"
 
 msgid "BLENDING ACCURACY"
 msgstr "KEVERÉSI PONTOSSÁG"
+
+msgid "BT601_525/D65 (recommended for all US developed games)"
+msgstr "BT601_525/D65 (ajánlott minden amerikai fejlesztésű játékhoz)"
+
+msgid "BT601_525/D93"
+msgstr "BT601_525/D93"
+
+msgid "BT601_625/D65 (recommended for all EUR/AUS developed games)"
+msgstr "BT601_625/D65 (ajánlott minden európa/ausztrál fejlesztésű játékhoz)"
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "PUFFER GRAFIKAI PARANCSOK"
@@ -806,6 +836,9 @@ msgstr "Bilineáris (éles)"
 
 msgid "Bilinear (Smooth)"
 msgstr "Bilineáris (sima)"
+
+msgid "Biquintic"
+msgstr "Biquintic"
 
 msgid "Bisqwit 2x"
 msgstr "Bisqwit 2x"
@@ -881,6 +914,15 @@ msgstr "CD HOZZÁADÁS"
 
 msgid "CD-DA VOLUME"
 msgstr "CD-DA HANGERŐ"
+
+msgid "CDZ"
+msgstr "CDZ"
+
+msgid "CDZ MAME"
+msgstr "CDZ MAME"
+
+msgid "CDZ Universe 3.3"
+msgstr "CDZ Universe 3.3"
 
 msgid "CHEATS"
 msgstr "CSALÁSOK"
@@ -960,6 +1002,9 @@ msgstr "ÁTALAKÍTÁS 16 BITESRE"
 msgid "CPU"
 msgstr "CPU"
 
+msgid "CPU CLOCK"
+msgstr "CPU ÓRAJEL"
+
 msgid "CPU CORE"
 msgstr "CPU MAG"
 
@@ -998,6 +1043,12 @@ msgstr "Gyorsítótárazott fordító (gyorsabb)"
 
 msgid "Can be used to simulate colors of particular displays."
 msgstr "Használható bizonyos kijelzők színeinek szimulálására."
+
+msgid "Can change the language of some games."
+msgstr "Megváltoztathatja egyes játékok nyelvét."
+
+msgid "Can fix slowdown. Only works on some drivers."
+msgstr "Megoldhatja a lassulást. Csak néhány illesztőprogrammal működik."
 
 msgid "Can prevent audio skips on button presses when using run-ahead."
 msgstr "Megakadályozhatja, hogy a hang kimaradjon a gombnyomáskor."
@@ -1062,6 +1113,9 @@ msgstr "Válassza ki a mipmapping típusát."
 msgid "Choose system BIOS language."
 msgstr "Válassza ki a rendszer BIOS nyelvét."
 
+msgid "Choose the Dreamcast console region."
+msgstr "Válassza ki a Dreamcast konzol régióját."
+
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Válassza a Parallel N64 grafikus bővítményt."
 
@@ -1118,6 +1172,12 @@ msgstr "Összetett közvetlen (FirebrandX)"
 
 msgid "Config"
 msgstr "Beállítás"
+
+msgid "Console AES Japan"
+msgstr "Console AES Japan"
+
+msgid "Console AES World"
+msgstr "Console AES Világ"
 
 msgid "Control the texture filtering of the emulation."
 msgstr "Az emuláció textúraszűrésének vezérlése."
@@ -1329,6 +1389,9 @@ msgstr "Dupla pufferelés"
 msgid "Double the rendering resolution."
 msgstr "Duplázza meg a renderelési felbontást."
 
+msgid "Dreamcast BIOS's language setting. Can change the language of some games. Some games default to Japanese."
+msgstr "A Dreamcast BIOS nyelvi beállítása. Megváltoztathatja bizonyos játékok nyelvét. Néhány játék alapértelmezés szerint japán."
+
 msgid "DualShock Controller"
 msgstr "DualShock vezérlő"
 
@@ -1430,6 +1493,9 @@ msgstr "Engedélyezze a gyorsítótár csatlakoztatását. Egyes játékokban ja
 
 msgid "Enable controller rumble capabilities if supported by the controller."
 msgstr "Engedélyezze a vezérlő rezgő képességeit, ha a vezérlő támogatja."
+
+msgid "Enable crosshairs in shooting games for the selected players."
+msgstr "Engedélyezze a célkeresztet a lövöldözős játékokban a kiválasztott játékosok számára."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "A játékvezérlő nézet engedélyezése olyan játékoknál, amelyek két képernyőn keresztül működnek együtt. A képernyők közötti váltáshoz használja a Hotkey+R2 gombot."
@@ -1577,6 +1643,9 @@ msgstr "Biztosítsa, hogy a konzol által renderelt minden képkocka megjelenjen
 
 msgid "Estonia"
 msgstr "Észtország"
+
+msgid "Europe"
+msgstr "Európa"
 
 msgid "Even"
 msgstr "Egyenletes"
@@ -1905,6 +1974,9 @@ msgstr "HLE (Gyorsabb)"
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack. A legtöbb PAL játék sebességét 17%-kal növeli."
 
+msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
+msgstr "Segít a textúra-sérülés és a mélységproblémák esetén AMD GPU-kon. Bizonyos esetekben Intel GPU-k esetén is segíthet."
+
 msgid "Hermite"
 msgstr "Hermite"
 
@@ -1952,6 +2024,9 @@ msgstr "FEJLESZTETT HÁLÓ"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "TOVÁBBFEJLESZTETT POLIGONFELOSZTÁS"
+
+msgid "INPUT INTERFACE"
+msgstr "BEMENETI FELÜLET"
 
 msgid "INTEGER SCALING"
 msgstr "EGÉSZ SZÁMOS SKÁLÁZÁS"
@@ -2109,6 +2184,12 @@ msgstr "Kenya"
 msgid "Keyboard"
 msgstr "Billentyűzet"
 
+msgid "Keyboard passthrough"
+msgstr "Billentyűzet átjárás"
+
+msgid "Keyboard shortcuts unavailable if passing through the keyboard."
+msgstr "A billentyűparancsok nem érhetők el, ha áthaladnak a billentyűzeten."
+
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
 
@@ -2265,6 +2346,9 @@ msgstr "KÉZI TEXTÚRA MINTAVÉTELEZÉS"
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "MAXIMÁLIS ENERGIATAKARÉKOS CPU ELŐZMÉNYEK"
 
+msgid "MEMORY CARD MODE"
+msgstr "MEMÓRIAKÁRTYA ÜZEMMÓD"
+
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "MEMÓRIAKEZELŐ EGYSÉG"
 
@@ -2403,8 +2487,17 @@ msgstr "N64 3-point"
 msgid "NAT"
 msgstr "NAT"
 
+msgid "NATIVE DEPTH INTERPOLATION"
+msgstr "NATÍV MÉLYSÉG INTERPOLÁCIÓ"
+
 msgid "NDS VERSION"
 msgstr "NDS VERZIÓ"
+
+msgid "NEO GEO BIOS"
+msgstr "NEO GEO BIOS"
+
+msgid "NEO GEO CD BIOS"
+msgstr "NEO GEO CD BIOS"
 
 msgid "NES Gamepad"
 msgstr "NES Gamepad"
@@ -2514,8 +2607,14 @@ msgstr "Nincsenek Ubershaderek"
 msgid "No licenses enabled"
 msgstr "Nincsenek licencek engedélyezve"
 
+msgid "No skipping"
+msgstr "Nincs kihagyás"
+
 msgid "None (Default)"
 msgstr "Nincs (alapértelmezett)"
+
+msgid "None/Sharp Pixels"
+msgstr "Nincs/Éles pixelek"
 
 msgid "Normal"
 msgstr "Normál"
@@ -2646,6 +2745,15 @@ msgstr "Túlhajtja az SNES CPU-t (Gradius 3, Super R-Type)."
 msgid "Overrides the language mode of the emulated console."
 msgstr "Felülbírálja az emulált konzol nyelvi módját."
 
+msgid "P1 & P2"
+msgstr "P1 & P2"
+
+msgid "P1 only"
+msgstr "P1 csak"
+
+msgid "P2 only"
+msgstr "P2 csak"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2657,6 +2765,9 @@ msgstr "PCE Joypad"
 
 msgid "PCE Mouse"
 msgstr "PCE Mouse"
+
+msgid "PER-GAME SAVES"
+msgstr "JÁTÉKONKÉNT MENTES"
 
 msgid "PERFORMANCE"
 msgstr "TELJESÍTMÉNY"
@@ -2681,6 +2792,9 @@ msgstr "ELŐNYBEN RÉSZESÍTETT SPU SZÁLAK"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM stílus (FirebrandX)"
+
+msgid "PVM_20M2U/D93"
+msgstr "PVM_20M2U/D93"
 
 msgid "Paddle Control"
 msgstr "Tekerővezérlés"
@@ -2729,6 +2843,9 @@ msgstr "1 másodpercenként, összesen 60 mp (660 MB|120 MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "1 másodpercenként, összesen 90 másodperc (990 MB|180 MB)"
+
+msgid "Per-game"
+msgstr "Játékonként"
 
 msgid "Peru"
 msgstr "Peru"
@@ -2798,6 +2915,9 @@ msgstr "Pulse (Alap)"
 
 msgid "Pure Interpreter (Most Accurate)"
 msgstr "Egyszerű fordító (legpontosabb)"
+
+msgid "QUAD RENDERING"
+msgstr "QUAD RENDERING"
 
 msgid "Qatar"
 msgstr "Katar"
@@ -2904,6 +3024,9 @@ msgstr "Felújított Wii VC"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Alap)"
 
+msgid "Retropad"
+msgstr "Retropad"
+
 msgid "Retropad (Default)"
 msgstr "Retropad (alapértelmezett)"
 
@@ -2924,6 +3047,9 @@ msgstr "A képernyő elforgatása, hasznos bizonyos függőleges játékmenetű 
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Forgatható 4 irányú bot (Q*Bert)"
+
+msgid "Rotates screen by 90 degrees. Intended for rotating displays."
+msgstr "90 fokkal elforgatja a képernyőt. Forgó kijelzőkhöz való."
 
 msgid "Rotates the screens, to simulate holding the DS sideways."
 msgstr "Elforgatja a képernyőket, hogy szimulálja a DS oldalirányú tartását."
@@ -2951,6 +3077,9 @@ msgstr "SKÁLÁZÁSI MÓD"
 
 msgid "SCREEN FILTERING"
 msgstr "KÉPERNYŐ SZŰRÉS"
+
+msgid "SCREEN ORIENTATION"
+msgstr "KÉPERNYŐ TÁJOLÁSA"
 
 msgid "SCREEN SETTINGS"
 msgstr "KÉPERNYŐBEÁLLÍTÁSOK"
@@ -3144,6 +3273,9 @@ msgstr "A virtuális joystickok kapuméretének beállítása. A kisebb növeli 
 msgid "Shader Interpreter only"
 msgstr "Csak Shader Interpreter"
 
+msgid "Shared"
+msgstr "Megosztott"
+
 msgid "Sharp 1"
 msgstr "Éles 1"
 
@@ -3173,6 +3305,9 @@ msgstr "Egyszerűsített kínai"
 
 msgid "Simulate LCD color inaccuracy."
 msgstr "Szimulálja az LCD színpontatlanságát."
+
+msgid "Simultaneous"
+msgstr "Egyidejű"
 
 msgid "Singapore"
 msgstr "Szingapúr"
@@ -3519,6 +3654,9 @@ msgstr "UDP-alagút"
 msgid "UPSCALE FILTER"
 msgstr "FELSKÁLÁZÓ SZŰRŐ"
 
+msgid "USA"
+msgstr "USA"
+
 msgid "USE DSP AUDIO"
 msgstr "DSP AUDIO HASZNÁLATA"
 
@@ -3536,6 +3674,9 @@ msgstr "Ukrajna"
 
 msgid "Ultra"
 msgstr "Ultra"
+
+msgid "Universe BIOS is not compatible with cheats."
+msgstr "Az Universe BIOS nem kompatibilis a csalásokkal."
 
 msgid "Unlimited"
 msgstr "Korlátlan"
@@ -3579,6 +3720,9 @@ msgstr "Használja az SSAA-t az MSAA helyett az anti-aliasinghez. Az SSAA jobban
 msgid "Use language and username from the NDS Firmware"
 msgstr "Az NDS firmware nyelvének és felhasználónevének használata"
 
+msgid "Use one save file per game."
+msgstr "Használjon egy mentési fájlt játékonként."
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Használjon preemptív kereteket a előrefutás helyett. Csak akkor fut előre, ha a vezérlő állapota megváltozik."
 
@@ -3597,6 +3741,9 @@ msgstr "Hasznos az N64 típusú vezérlőkhöz."
 msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
 msgstr "Hasznos az N64 típusú vezérlőkhöz. Korlátozott gyorsbillentyűk a dedikált gyorsbillentyű nélküli vezérlőkhöz."
 
+msgid "Useful for certain arcade games."
+msgstr "Hasznos bizonyos arcade játékokhoz."
+
 msgid "Useful for speedruns/glitches."
 msgstr "Hasznos speedruns/glitches esetén."
 
@@ -3614,6 +3761,9 @@ msgstr "Üzbegisztán"
 
 msgid "VBI SKIP"
 msgstr "VBI SKIP (KIHAGYÁS)"
+
+msgid "VERTICAL ROTATION (TATE)"
+msgstr "FÜGGŐLEGES FORGÁS (TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "VIDEÓSZŰRŐK"
@@ -3650,6 +3800,9 @@ msgstr "FIGYELMEZTETÉS A BIOS PROBLÉMÁKRA"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "FIGYELMEZTETÉS A NEM TÁMOGATOTT FUNKCIÓKRÓL"
+
+msgid "WHEELS"
+msgstr "KORMÁNY"
 
 msgid "WIDESCREEN"
 msgstr "SZÉLESVÁSZNÚ"

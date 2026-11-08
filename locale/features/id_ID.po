@@ -501,6 +501,9 @@ msgstr "ke-9"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ADJUST POWERPC FREQUENCY"
+msgstr "SESUAIKAN FREKUENSI POWERPC"
+
 msgid "ADVANCED OPTIONS"
 msgstr "OPSI LANJUTAN"
 
@@ -536,6 +539,9 @@ msgstr "MODE ANTI-ALIASING"
 
 msgid "ANTI-BLUR"
 msgstr "ANTI-BLUR"
+
+msgid "ARI/D93 (recommended for all JP developed games)"
+msgstr "ARI/D93 (rekomendasi untuk semua game yang di kembangkan JP / Jepang )"
 
 msgid "ASMJIT Recompiler"
 msgstr "ASMJIT Recompiler-( Kompilasi Ulang )"
@@ -681,6 +687,18 @@ msgstr "Approximate / Perkiraan (Cepat)"
 msgid "April"
 msgstr "April"
 
+msgid "Arcade MVS Europe"
+msgstr "Arcade MVS Eropa"
+
+msgid "Arcade MVS Japan"
+msgstr "Arcade MVS Jepang"
+
+msgid "Arcade MVS USA"
+msgstr "Arcade MVS Amerika"
+
+msgid "Arcade Universe BIOS (Cheats)"
+msgstr "Arcade Universe BIOS (Cheats)"
+
 msgid "Argentina"
 msgstr "Argentina"
 
@@ -741,6 +759,9 @@ msgstr "Azerbaijan"
 msgid "BILINEAR FILTERING"
 msgstr "PENYARINGAN BILINEAR"
 
+msgid "BIOS LANGUAGE"
+msgstr "BAHASA BIOS"
+
 msgid "BIOS Language"
 msgstr "Bahasa BIOS"
 
@@ -758,6 +779,15 @@ msgstr "CAMPUR MODE RESOLUSI TINGGI"
 
 msgid "BLENDING ACCURACY"
 msgstr "Akurasi Pencampuran Warna (Blending)"
+
+msgid "BT601_525/D65 (recommended for all US developed games)"
+msgstr "BT601_525/D65 (disarankan untuk semua game buatan AS)"
+
+msgid "BT601_525/D93"
+msgstr "BT601_525/D93"
+
+msgid "BT601_625/D65 (recommended for all EUR/AUS developed games)"
+msgstr "BT601_625/D65 (disarankan untuk semua game buatan Eropa/Australia)"
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "BUFFER PERINTAH GRAFIS"
@@ -806,6 +836,9 @@ msgstr "Bilinear (Tajam)"
 
 msgid "Bilinear (Smooth)"
 msgstr "Bilinear (Halus)"
+
+msgid "Biquintic"
+msgstr "Bikuintik"
 
 msgid "Bisqwit 2x"
 msgstr "Bisqwit 2x"
@@ -881,6 +914,15 @@ msgstr "CD ADD-ON"
 
 msgid "CD-DA VOLUME"
 msgstr "VOLUME CD-DA"
+
+msgid "CDZ"
+msgstr "CDZ"
+
+msgid "CDZ MAME"
+msgstr "CDZ MAME"
+
+msgid "CDZ Universe 3.3"
+msgstr "CDZ Universe BIOS 3.3"
 
 msgid "CHEATS"
 msgstr "Cheat / Kode Curang"
@@ -960,6 +1002,9 @@ msgstr "Ubah ke 16-Bit"
 msgid "CPU"
 msgstr "CPU / Prosesor"
 
+msgid "CPU CLOCK"
+msgstr "CPU CLOCK"
+
 msgid "CPU CORE"
 msgstr "CORE CPU"
 
@@ -998,6 +1043,12 @@ msgstr "Terjemahkan Cached (Cepat)"
 
 msgid "Can be used to simulate colors of particular displays."
 msgstr "Dapat dipakai untuk simulasi warna tampilan khusus"
+
+msgid "Can change the language of some games."
+msgstr "Dapat Mengubah Bahasa dari beberapa game"
+
+msgid "Can fix slowdown. Only works on some drivers."
+msgstr "Dapat memperbaiki perlambatan, hanya bekerja pada beberapa drivers"
 
 msgid "Can prevent audio skips on button presses when using run-ahead."
 msgstr "Dapat mencegah lompatan audio saat menekan tombol saat menggunakan run-ahead."
@@ -1062,6 +1113,9 @@ msgstr "Pilih jenis mipmapping (optimasi tekstur jarak jauh)."
 msgid "Choose system BIOS language."
 msgstr "Pilih bahasa BIOS sistem."
 
+msgid "Choose the Dreamcast console region."
+msgstr "Pilih Wilayah Konsol Dreamcast"
+
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Pilih plugin grafis Parallel N64."
 
@@ -1118,6 +1172,12 @@ msgstr "Komposit/Gabung Langsung (FirebrandX)"
 
 msgid "Config"
 msgstr "Konfigurasi"
+
+msgid "Console AES Japan"
+msgstr "Konsol AES Japan"
+
+msgid "Console AES World"
+msgstr "Konsol AES World"
 
 msgid "Control the texture filtering of the emulation."
 msgstr "Atur penyaringan (filtering) tekstur pada emulasi."
@@ -1329,6 +1389,9 @@ msgstr "Double buffering"
 msgid "Double the rendering resolution."
 msgstr "Gandakan resolusi rendering."
 
+msgid "Dreamcast BIOS's language setting. Can change the language of some games. Some games default to Japanese."
+msgstr "Pengaturan bahasa Dreamcast BIOS's. Dapat mengubahBeberapa games standar bahasa jepang"
+
 msgid "DualShock Controller"
 msgstr "Kontroler DualShock"
 
@@ -1430,6 +1493,9 @@ msgstr "Aktifkan pemasangan cache. Dapat meningkatkan performa dan kompatibilita
 
 msgid "Enable controller rumble capabilities if supported by the controller."
 msgstr "Aktifkan fitur getar (rumble) jika didukung oleh kontroler."
+
+msgid "Enable crosshairs in shooting games for the selected players."
+msgstr "Mengaktifkan tampilan corsair (bidik) dalam game untuk pemain yang dipilih"
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "Aktifkan tampilan gamepad untuk game yang memiliki interaksi di dua layar.Gunakan Hotkey+R2 untuk berganti layar."
@@ -1577,6 +1643,9 @@ msgstr "Memastikan setiap frame gambar yang diproses konsol selalu ditampilkan k
 
 msgid "Estonia"
 msgstr "Estonia"
+
+msgid "Europe"
+msgstr "Eropa"
 
 msgid "Even"
 msgstr "Meskipun"
@@ -1905,6 +1974,9 @@ msgstr "HLE (Cepat)"
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Peretasan. meningkatkan kebanyakan games PAL' kecepatan dengan 17%"
 
+msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
+msgstr "Membantu mengatasi tekstur rusak dan masalah kedalaman gambar pada GPU AMD.Dalam beberapa kasus, ini juga bisa membantu GPU Intel."
+
 msgid "Hermite"
 msgstr "Hermite"
 
@@ -1952,6 +2024,9 @@ msgstr "Perbaikan Model Objek (Mesh)"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "Perbaikan Pembagian Poligon"
+
+msgid "INPUT INTERFACE"
+msgstr "INPUT (MASUKAN) ANTARMUKA"
 
 msgid "INTEGER SCALING"
 msgstr "SKALA BILANGAN BULAT"
@@ -2109,6 +2184,12 @@ msgstr "Kenya"
 msgid "Keyboard"
 msgstr "Keyboard"
 
+msgid "Keyboard passthrough"
+msgstr "Melewati Keyboard"
+
+msgid "Keyboard shortcuts unavailable if passing through the keyboard."
+msgstr "Pintasan keyboard tidak tersedia jika melewati keyboard."
+
 msgid "Konami Justifier"
 msgstr "Konami Justifie"
 
@@ -2265,6 +2346,9 @@ msgstr "Pengambilan Sampel Tekstur Manual"
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "Penghematan Daya Maksimal Interupsi CPU"
 
+msgid "MEMORY CARD MODE"
+msgstr "MODE KARTU MEMORI"
+
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "UNIT PENGELOLA MEMORI"
 
@@ -2403,8 +2487,17 @@ msgstr "N64 3-Poin"
 msgid "NAT"
 msgstr "NAT (Jenis pengaturan jaringan)"
 
+msgid "NATIVE DEPTH INTERPOLATION"
+msgstr " Interpolasi Kedalaman Bawaan (Native Depth Interpolation)"
+
 msgid "NDS VERSION"
 msgstr "Versi NDS (Nintendo DS)"
+
+msgid "NEO GEO BIOS"
+msgstr "NEO GEO BIOS"
+
+msgid "NEO GEO CD BIOS"
+msgstr "NEO GEO CD BIOS"
 
 msgid "NES Gamepad"
 msgstr "NES Gamepad"
@@ -2514,8 +2607,14 @@ msgstr "Tanpa Ubershaders"
 msgid "No licenses enabled"
 msgstr "Tidak ada lisensi yang aktif"
 
+msgid "No skipping"
+msgstr "Tanpa skipping"
+
 msgid "None (Default)"
 msgstr "Tidak ada (Default / Bawaan)"
+
+msgid "None/Sharp Pixels"
+msgstr "Tidak Ada / Piksel Tajam"
 
 msgid "Normal"
 msgstr "Normal"
@@ -2646,6 +2745,15 @@ msgstr "Overclock the SNES CPU (Gradius 3, Super Tipe-R)."
 msgid "Overrides the language mode of the emulated console."
 msgstr "Menimpa pengaturan bahasa pada konsol yang diemulasikan."
 
+msgid "P1 & P2"
+msgstr "P1 dan P2"
+
+msgid "P1 only"
+msgstr "Hanya P1"
+
+msgid "P2 only"
+msgstr "Hanya P2"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1 (Pixel Aspect Ratio)"
 
@@ -2657,6 +2765,9 @@ msgstr "Joypad PCE"
 
 msgid "PCE Mouse"
 msgstr "Mouse PCE"
+
+msgid "PER-GAME SAVES"
+msgstr "PENYIMPANAN TIAP-GAME"
 
 msgid "PERFORMANCE"
 msgstr "PERFORMA"
@@ -2681,6 +2792,9 @@ msgstr "THREADS SPU DI-UTAMAKAN"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "Gaya PVM (FirebrandX)"
+
+msgid "PVM_20M2U/D93"
+msgstr "PVM_20M2U/D93 (Model monitor tabung/CRT profesional Sony)"
 
 msgid "Paddle Control"
 msgstr "Kontrol Paddle"
@@ -2729,6 +2843,9 @@ msgstr "Setiap ls, 60s total (660MB|120MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "Setiap ls, 90s total (990MB|180MB)"
+
+msgid "Per-game"
+msgstr "Tiap-game"
 
 msgid "Peru"
 msgstr "Peru"
@@ -2798,6 +2915,9 @@ msgstr "Denyut / Pulse (Bawaan)"
 
 msgid "Pure Interpreter (Most Accurate)"
 msgstr "Terjemahkan Asli (Lebih Akurat)"
+
+msgid "QUAD RENDERING"
+msgstr "QUAD RENDERING"
 
 msgid "Qatar"
 msgstr "Qatar"
@@ -2904,6 +3024,9 @@ msgstr "Wii VC (Virtual Console) yang Dipulihkan"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Bawaan)"
 
+msgid "Retropad"
+msgstr "Retropad"
+
 msgid "Retropad (Default)"
 msgstr "Retropad (Default / Bawaan)"
 
@@ -2924,6 +3047,9 @@ msgstr "Putar layar, berguna untuk gameplay homebrew vertikal tertentu."
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Rotasi 4-Way Stick (Q*Bert"
+
+msgid "Rotates screen by 90 degrees. Intended for rotating displays."
+msgstr "Putar layar 90 derajat. Dimaksudkan untuk memutar tampilan."
 
 msgid "Rotates the screens, to simulate holding the DS sideways."
 msgstr "Putar layar untuk menahan DS ke samping"
@@ -2951,6 +3077,9 @@ msgstr "MODE SKALA"
 
 msgid "SCREEN FILTERING"
 msgstr "PENYARINGAN LAYAR"
+
+msgid "SCREEN ORIENTATION"
+msgstr "ORIENTASI LAYAR"
 
 msgid "SCREEN SETTINGS"
 msgstr "PENGATURAN LAYAR"
@@ -3144,6 +3273,9 @@ msgstr "Atur ukuran batas gerak (gate size) stik virtual.Semakin kecil akan meni
 msgid "Shader Interpreter only"
 msgstr "Hanya Penerjemah Shader (Shader Interpreter)"
 
+msgid "Shared"
+msgstr "Bagikan"
+
 msgid "Sharp 1"
 msgstr "Tajam 1"
 
@@ -3173,6 +3305,9 @@ msgstr "Cina Sederhana"
 
 msgid "Simulate LCD color inaccuracy."
 msgstr "Simulasi Warna LCD dalam Akurasi"
+
+msgid "Simultaneous"
+msgstr "Serentak"
 
 msgid "Singapore"
 msgstr "Singapura"
@@ -3519,6 +3654,9 @@ msgstr "Terowongan (Tunnel) UDP (Untuk koneksi jaringan/multiplayer)"
 msgid "UPSCALE FILTER"
 msgstr "SARING UPSCALE"
 
+msgid "USA"
+msgstr "Amerika"
+
 msgid "USE DSP AUDIO"
 msgstr "GUNAKAN AUDIO DSP"
 
@@ -3536,6 +3674,9 @@ msgstr "Ukraina"
 
 msgid "Ultra"
 msgstr "Ultra / Maksimal"
+
+msgid "Universe BIOS is not compatible with cheats."
+msgstr "Universe BIOS tidak kompatibel dengan cheat."
 
 msgid "Unlimited"
 msgstr "Tanpa Batas / Tak Terbatas"
@@ -3579,6 +3720,9 @@ msgstr "Gunakan SSAA sebagai pengganti MSAA untuk penghalus tepi gambar (anti-al
 msgid "Use language and username from the NDS Firmware"
 msgstr "Gunakan bahasa dan nama pengguna dari Firmware NDS"
 
+msgid "Use one save file per game."
+msgstr "Gunakan Satu File Tersimpan Tiap Game"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Gunakan bingkai preemptive sebagai pengganti run-ahead.Hanya berjalan mendahului (run-ahead) ketika status kontroler berubah."
 
@@ -3597,6 +3741,9 @@ msgstr "Berguna untuk kontroler bergaya N64."
 msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
 msgstr "Berguna untuk kontroler bergaya N64. Tombol pintas (hotkey) dibatasiuntuk kontroler yang tidak memiliki tombol pintas khusus."
 
+msgid "Useful for certain arcade games."
+msgstr "Berguna untuk game arcade tertentu."
+
 msgid "Useful for speedruns/glitches."
 msgstr "Berguna untuk speedruns/glitches."
 
@@ -3614,6 +3761,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "LEWATI VBI (Vertical Blank Interrupt)"
+
+msgid "VERTICAL ROTATION (TATE)"
+msgstr "ROTASI VERTIKAL（KEADAAN"
 
 msgid "VIDEO FILTERS"
 msgstr "FILTER VIDEO"
@@ -3650,6 +3800,9 @@ msgstr "PERINGATKAN JIKA ADA MASALAH BIOS"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "PERINGATKAN JIKA ADA FITUR YANG TIDAK DIDUKUNG"
+
+msgid "WHEELS"
+msgstr "SETIR"
 
 msgid "WIDESCREEN"
 msgstr "LAYAR LEBAR (WIDESCREEN)"

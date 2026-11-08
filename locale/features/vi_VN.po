@@ -495,6 +495,9 @@ msgstr "9"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ADJUST POWERPC FREQUENCY"
+msgstr "ADJUST POWERPC FREQUENCY"
+
 msgid "ADVANCED OPTIONS"
 msgstr "TÙY CHỌN NÂNG CAO"
 
@@ -530,6 +533,9 @@ msgstr "CHẾ ĐỘ KHỬ RĂNG CƯA"
 
 msgid "ANTI-BLUR"
 msgstr "CHỐNG MỜ"
+
+msgid "ARI/D93 (recommended for all JP developed games)"
+msgstr "ARI/D93 (được khuyến nghị cho tất cả các trò chơi do JP phát triển)"
 
 msgid "ASMJIT Recompiler"
 msgstr "ASMJIT Recompiler"
@@ -669,6 +675,18 @@ msgstr "Gần đúng (Nhanh)"
 msgid "April"
 msgstr "Tháng 4"
 
+msgid "Arcade MVS Europe"
+msgstr "Arcade MVS Europe"
+
+msgid "Arcade MVS Japan"
+msgstr "Arcade MVS Japan"
+
+msgid "Arcade MVS USA"
+msgstr "Arcade MVS USA"
+
+msgid "Arcade Universe BIOS (Cheats)"
+msgstr "Arcade Universe BIOS (Cheats)"
+
 msgid "Argentina"
 msgstr "Argentina"
 
@@ -726,6 +744,9 @@ msgstr "Azerbaijan"
 msgid "BILINEAR FILTERING"
 msgstr "BILINEAR FILTERING"
 
+msgid "BIOS LANGUAGE"
+msgstr "NGÔN NGỮ BIOS"
+
 msgid "BIOS Language"
 msgstr "Ngôn ngữ BIOS"
 
@@ -743,6 +764,15 @@ msgstr "CHẾ ĐỘ ĐỘ PHÂN GIẢI CAO"
 
 msgid "BLENDING ACCURACY"
 msgstr "ĐỘ CHÍNH XÁC PHA TRỘN"
+
+msgid "BT601_525/D65 (recommended for all US developed games)"
+msgstr "BT601_525/D65 (được khuyến nghị cho tất cả các trò chơi do Hoa Kỳ phát triển)"
+
+msgid "BT601_525/D93"
+msgstr "BT601_525/D93"
+
+msgid "BT601_625/D65 (recommended for all EUR/AUS developed games)"
+msgstr "BT601_625/D65 (được khuyến nghị cho tất cả các trò chơi được phát triển bởi EUR/AUS)"
 
 msgid "Bahrain"
 msgstr "Bahrain"
@@ -788,6 +818,9 @@ msgstr "Bilinear (Sắc nét)"
 
 msgid "Bilinear (Smooth)"
 msgstr "Bilinear (Làm mịn)"
+
+msgid "Biquintic"
+msgstr "Biquintic"
 
 msgid "Bisqwit 2x"
 msgstr "Bisqwit 2x"
@@ -854,6 +887,15 @@ msgstr "CD ADD-ON"
 
 msgid "CD-DA VOLUME"
 msgstr "ÂM LƯỢNG CD-DA"
+
+msgid "CDZ"
+msgstr "CDZ"
+
+msgid "CDZ MAME"
+msgstr "CDZ MAME"
+
+msgid "CDZ Universe 3.3"
+msgstr "CDZ Universe 3.3"
 
 msgid "CHEATS"
 msgstr "GIAN LẬN"
@@ -933,6 +975,9 @@ msgstr "CHUYỂN ĐỔI SANG 16-BIT"
 msgid "CPU"
 msgstr "CPU"
 
+msgid "CPU CLOCK"
+msgstr "CPU CLOCK"
+
 msgid "CPU CORE"
 msgstr "LÕI CPU"
 
@@ -965,6 +1010,12 @@ msgstr "Cached Interpreter (Nhanh hơn)"
 
 msgid "Can be used to simulate colors of particular displays."
 msgstr "Có thể được sử dụng để mô phỏng màu sắc của màn hình cụ thể."
+
+msgid "Can change the language of some games."
+msgstr "Có thể thay đổi ngôn ngữ của một số trò chơi."
+
+msgid "Can fix slowdown. Only works on some drivers."
+msgstr "Có thể giảm làm chậm. Chỉ chạy trên một số trình điều khiển."
 
 msgid "Can prevent audio skips on button presses when using run-ahead."
 msgstr "Có thể ngăn chặn âm thanh bỏ qua nhấn nút khi sử dụng Run-Afead.Có thể ngăn âm thanh bị bỏ qua khi nhấn nút khi sử dụng tính năng chạy tiếp."
@@ -1014,6 +1065,9 @@ msgstr "Chọn loại ánh xạ mipmapping."
 msgid "Choose system BIOS language."
 msgstr "Chọn ngôn ngữ BIOS hệ thống."
 
+msgid "Choose the Dreamcast console region."
+msgstr "Chọn khu vực bảng điều khiển Dreamcast."
+
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Chọn plugin đồ họa N64 song song."
 
@@ -1061,6 +1115,12 @@ msgstr "Composite Direct (FirebrandX)"
 
 msgid "Config"
 msgstr "Tùy chỉnh"
+
+msgid "Console AES Japan"
+msgstr "Console AES Japan"
+
+msgid "Console AES World"
+msgstr "Console AES World"
 
 msgid "Control the texture filtering of the emulation."
 msgstr "Kiểm soát việc lọc họa tiết của trình mô phỏng."
@@ -1254,6 +1314,9 @@ msgstr "Bộ đệm kép"
 msgid "Double the rendering resolution."
 msgstr "Nhân đôi độ phân giải kết xuất."
 
+msgid "Dreamcast BIOS's language setting. Can change the language of some games. Some games default to Japanese."
+msgstr "Cài đặt ngôn ngữ của Dreamcast BIOS. Có thể thay đổi ngôn ngữ của một số trò chơi. Một số trò chơi mặc định là tiếng Nhật."
+
 msgid "DualShock Controller"
 msgstr "DualShock Controller"
 
@@ -1352,6 +1415,9 @@ msgstr "Kích hoạt gắn kết bộ đệm. Có thể cải thiện hiệu su�
 
 msgid "Enable controller rumble capabilities if supported by the controller."
 msgstr "Kích hoạt khả năng rung nếu bộ điều khiển có hỗ trợ."
+
+msgid "Enable crosshairs in shooting games for the selected players."
+msgstr "Bật tâm ngắm trong trò chơi bắn súng cho những người chơi đã chọn."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "Bật chế độ xem gamepad cho các trò chơi có tương tác trên hai màn hình. Sử dụng Hotkey+R2 để chuyển đổi màn hình."
@@ -1499,6 +1565,9 @@ msgstr "Đảm bảo mọi khung hình mà bảng điều khiển hiển thị �
 
 msgid "Estonia"
 msgstr "Estonia"
+
+msgid "Europe"
+msgstr "Châu Âu"
 
 msgid "Even"
 msgstr "Như nhau"
@@ -1857,6 +1926,9 @@ msgstr "CẢI THIỆN LƯỚI"
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "CẢI THIỆN TÁCH ĐA GIÁC"
 
+msgid "INPUT INTERFACE"
+msgstr "GIAO DIỆN ĐẦU VÀO"
+
 msgid "INTEGER SCALING"
 msgstr "INTEGER SCALING"
 
@@ -2006,6 +2078,12 @@ msgstr "Kenya"
 
 msgid "Keyboard"
 msgstr "Bàn phím"
+
+msgid "Keyboard passthrough"
+msgstr "Keyboard passthrough"
+
+msgid "Keyboard shortcuts unavailable if passing through the keyboard."
+msgstr "Phím tắt không khả dụng nếu đi qua bàn phím."
 
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
@@ -2160,6 +2238,9 @@ msgstr "LẤY MẪU HỌA TIẾT THỦ CÔNG"
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "TIẾT KIỆM ĐIỆN"
 
+msgid "MEMORY CARD MODE"
+msgstr "CHẾ ĐỘ THẺ NHỚ"
+
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "ĐƠN VỊ QUẢN LÝ BỘ NHỚ"
 
@@ -2298,6 +2379,12 @@ msgstr "NAT"
 msgid "NDS VERSION"
 msgstr "PHIÊN BẢN NDS"
 
+msgid "NEO GEO BIOS"
+msgstr "NEO GEO BIOS"
+
+msgid "NEO GEO CD BIOS"
+msgstr "NEO GEO CD BIOS"
+
 msgid "NES Gamepad"
 msgstr "NES Gamepad"
 
@@ -2400,8 +2487,14 @@ msgstr "Không Ubershaders"
 msgid "No licenses enabled"
 msgstr "Không có giấy phép nào được kích hoạt"
 
+msgid "No skipping"
+msgstr "Không bỏ qua"
+
 msgid "None (Default)"
 msgstr "Không (Mặc định)"
+
+msgid "None/Sharp Pixels"
+msgstr "None/Sharp Pixels"
 
 msgid "Normal"
 msgstr "Bình thường"
@@ -2526,6 +2619,15 @@ msgstr "Ép xung CPU SNES (Gradius 3, Super R-Type)."
 msgid "Overrides the language mode of the emulated console."
 msgstr "Ghi đè chế độ ngôn ngữ của bảng điều khiển mô phỏng."
 
+msgid "P1 & P2"
+msgstr "P1 & P2"
+
+msgid "P1 only"
+msgstr "chỉ P1"
+
+msgid "P2 only"
+msgstr "chỉ P2"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2537,6 +2639,9 @@ msgstr "PCE Joypad"
 
 msgid "PCE Mouse"
 msgstr "Chuột PCE"
+
+msgid "PER-GAME SAVES"
+msgstr "LƯU CHO MỖI TRÒ CHƠI"
 
 msgid "PERFORMANCE HACKS"
 msgstr "HACK HIỆU SUẤT"
@@ -2558,6 +2663,9 @@ msgstr "PREFERRED SPU THREADS"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM Style (FirebrandX)"
+
+msgid "PVM_20M2U/D93"
+msgstr "PVM_20M2U/D93"
 
 msgid "Paddle Control"
 msgstr "Paddle Control"
@@ -2606,6 +2714,9 @@ msgstr "Mỗi 1s, tổng số 60s (660MB | 120MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "Mỗi 1s, tổng cộng 90s (990MB | 180MB)"
+
+msgid "Per-game"
+msgstr "Mỗi trò chơi"
 
 msgid "Peru"
 msgstr "Peru"
@@ -2675,6 +2786,9 @@ msgstr "Xung (Mặc định)"
 
 msgid "Pure Interpreter (Most Accurate)"
 msgstr "Trình biên dịch thuần túy (Chính xác nhất)"
+
+msgid "QUAD RENDERING"
+msgstr "QUAD RENDERING"
 
 msgid "Qatar"
 msgstr "Qatar"
@@ -2772,6 +2886,9 @@ msgstr "Resampling (Pirch Shift)"
 msgid "RetroPad (Default)"
 msgstr "Retropad (Mặc định)"
 
+msgid "Retropad"
+msgstr "Retropad"
+
 msgid "Retropad (Default)"
 msgstr "Retropad (Mặc định)"
 
@@ -2792,6 +2909,9 @@ msgstr "Xoay màn hình, hữu ích cho một số trò chơi thẳng đứng nh
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Rotated 4-Way Stick (Q*Bert)"
+
+msgid "Rotates screen by 90 degrees. Intended for rotating displays."
+msgstr "Xoay màn hình 90 độ. Dự định cho màn hình quay."
 
 msgid "Rotates the screens, to simulate holding the DS sideways."
 msgstr "Xoay màn hình để mô phỏng việc giữ DS sang một bên."
@@ -2816,6 +2936,9 @@ msgstr "SCALING MODE"
 
 msgid "SCREEN FILTERING"
 msgstr "LỌC MÀN HÌNH"
+
+msgid "SCREEN ORIENTATION"
+msgstr "ĐỊNH HƯỚNG MÀN HÌNH"
 
 msgid "SCREEN SETTINGS"
 msgstr "CÀI ĐẶT MÀN HÌNH"
@@ -2988,6 +3111,9 @@ msgstr "Đặt virtual joysticks gate size. Nhỏ hơn làm tăng độ nhạy. 
 msgid "Shader Interpreter only"
 msgstr "Chỉ trình biên dịch Shader"
 
+msgid "Shared"
+msgstr "Chia sẻ"
+
 msgid "Sharp 1"
 msgstr "Sắc 1"
 
@@ -3017,6 +3143,9 @@ msgstr "Trưng Quốc giản thể"
 
 msgid "Simulate LCD color inaccuracy."
 msgstr "Mô phỏng độ không chính xác màu LCD."
+
+msgid "Simultaneous"
+msgstr "Đồng thời"
 
 msgid "Singapore"
 msgstr "Singapore"
@@ -3330,6 +3459,9 @@ msgstr "UDP Tunnel"
 msgid "UPSCALE FILTER"
 msgstr "BỘ LỌC CAO CẤP"
 
+msgid "USA"
+msgstr "Hoa Kỳ"
+
 msgid "USE DSP AUDIO"
 msgstr "SỬ DỤNG ÂM THANH DSP"
 
@@ -3347,6 +3479,9 @@ msgstr "Ukraine"
 
 msgid "Ultra"
 msgstr "Siêu"
+
+msgid "Universe BIOS is not compatible with cheats."
+msgstr "Universe BIOS không tương thích với gian lận."
 
 msgid "Unlimited"
 msgstr "Không giới hạn"
@@ -3384,6 +3519,9 @@ msgstr "Sử dụng SSAA thay vì MSAA để khử răng cưa. SSAA có thể tr
 msgid "Use language and username from the NDS Firmware"
 msgstr "Sử dụng ngôn ngữ và tên người dùng từ Firmware NDS"
 
+msgid "Use one save file per game."
+msgstr "Sử dụng một tệp lưu cho mỗi trò chơi."
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Sử dụng các khung ưu tiên thay vì chạy về phía trước. Chỉ chạy về phía trước khi trạng thái bộ điều khiển thay đổi."
 
@@ -3402,6 +3540,9 @@ msgstr "Hữu ích cho bộ điều khiển kiểu N64."
 msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
 msgstr "Hữu ích cho bộ điều khiển kiểu N64. Hạn chế phím nóng cho bộ điều khiển không có phím nóng chuyên dụng."
 
+msgid "Useful for certain arcade games."
+msgstr "Hữu ích cho một số trò chơi arcade."
+
 msgid "Useful for speedruns/glitches."
 msgstr "Hữu ích khi speedruns/glitches."
 
@@ -3413,6 +3554,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "BỎ QUA VBI"
+
+msgid "VERTICAL ROTATION (TATE)"
+msgstr "XOAY DỌC (TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "BỘ LỌC VIDEO"
@@ -3449,6 +3593,9 @@ msgstr "CẢNH BÁO VỀ CÁC VẤN ĐỀ CỦA BIOS"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "CẢNH BÁO VỀ TÍNH NĂNG KHÔNG ĐƯỢC HỖ TRỢ"
+
+msgid "WHEELS"
+msgstr "WHEELS"
 
 msgid "WIDESCREEN"
 msgstr "MÀN HÌNH RỘNG"

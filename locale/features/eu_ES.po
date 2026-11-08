@@ -501,6 +501,9 @@ msgstr "9.a"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ADJUST POWERPC FREQUENCY"
+msgstr "DOITU POWERPC MAIZTASUNA"
+
 msgid "ADVANCED OPTIONS"
 msgstr "AUKERA AURRERATUAK"
 
@@ -536,6 +539,9 @@ msgstr "ANTIALIASING MODUA"
 
 msgid "ANTI-BLUR"
 msgstr "LAUSOTZE-AURKAKOA"
+
+msgid "ARI/D93 (recommended for all JP developed games)"
+msgstr "ARI/D93 (gomendatua JP garapeneko joko guztientzat)"
 
 msgid "ASMJIT Recompiler"
 msgstr "ASMJIT birkonpilatzailea"
@@ -681,6 +687,18 @@ msgstr "Gutxi gorabeherakoa (azkarra)"
 msgid "April"
 msgstr "Apirila"
 
+msgid "Arcade MVS Europe"
+msgstr "Arcade MVS Europa"
+
+msgid "Arcade MVS Japan"
+msgstr "Arcade MVS Japonia"
+
+msgid "Arcade MVS USA"
+msgstr "Arcade MVS AEB"
+
+msgid "Arcade Universe BIOS (Cheats)"
+msgstr "Arcade Universe BIOS (tranpak)"
+
 msgid "Argentina"
 msgstr "Argentina"
 
@@ -741,6 +759,9 @@ msgstr "Azerbaijan"
 msgid "BILINEAR FILTERING"
 msgstr "IRAGAZKETA BILINEALA"
 
+msgid "BIOS LANGUAGE"
+msgstr "BIOSAREN HIZKUNTZA"
+
 msgid "BIOS Language"
 msgstr "BIOSaren hizkuntza"
 
@@ -758,6 +779,15 @@ msgstr "NAHASTU BEREIZMEN HANDIKO MODUA"
 
 msgid "BLENDING ACCURACY"
 msgstr "NAHASKETAREN ZEHAZTASUNA"
+
+msgid "BT601_525/D65 (recommended for all US developed games)"
+msgstr "BT601_525/D65 (AEBn garatutako joko guztietarako gomendatua)"
+
+msgid "BT601_525/D93"
+msgstr "BT601_525/D93"
+
+msgid "BT601_625/D65 (recommended for all EUR/AUS developed games)"
+msgstr "BT601_625/D65 (EUR/AUSen garatutako joko guztietarako gomendatua)"
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "BUFFERREAN GORDE KOMANDO GRAFIKOAK"
@@ -806,6 +836,9 @@ msgstr "Bilineala (zorrotza)"
 
 msgid "Bilinear (Smooth)"
 msgstr "Bilineala (leuna)"
+
+msgid "Biquintic"
+msgstr "Bikintikoa"
 
 msgid "Bisqwit 2x"
 msgstr "Bisqwit 2x"
@@ -881,6 +914,15 @@ msgstr "CD GEHIGARRIA"
 
 msgid "CD-DA VOLUME"
 msgstr "CD-DA BOLUMENA"
+
+msgid "CDZ"
+msgstr "CDZ"
+
+msgid "CDZ MAME"
+msgstr "CDZ MAME"
+
+msgid "CDZ Universe 3.3"
+msgstr "CDZ Universe 3.3"
 
 msgid "CHEATS"
 msgstr "TRANPAK"
@@ -960,6 +1002,9 @@ msgstr "BIHURTU 16 BITERA"
 msgid "CPU"
 msgstr "PUZ"
 
+msgid "CPU CLOCK"
+msgstr "PUZAREN ERLOJUA"
+
 msgid "CPU CORE"
 msgstr "PUZAREN NUKLEOA"
 
@@ -998,6 +1043,12 @@ msgstr "Cachedun interpretatzailea (azkarragoa)"
 
 msgid "Can be used to simulate colors of particular displays."
 msgstr "Pantaila jakin batzuen koloreak simulatzeko erabil daiteke."
+
+msgid "Can change the language of some games."
+msgstr "Joko batzuen hizkuntza alda dezake."
+
+msgid "Can fix slowdown. Only works on some drivers."
+msgstr "Moteltzeak konpon ditzake. Kontrolatzaile batzuekin soilik dabil."
 
 msgid "Can prevent audio skips on button presses when using run-ahead."
 msgstr "Botoiak sakatzean audioan etenak saihets ditzake run-ahead erabiltzean."
@@ -1062,6 +1113,9 @@ msgstr "Aukeratu mipmapping mota."
 msgid "Choose system BIOS language."
 msgstr "Aukeratu sistemaren BIOSaren hizkuntza."
 
+msgid "Choose the Dreamcast console region."
+msgstr "Aukeratu Dreamcast kontsolaren eskualdea."
+
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Aukeratu Parallel N64 plugin grafikoa."
 
@@ -1118,6 +1172,12 @@ msgstr "Composite Direct (FirebrandX)"
 
 msgid "Config"
 msgstr "Konfigurazioa"
+
+msgid "Console AES Japan"
+msgstr "AES kontsola Japonia"
+
+msgid "Console AES World"
+msgstr "AES kontsola mundua"
 
 msgid "Control the texture filtering of the emulation."
 msgstr "Kontrolatu emulazioaren testura-iragazketa."
@@ -1329,6 +1389,9 @@ msgstr "Buffer bikoitza"
 msgid "Double the rendering resolution."
 msgstr "Bikoiztu errendatze-bereizmena."
 
+msgid "Dreamcast BIOS's language setting. Can change the language of some games. Some games default to Japanese."
+msgstr "Dreamcast BIOSaren hizkuntza-ezarpena. Joko batzuen hizkuntza alda dezake. Joko batzuek japoniera dute lehenetsita."
+
 msgid "DualShock Controller"
 msgstr "DualShock aginte-kontrola"
 
@@ -1430,6 +1493,9 @@ msgstr "Gaitu cachearen muntaketa. Joko batzuetan errendimendua eta bateragarrit
 
 msgid "Enable controller rumble capabilities if supported by the controller."
 msgstr "Gaitu aginte-kontrolaren bibrazioa, aginte-kontrolak onartzen badu."
+
+msgid "Enable crosshairs in shooting games for the selected players."
+msgstr "Gaitu mirak tiro-jokoetan, hautatutako jokalarientzat."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "Gaitu gamepad ikuspegia bi pantailen arteko elkarrekintza duten jokoetarako. Erabili laster-tekla+R2 pantailaz aldatzeko."
@@ -1577,6 +1643,9 @@ msgstr "Ziurtatu kontsolak errendatzen duen fotograma bakoitza pantailan erakust
 
 msgid "Estonia"
 msgstr "Estonia"
+
+msgid "Europe"
+msgstr "Europa"
 
 msgid "Even"
 msgstr "Bikoitia"
@@ -1905,6 +1974,9 @@ msgstr "HLE (Azkarrena)"
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hacka. PAL joko gehienen abiadura % 17 handitzen du."
 
+msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
+msgstr "AMD GPUetako testuren hondatzeekin eta sakonera-arazoekin laguntzen du. Zenbait kasutan Intel GPUei ere lagun diezaieke."
+
 msgid "Hermite"
 msgstr "Hermite"
 
@@ -1952,6 +2024,9 @@ msgstr "SARE HOBETUA"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "POLIGONOEN ZATIKETA HOBETUA"
+
+msgid "INPUT INTERFACE"
+msgstr "SARRERA-INTERFAZEA"
 
 msgid "INTEGER SCALING"
 msgstr "ESKALATZE OSOA"
@@ -2109,6 +2184,12 @@ msgstr "Kenya"
 msgid "Keyboard"
 msgstr "Teklatua"
 
+msgid "Keyboard passthrough"
+msgstr "Teklatuaren zuzeneko pasabidea"
+
+msgid "Keyboard shortcuts unavailable if passing through the keyboard."
+msgstr "Laster-teklak ez daude erabilgarri teklatua zuzenean pasatzen bada."
+
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
 
@@ -2265,6 +2346,9 @@ msgstr "ESKUZKO TESTURA-LAGINKETA"
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "ENERGIA AURREZTEKO GEHIENEZKO PUZ-ETENDURAK"
 
+msgid "MEMORY CARD MODE"
+msgstr "MEMORIA-TXARTELAREN MODUA"
+
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "MEMORIA KUDEATZEKO UNITATEA (MMU)"
 
@@ -2403,8 +2487,17 @@ msgstr "N64 3 puntukoa"
 msgid "NAT"
 msgstr "NAT"
 
+msgid "NATIVE DEPTH INTERPOLATION"
+msgstr "JATORRIZKO SAKONERAREN INTERPOLAZIOA"
+
 msgid "NDS VERSION"
 msgstr "NDS BERTSIOA"
+
+msgid "NEO GEO BIOS"
+msgstr "NEO GEO BIOSA"
+
+msgid "NEO GEO CD BIOS"
+msgstr "NEO GEO CD BIOSA"
 
 msgid "NES Gamepad"
 msgstr "NES gamepada"
@@ -2514,8 +2607,14 @@ msgstr "Ubershaderrik gabe"
 msgid "No licenses enabled"
 msgstr "Ez dago lizentziarik gaituta"
 
+msgid "No skipping"
+msgstr "Jauzirik gabe"
+
 msgid "None (Default)"
 msgstr "Bat ere ez (Lehenetsia)"
+
+msgid "None/Sharp Pixels"
+msgstr "Bat ere ez / pixel zorrotzak"
 
 msgid "Normal"
 msgstr "Normala"
@@ -2646,6 +2745,15 @@ msgstr "Egin overclock SNESen PUZari (Gradius 3, Super R-Type)."
 msgid "Overrides the language mode of the emulated console."
 msgstr "Emulatutako kontsolaren hizkuntza-modua gainidazten du."
 
+msgid "P1 & P2"
+msgstr "P1 & P2"
+
+msgid "P1 only"
+msgstr "P1 soilik"
+
+msgid "P2 only"
+msgstr "P2 soilik"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2657,6 +2765,9 @@ msgstr "PCE joypada"
 
 msgid "PCE Mouse"
 msgstr "PCE xagua"
+
+msgid "PER-GAME SAVES"
+msgstr "JOKO BAKOITZEKO GORDETZEAK"
 
 msgid "PERFORMANCE"
 msgstr "ERRENDIMENDUA"
@@ -2681,6 +2792,9 @@ msgstr "HOBETSITAKO SPU HARIAK"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM estiloa (FirebrandX)"
+
+msgid "PVM_20M2U/D93"
+msgstr "PVM_20M2U/D93"
 
 msgid "Paddle Control"
 msgstr "Paddle kontrola"
@@ -2729,6 +2843,9 @@ msgstr "1 s-ro, 60 s guztira (660MB|120MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "1 s-ro, 90 s guztira (990MB|180MB)"
+
+msgid "Per-game"
+msgstr "Joko bakoitzeko"
 
 msgid "Peru"
 msgstr "Peru"
@@ -2798,6 +2915,9 @@ msgstr "Pultsua (Lehenetsia)"
 
 msgid "Pure Interpreter (Most Accurate)"
 msgstr "Interpretatzaile hutsa (zehatzena)"
+
+msgid "QUAD RENDERING"
+msgstr "LAUKIEN (QUAD) ERRENDATZEA"
 
 msgid "Qatar"
 msgstr "Katar"
@@ -2904,6 +3024,9 @@ msgstr "Wii VC lehengoratua"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Lehenetsia)"
 
+msgid "Retropad"
+msgstr "Retropad"
+
 msgid "Retropad (Default)"
 msgstr "Retropad (Lehenetsia)"
 
@@ -2924,6 +3047,9 @@ msgstr "Biratu pantaila; erabilgarria jokaera bertikaleko homebrew batzuetarako.
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "4 norabideko palanka biratua (Q*Bert)"
+
+msgid "Rotates screen by 90 degrees. Intended for rotating displays."
+msgstr "Pantaila 90 gradu biratzen du. Pantaila biragarrietarako pentsatua."
 
 msgid "Rotates the screens, to simulate holding the DS sideways."
 msgstr "Pantailak biratzen ditu, DSa alboz eustea simulatzeko."
@@ -2951,6 +3077,9 @@ msgstr "ESKALATZE MODUA"
 
 msgid "SCREEN FILTERING"
 msgstr "PANTAILAREN IRAGAZKETA"
+
+msgid "SCREEN ORIENTATION"
+msgstr "PANTAILAREN ORIENTAZIOA"
 
 msgid "SCREEN SETTINGS"
 msgstr "PANTAILAREN EZARPENAK"
@@ -3144,6 +3273,9 @@ msgstr "Ezarri joystick birtualen atearen tamaina. Txikiagoak sentikortasuna han
 msgid "Shader Interpreter only"
 msgstr "Shader-interpretatzailea soilik"
 
+msgid "Shared"
+msgstr "Partekatua"
+
 msgid "Sharp 1"
 msgstr "Zorrotza 1"
 
@@ -3173,6 +3305,9 @@ msgstr "Txinera sinplifikatua"
 
 msgid "Simulate LCD color inaccuracy."
 msgstr "Simulatu LCDaren kolore-zehaztasunik eza."
+
+msgid "Simultaneous"
+msgstr "Aldiberekoa"
 
 msgid "Singapore"
 msgstr "Singapur"
@@ -3519,6 +3654,9 @@ msgstr "UDP Tunela"
 msgid "UPSCALE FILTER"
 msgstr "BEREIZMENA HANDITZEKO IRAGAZKIA"
 
+msgid "USA"
+msgstr "AEB"
+
 msgid "USE DSP AUDIO"
 msgstr "ERABILI DSP AUDIOA"
 
@@ -3536,6 +3674,9 @@ msgstr "Ukrainia"
 
 msgid "Ultra"
 msgstr "Ultra"
+
+msgid "Universe BIOS is not compatible with cheats."
+msgstr "Universe BIOS ez da tranpekin bateragarria."
 
 msgid "Unlimited"
 msgstr "Mugagabea"
@@ -3579,6 +3720,9 @@ msgstr "Erabili SSAA MSAAren ordez antialiasingerako. SSAAk itxura hobea izan de
 msgid "Use language and username from the NDS Firmware"
 msgstr "Erabili NDS firmwareko hizkuntza eta erabiltzaile-izena"
 
+msgid "Use one save file per game."
+msgstr "Erabili gordetze-fitxategi bat joko bakoitzeko."
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Erabili fotograma prebentiboak run-ahead-en ordez. Aginte-kontrolaren egoera aldatzen denean soilik exekutatzen du aurrez."
 
@@ -3597,6 +3741,9 @@ msgstr "Erabilgarria N64 estiloko aginte-kontroletarako."
 msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
 msgstr "Erabilgarria N64 estiloko aginte-kontroletarako. Laster-tekla mugatuak laster-teklarako botoirik ez duten aginte-kontroletan."
 
+msgid "Useful for certain arcade games."
+msgstr "Erabilgarria zenbait arcade jokotarako."
+
 msgid "Useful for speedruns/glitches."
 msgstr "Erabilgarria speedrun-etarako/akatsak aprobetxatzeko."
 
@@ -3614,6 +3761,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "VBI JAUZIA"
+
+msgid "VERTICAL ROTATION (TATE)"
+msgstr "BIRAKETA BERTIKALA (TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "BIDEO-IRAGAZKIAK"
@@ -3650,6 +3800,9 @@ msgstr "OHARTARAZI BIOSAREN ARAZOEZ"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "OHARTARAZI ONARTZEN EZ DIREN EZAUGARRIEZ"
+
+msgid "WHEELS"
+msgstr "BOLANTEAK"
 
 msgid "WIDESCREEN"
 msgstr "PANTAILA ZABALA"
