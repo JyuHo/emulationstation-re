@@ -235,7 +235,7 @@ namespace es::launcher::retroarch
 
 			for (const std::string& system : systems)
 			{
-				for (const fs::path& parent : { *setDir, *setDir / "GameBezels" })
+				for (const fs::path& parent : { *setDir, *setDir / "games", *setDir / "GameBezels" })
 				{
 					if (auto systemDir = childNoCase(parent, system))
 						if (auto overlay = overlayIn(*systemDir, game))

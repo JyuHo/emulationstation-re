@@ -19,6 +19,8 @@ set(ES_HEADERS
     ${CMAKE_CURRENT_SOURCE_DIR}/src/NetworkThread.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/ContentInstaller.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/catalog/CatalogInstaller.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/bezels/BezelProjectList.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/bezels/TheBezelProject.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/updates/Release.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/updates/SelfUpdater.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/system/SystemServices.h
@@ -57,6 +59,7 @@ set(ES_HEADERS
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiCollectionSystemsOptions.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiLoading.h # batocera
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiThemeInstaller.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiBezelInstaller.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiEmulatorCatalog.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiNetPlay.h # batocera
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiNetPlaySettings.h
@@ -128,6 +131,8 @@ set(ES_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/NetworkThread.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/ContentInstaller.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/catalog/CatalogInstaller.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/bezels/BezelProjectList.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/bezels/TheBezelProject.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/updates/Release.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/updates/SelfUpdater.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/system/SystemServices.cpp
@@ -164,6 +169,7 @@ set(ES_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiGamelistFilter.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiCollectionSystemsOptions.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiThemeInstaller.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiBezelInstaller.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiEmulatorCatalog.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiNetPlay.cpp # batocera
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiNetPlaySettings.cpp
@@ -254,6 +260,13 @@ if(ES_TESTS)
         ${CMAKE_CURRENT_SOURCE_DIR}/src ${RAPIDJSON_INCLUDE_DIRS})
     target_compile_options(es-app-update-tests PRIVATE -Wall -Wextra)
     add_test(NAME es-app-update-tests COMMAND es-app-update-tests)
+
+    add_executable(es-app-bezelproject-tests
+        ${CMAKE_CURRENT_SOURCE_DIR}/tests/bezelproject_tests.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/bezels/BezelProjectList.cpp)
+    target_include_directories(es-app-bezelproject-tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
+    target_compile_options(es-app-bezelproject-tests PRIVATE -Wall -Wextra)
+    add_test(NAME es-app-bezelproject-tests COMMAND es-app-bezelproject-tests)
 
     add_executable(es-app-system-services-tests
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/system_services_tests.cpp

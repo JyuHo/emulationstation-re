@@ -57,7 +57,6 @@
 #define script_systems "batocera-systems"; // --filter
 #define script_suport "batocera-support";
 #define script_gameforce "batocera-gameforce"; // buttonColorLed X, powerLed X
-#define script_bezelproject "batocera-es-thebezelproject"; // list, install X, remove X
 #define script_format "batocera-format"; // listDisks, listFstypes
 #define script_store "batocera-store"; // list, update, refresh, clean-all, install "X", remove "X"
 #define script_preupdategamelists "batocera-preupdate-gamelists-hook";
@@ -816,16 +815,6 @@ std::pair<std::string, int> ApiSystem::uninstallBatoceraTheme(std::string thname
 	}
 
 	return std::pair<std::string, int>(std::string(""), 1);
-}
-
-std::pair<std::string, int> ApiSystem::installBatoceraBezel(std::string bezelsystem, const std::function<void(const std::string)>& func)
-{
-	return executeScript("batocera-es-thebezelproject install " + bezelsystem, func);
-}
-
-std::pair<std::string, int> ApiSystem::uninstallBatoceraBezel(std::string bezelsystem, const std::function<void(const std::string)>& func)
-{
-	return executeScript("batocera-es-thebezelproject remove " + bezelsystem, func);
 }
 
 std::string ApiSystem::getMD5(const std::string fileName, bool fromZipContents)
