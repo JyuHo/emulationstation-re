@@ -501,6 +501,9 @@ msgstr "9"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ADJUST POWERPC FREQUENCY"
+msgstr "AJUSTEAZĂ FRECVENȚA POWERPC"
+
 msgid "ADVANCED OPTIONS"
 msgstr "OPȚIUNI AVANSATE"
 
@@ -536,6 +539,9 @@ msgstr "MOD ANTI-ALIASING"
 
 msgid "ANTI-BLUR"
 msgstr "ANTI-BLUR"
+
+msgid "ARI/D93 (recommended for all JP developed games)"
+msgstr "ARI/D93 (recomandat pentru toate jocurile japoneze)"
 
 msgid "ASMJIT Recompiler"
 msgstr "Recompilator ASMJIT"
@@ -681,6 +687,18 @@ msgstr "Aproximativă (Rapid)"
 msgid "April"
 msgstr "Aprilie"
 
+msgid "Arcade MVS Europe"
+msgstr "Arcade MVS Europe"
+
+msgid "Arcade MVS Japan"
+msgstr "Arcade MVS Japan"
+
+msgid "Arcade MVS USA"
+msgstr "Arcade MVS USA"
+
+msgid "Arcade Universe BIOS (Cheats)"
+msgstr "Arcade Universe BIOS (Cheat-uri)"
+
 msgid "Argentina"
 msgstr "Argentina"
 
@@ -741,6 +759,9 @@ msgstr "Azerbaijan"
 msgid "BILINEAR FILTERING"
 msgstr "FILTRARE BILINEARĂ"
 
+msgid "BIOS LANGUAGE"
+msgstr "LIMBĂ BIOS"
+
 msgid "BIOS Language"
 msgstr "Limbă BIOS"
 
@@ -758,6 +779,15 @@ msgstr "CONTOPEȘTE MODUL HIGH-RES"
 
 msgid "BLENDING ACCURACY"
 msgstr "ACURATEȚE CONTOPIRE"
+
+msgid "BT601_525/D65 (recommended for all US developed games)"
+msgstr "BT601_525/D65 (recomandat pentru toate jocurile din SUA)"
+
+msgid "BT601_525/D93"
+msgstr "BT601_525/D93"
+
+msgid "BT601_625/D65 (recommended for all EUR/AUS developed games)"
+msgstr "BT601_625/D65 (recomandat pentru toate jocurile din Europa/Australia)"
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "BUFFER-EAZĂ COMENZILE GRAFICE"
@@ -806,6 +836,9 @@ msgstr "Bilinear (Clar)"
 
 msgid "Bilinear (Smooth)"
 msgstr "Bilinear (Netezit)"
+
+msgid "Biquintic"
+msgstr "Biquintic"
 
 msgid "Bisqwit 2x"
 msgstr "Bisqwit 2x"
@@ -881,6 +914,15 @@ msgstr "CD ADD-ON"
 
 msgid "CD-DA VOLUME"
 msgstr "VOLUM CD-DA"
+
+msgid "CDZ"
+msgstr "CDZ"
+
+msgid "CDZ MAME"
+msgstr "CDZ MAME"
+
+msgid "CDZ Universe 3.3"
+msgstr "CDZ Universe 3.3"
 
 msgid "CHEATS"
 msgstr "CHEAT-URI"
@@ -960,6 +1002,9 @@ msgstr "COVERTEȘTE LA 16 BIȚI"
 msgid "CPU"
 msgstr "CPU"
 
+msgid "CPU CLOCK"
+msgstr "TACT CPU"
+
 msgid "CPU CORE"
 msgstr "NUCLEU CPU"
 
@@ -998,6 +1043,12 @@ msgstr "Interpretor cu cache (Mai rapid)"
 
 msgid "Can be used to simulate colors of particular displays."
 msgstr "Poate fi utilizat pentru a simula culorile unui anumit ecran."
+
+msgid "Can change the language of some games."
+msgstr "Poate schimba limba unora dintre jocuri."
+
+msgid "Can fix slowdown. Only works on some drivers."
+msgstr "Poate repara încetinirea. Funcționează doar cu unele drivere."
 
 msgid "Can prevent audio skips on button presses when using run-ahead."
 msgstr "Poate preveni omiterile de sunet la apăsarea pe butoane când se utilizează pre-rularea."
@@ -1062,6 +1113,9 @@ msgstr "Alege tip mip-mapping."
 msgid "Choose system BIOS language."
 msgstr "Alege limba BIOS-ului de sistem."
 
+msgid "Choose the Dreamcast console region."
+msgstr "Alege regiunea consolei Dreamcast."
+
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Alege plugin-ul grafic Parallel N64."
 
@@ -1118,6 +1172,12 @@ msgstr "Direct compozit (FirebrandX)"
 
 msgid "Config"
 msgstr "Configurat"
+
+msgid "Console AES Japan"
+msgstr "Console AES Japan"
+
+msgid "Console AES World"
+msgstr "Console AES World"
 
 msgid "Control the texture filtering of the emulation."
 msgstr "Controlează filtrarea texturilor emulării."
@@ -1329,6 +1389,9 @@ msgstr "Buffering dublu"
 msgid "Double the rendering resolution."
 msgstr "Dublează rezoluția de redare."
 
+msgid "Dreamcast BIOS's language setting. Can change the language of some games. Some games default to Japanese."
+msgstr "Setarea BIOS lingvistică a Dreamcast. Poate schimba limba unor jocuri. Unele jocuri au implicit japoneza."
+
 msgid "DualShock Controller"
 msgstr "Controler DualShock"
 
@@ -1430,6 +1493,9 @@ msgstr "Activează montarea cache-ului. Poate îmbunătăți performanța și co
 
 msgid "Enable controller rumble capabilities if supported by the controller."
 msgstr "Activează capabilitățile de vibrație ale controlerului dacă sunt suportate."
+
+msgid "Enable crosshairs in shooting games for the selected players."
+msgstr "Activează marcajele țintă în jocurile cu împușcături pentru jucătorii selectați."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "Activează vizualizarea de gamepad pentru jocurile care au interacțiune pe două ecrane. Folosește tasta rapidă+R2 pentru a comuta între ecrane."
@@ -1577,6 +1643,9 @@ msgstr "Asigură-te că fiecare cadru redat de consolă este afișat pe ecran."
 
 msgid "Estonia"
 msgstr "Estonia"
+
+msgid "Europe"
+msgstr "Europa"
 
 msgid "Even"
 msgstr "În mod egal"
@@ -1905,6 +1974,9 @@ msgstr "HLE (Cel mai rapid)"
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack. Crește viteza majorității jocurilor PAL cu 17%."
 
+msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
+msgstr "Ajută cu coruperea texturilor și problemele de adâncime pe GPU-urile AMD. Poate ajuta și pe GPU-uri Intel în unele cazuri."
+
 msgid "Hermite"
 msgstr "Hermite"
 
@@ -1952,6 +2024,9 @@ msgstr "PLASĂ ÎMBUNĂTĂȚITĂ"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "SEPARARE ÎMBUNĂTĂȚITĂ A POLIGOANELOR"
+
+msgid "INPUT INTERFACE"
+msgstr "INTERFAȚĂ DE INTRARE"
 
 msgid "INTEGER SCALING"
 msgstr "SCALARE ÎNTREAGĂ"
@@ -2109,6 +2184,12 @@ msgstr "Kenya"
 msgid "Keyboard"
 msgstr "Tastatură"
 
+msgid "Keyboard passthrough"
+msgstr "Passthrough tastatură"
+
+msgid "Keyboard shortcuts unavailable if passing through the keyboard."
+msgstr "Scurtăturile de tastatură nu vor fi disponibile dacă trec prin tastatură."
+
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
 
@@ -2265,6 +2346,9 @@ msgstr "EȘANTIONARE MANUALĂ A TEXTURILOR"
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "PREEMPȚII ECONOMISIRE DE ENERGIE MAXIMĂ CPU"
 
+msgid "MEMORY CARD MODE"
+msgstr "MOD CARD DE MEMORIE"
+
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "UNITATEA DE MANAGEMENT A MEMORIEI"
 
@@ -2403,8 +2487,17 @@ msgstr "N64 3-puncte"
 msgid "NAT"
 msgstr "NAT"
 
+msgid "NATIVE DEPTH INTERPOLATION"
+msgstr "ADÂNCIME INTERPOLARE NATIVĂ"
+
 msgid "NDS VERSION"
 msgstr "VERSIUNE NDS"
+
+msgid "NEO GEO BIOS"
+msgstr "BIOS NEO GEO"
+
+msgid "NEO GEO CD BIOS"
+msgstr "BIOS NEO GEO CD"
 
 msgid "NES Gamepad"
 msgstr "Gamepad NES"
@@ -2514,8 +2607,14 @@ msgstr "Fără ubershadere"
 msgid "No licenses enabled"
 msgstr "Nicio licență activată"
 
+msgid "No skipping"
+msgstr "Fără omiteri"
+
 msgid "None (Default)"
 msgstr "Niciunul (Implicit)"
+
+msgid "None/Sharp Pixels"
+msgstr "Niciunul/Pixeli clari"
 
 msgid "Normal"
 msgstr "Normal"
@@ -2646,6 +2745,15 @@ msgstr "Overclockează CPU-ul SNES-ului (Gradius 3, Super R-Type)."
 msgid "Overrides the language mode of the emulated console."
 msgstr "Suprascrie modul lingvistic al consolei emulate."
 
+msgid "P1 & P2"
+msgstr "P1 și P2"
+
+msgid "P1 only"
+msgstr "Doar P1"
+
+msgid "P2 only"
+msgstr "Doar P2"
+
 msgid "PAR 1:1"
 msgstr "PARITATE 1:1"
 
@@ -2657,6 +2765,9 @@ msgstr "Joypad PCE"
 
 msgid "PCE Mouse"
 msgstr "Maus PCE"
+
+msgid "PER-GAME SAVES"
+msgstr "SALVĂRI PER JOC"
 
 msgid "PERFORMANCE"
 msgstr "PERFORMANȚĂ"
@@ -2681,6 +2792,9 @@ msgstr "FIRE DE EXECUȚIE SPU PREFERATE"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "Stil PVM (FirebrandX)"
+
+msgid "PVM_20M2U/D93"
+msgstr "PVM_20M2U/D93"
 
 msgid "Paddle Control"
 msgstr "Control Paddle"
@@ -2729,6 +2843,9 @@ msgstr "Per 1s, total 60s (660MO|120MO)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "Per 1s, total 90s (990MO|180MO)"
+
+msgid "Per-game"
+msgstr "Per joc"
 
 msgid "Peru"
 msgstr "Peru"
@@ -2798,6 +2915,9 @@ msgstr "Pulse (Implicit)"
 
 msgid "Pure Interpreter (Most Accurate)"
 msgstr "Interpretor pur (Cel mai exact)"
+
+msgid "QUAD RENDERING"
+msgstr "REDARE QUAD"
 
 msgid "Qatar"
 msgstr "Qatar"
@@ -2904,6 +3024,9 @@ msgstr "Wii VC restaurat"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Implicit)"
 
+msgid "Retropad"
+msgstr "Retropad"
+
 msgid "Retropad (Default)"
 msgstr "Retropad (Implicit)"
 
@@ -2924,6 +3047,9 @@ msgstr "Rotește ecranul, util pentru unele jocuri homebrew verticale."
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Manetă în 4 direcții rotită (Q*Bert)"
+
+msgid "Rotates screen by 90 degrees. Intended for rotating displays."
+msgstr "Rotește ecranul cu 90 de grade. Destinat pentru a roti ecranele."
 
 msgid "Rotates the screens, to simulate holding the DS sideways."
 msgstr "Rotește ecranele, pentru a simula ținerea unui DS vertical."
@@ -2951,6 +3077,9 @@ msgstr "MOD SCALARE"
 
 msgid "SCREEN FILTERING"
 msgstr "FILTRAREA ECRANULUI"
+
+msgid "SCREEN ORIENTATION"
+msgstr "ORIENTARE ECRAN"
 
 msgid "SCREEN SETTINGS"
 msgstr "SETĂRI ECRAN"
@@ -3144,6 +3273,9 @@ msgstr "Setează mărimea porții pentru joystick-urile virtuale. Mai mică îns
 msgid "Shader Interpreter only"
 msgstr "Doar interpretor shader"
 
+msgid "Shared"
+msgstr "Partajat"
+
 msgid "Sharp 1"
 msgstr "Clar 1"
 
@@ -3173,6 +3305,9 @@ msgstr "Chineză simplificată"
 
 msgid "Simulate LCD color inaccuracy."
 msgstr "Simulează inacuratețea culorilor LCD-ului."
+
+msgid "Simultaneous"
+msgstr "Simultan"
 
 msgid "Singapore"
 msgstr "Singapore"
@@ -3519,6 +3654,9 @@ msgstr "Tunel UDP"
 msgid "UPSCALE FILTER"
 msgstr "FILTRU UPSCALE"
 
+msgid "USA"
+msgstr "SUA"
+
 msgid "USE DSP AUDIO"
 msgstr "FOLOSEȘTE DSP AUDIO"
 
@@ -3536,6 +3674,9 @@ msgstr "Ucraina"
 
 msgid "Ultra"
 msgstr "Ultra"
+
+msgid "Universe BIOS is not compatible with cheats."
+msgstr "BIOS-ul Universe nu este compatibil cu cheat-uri."
 
 msgid "Unlimited"
 msgstr "Nelimitată"
@@ -3579,6 +3720,9 @@ msgstr "Folosește SSAA în loc de MSAA pentru anti-aliasing. SSAA poate să ara
 msgid "Use language and username from the NDS Firmware"
 msgstr "Folosește limba și numele de utilizator din firmware-ul NDS"
 
+msgid "Use one save file per game."
+msgstr "Folosește un singur fișier de salvare per joc."
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Folosește cadre preemptive în loc de cele pre-rulate. Va pre-rula doar când starea controlerului se schimbă."
 
@@ -3597,6 +3741,9 @@ msgstr "Util pentru controlerele tip N64."
 msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
 msgstr "Util pentru controlerele tip N64. Taste rapide limitate pentru controlerele fără buton rapid dedicat."
 
+msgid "Useful for certain arcade games."
+msgstr "Util pentru anumite jocuri arcade."
+
 msgid "Useful for speedruns/glitches."
 msgstr "Util pentru jocuri rapide/probleme."
 
@@ -3614,6 +3761,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "OMITERE VBI"
+
+msgid "VERTICAL ROTATION (TATE)"
+msgstr "ROTIRE VERTICALĂ (TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "FILTRE VIDEO"
@@ -3650,6 +3800,9 @@ msgstr "AVERTIZEAZĂ DESPRE PROBLEMELE DE BIOS"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "AVERTIZEAZĂ DESPRE FUNCȚIILE NESUPORTATE"
+
+msgid "WHEELS"
+msgstr "VOLANE"
 
 msgid "WIDESCREEN"
 msgstr "ECRAN LAT"

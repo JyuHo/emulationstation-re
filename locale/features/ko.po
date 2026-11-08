@@ -501,6 +501,9 @@ msgstr "9일"
 msgid "9x 4K (2880x2160)"
 msgstr "9배 4K (2880x2160)"
 
+msgid "ADJUST POWERPC FREQUENCY"
+msgstr "파워피씨 주파수 조정"
+
 msgid "ADVANCED OPTIONS"
 msgstr "고급 옵션"
 
@@ -536,6 +539,9 @@ msgstr "안티에일리어싱 모드"
 
 msgid "ANTI-BLUR"
 msgstr "안티블러"
+
+msgid "ARI/D93 (recommended for all JP developed games)"
+msgstr "ARI/D93 (모든 JP 개발 게임에 권장)"
 
 msgid "ASMJIT Recompiler"
 msgstr "ASMJIT 리컴파일러"
@@ -681,6 +687,18 @@ msgstr "대략적인 (빠름)"
 msgid "April"
 msgstr "4월"
 
+msgid "Arcade MVS Europe"
+msgstr "아케이드 MVS 유럽"
+
+msgid "Arcade MVS Japan"
+msgstr "아케이드 MVS 일본"
+
+msgid "Arcade MVS USA"
+msgstr "아케이드 MVS 미국"
+
+msgid "Arcade Universe BIOS (Cheats)"
+msgstr "아케이드 유니버스 바이오스 (치트)"
+
 msgid "Argentina"
 msgstr "아르헨티나"
 
@@ -741,6 +759,9 @@ msgstr "아제르바이잔"
 msgid "BILINEAR FILTERING"
 msgstr "이중선형 필터링"
 
+msgid "BIOS LANGUAGE"
+msgstr "바이오스 언어"
+
 msgid "BIOS Language"
 msgstr "바이오스 언어"
 
@@ -758,6 +779,15 @@ msgstr "혼합 고해상도 모드"
 
 msgid "BLENDING ACCURACY"
 msgstr "혼합 정확도"
+
+msgid "BT601_525/D65 (recommended for all US developed games)"
+msgstr "BT601_525/D65 (모든 미국 개발 게임에 권장)"
+
+msgid "BT601_525/D93"
+msgstr "BT601_525/D93"
+
+msgid "BT601_625/D65 (recommended for all EUR/AUS developed games)"
+msgstr "BT601_625/D65 (모든 EUR/AUS 개발 게임에 권장)"
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "버퍼 그래픽 명령"
@@ -806,6 +836,9 @@ msgstr "이중선형 (선명함)"
 
 msgid "Bilinear (Smooth)"
 msgstr "이중선형 (매끄러움)"
+
+msgid "Biquintic"
+msgstr "이차"
 
 msgid "Bisqwit 2x"
 msgstr "Bisqwit 2배"
@@ -881,6 +914,15 @@ msgstr "CD 애드온"
 
 msgid "CD-DA VOLUME"
 msgstr "CD-DA 볼륨"
+
+msgid "CDZ"
+msgstr "CDZ"
+
+msgid "CDZ MAME"
+msgstr "CDZ 마메"
+
+msgid "CDZ Universe 3.3"
+msgstr "CDZ 유니버스 3.3"
 
 msgid "CHEATS"
 msgstr "치트"
@@ -960,6 +1002,9 @@ msgstr "16비트로 변환"
 msgid "CPU"
 msgstr "CPU"
 
+msgid "CPU CLOCK"
+msgstr "CPU 클럭"
+
 msgid "CPU CORE"
 msgstr "CPU 코어"
 
@@ -998,6 +1043,12 @@ msgstr "캐시된 해석기 (더 빠름)"
 
 msgid "Can be used to simulate colors of particular displays."
 msgstr "특정 디스플레이의 색상을 시뮬레이션하는 데 사용할 수 있습니다."
+
+msgid "Can change the language of some games."
+msgstr "일부 게임의 언어를 변경할 수 있습니다."
+
+msgid "Can fix slowdown. Only works on some drivers."
+msgstr "속도 저하를 수정할 수 있습니다. 일부 드라이버에서만 작동합니다."
 
 msgid "Can prevent audio skips on button presses when using run-ahead."
 msgstr "런어헤드를 사용하면 버튼을 누를 때 오디오가 건너뛰는 것을 방지할 수 있습니다."
@@ -1062,6 +1113,9 @@ msgstr "밉맵 유형을 선택하세요."
 msgid "Choose system BIOS language."
 msgstr "시스템 바이오스 언어를 선택하세요."
 
+msgid "Choose the Dreamcast console region."
+msgstr "드림캐스트 콘솔 지역을 선택하세요."
+
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Parallel N64 그래픽 플러그인을 선택하세요."
 
@@ -1118,6 +1172,12 @@ msgstr "컴포지트 다이렉트 (파이어브랜드엑스)"
 
 msgid "Config"
 msgstr "구성"
+
+msgid "Console AES Japan"
+msgstr "콘솔 AES 일본"
+
+msgid "Console AES World"
+msgstr "콘솔 AES 월드"
 
 msgid "Control the texture filtering of the emulation."
 msgstr "에뮬레이션의 텍스처 필터링을 제어합니다."
@@ -1329,6 +1389,9 @@ msgstr "더블 버퍼링"
 msgid "Double the rendering resolution."
 msgstr "렌더링 해상도를 두 배로 높입니다."
 
+msgid "Dreamcast BIOS's language setting. Can change the language of some games. Some games default to Japanese."
+msgstr "드림캐스트 바이오스의 언어 설정. 일부 게임의 언어를 변경할 수 있습니다. 일부 게임은 기본적으로 일본어로 설정됩니다."
+
 msgid "DualShock Controller"
 msgstr "듀얼쇼크 컨트롤러"
 
@@ -1430,6 +1493,9 @@ msgstr "캐시 마운트를 활성화합니다. 일부 게임에서 성능과 �
 
 msgid "Enable controller rumble capabilities if supported by the controller."
 msgstr "컨트롤러에서 지원하는 경우 컨트롤러 진동 기능을 활성화합니다."
+
+msgid "Enable crosshairs in shooting games for the selected players."
+msgstr "선택한 플레이어의 슈팅 게임에서 십자선을 활성화합니다."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "두 화면 간 상호 작용이 있는 게임의 경우 게임패드 보기를 활성화합니다. 단축키+R2를 사용하여 화면을 전환합니다."
@@ -1577,6 +1643,9 @@ msgstr "콘솔이 렌더링하는 모든 프레임이 화면에 표시되는지 
 
 msgid "Estonia"
 msgstr "에스토니아"
+
+msgid "Europe"
+msgstr "유럽"
 
 msgid "Even"
 msgstr "일정"
@@ -1905,6 +1974,9 @@ msgstr "고수준 에뮬레이션 (가장 빠름)"
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "해킹. 대부분의 PAL 게임의 속도가 17% 증가합니다."
 
+msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
+msgstr "AMD GPU의 텍스처 손상 및 깊이 문제 해결에 도움이 됩니다. 경우에 따라 Intel GPU에도 도움이 될 수 있습니다."
+
 msgid "Hermite"
 msgstr "에르미트"
 
@@ -1952,6 +2024,9 @@ msgstr "향상된 메시"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "향상된 폴리곤 분할"
+
+msgid "INPUT INTERFACE"
+msgstr "입력 인터페이스"
 
 msgid "INTEGER SCALING"
 msgstr "정수 스케일링"
@@ -2109,6 +2184,12 @@ msgstr "케냐"
 msgid "Keyboard"
 msgstr "키보드"
 
+msgid "Keyboard passthrough"
+msgstr "키보드 패스스루"
+
+msgid "Keyboard shortcuts unavailable if passing through the keyboard."
+msgstr "키보드를 통과하는 경우 키보드 단축키를 사용할 수 없습니다."
+
 msgid "Konami Justifier"
 msgstr "코나미 저스티파이어"
 
@@ -2265,6 +2346,9 @@ msgstr "수동 텍스처 샘플링"
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "최대 전력 절약 CPU 선점"
 
+msgid "MEMORY CARD MODE"
+msgstr "메모리 카드 모드"
+
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "메모리 관리 장치"
 
@@ -2403,8 +2487,17 @@ msgstr "N64 3 점"
 msgid "NAT"
 msgstr "NAT"
 
+msgid "NATIVE DEPTH INTERPOLATION"
+msgstr "네이티브 뎁스 보간"
+
 msgid "NDS VERSION"
 msgstr "NDS 버전"
+
+msgid "NEO GEO BIOS"
+msgstr "네오지오 바이오스"
+
+msgid "NEO GEO CD BIOS"
+msgstr "네오지오 CD 바이오스"
 
 msgid "NES Gamepad"
 msgstr "NES 게임패드"
@@ -2514,8 +2607,14 @@ msgstr "우버셰이더 없음"
 msgid "No licenses enabled"
 msgstr "라이선스가 활성화되지 않았음"
 
+msgid "No skipping"
+msgstr "건너뛰기 없음"
+
 msgid "None (Default)"
 msgstr "없음 (기본)"
+
+msgid "None/Sharp Pixels"
+msgstr "없음/선명한 픽셀"
 
 msgid "Normal"
 msgstr "보통"
@@ -2646,6 +2745,15 @@ msgstr "SNES CPU (그라디우스 3, 슈퍼 R 타입)를 오버 클럭합니다.
 msgid "Overrides the language mode of the emulated console."
 msgstr "에뮬레이션된 콘솔의 언어 모드를 재정의합니다."
 
+msgid "P1 & P2"
+msgstr "P1 및 P2"
+
+msgid "P1 only"
+msgstr "P1 전용"
+
+msgid "P2 only"
+msgstr "P2 전용"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2657,6 +2765,9 @@ msgstr "PCE 조이패드"
 
 msgid "PCE Mouse"
 msgstr "PCE 마우스"
+
+msgid "PER-GAME SAVES"
+msgstr "게임당 저장"
 
 msgid "PERFORMANCE"
 msgstr "성능"
@@ -2681,6 +2792,9 @@ msgstr "선호하는 SPU 스레드"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM 스타일 (파이어브랜드X)"
+
+msgid "PVM_20M2U/D93"
+msgstr "PVM_20M2U/D93"
 
 msgid "Paddle Control"
 msgstr "패들 컨트롤"
@@ -2729,6 +2843,9 @@ msgstr "1초당, 총 60초 (660MB|120MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "1초당, 총 90초 (990MB|180MB)"
+
+msgid "Per-game"
+msgstr "게임당"
 
 msgid "Peru"
 msgstr "페루"
@@ -2798,6 +2915,9 @@ msgstr "펄스 (기본)"
 
 msgid "Pure Interpreter (Most Accurate)"
 msgstr "순수 해석기 (가장 정확함)"
+
+msgid "QUAD RENDERING"
+msgstr "쿼드 렌더링"
 
 msgid "Qatar"
 msgstr "카타르"
@@ -2904,6 +3024,9 @@ msgstr "복원된 Wii VC"
 msgid "RetroPad (Default)"
 msgstr "레트로패드 (기본)"
 
+msgid "Retropad"
+msgstr "레트로패드"
+
 msgid "Retropad (Default)"
 msgstr "레트로패드 (기본)"
 
@@ -2924,6 +3047,9 @@ msgstr "화면을 회전하면, 특정 수직 게임플레이 홈브류에 유�
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "회전식 4방향 스틱 (Q*버트)"
+
+msgid "Rotates screen by 90 degrees. Intended for rotating displays."
+msgstr "화면을 90° 회전합니다. 디스플레이 회전용입니다."
 
 msgid "Rotates the screens, to simulate holding the DS sideways."
 msgstr "DS를 옆으로 잡는 것과 같은 효과를 내기 위해 화면을 회전합니다."
@@ -2951,6 +3077,9 @@ msgstr "스케일링 모드"
 
 msgid "SCREEN FILTERING"
 msgstr "화면 필터링"
+
+msgid "SCREEN ORIENTATION"
+msgstr "화면 방향"
 
 msgid "SCREEN SETTINGS"
 msgstr "화면 설정"
@@ -3144,6 +3273,9 @@ msgstr "가상 조이스틱 게이트 크기를 설정합니다. 작을수록 �
 msgid "Shader Interpreter only"
 msgstr "셰이더 해석기만"
 
+msgid "Shared"
+msgstr "공유"
+
 msgid "Sharp 1"
 msgstr "선명함 1"
 
@@ -3173,6 +3305,9 @@ msgstr "중국어 간체"
 
 msgid "Simulate LCD color inaccuracy."
 msgstr "LCD 색상 부정확성을 시뮬레이션합니다."
+
+msgid "Simultaneous"
+msgstr "동시"
 
 msgid "Singapore"
 msgstr "싱가포르"
@@ -3519,6 +3654,9 @@ msgstr "UDP 터널"
 msgid "UPSCALE FILTER"
 msgstr "업스케일 필터"
 
+msgid "USA"
+msgstr "미국"
+
 msgid "USE DSP AUDIO"
 msgstr "DSP 오디오 사용"
 
@@ -3536,6 +3674,9 @@ msgstr "우크라이나"
 
 msgid "Ultra"
 msgstr "울트라"
+
+msgid "Universe BIOS is not compatible with cheats."
+msgstr "유니버스 바이오스는 치트와 호환되지 않습니다."
 
 msgid "Unlimited"
 msgstr "제한 없음"
@@ -3579,6 +3720,9 @@ msgstr "안티에일리어싱을 위해 MSAA 대신 SSAA를 사용합니다. SSA
 msgid "Use language and username from the NDS Firmware"
 msgstr "NDS 펌웨어의 언어, 사용자 이름 사용"
 
+msgid "Use one save file per game."
+msgstr "게임당 하나의 저장 파일을 사용합니다."
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "런-어헤드 대신 선점형 프레임을 사용합니다. 컨트롤러 상태가 변경될 때만 선점합니다."
 
@@ -3597,6 +3741,9 @@ msgstr "N64 스타일 컨트롤러에 유용합니다."
 msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
 msgstr "N64 스타일 컨트롤러에 유용합니다. 전용 단축키가 없는 컨트롤러의 경우 단축키가 제한적입니다."
 
+msgid "Useful for certain arcade games."
+msgstr "특정 아케이드 게임에 유용합니다."
+
 msgid "Useful for speedruns/glitches."
 msgstr "스피드런/글리치에 유용합니다."
 
@@ -3614,6 +3761,9 @@ msgstr "우즈베키스탄"
 
 msgid "VBI SKIP"
 msgstr "VBI 건너뛰기"
+
+msgid "VERTICAL ROTATION (TATE)"
+msgstr "수직 회전 (테이트)"
 
 msgid "VIDEO FILTERS"
 msgstr "비디오 필터"
@@ -3650,6 +3800,9 @@ msgstr "바이오스 문제에 대한 경고"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "지원되지 않는 기능에 대한 경고"
+
+msgid "WHEELS"
+msgstr "핸들"
 
 msgid "WIDESCREEN"
 msgstr "와이드스크린"

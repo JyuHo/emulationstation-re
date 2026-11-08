@@ -225,6 +225,9 @@ msgstr "TÄRINÄN VOIMAKKUUS"
 msgid "Random Values"
 msgstr "Satunnaiset arvot"
 
+msgid "Retropad"
+msgstr "Retropad"
+
 msgid "Rotate the screen, useful for certain vertical gameplay homebrews."
 msgstr "Kierrä näyttöä. Hyödyllinen joillekin pystysuuntaisille kotitekoisille peleille."
 

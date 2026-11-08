@@ -501,6 +501,9 @@ msgstr "9.º"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ADJUST POWERPC FREQUENCY"
+msgstr "AJUSTAR FRECUENCIA DEL POWERPC"
+
 msgid "ADVANCED OPTIONS"
 msgstr "OPCIONES AVANZADAS"
 
@@ -536,6 +539,9 @@ msgstr "MODO DE ANTIALIASING"
 
 msgid "ANTI-BLUR"
 msgstr "REDUCCIÓN DEL DESENFOQUE"
+
+msgid "ARI/D93 (recommended for all JP developed games)"
+msgstr "ARI/D93 (recomendado para todos los juegos desarrollados en Japón)"
 
 msgid "ASMJIT Recompiler"
 msgstr "Recompilador ASMJIT"
@@ -681,6 +687,18 @@ msgstr "Aproximado (rápido)"
 msgid "April"
 msgstr "Abril"
 
+msgid "Arcade MVS Europe"
+msgstr "Arcade MVS Europa"
+
+msgid "Arcade MVS Japan"
+msgstr "Arcade MVS Japón"
+
+msgid "Arcade MVS USA"
+msgstr "Arcade MVS EE. UU."
+
+msgid "Arcade Universe BIOS (Cheats)"
+msgstr "BIOS Universe de arcade (trucos)"
+
 msgid "Argentina"
 msgstr "Argentina"
 
@@ -741,6 +759,9 @@ msgstr "Azerbaiyán"
 msgid "BILINEAR FILTERING"
 msgstr "FILTRADO BILINEAL"
 
+msgid "BIOS LANGUAGE"
+msgstr "IDIOMA DE LA BIOS"
+
 msgid "BIOS Language"
 msgstr "IDIOMA DE LA BIOS"
 
@@ -758,6 +779,15 @@ msgstr "MEZCLAR MODO DE ALTA RESOLUCIÓN"
 
 msgid "BLENDING ACCURACY"
 msgstr "PRECISIÓN DE MEZCLA"
+
+msgid "BT601_525/D65 (recommended for all US developed games)"
+msgstr "BT601_525/D65 (recomendado para todos los juegos desarrollados en EE. UU.)"
+
+msgid "BT601_525/D93"
+msgstr "BT601_525/D93"
+
+msgid "BT601_625/D65 (recommended for all EUR/AUS developed games)"
+msgstr "BT601_625/D65 (recomendado para todos los juegos desarrollados en Europa y Australia)"
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "ALMACENAR EN BÚFER LOS COMANDOS GRÁFICOS"
@@ -806,6 +836,9 @@ msgstr "Bilineal (nítido)"
 
 msgid "Bilinear (Smooth)"
 msgstr "Bilineal (suave)"
+
+msgid "Biquintic"
+msgstr "Bicuíntico"
 
 msgid "Bisqwit 2x"
 msgstr "Bisqwit 2x"
@@ -881,6 +914,15 @@ msgstr "ACCESORIO DE CD"
 
 msgid "CD-DA VOLUME"
 msgstr "VOLUMEN DEL CD-DA"
+
+msgid "CDZ"
+msgstr "CDZ"
+
+msgid "CDZ MAME"
+msgstr "CDZ MAME"
+
+msgid "CDZ Universe 3.3"
+msgstr "CDZ Universe 3.3"
 
 msgid "CHEATS"
 msgstr "TRUCOS"
@@ -960,6 +1002,9 @@ msgstr "CONVERTIR A 16 BITS"
 msgid "CPU"
 msgstr "CPU (Unidad central de procesamiento)"
 
+msgid "CPU CLOCK"
+msgstr "FRECUENCIA DE LA CPU"
+
 msgid "CPU CORE"
 msgstr "NÚCLEO DE CPU"
 
@@ -998,6 +1043,12 @@ msgstr "Intérprete con caché (más rápido)"
 
 msgid "Can be used to simulate colors of particular displays."
 msgstr "Se puede utilizar para simular los colores de determinadas pantallas."
+
+msgid "Can change the language of some games."
+msgstr "Permite cambiar el idioma de algunos juegos."
+
+msgid "Can fix slowdown. Only works on some drivers."
+msgstr "Puede solucionar las ralentizaciones. Solo funciona con algunos controladores."
 
 msgid "Can prevent audio skips on button presses when using run-ahead."
 msgstr "Puede evitar cortes de audio al presionar botones cuando se utiliza encabezado"
@@ -1062,6 +1113,9 @@ msgstr "Elige el tipo de mipmapping."
 msgid "Choose system BIOS language."
 msgstr "Selecciona el idioma de la BIOS del sistema."
 
+msgid "Choose the Dreamcast console region."
+msgstr "Selecciona la región de la consola Dreamcast."
+
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Selecciona el complemento gráfico de Parallel N64."
 
@@ -1118,6 +1172,12 @@ msgstr "Compuesto directo (FirebrandX)"
 
 msgid "Config"
 msgstr "Configuración"
+
+msgid "Console AES Japan"
+msgstr "Consola AES Japón"
+
+msgid "Console AES World"
+msgstr "Consola AES internacional"
 
 msgid "Control the texture filtering of the emulation."
 msgstr "Controla el filtrado de texturas de la emulación."
@@ -1329,6 +1389,9 @@ msgstr "Doble búfer"
 msgid "Double the rendering resolution."
 msgstr "Duplica la resolución de renderizado."
 
+msgid "Dreamcast BIOS's language setting. Can change the language of some games. Some games default to Japanese."
+msgstr "Configuración del idioma de la BIOS de Dreamcast. Puede cambiar el idioma de algunos juegos. Algunos juegos utilizan el japonés de forma predeterminada."
+
 msgid "DualShock Controller"
 msgstr "Control DualShock"
 
@@ -1430,6 +1493,9 @@ msgstr "Activa el montaje de la caché. Puede mejorar el rendimiento y la compat
 
 msgid "Enable controller rumble capabilities if supported by the controller."
 msgstr "Activar la vibración del mando si es compatible."
+
+msgid "Enable crosshairs in shooting games for the selected players."
+msgstr "Activa las miras en los juegos de disparos para los jugadores seleccionados."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "Activa la vista del control para juegos que interactúan entre dos pantallas. Usa Hotkey+R2 para cambiar de pantalla."
@@ -1577,6 +1643,9 @@ msgstr "Garantiza que todos los fotogramas renderizados por la consola se muestr
 
 msgid "Estonia"
 msgstr "Estonia"
+
+msgid "Europe"
+msgstr "Europa"
 
 msgid "Even"
 msgstr "Equitativo"
@@ -1905,6 +1974,9 @@ msgstr "HLE (más rápido)"
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Truco. Aumenta un 17 % la velocidad de la mayoría de los juegos PAL."
 
+msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
+msgstr "Ayuda a corregir errores en las texturas y problemas de profundidad en las GPU de AMD. También puede ayudar con las GPU de Intel en algunos casos."
+
 msgid "Hermite"
 msgstr "Hermite"
 
@@ -1952,6 +2024,9 @@ msgstr "TRAMADO MEJORADO"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "MEJORAR LA DIVISIÓN DE POLÍGONOS"
+
+msgid "INPUT INTERFACE"
+msgstr "INTERFAZ DE ENTRADA"
 
 msgid "INTEGER SCALING"
 msgstr "ESCALADO ENTERO"
@@ -2109,6 +2184,12 @@ msgstr "Kenia"
 msgid "Keyboard"
 msgstr "Teclado"
 
+msgid "Keyboard passthrough"
+msgstr "Paso directo del teclado"
+
+msgid "Keyboard shortcuts unavailable if passing through the keyboard."
+msgstr "Los atajos de teclado no están disponibles si se utiliza el paso directo del teclado."
+
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
 
@@ -2265,6 +2346,9 @@ msgstr "MUESTREO MANUAL DE TEXTURAS"
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "PREEMPCIONEPAUSAR TAREAS DE CPU PARA AHORRO MÁXIMO DE ENERGÍA"
 
+msgid "MEMORY CARD MODE"
+msgstr "MODO DE TARJETA DE MEMORIA"
+
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "UNIDAD DE GESTIÓN DE MEMORIA"
 
@@ -2403,8 +2487,17 @@ msgstr "N64 de 3 puntos"
 msgid "NAT"
 msgstr "NAT"
 
+msgid "NATIVE DEPTH INTERPOLATION"
+msgstr "INTERPOLACIÓN DE PROFUNDIDAD NATIVA"
+
 msgid "NDS VERSION"
 msgstr "VERSIÓN DE NDS"
+
+msgid "NEO GEO BIOS"
+msgstr "BIOS DE NEO GEO"
+
+msgid "NEO GEO CD BIOS"
+msgstr "BIOS DE NEO GEO CD"
 
 msgid "NES Gamepad"
 msgstr "Mando de NES"
@@ -2514,8 +2607,14 @@ msgstr "Sin Ubershaders/sombreado superior"
 msgid "No licenses enabled"
 msgstr "Ninguna licencia activada"
 
+msgid "No skipping"
+msgstr "Sin omitir fotogramas"
+
 msgid "None (Default)"
 msgstr "Ninguno (predeterminado)"
+
+msgid "None/Sharp Pixels"
+msgstr "Ninguno/Píxeles nítidos"
 
 msgid "Normal"
 msgstr "Normal"
@@ -2646,6 +2745,15 @@ msgstr "Aumenta la frecuencia de la CPU del SNES (Gradius 3, Super R-Type)."
 msgid "Overrides the language mode of the emulated console."
 msgstr "Sustituye el idioma de la consola emulada."
 
+msgid "P1 & P2"
+msgstr "Jugadores 1 y 2"
+
+msgid "P1 only"
+msgstr "Solo jugador 1"
+
+msgid "P2 only"
+msgstr "Solo jugador 2"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2657,6 +2765,9 @@ msgstr "Mando PCE"
 
 msgid "PCE Mouse"
 msgstr "Ratón PCE"
+
+msgid "PER-GAME SAVES"
+msgstr "GUARDADOS POR JUEGO"
 
 msgid "PERFORMANCE"
 msgstr "RENDIMIENTO"
@@ -2681,6 +2792,9 @@ msgstr "HILOS SPU PREFERIDOS"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "Estilo PVM (FirebrandX)"
+
+msgid "PVM_20M2U/D93"
+msgstr "PVM_20M2U/D93"
 
 msgid "Paddle Control"
 msgstr "Control tipo paddle"
@@ -2729,6 +2843,9 @@ msgstr "Cada 1 s, 60 s en total (660 MB|120 MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "Cada 1 s, 90 s en total (990 MB|180 MB)"
+
+msgid "Per-game"
+msgstr "Por juego"
 
 msgid "Peru"
 msgstr "Perú"
@@ -2798,6 +2915,9 @@ msgstr "Pulse (predeterminado)"
 
 msgid "Pure Interpreter (Most Accurate)"
 msgstr "Intérprete puro (mayor precisión)"
+
+msgid "QUAD RENDERING"
+msgstr "RENDERIZADO DE CUADRILÁTEROS"
 
 msgid "Qatar"
 msgstr "Catar"
@@ -2904,6 +3024,9 @@ msgstr "Wii VC restaurada"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (predeterminado)"
 
+msgid "Retropad"
+msgstr "Mando RetroPad"
+
 msgid "Retropad (Default)"
 msgstr "Retropad (predeterminado)"
 
@@ -2924,6 +3047,9 @@ msgstr "Gira la pantalla. Es útil para algunos juegos caseros con orientación 
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "Palanca de 4 direcciones girada (Q*Bert)"
+
+msgid "Rotates screen by 90 degrees. Intended for rotating displays."
+msgstr "Gira la pantalla 90 grados. Diseñado para pantallas giratorias."
 
 msgid "Rotates the screens, to simulate holding the DS sideways."
 msgstr "Gira las pantallas para simular que se sostiene la DS de lado."
@@ -2951,6 +3077,9 @@ msgstr "MODO DE ESCALADO"
 
 msgid "SCREEN FILTERING"
 msgstr "FILTRADO DE PANTALLA"
+
+msgid "SCREEN ORIENTATION"
+msgstr "ORIENTACIÓN DE LA PANTALLA"
 
 msgid "SCREEN SETTINGS"
 msgstr "AJUSTES DE PANTALLA"
@@ -3144,6 +3273,9 @@ msgstr "Configurar el tamaño del área de movimiento de los joysticks virtuales
 msgid "Shader Interpreter only"
 msgstr "Solo intérprete de sombreadores"
 
+msgid "Shared"
+msgstr "Compartida"
+
 msgid "Sharp 1"
 msgstr "Nítido 1"
 
@@ -3173,6 +3305,9 @@ msgstr "Chino simplificado"
 
 msgid "Simulate LCD color inaccuracy."
 msgstr "Simula las imprecisiones de color de las pantallas LCD."
+
+msgid "Simultaneous"
+msgstr "Simultáneo"
 
 msgid "Singapore"
 msgstr "Singapur"
@@ -3519,6 +3654,9 @@ msgstr "Túnel UDP"
 msgid "UPSCALE FILTER"
 msgstr "FILTRO DE ESCALADO"
 
+msgid "USA"
+msgstr "Estados Unidos"
+
 msgid "USE DSP AUDIO"
 msgstr "USAR AUDIO DSP"
 
@@ -3536,6 +3674,9 @@ msgstr "Ucrania"
 
 msgid "Ultra"
 msgstr "Ultra"
+
+msgid "Universe BIOS is not compatible with cheats."
+msgstr "Universe BIOS no es compatible con los trucos."
 
 msgid "Unlimited"
 msgstr "Ilimitada"
@@ -3579,6 +3720,9 @@ msgstr "Usar SSAA en lugar de MSAA para el antialiasing. SSAA puede ofrecer una 
 msgid "Use language and username from the NDS Firmware"
 msgstr "Usa el idioma y el nombre de usuario del firmware de NDS."
 
+msgid "Use one save file per game."
+msgstr "Utiliza un archivo de guardado por juego."
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Utiliza fotogramas preventivos en lugar de Run-Ahead. Solo adelanta la ejecución cuando cambia el estado del control."
 
@@ -3597,6 +3741,9 @@ msgstr "Útil para mandos de estilo N64."
 msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
 msgstr "Útil para mandos de estilo N64. Los mandos sin un botón de acceso rápido dedicado tienen accesos rápidos limitados."
 
+msgid "Useful for certain arcade games."
+msgstr "Útil para determinados juegos arcade."
+
 msgid "Useful for speedruns/glitches."
 msgstr "Útil para los speedruns y la ejecución de glitches."
 
@@ -3614,6 +3761,9 @@ msgstr "Uzbekistán"
 
 msgid "VBI SKIP"
 msgstr "OMITIR VBI"
+
+msgid "VERTICAL ROTATION (TATE)"
+msgstr "ROTACIÓN VERTICAL (TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "FILTROS DE VIDEO"
@@ -3650,6 +3800,9 @@ msgstr "AVISAR SOBRE PROBLEMAS DE LA BIOS"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "AVISAR SOBRE FUNCIONES NO COMPATIBLES"
+
+msgid "WHEELS"
+msgstr "VOLANTES"
 
 msgid "WIDESCREEN"
 msgstr "PANTALLA PANORÁMICA"

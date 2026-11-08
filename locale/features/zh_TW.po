@@ -495,6 +495,9 @@ msgstr "9th"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ADJUST POWERPC FREQUENCY"
+msgstr "調整 PowerPC 頻率"
+
 msgid "ADVANCED OPTIONS"
 msgstr "高級選項"
 
@@ -530,6 +533,9 @@ msgstr "抗鋸齒模式"
 
 msgid "ANTI-BLUR"
 msgstr "抗模糊"
+
+msgid "ARI/D93 (recommended for all JP developed games)"
+msgstr "ARI/D93 (推薦所有JP日版遊戲使用)"
 
 msgid "ASMJIT Recompiler"
 msgstr "ASMJIT再編譯器"
@@ -675,6 +681,18 @@ msgstr "近似（快速）"
 msgid "April"
 msgstr "四月"
 
+msgid "Arcade MVS Europe"
+msgstr "Arcade MVS Europe"
+
+msgid "Arcade MVS Japan"
+msgstr "Arcade MVS Japan"
+
+msgid "Arcade MVS USA"
+msgstr "Arcade MVS USA"
+
+msgid "Arcade Universe BIOS (Cheats)"
+msgstr "Arcade Universe BIOS (金手指)"
+
 msgid "Argentina"
 msgstr "Argentina"
 
@@ -735,6 +753,9 @@ msgstr "Azerbaijan"
 msgid "BILINEAR FILTERING"
 msgstr "雙線性濾鏡"
 
+msgid "BIOS LANGUAGE"
+msgstr "BIOS 語系"
+
 msgid "BIOS Language"
 msgstr "BIOS 語系"
 
@@ -752,6 +773,15 @@ msgstr "BLEND 高解析模式"
 
 msgid "BLENDING ACCURACY"
 msgstr "混合精度"
+
+msgid "BT601_525/D65 (recommended for all US developed games)"
+msgstr "BT601_525/D65 (推薦所有US美版遊戲使用)"
+
+msgid "BT601_525/D93"
+msgstr "BT601_525/D93"
+
+msgid "BT601_625/D65 (recommended for all EUR/AUS developed games)"
+msgstr "BT601_625/D65 (推薦所有EUR/AUS歐澳版遊戲使用)"
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "緩衝區圖形指令"
@@ -800,6 +830,9 @@ msgstr "雙線性（銳化)"
 
 msgid "Bilinear (Smooth)"
 msgstr "雙線性（平滑)"
+
+msgid "Biquintic"
+msgstr "Biquintic"
 
 msgid "Bisqwit 2x"
 msgstr "Bisqwit 2x"
@@ -866,6 +899,15 @@ msgstr "CD光碟附加組件"
 
 msgid "CD-DA VOLUME"
 msgstr "CD-DA音量"
+
+msgid "CDZ"
+msgstr "CDZ"
+
+msgid "CDZ MAME"
+msgstr "CDZ MAME"
+
+msgid "CDZ Universe 3.3"
+msgstr "CDZ Universe 3.3"
 
 msgid "CHEATS"
 msgstr "作弊碼"
@@ -945,6 +987,9 @@ msgstr "轉換為16位元"
 msgid "CPU"
 msgstr "CPU"
 
+msgid "CPU CLOCK"
+msgstr "CPU 頻率"
+
 msgid "CPU CORE"
 msgstr "CPU 核心"
 
@@ -980,6 +1025,12 @@ msgstr "快取解譯器 (較快)"
 
 msgid "Can be used to simulate colors of particular displays."
 msgstr "可用於模擬特定顯示器的顏色。"
+
+msgid "Can change the language of some games."
+msgstr "可以更改某些遊戲的語言。"
+
+msgid "Can fix slowdown. Only works on some drivers."
+msgstr "可以修復速度變慢的問題，僅適用於某些驅動程式。"
 
 msgid "Can prevent audio skips on button presses when using run-ahead."
 msgstr "使用預計算時可以防止按鍵時音頻跳針。"
@@ -1032,6 +1083,9 @@ msgstr "選擇 mipmapping 類型。"
 msgid "Choose system BIOS language."
 msgstr "選擇系統 BIOS 語言。"
 
+msgid "Choose the Dreamcast console region."
+msgstr "選擇 Dreamcast 主機地區。"
+
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "選擇並行 N64 圖形插件。"
 
@@ -1079,6 +1133,12 @@ msgstr "複合直通(FirebrandX)"
 
 msgid "Config"
 msgstr "配置"
+
+msgid "Console AES Japan"
+msgstr "Console AES Japan"
+
+msgid "Console AES World"
+msgstr "Console AES World"
 
 msgid "Control the texture filtering of the emulation."
 msgstr "控制模擬的紋理過濾。"
@@ -1275,6 +1335,9 @@ msgstr "雙重緩衝"
 msgid "Double the rendering resolution."
 msgstr "加倍的算繪解析度。"
 
+msgid "Dreamcast BIOS's language setting. Can change the language of some games. Some games default to Japanese."
+msgstr "Dreamcast BIOS 的語言設定。可以更改部分遊戲的語言。有些遊戲預設使用日文。"
+
 msgid "DualShock Controller"
 msgstr "DualShock 控制器"
 
@@ -1373,6 +1436,9 @@ msgstr "啟用快取掛載。可以提高某些遊戲​​的效能和相容性
 
 msgid "Enable controller rumble capabilities if supported by the controller."
 msgstr "如果控制器支援，則啟用控制器震動功能。"
+
+msgid "Enable crosshairs in shooting games for the selected players."
+msgstr "為選定的玩家在射擊遊戲中啟用十字準星。"
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "為兩個螢幕互動的遊戲啟用遊戲手把視圖。使用 熱鍵+R2 切換螢幕。"
@@ -1520,6 +1586,9 @@ msgstr "確保主機算繪的每一幀都顯示在螢幕上。"
 
 msgid "Estonia"
 msgstr "Estonia"
+
+msgid "Europe"
+msgstr "Europe"
 
 msgid "Even"
 msgstr "平的"
@@ -1893,6 +1962,9 @@ msgstr "IMPROVED MESH"
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "改進的多邊形分割"
 
+msgid "INPUT INTERFACE"
+msgstr "輸入介面"
+
 msgid "INTEGER SCALING"
 msgstr "整數縮放"
 
@@ -2048,6 +2120,12 @@ msgstr "Kenya"
 
 msgid "Keyboard"
 msgstr "鍵盤"
+
+msgid "Keyboard passthrough"
+msgstr "鍵盤直通"
+
+msgid "Keyboard shortcuts unavailable if passing through the keyboard."
+msgstr "如果透過鍵盤，鍵盤快速鍵無法使用。"
 
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
@@ -2205,6 +2283,9 @@ msgstr "手動紋理採樣"
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "最大程度節省 CPU 搶佔"
 
+msgid "MEMORY CARD MODE"
+msgstr "記憶卡模式"
+
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "記憶體管理單元"
 
@@ -2343,6 +2424,12 @@ msgstr "NAT"
 msgid "NDS VERSION"
 msgstr "NDS 版本"
 
+msgid "NEO GEO BIOS"
+msgstr "NEO GEO BIOS"
+
+msgid "NEO GEO CD BIOS"
+msgstr "NEO GEO CD BIOS"
+
 msgid "NES Gamepad"
 msgstr "NES 手把"
 
@@ -2451,8 +2538,14 @@ msgstr "沒有 Ubershader"
 msgid "No licenses enabled"
 msgstr "未啟用許可證"
 
+msgid "No skipping"
+msgstr "無法跳過"
+
 msgid "None (Default)"
 msgstr "無(預設)"
+
+msgid "None/Sharp Pixels"
+msgstr "無/銳化像素"
 
 msgid "Normal"
 msgstr "正常"
@@ -2577,6 +2670,15 @@ msgstr "超頻 SNES CPU（Gradius 3、Super R-Type）。"
 msgid "Overrides the language mode of the emulated console."
 msgstr "覆寫模擬主機的語言模式。"
 
+msgid "P1 & P2"
+msgstr "玩家1與玩家2"
+
+msgid "P1 only"
+msgstr "只有玩家1"
+
+msgid "P2 only"
+msgstr "只有玩家2"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2588,6 +2690,9 @@ msgstr "PCE 手把"
 
 msgid "PCE Mouse"
 msgstr "PCE 滑鼠"
+
+msgid "PER-GAME SAVES"
+msgstr "每個遊戲存檔"
 
 msgid "PERFORMANCE"
 msgstr "效能"
@@ -2612,6 +2717,9 @@ msgstr "首選 SPU 執行緒"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM Style (FirebrandX)"
+
+msgid "PVM_20M2U/D93"
+msgstr "PVM_20M2U/D93"
 
 msgid "Paddle Control"
 msgstr "踏板控制"
@@ -2660,6 +2768,9 @@ msgstr "Per 1s, 60s total (660MB|120MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "Per 1s, 90s total (990MB|180MB)"
+
+msgid "Per-game"
+msgstr "每個遊戲"
 
 msgid "Peru"
 msgstr "Peru"
@@ -2729,6 +2840,9 @@ msgstr "脈衝（預設）"
 
 msgid "Pure Interpreter (Most Accurate)"
 msgstr "純解譯器（最準確）"
+
+msgid "QUAD RENDERING"
+msgstr "四重算繪"
 
 msgid "Qatar"
 msgstr "Qatar"
@@ -2829,6 +2943,9 @@ msgstr "重採樣（音高變化）"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (預設)"
 
+msgid "Retropad"
+msgstr "Retropad"
+
 msgid "Retropad (Default)"
 msgstr "Retropad (預設)"
 
@@ -2849,6 +2966,9 @@ msgstr "旋轉螢幕，對於某些垂直遊戲自製很有用。"
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "旋轉 4-Way Stick (Q*Bert)"
+
+msgid "Rotates screen by 90 degrees. Intended for rotating displays."
+msgstr "將螢幕旋轉 90 度。適用於旋轉顯示。"
 
 msgid "Rotates the screens, to simulate holding the DS sideways."
 msgstr "旋轉螢幕，模擬側向握住 DS。"
@@ -2876,6 +2996,9 @@ msgstr "縮放模式"
 
 msgid "SCREEN FILTERING"
 msgstr "螢幕濾鏡"
+
+msgid "SCREEN ORIENTATION"
+msgstr "螢幕方向"
 
 msgid "SCREEN SETTINGS"
 msgstr "螢幕設定"
@@ -3063,6 +3186,9 @@ msgstr "設定虛擬搖桿門的大小。越小靈敏度越高。越大越小。
 msgid "Shader Interpreter only"
 msgstr "僅著色器直譯器"
 
+msgid "Shared"
+msgstr "共享的"
+
 msgid "Sharp 1"
 msgstr "銳化1"
 
@@ -3092,6 +3218,9 @@ msgstr "簡體中文"
 
 msgid "Simulate LCD color inaccuracy."
 msgstr "模擬LCD顏色不準確。"
+
+msgid "Simultaneous"
+msgstr "同時發生的"
 
 msgid "Singapore"
 msgstr "Singapore"
@@ -3414,6 +3543,9 @@ msgstr "UDP通道"
 msgid "UPSCALE FILTER"
 msgstr "升頻濾鏡"
 
+msgid "USA"
+msgstr "USA"
+
 msgid "USE DSP AUDIO"
 msgstr "使用DSP音訊"
 
@@ -3431,6 +3563,9 @@ msgstr "Ukraine"
 
 msgid "Ultra"
 msgstr "Ultra"
+
+msgid "Universe BIOS is not compatible with cheats."
+msgstr "Universe BIOS與作弊器不相容。"
 
 msgid "Unlimited"
 msgstr "無限"
@@ -3468,6 +3603,9 @@ msgstr "使用SSAA而不是MSAA消除鋸齒。SSAA可能看起來更好，但效
 msgid "Use language and username from the NDS Firmware"
 msgstr "使用NDS韌體中的語言和使用者名稱"
 
+msgid "Use one save file per game."
+msgstr "每個遊戲使用一個儲存檔案。"
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "使用搶佔式幀而不是先跑式幀。僅在控制器狀態改變時執行。"
 
@@ -3486,6 +3624,9 @@ msgstr "適用於N64型控制器。"
 msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
 msgstr "適用於N64型控制器。沒有專用熱鍵的控制器的有限熱鍵。"
 
+msgid "Useful for certain arcade games."
+msgstr "對某些街機遊戲有用。"
+
 msgid "Useful for speedruns/glitches."
 msgstr "對超速行駛/故障有用。"
 
@@ -3503,6 +3644,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "VBI SKIP"
+
+msgid "VERTICAL ROTATION (TATE)"
+msgstr "垂直旋轉(TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "影像鏡"
@@ -3539,6 +3683,9 @@ msgstr "警告BIOS問題"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "警告不支援的功能"
+
+msgid "WHEELS"
+msgstr "方向盤"
 
 msgid "WIDESCREEN"
 msgstr "寬螢幕"

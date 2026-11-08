@@ -711,6 +711,8 @@ namespace es::launcher::retroarch
 		if (ctx.saveState.slot && !ctx.saveState.file.empty() && !ctx.saveState.autoSave)
 			cmd.argv.insert(cmd.argv.end(), { "-e", std::to_string(*ctx.saveState.slot) });
 
+		for (std::string& arg : coreProfile(ctx.core).commandArguments(ctx))
+			cmd.argv.push_back(std::move(arg));
 		cmd.argv.push_back(ctx.game.rom.string());
 		return cmd;
 	}

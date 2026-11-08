@@ -20,6 +20,7 @@
 #include "eden/EdenGenerator.h"
 #include "melonds/MelonDSGenerator.h"
 #include "mupen64plus/Mupen64PlusGenerator.h"
+#include "supermodel/SupermodelGenerator.h"
 #include "ymir/YmirGenerator.h"
 #include "util/YamlFile.h"
 
@@ -847,6 +848,57 @@ static void testYmir()
 	CHECK(!toml.hasSection("Input.Port2.AnalogPad.Binds"));
 }
 
+static void testSupermodel()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "supermodel", "#!/bin/sh\n", true);
+	// the install's Games.xml and stock ini, next to the program
+	writeFile(tmp.path / "bin" / "Config" / "Games.xml", "<games/>\n");
+	writeFile(tmp.path / "bin" / "Config" / "Supermodel.ini", "[ Global ]\nFullScreen = 0\n\n[ vf3 ]\nInputSystem = sdl\n");
+
+	LaunchContext ctx = makeContext(tmp.path, "supermodel", "model3", "/roms/model3/vf3.zip");
+	ctx.controllers = { makePad(1, 2), makePad(2, 0) };
+	ctx.settings = Settings({}, { { "m3_wideScreen", "1" }, { "m3_vsync", "0" }, { "ppcFreq", "100" } }, {});
+	ctx.screenWidth = 1920;
+	ctx.screenHeight = 1080;
+	ctx.architecture = Architecture::X86_64;
+
+	Command cmd = Launch(ctx).prepare();
+	fs::path home = tmp.path / "emulators" / "supermodel";
+	CHECK(cmd.closeOnHotkey == true);
+	CHECK(cmd.workingDirectory == home);
+	CHECK(cmd.argv.back() == "/roms/model3/vf3.zip");
+	auto has = [&cmd](const std::string& arg) { return std::ranges::find(cmd.argv, arg) != cmd.argv.end(); };
+	CHECK(has("-wide-screen"));
+	CHECK(has("-no-vsync"));
+	CHECK(has("-ppc-frequency=100"));
+	CHECK(has("-res=1920,1080"));
+	CHECK(has("-no-force-feedback"));
+	CHECK(!has("-render-scale=1"));
+
+	CHECK(fs::exists(home / "Config" / "Games.xml"));
+	CHECK(fs::is_symlink(home / "NVRAM"));
+	CHECK(fs::is_directory(tmp.path / "saves" / "model3" / "NVRAM"));
+
+	IniFile ini = IniFile::load(home / "Config" / "Supermodel.ini");
+	CHECK(ini.get("Global", "FullScreen") == "0");
+	CHECK(ini.get("Global", "InputSystem") == "sdlgamepad");
+	CHECK(ini.get("vf3", "InputSystem") == "sdlgamepad");
+	CHECK(ini.get("Global", "InputStart1") == "KEY_1,JOY3_BUTTON8");
+	CHECK(ini.get("Global", "InputPunch") == "KEY_A,JOY3_BUTTON3");
+	CHECK(ini.get("Global", "InputAccelerator") == "KEY_UP,JOY3_RZAXIS_POS");
+	CHECK(ini.get("Global", "InputSteering") == "JOY3_XAXIS");
+	CHECK(ini.get("Global", "InputCoin2") == "KEY_4,JOY1_BUTTON7");
+	CHECK(ini.get("Global", "NVRAMPath") == (tmp.path / "saves" / "model3" / "NVRAM").string());
+	CHECK(ini.get("Global", "Outputs") == "none");
+
+	// ARM boards render at scale 1 unless told otherwise
+	ctx.architecture = Architecture::AArch64;
+	auto args = supermodel::SupermodelGenerator::arguments(ctx);
+	CHECK(std::ranges::find(args, "-render-scale=1") != args.end());
+}
+
 void tests::runStandaloneTests()
 {
 	testIniFile();
@@ -867,4 +919,5 @@ void tests::runStandaloneTests()
 	testMelonDS();
 	testMupen64Plus();
 	testYmir();
+	testSupermodel();
 }

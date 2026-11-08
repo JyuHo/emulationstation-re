@@ -501,6 +501,9 @@ msgstr "9th"
 msgid "9x 4K (2880x2160)"
 msgstr "4K x٩ (٢٨٨٠x٢١٦٠)"
 
+msgid "ADJUST POWERPC FREQUENCY"
+msgstr "تعديل تردد POWERPC"
+
 msgid "ADVANCED OPTIONS"
 msgstr "الإعدادات المتقدمة"
 
@@ -536,6 +539,9 @@ msgstr "وضع صقل الحواف"
 
 msgid "ANTI-BLUR"
 msgstr "منع الضبابية"
+
+msgid "ARI/D93 (recommended for all JP developed games)"
+msgstr "ARI/D93 (موصى به لجميع الألعاب المطورة في اليابان)"
 
 msgid "ASMJIT Recompiler"
 msgstr "مترجم ASMJIT"
@@ -681,6 +687,18 @@ msgstr "تقريبي (سريع)"
 msgid "April"
 msgstr "أبريل"
 
+msgid "Arcade MVS Europe"
+msgstr "آركيد MVS أوروبا"
+
+msgid "Arcade MVS Japan"
+msgstr "آركيد MVS اليابان"
+
+msgid "Arcade MVS USA"
+msgstr "آركيد MVS الولايات المتحدة"
+
+msgid "Arcade Universe BIOS (Cheats)"
+msgstr "حزمة BIOS للآركيد (غش)"
+
 msgid "Argentina"
 msgstr "الأرجنتين"
 
@@ -741,6 +759,9 @@ msgstr "أذربيجان"
 msgid "BILINEAR FILTERING"
 msgstr "تصفية BILINEAR"
 
+msgid "BIOS LANGUAGE"
+msgstr "لغة الــBIOS"
+
 msgid "BIOS Language"
 msgstr "لغة BIOS"
 
@@ -758,6 +779,15 @@ msgstr "دمج عالي الدقة"
 
 msgid "BLENDING ACCURACY"
 msgstr "دقة الدمج"
+
+msgid "BT601_525/D65 (recommended for all US developed games)"
+msgstr "BT601_525/D65 (مستحسن لجميع الألعاب الأمريكية)"
+
+msgid "BT601_525/D93"
+msgstr "BT601_525/D93"
+
+msgid "BT601_625/D65 (recommended for all EUR/AUS developed games)"
+msgstr "BT601_625/D65 (مستحسن لجميع الألعاب الأوروبية/الأسترالية)"
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "أوامر رسم الرسوميات"
@@ -806,6 +836,9 @@ msgstr "ثنائي الخط (حاد)"
 
 msgid "Bilinear (Smooth)"
 msgstr "ثنائي الخط (ناعم)"
+
+msgid "Biquintic"
+msgstr "ثنائي كوانتيك"
 
 msgid "Bisqwit 2x"
 msgstr "بيسكوويت 2x"
@@ -881,6 +914,15 @@ msgstr "إضافة CD"
 
 msgid "CD-DA VOLUME"
 msgstr "مستوى صوت CD-DA"
+
+msgid "CDZ"
+msgstr "CDZ"
+
+msgid "CDZ MAME"
+msgstr "CDZ MAME"
+
+msgid "CDZ Universe 3.3"
+msgstr "CDZ Universe 3.3"
 
 msgid "CHEATS"
 msgstr "شفرات"
@@ -960,6 +1002,9 @@ msgstr "تحويل إلى 16-بت"
 msgid "CPU"
 msgstr "المعالج"
 
+msgid "CPU CLOCK"
+msgstr "تردد المعالج"
+
 msgid "CPU CORE"
 msgstr "نواة المعالج"
 
@@ -998,6 +1043,12 @@ msgstr "مترجم مخزن مؤقتا (أسرع)"
 
 msgid "Can be used to simulate colors of particular displays."
 msgstr "يمكن استخدامه لمحاكاة ألوان شاشات عرض محددة."
+
+msgid "Can change the language of some games."
+msgstr "يمكن أن يغير لغة بعض الألعاب."
+
+msgid "Can fix slowdown. Only works on some drivers."
+msgstr "يمكن أن يصلح التباطؤ. يعمل فقط على بعض المشغلات."
 
 msgid "Can prevent audio skips on button presses when using run-ahead."
 msgstr "مكن منع تخطي الصوت عند الضغط على الزر عند استخدام التشغيل المسبق."
@@ -1062,6 +1113,9 @@ msgstr "اختر نوع Mipmapping."
 msgid "Choose system BIOS language."
 msgstr "اختر لغة BIOS النظام."
 
+msgid "Choose the Dreamcast console region."
+msgstr "اختر منطقة جهاز كونسول الدريم كاست."
+
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "اختر إضافة رسومات Parallel N64."
 
@@ -1118,6 +1172,12 @@ msgstr "مركب مباشر (FirebrandX)"
 
 msgid "Config"
 msgstr "إعدادات"
+
+msgid "Console AES Japan"
+msgstr "جهاز AES ياباني"
+
+msgid "Console AES World"
+msgstr "جهاز AES عالمي"
 
 msgid "Control the texture filtering of the emulation."
 msgstr "التحكم في تصفية الملمس (Texture Filtering) للمحاكاة."
@@ -1329,6 +1389,9 @@ msgstr "تخزين مؤقت مزدوج"
 msgid "Double the rendering resolution."
 msgstr "مضاعفة دقة العرض."
 
+msgid "Dreamcast BIOS's language setting. Can change the language of some games. Some games default to Japanese."
+msgstr "تعيين لغة بايوس الدريم كاست. يستطيع أن يغير لغة بعض الألعاب، بعض الألعاب هي اليابانية بشكل افتراضي."
+
 msgid "DualShock Controller"
 msgstr "وحدة تحكم DualShock"
 
@@ -1430,6 +1493,9 @@ msgstr "تمكين تحميل الذاكرة المؤقتة. قد يُحسّن �
 
 msgid "Enable controller rumble capabilities if supported by the controller."
 msgstr "تمكين قدرة الاهتزاز في وحدة التحكم إذا كانت مدعومة."
+
+msgid "Enable crosshairs in shooting games for the selected players."
+msgstr "تمكين خطوط التقاطع في ألعاب إطلاق النار للاعبين المحددين."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "تفعيل عرض لوحة الألعاب للألعاب التي تتفاعل عبر شاشتين. استخدم Hotkey+R2 للتبديل بين الشاشات."
@@ -1577,6 +1643,9 @@ msgstr "تأكد من عرض كل إطار تقوم المنصة بإنشائه 
 
 msgid "Estonia"
 msgstr "إستونيا"
+
+msgid "Europe"
+msgstr "أوروبا"
 
 msgid "Even"
 msgstr "زوجي"
@@ -1905,6 +1974,9 @@ msgstr "HLE (الأسرع)"
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "اختراق. يزيد سرعة معظم ألعاب PAL بنسبة 17%."
 
+msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
+msgstr "يساعد في مشاكل تلف النسيج والعمق على وحدات معالجة الرسومات AMD. يمكن أن يساعد أيضًا وحدات معالجة الرسومات Intel في بعض الحالات."
+
 msgid "Hermite"
 msgstr "هيرميت"
 
@@ -1952,6 +2024,9 @@ msgstr "شبكة محسنة"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "تحسين تقسيم المضلع"
+
+msgid "INPUT INTERFACE"
+msgstr "واجهة الإدخال"
 
 msgid "INTEGER SCALING"
 msgstr "تحجيم صحيح"
@@ -2109,6 +2184,12 @@ msgstr "كينيا"
 msgid "Keyboard"
 msgstr "لوحة المفاتيح"
 
+msgid "Keyboard passthrough"
+msgstr "تمرير لوحة المفاتيح"
+
+msgid "Keyboard shortcuts unavailable if passing through the keyboard."
+msgstr "اختصارات لوحة المفاتيح غير متاحة إذا كان تمرير لوحة المفاتيح مفعلاً."
+
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
 
@@ -2265,6 +2346,9 @@ msgstr "أخذ عينات الإكساءات يدوياً"
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "توفير الطاقة الأقصى لاستباقات وحدة المعالجة المركزية"
 
+msgid "MEMORY CARD MODE"
+msgstr "وضع بطاقة الذاكرة"
+
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "وحدة إدارة الذاكرة"
 
@@ -2403,8 +2487,17 @@ msgstr "N64 ثلاثي النقاط"
 msgid "NAT"
 msgstr "NAT"
 
+msgid "NATIVE DEPTH INTERPOLATION"
+msgstr "استيفاء العمق الأصلي"
+
 msgid "NDS VERSION"
 msgstr "إصدار NDS"
+
+msgid "NEO GEO BIOS"
+msgstr "نظام الإدخال والإخراج الأساسي (BIOS) لـ NEO GEO"
+
+msgid "NEO GEO CD BIOS"
+msgstr "نظام الإدخال والإخراج الأساسي (BIOS) لـ NEO GEO CD"
 
 msgid "NES Gamepad"
 msgstr "لوحة ألعاب NES"
@@ -2514,8 +2607,14 @@ msgstr "بدون Ubershaders"
 msgid "No licenses enabled"
 msgstr "لم يتم تمكين أي تراخيص"
 
+msgid "No skipping"
+msgstr "بدون تخطي"
+
 msgid "None (Default)"
 msgstr "لا شيء(افتراضي)"
+
+msgid "None/Sharp Pixels"
+msgstr "بدون/بكسلات حادة"
 
 msgid "Normal"
 msgstr "عادي"
@@ -2646,6 +2745,15 @@ msgstr "كسر سرعة وحدة المعالجة المركزية SNES (Gradius
 msgid "Overrides the language mode of the emulated console."
 msgstr "يتجاوز وضع اللغة لوحدة التحكم التي تتم محاكاتها."
 
+msgid "P1 & P2"
+msgstr "اللاعب 1 واللاعب 2"
+
+msgid "P1 only"
+msgstr "اللاعب 1 فقط"
+
+msgid "P2 only"
+msgstr "اللاعب 2 فقط"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2657,6 +2765,9 @@ msgstr "لوحة تحكم PCE"
 
 msgid "PCE Mouse"
 msgstr "ماوس PCE"
+
+msgid "PER-GAME SAVES"
+msgstr "حفظ لكل لعبة"
 
 msgid "PERFORMANCE"
 msgstr "الأداء"
@@ -2681,6 +2792,9 @@ msgstr "سلاسل SPU المفضلة"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "نمط PVM (FirebrandX)"
+
+msgid "PVM_20M2U/D93"
+msgstr "PVM_20M2U/D93"
 
 msgid "Paddle Control"
 msgstr "التحكم بالمجداف"
@@ -2729,6 +2843,9 @@ msgstr "كل ثانية واحدة، 60 ثانية إجمالاً (660 ميجا�
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "كل ثانية واحدة، 90 ثانية إجمالاً (990 ميجابايت|180 ميجابايت)"
+
+msgid "Per-game"
+msgstr "لكل لعبة"
 
 msgid "Peru"
 msgstr "بيرو"
@@ -2798,6 +2915,9 @@ msgstr "نبضة (افتراضي)"
 
 msgid "Pure Interpreter (Most Accurate)"
 msgstr "مترجم نقي (الأكثر دقة)"
+
+msgid "QUAD RENDERING"
+msgstr "التصيير الرباعي"
 
 msgid "Qatar"
 msgstr "قطر"
@@ -2904,6 +3024,9 @@ msgstr "Wii VC مستعاد"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (افتراضي)"
 
+msgid "Retropad"
+msgstr "Retropad"
+
 msgid "Retropad (Default)"
 msgstr "Retropad (افتراضي)"
 
@@ -2924,6 +3047,9 @@ msgstr "تدوير الشاشة، مفيد لبعض الألعاب المنزل�
 
 msgid "Rotated 4-Way Stick (Q*Bert)"
 msgstr "عصا رباعية الاتجاهات مدورة (Q*Bert)"
+
+msgid "Rotates screen by 90 degrees. Intended for rotating displays."
+msgstr "يدور الشاشة بمقدار 90 درجة. مخصص للشاشات الدوارة."
 
 msgid "Rotates the screens, to simulate holding the DS sideways."
 msgstr "يدور الشاشات لمحاكاة حمل جهاز DS بشكل جانبي."
@@ -2951,6 +3077,9 @@ msgstr "وضع القياس"
 
 msgid "SCREEN FILTERING"
 msgstr "تنقية الشاشة"
+
+msgid "SCREEN ORIENTATION"
+msgstr "اتجاه الشاشة"
 
 msgid "SCREEN SETTINGS"
 msgstr "إعدادات الشاشة"
@@ -3144,6 +3273,9 @@ msgstr "اضبط حجم إطار العصا الافتراضية. الحجم ا�
 msgid "Shader Interpreter only"
 msgstr "مترجم المظلل فقط"
 
+msgid "Shared"
+msgstr "مشترك"
+
 msgid "Sharp 1"
 msgstr "حاد 1"
 
@@ -3173,6 +3305,9 @@ msgstr "الصينية المبسطة"
 
 msgid "Simulate LCD color inaccuracy."
 msgstr "محاكاة عدم دقة ألوان LCD."
+
+msgid "Simultaneous"
+msgstr "متزامن"
 
 msgid "Singapore"
 msgstr "سنغافورة"
@@ -3519,6 +3654,9 @@ msgstr "UDP نفق"
 msgid "UPSCALE FILTER"
 msgstr "UPSCALE مرشح تكبير الرسومات"
 
+msgid "USA"
+msgstr "الولايات المتحدة"
+
 msgid "USE DSP AUDIO"
 msgstr "DSP AUDIO استخدم"
 
@@ -3536,6 +3674,9 @@ msgstr "أوكرانيا"
 
 msgid "Ultra"
 msgstr "خارق (ْultra)"
+
+msgid "Universe BIOS is not compatible with cheats."
+msgstr "نظام Universe BIOS غير متوافق مع رموز الغش."
 
 msgid "Unlimited"
 msgstr "غير محدود"
@@ -3579,6 +3720,9 @@ msgstr "استخدم SSAA بدلاً من MSAA لمكافحة التعرجات. 
 msgid "Use language and username from the NDS Firmware"
 msgstr ".الثابت NDS استخدم اللغة واسم المستخدم من برنامج"
 
+msgid "Use one save file per game."
+msgstr "استخدم ملف حفظ واحد لكل لعبة."
+
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "استخدم الإطارات الاستباقية (preemptive frames) بدلاً من تقنية \"التشغيل المسبق\" (run-ahead)؛ حيث يتم التشغيل المسبق فقط عند تغير حالة وحدة التحكم."
 
@@ -3597,6 +3741,9 @@ msgstr "مفيد لوحدات التحكم من طراز N64."
 msgid "Useful for N64 style controllers. Limited hotkeys for controllers without dedicated hotkey."
 msgstr "مفيد لوحدات التحكم التي تتبع نمط N64. خيارات محدودة لمفاتيح الاختصار في وحدات التحكم التي لا تحتوي على مفتاح مخصص لهذا الغرض."
 
+msgid "Useful for certain arcade games."
+msgstr "مفيد لبعض ألعاب الأركيد."
+
 msgid "Useful for speedruns/glitches."
 msgstr "مفيد لسباقات السرعة/الأعطال."
 
@@ -3614,6 +3761,9 @@ msgstr "أوزبكستان"
 
 msgid "VBI SKIP"
 msgstr "VBI تخطي"
+
+msgid "VERTICAL ROTATION (TATE)"
+msgstr "(TATE) الدوران الرأسي"
 
 msgid "VIDEO FILTERS"
 msgstr "مرشحات الفيديو"
@@ -3650,6 +3800,9 @@ msgstr "BIOS تحذير بشأن مشاكل الـ"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "تحذير بشأن الميزات غير المدعومة"
+
+msgid "WHEELS"
+msgstr "عجلة القيادة"
 
 msgid "WIDESCREEN"
 msgstr "الشاشة العريضة"

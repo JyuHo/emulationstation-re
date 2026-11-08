@@ -550,6 +550,18 @@ namespace es::launcher::retroarch
 						ra = "r";
 				}
 			}
+
+			// with the service buttons on, L3 is the service button and R3 the test button
+			if (isArcade(ctx) && settingOr(ctx, "reicast_allow_service_buttons", "") == "enabled")
+			{
+				for (auto& [es, ra] : buttons)
+				{
+					if (es == "l3")
+						ra = "r3";
+					else if (es == "r3")
+						ra = "l3";
+				}
+			}
 		}
 
 		void setConfig(const LaunchContext& ctx, ConfigFile& config) const override
@@ -590,6 +602,24 @@ namespace es::launcher::retroarch
 			bool wide = settingOr(ctx, "ratio", "") == "16/9";
 			o.set("reicast_widescreen_cheats", wide && settingOr(ctx, "reicast_widescreen_cheats", "") == "enabled" ? "enabled" : "disabled");
 			o.set("reicast_widescreen_hack", wide && settingOr(ctx, "reicast_widescreen_hack", "") == "enabled" ? "enabled" : "disabled");
+
+			option(ctx, o, "reicast_language", "Default");
+			option(ctx, o, "reicast_region", "Default");
+			option(ctx, o, "reicast_native_depth_interpolation", "disabled");
+
+			// arcade boards: the screen orientation and the service and test buttons
+			std::string rotation = "horizontal";
+			if (ctx.game.system == "atomiswave")
+				rotation = settingOr(ctx, "screen_rotation_atomiswave", rotation);
+			else if (ctx.game.system == "naomi")
+				rotation = settingOr(ctx, "screen_rotation_naomi", rotation);
+			o.set("reicast_screen_rotation", rotation);
+			option(ctx, o, "reicast_allow_service_buttons", "disabled");
+		}
+
+		static bool isArcade(const LaunchContext& ctx)
+		{
+			return ctx.game.system == "atomiswave" || ctx.game.system == "naomi" || ctx.game.system == "naomi2";
 		}
 	};
 
@@ -1040,6 +1070,93 @@ namespace es::launcher::retroarch
 		}
 	};
 
+	// Arcade cores: the coin of player 1 is also on the 5 of the numeric keypad, as in MAME
+	class ArcadeCore : public Core
+	{
+	public:
+		void setConfig(const LaunchContext& /*ctx*/, ConfigFile& config) const override
+		{
+			config.set("input_player1_select", "num5");
+		}
+	};
+
+	class Fbneo : public ArcadeCore
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			o.set("fbneo-diagnostic-input", "Start + L + R");
+			// RetroAchievements in hardcore mode need the original romsets
+			o.set("fbneo-allow-patched-romsets", "disabled");
+			option(ctx, o, "fbneo-cpu-speed-adjust", "100%");
+
+			std::string frameskip = settingOr(ctx, "fbneo-frameskip", "0");
+			o.set("fbneo-frameskip-type", frameskip != "0" ? "Fixed" : "disabled");
+			o.set("fbneo-fixed-frameskip", frameskip);
+
+			// light guns are left out: the games that can use one get the joystick
+			std::string game = ctx.game.rom.stem().string();
+			o.set("fbneo-dipswitch-" + game + "-Controls", "Joystick");
+
+			if (ctx.game.system == "neogeo")
+			{
+				// the Universe BIOS, unless the player chose a console or a region
+				static const std::map<std::string, std::string, std::less<>> bios = {
+					{ "MVS Asia/Europe", "MVS Asia/Europe ver. 5 (1 slot)" },
+					{ "MVS USA", "MVS USA ver. 5 (2 slot)" },
+					{ "MVS Japan", "MVS Japan ver. 5 (? slot)" },
+					{ "AES World", "AES World" },
+					{ "AES Asia", "AES World" },
+					{ "AES Japan", "AES Japan" },
+				};
+				auto it = bios.find(settingOr(ctx, "fbneo-neogeo-mode-switch", ""));
+				if (it != bios.end())
+				{
+					o.set("fbneo-neogeo-mode", "DIPSWITCH");
+					o.set("fbneo-dipswitch-" + game + "-BIOS", it->second);
+				}
+				else
+					o.set("fbneo-neogeo-mode", "UNIBIOS");
+				option(ctx, o, "fbneo-memcard-mode", "per-game");
+			}
+		}
+
+		std::vector<std::string> commandArguments(const LaunchContext& ctx) const override
+		{
+			if (ctx.game.system == "neogeocd")
+				return { "--subsystem", "neocd" };
+			return {};
+		}
+	};
+
+	class Mame2003Plus : public ArcadeCore
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			o.set("mame2003-plus_skip_disclaimer", "enabled");
+			o.set("mame2003-plus_skip_warnings", "enabled");
+			option(ctx, o, "mame2003-plus_frameskip", "disabled");
+			option(ctx, o, "mame2003-plus_vector_resolution", "1024x768");
+			option(ctx, o, "mame2003-plus_input_interface", "retropad");
+			option(ctx, o, "mame2003-plus_tate_mode", "disabled");
+			option(ctx, o, "mame2003-plus_neogeo_bios", "unibios33");
+			// light guns are left out: the mouse drives the guns
+			o.set("mame2003-plus_xy_device", "mouse");
+		}
+	};
+
+	class Neocd : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "neocd_region", "Japan");
+			option(ctx, o, "neocd_bios", "neocd_z.rom (CDZ)");
+			o.set("neocd_per_content_saves", ctx.settings.getBool("neocd_per_content_saves", true) ? "On" : "Off");
+		}
+	};
+
 	// ---------------------------------------------------------------------------------------------
 
 	const Core& coreProfile(std::string_view core)
@@ -1092,6 +1209,11 @@ namespace es::launcher::retroarch
 			m.emplace("mednafen_pce_fast", std::make_unique<Pce>(true));
 			m.emplace("mednafen_supergrafx", std::make_unique<MednafenSupergrafx>());
 			m.emplace("mednafen_wswan", std::make_unique<MednafenWswan>());
+			m.emplace("fbneo", std::make_unique<Fbneo>());
+			// Batocera calls MAME 2003-Plus "mame078plus", the library is mame2003_plus_libretro.so
+			m.emplace("mame078plus", std::make_unique<Mame2003Plus>());
+			m.emplace("mame2003_plus", std::make_unique<Mame2003Plus>());
+			m.emplace("neocd", std::make_unique<Neocd>());
 			return m;
 		}();
 		static const Core generic;
