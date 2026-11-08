@@ -20,6 +20,7 @@
 #include "eden/EdenGenerator.h"
 #include "melonds/MelonDSGenerator.h"
 #include "mupen64plus/Mupen64PlusGenerator.h"
+#include "stella/StellaGenerator.h"
 #include "supermodel/SupermodelGenerator.h"
 #include "ymir/YmirGenerator.h"
 #include "util/YamlFile.h"
@@ -899,6 +900,22 @@ static void testSupermodel()
 	CHECK(std::ranges::find(args, "-render-scale=1") != args.end());
 }
 
+static void testStella()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "stella", "#!/bin/sh\n", true);
+
+	LaunchContext ctx = makeContext(tmp.path, "stella", "atari2600", "/roms/atari2600/Pitfall.a26");
+	ctx.controllers = { makePad(1, 0) };
+	Command cmd = Launch(ctx).prepare();
+	CHECK(cmd.closeOnHotkey == true);
+	CHECK(cmd.argv.size() == 4);
+	CHECK(cmd.argv[1] == "-fullscreen");
+	CHECK(cmd.argv.back() == "/roms/atari2600/Pitfall.a26");
+	CHECK(cmd.env.contains("SDL_GAMECONTROLLERCONFIG"));
+}
+
 void tests::runStandaloneTests()
 {
 	testIniFile();
@@ -920,4 +937,5 @@ void tests::runStandaloneTests()
 	testMupen64Plus();
 	testYmir();
 	testSupermodel();
+	testStella();
 }

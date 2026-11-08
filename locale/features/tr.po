@@ -39,8 +39,14 @@ msgstr "1 iş parçacığı"
 msgid "1% (Default)"
 msgstr "1% (Varsayılan)"
 
+msgid "1.0x (12.50Mhz)"
+msgstr "1.0x (12.50Mhz)"
+
 msgid "1.1x"
 msgstr "1.1x"
+
+msgid "1.1x (13.75Mhz)"
+msgstr "1.1x (13.75Mhz)"
 
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
@@ -51,6 +57,9 @@ msgstr "1.25x Doğal"
 msgid "1.2x"
 msgstr "1.2x"
 
+msgid "1.2x (15.00Mhz)"
+msgstr "1.2x (15.00Mhz)"
+
 msgid "1.3x"
 msgstr "1.3x"
 
@@ -59,6 +68,9 @@ msgstr "1.4x"
 
 msgid "1.5x"
 msgstr "1.5x"
+
+msgid "1.5x (18.75Mhz)"
+msgstr "1.5x (18.75Mhz)"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -69,8 +81,14 @@ msgstr "1.5x Doğal"
 msgid "1.6x (1024x768)"
 msgstr "1.6x (1024x768)"
 
+msgid "1.6x (20.00Mhz)"
+msgstr "1.6x (20.00Mhz)"
+
 msgid "1.75x Native"
 msgstr "1.75x Doğal"
+
+msgid "1.8x (22.50Mhz)"
+msgstr "1.8x (22.50Mhz)"
 
 msgid "10 seconds"
 msgstr "10 saniye"
@@ -173,6 +191,9 @@ msgstr "2 saniye"
 
 msgid "2 threads"
 msgstr "2 iş parçacığı"
+
+msgid "2.0x (25.00Mhz)"
+msgstr "2.0x (25.00Mhz)"
 
 msgid "2.25x (1440x1080)"
 msgstr "2.25x (1440x1080)"
@@ -501,6 +522,9 @@ msgstr "9."
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ACTIVE INPUT DEVICES FIX"
+msgstr "AKTİF GİRİŞ CİHAZLARINI DÜZELT"
+
 msgid "ADJUST POWERPC FREQUENCY"
 msgstr "POWERPC FREKANSINI AYARLA"
 
@@ -554,6 +578,9 @@ msgstr "EŞ ZAMANSIZ GÖLGELENDİRİCİ DERLE (SADECE VULKAN)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "EŞ ZAMANSIZ DOKU AKIŞI"
+
+msgid "ATARI SYSTEM"
+msgstr "ATARİ SİSTEMİ"
 
 msgid "AUDIO"
 msgstr "SES"
@@ -663,6 +690,12 @@ msgstr "Analog Joystick"
 msgid "Analog Joystick (Flystick)"
 msgstr "Analog Joystick (Flystick)"
 
+msgid "Analog deadzone for paddles. Core default (15)."
+msgstr "Pedallar için analog ölü bölge. Varsayılan değer (15)."
+
+msgid "Analog sensitivity for paddles. Core default (20)."
+msgstr "Pedallar için analog hassasiyet. Varsayılan değer (20)."
+
 msgid "Angrylion"
 msgstr "Angrylion"
 
@@ -729,6 +762,9 @@ msgstr "Avustralya"
 msgid "Austria"
 msgstr "Avusturya"
 
+msgid "Auto (Default)"
+msgstr "Otomatik (Varsayılan)"
+
 msgid "Auto Max Quality"
 msgstr "Otomatik En İyi Kalite"
 
@@ -791,6 +827,9 @@ msgstr "BT601_625/D65 (tüm EUR/AUS üstünde geliştirilen oyunlar için öneri
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "ARABELLEK GRAFİK KOMUTLARI"
+
+msgid "Badly adjusted"
+msgstr "Kötü ayarlanmış"
 
 msgid "Bahrain"
 msgstr "Bahreyn"
@@ -942,6 +981,9 @@ msgstr "RENK PALETİ (2D)"
 msgid "CONSOLE COUNTRY"
 msgstr "KONSOL ÜLKESİ"
 
+msgid "CONSOLE DISPLAY"
+msgstr "KONSOL EKRANI"
+
 msgid "CONSOLE LANGUAGE"
 msgstr "KONSOL DİLİ"
 
@@ -1017,8 +1059,14 @@ msgstr "CPU YÜRÜTME MODU"
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "CPU-GPU gecikme sınırı. Daha düşük değerler gecikmeyi iyileştirir ancak performansı düşürebilir."
 
+msgid "CROP HORIZONTAL OVERSCAN"
+msgstr "YATAY AŞIRI TARAMAYI KIRP"
+
 msgid "CROP OVERSCAN"
 msgstr "AŞIRI TARAMAYI KIRP"
+
+msgid "CROP VERTICAL OVERSCAN"
+msgstr "DİKEY AŞIRI TARAMAYI KIRP"
 
 msgid "CURSOR MODE"
 msgstr "İMLEÇ MODU"
@@ -1205,6 +1253,12 @@ msgstr "Kosta Rika"
 
 msgid "Croatia"
 msgstr "Hırvatistan"
+
+msgid "Crop horizontal overscan."
+msgstr "Yatay aşırı taramayı kırp."
+
+msgid "Crop vertical overscan (lines). Core default (0)."
+msgstr "Dikey aşırı taramayı (çizgiler) kırp. Çekirdek varsayılanı (0)."
 
 msgid "Cross"
 msgstr "Çapraz"
@@ -1488,6 +1542,9 @@ msgstr "MelonDS iki ekranda görüntülenmesini etkinleştirin. Bazı ilgili ekr
 msgid "Enable No-interlacing Patches."
 msgstr "Taramasız Yamaları Etkinleştir."
 
+msgid "Enable TV-like filtering / effects."
+msgstr "TV benzeri filtrelemeyi / efektleri etkinleştir."
+
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "Önbellek bağlamayı etkinleştirin. Bazı oyunlarda performansı ve uyumluluğu artırabilir."
 
@@ -1503,8 +1560,17 @@ msgstr "İki ekran arasında etkileşime sahip oyunlar için oyun kumandası gö
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Önbellek, kontrolcü olayları vb. bildirimlerini etkinleştirin."
 
+msgid "Enable phosphor mode (motion blur) for flickering effects."
+msgstr "Titreşim efektleri için fosfor modunu (hareket bulanıklığı) etkinleştirin."
+
 msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
 msgstr "İkinci ses sınırlayıcıyı etkinleştir. Performans karşılığında ses kalitesini artırır."
+
+msgid "Enable shared saves for multi-disc games"
+msgstr "Çok diskli oyunlar için paylaşılan kaydetmeyi etkinleştir"
+
+msgid "Enable the BASIC interpreter. Some games need this."
+msgstr "Basit yorumlayıcıyı etkinleştirin. Bazı oyunların ihtiyacı vardır."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Daha doğru ses için Dreamcast DSP'yi etkinleştir. Sadece hızlı sistemler için önerilir."
@@ -1659,6 +1725,9 @@ msgstr "Master System'e benzer şekilde oyun ekranı alanını genişletin."
 msgid "External"
 msgstr "Harici"
 
+msgid "FAST BLITTER (LESS COMPATIBLE)"
+msgstr "HIZLI BLITTER (DAHA AZ UYUMLU)"
+
 msgid "FAST DISK TRANSFER RATE"
 msgstr "HIZLI DİSK AKTARIM HIZI"
 
@@ -1743,6 +1812,9 @@ msgstr "Ekran yırtılmasını düzelt. CPU yükü."
 msgid "Fix texture banding when upscaling."
 msgstr "Yükseltme sırasında doku bantlamasını düzeltin."
 
+msgid "Fixes a possible bug with multiple controllers detection."
+msgstr "Çoklu kontrolcüleri tanımlamada potansiyel hataları düzeltir."
+
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Gyro özellikli oyunlar için (sol analog çubuğa bağlı)"
 
@@ -1754,6 +1826,9 @@ msgstr "Emülatörler ve kontrolcüler için kuvvet geri bildirimi desteklenir."
 
 msgid "For use with HD texture packs."
 msgstr "HD doku paketleri ile kullanım için."
+
+msgid "For weak machines. Some games will not work with this."
+msgstr "Zayıf makineler için. Bazı oyunlar bununla çalışmaz."
 
 msgid "Force 16:9"
 msgstr "16:9 Zorla"
@@ -1968,6 +2043,9 @@ msgstr "DONANIMSAL GÖLGELENDİRİCİ"
 msgid "HARDWARE TESSELLATION"
 msgstr "DONANIMI DETAYLANDIR"
 
+msgid "HI-RES ARTIFACTING"
+msgstr "HI-RES YAPAY OLGU"
+
 msgid "HLE (Fastest)"
 msgstr "HLE (Hızlı)"
 
@@ -2036,6 +2114,9 @@ msgstr "TAM SAYI YÜKSELTME"
 
 msgid "INTERLACING PATCHES"
 msgstr "TARAMALI YAMALAR"
+
+msgid "INTERNAL BASIC INTERPRETER"
+msgstr "DAHİLİ TEMEL YORUMLAYICI"
 
 msgid "INTERNAL DISPLAY RESOLUTION"
 msgstr "DAHİLİ EKRAN ÇÖZÜNÜRLÜĞÜ"
@@ -2115,6 +2196,9 @@ msgstr "JOYSTICK ÖLÜ BÖLGESİ"
 msgid "JOYSTICK GATE SIZE"
 msgstr "JOYSTICK KAPISI BOYUTU"
 
+msgid "JOYSTICK HACK (FOR ROBOTRON 2084)"
+msgstr "JOYSTICK GELİŞTİRMESİ (ROBOTRON 2084 İÇİN)"
+
 msgid "JOYSTICK SENSITIVITY"
 msgstr "JOYSTICK HASSASİYETİ"
 
@@ -2162,6 +2246,9 @@ msgstr "Joypad 6 Tuş + Takımoyuncusu"
 
 msgid "Joypad Auto"
 msgstr "Joypad Otomatik"
+
+msgid "Joypad sensitivity for paddles. Core default (3)."
+msgstr "Pedallar için oyun kolu hassasiyeti. Varsayılan değer (3)."
 
 msgid "Joystick"
 msgstr "Joystick"
@@ -2475,6 +2562,9 @@ msgstr "Fas"
 msgid "Mouse"
 msgstr "Fare"
 
+msgid "Mouse sensitivity for paddles. Core default (10)."
+msgstr "Kürekler (paddles) için fare hassasiyeti. Varsayılan değer (10)."
+
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "Yorumcudan çok daha hızlı (ancak sorunları olabilir)."
 
@@ -2529,8 +2619,17 @@ msgstr "NTSC (RGB)"
 msgid "NTSC (S-Video)"
 msgstr "NTSC (S-Video)"
 
+msgid "NTSC 240x480px 60Hz"
+msgstr "NTSC 240x480px 60Hz"
+
+msgid "NTSC ASPECT"
+msgstr "NTSC GÖRÜNTÜ ORANI"
+
 msgid "NTSC FILTER"
 msgstr "NTSC FİLTRE"
+
+msgid "NTSC aspect ratio correction. Core default (PAR)."
+msgstr "NTSC en-boy oranı düzeltmesi. Çekirdek varsayılanı (PAR)."
 
 msgid "NTSC-J"
 msgstr "NTSC-J"
@@ -2540,6 +2639,12 @@ msgstr "NTSC-U"
 
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
+
+msgid "NTSC50"
+msgstr "NTSC50"
+
+msgid "NVRAM STORAGE"
+msgstr "NVRAM DEPOLAMA"
 
 msgid "Namco GunCon"
 msgstr "Namco GunCon"
@@ -2754,6 +2859,36 @@ msgstr "Sadece P1"
 msgid "P2 only"
 msgstr "Sadece P2"
 
+msgid "PADDLE ANALOG ABSOLUTE"
+msgstr "MUTLAK ANALOG PEDAL"
+
+msgid "PADDLE ANALOG DEADZONE"
+msgstr "ANALOG PEDAL ÖLÜ BÖLGE"
+
+msgid "PADDLE ANALOG SENSITIVITY"
+msgstr "ANALOG PEDAL HASSASİYETİ"
+
+msgid "PADDLE JOYPAD SENSITIVITY"
+msgstr "PEDALLI OYUN KOLU HASSASİYETİ"
+
+msgid "PADDLE MOUSE SENSITIVITY"
+msgstr "PEDALLI FARE HASSASİYETİ"
+
+msgid "PAL 288x576px 50Hz"
+msgstr "PAL 288x576px 50Hz"
+
+msgid "PAL ASPECT"
+msgstr "PAL GÖRÜNTÜ ORANI"
+
+msgid "PAL aspect ratio correction. Core default (PAR)."
+msgstr "PAL en-boy oranı düzeltmesi. Çekirdek varsayılanı (PAR)."
+
+msgid "PAL60"
+msgstr "PAL60"
+
+msgid "PALETTE COLORS"
+msgstr "PALET RENKLERİ"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2774,6 +2909,12 @@ msgstr "PERFORMANS"
 
 msgid "PERFORMANCE HACKS"
 msgstr "PERFORMANS GELİŞTİRMELERİ"
+
+msgid "PHOSPHOR BLEND"
+msgstr "FOSFOR KARIŞIMI"
+
+msgid "PHOSPHOR MODE"
+msgstr "FOSFOR MODU"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "OYUNCU 1 HEDEF İMLECİ RENGİ"
@@ -2844,6 +2985,9 @@ msgstr "1s başına, toplam 60s (660MB|120MB)"
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "1s başına, toplam 90s (990MB|180MB)"
 
+msgid "Per Game"
+msgstr "Oyun Başına"
+
 msgid "Per-game"
 msgstr "Oyuna göre"
 
@@ -2852,6 +2996,9 @@ msgstr "Peru"
 
 msgid "Philippines"
 msgstr "Filipinler"
+
+msgid "Phosphor blend level. Core default (60%)."
+msgstr "Fosfor karışım seviyesi. Varsayılan değer (%60)."
 
 msgid "PlayStation Mouse"
 msgstr "PlayStation Faresi"
@@ -3093,6 +3240,12 @@ msgstr "EKRAN DEĞİŞTİR"
 msgid "SDL2"
 msgstr "SDL2"
 
+msgid "SECAM"
+msgstr "SECAM"
+
+msgid "SECAM60"
+msgstr "SECAM60"
+
 msgid "SENSITIVITY"
 msgstr "HASSASİYET"
 
@@ -3128,6 +3281,9 @@ msgstr "EKRAN MESAJLARINI GÖSTER"
 
 msgid "SHOW SCREEN LAYOUT"
 msgstr "EKRAN DÜZENİNİ GÖSTER"
+
+msgid "SIO ACCELERATION"
+msgstr "SIO HIZLANDIRMASI"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "ARABELLEK EFEKTLERİNİ ATLA"
@@ -3192,6 +3348,9 @@ msgstr "SPU DEKODER"
 msgid "SPU LOOP DETECTION"
 msgstr "SPU DÖNGÜ TESPİTİ"
 
+msgid "STEREO SOUND"
+msgstr "STEREO SES"
+
 msgid "STRETCH MODE"
 msgstr "GENİŞLETME MODU"
 
@@ -3249,8 +3408,14 @@ msgstr "Sega/Mega CD"
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "'Ürün Yazılımı Ayarlarını Kullan' seçeneği devre dışı bırakılırsa veya ürün yazılımı dosyası bulunamazsa kullanılacak dili seçin."
 
+msgid "Select the console video standard / display mode."
+msgstr "Konsol video standardını / görüntü modunu seçin."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "Dokunmatik ekranda gezinmek için giriş türünü seç"
+
+msgid "Select the palette used to render colors."
+msgstr "Renkleri oluşturmak için kullanılacak paleti seçin."
 
 msgid "Separate Windows"
 msgstr "Ayrı Pencere"
@@ -3417,11 +3582,17 @@ msgstr "Çift çekirdek modunda bazı aksaklıkları gidermek için hız hilesi.
 msgid "Speed up shader compilation."
 msgstr "Gölgelendirici derlemesini hızlandır."
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "Dosya yüklenmesini hızlandırır. Bazı oyunlar bununla yüklenmez."
+
 msgid "Square pixel"
 msgstr "Kare piksel"
 
 msgid "Standard (4:3)"
 msgstr "Standart (4:3)"
+
+msgid "Standard (Default)"
+msgstr "Standart (Varsayılan)"
 
 msgid "Standard Controller"
 msgstr "Standart Kontrolcü"
@@ -3434,6 +3605,9 @@ msgstr "Direksiyon"
 
 msgid "Stereo"
 msgstr "Stereo"
+
+msgid "Stereo sound output."
+msgstr "Stereo ses çıkışı."
 
 msgid "Stretch"
 msgstr "Uzat"
@@ -3537,6 +3711,9 @@ msgstr "ÜÇ DOĞRUSAL FİLTRELEME"
 msgid "TRUE COLOR RENDERING"
 msgstr "GERÇEK RENK İLE İŞLE"
 
+msgid "TV EFFECTS"
+msgstr "TV EFEKTLERİ"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - Paket 1"
 
@@ -3617,6 +3794,9 @@ msgstr "Dokunmatik Ekran"
 
 msgid "Traditional Chinese"
 msgstr "Geleneksel Çince"
+
+msgid "Treats the right analog stick as the second joystick."
+msgstr "Sağ analog çubuğa ikinci joystick gibi davranır."
 
 msgid "Trilinear (Forced)"
 msgstr "Üç Doğrusal (Zorla)"
@@ -3717,6 +3897,12 @@ msgstr "6 düğme düzenine sahip Megadrive tarzı kontrolcü girişlerini otoma
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Kenar yumuşatma için MSAA yerine SSAA kullanın. SSAA daha iyi görünebilir ancak performans maliyeti daha yüksektir."
 
+msgid "Use absolute analog input for paddles."
+msgstr "Pedallar için mutlak analog giriş kullanın."
+
+msgid "Use an alternate resolution. Some games need this."
+msgstr "Alternatif bir çözünürlük kullan. Bazı oyunların buna ihtiyaç duyar."
+
 msgid "Use language and username from the NDS Firmware"
 msgstr "NDS Ürün Yazılımındaki dili ve kullanıcı adını kullanın"
 
@@ -3747,6 +3933,9 @@ msgstr "Belirli atari oyunları için kullanışlıdır."
 msgid "Useful for speedruns/glitches."
 msgstr "Hızlı çalıştırmalar/hatalar için kullanışlıdır."
 
+msgid "User"
+msgstr "Kullanıcı"
+
 msgid "Uses hardware to make curves."
 msgstr "Eğrileri oluşturmak için donanım kullanır."
 
@@ -3767,6 +3956,9 @@ msgstr "DİKEY DÖNÜŞ (TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "VİDEO FİLTRELERİ"
+
+msgid "VIDEO FORMAT STANDARD"
+msgstr "VİDEO BİÇİMİ STANDART"
 
 msgid "VIDEO SETTINGS"
 msgstr "VİDEO AYARLARI"
@@ -3887,6 +4079,9 @@ msgstr "Sarı"
 
 msgid "Yemen"
 msgstr "Yemen"
+
+msgid "Z26"
+msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "ZCULL DOĞRULUĞU"

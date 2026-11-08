@@ -9,6 +9,7 @@
 #include "retroarch/Cores.h"
 
 #include <algorithm>
+#include <cctype>
 #include <array>
 #include <map>
 #include <memory>
@@ -1157,6 +1158,104 @@ namespace es::launcher::retroarch
 		}
 	};
 
+	class Stella : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "stella_console", "auto");
+			option(ctx, o, "stella_palette", "standard");
+			option(ctx, o, "stella_filter", "disabled");
+			option(ctx, o, "stella_crop_hoverscan", "disabled");
+			option(ctx, o, "stella_crop_voverscan", "0");
+			option(ctx, o, "stella_ntsc_aspect", "par");
+			option(ctx, o, "stella_pal_aspect", "par");
+			option(ctx, o, "stella_stereo", "auto");
+			option(ctx, o, "stella_phosphor", "auto");
+			option(ctx, o, "stella_phosphor_blend", "60");
+			option(ctx, o, "stella_paddle_mouse_sensitivity", "10");
+			option(ctx, o, "stella_paddle_joypad_sensitivity", "3");
+			option(ctx, o, "stella_paddle_analog_sensitivity", "20");
+			option(ctx, o, "stella_paddle_analog_deadzone", "15");
+			option(ctx, o, "stella_paddle_analog_absolute", "disabled");
+			option(ctx, o, "stella_reload", "off");
+		}
+	};
+
+	class Handy : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& /*ctx*/, ConfigFile& o) const override
+		{
+			// a rotated start crashes the core
+			o.set("handy_rot", "None");
+		}
+	};
+
+	class VirtualJaguar : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "virtualjaguar_usefastblitter", "usefastblitter", "enabled");
+			option(ctx, o, "virtualjaguar_bios", "bios_vj", "enabled");
+			option(ctx, o, "virtualjaguar_internal_resolution", "1x");
+		}
+	};
+
+	class Opera : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			o.set("opera_dsp_threaded", "enabled");
+			option(ctx, o, "opera_high_resolution", "high_resolution", "enabled");
+			option(ctx, o, "opera_cpu_overclock", "cpu_overclock", "1.0x (12.50Mhz)");
+			option(ctx, o, "opera_active_devices", "active_devices", "1");
+
+			// games on several discs share their NVRAM
+			std::string storage = settingOr(ctx, "opera_nvram_storage", "");
+			if (storage.empty())
+			{
+				std::string rom = ctx.game.rom.string();
+				std::ranges::transform(rom, rom.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+				storage = rom.find("disc") != std::string::npos ? "shared" : "per game";
+			}
+			o.set("opera_nvram_storage", storage);
+		}
+	};
+
+	// Atari 800 and 5200
+	class Atari800 : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			if (ctx.game.system != "atari800")
+			{
+				o.set("atari800_system", "5200");
+				option(ctx, o, "atari800_opt2", "disabled");   // joystick hack (Robotron)
+				return;
+			}
+			option(ctx, o, "atari800_system", "800XL (64K)");
+			option(ctx, o, "atari800_ntscpal", "NTSC");
+			option(ctx, o, "atari800_sioaccel", "enabled");
+			std::string legacy = settingOr(ctx, "atari800_artifacting", "") == "enabled" ? "blue/brown 1" : "none";
+			option(ctx, o, "atari800_artifacting_mode", legacy);
+			if (auto resolution = ctx.settings.get("atari800_resolution"))
+				o.set("atari800_resolution", *resolution);
+			option(ctx, o, "atari800_internalbasic", "disabled");
+		}
+
+		// the Atari joystick
+		std::optional<std::string> deviceType(const LaunchContext& /*ctx*/, int player) const override
+		{
+			if (player == 1 || player == 2)
+				return "513";
+			return std::nullopt;
+		}
+	};
+
 	// ---------------------------------------------------------------------------------------------
 
 	const Core& coreProfile(std::string_view core)
@@ -1214,6 +1313,11 @@ namespace es::launcher::retroarch
 			m.emplace("mame078plus", std::make_unique<Mame2003Plus>());
 			m.emplace("mame2003_plus", std::make_unique<Mame2003Plus>());
 			m.emplace("neocd", std::make_unique<Neocd>());
+			m.emplace("stella", std::make_unique<Stella>());
+			m.emplace("handy", std::make_unique<Handy>());
+			m.emplace("virtualjaguar", std::make_unique<VirtualJaguar>());
+			m.emplace("opera", std::make_unique<Opera>());
+			m.emplace("atari800", std::make_unique<Atari800>());
 			return m;
 		}();
 		static const Core generic;

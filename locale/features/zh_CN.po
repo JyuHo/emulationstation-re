@@ -39,8 +39,14 @@ msgstr "1 线程"
 msgid "1% (Default)"
 msgstr "1%（默认）"
 
+msgid "1.0x (12.50Mhz)"
+msgstr "1.0x（12.50Mhz）"
+
 msgid "1.1x"
 msgstr "1.1x"
+
+msgid "1.1x (13.75Mhz)"
+msgstr "1.1x（13.75Mhz）"
 
 msgid "1.25x (800x600)"
 msgstr "1.25x（800x600）"
@@ -51,6 +57,9 @@ msgstr "1.25倍原生分辨率"
 msgid "1.2x"
 msgstr "1.2x"
 
+msgid "1.2x (15.00Mhz)"
+msgstr "1.2x（15.00Mhz）"
+
 msgid "1.3x"
 msgstr "1.3x"
 
@@ -59,6 +68,9 @@ msgstr "1.4x"
 
 msgid "1.5x"
 msgstr "1.5x"
+
+msgid "1.5x (18.75Mhz)"
+msgstr "1.5x（18.75Mhz）"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x（960x720）"
@@ -69,8 +81,14 @@ msgstr "1.5倍原生分辨率"
 msgid "1.6x (1024x768)"
 msgstr "1.6x（1024x768）"
 
+msgid "1.6x (20.00Mhz)"
+msgstr "1.6x（20.00Mhz）"
+
 msgid "1.75x Native"
 msgstr "1.75倍原生分辨率"
+
+msgid "1.8x (22.50Mhz)"
+msgstr "1.8x（22.50Mhz）"
 
 msgid "10 seconds"
 msgstr "10秒"
@@ -173,6 +191,9 @@ msgstr "2秒"
 
 msgid "2 threads"
 msgstr "2 线程"
+
+msgid "2.0x (25.00Mhz)"
+msgstr "2.0x（25.00Mhz）"
 
 msgid "2.25x (1440x1080)"
 msgstr "2.25x（1440x1080）"
@@ -501,6 +522,9 @@ msgstr "9号"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K（2880x2160）"
 
+msgid "ACTIVE INPUT DEVICES FIX"
+msgstr "激活输入设备修复"
+
 msgid "ADJUST POWERPC FREQUENCY"
 msgstr "调整 PowerPC 频率"
 
@@ -554,6 +578,9 @@ msgstr "异步着色器编译（仅限Vulkan）"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "异步纹理流"
+
+msgid "ATARI SYSTEM"
+msgstr "ATARI系统"
 
 msgid "AUDIO"
 msgstr "音频"
@@ -663,6 +690,12 @@ msgstr "模拟操纵杆"
 msgid "Analog Joystick (Flystick)"
 msgstr "模拟操纵杆（飞行摇杆）"
 
+msgid "Analog deadzone for paddles. Core default (15)."
+msgstr "摇杆的模拟死区. 核心默认值 (15)."
+
+msgid "Analog sensitivity for paddles. Core default (20)."
+msgstr "摇杆的模拟死区. 核心默认值 (20)."
+
 msgid "Angrylion"
 msgstr "Angrylion"
 
@@ -729,6 +762,9 @@ msgstr "澳大利亚"
 msgid "Austria"
 msgstr "奥地利"
 
+msgid "Auto (Default)"
+msgstr "自动 (默认)"
+
 msgid "Auto Max Quality"
 msgstr "自动最大质量"
 
@@ -791,6 +827,9 @@ msgstr "BT601_625/D65 (推荐欧洲公司开发的游戏)"
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "BUFFER GRAPHICS COMMANDS"
+
+msgid "Badly adjusted"
+msgstr "调整不当"
 
 msgid "Bahrain"
 msgstr "巴林"
@@ -942,6 +981,9 @@ msgstr "调色板（2D）"
 msgid "CONSOLE COUNTRY"
 msgstr "国家"
 
+msgid "CONSOLE DISPLAY"
+msgstr "控制台显示"
+
 msgid "CONSOLE LANGUAGE"
 msgstr "主机语言"
 
@@ -1017,8 +1059,14 @@ msgstr "CPU执行模式"
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "CPU-GPU延迟限制。较低的值会改善延迟但可能会降低性能."
 
+msgid "CROP HORIZONTAL OVERSCAN"
+msgstr "水平过扫描裁剪"
+
 msgid "CROP OVERSCAN"
 msgstr "裁去过扫描线"
+
+msgid "CROP VERTICAL OVERSCAN"
+msgstr "垂直过扫描裁剪"
 
 msgid "CURSOR MODE"
 msgstr "光标模式"
@@ -1205,6 +1253,12 @@ msgstr "哥斯达黎加"
 
 msgid "Croatia"
 msgstr "克罗地亚"
+
+msgid "Crop horizontal overscan."
+msgstr "裁剪水平过扫描."
+
+msgid "Crop vertical overscan (lines). Core default (0)."
+msgstr "裁剪垂直过扫描(行数). 核心默认值(0)."
 
 msgid "Cross"
 msgstr "十字"
@@ -1488,6 +1542,9 @@ msgstr "启用MelonDS在两个屏幕上的显示. 一些相关的屏幕选项将
 msgid "Enable No-interlacing Patches."
 msgstr "启用无交错补丁。"
 
+msgid "Enable TV-like filtering / effects."
+msgstr "启用类似电视的滤镜/特效."
+
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "启用缓存装载，可以提高某些游戏的性能和兼容性。"
 
@@ -1503,8 +1560,17 @@ msgstr "为具有跨两个屏幕交互的游戏启用游戏手柄视图。 使�
 msgid "Enable notifications of cache, controller events etc."
 msgstr "启用缓存、控制器事件等的通知。"
 
+msgid "Enable phosphor mode (motion blur) for flickering effects."
+msgstr "启用磷光模式(运动模糊)以获得闪烁效果."
+
 msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
 msgstr "启用第二个音频限制器。以性能为代价提高音频质量。"
+
+msgid "Enable shared saves for multi-disc games"
+msgstr "为多盘游戏启用共享存储"
+
+msgid "Enable the BASIC interpreter. Some games need this."
+msgstr "启用BASIC解释器。有些游戏需要这个。"
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "启用Dreamcast DSP以获得更精确的音频。仅推荐用于较快的系统。"
@@ -1659,6 +1725,9 @@ msgstr "扩展游戏屏幕区域，类似于世嘉Master System。"
 msgid "External"
 msgstr "外部的"
 
+msgid "FAST BLITTER (LESS COMPATIBLE)"
+msgstr "快速BLITTER（兼容更差）"
+
 msgid "FAST DISK TRANSFER RATE"
 msgstr "快速磁盘传输速率"
 
@@ -1743,6 +1812,9 @@ msgstr "修复屏幕撕裂。会增加CPU占用。"
 msgid "Fix texture banding when upscaling."
 msgstr "修复放大时的纹理条带。"
 
+msgid "Fixes a possible bug with multiple controllers detection."
+msgstr "修复了多个控制器检测可能出现的错误。"
+
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "对于启用陀螺仪的游戏（绑定到左侧模拟摇杆）"
 
@@ -1754,6 +1826,9 @@ msgstr "用于支持力反馈的模拟器和控制器。"
 
 msgid "For use with HD texture packs."
 msgstr "用于高清纹理包。"
+
+msgid "For weak machines. Some games will not work with this."
+msgstr "用于性能薄弱的机器。有些游戏不兼容此功能。"
 
 msgid "Force 16:9"
 msgstr "强制 16:9"
@@ -1968,6 +2043,9 @@ msgstr "硬件着色器"
 msgid "HARDWARE TESSELLATION"
 msgstr "硬件曲面细分"
 
+msgid "HI-RES ARTIFACTING"
+msgstr "高分辨率ARTIFACTING"
+
 msgid "HLE (Fastest)"
 msgstr "HLE（最快）"
 
@@ -2036,6 +2114,9 @@ msgstr "整数放大"
 
 msgid "INTERLACING PATCHES"
 msgstr "交错补丁"
+
+msgid "INTERNAL BASIC INTERPRETER"
+msgstr "内部BASIC解释器"
 
 msgid "INTERNAL DISPLAY RESOLUTION"
 msgstr "内部显示分辨率"
@@ -2115,6 +2196,9 @@ msgstr "摇杆死区"
 msgid "JOYSTICK GATE SIZE"
 msgstr "摇杆活动范围大小"
 
+msgid "JOYSTICK HACK (FOR ROBOTRON 2084)"
+msgstr "摇杆Hack（适用于ROBOTRON 2084）"
+
 msgid "JOYSTICK SENSITIVITY"
 msgstr "摇杆灵敏度"
 
@@ -2162,6 +2246,9 @@ msgstr "6键手柄 + Teamplayer"
 
 msgid "Joypad Auto"
 msgstr "手柄（自动）"
+
+msgid "Joypad sensitivity for paddles. Core default (3)."
+msgstr "摇杆的灵敏度. 核心默认值 (3)."
 
 msgid "Joystick"
 msgstr "操纵杆"
@@ -2475,6 +2562,9 @@ msgstr "摩洛哥"
 msgid "Mouse"
 msgstr "鼠标"
 
+msgid "Mouse sensitivity for paddles. Core default (10)."
+msgstr "鼠标对摇杆的灵敏度. 核心默认值 (10)."
+
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "比解释器快得多（但可能有问题）"
 
@@ -2529,8 +2619,17 @@ msgstr "NTSC（RGB）"
 msgid "NTSC (S-Video)"
 msgstr "NTSC（S-Video）"
 
+msgid "NTSC 240x480px 60Hz"
+msgstr "NTSC 240x480px 60Hz"
+
+msgid "NTSC ASPECT"
+msgstr "NTSC 宽高比"
+
 msgid "NTSC FILTER"
 msgstr "NTSC滤镜"
+
+msgid "NTSC aspect ratio correction. Core default (PAR)."
+msgstr "NTSC宽高比校正. 核心默认值 (PAR)."
 
 msgid "NTSC-J"
 msgstr "NTSC-J"
@@ -2540,6 +2639,12 @@ msgstr "NTSC-U"
 
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
+
+msgid "NTSC50"
+msgstr "NTSC50"
+
+msgid "NVRAM STORAGE"
+msgstr "NVRAM 存储器"
 
 msgid "Namco GunCon"
 msgstr "Namco光枪"
@@ -2754,6 +2859,36 @@ msgstr "仅玩家1"
 msgid "P2 only"
 msgstr "仅玩家2"
 
+msgid "PADDLE ANALOG ABSOLUTE"
+msgstr "摇杆模拟绝对值"
+
+msgid "PADDLE ANALOG DEADZONE"
+msgstr "摇杆模拟死区"
+
+msgid "PADDLE ANALOG SENSITIVITY"
+msgstr "摇杆模拟灵敏度"
+
+msgid "PADDLE JOYPAD SENSITIVITY"
+msgstr "摇杆手柄灵敏度"
+
+msgid "PADDLE MOUSE SENSITIVITY"
+msgstr "拨杆键鼠标灵敏度​"
+
+msgid "PAL 288x576px 50Hz"
+msgstr "PAL 288x576px 50Hz"
+
+msgid "PAL ASPECT"
+msgstr "PAL制式"
+
+msgid "PAL aspect ratio correction. Core default (PAR)."
+msgstr "PAL宽高比校正. 核心默认值 (PAR)."
+
+msgid "PAL60"
+msgstr "PAL60"
+
+msgid "PALETTE COLORS"
+msgstr "调色板颜色"
+
 msgid "PAR 1:1"
 msgstr "像素宽高比 1:1"
 
@@ -2774,6 +2909,12 @@ msgstr "性能"
 
 msgid "PERFORMANCE HACKS"
 msgstr "性能破解"
+
+msgid "PHOSPHOR BLEND"
+msgstr "荧光粉混合物"
+
+msgid "PHOSPHOR MODE"
+msgstr "荧光模式"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "玩家1的光枪准星颜色"
@@ -2844,6 +2985,9 @@ msgstr "每 1 秒，总计 60 秒（660MB|120MB）"
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "每 1 秒，总计 90 秒（990MB|180MB）"
 
+msgid "Per Game"
+msgstr "每场比赛"
+
 msgid "Per-game"
 msgstr "每个游戏独立"
 
@@ -2852,6 +2996,9 @@ msgstr "秘鲁"
 
 msgid "Philippines"
 msgstr "菲律宾"
+
+msgid "Phosphor blend level. Core default (60%)."
+msgstr "荧光粉混合比例. 核心默认值 (60%)."
 
 msgid "PlayStation Mouse"
 msgstr "PlayStation鼠标"
@@ -3093,6 +3240,12 @@ msgstr "虚拟交换"
 msgid "SDL2"
 msgstr "SDL2"
 
+msgid "SECAM"
+msgstr "SECAM制式"
+
+msgid "SECAM60"
+msgstr "SECAM60"
+
 msgid "SENSITIVITY"
 msgstr "灵敏度"
 
@@ -3128,6 +3281,9 @@ msgstr "显示屏幕信息"
 
 msgid "SHOW SCREEN LAYOUT"
 msgstr "显示屏幕布局"
+
+msgid "SIO ACCELERATION"
+msgstr "SIO加速度"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "跳过缓冲区效果"
@@ -3192,6 +3348,9 @@ msgstr "SPU解码器"
 msgid "SPU LOOP DETECTION"
 msgstr "SPU循环检测"
 
+msgid "STEREO SOUND"
+msgstr "立体声"
+
 msgid "STRETCH MODE"
 msgstr "拉伸模式"
 
@@ -3249,8 +3408,14 @@ msgstr "Sega/Mega CD"
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "如果禁用“使用固件设置”或未找到固件文件，则将使用选中的语言。"
 
+msgid "Select the console video standard / display mode."
+msgstr "选择主机视频标准/显示模式."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "选择用以操作触摸屏的输入类型"
+
+msgid "Select the palette used to render colors."
+msgstr "选择用于渲染颜色的调色板."
 
 msgid "Separate Windows"
 msgstr "单独窗口"
@@ -3417,11 +3582,17 @@ msgstr "双核模式的速度破解，以修复一些故障。"
 msgid "Speed up shader compilation."
 msgstr "加快着色器编译速度。"
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "加快文件加载速度。有些游戏无法加载此内容。"
+
 msgid "Square pixel"
 msgstr "方形像素"
 
 msgid "Standard (4:3)"
 msgstr "标准（4:3）"
+
+msgid "Standard (Default)"
+msgstr "标准(默认)"
 
 msgid "Standard Controller"
 msgstr "标准控制器"
@@ -3434,6 +3605,9 @@ msgstr "方向盘"
 
 msgid "Stereo"
 msgstr "立体声"
+
+msgid "Stereo sound output."
+msgstr "立体声输出."
 
 msgid "Stretch"
 msgstr "拉伸"
@@ -3537,6 +3711,9 @@ msgstr "三线性过滤"
 msgid "TRUE COLOR RENDERING"
 msgstr "真彩色渲染"
 
+msgid "TV EFFECTS"
+msgstr "TV效果"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - Pack 1"
 
@@ -3617,6 +3794,9 @@ msgstr "触摸屏"
 
 msgid "Traditional Chinese"
 msgstr "繁体中文"
+
+msgid "Treats the right analog stick as the second joystick."
+msgstr "将右边的模拟摇杆视为第二个摇杆。"
 
 msgid "Trilinear (Forced)"
 msgstr "三线性（强制）"
@@ -3717,6 +3897,12 @@ msgstr "使用Megadrive为具有6按钮布局的Megadrive型控制器自动映�
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "使用SSAA而不是MSAA来消除混叠, SSAA可能看起来更好, 但性能成本更高."
 
+msgid "Use absolute analog input for paddles."
+msgstr "为摇杆使用绝对模拟输入."
+
+msgid "Use an alternate resolution. Some games need this."
+msgstr "使用备用分辨率。有些游戏需要这个。"
+
 msgid "Use language and username from the NDS Firmware"
 msgstr "使用NDS固件中的语言和用户名"
 
@@ -3747,6 +3933,9 @@ msgstr "适用于部分街机游戏。"
 msgid "Useful for speedruns/glitches."
 msgstr "对速通或者刷bug很有用。"
 
+msgid "User"
+msgstr "用户"
+
 msgid "Uses hardware to make curves."
 msgstr "使用硬件绘制曲线."
 
@@ -3767,6 +3956,9 @@ msgstr "垂直旋转（TATE）"
 
 msgid "VIDEO FILTERS"
 msgstr "视频滤镜"
+
+msgid "VIDEO FORMAT STANDARD"
+msgstr "视频格式标准"
 
 msgid "VIDEO SETTINGS"
 msgstr "视频设置"
@@ -3887,6 +4079,9 @@ msgstr "黄色"
 
 msgid "Yemen"
 msgstr "也门"
+
+msgid "Z26"
+msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "ZCULL 精度"

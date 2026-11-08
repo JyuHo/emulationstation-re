@@ -39,8 +39,14 @@ msgstr "1 luồng"
 msgid "1% (Default)"
 msgstr "1% (Mặc định)"
 
+msgid "1.0x (12.50Mhz)"
+msgstr "1.0x (12.50Mhz)"
+
 msgid "1.1x"
 msgstr "1.1x"
+
+msgid "1.1x (13.75Mhz)"
+msgstr "1.1x (13.75Mhz)"
 
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
@@ -51,6 +57,9 @@ msgstr "1.25x Native"
 msgid "1.2x"
 msgstr "1.2x"
 
+msgid "1.2x (15.00Mhz)"
+msgstr "1.2x (15.00Mhz)"
+
 msgid "1.3x"
 msgstr "1.3x"
 
@@ -59,6 +68,9 @@ msgstr "1.4x"
 
 msgid "1.5x"
 msgstr "1.5x"
+
+msgid "1.5x (18.75Mhz)"
+msgstr "1.5x (18.75Mhz)"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -69,8 +81,14 @@ msgstr "1.5x Native"
 msgid "1.6x (1024x768)"
 msgstr "1.6x (1024x768)"
 
+msgid "1.6x (20.00Mhz)"
+msgstr "1.6x (20.00Mhz)"
+
 msgid "1.75x Native"
 msgstr "1.75x Native"
+
+msgid "1.8x (22.50Mhz)"
+msgstr "1.8x (22.50Mhz)"
 
 msgid "10 seconds"
 msgstr "10 giây"
@@ -173,6 +191,9 @@ msgstr "2 giây"
 
 msgid "2 threads"
 msgstr "2 luồng"
+
+msgid "2.0x (25.00Mhz)"
+msgstr "2.0x (25.00Mhz)"
 
 msgid "2.25x (1440x1080)"
 msgstr "2.25x (1440x1080)"
@@ -495,6 +516,9 @@ msgstr "9"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ACTIVE INPUT DEVICES FIX"
+msgstr "CỐ ĐỊNH THIẾT BỊ ĐẦU VÀO HOẠT ĐỘNG"
+
 msgid "ADJUST POWERPC FREQUENCY"
 msgstr "ADJUST POWERPC FREQUENCY"
 
@@ -548,6 +572,9 @@ msgstr "BIÊN DỊCH SHADER BẤT ĐỒNG BỘ (CHỈ VULKAN)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "ASYNCHRONOUS TEXTURE STREAMING"
+
+msgid "ATARI SYSTEM"
+msgstr "HỆ THỐNG ATARI"
 
 msgid "AUDIO"
 msgstr "ÂM THANH"
@@ -1428,6 +1455,12 @@ msgstr "Bật thông báo về bộ đệm, sự kiện của bộ điều khi�
 msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
 msgstr "Bật bộ giới hạn âm thanh thứ hai. Cải thiện chất lượng âm thanh nhưng giảm hiệu năng."
 
+msgid "Enable shared saves for multi-disc games"
+msgstr "Bật tính năng lưu chia sẻ cho các trò chơi nhiều đĩa"
+
+msgid "Enable the BASIC interpreter. Some games need this."
+msgstr "Bật trình thông dịch cơ bản. Một số trò chơi cần bật chức năng này."
+
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Kích hoạt Dreamcast DSP để có âm thanh chính xác hơn. Chỉ khuyên dùng cho các hệ thống nhanh."
 
@@ -1581,6 +1614,9 @@ msgstr "Mở rộng khu vực màn hình trò chơi, tương tự như Master Sy
 msgid "External"
 msgstr "External"
 
+msgid "FAST BLITTER (LESS COMPATIBLE)"
+msgstr "TẮT NHANH (ÍT TƯƠNG THÍCH)"
+
 msgid "FAST DISK TRANSFER RATE"
 msgstr "FAST DISK TRANSFER RATE"
 
@@ -1653,6 +1689,9 @@ msgstr "Sửa lỗi xé màn hình. CPU hoạt động nặng."
 msgid "Fix texture banding when upscaling."
 msgstr "Sửa lỗi dải họa tiết khi nâng cấp."
 
+msgid "Fixes a possible bug with multiple controllers detection."
+msgstr "Sửa lỗi có thể xảy ra khi phát hiện nhiều bộ điều khiển."
+
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Dành cho các trò chơi hỗ trợ Gyro (liên kết với cần analog bên trái)"
 
@@ -1664,6 +1703,9 @@ msgstr "Dành cho trình mô phỏng và bộ điều khiển hỗ trợ bắt b
 
 msgid "For use with HD texture packs."
 msgstr "Để sử dụng với gói kết cấu HD."
+
+msgid "For weak machines. Some games will not work with this."
+msgstr "Dành cho máy yếu. Một số trò chơi sẽ không hoạt động với điều này."
 
 msgid "Force 16:9"
 msgstr "Ép 16:9"
@@ -1872,6 +1914,9 @@ msgstr "Guatemala"
 msgid "HARD TEXTURE CACHE MEMORY LIMIT"
 msgstr "HARD TEXTURE CACHE MEMORY LIMIT"
 
+msgid "HI-RES ARTIFACTING"
+msgstr "HÌNH ẢNH HI-RES"
+
 msgid "HLE (Fastest)"
 msgstr "HLE (Nhanh nhất)"
 
@@ -1937,6 +1982,9 @@ msgstr "INTEGER UPSCALING"
 
 msgid "INTERLACING PATCHES"
 msgstr "CÁC BẢN VÁ XEN KẼ"
+
+msgid "INTERNAL BASIC INTERPRETER"
+msgstr "INTERNAL BASIC INTERPRETER"
 
 msgid "INTERNAL DISPLAY RESOLUTION"
 msgstr "INTERNAL DISPLAY RESOLUTION"
@@ -2009,6 +2057,9 @@ msgstr "JOYSTICK DEADZONE"
 
 msgid "JOYSTICK GATE SIZE"
 msgstr "JOYSTICK GATE SIZE"
+
+msgid "JOYSTICK HACK (FOR ROBOTRON 2084)"
+msgstr "HACK JOYSTICK (DÀNH CHO ROBOTRON 2084)"
 
 msgid "JOYSTICK SENSITIVITY"
 msgstr "ĐỘ NHẠY JOYSTICK"
@@ -2415,6 +2466,9 @@ msgstr "NTSC (RGB)"
 msgid "NTSC (S-Video)"
 msgstr "NTSC (S-Video)"
 
+msgid "NTSC 240x480px 60Hz"
+msgstr "NTSC 240x480px 60Hz"
+
 msgid "NTSC FILTER"
 msgstr "BỘ LỌC NTSC"
 
@@ -2426,6 +2480,9 @@ msgstr "NTSC-U"
 
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
+
+msgid "NVRAM STORAGE"
+msgstr "LƯU TRỮ NVRAM"
 
 msgid "Namco GunCon"
 msgstr "Namco GunCon"
@@ -2628,6 +2685,9 @@ msgstr "chỉ P1"
 msgid "P2 only"
 msgstr "chỉ P2"
 
+msgid "PAL 288x576px 50Hz"
+msgstr "PAL 288x576px 50Hz"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2714,6 +2774,9 @@ msgstr "Mỗi 1s, tổng số 60s (660MB | 120MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "Mỗi 1s, tổng cộng 90s (990MB | 180MB)"
+
+msgid "Per Game"
+msgstr "Mỗi trò chơi"
 
 msgid "Per-game"
 msgstr "Mỗi trò chơi"
@@ -2988,6 +3051,9 @@ msgstr "BẬT HIỂN THỊ TIN NHẮN TRÊN MÀN HÌNH"
 msgid "SHOW SCREEN LAYOUT"
 msgstr "HIỂN THỊ BỐ CỤC MÀN HÌNH"
 
+msgid "SIO ACCELERATION"
+msgstr "TĂNG TỐC SIO"
+
 msgid "SKIP DS SYSTEM MENU"
 msgstr "BỎ QUA MENU HỆ THỐNG DS"
 
@@ -3249,6 +3315,9 @@ msgstr "Hack tốc độ cho chế độ lõi kép để khắc phục một s�
 msgid "Speed up shader compilation."
 msgstr "Tăng tốc độ biên dịch shader."
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "Tăng tốc độ tải tập tin. Một số game sẽ không tải được khi bật."
+
 msgid "Square pixel"
 msgstr "Pixel vuông"
 
@@ -3423,6 +3492,9 @@ msgstr "Màn hình cảm ứng"
 msgid "Traditional Chinese"
 msgstr "Trung Quốc phồn thể"
 
+msgid "Treats the right analog stick as the second joystick."
+msgstr "Coi cần analog bên phải làm cần điều khiển thứ hai."
+
 msgid "Trilinear (Forced)"
 msgstr "Trilinear (Bắt buộc)"
 
@@ -3516,6 +3588,9 @@ msgstr "Sử dụng Megadrive để tự động hóa phím bấm cho bộ đi�
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Sử dụng SSAA thay vì MSAA để khử răng cưa. SSAA có thể trông đẹp hơn nhưng sẽ làm giảm hiệu năng toàn hệ thống."
 
+msgid "Use an alternate resolution. Some games need this."
+msgstr "Sử dụng độ phân giải thay thế. Một số trò chơi cần bật chức năng này."
+
 msgid "Use language and username from the NDS Firmware"
 msgstr "Sử dụng ngôn ngữ và tên người dùng từ Firmware NDS"
 
@@ -3560,6 +3635,9 @@ msgstr "XOAY DỌC (TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "BỘ LỌC VIDEO"
+
+msgid "VIDEO FORMAT STANDARD"
+msgstr "ĐỊNH DẠNG VIDEO TIÊU CHUẨN"
 
 msgid "VIDEO SETTINGS"
 msgstr "CÀI ĐẶT VIDEO"

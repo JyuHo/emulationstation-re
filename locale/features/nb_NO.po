@@ -39,8 +39,14 @@ msgstr "1 tråd"
 msgid "1% (Default)"
 msgstr "1 % (standard)"
 
+msgid "1.0x (12.50Mhz)"
+msgstr "1.0x (12,50 MHz)"
+
 msgid "1.1x"
 msgstr "1.1x"
+
+msgid "1.1x (13.75Mhz)"
+msgstr "1.1x (13,75 MHz)"
 
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
@@ -51,6 +57,9 @@ msgstr "1.25x Native"
 msgid "1.2x"
 msgstr "1.2x"
 
+msgid "1.2x (15.00Mhz)"
+msgstr "1.2x (15,00 MHz)"
+
 msgid "1.3x"
 msgstr "1.3x"
 
@@ -59,6 +68,9 @@ msgstr "1.4x"
 
 msgid "1.5x"
 msgstr "1.5x"
+
+msgid "1.5x (18.75Mhz)"
+msgstr "1.5x (18,75 MHz)"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -69,8 +81,14 @@ msgstr "1.5x Native"
 msgid "1.6x (1024x768)"
 msgstr "1.6x (1024x768)"
 
+msgid "1.6x (20.00Mhz)"
+msgstr "1.6x (20,00 MHz)"
+
 msgid "1.75x Native"
 msgstr "1.75x Native"
+
+msgid "1.8x (22.50Mhz)"
+msgstr "1.8x (22,50 MHz)"
 
 msgid "10 seconds"
 msgstr "10 sekunder"
@@ -173,6 +191,9 @@ msgstr "2 sekunder"
 
 msgid "2 threads"
 msgstr "2 tråder"
+
+msgid "2.0x (25.00Mhz)"
+msgstr "2.0x (25,00 MHz)"
 
 msgid "2.25x (1440x1080)"
 msgstr "2.25x (1440x1080)"
@@ -495,6 +516,9 @@ msgstr "9."
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ACTIVE INPUT DEVICES FIX"
+msgstr "AKTIVE INNGANGSENHETER FIX"
+
 msgid "ADJUST POWERPC FREQUENCY"
 msgstr "JUSTERE POWERPC-FREKVENSEN"
 
@@ -548,6 +572,9 @@ msgstr "ASYNKRON SHADER-KOMPILERING (KUN VULKAN)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "ASYNKRON TEKSTURSTRØMMING"
+
+msgid "ATARI SYSTEM"
+msgstr "ATARI-SYSTEM"
 
 msgid "AUDIO"
 msgstr "LYD"
@@ -1425,6 +1452,12 @@ msgstr "Aktiver varslinger om cache, kontrollerhendelser osv."
 msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
 msgstr "Aktiverer en ekstra lydbegrenser. Forbedrer lydkvaliteten på bekostning av ytelsen."
 
+msgid "Enable shared saves for multi-disc games"
+msgstr "Aktivere delte lagringer for spill med flere disker"
+
+msgid "Enable the BASIC interpreter. Some games need this."
+msgstr "Aktiver BASIC-tolken. Noen spill trenger dette."
+
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Aktiver Dreamcast DSP for mer nøyaktig lyd. Anbefales kun for raske systemer."
 
@@ -1578,6 +1611,9 @@ msgstr "Utvid området på spillskjermen, i likhet med Master System."
 msgid "External"
 msgstr "Ekstern"
 
+msgid "FAST BLITTER (LESS COMPATIBLE)"
+msgstr "HURTIGBLENDER (MINDRE KOMPATIBEL)"
+
 msgid "FAST DISK TRANSFER RATE"
 msgstr "RASK DISKOVERFØRINGSHASTIGHET"
 
@@ -1650,6 +1686,9 @@ msgstr "Fikser skjermriving. CPU-tung."
 msgid "Fix texture banding when upscaling."
 msgstr "Fikser teksturbånd ved oppskalering."
 
+msgid "Fixes a possible bug with multiple controllers detection."
+msgstr "Løser en mulig feil med deteksjon av flere kontrollere."
+
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "For Gyro-aktiverte spill (bundet til venstre analoge spak)"
 
@@ -1661,6 +1700,9 @@ msgstr "For emulatorer og kontrollere som støtter force feedback."
 
 msgid "For use with HD texture packs."
 msgstr "For bruk med HD-teksturpakker."
+
+msgid "For weak machines. Some games will not work with this."
+msgstr "For svake maskiner. Noen spill vil ikke fungere med denne."
 
 msgid "Force 16:9"
 msgstr "Force 16:9"
@@ -1869,6 +1911,9 @@ msgstr "Guatemala"
 msgid "HARD TEXTURE CACHE MEMORY LIMIT"
 msgstr "HARD TEKSTUR-CACHE-MINNEGRENSE"
 
+msgid "HI-RES ARTIFACTING"
+msgstr "ARTEFAKTER I HØY OPPLØSNING"
+
 msgid "HLE (Fastest)"
 msgstr "HLE (raskest)"
 
@@ -1934,6 +1979,9 @@ msgstr "HELTALLSOPPSKALERING"
 
 msgid "INTERLACING PATCHES"
 msgstr "SAMMENFLETTEDE LAPPER"
+
+msgid "INTERNAL BASIC INTERPRETER"
+msgstr "INTERN BASIC TOLK"
 
 msgid "INTERNAL DISPLAY RESOLUTION"
 msgstr "INTERN SKJERMOPPLØSNING"
@@ -2006,6 +2054,9 @@ msgstr "DØDZONE FOR JOYSTICK"
 
 msgid "JOYSTICK GATE SIZE"
 msgstr "STØRRELSE PÅ JOYSTICKPORT"
+
+msgid "JOYSTICK HACK (FOR ROBOTRON 2084)"
+msgstr "JOYSTICK-HACK (FOR ROBOTRON 2084)"
 
 msgid "JOYSTICK SENSITIVITY"
 msgstr "JOYSTICKENS FØLSOMHET"
@@ -2412,6 +2463,9 @@ msgstr "NTSC (RGB)"
 msgid "NTSC (S-Video)"
 msgstr "NTSC (S-Video)"
 
+msgid "NTSC 240x480px 60Hz"
+msgstr "NTSC 240x480px 60Hz"
+
 msgid "NTSC FILTER"
 msgstr "NTSC-FILTER"
 
@@ -2423,6 +2477,9 @@ msgstr "NTSC-U"
 
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
+
+msgid "NVRAM STORAGE"
+msgstr "NVRAM-LAGRING"
 
 msgid "Namco GunCon"
 msgstr "Namco GunCon"
@@ -2625,6 +2682,9 @@ msgstr "Kun P1"
 msgid "P2 only"
 msgstr "Kun P2"
 
+msgid "PAL 288x576px 50Hz"
+msgstr "PAL 288x576px 50Hz"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2711,6 +2771,9 @@ msgstr "Per 1s, 60s totalt (660MB|120MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "Per 1s, 90s totalt (990MB|180MB)"
+
+msgid "Per Game"
+msgstr "Per spill"
 
 msgid "Per-game"
 msgstr "Per spill"
@@ -2985,6 +3048,9 @@ msgstr "VISE MELDINGER PÅ SKJERMEN"
 msgid "SHOW SCREEN LAYOUT"
 msgstr "VIS SKJERMOPPSETT"
 
+msgid "SIO ACCELERATION"
+msgstr "SIO-AKSELERASJON"
+
 msgid "SKIP DS SYSTEM MENU"
 msgstr "HOPP OVER DS SYSTEMMENY"
 
@@ -3246,6 +3312,9 @@ msgstr "Hastighetshack for dual core-modus for å fikse noen feil."
 msgid "Speed up shader compilation."
 msgstr "Raskere shader-kompilering."
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "Gjør det raskere å laste inn filer. Noen spill lastes ikke inn med denne funksjonen."
+
 msgid "Square pixel"
 msgstr "Kvadratisk piksel"
 
@@ -3420,6 +3489,9 @@ msgstr "Berøringsskjerm"
 msgid "Traditional Chinese"
 msgstr "Tradisjonell kinesisk"
 
+msgid "Treats the right analog stick as the second joystick."
+msgstr "Behandler høyre analoge spak som den andre styrespaken."
+
 msgid "Trilinear (Forced)"
 msgstr "Trilineær (tvungen)"
 
@@ -3513,6 +3585,9 @@ msgstr "Bruk Megadrive til å automatisk tilordne innganger til en Megadrive-kon
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Bruk SSAA i stedet for MSAA for kantutjevnelse. SSAA kan se bedre ut, men har en høyere ytelseskostnad."
 
+msgid "Use an alternate resolution. Some games need this."
+msgstr "Bruk en alternativ oppløsning. Noen spill trenger dette."
+
 msgid "Use language and username from the NDS Firmware"
 msgstr "Bruk språk og brukernavn fra NDS-fastvaren"
 
@@ -3557,6 +3632,9 @@ msgstr "VERTIKAL ROTASJON (TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "VIDEOFILTER"
+
+msgid "VIDEO FORMAT STANDARD"
+msgstr "STANDARD FOR VIDEOFORMAT"
 
 msgid "VIDEO SETTINGS"
 msgstr "VIDEOINNSTILLINGER"

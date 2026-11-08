@@ -39,8 +39,14 @@ msgstr "1 vlákno"
 msgid "1% (Default)"
 msgstr "1 % (výchozí)"
 
+msgid "1.0x (12.50Mhz)"
+msgstr "1.0x (12.50Mhz)"
+
 msgid "1.1x"
 msgstr "1.1x"
+
+msgid "1.1x (13.75Mhz)"
+msgstr "1.1x (13.75Mhz)"
 
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
@@ -51,6 +57,9 @@ msgstr "1,25x nativní"
 msgid "1.2x"
 msgstr "1.2x"
 
+msgid "1.2x (15.00Mhz)"
+msgstr "1.2x (15.00Mhz)"
+
 msgid "1.3x"
 msgstr "1.3x"
 
@@ -59,6 +68,9 @@ msgstr "1.4x"
 
 msgid "1.5x"
 msgstr "1.5x"
+
+msgid "1.5x (18.75Mhz)"
+msgstr "1.5x (18.75Mhz)"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -69,8 +81,14 @@ msgstr "1,5x nativní"
 msgid "1.6x (1024x768)"
 msgstr "1.6x (1024x768)"
 
+msgid "1.6x (20.00Mhz)"
+msgstr "1.6x (20.00Mhz)"
+
 msgid "1.75x Native"
 msgstr "1,75x Nativní"
+
+msgid "1.8x (22.50Mhz)"
+msgstr "1.8x (22.50Mhz)"
 
 msgid "10 seconds"
 msgstr "10 sekund"
@@ -173,6 +191,9 @@ msgstr "2 sekundy"
 
 msgid "2 threads"
 msgstr "2 vlákna"
+
+msgid "2.0x (25.00Mhz)"
+msgstr "2.0x (25.00Mhz)"
 
 msgid "2.25x (1440x1080)"
 msgstr "2.25x (1440x1080)"
@@ -495,6 +516,9 @@ msgstr "9."
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ACTIVE INPUT DEVICES FIX"
+msgstr "OPRAVA AKTIVNÍCH VSTUPNÍCH ZAŘÍZENÍ"
+
 msgid "ADJUST POWERPC FREQUENCY"
 msgstr "NASTAVENÍ FREKVENCE POWERPC"
 
@@ -548,6 +572,9 @@ msgstr "ASYNCHRONNÍ KOMPILACE SHADERŮ (POUZE VULKAN)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "ASYNCHRONNÍ STREAMOVÁNÍ TEXTUR"
+
+msgid "ATARI SYSTEM"
+msgstr "ATARI SYSTEM"
 
 msgid "AUDIO"
 msgstr "Zvuk"
@@ -1434,6 +1461,12 @@ msgstr "Povolení oznámení o událostech mezipaměti, řadiče atd."
 msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
 msgstr "Povolit druhý omezovač zvuku. Zlepšuje kvalitu zvuku na úkor výkonu."
 
+msgid "Enable shared saves for multi-disc games"
+msgstr "Povolení sdílených úložišť pro hry s více disky"
+
+msgid "Enable the BASIC interpreter. Some games need this."
+msgstr "Povolení základního tlumočníka. Některé hry to vyžadují."
+
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Povolte Dreamcast DSP pro přesnější zvuk. Doporučeno pouze pro rychlé systémy."
 
@@ -1587,6 +1620,9 @@ msgstr "Rozšíření herní plochy podobně jako u systému Master System."
 msgid "External"
 msgstr "Externí"
 
+msgid "FAST BLITTER (LESS COMPATIBLE)"
+msgstr "RYCHLÝ BLITTER (MÉNĚ KOMPATIBILNÍ)"
+
 msgid "FAST DISK TRANSFER RATE"
 msgstr "RYCHLÁ PŘENOSOVÁ RYCHLOST DISKU"
 
@@ -1659,6 +1695,9 @@ msgstr "Oprava trhání obrazovky. Zatížení CPU."
 msgid "Fix texture banding when upscaling."
 msgstr "Oprava proužkování textur při upscalingu."
 
+msgid "Fixes a possible bug with multiple controllers detection."
+msgstr "Opravuje možnou chybu při detekci více ovladačů."
+
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Pro hry s gyroskopem (na levou analogovou páčku)"
 
@@ -1670,6 +1709,9 @@ msgstr "Pro emulátory a ovladače podporující silovou zpětnou vazbu."
 
 msgid "For use with HD texture packs."
 msgstr "Pro použití s balíčky textur HD."
+
+msgid "For weak machines. Some games will not work with this."
+msgstr "Pro slabé stroje. Některé hry s ním nebudou fungovat."
 
 msgid "Force 16:9"
 msgstr "Vynucení 16:9"
@@ -1878,6 +1920,9 @@ msgstr "Guatemala"
 msgid "HARD TEXTURE CACHE MEMORY LIMIT"
 msgstr "Limit paměti cache těžké textury"
 
+msgid "HI-RES ARTIFACTING"
+msgstr "HI-RES ARTIFAKTURACE"
+
 msgid "HLE (Fastest)"
 msgstr "HLE (Rychlejší)"
 
@@ -1943,6 +1988,9 @@ msgstr "CELOČÍSELNÝ UPSCALING"
 
 msgid "INTERLACING PATCHES"
 msgstr "PROKLÁDÁNÍ POLÍČEK"
+
+msgid "INTERNAL BASIC INTERPRETER"
+msgstr "Interní základní tlumočník"
 
 msgid "INTERNAL DISPLAY RESOLUTION"
 msgstr "INTERNÍ ROZLIŠENÍ DISPLEJE"
@@ -2015,6 +2063,9 @@ msgstr "Mrtvá zóna joysticku"
 
 msgid "JOYSTICK GATE SIZE"
 msgstr "VELIKOST BRÁNY JOYSTICKU"
+
+msgid "JOYSTICK HACK (FOR ROBOTRON 2084)"
+msgstr "HACK JOYSTICKU (PRO ROBOTRON 2084)"
 
 msgid "JOYSTICK SENSITIVITY"
 msgstr "Citlivost joysticku"
@@ -2421,6 +2472,9 @@ msgstr "NTSC (RGB)"
 msgid "NTSC (S-Video)"
 msgstr "NTSC (S-Video)"
 
+msgid "NTSC 240x480px 60Hz"
+msgstr "NTSC 240x480px 60Hz"
+
 msgid "NTSC FILTER"
 msgstr "NTSC FILTR"
 
@@ -2432,6 +2486,9 @@ msgstr "NTSC-U"
 
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
+
+msgid "NVRAM STORAGE"
+msgstr "ÚLOŽIŠTĚ NVRAM"
 
 msgid "Namco GunCon"
 msgstr "Namco GunCon"
@@ -2634,6 +2691,9 @@ msgstr "Pouze P1"
 msgid "P2 only"
 msgstr "Pouze P2"
 
+msgid "PAL 288x576px 50Hz"
+msgstr "PAL 288x576px 50Hz"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2720,6 +2780,9 @@ msgstr "Za 1s, 60s celkem (660MB|120MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "Za 1s, 90s celkem (990MB|180MB)"
+
+msgid "Per Game"
+msgstr "Na Hru"
 
 msgid "Per-game"
 msgstr "Pro-hru"
@@ -2994,6 +3057,9 @@ msgstr "ZOBRAZIT ZPRÁVY NA DISPLEJI"
 msgid "SHOW SCREEN LAYOUT"
 msgstr "Zobrazit rozložení obrazovky"
 
+msgid "SIO ACCELERATION"
+msgstr "SIO ZRYCHLENÍ"
+
 msgid "SKIP DS SYSTEM MENU"
 msgstr "PŘESKOČIT SYSTÉMOVÉ MENU DS"
 
@@ -3258,11 +3324,17 @@ msgstr "Rychlostní hack pro dvoujádrový režim, který opravuje některé zá
 msgid "Speed up shader compilation."
 msgstr "Zrychlení kompilace shaderů."
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "Zrychluje načítání souborů. Některé hry se s touto funkcí nenačtou."
+
 msgid "Square pixel"
 msgstr "Čtvercový pixel"
 
 msgid "Standard (4:3)"
 msgstr "Standard (4:3)"
+
+msgid "Standard (Default)"
+msgstr "Standardní (Výchozí)"
 
 msgid "Standard Controller"
 msgstr "Standardní Ovladač"
@@ -3432,6 +3504,9 @@ msgstr "Dotyková Obrazovka"
 msgid "Traditional Chinese"
 msgstr "Tradiční Čínština"
 
+msgid "Treats the right analog stick as the second joystick."
+msgstr "Zachází s pravou analogovou páčkou jako s druhým joystickem."
+
 msgid "Trilinear (Forced)"
 msgstr "Trilineární (vynucený)"
 
@@ -3525,6 +3600,9 @@ msgstr "Použijte Megadrive k automatickému mapování vstupů pro ovladač ve 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Pro vyhlazování použijte SSAA místo MSAA. SSAA může vypadat lépe, ale má vyšší náklady na výkon."
 
+msgid "Use an alternate resolution. Some games need this."
+msgstr "Použijte alternativní rozlišení. Některé hry to potřebují."
+
 msgid "Use language and username from the NDS Firmware"
 msgstr "Použití jazyka a uživatelského jména z firmwaru NDS"
 
@@ -3572,6 +3650,9 @@ msgstr "VERTIKÁLNÍ ROTACE (TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "VIDEO FILTRY"
+
+msgid "VIDEO FORMAT STANDARD"
+msgstr "STANDARD FORMÁTU VIDEA"
 
 msgid "VIDEO SETTINGS"
 msgstr "Nastavení videa"

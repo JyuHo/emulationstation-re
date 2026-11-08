@@ -39,8 +39,14 @@ msgstr "1 thread"
 msgid "1% (Default)"
 msgstr "1% (padrão)"
 
+msgid "1.0x (12.50Mhz)"
+msgstr "1.0x (12.50Mhz)"
+
 msgid "1.1x"
 msgstr "1.1x"
+
+msgid "1.1x (13.75Mhz)"
+msgstr "1.1x (13.75Mhz)"
 
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
@@ -51,6 +57,9 @@ msgstr "1,25x Nativo"
 msgid "1.2x"
 msgstr "1.2x"
 
+msgid "1.2x (15.00Mhz)"
+msgstr "1.2x (15.00Mhz)"
+
 msgid "1.3x"
 msgstr "1.3x"
 
@@ -59,6 +68,9 @@ msgstr "1.4x"
 
 msgid "1.5x"
 msgstr "1.5x"
+
+msgid "1.5x (18.75Mhz)"
+msgstr "1.5x (18.75Mhz)"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -69,8 +81,14 @@ msgstr "1.5x Nativo"
 msgid "1.6x (1024x768)"
 msgstr "1.6x (1024x768)"
 
+msgid "1.6x (20.00Mhz)"
+msgstr "1.6x (20.00Mhz)"
+
 msgid "1.75x Native"
 msgstr "1.75x Nativo"
+
+msgid "1.8x (22.50Mhz)"
+msgstr "1.8x (22.50Mhz)"
 
 msgid "10 seconds"
 msgstr "10 segundos"
@@ -173,6 +191,9 @@ msgstr "2 segundos"
 
 msgid "2 threads"
 msgstr "2 threads"
+
+msgid "2.0x (25.00Mhz)"
+msgstr "2.0x (25.00Mhz)"
 
 msgid "2.25x (1440x1080)"
 msgstr "2.25x (1440x1080)"
@@ -501,6 +522,9 @@ msgstr "9º"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ACTIVE INPUT DEVICES FIX"
+msgstr "CORREÇÃO DE DISPOSITIVOS DE ENTRADA ATIVOS"
+
 msgid "ADJUST POWERPC FREQUENCY"
 msgstr "AJUSTAR A FREQUÊNCIA DO POWERPC"
 
@@ -554,6 +578,9 @@ msgstr "COMPILAÇÃO ASSÍNCRONA DE SOMBREAMENTOS (SOMENTE VULKAN)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "FLUXO DE TEXTURA ASSÍNCRONO"
+
+msgid "ATARI SYSTEM"
+msgstr "SISTEMA ATARI"
 
 msgid "AUDIO"
 msgstr "ÁUDIO"
@@ -663,6 +690,12 @@ msgstr "Comando Analógico"
 msgid "Analog Joystick (Flystick)"
 msgstr "Comando Analógico (Flystick)"
 
+msgid "Analog deadzone for paddles. Core default (15)."
+msgstr "Zona morta analógica para paddles. Padrão do core (15)."
+
+msgid "Analog sensitivity for paddles. Core default (20)."
+msgstr "Sensibilidade analógica para paddles. Padrão do core (20)."
+
 msgid "Angrylion"
 msgstr "Angrylion"
 
@@ -729,6 +762,9 @@ msgstr "Austrália"
 msgid "Austria"
 msgstr "Áustria"
 
+msgid "Auto (Default)"
+msgstr "Automático (Padrão)"
+
 msgid "Auto Max Quality"
 msgstr "Qualidade máxima automática"
 
@@ -791,6 +827,9 @@ msgstr "BT601_625/D65 (recomendado para todos os jogos desenvolvidos na EUR/AUS)
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "COMANDOS GRÁFICOS DE BUFFER"
+
+msgid "Badly adjusted"
+msgstr "Mal ajustado"
 
 msgid "Bahrain"
 msgstr "Barém"
@@ -942,6 +981,9 @@ msgstr "PALETE DE CORES (2D)"
 msgid "CONSOLE COUNTRY"
 msgstr "PAÍS DA CONSOLA"
 
+msgid "CONSOLE DISPLAY"
+msgstr "ECRÃ DA CONSOLA"
+
 msgid "CONSOLE LANGUAGE"
 msgstr "IDIOMA DA CONSOLA"
 
@@ -1017,8 +1059,14 @@ msgstr "MODO DE EXECUÇÃO DO PROCESSADOR"
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "Limite de latência da CPU-GPU. Valores mais baixos melhoram a latência, mas podem reduzir desempenho."
 
+msgid "CROP HORIZONTAL OVERSCAN"
+msgstr "RECORTE DE OVERSCAN HORIZONTAL"
+
 msgid "CROP OVERSCAN"
 msgstr "CORTAR BORDAS (OVERSCAN)"
+
+msgid "CROP VERTICAL OVERSCAN"
+msgstr "RECORTE DE OVERSCAN VERTICAL"
 
 msgid "CURSOR MODE"
 msgstr "MODO CURSOR"
@@ -1205,6 +1253,12 @@ msgstr "Costa Rica"
 
 msgid "Croatia"
 msgstr "Croácia"
+
+msgid "Crop horizontal overscan."
+msgstr "Recorte de overscan horizontal."
+
+msgid "Crop vertical overscan (lines). Core default (0)."
+msgstr "Recorte de overscan vertical (linhas). Padrão do core (0)."
 
 msgid "Cross"
 msgstr "Cruz"
@@ -1488,6 +1542,9 @@ msgstr "Permita que o MelonDS seja apresentado em dois ecrãs. Algumas opções 
 msgid "Enable No-interlacing Patches."
 msgstr "Ativar correção No-interlacing."
 
+msgid "Enable TV-like filtering / effects."
+msgstr "Ativar filtros/efeitos ao estilo TV."
+
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "Ativar a montagem em cache. Pode melhorar o desempenho e a compatibilidade em alguns jogos."
 
@@ -1503,8 +1560,17 @@ msgstr "Ativar a vista do comando para jogos com interação em dois ecrãs. Uti
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Ativar notificações de memória cache, eventos do comando etc."
 
+msgid "Enable phosphor mode (motion blur) for flickering effects."
+msgstr "Ativar o modo fósforo (desfocagem de movimento) para efeitos de cintilação."
+
 msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
 msgstr "Ativa um segundo limitador de Áudio. Melhora a qualidade do Áudio a custo do desempenho."
+
+msgid "Enable shared saves for multi-disc games"
+msgstr "Ativar arquivos de gravações partilhados para jogos com vários discos"
+
+msgid "Enable the BASIC interpreter. Some games need this."
+msgstr "Ativar o interpretador BASIC. Alguns jogos precisam disso."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Ativa o Processador de Áudio Digital (DSP) da Dreamcast para um som mais preciso. Recomendado apenas para sistemas rápidos."
@@ -1659,6 +1725,9 @@ msgstr "Estender a área de ecrã do jogo, semelhante ao Master System."
 msgid "External"
 msgstr "Externo"
 
+msgid "FAST BLITTER (LESS COMPATIBLE)"
+msgstr "BLITTER RÁPIDO (MENOS COMPATÍVEL)"
+
 msgid "FAST DISK TRANSFER RATE"
 msgstr "TAXA DE TRANSFERÊNCIA RÁPIDA DO DISCO"
 
@@ -1743,6 +1812,9 @@ msgstr "Correção da imagem (rasgar). Exige do CPU."
 msgid "Fix texture banding when upscaling."
 msgstr "Corrige bandas de textura ao aumentar a escala."
 
+msgid "Fixes a possible bug with multiple controllers detection."
+msgstr "Corrige possível defeito com a detecção de múltiplos comandos."
+
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Para jogos programados para giroscópio (ligado ao analógico esquerdo)"
 
@@ -1754,6 +1826,9 @@ msgstr "Para emuladores e comandos que suportam force feedback."
 
 msgid "For use with HD texture packs."
 msgstr "Para uso com pacotes de textura em alta definicão HD."
+
+msgid "For weak machines. Some games will not work with this."
+msgstr "Para máquinas lentas. Alguns jogos não funcionarão com isto."
 
 msgid "Force 16:9"
 msgstr "Forçar 16:9"
@@ -1968,6 +2043,9 @@ msgstr "SHADER POR HARDWARE"
 msgid "HARDWARE TESSELLATION"
 msgstr "TESSELAGEM POR HARDWARE"
 
+msgid "HI-RES ARTIFACTING"
+msgstr "ARTEFATO DE ALTA RESOLUÇÃO"
+
 msgid "HLE (Fastest)"
 msgstr "HLE (Mais Rápido)"
 
@@ -2036,6 +2114,9 @@ msgstr "AUMENTO NA TOTALIDADE "
 
 msgid "INTERLACING PATCHES"
 msgstr "CORREÇAÕ INTERLACING"
+
+msgid "INTERNAL BASIC INTERPRETER"
+msgstr "INTERPRETADOR BÁSICO INTERNO"
 
 msgid "INTERNAL DISPLAY RESOLUTION"
 msgstr "RESOLUÇÃO NATIVA DO ECRÃ"
@@ -2115,6 +2196,9 @@ msgstr "ZONA MORTA DO JOYSTICK"
 msgid "JOYSTICK GATE SIZE"
 msgstr "TAMANHO DO ENCAIXE DO ANALÓGICO"
 
+msgid "JOYSTICK HACK (FOR ROBOTRON 2084)"
+msgstr "COMANDO HACKEADO (PARA ROBOTRON 2084)"
+
 msgid "JOYSTICK SENSITIVITY"
 msgstr "SENSIBILIDADE DO JOYSTICK"
 
@@ -2162,6 +2246,9 @@ msgstr "Comando de 6 Botões + Teamplayer p/ 4 Jogadores"
 
 msgid "Joypad Auto"
 msgstr "Comando Automático"
+
+msgid "Joypad sensitivity for paddles. Core default (3)."
+msgstr "Sensibilidade do comando para paddles. Padrão do core (3)."
 
 msgid "Joystick"
 msgstr "Comando"
@@ -2475,6 +2562,9 @@ msgstr "Marrocos"
 msgid "Mouse"
 msgstr "Rato"
 
+msgid "Mouse sensitivity for paddles. Core default (10)."
+msgstr "Sensibilidade do rato para paddles. Padrão do core (10)."
+
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "Muito mais rápido que o interpretador (mas pode ter problemas)."
 
@@ -2529,8 +2619,17 @@ msgstr "NTSC (RGB)"
 msgid "NTSC (S-Video)"
 msgstr "NTSC (S-Video)"
 
+msgid "NTSC 240x480px 60Hz"
+msgstr "NTSC 240x480px 60Hz"
+
+msgid "NTSC ASPECT"
+msgstr "ASPETO NTSC"
+
 msgid "NTSC FILTER"
 msgstr "FILTRO NTFS"
+
+msgid "NTSC aspect ratio correction. Core default (PAR)."
+msgstr "Correção da proporção de aspeto NTSC. Padrão do core (PAR)."
 
 msgid "NTSC-J"
 msgstr "NTSC-J"
@@ -2540,6 +2639,12 @@ msgstr "NTSC-U"
 
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
+
+msgid "NTSC50"
+msgstr "NTSC50"
+
+msgid "NVRAM STORAGE"
+msgstr "ARMAZENAMENTO NVRAM"
 
 msgid "Namco GunCon"
 msgstr "Namco GunCon"
@@ -2754,6 +2859,36 @@ msgstr "Somente Jogador 1"
 msgid "P2 only"
 msgstr "Somente Jogador 2"
 
+msgid "PADDLE ANALOG ABSOLUTE"
+msgstr "PADDLE ANALÓGICO ABSOLUTO"
+
+msgid "PADDLE ANALOG DEADZONE"
+msgstr "ZONA MORTA ANALÓGICA DO PADDLE"
+
+msgid "PADDLE ANALOG SENSITIVITY"
+msgstr "SENSIBILIDADE DO PADDLE ANALÓGICO"
+
+msgid "PADDLE JOYPAD SENSITIVITY"
+msgstr "SENSIBILIDADE DO JOYPAD"
+
+msgid "PADDLE MOUSE SENSITIVITY"
+msgstr "SENSIBILIDADE DO RATO PADDLE"
+
+msgid "PAL 288x576px 50Hz"
+msgstr "PAL 288x576px 50Hz"
+
+msgid "PAL ASPECT"
+msgstr "ASPETO PAL"
+
+msgid "PAL aspect ratio correction. Core default (PAR)."
+msgstr "Correção da proporção de aspeto PAL. Padrão do core (PAR)."
+
+msgid "PAL60"
+msgstr "PAL60"
+
+msgid "PALETTE COLORS"
+msgstr "CORES DA PALETTE"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2774,6 +2909,12 @@ msgstr "DESEMPENHO"
 
 msgid "PERFORMANCE HACKS"
 msgstr "HACKS DE DESEMPENHO"
+
+msgid "PHOSPHOR BLEND"
+msgstr "MISTURA DO FÓSFORO"
+
+msgid "PHOSPHOR MODE"
+msgstr "MODO FÓSFORO"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "COR DA MIRA PARA O JOGADOR 1"
@@ -2844,6 +2985,9 @@ msgstr "Por 1s, 60s no total (660MB|120MB)"
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "Por 1s, 90s no total (990MB|180MB)"
 
+msgid "Per Game"
+msgstr "Por jogo"
+
 msgid "Per-game"
 msgstr "Por jogo"
 
@@ -2852,6 +2996,9 @@ msgstr "Perú"
 
 msgid "Philippines"
 msgstr "Filipinas"
+
+msgid "Phosphor blend level. Core default (60%)."
+msgstr "Nível de mistura de fósforo. Padrão principal (60%)."
 
 msgid "PlayStation Mouse"
 msgstr "Rato da PlayStation"
@@ -3093,6 +3240,12 @@ msgstr "TROCA DE ECRÃ"
 msgid "SDL2"
 msgstr "SDL2"
 
+msgid "SECAM"
+msgstr "SECAM"
+
+msgid "SECAM60"
+msgstr "SECAM60"
+
 msgid "SENSITIVITY"
 msgstr "SENSIBILIDADE"
 
@@ -3128,6 +3281,9 @@ msgstr "MOSTRAR MENSAGENS DE EXIBIÇÃO NO ECRÃ"
 
 msgid "SHOW SCREEN LAYOUT"
 msgstr "MOSTRAR LAYOUT DO ECRÃ"
+
+msgid "SIO ACCELERATION"
+msgstr "ACELERAÇÃO SIO"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "SALTAR BUFFER EFFECTS"
@@ -3192,6 +3348,9 @@ msgstr "DESCODIFICADOR SPU"
 msgid "SPU LOOP DETECTION"
 msgstr "DETECÇÃO DE LOOP SPU"
 
+msgid "STEREO SOUND"
+msgstr "SOM STEREO"
+
 msgid "STRETCH MODE"
 msgstr "MODO ESTICAR"
 
@@ -3249,8 +3408,14 @@ msgstr "Sega/Mega CD"
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Selecionar o idioma que será usado se 'Usar configurações de firmware' estiver desativado ou se o ficheiro de firmware não for encontrado. "
 
+msgid "Select the console video standard / display mode."
+msgstr "Selecionar o standard de vídeo da consola / modo de ecrã."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "Selecione o tipo de entrada para navegar na ecrã tátil"
+
+msgid "Select the palette used to render colors."
+msgstr "Selecionar a paleta utilizada para renderizar cores."
 
 msgid "Separate Windows"
 msgstr "Janelas Separadas"
@@ -3417,11 +3582,17 @@ msgstr "Hacks de velocidade para o modo dual core para corrigir algumas falhas."
 msgid "Speed up shader compilation."
 msgstr "Acelera a compilação de shaders."
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "Acelera o carregamento de ficheiros. Alguns jogos não funcionam com isso."
+
 msgid "Square pixel"
 msgstr "Pixel quadrado"
 
 msgid "Standard (4:3)"
 msgstr "Standard (4:3)"
+
+msgid "Standard (Default)"
+msgstr "Standard (Padrão)"
 
 msgid "Standard Controller"
 msgstr "Comando Predefinido"
@@ -3434,6 +3605,9 @@ msgstr "Volante"
 
 msgid "Stereo"
 msgstr "Stereo"
+
+msgid "Stereo sound output."
+msgstr "Saída de som Stereo."
 
 msgid "Stretch"
 msgstr "Esticado"
@@ -3537,6 +3711,9 @@ msgstr "FILTRO TRILINEAR"
 msgid "TRUE COLOR RENDERING"
 msgstr "RENDERIZAÇÃO DE CORES REAIS"
 
+msgid "TV EFFECTS"
+msgstr "EFEITOS DE TV"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - Pack 1"
 
@@ -3617,6 +3794,9 @@ msgstr "Ecrã Tátil"
 
 msgid "Traditional Chinese"
 msgstr "Chinês Tradicional"
+
+msgid "Treats the right analog stick as the second joystick."
+msgstr "Trata o analógico direito como o segundo joystick."
 
 msgid "Trilinear (Forced)"
 msgstr "Trilinear (Forçado)"
@@ -3717,6 +3897,12 @@ msgstr "Usar o Megadrive para automatizar entradas para um comando estilo Megadr
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Usar SSAA em vez de MSAA para anti-aliasing. SSAA pode parecer melhor, mas tem um maior custo de desempenho."
 
+msgid "Use absolute analog input for paddles."
+msgstr "Usar entrada analógica absoluta para paddles."
+
+msgid "Use an alternate resolution. Some games need this."
+msgstr "Use uma resolução alternativa. Necessário para alguns jogos."
+
 msgid "Use language and username from the NDS Firmware"
 msgstr "Use o idioma e o nome de utilizador do Firmware NDS"
 
@@ -3747,6 +3933,9 @@ msgstr "Útil para certos jogos de arcada."
 msgid "Useful for speedruns/glitches."
 msgstr "Útil para speedruns/glitches."
 
+msgid "User"
+msgstr "Utilizador"
+
 msgid "Uses hardware to make curves."
 msgstr "Utiliza hardware para fazer curvas."
 
@@ -3767,6 +3956,9 @@ msgstr "ROTAÇÃO VERTICAL (TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "FILTROS DE VÍDEO"
+
+msgid "VIDEO FORMAT STANDARD"
+msgstr "FORMATO PADRÃO DE VIDEO"
 
 msgid "VIDEO SETTINGS"
 msgstr "DEFINIÇÕES DE VÍDEO"
@@ -3887,6 +4079,9 @@ msgstr "Amarelo"
 
 msgid "Yemen"
 msgstr "Iémen"
+
+msgid "Z26"
+msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "PRECISÃO ZCULL"

@@ -39,8 +39,14 @@ msgstr "منفذ واحد"
 msgid "1% (Default)"
 msgstr "1% (افتراضي)"
 
+msgid "1.0x (12.50Mhz)"
+msgstr "1.0x (12.50م.هرتز)"
+
 msgid "1.1x"
 msgstr "1.1x"
+
+msgid "1.1x (13.75Mhz)"
+msgstr "1.1x (13.75م.هرتز)"
 
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
@@ -51,6 +57,9 @@ msgstr "1.25x أصلي"
 msgid "1.2x"
 msgstr "1.2x"
 
+msgid "1.2x (15.00Mhz)"
+msgstr "1.2x (15.00م.هرتز)"
+
 msgid "1.3x"
 msgstr "1.3x"
 
@@ -59,6 +68,9 @@ msgstr "1.4x"
 
 msgid "1.5x"
 msgstr "1.5x"
+
+msgid "1.5x (18.75Mhz)"
+msgstr "1.5x (18.75م.هرتز)"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -69,8 +81,14 @@ msgstr "1.5x أصلي"
 msgid "1.6x (1024x768)"
 msgstr "1.6x (1024x768)"
 
+msgid "1.6x (20.00Mhz)"
+msgstr "1.6x (20.00م.هرتز)"
+
 msgid "1.75x Native"
 msgstr "1.75x أصلي"
+
+msgid "1.8x (22.50Mhz)"
+msgstr "1.8x (22.50م.هرتز)"
 
 msgid "10 seconds"
 msgstr "10 ثوان"
@@ -173,6 +191,9 @@ msgstr "ثانيتان"
 
 msgid "2 threads"
 msgstr "مساران"
+
+msgid "2.0x (25.00Mhz)"
+msgstr "(٢٥.٠٠ م.هرتز) x٢.٠"
 
 msgid "2.25x (1440x1080)"
 msgstr "(١٤٤٠x١٠٨٠) x ٢.٢٥"
@@ -501,6 +522,9 @@ msgstr "9th"
 msgid "9x 4K (2880x2160)"
 msgstr "4K x٩ (٢٨٨٠x٢١٦٠)"
 
+msgid "ACTIVE INPUT DEVICES FIX"
+msgstr "إصلاح أجهزة الإدخال النشطة"
+
 msgid "ADJUST POWERPC FREQUENCY"
 msgstr "تعديل تردد POWERPC"
 
@@ -554,6 +578,9 @@ msgstr "تجميع المظلل غير المتزامن (VULKAN فقط)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "بث الخامات غير المتزامن"
+
+msgid "ATARI SYSTEM"
+msgstr "نظام أتاري"
 
 msgid "AUDIO"
 msgstr "الصوت"
@@ -663,6 +690,12 @@ msgstr "ذراع التحكم التناظرية"
 msgid "Analog Joystick (Flystick)"
 msgstr "عصا تحكم تناظرية (Flystick)"
 
+msgid "Analog deadzone for paddles. Core default (15)."
+msgstr "منطقة ميتة لعصا التحكم (القيمة الافتراضية 15)."
+
+msgid "Analog sensitivity for paddles. Core default (20)."
+msgstr "حساسية عصا التحكم (القيمة الافتراضية 20)."
+
 msgid "Angrylion"
 msgstr "أنغريلون"
 
@@ -729,6 +762,9 @@ msgstr "أستراليا"
 msgid "Austria"
 msgstr "النمسا"
 
+msgid "Auto (Default)"
+msgstr "تلقائي (الافتراضي)"
+
 msgid "Auto Max Quality"
 msgstr "أوتو أعلى جودة"
 
@@ -791,6 +827,9 @@ msgstr "BT601_625/D65 (مستحسن لجميع الألعاب الأوروبية
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "أوامر رسم الرسوميات"
+
+msgid "Badly adjusted"
+msgstr "تعديل سيء"
 
 msgid "Bahrain"
 msgstr "البحرين"
@@ -942,6 +981,9 @@ msgstr "لوح الألوان (ثنائية الأبعاد)"
 msgid "CONSOLE COUNTRY"
 msgstr "دولة الجهاز"
 
+msgid "CONSOLE DISPLAY"
+msgstr "شاشة الجهاز"
+
 msgid "CONSOLE LANGUAGE"
 msgstr "لغة جهاز الكونسول"
 
@@ -1017,8 +1059,14 @@ msgstr "وضع تنفيذ المعالج"
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "حد زمن الوصول بين المعالج وكرت الشاشة. القيم الأقل تحسن الاستجابة ولكن قد تقلل الأداء."
 
+msgid "CROP HORIZONTAL OVERSCAN"
+msgstr "قص المسح الزائد الأفقي"
+
 msgid "CROP OVERSCAN"
 msgstr "قص المسح الزائد"
+
+msgid "CROP VERTICAL OVERSCAN"
+msgstr "قص المسح الزائد العمودي"
 
 msgid "CURSOR MODE"
 msgstr "وضع المؤشر"
@@ -1205,6 +1253,12 @@ msgstr "كوستاريكا"
 
 msgid "Croatia"
 msgstr "كرواتيا"
+
+msgid "Crop horizontal overscan."
+msgstr "اقتصاص المسح الزائد الأفقي."
+
+msgid "Crop vertical overscan (lines). Core default (0)."
+msgstr "اقتصاص المسح الزائد الرأسي (أسطر). الإعداد الافتراضي للنواة (0)."
 
 msgid "Cross"
 msgstr "صليب"
@@ -1488,6 +1542,9 @@ msgstr "تمكين MelonDS لعرض الشاشتين. بعض خيارات الش
 msgid "Enable No-interlacing Patches."
 msgstr "تمكين تصحيحات إلغاء التشابك."
 
+msgid "Enable TV-like filtering / effects."
+msgstr "تمكين تصفية/تأثيرات تشبه التلفزيون."
+
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "تمكين تحميل الذاكرة المؤقتة. قد يُحسّن الأداء والتوافق في بعض الألعاب."
 
@@ -1503,8 +1560,17 @@ msgstr "تفعيل عرض لوحة الألعاب للألعاب التي تتف
 msgid "Enable notifications of cache, controller events etc."
 msgstr "تفعيل إشعارات ذاكرة التخزين المؤقت، أحداث وحدة التحكم، إلخ."
 
+msgid "Enable phosphor mode (motion blur) for flickering effects."
+msgstr "تفعيل وضع الفوسفور (ضبابية الحركة) لتأثيرات الوميض."
+
 msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
 msgstr "تفعيل مقيد الصوت الثاني. يُحسن جودة الصوت على حساب الأداء."
+
+msgid "Enable shared saves for multi-disc games"
+msgstr "تفعيل الحفظ المشترك للألعاب متعددة الأقراص"
+
+msgid "Enable the BASIC interpreter. Some games need this."
+msgstr "تفعيل مفسر BASIC. بعض الألعاب تحتاجه."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "تفعيل Dreamcast DSP للحصول على صوت أكثر دقة. يُنصح به فقط للأنظمة السريعة."
@@ -1659,6 +1725,9 @@ msgstr "توسيع مساحة شاشة اللعبة، على غرار Master Sys
 msgid "External"
 msgstr "خارجي"
 
+msgid "FAST BLITTER (LESS COMPATIBLE)"
+msgstr "مُسرّع الرسوميات (أقل توافقاً)"
+
 msgid "FAST DISK TRANSFER RATE"
 msgstr "معدل نقل سريع للقرص"
 
@@ -1743,6 +1812,9 @@ msgstr "إصلاح تمزق الشاشة. يستهلك الكثير من وحد�
 msgid "Fix texture banding when upscaling."
 msgstr "إصلاح خطوط الإكساء (banding) عند رفع الدقة."
 
+msgid "Fixes a possible bug with multiple controllers detection."
+msgstr "يُصلح خطأً محتملاً في اكتشاف وحدات تحكم متعددة."
+
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "للألعاب التي تدعم الجيروسكوب (مرتبطة بالعصا التناظرية اليسرى)"
 
@@ -1754,6 +1826,9 @@ msgstr "للمحاكيات ووحدات التحكم التي تدعم ردود 
 
 msgid "For use with HD texture packs."
 msgstr "للاستخدام مع حزم إكساءات عالية الدقة."
+
+msgid "For weak machines. Some games will not work with this."
+msgstr "للأجهزة الضعيفة. لن تعمل بعض الألعاب مع هذا."
 
 msgid "Force 16:9"
 msgstr "فرض 16:9"
@@ -1968,6 +2043,9 @@ msgstr "مظلل الأجهزة"
 msgid "HARDWARE TESSELLATION"
 msgstr "الفسيفساء للأجهزة"
 
+msgid "HI-RES ARTIFACTING"
+msgstr "تشوهات عالية الدقة"
+
 msgid "HLE (Fastest)"
 msgstr "HLE (الأسرع)"
 
@@ -2036,6 +2114,9 @@ msgstr "ترقية صحيحة"
 
 msgid "INTERLACING PATCHES"
 msgstr "رقع التداخل"
+
+msgid "INTERNAL BASIC INTERPRETER"
+msgstr "مترجم بيسك الداخلي"
 
 msgid "INTERNAL DISPLAY RESOLUTION"
 msgstr "دقة العرض الداخلية"
@@ -2115,6 +2196,9 @@ msgstr "المنطقة الميتة لعصا التحكم"
 msgid "JOYSTICK GATE SIZE"
 msgstr "حجم بوابة عصا التحكم"
 
+msgid "JOYSTICK HACK (FOR ROBOTRON 2084)"
+msgstr "اختراق عصا التحكم (لـ ROBOTRON 2084)"
+
 msgid "JOYSTICK SENSITIVITY"
 msgstr "حساسية عصا التحكم"
 
@@ -2162,6 +2246,9 @@ msgstr "لوحة لعب بـ 6 أزرار + Teamplayer"
 
 msgid "Joypad Auto"
 msgstr "لوحة لعب (تلقائي)"
+
+msgid "Joypad sensitivity for paddles. Core default (3)."
+msgstr "حساسية لوحة اللعب للمجاديف. الافتراضي للنواة (3)."
 
 msgid "Joystick"
 msgstr "ذراع التحكم"
@@ -2475,6 +2562,9 @@ msgstr "المغرب"
 msgid "Mouse"
 msgstr "الفأرة"
 
+msgid "Mouse sensitivity for paddles. Core default (10)."
+msgstr "حساسية الماوس للمضارب. الافتراضي للنواة (10)."
+
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "أسرع بكثير من المترجم (ولكن قد تكون به مشاكل)."
 
@@ -2529,8 +2619,17 @@ msgstr "NTSC (RGB)"
 msgid "NTSC (S-Video)"
 msgstr "NTSC (S-Video)"
 
+msgid "NTSC 240x480px 60Hz"
+msgstr "NTSC 240x480 بكسل 60 هرتز"
+
+msgid "NTSC ASPECT"
+msgstr "نسبة العرض إلى الارتفاع NTSC"
+
 msgid "NTSC FILTER"
 msgstr "مرشح NTSC"
+
+msgid "NTSC aspect ratio correction. Core default (PAR)."
+msgstr "تصحيح نسبة العرض إلى الارتفاع NTSC. الافتراضي للنواة (PAR)."
 
 msgid "NTSC-J"
 msgstr "NTSC-J"
@@ -2540,6 +2639,12 @@ msgstr "NTSC-U"
 
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
+
+msgid "NTSC50"
+msgstr "NTSC50"
+
+msgid "NVRAM STORAGE"
+msgstr "تخزين NVRAM"
 
 msgid "Namco GunCon"
 msgstr "مسدس Namco GunCon"
@@ -2754,6 +2859,36 @@ msgstr "اللاعب 1 فقط"
 msgid "P2 only"
 msgstr "اللاعب 2 فقط"
 
+msgid "PADDLE ANALOG ABSOLUTE"
+msgstr "مطلق تناظري للمضرب"
+
+msgid "PADDLE ANALOG DEADZONE"
+msgstr "المنطقة الميتة التناظرية للمضرب"
+
+msgid "PADDLE ANALOG SENSITIVITY"
+msgstr "حساسية تناظرية للمضرب"
+
+msgid "PADDLE JOYPAD SENSITIVITY"
+msgstr "حساسية لوحة التحكم للمضرب"
+
+msgid "PADDLE MOUSE SENSITIVITY"
+msgstr "حساسية الماوس للمضرب"
+
+msgid "PAL 288x576px 50Hz"
+msgstr "PAL 288x576 بكسل 50 هرتز"
+
+msgid "PAL ASPECT"
+msgstr "نسبة العرض إلى الارتفاع PAL"
+
+msgid "PAL aspect ratio correction. Core default (PAR)."
+msgstr "تصحيح نسبة العرض إلى الارتفاع PAL. الافتراضي للنواة (PAR)."
+
+msgid "PAL60"
+msgstr "PAL60"
+
+msgid "PALETTE COLORS"
+msgstr "ألوان اللوحة"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2774,6 +2909,12 @@ msgstr "الأداء"
 
 msgid "PERFORMANCE HACKS"
 msgstr "اختراقات الأداء"
+
+msgid "PHOSPHOR BLEND"
+msgstr "مزيج الفوسفور"
+
+msgid "PHOSPHOR MODE"
+msgstr "وضع الفوسفور"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "لون علامة التصويب للاعب 1"
@@ -2844,6 +2985,9 @@ msgstr "كل ثانية واحدة، 60 ثانية إجمالاً (660 ميجا�
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "كل ثانية واحدة، 90 ثانية إجمالاً (990 ميجابايت|180 ميجابايت)"
 
+msgid "Per Game"
+msgstr "لكل لعبة"
+
 msgid "Per-game"
 msgstr "لكل لعبة"
 
@@ -2852,6 +2996,9 @@ msgstr "بيرو"
 
 msgid "Philippines"
 msgstr "الفلبين"
+
+msgid "Phosphor blend level. Core default (60%)."
+msgstr "مستوى مزيج الفوسفور. الافتراضي للنواة (60%)."
 
 msgid "PlayStation Mouse"
 msgstr "ماوس PlayStation"
@@ -3093,6 +3240,12 @@ msgstr "تبديل الشاشة"
 msgid "SDL2"
 msgstr "SDL2"
 
+msgid "SECAM"
+msgstr "SECAM"
+
+msgid "SECAM60"
+msgstr "SECAM60"
+
 msgid "SENSITIVITY"
 msgstr "الحساسية"
 
@@ -3128,6 +3281,9 @@ msgstr "إظهار رسائل العرض على الشاشة"
 
 msgid "SHOW SCREEN LAYOUT"
 msgstr "إظهار تخطيط الشاشة"
+
+msgid "SIO ACCELERATION"
+msgstr "تسريع SIO"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "تخطي تأثيرات المخزن المؤقت"
@@ -3192,6 +3348,9 @@ msgstr "وحدة فك ترميز SPU"
 msgid "SPU LOOP DETECTION"
 msgstr "كشف الحلقة SPU"
 
+msgid "STEREO SOUND"
+msgstr "صوت ستيريو"
+
 msgid "STRETCH MODE"
 msgstr "وضع التمدد"
 
@@ -3249,8 +3408,14 @@ msgstr "Sega/Mega CD"
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "اختر لغة ستستخدم إذا كان \"استخدم إعدادات البرامج الثابتة(FIRMWARE)\" معطل أو ملف البرامج الثابتة(FIRMWARE) غير موجود."
 
+msgid "Select the console video standard / display mode."
+msgstr "حدد معيار فيديو وحدة التحكم / وضع العرض."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "حدد نوع الإدخال للتنقل في شاشة اللمس"
+
+msgid "Select the palette used to render colors."
+msgstr "حدد لوحة الألوان المستخدمة لتصيير الألوان."
 
 msgid "Separate Windows"
 msgstr "نوافذ منفصلة"
@@ -3417,11 +3582,17 @@ msgstr "اختراق سرعة لوضع النواة المزدوجة لإصلا�
 msgid "Speed up shader compilation."
 msgstr "تسريع تجميع التظليل."
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "يسرع تحميل الملفات. بعض الألعاب لن يتم تحميلها مع هذا."
+
 msgid "Square pixel"
 msgstr "بكسل مربع"
 
 msgid "Standard (4:3)"
 msgstr "قياسي(٣:٤)"
+
+msgid "Standard (Default)"
+msgstr "قياسي (افتراضي)"
 
 msgid "Standard Controller"
 msgstr "وحدة تحكم قياسية"
@@ -3434,6 +3605,9 @@ msgstr "عجلة القيادة"
 
 msgid "Stereo"
 msgstr "ستريو"
+
+msgid "Stereo sound output."
+msgstr "مخرج صوت ستريو."
 
 msgid "Stretch"
 msgstr "تمديد"
@@ -3537,6 +3711,9 @@ msgstr "الترشيح ثلاثي الخطوط"
 msgid "TRUE COLOR RENDERING"
 msgstr "تصيير الألوان الحقيقية"
 
+msgid "TV EFFECTS"
+msgstr "تأثيرات التلفزيون"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - الحزمة 1"
 
@@ -3617,6 +3794,9 @@ msgstr "شاشة اللمس"
 
 msgid "Traditional Chinese"
 msgstr "الصينية التقليدية"
+
+msgid "Treats the right analog stick as the second joystick."
+msgstr "يعالج العصا التناظرية اليمنى باعتبارها عصا التحكم الثانية."
 
 msgid "Trilinear (Forced)"
 msgstr "ثلاثي الخطوط (إجباري)"
@@ -3717,6 +3897,12 @@ msgstr "استخدم Megadrive لتعيين المدخلات تلقائيًا ل
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "استخدم SSAA بدلاً من MSAA لمكافحة التعرجات. قد تبدو SSAA أفضل ولكنها ذات تكلفة أداء أعلى."
 
+msgid "Use absolute analog input for paddles."
+msgstr "استخدم الإدخال التناظري المطلق للمجاديف."
+
+msgid "Use an alternate resolution. Some games need this."
+msgstr "استخدم دقة بديلة. بعض الألعاب تحتاجها."
+
 msgid "Use language and username from the NDS Firmware"
 msgstr ".الثابت NDS استخدم اللغة واسم المستخدم من برنامج"
 
@@ -3747,6 +3933,9 @@ msgstr "مفيد لبعض ألعاب الأركيد."
 msgid "Useful for speedruns/glitches."
 msgstr "مفيد لسباقات السرعة/الأعطال."
 
+msgid "User"
+msgstr "مستخدم"
+
 msgid "Uses hardware to make curves."
 msgstr "يستخدم الأجهزة لصنع المنحنيات."
 
@@ -3767,6 +3956,9 @@ msgstr "(TATE) الدوران الرأسي"
 
 msgid "VIDEO FILTERS"
 msgstr "مرشحات الفيديو"
+
+msgid "VIDEO FORMAT STANDARD"
+msgstr "معيار تنسيق الفيديو"
 
 msgid "VIDEO SETTINGS"
 msgstr "إعدادات الفيديو"
@@ -3887,6 +4079,9 @@ msgstr "أصفر"
 
 msgid "Yemen"
 msgstr "اليمن"
+
+msgid "Z26"
+msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "ZCULL دقة"

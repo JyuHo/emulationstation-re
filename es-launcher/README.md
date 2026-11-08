@@ -67,7 +67,7 @@ Generators
 
 | Emulator name (`es_systems.cfg`) | Generator | Notes |
 | --- | --- | --- |
-| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, vba-m (`vbam`), mgba, melondsds, melonds, desmume, mesen, fceumm, nestopia, snes9x, bsnes (and bsnes_hd), mupen64plus-next, parallel_n64, vb (`mednafen_vb`), pokemini, swanstation, mednafen_psx (`mednafen_psx_hw`), pcsx_rearmed, genesisplusgx (`genesis_plus_gx`, and the expanded build), picodrive, beetle-saturn (`mednafen_saturn`), yabasanshiro, kronos, ppsspp, pce and pce_fast (`mednafen_pce`, `mednafen_pce_fast`), mednafen_supergrafx, mednafen_wswan, fbneo, mame078plus (`mame2003_plus`), neocd and flycast (Dreamcast, Naomi, Atomiswave); any other core runs with the generic settings |
+| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, vba-m (`vbam`), mgba, melondsds, melonds, desmume, mesen, fceumm, nestopia, snes9x, bsnes (and bsnes_hd), mupen64plus-next, parallel_n64, vb (`mednafen_vb`), pokemini, swanstation, mednafen_psx (`mednafen_psx_hw`), pcsx_rearmed, genesisplusgx (`genesis_plus_gx`, and the expanded build), picodrive, beetle-saturn (`mednafen_saturn`), yabasanshiro, kronos, ppsspp, pce and pce_fast (`mednafen_pce`, `mednafen_pce_fast`), mednafen_supergrafx, mednafen_wswan, fbneo, mame078plus (`mame2003_plus`), neocd, stella, handy, virtualjaguar, opera, atari800 (Atari 800 and 5200) and flycast (Dreamcast, Naomi, Atomiswave); any other core runs with the generic settings |
 | `duckstation` | DuckStation | PlayStation |
 | `pcsx2` | PCSX2 | PlayStation 2, x86_64 only |
 | `ppsspp` | PPSSPP | PSP |
@@ -82,6 +82,7 @@ Generators
 | `mupen64plus` | Mupen64Plus | Nintendo 64; the core is the video plugin (`gliden64`, `glide64mk2`, `rice`) |
 | `ymir` | Ymir | Sega Saturn |
 | `supermodel` | Supermodel | Sega Model 3 |
+| `stella` | Stella | Atari 2600; started with the game, full screen, Stella keeps its own settings |
 
 Any other emulator keeps the `es_systems.cfg` command. Setting `eslauncher=0` in the ES
 configuration (`global.eslauncher`, `<system>.eslauncher` or for one game) also keeps it.
@@ -155,7 +156,7 @@ leaves the others as the player set them in the emulator's menus.
   `SDL_GAMECONTROLLERCONFIG`, so the generators bind SDL's gamepad names and any pad works the way
   it was mapped in ES. A Flatpak gets this environment through `--env=` options.
   ES and the emulators read the pads through Linux evdev (`SDL_JOYSTICK_HIDAPI=0`), like
-  RetroArch's udev driver. Through evdev, SDL2 (Azahar, Xenia, melonDS, Mupen64Plus, Supermodel) and SDL3 (the other emulators)
+  RetroArch's udev driver. Through evdev, SDL2 (Azahar, Xenia, melonDS, Mupen64Plus, Supermodel, Stella) and SDL3 (the other emulators)
   give a pad the same GUID and the same button numbers as ES. SDL's HIDAPI drivers would give
   PlayStation, Switch or Xbox pads other GUIDs and numbers, which also differ between SDL2 and
   SDL3. If `SDL_JOYSTICK_HIDAPI` is set in the environment of ES, that value is used instead.
@@ -168,7 +169,7 @@ leaves the others as the player set them in the emulator's menus.
 * Hotkeys: the same as RetroArch, bound in the emulator to player 1's hotkey held with the other
   button (Start quits, B opens the menu or pauses, Y/X save and load a state...), where the
   emulator has the action; Eden gets them as its controller shortcuts. Without a pad, the keyboard
-  keys of batocera-launch. Azahar, Cemu, xemu, Xenia, RPCS3, melonDS, Mupen64Plus, Ymir and Supermodel cannot bind actions to a pad, so
+  keys of batocera-launch. Azahar, Cemu, xemu, Xenia, RPCS3, melonDS, Mupen64Plus, Ymir, Supermodel and Stella cannot bind actions to a pad, so
   their command sets `closeOnHotkey`: while the game runs, ES watches the pads itself and closes
   the emulator when a player holds the hotkey and presses Start (SIGTERM to its process group,
   SIGKILL after 5 seconds). `exithotkey=0` turns this off. Their other hotkeys stay in the
