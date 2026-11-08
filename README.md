@@ -1,7 +1,11 @@
 EmulationStation-RE
 ===================
 
-[![Build](https://github.com/JyuHo/emulationstation-re/actions/workflows/release.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/release.yml)
+[![Arch Linux x86_64](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-arch.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-arch.yml)
+[![Debian amd64](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-debian-amd64.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-debian-amd64.yml)
+[![Debian arm64](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-debian-arm64.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-debian-arm64.yml)
+[![Code quality](https://github.com/JyuHo/emulationstation-re/actions/workflows/quality.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/quality.yml)
+[![CodeQL](https://github.com/JyuHo/emulationstation-re/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/codeql.yml)
 [![Latest release](https://img.shields.io/github/v/release/JyuHo/emulationstation-re)](https://github.com/JyuHo/emulationstation-re/releases/latest)
 
 EmulationStation-RE is a graphical front-end for emulators with controller navigation, for
@@ -270,8 +274,25 @@ Packages
 The version comes from the tag (`git describe` for other builds, or `-DES_VERSION=<version>`).
 To make the packages yourself: `ES_VERSION=<version> makepkg -s` in `packaging/arch`, or configure
 with `-DCMAKE_INSTALL_PREFIX=/usr`, build, and run `cpack` in the build folder for the `.deb`.
-The [release workflow](.github/workflows/release.yml) builds the three packages for every pull
-request and every push to `master`, and publishes them when a `vX.Y.Z` tag is pushed.
+Three workflows build and check the packages for every pull request and every push to `master`,
+each with its own badge at the top of this page: [Arch Linux x86_64](.github/workflows/build-arch.yml),
+[Debian amd64](.github/workflows/build-debian-amd64.yml) and [Debian arm64](.github/workflows/build-debian-arm64.yml).
+When a `vX.Y.Z` tag is pushed, the [release workflow](.github/workflows/release.yml) builds the three
+again, with the API keys, and publishes them.
+
+Code quality
+------------
+
+The [Code quality workflow](.github/workflows/quality.yml) runs clang-tidy on the C++ lines each
+pull request adds or changes, with the checks listed in [.clang-tidy](.clang-tidy). Only those
+lines are checked, not the code ES-RE inherited, and the warnings appear on the lines of the pull
+request. For now it warns without failing. To check your changes before pushing, configure with
+`-DCMAKE_EXPORT_COMPILE_COMMANDS=ON` and run `.github/scripts/clang-tidy-changed.py master build`.
+A line can be excused with `// NOLINT(check-name)` and a reason.
+
+The [CodeQL workflow](.github/workflows/codeql.yml) looks for security issues in the whole code
+(and in the workflows) on every push to `master` and once a week. Its alerts are in the
+repository's **Security** tab.
 
 Configuring
 ===========
