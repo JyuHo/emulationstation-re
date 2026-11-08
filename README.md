@@ -13,7 +13,7 @@ Linux only. It started from the Batocera fork of EmulationStation and was rework
 * **es-launcher**: native C++ generators that configure each emulator (controllers, video, per-game options) and build the command that starts it, in place of Batocera's Python `batocera-launch` (see [Game launcher](#game-launcher)).
 * **Emulator and theme catalog**: the **Emulator catalog** menu and **Updates & downloads > Themes** install emulators, libretro cores and themes listed by [es-re-catalog](https://github.com/JyuHo/es-re-catalog).
 * **Updates from GitHub releases**: Arch Linux and Debian packages are published for each `vX.Y.Z` tag, and ES installs them from **Updates & downloads > Check for updates** (see [Installing and running](#installing-and-running)).
-* **Web server** on port 1234, for local tools and remote control. It only listens on `127.0.0.1` unless **Enable public web API access** is turned on, then it answers on `http://<host>:1234`.
+* **Web server** on port 1234, for local tools and remote control. It only listens on `127.0.0.1` unless **Enable public web API access** is turned on, then it answers on `http://<host>:1234`. Its pages show a dashboard (systems, game counts, the running game), a game browser that starts games, and a manager for the ROMs, BIOS, saves and configuration files.
 
 Supported platforms:
 
