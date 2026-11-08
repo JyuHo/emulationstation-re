@@ -1,0 +1,20 @@
+# Builds and checks the Debian trixie amd64 package (x86_64, desktop OpenGL, with the unit tests).
+# Its badge is in the README. The build itself is in build-debian.yml.
+name: Debian trixie amd64
+
+on:
+  push:
+    branches: [master]  # keeps the README badge up to date
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  debian:
+    uses: ./.github/workflows/build-debian.yml
+    with:
+      arch: amd64
+      runner: ubuntu-24.04
+      graphics: -DGL=ON -DES_TESTS=ON

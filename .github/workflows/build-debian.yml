@@ -1,0 +1,75 @@
+# Builds and checks one Debian trixie package. build-debian-amd64.yml and build-debian-arm64.yml
+# call it on pushes and pull requests (one workflow each, so each has its own README badge), and
+# release.yml calls it on a v* tag.
+name: Debian trixie (reusable)
+
+on:
+  workflow_call:
+    inputs:
+      arch:
+        description: Debian architecture (amd64 or arm64)
+        type: string
+        required: true
+      runner:
+        description: GitHub runner that builds it natively
+        type: string
+        required: true
+      graphics:
+        description: CMake options for the renderer (and the tests)
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+env:
+  # empty outside a tag: the version then comes from `git describe`
+  ES_VERSION: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || '' }}
+  # API keys compiled into the release packages (see "API keys" in the README). They are only
+  # given to tag builds: pull request and master builds, whose packages anyone can download as
+  # artifacts, are built without them. A secret that is not set is empty, which means no key.
+  SCREENSCRAPER_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.SCREENSCRAPER_DEV_LOGIN || '' }}
+  SCREENSCRAPER_SOFTNAME: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.SCREENSCRAPER_SOFTNAME || '' }}
+  GAMESDB_APIKEY: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.GAMESDB_APIKEY || '' }}
+  HFS_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.HFS_DEV_LOGIN || '' }}
+  CHEEVOS_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.CHEEVOS_DEV_LOGIN || '' }}
+
+jobs:
+  debian:
+    name: Debian trixie ${{ inputs.arch }}
+    runs-on: ${{ inputs.runner }}
+    container: debian:trixie
+    steps:
+      - name: Install build tools
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends git ca-certificates build-essential cmake \
+            ninja-build dpkg-dev file libsdl3-dev libsdl3-image-dev libfreetype-dev \
+            libcurl4-openssl-dev rapidjson-dev libvlc-dev libasound2-dev libgles-dev libgl-dev \
+            libudev-dev libfribidi-dev libcec-dev zlib1g-dev gettext
+
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Build the package
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr \
+            ${{ inputs.graphics }} ${ES_VERSION:+-DES_VERSION="$ES_VERSION"}
+          cmake --build build
+          if [ -f build/CTestTestfile.cmake ]; then ctest --test-dir build --output-on-failure; fi
+          cd build && cpack -G DEB
+
+      - name: Check the package
+        run: |
+          dpkg-deb --info build/*.deb
+          apt-get install -y ./build/*.deb
+          emulationstation --help | head -3
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: debian-${{ inputs.arch }}
+          path: build/*.deb
+          if-no-files-found: error

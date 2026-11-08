@@ -1,0 +1,56 @@
+# Code quality: clang-tidy (see .clang-tidy) on the C++ lines each pull request adds or changes,
+# never on the whole inherited code base. Its warnings show up on the lines of the pull request
+# and in the job summary.
+#
+# For now it only warns. Once its checks have proved quiet enough, set STRICT to true and a
+# pull request with a warning will fail.
+name: Code quality
+
+on:
+  pull_request:
+  push:
+    branches: [master]  # checks the lines each push changes, and keeps the README badge up to date
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  STRICT: false
+
+jobs:
+  clang-tidy:
+    name: clang-tidy on changed lines
+    runs-on: ubuntu-24.04
+    container: debian:trixie
+    steps:
+      - name: Install the tools
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends git ca-certificates build-essential cmake \
+            ninja-build python3 clang-tidy libsdl3-dev libsdl3-image-dev libfreetype-dev \
+            libcurl4-openssl-dev rapidjson-dev libvlc-dev libasound2-dev libgl-dev \
+            libudev-dev libfribidi-dev libcec-dev zlib1g-dev gettext
+          clang-tidy --version
+
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      # Configuring is enough: clang-tidy reads the compiler flags from compile_commands.json.
+      # The tests are configured too, so that their files are checked.
+      - name: Configure
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          cmake -S . -B build -G Ninja -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DGL=ON -DES_TESTS=ON
+
+      - name: Run clang-tidy on the changed lines
+        env:
+          # a pull request is compared with its base, a push with the commit before it
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if [ -z "$BASE" ] || ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            BASE=$(git rev-parse HEAD~1)
+          fi
+          python3 .github/scripts/clang-tidy-changed.py "$BASE" build

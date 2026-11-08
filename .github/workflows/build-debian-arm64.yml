@@ -1,0 +1,20 @@
+# Builds and checks the Debian trixie arm64 package (Raspberry Pi 4 and later, OpenGL ES).
+# Its badge is in the README. The build itself is in build-debian.yml.
+name: Debian trixie arm64
+
+on:
+  push:
+    branches: [master]  # keeps the README badge up to date
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  debian:
+    uses: ./.github/workflows/build-debian.yml
+    with:
+      arch: arm64
+      runner: ubuntu-24.04-arm
+      graphics: -DGLES3=ON

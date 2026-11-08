@@ -1,0 +1,39 @@
+# clang-tidy checks for ES-RE, run by .github/workflows/quality.yml on the lines each pull
+# request changes (never on the whole inherited code base). The list is kept short on purpose:
+# checks that find real bugs, plus a few cheap modernisations. Checks that would flag most of
+# the existing code without finding bugs are turned off below.
+#
+# To run it yourself on a file: configure with -DCMAKE_EXPORT_COMPILE_COMMANDS=ON, then
+#   clang-tidy -p build es-app/src/SomeFile.cpp
+# A line can be excused with a `// NOLINT(check-name)` comment, which says why.
+Checks: >
+  -*,
+  bugprone-*,
+  -bugprone-easily-swappable-parameters,
+  -bugprone-narrowing-conversions,
+  -bugprone-implicit-widening-of-multiplication-result,
+  -bugprone-branch-clone,
+  -bugprone-reserved-identifier,
+  -bugprone-integer-division,
+  -bugprone-switch-missing-default-case,
+  -bugprone-exception-escape,
+  -bugprone-empty-catch,
+  -bugprone-multi-level-implicit-pointer-conversion,
+  -bugprone-macro-parentheses,
+  -bugprone-assignment-in-if-condition,
+  -bugprone-casting-through-void,
+  clang-analyzer-*,
+  -clang-analyzer-optin.*,
+  -clang-analyzer-security.insecureAPI.*,
+  performance-*,
+  -performance-enum-size,
+  -performance-avoid-endl,
+  modernize-use-nullptr,
+  modernize-use-override,
+  modernize-redundant-void-arg,
+  misc-redundant-expression,
+  readability-misleading-indentation
+WarningsAsErrors: ''
+# Headers of ES-RE itself are checked; those of external/ and of the system are not.
+HeaderFilterRegex: '.*/(es-app|es-core|es-launcher)/.*'
+FormatStyle: none

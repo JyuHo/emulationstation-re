@@ -1,0 +1,71 @@
+# CodeQL security analysis of the C++ code (and of the workflows themselves). It looks at the
+# whole code base, and its alerts go to the repository's Security tab, where GitHub only flags
+# the new ones. It runs on master and once a week, rather than on every pull request, because it
+# needs a full build.
+name: CodeQL
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: '17 4 * * 1'  # Mondays, 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cpp:
+    name: CodeQL C++
+    runs-on: ubuntu-24.04
+    container: debian:trixie
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - name: Install build tools
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends git ca-certificates build-essential cmake \
+            ninja-build libsdl3-dev libsdl3-image-dev libfreetype-dev libcurl4-openssl-dev \
+            rapidjson-dev libvlc-dev libasound2-dev libgl-dev libudev-dev libfribidi-dev \
+            libcec-dev zlib1g-dev gettext
+
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - uses: github/codeql-action/init@v3
+        with:
+          languages: c-cpp
+          build-mode: manual
+          # the bundled libraries are not ES-RE's code: their alerts are left out
+          config: |
+            paths-ignore:
+              - external
+
+      - name: Build
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DGL=ON -DES_TESTS=ON
+          cmake --build build
+
+      - uses: github/codeql-action/analyze@v3
+        with:
+          category: /language:c-cpp
+
+  actions:
+    name: CodeQL workflows
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: github/codeql-action/init@v3
+        with:
+          languages: actions
+      - uses: github/codeql-action/analyze@v3
+        with:
+          category: /language:actions

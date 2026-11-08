@@ -1,119 +1,40 @@
-# Builds the Arch and Debian packages. On a v* tag, publishes them as a GitHub release
-# (with SHA256SUMS), which is where ES finds its updates.
+# On a v* tag, builds the Arch and Debian packages and publishes them as a GitHub release (with
+# SHA256SUMS and latest.json), which is where ES finds its updates. Pull requests and pushes to
+# master are built by build-arch.yml, build-debian-amd64.yml and build-debian-arm64.yml.
 name: release
 
 on:
   push:
-    branches: [master]  # keeps the README build badge up to date
     tags: ['v*']
-  pull_request:     # every pull request builds and checks the three packages
-  workflow_dispatch:
 
 permissions:
   contents: read
 
-env:
-  # empty outside a tag: the version then comes from `git describe`
-  ES_VERSION: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || '' }}
-  # API keys compiled into the release packages (see "API keys" in the README). They are only
-  # given to tag builds: pull request and master builds, whose packages anyone can download as
-  # artifacts, are built without them. A secret that is not set is empty, which means no key.
-  SCREENSCRAPER_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.SCREENSCRAPER_DEV_LOGIN || '' }}
-  SCREENSCRAPER_SOFTNAME: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.SCREENSCRAPER_SOFTNAME || '' }}
-  GAMESDB_APIKEY: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.GAMESDB_APIKEY || '' }}
-  HFS_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.HFS_DEV_LOGIN || '' }}
-  CHEEVOS_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.CHEEVOS_DEV_LOGIN || '' }}
-
 jobs:
   arch:
-    name: Arch Linux x86_64
-    runs-on: ubuntu-24.04
-    container: archlinux:latest
-    steps:
-      - name: Install build tools
-        run: pacman -Syu --noconfirm --needed base-devel git sudo
+    uses: ./.github/workflows/build-arch.yml
+    secrets: inherit  # the API keys compiled into the release packages
 
-      - uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
+  debian-amd64:
+    uses: ./.github/workflows/build-debian.yml
+    secrets: inherit
+    with:
+      arch: amd64
+      runner: ubuntu-24.04
+      graphics: -DGL=ON -DES_TESTS=ON
 
-      - name: Build the package
-        run: |
-          useradd -m builder
-          echo 'builder ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/builder
-          chown -R builder .
-          sudo -u builder git config --global --add safe.directory '*'
-          cd packaging/arch
-          sudo -u builder \
-            --preserve-env=SCREENSCRAPER_DEV_LOGIN,SCREENSCRAPER_SOFTNAME,GAMESDB_APIKEY,HFS_DEV_LOGIN,CHEEVOS_DEV_LOGIN \
-            env ES_VERSION="${ES_VERSION#v}" makepkg -sf --noconfirm
-
-      - name: Check the package
-        run: |
-          pacman -Qip packaging/arch/*.pkg.tar.zst
-          pacman -U --noconfirm packaging/arch/*.pkg.tar.zst
-          emulationstation --help | head -3
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: arch-x86_64
-          path: packaging/arch/*.pkg.tar.zst
-          if-no-files-found: error
-
-  debian:
-    name: Debian trixie ${{ matrix.arch }}
-    runs-on: ${{ matrix.runner }}
-    container: debian:trixie
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - arch: amd64
-            runner: ubuntu-24.04
-            graphics: -DGL=ON -DES_TESTS=ON
-          - arch: arm64             # Raspberry Pi 4 and later
-            runner: ubuntu-24.04-arm
-            graphics: -DGLES3=ON
-    steps:
-      - name: Install build tools
-        run: |
-          apt-get update
-          apt-get install -y --no-install-recommends git ca-certificates build-essential cmake \
-            ninja-build dpkg-dev file libsdl3-dev libsdl3-image-dev libfreetype-dev \
-            libcurl4-openssl-dev rapidjson-dev libvlc-dev libasound2-dev libgles-dev libgl-dev \
-            libudev-dev libfribidi-dev libcec-dev zlib1g-dev gettext
-
-      - uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-
-      - name: Build the package
-        run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr \
-            ${{ matrix.graphics }} ${ES_VERSION:+-DES_VERSION="$ES_VERSION"}
-          cmake --build build
-          if [ -f build/CTestTestfile.cmake ]; then ctest --test-dir build --output-on-failure; fi
-          cd build && cpack -G DEB
-
-      - name: Check the package
-        run: |
-          dpkg-deb --info build/*.deb
-          apt-get install -y ./build/*.deb
-          emulationstation --help | head -3
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: debian-${{ matrix.arch }}
-          path: build/*.deb
-          if-no-files-found: error
+  debian-arm64:
+    uses: ./.github/workflows/build-debian.yml
+    secrets: inherit
+    with:
+      arch: arm64             # Raspberry Pi 4 and later
+      runner: ubuntu-24.04-arm
+      graphics: -DGLES3=ON
 
   release:
     name: Publish the release
     if: startsWith(github.ref, 'refs/tags/v')
-    needs: [arch, debian]
+    needs: [arch, debian-amd64, debian-arm64]
     runs-on: ubuntu-24.04
     permissions:
       contents: write
