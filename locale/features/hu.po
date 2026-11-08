@@ -36,6 +36,9 @@ msgstr "0.8x"
 msgid "0.9x"
 msgstr "0.9x"
 
+msgid "1 MB"
+msgstr "1 MB"
+
 msgid "1 second"
 msgstr "1 másodperc"
 
@@ -99,6 +102,9 @@ msgstr "1.75x Natív"
 msgid "1.8x (22.50Mhz)"
 msgstr "1.8x (22.50Mhz)"
 
+msgid "10 MB"
+msgstr "10 MB"
+
 msgid "10 seconds"
 msgstr "10 másodperc"
 
@@ -107,6 +113,18 @@ msgstr "100% (Alap)"
 
 msgid "1024kB"
 msgstr "1024kB"
+
+msgid "1040 STE 1.06"
+msgstr "1040 STE 1.06"
+
+msgid "1040 STE 1.62"
+msgstr "1040 STE 1.62"
+
+msgid "1040 STE AUTO"
+msgstr "1040 STE AUTO"
+
+msgid "1040 STE ETOS 256k"
+msgstr "1040 STE ETOS 256k"
 
 msgid "10th"
 msgstr "10"
@@ -135,6 +153,9 @@ msgstr "12."
 msgid "13th"
 msgstr "13."
 
+msgid "14 MB"
+msgstr "14 MB"
+
 msgid "14.18 MHz (A1200 speed)"
 msgstr "14.18 MHz (A1200 sebesség)"
 
@@ -158,6 +179,9 @@ msgstr "15s"
 
 msgid "15th"
 msgstr "15."
+
+msgid "16 MHz"
+msgstr "16 MHz"
 
 msgid "16384kB"
 msgstr "16384kB"
@@ -195,6 +219,9 @@ msgstr "18."
 msgid "19th"
 msgstr "19."
 
+msgid "1M"
+msgstr "1M"
+
 msgid "1st"
 msgstr "1. (első)"
 
@@ -216,6 +243,9 @@ msgstr "1x natív (320x240)"
 msgid "1x native (640x528)"
 msgstr "1x natív (640x528)"
 
+msgid "2 MB"
+msgstr "2 MB"
+
 msgid "2 seconds"
 msgstr "2 másodperc"
 
@@ -233,6 +263,9 @@ msgstr "2.25x (1440x1080)"
 
 msgid "2.25x Native"
 msgstr "2,25x Natív"
+
+msgid "2.5 MB"
+msgstr "2.5 MB"
 
 msgid "2.5x (1600x1200)"
 msgstr "2.5x (1600x1200)"
@@ -318,6 +351,9 @@ msgstr "28."
 msgid "29th"
 msgstr "29."
 
+msgid "2M"
+msgstr "2M"
+
 msgid "2P GAMEPAD MAPPING (KEYRAH)"
 msgstr "2P GAMEPAD LEKÉPEZÉS (KEYRAH)"
 
@@ -329,6 +365,9 @@ msgstr "2."
 
 msgid "2nd Joystick (2 Axes, 2 Btns)"
 msgstr "2. Joystick (2 tengely, 2 gomb)"
+
+msgid "2x (1280x960) (Default)"
+msgstr "2x (1280x960) (alapértelmezett)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -381,6 +420,9 @@ msgstr "30."
 msgid "31st"
 msgstr "31."
 
+msgid "32 MHz"
+msgstr "32 MHz"
+
 msgid "32MB"
 msgstr "32MB"
 
@@ -422,6 +464,9 @@ msgstr "3x Natív (~1080p)"
 
 msgid "3x native (768 x 576)"
 msgstr "3x natív (768 x 576)"
+
+msgid "4 MB"
+msgstr "4 MB"
 
 msgid "4 PLAYER ADAPTER"
 msgstr "4 JÁTÉKOS ADAPTER"
@@ -467,6 +512,9 @@ msgstr "4:3 RENDERELÉSI FELBONTÁS"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4M"
+msgstr "4M"
 
 msgid "4MB"
 msgstr "4MB"
@@ -515,6 +563,24 @@ msgstr "5120MB"
 
 msgid "512kB (1750)"
 msgstr "512kB (1750)"
+
+msgid "520 ST AUTO"
+msgstr "520 ST AUTO"
+
+msgid "520 ST EMUTOS 256k"
+msgstr "520 ST EMUTOS 256k"
+
+msgid "520 ST TOS 1.00"
+msgstr "520 ST TOS 1.00"
+
+msgid "520 ST TOS 1.02"
+msgstr "520 ST TOS 1.02"
+
+msgid "520 ST TOS 1.04"
+msgstr "520 ST TOS 1.04"
+
+msgid "520K"
+msgstr "520K"
 
 msgid "56.75 MHz"
 msgstr "56.75 MHz"
@@ -585,6 +651,12 @@ msgstr "7x Natív (~2520p)"
 msgid "7x native (1792 x 1344)"
 msgstr "7x natív (1792 x 1344)"
 
+msgid "8 MB"
+msgstr "8 MB"
+
+msgid "8 MHz"
+msgstr "8 MHz"
+
 msgid "8086/8088, 4.77MHz (315 cps)"
 msgstr "8086/8088, 4.77MHz (315 cps)"
 
@@ -650,6 +722,9 @@ msgstr "A500+ (1MB Chip)"
 
 msgid "A600 (2MB Chip + 8MB Fast)"
 msgstr "A600 (2MB Chip + 8MB gyors)"
+
+msgid "ACSI"
+msgstr "ACSI"
 
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "AKTÍV BEMENETI ESZKÖZÖK JAVÍTÁSA"
@@ -719,6 +794,24 @@ msgstr "ASZINKRON SHADER FORDÍTÁS (CSAK VULKAN)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "ASZINKRON TEXTÚRA streamelés"
+
+msgid "ATARI CPU CLOCK RATE"
+msgstr "ATARI CPU ÓRAJELE"
+
+msgid "ATARI CPU TYPE"
+msgstr "ATARI CPU TÍPUS"
+
+msgid "ATARI HARD DRIVE TYPE"
+msgstr "ATARI MEREVLEMEZ TÍPUSA"
+
+msgid "ATARI MACHINE TYPE"
+msgstr "ATARI GÉPTÍPUS"
+
+msgid "ATARI MONITOR TYPE"
+msgstr "ATARI MONITOR TÍPUS"
+
+msgid "ATARI ST MEMORY SIZE"
+msgstr "ATARI ST MEMÓRIA MÉRETE"
 
 msgid "ATARI SYSTEM"
 msgstr "ATARI SYSTEM"
@@ -873,6 +966,12 @@ msgstr "Hozzávetőleges (gyors)"
 msgid "April"
 msgstr "Április"
 
+msgid "Arabic"
+msgstr "Arab"
+
+msgid "Arabic (ar)"
+msgstr "Arab (ar)"
+
 msgid "Arcade MVS Europe"
 msgstr "Arcade MVS Europa"
 
@@ -905,6 +1004,12 @@ msgstr "Amint az"
 
 msgid "As game specifies"
 msgstr "Ahogy a játék előírja"
+
+msgid "Atari Monitor"
+msgstr "Atari Monitor"
+
+msgid "Atari ST monitors had a visible border around the main screen area, but most software does not display anything in it."
+msgstr "Az Atari ST monitorokon látható szegély volt a fő képernyő körül, de a legtöbb szoftver nem jelenít meg semmit."
 
 msgid "August"
 msgstr "Agusztus"
@@ -992,6 +1097,9 @@ msgstr "KEVERÉSI PONTOSSÁG"
 
 msgid "BOOT ANIMATION FIRST"
 msgstr "INDÍTÁSI ANIMÁCIÓ ELŐSZÖR"
+
+msgid "BROADCAST"
+msgstr "KÖZVETÍTÉS"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (ajánlott minden amerikai fejlesztésű játékhoz)"
@@ -1113,8 +1221,14 @@ msgstr "Jobbra lent"
 msgid "Bottom only"
 msgstr "Csak alul"
 
+msgid "Bouncing Box"
+msgstr "Pattogó doboz"
+
 msgid "Brazil"
 msgstr "Brazília"
+
+msgid "British English (uk)"
+msgstr "Brit angol (uk)"
 
 msgid "Brown"
 msgstr "Barna"
@@ -1148,6 +1262,9 @@ msgstr "C64 PAL"
 
 msgid "C64 PAL Automatic"
 msgstr "C64 PAL Automatikus"
+
+msgid "CABLE"
+msgstr "KÁBEL"
 
 msgid "CD ADD-ON"
 msgstr "CD HOZZÁADÁS"
@@ -1386,6 +1503,15 @@ msgstr "Kínai"
 msgid "Chinese (Mandarin)"
 msgstr "Kínai (Mandarin)"
 
+msgid "Chinese (Simplified)"
+msgstr "Kínai (egyszerűsített)"
+
+msgid "Choose broadcast standard (for older TV's)."
+msgstr "Válasszon adási szabványt (régebbi tévék esetén)."
+
+msgid "Choose cable type for the TV."
+msgstr "Válassza ki a TV kábel típusát."
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Válaszd ki a konzol nyelvét. Nem minden játék támogatja a nyelvválasztást."
 
@@ -1431,11 +1557,41 @@ msgstr "Válassza ki a használni kívánt grafikus API-könyvtárat."
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "Válassza ki a használni kívánt grafikus API-könyvtárat. Lehet, hogy a Vulkan nem működik minden magnál."
 
+msgid "Choose your Atari hard drive type for the .hd extension file."
+msgstr "Válassza ki az Atari merevlemez típusát a .hd kiterjesztésű fájlhoz."
+
+msgid "Choose your desired Atari CPU clock rate."
+msgstr "Válassza ki a kívánt Atari CPU órajelet."
+
+msgid "Choose your desired Atari CPU type."
+msgstr "Válassza ki a kívánt Atari CPU típust."
+
+msgid "Choose your desired Atari Monitor."
+msgstr "Válassza ki a kívánt Atari monitort."
+
+msgid "Choose your desired Atari ST memory size."
+msgstr "Válassza ki a kívánt Atari ST memóriaméretet."
+
+msgid "Choose your desired Atari machine type."
+msgstr "Válassza ki a kívánt Atari géptípust."
+
+msgid "Choose your desired pause screen display type."
+msgstr "Válassza ki a kívánt szünet képernyő megjelenítési típusát."
+
+msgid "Choose your desired pixel aspect ratio."
+msgstr "Válassza ki a kívánt képpont-arányt."
+
+msgid "Choose your preferred aspect ratio."
+msgstr "Válassza ki a kívánt képarányt."
+
 msgid "Choose your preferred language."
 msgstr "Válassza ki a kívánt nyelvet."
 
 msgid "Choose your preferred renderer."
 msgstr "Válassza ki a kívánt megjelenítőt."
+
+msgid "Choose your render resolution (Requires personal redream.key file)."
+msgstr "Válassza ki a megjelenítési felbontást (Személyes redream.key fájl szükséges)."
 
 msgid "Classic Controller"
 msgstr "Classic Controller"
@@ -1500,6 +1656,12 @@ msgstr "Costa Rica"
 msgid "Croatia"
 msgstr "Horvátország"
 
+msgid "Crop 1080p (270, 540)"
+msgstr "Vágás 1080p (270, 540)"
+
+msgid "Crop 720p (240, 480)"
+msgstr "Vágás 720p (240, 480)"
+
 msgid "Crop horizontal overscan."
 msgstr "Vízszintes túlszkennelés kivágása."
 
@@ -1526,6 +1688,9 @@ msgstr "Cycle-exact"
 
 msgid "Czech"
 msgstr "Cseh"
+
+msgid "Czech (cz)"
+msgstr "Cseh (cz)"
 
 msgid "Czech Republic"
 msgstr "Cseh Köztársaság"
@@ -1556,6 +1721,9 @@ msgstr "EMULÁTOR JOYSTICK LETILTÁSA"
 
 msgid "DISABLE INTERLACING"
 msgstr "AZ ÁTLAPOLÁS (interlacing) LETILTÁSA"
+
+msgid "DISABLE SURFACE SYNC"
+msgstr "FELÜLETI SZINKRONIZÁLÁS LETILTÁSA"
 
 msgid "DISABLE VERTEX CACHE"
 msgstr "A VERTEX CACHE TILTÁSA"
@@ -1608,6 +1776,12 @@ msgstr "DYNAREC KÓD ÉRVÉNYTELENÍTÉSE"
 msgid "Dance Mat"
 msgstr "Táncszőnyeg"
 
+msgid "Danish"
+msgstr "Dán"
+
+msgid "Danish (dk)"
+msgstr "Dán (dk)"
+
 msgid "Dark Blue"
 msgstr "Sötétkék"
 
@@ -1619,6 +1793,9 @@ msgstr "Sötét rózsaszín"
 
 msgid "Dark Purple"
 msgstr "Sötétlila"
+
+msgid "Darken"
+msgstr "Sötét"
 
 msgid "De-Interlaced"
 msgstr "De-Interlaced"
@@ -1725,6 +1902,9 @@ msgstr "Játék közben a képernyőn megjelenő szöveg lefordításához nyomj
 msgid "Dutch"
 msgstr "Holland"
 
+msgid "Dutch (nl)"
+msgstr "Holland (nl)"
+
 msgid "Dynamic (fast)"
 msgstr "Dinamikus (gyors)"
 
@@ -1812,6 +1992,9 @@ msgstr "Hangsúlyozza a tetejét"
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Emulálj egy Wiimote Sideway-t L2-vel Shake-hez és Nunchukhoz R-stick-en."
 
+msgid "Emutos language && region setting."
+msgstr "Emutos nyelvi és terüleit beállítások."
+
 msgid "Enable"
 msgstr "Engedélyezés"
 
@@ -1824,6 +2007,9 @@ msgstr "Engedélyezze a Gamecube boot animációt és a BIOS hozzáférést (IPL
 msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
 msgstr "Gravis Utrasound emuláció engedélyezése. Győződjön meg arról, hogy az ULTRASND mappa a <game>.pc rom mappájának gyökerében található."
 
+msgid "Enable High Dynamic Range if your display supports it."
+msgstr "Engedélyezze a Nagy dinamikatartományt (High Dynamic Range), ha a kijelzője támogatja."
+
 msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
 msgstr "Engedélyezd a MelonDS két képernyőn való megjelenítését. Néhány kapcsolódó képernyőbeállítás figyelmen kívül marad."
 
@@ -1832,6 +2018,9 @@ msgstr "Engedélyezze a sorváltás nélküli javításokat."
 
 msgid "Enable TV-like filtering / effects."
 msgstr "TV-szerű szűrés/effektusok."
+
+msgid "Enable auto frameskipping for performance on lower-end systems."
+msgstr "Engedélyezze az automatikus képkockakihagyást a teljesítmény érdekében alacsonyabb kategóriás rendszereken."
 
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "Engedélyezze a gyorsítótár csatlakoztatását. Egyes játékokban javíthatja a teljesítményt és a kompatibilitást."
@@ -1893,6 +2082,9 @@ msgstr "Engedélyezésével megjelenítheti, hogy az eszköz mikrofonja aktív-e
 msgid "Enable to show which screen layout with the configured sequence is active."
 msgstr "Engedélyezésével megjelenítheti, hogy a konfigurált sorrenddel melyik képernyő-elrendezés aktív."
 
+msgid "Enable vertical sync to avoid tearing in some cases."
+msgstr "Engedélyezze a függőleges szinkronizálást, hogy bizonyos esetekben elkerülje a szakadást."
+
 msgid "Enabled"
 msgstr "Engedélyezve"
 
@@ -1919,6 +2111,15 @@ msgstr "Angol"
 
 msgid "English (Default)"
 msgstr "Angol (alapértelmezett)"
+
+msgid "English (United Kingdom)"
+msgstr "Angol (Egyesült Királyság)"
+
+msgid "English (United States)"
+msgstr "Angol (Egyesült Államok)"
+
+msgid "English (us)"
+msgstr "Angol (us)"
 
 msgid "English/Japanese"
 msgstr "Angol/Japán"
@@ -2076,6 +2277,24 @@ msgstr "KÉPKOCKA-KIHAGYÁS VEZÉRLÉSE"
 msgid "FXAA"
 msgstr "FXAA"
 
+msgid "Falcon"
+msgstr "Falcon"
+
+msgid "Falcon 4.0"
+msgstr "Falcon 4.0"
+
+msgid "Falcon 4.02"
+msgstr "Falcon 4.02"
+
+msgid "Falcon 4.04"
+msgstr "Falcon 4.04"
+
+msgid "Falcon AUTO"
+msgstr "Falcon AUTO"
+
+msgid "Falcon ETOS 512k"
+msgstr "Falcon ETOS 512k"
+
 msgid "Famicom (FDS)"
 msgstr "Famicom (FDS)"
 
@@ -2100,6 +2319,12 @@ msgstr "Kitölti a képernyőt a képaránytól függetlenül. Nem működik az 
 msgid "Finland"
 msgstr "Finnország"
 
+msgid "Finnish"
+msgstr "Finn"
+
+msgid "Finnish (fi)"
+msgstr "Finn (fi)"
+
 msgid "Fit 4:3 Aspect Ratio"
 msgstr "Igazítás 4:3 képarányhoz"
 
@@ -2123,6 +2348,9 @@ msgstr "Kijavít egy lehetséges hibát a több vezérlő észlelésével."
 
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Flight Stick (3 tengely, 4 Gomb, 1 Hat)"
+
+msgid "Floppy Disk List"
+msgstr "Hajlékonylemezek listája"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Gyro-kompatibilis játékokhoz (bal oldali analóg karhoz kötve)"
@@ -2162,6 +2390,15 @@ msgstr "Franciaország"
 
 msgid "French"
 msgstr "Francia"
+
+msgid "French (Canada)"
+msgstr "Francia (Canada)"
+
+msgid "French (France)"
+msgstr "Francia (France)"
+
+msgid "French (fr)"
+msgstr "Francia (fr)"
 
 msgid "Frontend MIDI driver"
 msgstr "Frontend MIDI illesztőprogram"
@@ -2340,6 +2577,9 @@ msgstr "Georgia"
 msgid "German"
 msgstr "Német"
 
+msgid "German (de)"
+msgstr "Német (de)"
+
 msgid "Germany"
 msgstr "Németország"
 
@@ -2360,6 +2600,12 @@ msgstr "Szürke"
 
 msgid "Greece"
 msgstr "Görögország"
+
+msgid "Greek"
+msgstr "Görög"
+
+msgid "Greek (gk)"
+msgstr "Görög (gk)"
 
 msgid "Green"
 msgstr "Zöld"
@@ -2382,6 +2628,9 @@ msgstr "HI-RES MŰVÉSZET"
 msgid "HLE (Fastest)"
 msgstr "HLE (Gyorsabb)"
 
+msgid "HLE (per-pixel)"
+msgstr "HLE (képpontonként)"
+
 msgid "HQ (bilinear filter)"
 msgstr "HQ (bilinear filter)"
 
@@ -2390,6 +2639,9 @@ msgstr "Hack. A legtöbb PAL játék sebességét 17%-kal növeli."
 
 msgid "Hebrew"
 msgstr "Héber"
+
+msgid "Help and Information"
+msgstr "Segítség és információ"
 
 msgid "Help games which are too quick or that have bugs."
 msgstr "Segítség a túl gyors vagy hibákkal rendelkező játékoknak."
@@ -2402,6 +2654,9 @@ msgstr "Hercules"
 
 msgid "Hermite"
 msgstr "Hermite"
+
+msgid "Hide"
+msgstr "Elrejt"
 
 msgid "Hides borders on many games. Some games use the borders."
 msgstr "Számos játék határait rejti el. Egyes játékok kereteket használnak."
@@ -2427,6 +2682,12 @@ msgstr "Vízszintes"
 msgid "How the window space is distributed between the screens."
 msgstr "Az ablakfelület elosztása a képernyők között."
 
+msgid "Hungarian"
+msgstr "Magyar"
+
+msgid "Hungarian (hg)"
+msgstr "Magyar (hg)"
+
 msgid "Hungary"
 msgstr "Magyarország"
 
@@ -2447,6 +2708,9 @@ msgstr "Hybrid Ubershaders"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IDE (Default)"
+msgstr "IDE (Alap)"
 
 msgid "IMPROVED BANDING"
 msgstr "FEJLESZTETT SÁVÁZÁS"
@@ -2487,6 +2751,9 @@ msgstr "Ha nincs megadva semmi, akkor alapértelmezés szerint a ZTranslate-et h
 msgid "Ignored with 'Cycle-exact'."
 msgstr "Figyelmen kívül hagyva a „Cycle-exact” beállítással."
 
+msgid "Immediate"
+msgstr "Azonnali"
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "A hang pontosságának javítása (kísérleti)."
 
@@ -2517,6 +2784,9 @@ msgstr "India"
 msgid "Indonesia"
 msgstr "Indonézia"
 
+msgid "Indonesian"
+msgstr "Indonéz"
+
 msgid "Inserts CD during boot animation prevent loading fail."
 msgstr "Behelyezi a CD-t a rendszerindítási animáció során, megakadályozza a betöltés sikertelenségét."
 
@@ -2543,6 +2813,9 @@ msgstr "Izrael"
 
 msgid "Italian"
 msgstr "Olasz"
+
+msgid "Italian (it)"
+msgstr "Olasz (it)"
 
 msgid "Italy"
 msgstr "Olaszország"
@@ -2720,6 +2993,9 @@ msgstr "KÉPKOCKA SEBESSÉG KORLÁTOZÁSA"
 
 msgid "LINEAR UPSCALING"
 msgstr "LINEÁRIS FELSKÁLÁZÁS"
+
+msgid "LLE"
+msgstr "LLE"
 
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "EGYÉNI TEXTÚRÁK BETÖLTÉSE"
@@ -2931,6 +3207,24 @@ msgstr "Közepes"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "Mega ST"
+msgstr "Mega ST"
+
+msgid "Mega STE"
+msgstr "Mega STE"
+
+msgid "Mega STE 2.05"
+msgstr "Mega STE 2.05"
+
+msgid "Mega STE 2.06"
+msgstr "Mega STE 2.06"
+
+msgid "Mega STE AUTO"
+msgstr "Mega STE AUTO"
+
+msgid "Mega STE ETOS 256k"
+msgstr "Mega STE ETOS 256k"
+
 msgid "MegaSD"
 msgstr "MegaSD"
 
@@ -2966,6 +3260,9 @@ msgstr "Monokróm"
 
 msgid "Monochrome (Blargg)"
 msgstr "Monokróm (Blargg)"
+
+msgid "Monochrome High-Resolution"
+msgstr "Monokróm nagy felbontású"
 
 msgid "More accurate emulation, but slower."
 msgstr "Pontosabb emuláció, de lassabb."
@@ -3030,6 +3327,9 @@ msgstr "ÚJ 3DS MÓD"
 msgid "NTSC (Composite)"
 msgstr "NTSC (Composite)"
 
+msgid "NTSC (Default)"
+msgstr "NTSC (Alapértelmezett)"
+
 msgid "NTSC (NES)"
 msgstr "NTSC (NES)"
 
@@ -3056,6 +3356,9 @@ msgstr "NTSC ASPECT"
 
 msgid "NTSC FILTER"
 msgstr "NTSC SZŰRŐ"
+
+msgid "NTSC TV"
+msgstr "NTSC TV"
 
 msgid "NTSC aspect ratio correction. Core default (PAR)."
 msgstr "NTSC képarány-korrekció. Alapértelmezés (PAR)."
@@ -3117,6 +3420,9 @@ msgstr "Nestopia (RGB)"
 msgid "Netherlands"
 msgstr "Hollandia"
 
+msgid "Netherlands (nl)"
+msgstr "Holland (nl)"
+
 msgid "Never"
 msgstr "Soha"
 
@@ -3134,6 +3440,9 @@ msgstr "Nincs puffer"
 
 msgid "No EMS/XMS"
 msgstr "Nincs EMS/XMS"
+
+msgid "No Indicator"
+msgstr "Nincs jelző"
 
 msgid "No Limit"
 msgstr "Nincs korlát"
@@ -3164,6 +3473,15 @@ msgstr "Normal (interpreter)"
 
 msgid "Norway"
 msgstr "Norvégia"
+
+msgid "Norwegian"
+msgstr "Norvég"
+
+msgid "Norwegian (Bokmaal)"
+msgstr "Norvég (Bokmaal)"
+
+msgid "Norwegian (no)"
+msgstr "Norvég (no)"
 
 msgid "Not all games support 3D pad."
 msgstr "Nem minden játék támogatja a 3D pad-ot."
@@ -3333,6 +3651,9 @@ msgstr "PAL 576x312px"
 msgid "PAL ASPECT"
 msgstr "PAL ASPECT"
 
+msgid "PAL TV"
+msgstr "PAL TV"
+
 msgid "PAL aspect ratio correction. Core default (PAR)."
 msgstr "PAL képarány-korrekció. Alapértelmezés (PAR)."
 
@@ -3342,11 +3663,20 @@ msgstr "PAL60"
 msgid "PALETTE COLORS"
 msgstr "PALETTA SZÍNEK"
 
+msgid "PAL_M"
+msgstr "PAL_M"
+
+msgid "PAL_N"
+msgstr "PAL_N"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PÁRHUZAMOS-RDP FELSKÁLÁZÓ"
+
+msgid "PAUSE SCREEN DISPLAY"
+msgstr "KÉPERNYŐ KIJELZŐ SZÜNETELTETÉSE"
 
 msgid "PCE Joypad"
 msgstr "PCE Joypad"
@@ -3492,6 +3822,9 @@ msgstr "Mutató"
 msgid "Poland"
 msgstr "Lengyelország"
 
+msgid "Poland (pl)"
+msgstr "Lengyel (pl)"
+
 msgid "Polish"
 msgstr "Lengyel"
 
@@ -3521,6 +3854,12 @@ msgstr "Portugália"
 
 msgid "Portuguese"
 msgstr "Portugál"
+
+msgid "Portuguese (Brazil)"
+msgstr "Portugál (brazíliai)"
+
+msgid "Portuguese (Portugal)"
+msgstr "Portugál (Portugál)"
 
 msgid "Position of wii sensor bar relative to the disaply for real wiimotes."
 msgstr "A wii szenzorsáv helyzete a kijelzőhöz képest valódi wiimote-ok esetén."
@@ -3572,6 +3911,9 @@ msgstr "RENDER"
 
 msgid "RENDER DUPLICATE FRAMES TO 60 HZ"
 msgstr "KÉPKOCKA MÁSOLATÁNAK RENDELÉSE 60 HZ-RE"
+
+msgid "RENDER MODE"
+msgstr "RENDERELÉSI MÓD"
 
 msgid "RENDER RESOLUTION (SCALING)"
 msgstr "RENDERELÉSI FELBONTÁS (MÉRETEZÉS)"
@@ -3687,6 +4029,9 @@ msgstr "Roland MT-32/CM-32L"
 msgid "Romania"
 msgstr "Románia"
 
+msgid "Romanian"
+msgstr "Román"
+
 msgid "Rotate the screen, useful for certain vertical gameplay homebrews."
 msgstr "A képernyő elforgatása, hasznos bizonyos függőleges játékmenetű homebrews játékoknál."
 
@@ -3708,6 +4053,9 @@ msgstr "Oroszország"
 msgid "Russian"
 msgstr "Orosz"
 
+msgid "Russian (ru)"
+msgstr "Orosz (ru)"
+
 msgid "S-Video"
 msgstr "S-Video"
 
@@ -3728,6 +4076,12 @@ msgstr "SKÁLA MÓD"
 
 msgid "SCALING MODE"
 msgstr "SKÁLÁZÁSI MÓD"
+
+msgid "SCREEN BORDERS"
+msgstr "KÉPERNYŐSZEGÉLYEK"
+
+msgid "SCREEN FILTER"
+msgstr "KÉPERNYŐ SZŰRŐ"
 
 msgid "SCREEN FILTERING"
 msgstr "KÉPERNYŐ SZŰRÉS"
@@ -3857,6 +4211,12 @@ msgstr "SPU DEKÓDOLÓ"
 
 msgid "SPU LOOP DETECTION"
 msgstr "SPU HUROK ÉRZÉKELÉS"
+
+msgid "ST"
+msgstr "ST"
+
+msgid "STE"
+msgstr "STE"
 
 msgid "STEREO SOUND"
 msgstr "SZTEREO HANG"
@@ -4080,6 +4440,9 @@ msgstr "Kisimítja a textúrákat a 3D objektumokon."
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Kisimítja a teljes képet, ahogyan az a képernyőn megjelenik. Korrigálja a képpontok közötti pozicionálást."
 
+msgid "Snow"
+msgstr "Hó"
+
 msgid "Software"
 msgstr "Szoftver"
 
@@ -4122,6 +4485,15 @@ msgstr "Spanyolország"
 msgid "Spanish"
 msgstr "Spanyol"
 
+msgid "Spanish (Latin America)"
+msgstr "Spanyol (Latin-Amerika)"
+
+msgid "Spanish (Spain)"
+msgstr "Spanyol (Spanyolország)"
+
+msgid "Spanish (es)"
+msgstr "Spanyol (es)"
+
 msgid "Special 1"
 msgstr "Különleges 1"
 
@@ -4137,11 +4509,17 @@ msgstr "Special 4 (TI-83 Legacy)"
 msgid "Speed hack for dual core mode to fix some glitches."
 msgstr "Sebesség hack a kétmagos üzemmódhoz, hogy kijavítson néhány hibát."
 
+msgid "Speed hack, enable to disable surface syncing between CPU and GPU. Surface syncing is needed by a few games."
+msgstr "Speed hack, engedélyezze a CPU és a GPU közötti felületi szinkronizálás letiltását. A felületi szinkronizálásra néhány játéknak szüksége van."
+
 msgid "Speed up shader compilation."
 msgstr "A shader összeállításának felgyorsítása."
 
 msgid "Speeds up file loading. Some games won't load with this."
 msgstr "Gyorsítja a fájlok betöltését. Néhány játék nem töltődik be ezzel."
+
+msgid "Square Pixels"
+msgstr "Négyzetes pixelek"
 
 msgid "Square pixel"
 msgstr "Négyzet alakú képpont"
@@ -4215,6 +4593,15 @@ msgstr "Svédország"
 msgid "Swedish"
 msgstr "Svéd"
 
+msgid "Swedish (se)"
+msgstr "Svéd (se)"
+
+msgid "Swiss French (ch)"
+msgstr "Svájci francia (ch)"
+
+msgid "Swiss German (ch)"
+msgstr "Svájci német (ch)"
+
 msgid "Switzerland"
 msgstr "Svájc"
 
@@ -4281,6 +4668,9 @@ msgstr "IDŐNYÚJTÁSI KÜSZÖBÉRTÉK"
 msgid "TIMED AXIS INTERVALS"
 msgstr "IDŐZÍTETT TENGELYINTERVALLUMOK"
 
+msgid "TOS languages."
+msgstr "TOS nyelvek."
+
 msgid "TOUCH MODE"
 msgstr "ÉRINTÉSES MÓD"
 
@@ -4295,6 +4685,21 @@ msgstr "TRILINEÁRIS SZŰRÉS"
 
 msgid "TRUE COLOR RENDERING"
 msgstr "SZÍNHŰ SZÍNVISSZAADÁS"
+
+msgid "TT"
+msgstr "TT"
+
+msgid "TT 3.06"
+msgstr "TT 3.06"
+
+msgid "TT AUTO"
+msgstr "TT AUTO"
+
+msgid "TT ETOS 512k"
+msgstr "TT ETOS 512k"
+
+msgid "TV"
+msgstr "TV"
 
 msgid "TV EFFECTS"
 msgstr "TV-EFEKTUSOK"
@@ -4316,6 +4721,9 @@ msgstr "Tajván"
 
 msgid "Tandy"
 msgstr "Tandy"
+
+msgid "Thai"
+msgstr "Tháj"
 
 msgid "Thailand"
 msgstr "Thaiföld"
@@ -4410,6 +4818,12 @@ msgstr "Tunézia"
 msgid "Turkey"
 msgstr "Törökország"
 
+msgid "Turkish"
+msgstr "Török"
+
+msgid "Turkish (tr)"
+msgstr "Török (tr)"
+
 msgid "Turquoise"
 msgstr "Türkiz"
 
@@ -4443,6 +4857,9 @@ msgstr "EGYESÜLT ÁLLAMOK"
 msgid "USA"
 msgstr "USA"
 
+msgid "USA (Default)"
+msgstr "USA (Alapértelmezett)"
+
 msgid "USE DSP AUDIO"
 msgstr "DSP AUDIO HASZNÁLATA"
 
@@ -4457,6 +4874,9 @@ msgstr "SZOFTVERES RENDERELÉS HASZNÁLATA"
 
 msgid "Ukraine"
 msgstr "Ukrajna"
+
+msgid "Ukrainian"
+msgstr "Ukrán"
 
 msgid "Ultra"
 msgstr "Ultra"
@@ -4566,6 +4986,9 @@ msgstr "FÜGGŐLEGES FORGÁS (TATE)"
 msgid "VGA"
 msgstr "VGA"
 
+msgid "VGA (Default)"
+msgstr "VGA (Alapértelmezett)"
+
 msgid "VIDEO FILTERS"
 msgstr "VIDEÓSZŰRŐK"
 
@@ -4595,6 +5018,9 @@ msgstr "Nagyon magas"
 
 msgid "Vietnam"
 msgstr "Vietnám"
+
+msgid "Vietnamese"
+msgstr "Vietnámi"
 
 msgid "Vulkan"
 msgstr "Vulkan"

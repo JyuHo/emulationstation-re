@@ -713,7 +713,9 @@ namespace es::launcher::retroarch
 
 		for (std::string& arg : coreProfile(ctx.core).commandArguments(ctx))
 			cmd.argv.push_back(std::move(arg));
-		cmd.argv.push_back(coreProfile(ctx.core).romArgument(ctx).string());
+		// a core may take no content: it finds the game itself
+		if (std::filesystem::path rom = coreProfile(ctx.core).romArgument(ctx); !rom.empty())
+			cmd.argv.push_back(rom.string());
 		return cmd;
 	}
 }

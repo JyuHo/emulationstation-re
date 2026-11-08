@@ -36,6 +36,9 @@ msgstr "0.8x"
 msgid "0.9x"
 msgstr "0.9x"
 
+msgid "1 MB"
+msgstr "1 MB"
+
 msgid "1 second"
 msgstr "1 sekunda"
 
@@ -99,6 +102,9 @@ msgstr "1,75x Nativní"
 msgid "1.8x (22.50Mhz)"
 msgstr "1.8x (22.50Mhz)"
 
+msgid "10 MB"
+msgstr "10 MB"
+
 msgid "10 seconds"
 msgstr "10 sekund"
 
@@ -107,6 +113,18 @@ msgstr "100 % (Výchozí)"
 
 msgid "1024kB"
 msgstr "1024kB"
+
+msgid "1040 STE 1.06"
+msgstr "1040 STE 1.06"
+
+msgid "1040 STE 1.62"
+msgstr "1040 STE 1.62"
+
+msgid "1040 STE AUTO"
+msgstr "1040 STE AUTO"
+
+msgid "1040 STE ETOS 256k"
+msgstr "1040 STE ETOS 256k"
 
 msgid "10th"
 msgstr "10."
@@ -135,6 +153,9 @@ msgstr "12."
 msgid "13th"
 msgstr "13."
 
+msgid "14 MB"
+msgstr "14 MB"
+
 msgid "14.18 MHz (A1200 speed)"
 msgstr "14,18 MHz (rychlost A1200)"
 
@@ -158,6 +179,9 @@ msgstr "15s"
 
 msgid "15th"
 msgstr "15."
+
+msgid "16 MHz"
+msgstr "16 MHz"
 
 msgid "16384kB"
 msgstr "16384kB"
@@ -195,6 +219,9 @@ msgstr "18."
 msgid "19th"
 msgstr "19."
 
+msgid "1M"
+msgstr "1M"
+
 msgid "1st"
 msgstr "1."
 
@@ -216,6 +243,9 @@ msgstr "1x nativní (320x240)"
 msgid "1x native (640x528)"
 msgstr "1x nativní (640x528)"
 
+msgid "2 MB"
+msgstr "2 MB"
+
 msgid "2 seconds"
 msgstr "2 sekundy"
 
@@ -233,6 +263,9 @@ msgstr "2.25x (1440x1080)"
 
 msgid "2.25x Native"
 msgstr "2,25x nativní"
+
+msgid "2.5 MB"
+msgstr "2.5 MB"
 
 msgid "2.5x (1600x1200)"
 msgstr "2.5x (1600x1200)"
@@ -318,6 +351,9 @@ msgstr "28."
 msgid "29th"
 msgstr "29."
 
+msgid "2M"
+msgstr "2M"
+
 msgid "2P GAMEPAD MAPPING (KEYRAH)"
 msgstr "MAPOVÁNÍ 2P GAMEPADU (KEYRAH)"
 
@@ -329,6 +365,9 @@ msgstr "2."
 
 msgid "2nd Joystick (2 Axes, 2 Btns)"
 msgstr "2. Joystick (2 Osy, 2 Tlačítka)"
+
+msgid "2x (1280x960) (Default)"
+msgstr "2x (1280x960) (výchozí)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -381,6 +420,9 @@ msgstr "30."
 msgid "31st"
 msgstr "31."
 
+msgid "32 MHz"
+msgstr "32 MHz"
+
 msgid "32MB"
 msgstr "32MB"
 
@@ -422,6 +464,9 @@ msgstr "3x nativní (~1080p)"
 
 msgid "3x native (768 x 576)"
 msgstr "3x nativní(768 x 576)"
+
+msgid "4 MB"
+msgstr "4 MB"
 
 msgid "4 PLAYER ADAPTER"
 msgstr "ADAPTÉR PRO 4 HRÁČE"
@@ -467,6 +512,9 @@ msgstr "ROZLIŠENÍ VYKRESLOVÁNÍ 4:3"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4M"
+msgstr "4M"
 
 msgid "4MB"
 msgstr "4MB"
@@ -515,6 +563,24 @@ msgstr "5120MB"
 
 msgid "512kB (1750)"
 msgstr "512kB (1750)"
+
+msgid "520 ST AUTO"
+msgstr "520 ST AUTO"
+
+msgid "520 ST EMUTOS 256k"
+msgstr "520 ST EMUTOS 256k"
+
+msgid "520 ST TOS 1.00"
+msgstr "520 ST TOS 1.00"
+
+msgid "520 ST TOS 1.02"
+msgstr "520 ST TOS 1.02"
+
+msgid "520 ST TOS 1.04"
+msgstr "520 ST TOS 1.04"
+
+msgid "520K"
+msgstr "520K"
 
 msgid "56.75 MHz"
 msgstr "56.75 MHz"
@@ -585,6 +651,12 @@ msgstr "7x nativní (~2520p)"
 msgid "7x native (1792 x 1344)"
 msgstr "7x nativní (1792 x 1344)"
 
+msgid "8 MB"
+msgstr "8 MB"
+
+msgid "8 MHz"
+msgstr "8 MHz"
+
 msgid "8086/8088, 4.77MHz (315 cps)"
 msgstr "8086/8088, 4.77MHz (315 cps)"
 
@@ -644,6 +716,9 @@ msgstr "A500+ (1MB Chip)"
 
 msgid "A600 (2MB Chip + 8MB Fast)"
 msgstr "A600 (2MB Chip + 8MB Fast)"
+
+msgid "ACSI"
+msgstr "ACSI"
 
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "OPRAVA AKTIVNÍCH VSTUPNÍCH ZAŘÍZENÍ"
@@ -713,6 +788,24 @@ msgstr "ASYNCHRONNÍ KOMPILACE SHADERŮ (POUZE VULKAN)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "ASYNCHRONNÍ STREAMOVÁNÍ TEXTUR"
+
+msgid "ATARI CPU CLOCK RATE"
+msgstr "TAKTOVACÍ FREKVENCE PROCESORU ATARI"
+
+msgid "ATARI CPU TYPE"
+msgstr "TYP PROCESORU ATARI"
+
+msgid "ATARI HARD DRIVE TYPE"
+msgstr "TYP PEVNÉHO DISKU ATARI"
+
+msgid "ATARI MACHINE TYPE"
+msgstr "TYP POČÍTAČE ATARI"
+
+msgid "ATARI MONITOR TYPE"
+msgstr "TYP MONITORU ATARI"
+
+msgid "ATARI ST MEMORY SIZE"
+msgstr "VELIKOST PAMĚTI ATARI ST"
 
 msgid "ATARI SYSTEM"
 msgstr "ATARI SYSTEM"
@@ -858,6 +951,9 @@ msgstr "Přibližný (Rychlý)"
 msgid "April"
 msgstr "Duben"
 
+msgid "Arabic (ar)"
+msgstr "Arabština (ar)"
+
 msgid "Arcade MVS Europe"
 msgstr "Arcade MVS Evropa"
 
@@ -890,6 +986,12 @@ msgstr "Jak Je"
 
 msgid "As game specifies"
 msgstr "Jak je uvedeno ve hře"
+
+msgid "Atari Monitor"
+msgstr "Atari monitor"
+
+msgid "Atari ST monitors had a visible border around the main screen area, but most software does not display anything in it."
+msgstr "Monitory Atari ST měly kolem hlavní plochy obrazovky viditelný rámeček, ale většina softwaru v něm nic nezobrazuje."
 
 msgid "August"
 msgstr "Srpen"
@@ -974,6 +1076,9 @@ msgstr "PŘESNOST PROLÍNÁNÍ"
 
 msgid "BOOT ANIMATION FIRST"
 msgstr "NEJPRVE SPOUŠTĚT ANIMACE"
+
+msgid "BROADCAST"
+msgstr "TV VYSÍLÁNÍ"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (doporučeno pro všechny hry vyvinuté v USA)"
@@ -1080,8 +1185,14 @@ msgstr "Pouze dole"
 msgid "Bottom only"
 msgstr "Pouze spodní"
 
+msgid "Bouncing Box"
+msgstr "Skákací box"
+
 msgid "Brazil"
 msgstr "Brazilie"
+
+msgid "British English (uk)"
+msgstr "Britská angličtina (uk)"
 
 msgid "Brown"
 msgstr "Hnědá"
@@ -1115,6 +1226,9 @@ msgstr "C64 PAL"
 
 msgid "C64 PAL Automatic"
 msgstr "C64 PAL Automatický"
+
+msgid "CABLE"
+msgstr "KABEL"
 
 msgid "CD ADD-ON"
 msgstr "CD ADD-ON"
@@ -1329,6 +1443,15 @@ msgstr "Čínsky"
 msgid "Chinese (Mandarin)"
 msgstr "Čínština (Mandarínština)"
 
+msgid "Chinese (Simplified)"
+msgstr "Čínština (Zjednodušená)"
+
+msgid "Choose broadcast standard (for older TV's)."
+msgstr "Zvolte standard vysílání (pro starší televizory)."
+
+msgid "Choose cable type for the TV."
+msgstr "Vyberte typ kabelu pro televizor."
+
 msgid "Choose downscaling method."
 msgstr "Zvolte metodu snižování měřítka."
 
@@ -1359,11 +1482,41 @@ msgstr "Zvolte, kterou knihovnu grafického rozhraní API chcete použít."
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "Zvolte, kterou graf. knihovnu API použít. Vulkan nemusí fungovat pro každé jádro."
 
+msgid "Choose your Atari hard drive type for the .hd extension file."
+msgstr "Vyberte typ pevného disku Atari pro soubor s příponou .hd."
+
+msgid "Choose your desired Atari CPU clock rate."
+msgstr "Zvolte požadovanou taktovací frekvenci procesoru Atari."
+
+msgid "Choose your desired Atari CPU type."
+msgstr "Vyberte požadovaný typ procesoru Atari."
+
+msgid "Choose your desired Atari Monitor."
+msgstr "Vyberte požadovaný monitor Atari."
+
+msgid "Choose your desired Atari ST memory size."
+msgstr "Zvolte požadovanou velikost paměti Atari ST."
+
+msgid "Choose your desired Atari machine type."
+msgstr "Vyberte požadovaný typ počítače Atari."
+
+msgid "Choose your desired pause screen display type."
+msgstr "Vyberte požadovaný typ zobrazení obrazovky pauzy."
+
+msgid "Choose your desired pixel aspect ratio."
+msgstr "Zvolte požadovaný poměr stran pixelů."
+
+msgid "Choose your preferred aspect ratio."
+msgstr "Zvolte preferovaný poměr stran."
+
 msgid "Choose your preferred language."
 msgstr "Vyberte si preferovaný jazyk."
 
 msgid "Choose your preferred renderer."
 msgstr "Vyberte preferované vykreslování."
+
+msgid "Choose your render resolution (Requires personal redream.key file)."
+msgstr "Zvolte rozlišení vykreslování (Vyžaduje osobní soubor redream.key)."
 
 msgid "Classic Controller"
 msgstr "Klasický Ovladač"
@@ -1425,6 +1578,12 @@ msgstr "Kostarika"
 msgid "Croatia"
 msgstr "Chorvatsko"
 
+msgid "Crop 1080p (270, 540)"
+msgstr "Oříznutí 1080p (270, 540)"
+
+msgid "Crop 720p (240, 480)"
+msgstr "Oříznutí 720p (240, 480)"
+
 msgid "Cross"
 msgstr "Kříž"
 
@@ -1445,6 +1604,9 @@ msgstr "Přesný-cyklus"
 
 msgid "Czech"
 msgstr "Čeština"
+
+msgid "Czech (cz)"
+msgstr "Čeština (cz)"
 
 msgid "Czech Republic"
 msgstr "Česká Republika"
@@ -1469,6 +1631,9 @@ msgstr "ZAKÁZAT JOYSTICK EMULÁTORU"
 
 msgid "DISABLE INTERLACING"
 msgstr "ZAKÁZAT PROKLÁDÁNÍ"
+
+msgid "DISABLE SURFACE SYNC"
+msgstr "ZAKÁZAT SYNCHRONIZACI POVRCHU"
 
 msgid "DISABLE VERTEX CACHE"
 msgstr "ZAKÁZAT VRCHOLY CACHE"
@@ -1518,6 +1683,12 @@ msgstr "NEPLATNOST KÓDU DYNAREC"
 msgid "Dance Mat"
 msgstr "Taneční Podložka"
 
+msgid "Danish"
+msgstr "Dánština"
+
+msgid "Danish (dk)"
+msgstr "Dánština (dk)"
+
 msgid "Dark Blue"
 msgstr "Tmavě modrá"
 
@@ -1529,6 +1700,9 @@ msgstr "Tmavě růžová"
 
 msgid "Dark Purple"
 msgstr "Tmavě fialová"
+
+msgid "Darken"
+msgstr "Ztmavit"
 
 msgid "December"
 msgstr "Prosinec"
@@ -1629,6 +1803,9 @@ msgstr "Během hry můžete stisknutím klávesové zkratky + R1 přeložit text
 msgid "Dutch"
 msgstr "Holandsky"
 
+msgid "Dutch (nl)"
+msgstr "Holandština (nl)"
+
 msgid "Dynamic (fast)"
 msgstr "Dynamický (rychlý)"
 
@@ -1716,6 +1893,9 @@ msgstr "Zdůraznění vrcholu"
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Emuluje Wiimote Sideway pomocí L2 pro Shake and Nunchuk na R-sticku."
 
+msgid "Emutos language && region setting."
+msgstr "Nastavení jazyka Emutos && regionu."
+
 msgid "Enable"
 msgstr "Povolit"
 
@@ -1730,6 +1910,9 @@ msgstr "Povolte emulaci Gravis Utrasound. Ujistěte se, že složka ULTRASND je 
 
 msgid "Enable No-interlacing Patches."
 msgstr "Povolení políček bez prokládání."
+
+msgid "Enable auto frameskipping for performance on lower-end systems."
+msgstr "Povoluje auto. přeskakování snímků pro zvýšení výkonu na systémech nižší třídy."
 
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "Povolit připojení mezipaměti. Může zlepšit výkon a kompatibilitu v některých hrách."
@@ -1788,6 +1971,9 @@ msgstr "Povolením zobrazíte, zda je mikrofon vašeho zařízení aktivní."
 msgid "Enable to show which screen layout with the configured sequence is active."
 msgstr "Umožňuje zobrazit, které rozložení obrazovky s nakonfigurovanou sekvencí je aktivní."
 
+msgid "Enable vertical sync to avoid tearing in some cases."
+msgstr "Povoluje verti. synchronizaci, aby se v některých případech zabránilo trhání."
+
 msgid "Enabled"
 msgstr "Povoleno"
 
@@ -1814,6 +2000,9 @@ msgstr "Angličtina"
 
 msgid "English (Default)"
 msgstr "Angličtina (výchozí)"
+
+msgid "English (us)"
+msgstr "Angličtina (USA)"
 
 msgid "English/Japanese"
 msgstr "Anglický/Japonský"
@@ -1965,6 +2154,24 @@ msgstr "PŘESKOČIT SNÍMEK (POUZE GL64MK2)"
 msgid "FXAA"
 msgstr "FXAA"
 
+msgid "Falcon"
+msgstr "Falcon"
+
+msgid "Falcon 4.0"
+msgstr "Falcon 4.0"
+
+msgid "Falcon 4.02"
+msgstr "Falcon 4.02"
+
+msgid "Falcon 4.04"
+msgstr "Falcon 4.04"
+
+msgid "Falcon AUTO"
+msgstr "Falcon AUTO"
+
+msgid "Falcon ETOS 512k"
+msgstr "Falcon ETOS 512k"
+
 msgid "Famicom (FDS)"
 msgstr "Famicom (FDS)"
 
@@ -1982,6 +2189,12 @@ msgstr "Vyplní obrazovku bez ohledu na poměr stran. Nefunguje s funkcí celoč
 
 msgid "Finland"
 msgstr "Finsko"
+
+msgid "Finnish"
+msgstr "Finština"
+
+msgid "Finnish (fi)"
+msgstr "Finština (fi)"
 
 msgid "Fit 4:3 Aspect Ratio"
 msgstr "Vhodný poměr stran 4:3"
@@ -2006,6 +2219,9 @@ msgstr "Opravuje možnou chybu při detekci více ovladačů."
 
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Letecký Ovladač (3 Osy, 4 Tlačítka, 1 Klobouk)"
+
+msgid "Floppy Disk List"
+msgstr "Seznam disket"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Pro hry s gyroskopem (na levou analogovou páčku)"
@@ -2045,6 +2261,9 @@ msgstr "Francie"
 
 msgid "French"
 msgstr "Francouzština"
+
+msgid "French (fr)"
+msgstr "Francouzština (fr)"
 
 msgid "Frontend MIDI driver"
 msgstr "Frontend MIDI ovladač"
@@ -2223,6 +2442,9 @@ msgstr "Georgia"
 msgid "German"
 msgstr "Němčina"
 
+msgid "German (de)"
+msgstr "Němčina (de)"
+
 msgid "Germany"
 msgstr "Německo"
 
@@ -2244,6 +2466,12 @@ msgstr "Šedá"
 msgid "Greece"
 msgstr "Řecko"
 
+msgid "Greek"
+msgstr "Řečtina"
+
+msgid "Greek (gk)"
+msgstr "Řečtina (gk)"
+
 msgid "Green"
 msgstr "Zelená"
 
@@ -2259,6 +2487,9 @@ msgstr "HI-RES ARTIFAKTURACE"
 msgid "HLE (Fastest)"
 msgstr "HLE (Rychlejší)"
 
+msgid "HLE (per-pixel)"
+msgstr "HLE (na pixel)"
+
 msgid "HQ (bilinear filter)"
 msgstr "HQ (Bilineární filtr)"
 
@@ -2268,6 +2499,9 @@ msgstr "Hack. Zvyšuje rychlost většiny PAL her o 17 %."
 msgid "Hebrew"
 msgstr "Hebrejština"
 
+msgid "Help and Information"
+msgstr "Nápověda a informace"
+
 msgid "Help games which are too quick or that have bugs."
 msgstr "Nápověda k příliš rychlým hrám nebo hrám s chybami."
 
@@ -2276,6 +2510,9 @@ msgstr "Hercules"
 
 msgid "Hermite"
 msgstr "Hermitní"
+
+msgid "Hide"
+msgstr "Skrytí"
 
 msgid "Hides borders on many games. Some games use the borders."
 msgstr "Skrývá hranice mnoha her. U některých her se okraje používají."
@@ -2301,6 +2538,12 @@ msgstr "Horizontální"
 msgid "How the window space is distributed between the screens."
 msgstr "Jak je prostor okna rozdělen mezi obrazovky."
 
+msgid "Hungarian"
+msgstr "Maďarština"
+
+msgid "Hungarian (hg)"
+msgstr "Maďarština (hg)"
+
 msgid "Hungary"
 msgstr "Maďarsko"
 
@@ -2321,6 +2564,9 @@ msgstr "Hybridní Ubershadery"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IDE (Default)"
+msgstr "IDE (Výchozí)"
 
 msgid "IMPROVED BANDING"
 msgstr "Vylepšený BANDING"
@@ -2357,6 +2603,9 @@ msgstr "Pokud není zadáno nic, použije se ve výchozím nastavení ZPřeklada
 
 msgid "Ignored with 'Cycle-exact'."
 msgstr "Ignorováno pomocí 'Přesný-cyklus'."
+
+msgid "Immediate"
+msgstr "Okamžitě"
 
 msgid "Improve audio accuracy (experimental)."
 msgstr "Zlepšení přesnosti zvuku (experimentální)."
@@ -2411,6 +2660,9 @@ msgstr "Israel"
 
 msgid "Italian"
 msgstr "Italština"
+
+msgid "Italian (it)"
+msgstr "Italština (it)"
 
 msgid "Italy"
 msgstr "Italie"
@@ -2579,6 +2831,9 @@ msgstr "OMEZENÍ SNÍMKOVÉ FREKVENCE"
 
 msgid "LINEAR UPSCALING"
 msgstr "LINEÁRNÍ UPSCALING"
+
+msgid "LLE"
+msgstr "LLE"
 
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "NAČÍST VLASTNÍ TEXTURY"
@@ -2787,6 +3042,24 @@ msgstr "Střední"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "Mega ST"
+msgstr "Mega ST"
+
+msgid "Mega STE"
+msgstr "Mega STE"
+
+msgid "Mega STE 2.05"
+msgstr "Mega STE 2.05"
+
+msgid "Mega STE 2.06"
+msgstr "Mega STE 2.06"
+
+msgid "Mega STE AUTO"
+msgstr "Mega STE AUTO"
+
+msgid "Mega STE ETOS 256k"
+msgstr "Mega STE ETOS 256k"
+
 msgid "MegaSD"
 msgstr "MegaSD"
 
@@ -2822,6 +3095,9 @@ msgstr "Jednobarevné"
 
 msgid "Monochrome (Blargg)"
 msgstr "Jednobarevné (Blargg)"
+
+msgid "Monochrome High-Resolution"
+msgstr "Monochromatické vysoké rozlišení"
 
 msgid "More accurate emulation, but slower."
 msgstr "Přesnější emulace, ale pomalejší."
@@ -2880,6 +3156,9 @@ msgstr "NOVÝ REŽIM 3DS"
 msgid "NTSC (Composite)"
 msgstr "NTSC (Composite)"
 
+msgid "NTSC (Default)"
+msgstr "NTSC (Výchozí)"
+
 msgid "NTSC (NES)"
 msgstr "NTSC (NES)"
 
@@ -2903,6 +3182,9 @@ msgstr "NTSC 492x262px"
 
 msgid "NTSC FILTER"
 msgstr "NTSC FILTR"
+
+msgid "NTSC TV"
+msgstr "NTSC TV"
 
 msgid "NTSC-J"
 msgstr "NTSC-J"
@@ -2958,6 +3240,9 @@ msgstr "Nestopia (RGB)"
 msgid "Netherlands"
 msgstr "Nizozemsko"
 
+msgid "Netherlands (nl)"
+msgstr "Nizozemsko (nl)"
+
 msgid "Never"
 msgstr "Nikdy"
 
@@ -2969,6 +3254,9 @@ msgstr "Nikaragua"
 
 msgid "No EMS/XMS"
 msgstr "No EMS/XMS"
+
+msgid "No Indicator"
+msgstr "Bez indikátoru"
 
 msgid "No Limit"
 msgstr "Bez Limitu"
@@ -2999,6 +3287,12 @@ msgstr "Normální (tlumočník)"
 
 msgid "Norway"
 msgstr "Norsko"
+
+msgid "Norwegian"
+msgstr "Norský"
+
+msgid "Norwegian (no)"
+msgstr "Norština (no)"
 
 msgid "Not all games support 3D pad."
 msgstr "Ne všechny hry podporují 3D ovladač."
@@ -3144,11 +3438,23 @@ msgstr "PAL 288x576px 50Hz (auto)"
 msgid "PAL 576x312px"
 msgstr "PAL 576x312px"
 
+msgid "PAL TV"
+msgstr "PAL TV"
+
+msgid "PAL_M"
+msgstr "PAL_M"
+
+msgid "PAL_N"
+msgstr "PAL_N"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLEL-RDP UPSCALER"
+
+msgid "PAUSE SCREEN DISPLAY"
+msgstr "POZASTAVENÍ ZOBRAZENÍ OBRAZOVKY"
 
 msgid "PCE Joypad"
 msgstr "Joypad PCE"
@@ -3282,6 +3588,9 @@ msgstr "Ukazatel"
 msgid "Poland"
 msgstr "Polsko"
 
+msgid "Poland (pl)"
+msgstr "Polsko (pl)"
+
 msgid "Polish"
 msgstr "Polský"
 
@@ -3359,6 +3668,9 @@ msgstr "SNÍŽENÍ BLIKÁNÍ SPRITU (NESTABILNÍ)"
 
 msgid "RENDER"
 msgstr "VYTVOŘIT"
+
+msgid "RENDER MODE"
+msgstr "REŽIM VYKRESLOVÁNÍ"
 
 msgid "RENDER RESOLUTION (SCALING)"
 msgstr "Rozlišení vykreslování (škálování)"
@@ -3468,6 +3780,9 @@ msgstr "Roland MT-32/CM-32L"
 msgid "Romania"
 msgstr "Rumunsko"
 
+msgid "Romanian"
+msgstr "Rumunština"
+
 msgid "Rotate the screen, useful for certain vertical gameplay homebrews."
 msgstr "Otáčení obrazovky, užitečné pro vertikální hraní, některých domácích produktů."
 
@@ -3485,6 +3800,9 @@ msgstr "Rusko"
 
 msgid "Russian"
 msgstr "Rusky"
+
+msgid "Russian (ru)"
+msgstr "Ruština (ru)"
 
 msgid "S-Video"
 msgstr "S-Video"
@@ -3506,6 +3824,12 @@ msgstr "REŽIM MĚŘÍTKA"
 
 msgid "SCALING MODE"
 msgstr "REŽIM SCALING"
+
+msgid "SCREEN BORDERS"
+msgstr "HRANICE OBRAZOVKY"
+
+msgid "SCREEN FILTER"
+msgstr "OBRAZOVÝ FILTR"
 
 msgid "SCREEN FILTERING"
 msgstr "Filtrování obrazovky"
@@ -3611,6 +3935,12 @@ msgstr "SPU DECODER"
 
 msgid "SPU LOOP DETECTION"
 msgstr "DETEKCE SMYČKY SPU"
+
+msgid "ST"
+msgstr "ST"
+
+msgid "STE"
+msgstr "STE"
 
 msgid "STRETCH MODE"
 msgstr "REŽIM PROTAŽENÍ"
@@ -3819,6 +4149,9 @@ msgstr "Vyhlazuje textury 3D objektů."
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Vyhlazuje celkový obraz zobrazený na obrazovce. Upravuje polohu mezi pixely."
 
+msgid "Snow"
+msgstr "Sníh"
+
 msgid "Software"
 msgstr "Software"
 
@@ -3861,6 +4194,9 @@ msgstr "Španělsko"
 msgid "Spanish"
 msgstr "Španělština"
 
+msgid "Spanish (es)"
+msgstr "Španělština (es)"
+
 msgid "Special 1"
 msgstr "GBC - Žlutá"
 
@@ -3876,11 +4212,17 @@ msgstr "Speciální 4 (TI-83 Legacy)"
 msgid "Speed hack for dual core mode to fix some glitches."
 msgstr "Rychlostní hack pro dvoujádrový režim, který opravuje některé závady."
 
+msgid "Speed hack, enable to disable surface syncing between CPU and GPU. Surface syncing is needed by a few games."
+msgstr "Speed hack, povolte zakázat synchronizaci povrchu mezi CPU a GPU. Synchronizaci povrchu potřebuje několik her."
+
 msgid "Speed up shader compilation."
 msgstr "Zrychlení kompilace shaderů."
 
 msgid "Speeds up file loading. Some games won't load with this."
 msgstr "Zrychluje načítání souborů. Některé hry se s touto funkcí nenačtou."
+
+msgid "Square Pixels"
+msgstr "Čtvercové pixely"
 
 msgid "Square pixel"
 msgstr "Čtvercový pixel"
@@ -3951,6 +4293,15 @@ msgstr "Švédsko"
 msgid "Swedish"
 msgstr "Švédský"
 
+msgid "Swedish (se)"
+msgstr "Švédština (se)"
+
+msgid "Swiss French (ch)"
+msgstr "Švýcarská francouzština (ch)"
+
+msgid "Swiss German (ch)"
+msgstr "Švýcarská němčina (ch)"
+
 msgid "Switzerland"
 msgstr "Švýcarsko"
 
@@ -4011,6 +4362,9 @@ msgstr "PRAHOVÁ HODNOTA PRO NATAŽENÍ ČASU"
 msgid "TIMED AXIS INTERVALS"
 msgstr "ČASOVÉ INTERVALY OSY"
 
+msgid "TOS languages."
+msgstr "Jazyky TOS."
+
 msgid "TOUCH MODE"
 msgstr "Dotykový režim"
 
@@ -4022,6 +4376,21 @@ msgstr "TRILINEÁRNÍ FILTROVÁNÍ"
 
 msgid "TRUE COLOR RENDERING"
 msgstr "VĚRNÉ PODÁNÍ BAREV"
+
+msgid "TT"
+msgstr "TT"
+
+msgid "TT 3.06"
+msgstr "TT 3.06"
+
+msgid "TT AUTO"
+msgstr "TT AUTO"
+
+msgid "TT ETOS 512k"
+msgstr "TT ETOS 512k"
+
+msgid "TV"
+msgstr "TV"
 
 msgid "TV2x CRT Television Filter"
 msgstr "TV filtr TV2x CRT"
@@ -4116,6 +4485,12 @@ msgstr "Tunisko"
 msgid "Turkey"
 msgstr "Turecko"
 
+msgid "Turkish"
+msgstr "Turečtina"
+
+msgid "Turkish (tr)"
+msgstr "Turečtina (tr)"
+
 msgid "Turquoise"
 msgstr "Tyrkysová"
 
@@ -4149,6 +4524,9 @@ msgstr "US"
 msgid "USA"
 msgstr "USA"
 
+msgid "USA (Default)"
+msgstr "USA (Výchozí)"
+
 msgid "USE DSP AUDIO"
 msgstr "POUŽITÍ ZVUK DSP"
 
@@ -4163,6 +4541,9 @@ msgstr "POUŽÍT VYKRESLOVACÍ SOFTWARE"
 
 msgid "Ukraine"
 msgstr "Ukrajina"
+
+msgid "Ukrainian"
+msgstr "Ukrajinština"
 
 msgid "Ultra"
 msgstr "Velmi vysoká"
@@ -4256,6 +4637,9 @@ msgstr "VERTIKÁLNÍ ROTACE (TATE)"
 
 msgid "VGA"
 msgstr "VGA"
+
+msgid "VGA (Default)"
+msgstr "VGA (Výchozí)"
 
 msgid "VIDEO FILTERS"
 msgstr "VIDEO FILTRY"

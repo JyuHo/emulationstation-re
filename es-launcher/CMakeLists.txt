@@ -17,6 +17,9 @@ if(NOT DEFINED PROJECT_NAME)
     set(CMAKE_CXX_EXTENSIONS OFF)
     include(GNUInstallDirs)
     set(ES_LAUNCHER_STANDALONE ON)
+    list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../CMake/Packages)
+    # shadPS4's settings are JSON: RapidJSON, header-only, which ES uses too
+    find_package(RapidJSON REQUIRED)
 endif()
 
 option(ES_LAUNCHER_TESTS "Build the es-launcher tests" ${ES_LAUNCHER_STANDALONE})
@@ -55,13 +58,17 @@ add_library(es-launcher-objects OBJECT
     src/stella/StellaGenerator.cpp
     src/supermodel/SupermodelGenerator.cpp
     src/ymir/YmirGenerator.cpp
+    src/vita3k/Vita3KGenerator.cpp
+    src/shadps4/ShadPS4Generator.cpp
+    src/redream/RedreamGenerator.cpp
+    src/hatari/HatariGenerator.cpp
     # Cemu's settings are XML: the copy of pugixml ES ships, built in with hidden symbols
     ${CMAKE_CURRENT_SOURCE_DIR}/../external/pugixml/src/pugixml.cpp
 )
 
 target_include_directories(es-launcher-objects
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
-    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src ${CMAKE_CURRENT_SOURCE_DIR}/../external/pugixml/src
+    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src ${CMAKE_CURRENT_SOURCE_DIR}/../external/pugixml/src ${RAPIDJSON_INCLUDE_DIRS}
 )
 target_compile_definitions(es-launcher-objects PRIVATE ES_LAUNCHER_BUILDING)
 target_compile_options(es-launcher-objects PRIVATE -Wall -Wextra)
@@ -97,6 +104,7 @@ if(ES_LAUNCHER_TESTS)
         ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/tests
         ${CMAKE_CURRENT_SOURCE_DIR}/../external/pugixml/src
+        ${RAPIDJSON_INCLUDE_DIRS}
     )
     target_compile_options(es-launcher-tests PRIVATE -Wall -Wextra)
     add_test(NAME es-launcher-tests COMMAND es-launcher-tests)
