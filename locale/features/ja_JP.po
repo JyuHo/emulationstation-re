@@ -342,8 +342,17 @@ msgstr "45秒"
 msgid "48MB"
 msgstr "48MB"
 
+msgid "4:3 (Default)"
+msgstr "4:3（標準）"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "4:3 レンダリング解像度"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4x"
 
 msgid "4th"
 msgstr "4"
@@ -423,6 +432,9 @@ msgstr "6x 標準 (~2160p/4K)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x 標準 (1536 x 1152)"
 
+msgid "720p"
+msgstr "720p"
+
 msgid "72MB"
 msgstr "72MB"
 
@@ -443,6 +455,9 @@ msgstr "7x 標準 (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x 標準 (1792 x 1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "8"
@@ -467,6 +482,12 @@ msgstr "8x 標準 (2048 x 1536)"
 
 msgid "90 degrees"
 msgstr "右90度回転"
+
+msgid "90 degrees clockwise"
+msgstr "右90度回転"
+
+msgid "90 degrees counter-clockwise"
+msgstr "左　90度回転"
 
 msgid "96MB"
 msgstr "96MB"
@@ -558,6 +579,9 @@ msgstr "アダプティブ(トップフィールド優先)"
 msgid "Add color to Game Boy games."
 msgstr "ゲームボーイのゲームに色を追加します"
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "CD音声のミキシングを調整します。 MSU-MDでは、カートリッジイメージの効果音は影響を受けません"
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "フル モーション ビデオ (FMV)のアスペクト比を調整します"
 
@@ -600,6 +624,9 @@ msgstr "より高いパフォーマンスを得るために、これらの曲線
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "多人数対応ゲームで5～8のコントローラーを使用できます"
 
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "多人数対応ゲームで7～12のコントローラーを使用できます"
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "多人数対応ゲームで最大8個のコントローラーを使用できます"
 
@@ -641,6 +668,9 @@ msgstr "ジョイスティックの入力に乗数を適用して、応答性を
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "ビデオ フィルターを適用して、さまざまな NTSC TV 信号を模倣します"
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "フラット シェーディングの代わりにグーロー シェーディングを適用します"
 
 msgid "Approximate (Fast)"
 msgstr "近似（高速）"
@@ -707,6 +737,9 @@ msgstr "アゼルバイジャン"
 
 msgid "BILINEAR FILTERING"
 msgstr "バイリニアフィルタリング"
+
+msgid "BIOS Language"
+msgstr "BIOS 言語"
 
 msgid "BIRTH DAY"
 msgstr "誕生日"
@@ -840,6 +873,12 @@ msgstr "バッファレンダリング"
 msgid "Bulgaria"
 msgstr "ブルガリア"
 
+msgid "CD ADD-ON"
+msgstr "CD アドオン"
+
+msgid "CD-DA VOLUME"
+msgstr "CD-DA 音量"
+
 msgid "CHEATS"
 msgstr "チート"
 
@@ -870,11 +909,17 @@ msgstr "コンソール タイプ"
 msgid "CONTROLLER 1"
 msgstr "コントローラ 1"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "コントローラー 1 入力割当"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "コントローラー 1 種類"
 
 msgid "CONTROLLER 2"
 msgstr "コントローラ 2"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "コントローラー 2 入力割当"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "コントローラー 2 種類"
@@ -882,11 +927,17 @@ msgstr "コントローラー 2 種類"
 msgid "CONTROLLER 3"
 msgstr "コントローラ 3"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "コントローラー 3 入力割当"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "コントローラー 3 種類"
 
 msgid "CONTROLLER 4"
 msgstr "コントローラ 4"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "コントローラー 4 入力割当"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "コントローラーの組み合わせ"
@@ -972,6 +1023,12 @@ msgstr "ゲームの表示言語を変更します"
 msgid "Change the output resolution ratio."
 msgstr "出力解像度比を変更します"
 
+msgid "Change the rotation of the rendered image."
+msgstr "表示する画像の回転方向を設定します"
+
+msgid "Change the system's language."
+msgstr "ゲームシステムの言語を変更します"
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "ゲームキューブ ポートに差し込まれるものを変更します"
 
@@ -990,11 +1047,17 @@ msgstr "中国語"
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "ゲーム機の言語を選択してください。すべてのゲームが言語選択をサポートしているわけではありません。"
 
+msgid "Choose deinterlace option."
+msgstr "インターレース解除オプションを選択します"
+
 msgid "Choose downscaling method."
 msgstr "ダウンスケーリング方法を選択します"
 
 msgid "Choose mipmapping type."
 msgstr "ミップマッピング タイプを選択します"
+
+msgid "Choose system BIOS language."
+msgstr "システムBIOS 言語を選択します"
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Parallel N64 グラフィックス プラグインを選択します"
@@ -1010,6 +1073,9 @@ msgstr "システム メッセージの画面表示位置を選択します"
 
 msgid "Choose the scaling mode for the game screen."
 msgstr "ゲーム画面のスケーリングモードを選択します"
+
+msgid "Choose to render meshes as transparent polygons."
+msgstr "メッシュを透明なポリゴンとして表示するかを選択します"
 
 msgid "Choose upscaling method."
 msgstr "アップスケーリング方法を選択します"
@@ -1077,6 +1143,9 @@ msgstr "コスタリカ"
 msgid "Croatia"
 msgstr "クロアチア"
 
+msgid "Cross"
+msgstr "Ｘ(下のボタン)"
+
 msgid "Current language"
 msgstr "現在の言語"
 
@@ -1094,6 +1163,9 @@ msgstr "遊び幅"
 
 msgid "DEFAULT POWER ON RAM STATE"
 msgstr "標準の電源オン時のRAM状態"
+
+msgid "DEINTERLACE"
+msgstr "インターレース解除"
 
 msgid "DEINTERLACING"
 msgstr "インターレース解除"
@@ -1173,6 +1245,9 @@ msgstr "ダークピンク"
 msgid "Dark Purple"
 msgstr "ダークパープル"
 
+msgid "De-Interlaced"
+msgstr "インターレース解除"
+
 msgid "December"
 msgstr "12月"
 
@@ -1206,6 +1281,9 @@ msgstr "ボタン画面にカーソルをどのように表示するかを決定
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "システムの速度と先読み動作を決定します"
 
+msgid "Deutsch"
+msgstr "ドイツ語"
+
 msgid "Digital Controller"
 msgstr "デジタルコントローラー"
 
@@ -1238,6 +1316,9 @@ msgstr "ドミニカ共和国"
 
 msgid "Don't Override"
 msgstr "上書きしない"
+
+msgid "Dot"
+msgstr "ドット"
 
 msgid "Double buffering"
 msgstr "ダブルバッファリング"
@@ -1304,6 +1385,9 @@ msgstr "ワイドスクリーン パッチを有効"
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "レンダリング解像度を強化"
+
+msgid "EXTENDED SCREEN"
+msgstr "拡張画面"
 
 msgid "Ecuador"
 msgstr "エクアドル"
@@ -1413,6 +1497,9 @@ msgstr "英語 (標準)"
 msgid "English/Japanese"
 msgstr "英語/日本語"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "互換性のあるゲームの拡張サウンド出力に対応"
+
 msgid "Enhancement."
 msgstr "強化：BIOS起動アニメーションを表示します"
 
@@ -1445,6 +1532,9 @@ msgstr "強化：行制限ごとに8つのスプライトを削除します"
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "強化：行制限ごとに8つのスプライトを削除します"
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "強化：行制限ごとに80個のスプライトを削除します"
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "強化：行制限ごとに32個のスプライトを削除します(特定のゲームで不具合の可能性)"
@@ -1488,6 +1578,9 @@ msgstr "均一表示"
 msgid "Exclusive Ubershaders"
 msgstr "排他的(専用)US"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "マスターシステムのようにゲーム画面領域を拡張します"
+
 msgid "External"
 msgstr "外部"
 
@@ -1502,6 +1595,9 @@ msgstr "FIFO リラックス"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "ファームウェア設定"
+
+msgid "FM SYNTHESIZER"
+msgstr "FM シンセサイザー"
 
 msgid "FMV ASPECT RATIO"
 msgstr "FMV アスペクト比"
@@ -1749,6 +1845,9 @@ msgstr "ゲームパッド + 4 プロコントローラー"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "ゲームパッド + 4 横向きWiiリモコン"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "間違ったリージョンが選択された場合、ゲーム速度が速く/遅くなる可能性があります"
+
 msgid "Gaussian"
 msgstr "ガウス"
 
@@ -1838,6 +1937,12 @@ msgstr "ハイブリッドUS"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "ハイパーブラスター/ジャスティファイア"
+
+msgid "IMPROVED BANDING"
+msgstr "濃淡の縞(バンディング)の改良"
+
+msgid "IMPROVED MESH"
+msgstr "メッシュの改良"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "ポリゴン分割の改善"
@@ -1950,6 +2055,33 @@ msgstr "日本語"
 msgid "Jordan"
 msgstr "ヨルダン"
 
+msgid "Joypad 2 Button"
+msgstr "ジョイパッド 2ボタン"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "ジョイパッド 2ボタン+マスタータップ"
+
+msgid "Joypad 3 Button"
+msgstr "ジョイパッド 3ボタン"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "3ボタン + 4ウェイプレイ"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "3ボタン + チームプレイ"
+
+msgid "Joypad 6 Button"
+msgstr "ジョイパッド 6ボタン"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "ジョイパッド 6ボタン + 4ウェイプレイ"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "ジョイパッド 6ボタン + チームプレイ"
+
+msgid "Joypad Auto"
+msgstr "ジョイパッド自動選択"
+
 msgid "Joystick"
 msgstr "ジョイスティック"
 
@@ -1980,6 +2112,9 @@ msgstr "コナミ ザ・ジャスティファイアー P2"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "Jファイアー P2は、2コンからデイジーチェーン接続で、ポート3として表示します"
 
+msgid "Konami Justifiers"
+msgstr "コナミ ザ・ジャスティファイアー"
+
 msgid "Korea"
 msgstr "韓国"
 
@@ -2004,6 +2139,9 @@ msgstr "LCD ゴーストエフェクト"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "LCD ゴーストエフェクト"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "LCD ゴーストフィルター"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCDゴースト（正確）"
 
@@ -2012,6 +2150,9 @@ msgstr "LCDゴースト（高速）"
 
 msgid "LIGHT GUN"
 msgstr "ライトガン(ガンコン)"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "ガンコンのクロスヘア(照準)"
 
 msgid "LIGHT GUNS"
 msgstr "ライトガン(ガンコン)"
@@ -2058,6 +2199,9 @@ msgstr "ライトブルー"
 msgid "Light Green"
 msgstr "ライトグリーン"
 
+msgid "Light Phaser"
+msgstr "ライトフェイザー"
+
 msgid "Light Pink"
 msgstr "ライトピンク"
 
@@ -2096,6 +2240,15 @@ msgstr "ルクセンブルク"
 
 msgid "M.A.C.S. Rifle"
 msgstr "M.A.C.S. .ライフル"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (強化版 YM3438)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "手動テクスチャサンプリング"
@@ -2184,6 +2337,15 @@ msgstr "中"
 msgid "Mega"
 msgstr "メガ モード"
 
+msgid "MegaSD"
+msgstr "メガSD"
+
+msgid "Megadrive"
+msgstr "メガドライブ"
+
+msgid "Menacer Light Gun"
+msgstr "Menacer ライトガン(ガンコン)"
+
 msgid "Merge"
 msgstr "統合"
 
@@ -2271,6 +2433,9 @@ msgstr "NTSC フィルター"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2352,8 +2517,17 @@ msgstr "通常 (標準)"
 msgid "Norway"
 msgstr "ノルウェー"
 
+msgid "Not all games support 3D pad."
+msgstr "すべてのゲームに3Dパッドは対応していません"
+
 msgid "November"
 msgstr "11月"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "使用しない (標準)"
@@ -2411,6 +2585,9 @@ msgstr "オン（スピードハック）"
 
 msgid "On (Vulkan Only)"
 msgstr "オン (Vulkan のみ)"
+
+msgid "On (forced)"
+msgstr "使用する（強制）"
 
 msgid "Only Overscan Area"
 msgstr "オーバースキャンエリアのみ"
@@ -2489,6 +2666,9 @@ msgstr "推奨SPUスレッド"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM スタイル (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "パドル コントロール"
 
 msgid "Paddle can only be used in port 2."
 msgstr "パドルはポート2でのみ使用できます"
@@ -2682,6 +2862,9 @@ msgstr "ポリゴンのぐらつきやテクスチャの歪みを軽減します
 msgid "Relaxed (Fastest)"
 msgstr "リラックス (最速)"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "メッシュの透明度を実際の透明度に置き換えます"
+
 msgid "Required by some games."
 msgstr "一部のゲームで必要です"
 
@@ -2702,6 +2885,9 @@ msgstr "復元済Wii VC"
 
 msgid "RetroPad (Default)"
 msgstr "レトロパッド (標準)"
+
+msgid "Retropad (Default)"
+msgstr "レトロパッド（標準）"
 
 msgid "Rice"
 msgstr "Rice"
@@ -2889,6 +3075,12 @@ msgstr "システムメモリ"
 msgid "Safe (Default)"
 msgstr "安全 モード(標準)"
 
+msgid "Saturn 3D Pad"
+msgstr "サターン 3D パッド"
+
+msgid "Saturn Pad"
+msgstr "サターン パッド"
+
 msgid "Saudi Arabia"
 msgstr "サウジアラビア"
 
@@ -2903,6 +3095,9 @@ msgstr "拡大"
 
 msgid "Screen Resolution (Default)"
 msgstr "画面解像度 (標準)"
+
+msgid "Sega/Mega CD"
+msgstr "セガ/メガCD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "[ファームウェア設定を使用] が無効、またはファームウェア ファイルが見つからない場合は、使用する言語を選択します"
@@ -3038,6 +3233,9 @@ msgstr "アニメ表示で問題が出る場合とアニメ表示が必須の場
 
 msgid "Sony CXA2025AS"
 msgstr "ソニー CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "サウンドジェネレーター。 MAME は高速で、Nuked は再生が正確です(元のモデル: YM2612、後のリビジョン: YM3438 )"
 
 msgid "South Africa"
 msgstr "南アフリカ"
@@ -3176,6 +3374,9 @@ msgstr "タッチモード"
 
 msgid "TOUCH SCREEN MODE"
 msgstr "タッチスクリーンモード"
+
+msgid "TRANSPARENT MESHES"
+msgstr "透明メッシュ"
 
 msgid "TRILINEAR FILTERING"
 msgstr "トライリニアフィルタリング"
@@ -3350,6 +3551,9 @@ msgstr "デュアルショックの D-Pad の他に、アナログ スティッ�
 
 msgid "Use Host"
 msgstr "使用するホスト"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "6 ボタンのメガドライブ コントローラーのボタンの割り当てを自動で設定します"
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "アンチエイリアシングには MSAA ではなく SSAA を使用します。 SSAA は見た目は良くなりますが、パフォーマンスのコストが高くなります"

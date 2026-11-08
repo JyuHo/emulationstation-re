@@ -45,6 +45,7 @@ EMULATORS = {
     'eden': 'eden',
     'melonds': 'melonds',
     'mupen64plus': 'mupen64plus',
+    'ymir': 'ymir',
     'pcsx2': 'pcsx2',
     'ppsspp': 'ppsspp',
     'rpcs3': 'rpcs3',
@@ -59,6 +60,9 @@ CORE_ALIASES = {
         'mednafen_psx': ['mednafen_psx_hw'],
         'vba-m': ['vbam'],
         'vb': ['mednafen_vb'],
+        'genesisplusgx': ['genesis_plus_gx'],
+        'genesisplusgx-expanded': ['genesis_plus_gx_expanded'],
+        'beetle-saturn': ['mednafen_saturn'],
     },
 }
 

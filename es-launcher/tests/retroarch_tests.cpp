@@ -123,6 +123,29 @@ static void testVideoAndStates()
 	RetroArchGenerator::setVideoAndAudio(ctx, config);
 	CHECK(config.get("aspect_ratio_index") == "22");   // core ratio
 	CHECK(config.get("video_driver") == "glcore");
+
+	// cores that need another GL driver, unless the player chose one
+	ctx.core = "yabasanshiro";
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_driver") == "gl");
+	ctx.core = "kronos";
+	ctx.architecture = Architecture::AArch64;
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_driver") == "glcore");
+	ctx.settings = Settings({ { "gfxbackend", "vulkan" } }, {}, {});
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("video_driver") == "vulkan");
+
+	// no rewind nor run-ahead for PicoDrive's 32X
+	ctx.core = "picodrive";
+	ctx.game.system = "sega32x";
+	ctx.settings = Settings({ { "rewind", "1" }, { "runahead", "1" } }, {}, {});
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("rewind_enable") == "false");
+	CHECK(config.get("run_ahead_frames") == "0");
+	ctx.game.system = "megadrive";
+	RetroArchGenerator::setVideoAndAudio(ctx, config);
+	CHECK(config.get("rewind_enable") == "true");
 }
 
 static void testGameOptions()
@@ -545,6 +568,60 @@ static void testCoreProfiles()
 		CHECK(o.get("melonds_screen_layout") == "Hybrid Bottom");
 		CHECK(o.get("melonds_hybrid_ratio") == "3");
 		CHECK(o.get("pokemini_lcdfilter") == "dotmatrix");
+	}
+	// Genesis Plus GX: six button pads on the Mega Drive, Master System pads but not in the
+	// expanded build, the MSU-MD add-on
+	{
+		ConfigFile o;
+		ctx.settings = Settings({}, {}, {});
+		ctx.game.system = "megadrive";
+		const Core& gx = coreProfile("genesis_plus_gx");
+		gx.setCoreOptions(ctx, o);
+		CHECK(o.get("genesis_plus_gx_system_bram") == "per game");
+		CHECK(o.get("genesis_plus_gx_add_on") == "auto");
+		CHECK(gx.deviceType(ctx, 1) == "513");
+		ctx.game.system = "mastersystem";
+		CHECK(gx.deviceType(ctx, 2) == "769");
+		CHECK(coreProfile("genesisplusgx-expanded").deviceType(ctx, 2) == std::nullopt);
+		ctx.game.system = "megadrive-msu";
+		gx.setCoreOptions(ctx, o);
+		CHECK(o.get("genesis_plus_gx_add_on") == "sega/mega cd");
+		CHECK(o.get("genesis_plus_gx_cdda_volume") == "70");
+
+		// the Mega Drive layout when asked
+		ConfigFile config;
+		ctx.settings = Settings({ { "gx_controller1_mapping", "megadrive" } }, {}, {});
+		gx.setConfig(ctx, config);
+		CHECK(config.get("input_player1_btn_x") == "9");
+	}
+
+	// PicoDrive: the Backup RAM cartridge on the Mega-CD
+	{
+		ConfigFile o;
+		ctx.settings = Settings({}, {}, {});
+		ctx.game.system = "segacd";
+		coreProfile("picodrive").setCoreOptions(ctx, o);
+		CHECK(o.get("picodrive_ramcart") == "enabled");
+		CHECK(o.get("picodrive_input1") == "6 button pad");
+	}
+
+	// Saturn: the 3D pad is 261 for Beetle and 5 for YabaSanshiro, whichever value was chosen
+	{
+		ctx.game.system = "saturn";
+		ctx.settings = Settings({ { "controller1_saturn", "5" }, { "controller2_saturn", "261" } }, {}, {});
+		CHECK(coreProfile("mednafen_saturn").deviceType(ctx, 1) == "261");
+		CHECK(coreProfile("yabasanshiro").deviceType(ctx, 2) == "5");
+
+		ButtonMap buttons = { { "pageup", "l" }, { "pagedown", "r" } };
+		coreProfile("yabasanshiro").adjustButtons(ctx, pad, buttons);
+		CHECK(buttons[0].second == "r");
+		CHECK(buttons[1].second == "l");
+
+		ConfigFile o;
+		ctx.settings = Settings({ { "kronos_multitap", "port12" } }, {}, {});
+		coreProfile("kronos").setCoreOptions(ctx, o);
+		CHECK(o.get("kronos_multitap_port1") == "enabled");
+		CHECK(o.get("kronos_multitap_port2") == "enabled");
 	}
 }
 

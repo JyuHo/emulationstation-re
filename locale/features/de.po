@@ -342,8 +342,17 @@ msgstr "45s"
 msgid "48MB"
 msgstr "48MB"
 
+msgid "4:3 (Default)"
+msgstr "4:3 (Standard)"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "4:3 RENDERING AUFLÖSUNG"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4X"
 
 msgid "4th"
 msgstr "4."
@@ -423,6 +432,9 @@ msgstr "6x Nativ (~2160p/4K)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x nativ (1536 x 1152)"
 
+msgid "720p"
+msgstr "720p"
+
 msgid "72MB"
 msgstr "72MB"
 
@@ -443,6 +455,9 @@ msgstr "7x Nativ (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x nativ (1792 x 1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "8."
@@ -467,6 +482,12 @@ msgstr "8x nativ (2048 x 1536)"
 
 msgid "90 degrees"
 msgstr "90 Grad"
+
+msgid "90 degrees clockwise"
+msgstr "90 Grad im Uhrzeigersinn"
+
+msgid "90 degrees counter-clockwise"
+msgstr "90 Grad gegen den Uhrzeigersinn"
 
 msgid "96MB"
 msgstr "96MB"
@@ -558,6 +579,9 @@ msgstr "Adaptiv (Top Field First)"
 msgid "Add color to Game Boy games."
 msgstr "Bei Gameboy-Spielen Farbe hinzufügen."
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "Anpassen von Tonabmischungen bei CD-Audio. Mit MSU-MD sind Toneffekte nicht betroffen, die von Kassetten stammen."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Anpassung des Seitenverhältnisses von \"Full Motion Video\"-Filmen."
 
@@ -600,6 +624,9 @@ msgstr "Erlaubt reduzierte Kurvenqualität für bessere Performance."
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "Erlaubt bis zu 5 oder 8 Controller in unterstützten Spielen."
 
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "Erlaubt bis zu 7 oder 12 Controller in unterstützten Spielen."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Ermöglicht bis zu 8 Controller bei unterstützten Spielen."
 
@@ -641,6 +668,9 @@ msgstr "Wenden Sie einen Multiplikator auf die Joystick-Eingabe an, um dieReakti
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Wendet Videofilter an, um verschiedene NTSC-TV-Signale nachzuahmen."
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "Verwende Gouraud-Schattierungen anstelle von flachen Schattierungen."
 
 msgid "Approximate (Fast)"
 msgstr "Approximate (Schnell)"
@@ -707,6 +737,9 @@ msgstr "Aserbaidschan"
 
 msgid "BILINEAR FILTERING"
 msgstr "BILINEARE FILTERUNG"
+
+msgid "BIOS Language"
+msgstr "BIOS Sprache"
 
 msgid "BIRTH DAY"
 msgstr "GEBURTSTAG"
@@ -840,6 +873,12 @@ msgstr "Zwischengespeichertes Rendern"
 msgid "Bulgaria"
 msgstr "Bulgarien"
 
+msgid "CD ADD-ON"
+msgstr "CD ADD-ON"
+
+msgid "CD-DA VOLUME"
+msgstr "CD-DA LAUTSTÄRKE"
+
 msgid "CHEATS"
 msgstr "CHEATS"
 
@@ -870,11 +909,17 @@ msgstr "KONSOLENTYP"
 msgid "CONTROLLER 1"
 msgstr "CONTROLLER 1"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "CONTROLLER 1 EINGANG ZUORDNUNG"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "CONTROLLER 1 TYP"
 
 msgid "CONTROLLER 2"
 msgstr "CONTROLLER 2"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "CONTROLLER 2 EINGANG ZUORDNUNG"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "CONTROLLER 2 TYP"
@@ -882,11 +927,17 @@ msgstr "CONTROLLER 2 TYP"
 msgid "CONTROLLER 3"
 msgstr "CONTROLLER 3"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "CONTROLLER 3 EINGANG ZUORDNUNG"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "CONTROLLER 3 TYP"
 
 msgid "CONTROLLER 4"
 msgstr "CONTROLLER 4"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "CONTROLLER 4 EINGANG ZUORDNUNG"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "CONTROLLER KOMBINATIONEN"
@@ -972,6 +1023,12 @@ msgstr "Sprache des Spiels ändern."
 msgid "Change the output resolution ratio."
 msgstr "Ändern Sie das Verhältnis der Ausgabeauflösung."
 
+msgid "Change the rotation of the rendered image."
+msgstr "Drehung des gerenderten Bildes ändern."
+
+msgid "Change the system's language."
+msgstr "Ändern Sie die Sprache des Systems."
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "Auswahl der Eingabegeräte, die an den virtuellen GameCube-Anschlüssen angeschlossen sind."
 
@@ -990,11 +1047,17 @@ msgstr "Chinesisch"
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Konsolensprache wählen. Nicht alle Spiele unterstützen die gewählte Sprache."
 
+msgid "Choose deinterlace option."
+msgstr "Deinterlace-Option wählen."
+
 msgid "Choose downscaling method."
 msgstr "Methode zum Herunterskalieren auswählen."
 
 msgid "Choose mipmapping type."
 msgstr "Typen-Auswahl für Mimapping."
+
+msgid "Choose system BIOS language."
+msgstr "Wähle die System-BIOS Sprache."
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Wählen Sie das Parallel N64-Grafik-Plugin."
@@ -1010,6 +1073,9 @@ msgstr "Position für Systemnachrichten auf dem Bildschirm wählen."
 
 msgid "Choose the scaling mode for the game screen."
 msgstr "Auswahl des Skalierungsmodus für die Bildschirmanzeige."
+
+msgid "Choose to render meshes as transparent polygons."
+msgstr "Netze als transparente Polygone rendern."
 
 msgid "Choose upscaling method."
 msgstr "Methode zum Hochskalieren auswählen."
@@ -1077,6 +1143,9 @@ msgstr "Costa Rica"
 msgid "Croatia"
 msgstr "Kroatien"
 
+msgid "Cross"
+msgstr "Kreuz"
+
 msgid "Current language"
 msgstr "Aktuelle Sprache"
 
@@ -1094,6 +1163,9 @@ msgstr "TOTBEREICH"
 
 msgid "DEFAULT POWER ON RAM STATE"
 msgstr "DEFAULT POWER ON RAM STATE"
+
+msgid "DEINTERLACE"
+msgstr "DEINTERLACE"
 
 msgid "DEINTERLACING"
 msgstr "DEINTERLACING"
@@ -1173,6 +1245,9 @@ msgstr "Dunkles Rosa"
 msgid "Dark Purple"
 msgstr "Dunkles Lila"
 
+msgid "De-Interlaced"
+msgstr "Deinterlaced"
+
 msgid "December"
 msgstr "Dezember"
 
@@ -1206,6 +1281,9 @@ msgstr "Legt fest, wie der Cursor auf dem unteren Bildschirm angezeigt werden so
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Festlegen der Systemgeschwindigkeit und der Runahead-Leistung."
 
+msgid "Deutsch"
+msgstr "Deutsch"
+
 msgid "Digital Controller"
 msgstr "Digitaler Controller"
 
@@ -1238,6 +1316,9 @@ msgstr "Dominikanische Republik"
 
 msgid "Don't Override"
 msgstr "Nicht überschreiben"
+
+msgid "Dot"
+msgstr "Punkt"
 
 msgid "Double buffering"
 msgstr "Doppelte Pufferung"
@@ -1304,6 +1385,9 @@ msgstr "BREITBILD-PATCHES AKTIVIEREN"
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "VERBESSERTE RENDERING AUFLÖSUNG"
+
+msgid "EXTENDED SCREEN"
+msgstr "ERWEITERTE BILDSCHIRMANZEIGE"
 
 msgid "Ecuador"
 msgstr "Ecuador"
@@ -1413,6 +1497,9 @@ msgstr "Englisch (Standard)"
 msgid "English/Japanese"
 msgstr "Englisch/Japanisch"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "Verbesserte Soundausgabe-Unterstützung für kompatible Spiele."
+
 msgid "Enhancement."
 msgstr "Verbesserung."
 
@@ -1445,6 +1532,9 @@ msgstr "Die Limitierung von acht Sprites pro Zeile wird entfernt."
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "Die Limitierung von acht Sprites pro Zeile wird entfernt."
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "Die Limitierung von 80 Sprites pro Zeile wird entfernt."
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Verbesserung. Entfernt die Begrenzung auf zweiunddreißig Sprites pro Zeile. Manche Spiele stürzen aber ab."
@@ -1488,6 +1578,9 @@ msgstr "Ausgeglichen"
 msgid "Exclusive Ubershaders"
 msgstr "Ausschließlich Ubershaders"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "Vergrößerung des Spielbildschirms, ähnlich wie beim Master System."
+
 msgid "External"
 msgstr "External"
 
@@ -1502,6 +1595,9 @@ msgstr "FIFO Relaxed"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "FIRMWARE EINSTELLUNGEN"
+
+msgid "FM SYNTHESIZER"
+msgstr "FM SYNTHESIZER"
 
 msgid "FMV ASPECT RATIO"
 msgstr "FMV SEITENVERHÄLTNIS"
@@ -1749,6 +1845,9 @@ msgstr "GamePad + 4 Pro Controller"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "GamePad + 4 Sideway Wiimote"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "Spiele können schneller/langsamer als normal laufen, wenn die falsche Region ausgewählt wurde."
+
 msgid "Gaussian"
 msgstr "Gauss"
 
@@ -1838,6 +1937,12 @@ msgstr "Hybride Ubershaders"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IMPROVED BANDING"
+msgstr "VERBESSERTE BÜNDELUNG"
+
+msgid "IMPROVED MESH"
+msgstr "VERBESSERTES MESH"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "VERBESSERTE POLYGONAUFTEILUNG"
@@ -1950,6 +2055,33 @@ msgstr "Japanisch"
 msgid "Jordan"
 msgstr "Jordanien"
 
+msgid "Joypad 2 Button"
+msgstr "Joypad 2 Tasten"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "Joypad 2 Tasten + Master Taps"
+
+msgid "Joypad 3 Button"
+msgstr "Joypad 3 Tasten"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "Joypad 3 Tasten + 4-WayPlay"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "Joypad 3 Tasten + Teamplayer"
+
+msgid "Joypad 6 Button"
+msgstr "Joypad 6 Tasten"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "Joypad 6 Tasten + 4-WayPlay"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "Joypad 6 Tasten + Teamplayer"
+
+msgid "Joypad Auto"
+msgstr "Joypad Auto"
+
 msgid "Joystick"
 msgstr "Joystick"
 
@@ -1980,6 +2112,9 @@ msgstr "Konami Justifier (P2)"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "Konami Justifier P2 ist mit Controller 2 verflochten und erscheint im System als Anschluss 3."
 
+msgid "Konami Justifiers"
+msgstr "Konami Justifiers"
+
 msgid "Korea"
 msgstr "Korea"
 
@@ -2004,6 +2139,9 @@ msgstr "GHOSTING-EFFEKT (LCD)"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "GHOSTING-EFFEKT (LCD)"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "GHOSTING-FILTER (LCD)"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD-Ghosting (Akkurat)"
 
@@ -2012,6 +2150,9 @@ msgstr "LCD-Ghosting (Schnell)"
 
 msgid "LIGHT GUN"
 msgstr "LIGHTGUN"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "LIGHTGUN FADENKREUZ"
 
 msgid "LIGHT GUNS"
 msgstr "LIGHTGUNS"
@@ -2058,6 +2199,9 @@ msgstr "Hellblau"
 msgid "Light Green"
 msgstr "Hellgrün"
 
+msgid "Light Phaser"
+msgstr "Light Phaser"
+
 msgid "Light Pink"
 msgstr "Helles Pink"
 
@@ -2096,6 +2240,15 @@ msgstr "Luxemburg"
 
 msgid "M.A.C.S. Rifle"
 msgstr "M.A.C.S. Gewehr"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (Enhanced YM3438)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "MANUELLES TEXTURE SAMPLING"
@@ -2184,6 +2337,15 @@ msgstr "Mittel"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "MegaSD"
+msgstr "MegaSD"
+
+msgid "Megadrive"
+msgstr "Megadrive"
+
+msgid "Menacer Light Gun"
+msgstr "Menacer Light Gun"
+
 msgid "Merge"
 msgstr "Zusammenführen"
 
@@ -2271,6 +2433,9 @@ msgstr "NTSC FILTER"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2352,8 +2517,17 @@ msgstr "Normal (Standard)"
 msgid "Norway"
 msgstr "Norwegen"
 
+msgid "Not all games support 3D pad."
+msgstr "Nicht alle Spiele unterstützen 3D-Pads."
+
 msgid "November"
 msgstr "November"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "AUS (Standard)"
@@ -2411,6 +2585,9 @@ msgstr "Ein (Speed-Hack)"
 
 msgid "On (Vulkan Only)"
 msgstr "Ein (nur Vulkan)"
+
+msgid "On (forced)"
+msgstr "Ein (forciert)"
 
 msgid "Only Overscan Area"
 msgstr "Nur Overscan-Bereich"
@@ -2489,6 +2666,9 @@ msgstr "BEVORZUGTE SPU-THREADS"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM Style (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "Paddelsteuerung"
 
 msgid "Paddle can only be used in port 2."
 msgstr "Paddle kann nur bei Anschluss 2 verwendet werden."
@@ -2682,6 +2862,9 @@ msgstr "Reduziert wackelige Polygone und verzerrte Texturen."
 msgid "Relaxed (Fastest)"
 msgstr "Relaxed (Am Schnellsten)"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "Ersetze vernetzte Transparenz durch echte Transparenz."
+
 msgid "Required by some games."
 msgstr "Voraussetzung für manche Spiele."
 
@@ -2702,6 +2885,9 @@ msgstr "Wiederhergestellte Wii VC"
 
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Standard)"
+
+msgid "Retropad (Default)"
+msgstr "Retropad (Standard)"
 
 msgid "Rice"
 msgstr "Rice"
@@ -2889,6 +3075,12 @@ msgstr "SYSTEMSPEICHER"
 msgid "Safe (Default)"
 msgstr "Sicher (Standard)"
 
+msgid "Saturn 3D Pad"
+msgstr "Saturn 3D Pad"
+
+msgid "Saturn Pad"
+msgstr "Saturn Pad"
+
 msgid "Saudi Arabia"
 msgstr "Saudi-Arabien"
 
@@ -2903,6 +3095,9 @@ msgstr "Skaliert"
 
 msgid "Screen Resolution (Default)"
 msgstr "Bildschirmauflösung (Standard)"
+
+msgid "Sega/Mega CD"
+msgstr "Sega/Mega CD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Die Nutzung der Sprachauswahl erfolgt bei Deaktivierung der Option \"Firmware-Einstellungen verwenden\" oder falls die Firmware-Datei nicht gefunden wurde."
@@ -3038,6 +3233,9 @@ msgstr "Manche Spiele haben Probleme wenn die Animation gezeigt wird, bei andere
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "Tongenerator. MAME ist schneller und Nuked ist zyklusgenau. Das ursprüngliche Modell verwendete YM2612, während spätere Revisionen YM3438 verwendeten."
 
 msgid "South Africa"
 msgstr "Südafrika"
@@ -3176,6 +3374,9 @@ msgstr "BERÜHRUNGSMODUS"
 
 msgid "TOUCH SCREEN MODE"
 msgstr "TOUCHSCREEN-MODUS"
+
+msgid "TRANSPARENT MESHES"
+msgstr "TRANSPARENTE NETZE"
 
 msgid "TRILINEAR FILTERING"
 msgstr "TRILINEARE FILTERUNG"
@@ -3350,6 +3551,9 @@ msgstr "Zusätzlich zum D-Pad die Analog-Joysticks bei DualShock-Controllern ver
 
 msgid "Use Host"
 msgstr "Host nutzen"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "Verwenden Sie Megadrive, um Eingaben für einen Megadrive-Controller mit 6 Tasten automatisch zuzuordnen."
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Verwende SSAA anstelle von MSAA für Antialiasing. SSAA sieht zwar besser aus, hat aber einen höheren Leistungsaufwand."

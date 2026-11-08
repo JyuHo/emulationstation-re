@@ -342,8 +342,17 @@ msgstr "45s"
 msgid "48MB"
 msgstr "48MB"
 
+msgid "4:3 (Default)"
+msgstr "4:3 (Default / Bawaan)"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "4:3 RESOLUSI RENDERING "
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4X"
 
 msgid "4th"
 msgstr "ke-4"
@@ -423,6 +432,9 @@ msgstr "6x Native / Asli (~2160p/4K)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x native / asli (1536 x 1152)"
 
+msgid "720p"
+msgstr "720p"
+
 msgid "72MB"
 msgstr "72MB"
 
@@ -443,6 +455,9 @@ msgstr "7x Native / Asli (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x native / asli (1792 x 1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "ke-8"
@@ -467,6 +482,12 @@ msgstr "8x native / asli (2048 x 1536)"
 
 msgid "90 degrees"
 msgstr "90 Derajat"
+
+msgid "90 degrees clockwise"
+msgstr "90 drajat searah jarum jam"
+
+msgid "90 degrees counter-clockwise"
+msgstr "90 derajat berlawanan arah jarum jam"
 
 msgid "96MB"
 msgstr "96MB"
@@ -558,6 +579,9 @@ msgstr "Adaptif (Bidang Atas Duluan)"
 msgid "Add color to Game Boy games."
 msgstr "Tambahkan warna pada permaianan Game Boy"
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "Atur volume pencampuran suara CD. Pada MSU-MD,efek suara yang berasal dari kaset (cartridge) tidak akan terpengaruh."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Mengatur rasio layar untuk video/film di dalam game."
 
@@ -600,6 +624,9 @@ msgstr "Memungkinkan pengurangan kualitas visual lengkungan iniuntuk mendapatkan
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "Mengizinkan hingga 5 atau 8 kontroler pada game yang mendukung."
 
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "Mengizinkan hingga 7 atau 12 kontroler pada game yang mendukung."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Mendukung hingga 8 stik/kontroller pada game yang kompatibel."
 
@@ -641,6 +668,9 @@ msgstr "Gunakan nilai pengali pada input stik (joystick)untuk menurunkan atau me
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Gunakan filter video untuk meniru tampilan berbagai sinyal TV jadul (NTSC)."
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "Gunakan efek bayangan Gouraud, bukan bayangan datar (flat)."
 
 msgid "Approximate (Fast)"
 msgstr "Approximate / Perkiraan (Cepat)"
@@ -707,6 +737,9 @@ msgstr "Azerbaijan"
 
 msgid "BILINEAR FILTERING"
 msgstr "PENYARINGAN BILINEAR"
+
+msgid "BIOS Language"
+msgstr "Bahasa BIOS"
 
 msgid "BIRTH DAY"
 msgstr "TANGGAL LAHIR"
@@ -840,6 +873,12 @@ msgstr "Buffered rendering"
 msgid "Bulgaria"
 msgstr "Bulgaria"
 
+msgid "CD ADD-ON"
+msgstr "CD ADD-ON"
+
+msgid "CD-DA VOLUME"
+msgstr "VOLUME CD-DA"
+
 msgid "CHEATS"
 msgstr "Cheat / Kode Curang"
 
@@ -870,11 +909,17 @@ msgstr "JENIS KONSOL"
 msgid "CONTROLLER 1"
 msgstr "Kontroler / Stik 1"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "Pengaturan Tombol - Stik 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "Jenis Kontroler - Stik 1"
 
 msgid "CONTROLLER 2"
 msgstr "Kontroler / Stik 2"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "Pengaturan Tombol - Stik 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "Jenis Kontroler / Stik 2"
@@ -882,11 +927,17 @@ msgstr "Jenis Kontroler / Stik 2"
 msgid "CONTROLLER 3"
 msgstr "Kontroler / Stik 3"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "Pengaturan Tombol - Stik 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "Jenis Kontroler / Stik 3"
 
 msgid "CONTROLLER 4"
 msgstr "Kontroler / Stik 4"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "Pengaturan Tombol - Stik 4"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "KOMBINASI KONTROLER"
@@ -972,6 +1023,12 @@ msgstr "Ubah bahasa permainan"
 msgid "Change the output resolution ratio."
 msgstr "Rubah rasio keluaran resolusi"
 
+msgid "Change the rotation of the rendered image."
+msgstr "Ubah rotasi/perputaran gambar yang ditampilkan."
+
+msgid "Change the system's language."
+msgstr "Ubah bahasa sistem."
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "Mengubah apa yang sudah terhububg dengan ports GameCube"
 
@@ -990,11 +1047,17 @@ msgstr "Cina"
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Pilih bahasa konsol. Tidak semua game mendukung pilihan bahasa ini."
 
+msgid "Choose deinterlace option."
+msgstr "Pilih opsi deinterlace (penghilang efek garis pada video)."
+
 msgid "Choose downscaling method."
 msgstr "Pilih metode pensekalaan ke-bawah"
 
 msgid "Choose mipmapping type."
 msgstr "Pilih jenis mipmapping (optimasi tekstur jarak jauh)."
+
+msgid "Choose system BIOS language."
+msgstr "Pilih bahasa BIOS sistem."
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Pilih plugin grafis Parallel N64."
@@ -1010,6 +1073,9 @@ msgstr "Pilih posisi di layar untuk menampilkan pesan sistem."
 
 msgid "Choose the scaling mode for the game screen."
 msgstr "Pilih mode penskalaan layar game"
+
+msgid "Choose to render meshes as transparent polygons."
+msgstr "Pilih untuk menampilkan model objek (mesh) sebagai poligon transparan."
 
 msgid "Choose upscaling method."
 msgstr "Pilih metode upscaling"
@@ -1077,6 +1143,9 @@ msgstr "Kosta Rika"
 msgid "Croatia"
 msgstr "Croasia"
 
+msgid "Cross"
+msgstr "Ｘ(Tombol Bawah)"
+
 msgid "Current language"
 msgstr "BAHASA SEBELUM-NYA"
 
@@ -1094,6 +1163,9 @@ msgstr "Zona Mati (Deadzone)"
 
 msgid "DEFAULT POWER ON RAM STATE"
 msgstr "TENAGA STANDAR PADA STATUS RAM"
+
+msgid "DEINTERLACE"
+msgstr "Deinterlace (Penghilang Efek Garis)"
 
 msgid "DEINTERLACING"
 msgstr "Deinterlacing"
@@ -1173,6 +1245,9 @@ msgstr "Merah Muda Tua"
 msgid "Dark Purple"
 msgstr "Ungu Tua"
 
+msgid "De-Interlaced"
+msgstr "De-Interlaced (Video yang sudah dihilangkan efek garisnya)"
+
 msgid "December"
 msgstr "Desember"
 
@@ -1206,6 +1281,9 @@ msgstr "Menentukan bagaimana kursor akan muncul di layar bawah."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Menentukan kecepatan dan perilaku sistem untuk mengurangi jeda input (runahead)."
 
+msgid "Deutsch"
+msgstr "Bahasa Jerman"
+
 msgid "Digital Controller"
 msgstr "Kontroler Digital"
 
@@ -1238,6 +1316,9 @@ msgstr "Republik Dominika"
 
 msgid "Don't Override"
 msgstr "Jangan Alihkan / Jangan Ganti"
+
+msgid "Dot"
+msgstr "Titik"
 
 msgid "Double buffering"
 msgstr "Double buffering"
@@ -1304,6 +1385,9 @@ msgstr "Aktifkan Patch Layar Lebar (Modifikasi agar game jadul pas di layar leba
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "MENINGKATKAN RESOLUSI RENDERING"
+
+msgid "EXTENDED SCREEN"
+msgstr "TAMBAH LAYAR"
 
 msgid "Ecuador"
 msgstr "Ekuador"
@@ -1413,6 +1497,9 @@ msgstr "Inggris (Standar)"
 msgid "English/Japanese"
 msgstr "Bahasa Inggris/Jepang"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "meningkatkan dukungan keluaran suara untuk game kompatible"
+
 msgid "Enhancement."
 msgstr "PENINGKATAN"
 
@@ -1445,6 +1532,9 @@ msgstr "Meningkatkan: Hapus 8 sprite per batas baris"
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "Meningkatkan. hapus delapan sprites tiap-batas baris"
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "Meningkatkan. Hapus delapan puluh sprite per batas baris."
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Peningkatan. Hapus tiga puluh dua sprite per batas baris. Hancurkan tertentu permainan."
@@ -1488,6 +1578,9 @@ msgstr "Meskipun"
 msgid "Exclusive Ubershaders"
 msgstr "Ubershaders Langsung"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "Perluas area layar game, mirip dengan Sistem Master."
+
 msgid "External"
 msgstr "Bagian Dalam"
 
@@ -1502,6 +1595,9 @@ msgstr "FIFO Santai (FIFO Relaxed)"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "Pengaturan Firmware"
+
+msgid "FM SYNTHESIZER"
+msgstr "Sintetisator FM (FM Synthesizer)"
 
 msgid "FMV ASPECT RATIO"
 msgstr "Rasio Aspek Video Game (FMV)"
@@ -1749,6 +1845,9 @@ msgstr "GamePad + 4 Pro Kontroler"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "GamePad + 4 Sideway Wiimote"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "Permainan dapat berjalan lebih cepat/lebih lambat dari biasanya jika wilayah yang dipilih salah."
+
 msgid "Gaussian"
 msgstr "Gaussian"
 
@@ -1838,6 +1937,12 @@ msgstr "Ubershaders Hibrida"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier (Jenis pistol mainan/lightgun jadul)"
+
+msgid "IMPROVED BANDING"
+msgstr "Perbaikan Efek Garis Warna (Banding)"
+
+msgid "IMPROVED MESH"
+msgstr "Perbaikan Model Objek (Mesh)"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "Perbaikan Pembagian Poligon"
@@ -1950,6 +2055,33 @@ msgstr "Jepang"
 msgid "Jordan"
 msgstr "Yordania"
 
+msgid "Joypad 2 Button"
+msgstr "Joypad Tombol 2"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "Joypad 2 Tombol + Master Tap"
+
+msgid "Joypad 3 Button"
+msgstr "Joypad 3 Tombol"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "Joypad 3 Tombol + 4-Jalan-Bermain"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "Joypad 3 Tombol + Anggota-Pemainr"
+
+msgid "Joypad 6 Button"
+msgstr "Joypad 6 Tombol"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "Joypad 6 Tombol + 4-Jalan-Bermain"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "Joypad 6 Tombol + Anggota-Pemain"
+
+msgid "Joypad Auto"
+msgstr "joypad Otomatis"
+
 msgid "Joystick"
 msgstr "Joystik"
 
@@ -1980,6 +2112,9 @@ msgstr "Konami Justifier (P2)"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "Konami Justifier P2 terkait pada pengontrol 2, muncul sebagai port ke 3 sistem."
 
+msgid "Konami Justifiers"
+msgstr "Konami Justifiers"
+
 msgid "Korea"
 msgstr "Korea"
 
@@ -2004,6 +2139,9 @@ msgstr "LLCD EFEK GHOSTING"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "LCD EFEK GHOSTING"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "PENYARING LCD GHOSTING"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD Ghosting (Akurasi)"
 
@@ -2012,6 +2150,9 @@ msgstr "LCD Ghosting (Cepat)"
 
 msgid "LIGHT GUN"
 msgstr "PISTOL RINGAN"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "CORSAIR LIGHT GUN"
 
 msgid "LIGHT GUNS"
 msgstr "Pistol Mainan (Lightgun)"
@@ -2058,6 +2199,9 @@ msgstr "Biru Muda"
 msgid "Light Green"
 msgstr "Hijau Muda"
 
+msgid "Light Phaser"
+msgstr "Light Phaser"
+
 msgid "Light Pink"
 msgstr "Merah Muda Terang"
 
@@ -2096,6 +2240,15 @@ msgstr "Luksemburg"
 
 msgid "M.A.C.S. Rifle"
 msgstr "M.A.C.S. Rifle"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438) (Jenis emulasi chip suara)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (YM3438 Ditingkatkan)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "Pengambilan Sampel Tekstur Manual"
@@ -2184,6 +2337,15 @@ msgstr "Sedang"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "MegaSD"
+msgstr "MegaSD"
+
+msgid "Megadrive"
+msgstr "Megadrive (Konsol Sega Megadrive)"
+
+msgid "Menacer Light Gun"
+msgstr "Pistol Ringan Menacer"
+
 msgid "Merge"
 msgstr "Menggabungkan"
 
@@ -2271,6 +2433,9 @@ msgstr "NTSC FILTER"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2352,8 +2517,17 @@ msgstr "Normal (Default / Bawaan)"
 msgid "Norway"
 msgstr "Norwagia"
 
+msgid "Not all games support 3D pad."
+msgstr "Tidak Semua Game Mendukung 3D Pad"
+
 msgid "November"
 msgstr "November"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612) (Jenis emulasi chip suara)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "MATI (Default / Bawaan)"
@@ -2411,6 +2585,9 @@ msgstr "AKTTIFKAN (PERETASAN KECEPATAN)"
 
 msgid "On (Vulkan Only)"
 msgstr "Aktif (Khusus Vulkan)"
+
+msgid "On (forced)"
+msgstr "Hidup (Paksa)"
 
 msgid "Only Overscan Area"
 msgstr "Hanya Area Overscan"
@@ -2489,6 +2666,9 @@ msgstr "THREADS SPU DI-UTAMAKAN"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "Gaya PVM (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "Kontrol Paddle"
 
 msgid "Paddle can only be used in port 2."
 msgstr "Paddle hanya dapat digunakan dalam port 2"
@@ -2682,6 +2862,9 @@ msgstr "Mengurangi poligon yang goyang & tekstur yang melar/distorsi(Sering digu
 msgid "Relaxed (Fastest)"
 msgstr "Santai / Relaxed (Paling Cepat)"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "Mengganti transparansi model jaring (mesh/dithered) dengan transparansi asli yang mulus."
+
 msgid "Required by some games."
 msgstr "Dibutuhkan oleh beberapa games"
 
@@ -2702,6 +2885,9 @@ msgstr "Wii VC (Virtual Console) yang Dipulihkan"
 
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Bawaan)"
+
+msgid "Retropad (Default)"
+msgstr "Retropad (Default / Bawaan)"
 
 msgid "Rice"
 msgstr "Rice (Nama plugin grafis N64)"
@@ -2889,6 +3075,12 @@ msgstr "MEMORI SISTEM (RAM)"
 msgid "Safe (Default)"
 msgstr "Aman (Bawaan)"
 
+msgid "Saturn 3D Pad"
+msgstr "3D Pad Saturn"
+
+msgid "Saturn Pad"
+msgstr "Pad Saturn"
+
 msgid "Saudi Arabia"
 msgstr "Arab Saudi"
 
@@ -2903,6 +3095,9 @@ msgstr "Berskala"
 
 msgid "Screen Resolution (Default)"
 msgstr "Filter Interpolasi Scanline (SAI) (Efek garis TV tabung)"
+
+msgid "Sega/Mega CD"
+msgstr "Sega/Mega CD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Bahasa terpilih akan digunakan jika opsi 'Gunakan Pengaturan Firmware' dimatikanatau jika berkas firmware tidak ditemukan."
@@ -3038,6 +3233,9 @@ msgstr "Beberapa game mengalami masalah saat animasi ditampilkan, yang lain memb
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "Pembuat (generator) suara. MAME lebih cepat,sedangkan Nuked memiliki akurasi siklus yang pas.Model awal menggunakan chip YM2612, sementara revisi setelahnya menggunakan YM3438."
 
 msgid "South Africa"
 msgstr "Afrika Selatan"
@@ -3176,6 +3374,9 @@ msgstr "MODE SENTUH"
 
 msgid "TOUCH SCREEN MODE"
 msgstr "MODE LAYAR SENTUH"
+
+msgid "TRANSPARENT MESHES"
+msgstr "MODEL JARING TRANSPARAN (TRANSPARENT MESHES)"
 
 msgid "TRILINEAR FILTERING"
 msgstr "PENYARINGAN TRILINEAR"
@@ -3350,6 +3551,9 @@ msgstr "Gunakan stik analog sebagai tambahan dari D-Pad untuk kontroler DualShoc
 
 msgid "Use Host"
 msgstr "Gunakan Host / Komputer Utama"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "Gunakan profil Megadrive untuk memetakan input secara otomatispada kontroler bergaya Megadrive dengan tata letak 6 tombol."
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Gunakan SSAA sebagai pengganti MSAA untuk penghalus tepi gambar (anti-aliasing).SSAA terlihat lebih bagus tetapi memerlukan performa yang jauh lebih tinggi."

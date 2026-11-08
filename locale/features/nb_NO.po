@@ -342,8 +342,17 @@ msgstr "45s"
 msgid "48MB"
 msgstr "48 MB"
 
+msgid "4:3 (Default)"
+msgstr "4:3 (standard)"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "4:3 GJENGIVELSESOPPLØSNING"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4X"
 
 msgid "4th"
 msgstr "4."
@@ -423,6 +432,9 @@ msgstr "6x Opprinnelig (~2160p/4K)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x Opprinnelig (1536 x 1152)"
 
+msgid "720p"
+msgstr "720p"
+
 msgid "72MB"
 msgstr "72 MB"
 
@@ -443,6 +455,9 @@ msgstr "7x Opprinnelig (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x Opprinnelig (1792 x 1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "8."
@@ -558,6 +573,9 @@ msgstr "Adaptiv (øverste felt først)"
 msgid "Add color to Game Boy games."
 msgstr "Legg til farger i Game Boy-spill."
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "Juster miksingen av CD-lyd. I MSU-MD påvirkes ikke lydeffekter fra kassetter."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Justerer størrelsesforholdet for Full Motion-videofilmer."
 
@@ -593,6 +611,9 @@ msgstr "Gjør det mulig å laste inn beskyttede spill uten underkanalinformasjon
 
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "Tillater opptil 5 eller 8 kontrollere i spill som støttes."
+
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "Tillater opptil 7 eller 12 kontrollere i spill som støttes."
 
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Tillater opptil 8 kontrollere i spill som støttes."
@@ -635,6 +656,9 @@ msgstr "Bruk en multiplikator på joystickens input for å redusere eller øke r
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Bruk et videofilter for å etterligne ulike NTSC-TV-signaler."
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "Bruk gouraudskyggelegging i stedet for flatskyggelegging."
 
 msgid "Approximate (Fast)"
 msgstr "Omtrentlig (rask)"
@@ -698,6 +722,9 @@ msgstr "Aserbajdsjan"
 
 msgid "BILINEAR FILTERING"
 msgstr "BILINEÆR FILTRERING"
+
+msgid "BIOS Language"
+msgstr "BIOS-språk"
 
 msgid "BIRTH DAY"
 msgstr "FØDSELSDAGEN"
@@ -819,6 +846,12 @@ msgstr "Buffert gjengivelse"
 msgid "Bulgaria"
 msgstr "Bulgaria"
 
+msgid "CD ADD-ON"
+msgstr "CD ADD-ON"
+
+msgid "CD-DA VOLUME"
+msgstr "CD-DA VOLUME"
+
 msgid "CHEATS"
 msgstr "FUSK"
 
@@ -849,11 +882,17 @@ msgstr "TYPE KONSOL"
 msgid "CONTROLLER 1"
 msgstr "KONTROLLER 1"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "TILORDNING AV INNGANG TIL KONTROLLER 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "KONTROLLER 1 TYPE"
 
 msgid "CONTROLLER 2"
 msgstr "KONTROLLER 2"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "TILORDNING AV INNGANGER FOR KONTROLLER 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "KONTROLLER 2 TYPE"
@@ -861,11 +900,17 @@ msgstr "KONTROLLER 2 TYPE"
 msgid "CONTROLLER 3"
 msgstr "KONTROLLER 3"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "TILORDNING AV INNGANGER FOR KONTROLLER 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "KONTROLLER 3 TYPE"
 
 msgid "CONTROLLER 4"
 msgstr "KONTROLLER 4"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "TILORDNING AV INNGANGER FOR KONTROLLER 4"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "KOMBINASJON AV REGULATORER"
@@ -936,6 +981,9 @@ msgstr "Endre språket i spillet."
 msgid "Change the output resolution ratio."
 msgstr "Endre oppløsningsforholdet for utdata."
 
+msgid "Change the system's language."
+msgstr "Endre systemets språk."
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "Endre hva som er koblet til de virtuelle GameCube-portene."
 
@@ -956,6 +1004,9 @@ msgstr "Velg metode for nedskalering."
 
 msgid "Choose mipmapping type."
 msgstr "Velg mipmapping-type."
+
+msgid "Choose system BIOS language."
+msgstr "Velg systemets BIOS-språk."
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Velg Parallel N64-grafikktillegget."
@@ -1028,6 +1079,9 @@ msgstr "Costa Rica"
 
 msgid "Croatia"
 msgstr "Kroatia"
+
+msgid "Cross"
+msgstr "Kryss"
 
 msgid "Current language"
 msgstr "Gjeldende språk"
@@ -1152,6 +1206,9 @@ msgstr "Bestemmer hvordan markøren skal vises på nederste del av skjermen."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Bestemmer systemets hastighet og kjøreadferd."
 
+msgid "Deutsch"
+msgstr "Tysk"
+
 msgid "Digital Controller"
 msgstr "Digital styreenhet"
 
@@ -1181,6 +1238,9 @@ msgstr "Den dominikanske republikk"
 
 msgid "Don't Override"
 msgstr "Ikke overstyr"
+
+msgid "Dot"
+msgstr "Punkt"
 
 msgid "Double buffering"
 msgstr "Dobbel bufring"
@@ -1247,6 +1307,9 @@ msgstr "AKTIVERE WIDESCREEN-OPPDATERINGER"
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "FORBEDRET GJENGIVELSESOPPLØSNING"
+
+msgid "EXTENDED SCREEN"
+msgstr "UTVIDET SKJERM"
 
 msgid "Ecuador"
 msgstr "Ecuador"
@@ -1353,6 +1416,9 @@ msgstr "Engelsk (standard)"
 msgid "English/Japanese"
 msgstr "Engelsk/japansk"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "Forbedret støtte for lydutgang for kompatible spill."
+
 msgid "Enhancement."
 msgstr "Forbedring."
 
@@ -1385,6 +1451,9 @@ msgstr "Forbedring. Fjern grensen på åtte sprite per linje."
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "Forbedring. Fjern grensen på åtte sprites per linje."
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "Forbedring. Fjern grensen på åtti sprites per linje."
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Forbedring. Fjern grensen på trettito sprites per linje. Krasjer i enkelte spill."
@@ -1428,6 +1497,9 @@ msgstr "Lik"
 msgid "Exclusive Ubershaders"
 msgstr "Eksklusive Ubershaders"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "Utvid området på spillskjermen, i likhet med Master System."
+
 msgid "External"
 msgstr "Ekstern"
 
@@ -1442,6 +1514,9 @@ msgstr "FIFO Avslappet"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "FASTVAREINNSTILLINGER"
+
+msgid "FM SYNTHESIZER"
+msgstr "FM SYNTHESIZER"
 
 msgid "FMV ASPECT RATIO"
 msgstr "FMV-SIDEFORHOLD"
@@ -1677,6 +1752,9 @@ msgstr "GamePad + 4 Pro-kontroller"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "GamePad + 4 sideveis Wiimote"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "Spill kan kjøre raskere/langsommere enn normalt hvis feil region er valgt."
+
 msgid "Gaussian"
 msgstr "Gaussisk"
 
@@ -1760,6 +1838,12 @@ msgstr "Hybrid Ubershaders"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IMPROVED BANDING"
+msgstr "FORBEDRET BÅNDING"
+
+msgid "IMPROVED MESH"
+msgstr "FORBEDRET MESH"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "FORBEDRET POLYGONOPPDELING"
@@ -1866,6 +1950,33 @@ msgstr "Japansk"
 msgid "Jordan"
 msgstr "Jordan"
 
+msgid "Joypad 2 Button"
+msgstr "Joypad 2-knapp"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "Joypad 2-knapp + Master Tap"
+
+msgid "Joypad 3 Button"
+msgstr "Joypad 3-knapp"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "Joypad 3-knapps + 4-veis spilling"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "Joypad 3-knapps + Teamplayer"
+
+msgid "Joypad 6 Button"
+msgstr "Joypad med 6 knapper"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "Joypad 6 knapper + 4-veis spilling"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "Joypad 6-knapps + Teamplayer"
+
+msgid "Joypad Auto"
+msgstr "Joypad Auto"
+
 msgid "Joystick"
 msgstr "Styrespaken"
 
@@ -1896,6 +2007,9 @@ msgstr "Konami Justifier (P2)"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "Konami Justifier P2 er seriekoblet fra kontroller 2 og vises som port 3 i systemet."
 
+msgid "Konami Justifiers"
+msgstr "Konami Justifiers"
+
 msgid "Korea"
 msgstr "Korea"
 
@@ -1917,6 +2031,9 @@ msgstr "LCD GHOSTING-EFFEKT"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "LCD GHOSTING EFFEKTER"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "LCD GHOSTING-FILTER"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD Ghosting (nøyaktig)"
 
@@ -1925,6 +2042,9 @@ msgstr "LCD Ghosting (rask)"
 
 msgid "LIGHT GUN"
 msgstr "LYSPISTOL"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "TRÅDKORS FOR LYSPISTOL"
 
 msgid "LIGHT GUNS"
 msgstr "LYSPISTOL"
@@ -1971,6 +2091,9 @@ msgstr "Lyseblå"
 msgid "Light Green"
 msgstr "Lysegrønn"
 
+msgid "Light Phaser"
+msgstr "Lysfaseren"
+
 msgid "Light Pink"
 msgstr "Lys rosa"
 
@@ -2009,6 +2132,15 @@ msgstr "Luxembourg"
 
 msgid "M.A.C.S. Rifle"
 msgstr "M.A.C.S.-geværet"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (forbedret YM3438)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "MANUELL PRØVETAKING AV TEKSTUR"
@@ -2093,6 +2225,15 @@ msgstr "Medium"
 
 msgid "Mega"
 msgstr "Mega"
+
+msgid "MegaSD"
+msgstr "MegaSD"
+
+msgid "Megadrive"
+msgstr "Megadrive"
+
+msgid "Menacer Light Gun"
+msgstr "Menacer Light Gun"
 
 msgid "Merge"
 msgstr "Slå sammen"
@@ -2181,6 +2322,9 @@ msgstr "NTSC-FILTER"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2256,8 +2400,17 @@ msgstr "Normal (standard)"
 msgid "Norway"
 msgstr "Norge"
 
+msgid "Not all games support 3D pad."
+msgstr "Ikke alle spill støtter 3D-pad."
+
 msgid "November"
 msgstr "November"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "AV (standard)"
@@ -2309,6 +2462,9 @@ msgstr "På (hastighetshack)"
 
 msgid "On (Vulkan Only)"
 msgstr "På (kun Vulkan)"
+
+msgid "On (forced)"
+msgstr "På (tvunget)"
 
 msgid "Only Overscan Area"
 msgstr "Kun overscanningsområde"
@@ -2384,6 +2540,9 @@ msgstr "FORETRUKNE SPU-TRÅDER"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM Style (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "Padlekontroll"
 
 msgid "Paddle can only be used in port 2."
 msgstr "Padle kan bare brukes i port 2."
@@ -2571,6 +2730,9 @@ msgstr "Reduserer vinglete polygoner og skjeve teksturer."
 msgid "Relaxed (Fastest)"
 msgstr "Avslappet (raskest)"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "Erstatt masket gjennomsiktighet med ekte gjennomsiktighet."
+
 msgid "Required by some games."
 msgstr "Påkrevd i noen spill."
 
@@ -2588,6 +2750,9 @@ msgstr "Resampling (Pirch Shift)"
 
 msgid "RetroPad (Default)"
 msgstr "RetroPad (standard)"
+
+msgid "Retropad (Default)"
+msgstr "Retropad (standard)"
 
 msgid "Rice"
 msgstr "Ris"
@@ -2751,6 +2916,12 @@ msgstr "SYSTEMMINNE"
 msgid "Safe (Default)"
 msgstr "Sikker (standard)"
 
+msgid "Saturn 3D Pad"
+msgstr "Saturn 3D Pad"
+
+msgid "Saturn Pad"
+msgstr "Saturn Pad"
+
 msgid "Saudi Arabia"
 msgstr "Saudi-Arabia"
 
@@ -2765,6 +2936,9 @@ msgstr "Skalert"
 
 msgid "Screen Resolution (Default)"
 msgstr "Skjermoppløsning (standard)"
+
+msgid "Sega/Mega CD"
+msgstr "Sega/Mega CD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Velg språk som skal brukes hvis \"Bruk fastvareinnstillinger\" er deaktivert eller hvis fastvarefilen ikke ble funnet."
@@ -2894,6 +3068,9 @@ msgstr "Noen spill har problemer når animasjonen vises, andre krever det."
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "Lydgenerator. MAME er raskere og Nuked er syklusnøyaktig. Originalmodellen brukte YM2612, mens senere revisjoner brukte YM3438."
 
 msgid "South Africa"
 msgstr "Sør-Afrika"
@@ -3176,6 +3353,9 @@ msgstr "Bruk analoge styrespaker i tillegg til D-Pad for DualShock-kontrollere."
 
 msgid "Use Host"
 msgstr "Bruk vert"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "Bruk Megadrive til å automatisk tilordne innganger til en Megadrive-kontroller med 6 knapper."
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Bruk SSAA i stedet for MSAA for kantutjevnelse. SSAA kan se bedre ut, men har en høyere ytelseskostnad."

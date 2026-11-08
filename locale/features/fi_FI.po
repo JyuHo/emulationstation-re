@@ -66,6 +66,9 @@ msgstr "Ytimen asettama"
 msgid "Croatia"
 msgstr "Kroatia"
 
+msgid "Cross"
+msgstr "Risti"
+
 msgid "Custom"
 msgstr "Mukautettu"
 
@@ -89,6 +92,9 @@ msgstr "Tanska"
 
 msgid "Disabled"
 msgstr "Pois"
+
+msgid "Dot"
+msgstr "Piste"
 
 msgid "English (Default)"
 msgstr "Englanti (Oletus)"
@@ -159,6 +165,9 @@ msgstr "Italia"
 msgid "LIGHT GUN"
 msgstr "VALOASE"
 
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "VALOASEEN TÄHTÄIN"
+
 msgid "Load latest save state on game launch and save state when exiting game."
 msgstr "Lataa viimeisin tilatallennus pelin käynnistyksen yhteydessä, ja tallenna tila pelistä poistuttaessa."
 
@@ -194,6 +203,9 @@ msgstr "Pois päältä on turvallisempi, päällä on tiettyjä pelejä varten."
 
 msgid "On"
 msgstr "Päällä"
+
+msgid "On (forced)"
+msgstr "Päällä (pakotettu)"
 
 msgid "OpenGL"
 msgstr "OpenGL"

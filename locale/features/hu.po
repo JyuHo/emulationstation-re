@@ -342,8 +342,17 @@ msgstr "45s"
 msgid "48MB"
 msgstr "48MB"
 
+msgid "4:3 (Default)"
+msgstr "4:3 (Alapértelmezett)"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "4:3 RENDERELÉSI FELBONTÁS"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4X"
 
 msgid "4th"
 msgstr "4."
@@ -423,6 +432,9 @@ msgstr "6x Natív (~2160p/4K)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x natív (1536 x 1152)"
 
+msgid "720p"
+msgstr "720p"
+
 msgid "72MB"
 msgstr "72MB"
 
@@ -443,6 +455,9 @@ msgstr "7x Natív (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x natív (1792 x 1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "8."
@@ -467,6 +482,12 @@ msgstr "8x natív (2048 x 1536)"
 
 msgid "90 degrees"
 msgstr "90 fok"
+
+msgid "90 degrees clockwise"
+msgstr "90 fokkal az óramutató járásával megegyező irányban"
+
+msgid "90 degrees counter-clockwise"
+msgstr "90 fokkal az óramutató járásával ellentétes irányban"
 
 msgid "96MB"
 msgstr "96MB"
@@ -558,6 +579,9 @@ msgstr "Adaptív (a felső mező az első)"
 msgid "Add color to Game Boy games."
 msgstr "Színt ad a Game Boy játékokhoz."
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "A CD hang keverésének beállítása. Az MSU-MD esetében a kazettás hanghatások nincsenek hatással."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "A Full Motion Video filmek képarányának beállítása."
 
@@ -600,6 +624,9 @@ msgstr "Lehetővé teszi ezen görbék vizuális minőségének csökkentését 
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "Legfeljebb 5 vagy 8 kontrollert tesz lehetővé a támogatott játékokban."
 
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "Legfeljebb 7 vagy 12 kontrollert tesz lehetővé a támogatott játékokban."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Legfeljebb 8 vezérlőt tesz lehetővé a támogatott játékokban."
 
@@ -641,6 +668,9 @@ msgstr "Alkalmazzon szorzót a joystick bemenetére, hogy csökkentse vagy növe
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Alkalmazzon videoszűrőt a különféle NTSC TV-jelek utánozásához."
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "Alkalmazzon gouraud árnyékolást a sima árnyékolás helyett."
 
 msgid "Approximate (Fast)"
 msgstr "Hozzávetőleges (gyors)"
@@ -707,6 +737,9 @@ msgstr "Azerbajdzsán"
 
 msgid "BILINEAR FILTERING"
 msgstr "BILINEÁRIS SZŰRÉS"
+
+msgid "BIOS Language"
+msgstr "BIOS nyelv"
 
 msgid "BIRTH DAY"
 msgstr "SZÜLETÉSI NAP"
@@ -840,6 +873,12 @@ msgstr "Pufferelt renderelés"
 msgid "Bulgaria"
 msgstr "Bulgária"
 
+msgid "CD ADD-ON"
+msgstr "CD HOZZÁADÁS"
+
+msgid "CD-DA VOLUME"
+msgstr "CD-DA HANGERŐ"
+
 msgid "CHEATS"
 msgstr "CSALÁSOK"
 
@@ -870,11 +909,17 @@ msgstr "KONZOL TÍPUSA"
 msgid "CONTROLLER 1"
 msgstr "KONTROLLER 1"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "VEZÉRLŐ 1 BEMENETI HOZZÁRENDELÉS"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "VEZÉRLŐ 1 TÍPUS"
 
 msgid "CONTROLLER 2"
 msgstr "KONTROLLER 2"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "VEZÉRLŐ 2 BEMENETI HOZZÁRENDELÉS"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "VEZÉRLŐ 2 TÍPUS"
@@ -882,11 +927,17 @@ msgstr "VEZÉRLŐ 2 TÍPUS"
 msgid "CONTROLLER 3"
 msgstr "KONTROLLER 3"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "VEZÉRLŐ 3 BEMENETI HOZZÁRENDELÉS"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "VEZÉRLŐ 3 TÍPUS"
 
 msgid "CONTROLLER 4"
 msgstr "KONTROLLER 4"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "VEZÉRLŐ 4 BEMENETI HOZZÁRENDELÉS"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "VEZÉRLŐ KOMBINÁCIÓ"
@@ -972,6 +1023,12 @@ msgstr "Változtassa meg a játék nyelvét."
 msgid "Change the output resolution ratio."
 msgstr "Módosítsa a kimeneti felbontás arányát."
 
+msgid "Change the rotation of the rendered image."
+msgstr "Módosítsa a renderelt kép forgatását."
+
+msgid "Change the system's language."
+msgstr "Változtassa meg a rendszer nyelvét."
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "Módosítsa azt, ami a virtuális GameCube portokhoz van csatlakoztatva."
 
@@ -990,11 +1047,17 @@ msgstr "Kínai"
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Válaszd ki a konzol nyelvét. Nem minden játék támogatja a nyelvválasztást."
 
+msgid "Choose deinterlace option."
+msgstr "Válassza az átfedések eltávolítása (deinterlace) opciót."
+
 msgid "Choose downscaling method."
 msgstr "Válassza ki a csökkentési módszert."
 
 msgid "Choose mipmapping type."
 msgstr "Válassza ki a mipmapping típusát."
+
+msgid "Choose system BIOS language."
+msgstr "Válassza ki a rendszer BIOS nyelvét."
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Válassza a Parallel N64 grafikus bővítményt."
@@ -1010,6 +1073,9 @@ msgstr "Válassza ki a rendszerüzenetek képernyőn való megjelenésének hely
 
 msgid "Choose the scaling mode for the game screen."
 msgstr "Válassza ki a méretezési módot a játék képernyőjéhez."
+
+msgid "Choose to render meshes as transparent polygons."
+msgstr "Válassza ki a hálók átlátszó poligonként való renderelését."
 
 msgid "Choose upscaling method."
 msgstr "Válassza ki a felskálázási módot."
@@ -1077,6 +1143,9 @@ msgstr "Costa Rica"
 msgid "Croatia"
 msgstr "Horvátország"
 
+msgid "Cross"
+msgstr "Kereszt"
+
 msgid "Current language"
 msgstr "Jelenlegi nyelv"
 
@@ -1094,6 +1163,9 @@ msgstr "HOLTZÓNA"
 
 msgid "DEFAULT POWER ON RAM STATE"
 msgstr "ALAPÉRTELMEZETT BEKAPCSOLÁS RAM ÁLLAPOT"
+
+msgid "DEINTERLACE"
+msgstr "DEINTERLACE"
 
 msgid "DEINTERLACING"
 msgstr "DEINTERLACING"
@@ -1173,6 +1245,9 @@ msgstr "Sötét rózsaszín"
 msgid "Dark Purple"
 msgstr "Sötétlila"
 
+msgid "De-Interlaced"
+msgstr "De-Interlaced"
+
 msgid "December"
 msgstr "December"
 
@@ -1206,6 +1281,9 @@ msgstr "Meghatározza, hogy a kurzor hogyan jelenjen meg a képernyő alján."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Meghatározza a rendszer sebességét és az előrefutás viselkedését."
 
+msgid "Deutsch"
+msgstr "Deutsch"
+
 msgid "Digital Controller"
 msgstr "Digitális vezérlő"
 
@@ -1238,6 +1316,9 @@ msgstr "Dominikai Köztársaság"
 
 msgid "Don't Override"
 msgstr "Ne bírálja felül"
+
+msgid "Dot"
+msgstr "Pont"
 
 msgid "Double buffering"
 msgstr "Dupla pufferelés"
@@ -1304,6 +1385,9 @@ msgstr "SZÉLESKÉPERNYŐ JAVÍTÁSOK ENGEDÉLYEZÉSE"
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "FEJLESZTETT MEGJELENÍTÉSI FELBONTÁS"
+
+msgid "EXTENDED SCREEN"
+msgstr "BŐVÍTETT KÉPERNYŐ"
 
 msgid "Ecuador"
 msgstr "Equador"
@@ -1413,6 +1497,9 @@ msgstr "Angol (alapértelmezett)"
 msgid "English/Japanese"
 msgstr "Angol/Japán"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "Továbbfejlesztett hangkimeneti támogatás a kompatibilis játékokhoz."
+
 msgid "Enhancement."
 msgstr "Fejlesztés."
 
@@ -1445,6 +1532,9 @@ msgstr "Fejlesztés. A soronkénti nyolc sprite korlát megszüntetése."
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "Fokozás. Távolítsa el a soronkénti nyolc sprite-ot."
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "Fokozás. Távolítsa el a nyolcvan sprite-ot soronként."
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Fokozás. Távolítsa el a harminckét sprite soronkénti korlátot. Összeomlik bizonyos játékok."
@@ -1488,6 +1578,9 @@ msgstr "Egyenletes"
 msgid "Exclusive Ubershaders"
 msgstr "Exkluzív Ubershaderek"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "Bővítse ki a játék képernyőterületét, hasonlóan a Master Systemhez."
+
 msgid "External"
 msgstr "Külső"
 
@@ -1502,6 +1595,9 @@ msgstr "FIFO Laza"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "FIRMWARE BEÁLLÍTÁSOK"
+
+msgid "FM SYNTHESIZER"
+msgstr "FM SZINTETIZÁTOR"
 
 msgid "FMV ASPECT RATIO"
 msgstr "FMV KÉPARÁNY"
@@ -1749,6 +1845,9 @@ msgstr "GamePad + 4 Pro Controller"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "GamePad + 4 Sideway Wiimote"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "A játékok a normálnál gyorsabban/lassabban futhatnak, ha nem megfelelő régiót választ ki."
+
 msgid "Gaussian"
 msgstr "Gaussian"
 
@@ -1838,6 +1937,12 @@ msgstr "Hybrid Ubershaders"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IMPROVED BANDING"
+msgstr "FEJLESZTETT SÁVÁZÁS"
+
+msgid "IMPROVED MESH"
+msgstr "FEJLESZTETT HÁLÓ"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "TOVÁBBFEJLESZTETT POLIGONFELOSZTÁS"
@@ -1950,6 +2055,33 @@ msgstr "Japán"
 msgid "Jordan"
 msgstr "Jordánia"
 
+msgid "Joypad 2 Button"
+msgstr "Joypad 2 Gomb"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "Joypad 2 gomb + Fő érintés"
+
+msgid "Joypad 3 Button"
+msgstr "Joypad 3 Gomb"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "Joypad 3 gomb + 4 irányú játék"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "Joypad 3 gomb + Teamplayer"
+
+msgid "Joypad 6 Button"
+msgstr "Joypad 6 Gomb"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "Joypad 6 gomb + 4 irányú játék"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "Joypad 6 gomb + Teamplayer"
+
+msgid "Joypad Auto"
+msgstr "Joypad Auto"
+
 msgid "Joystick"
 msgstr "Joystick"
 
@@ -1980,6 +2112,9 @@ msgstr "Konami Justifier (P2)"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "A Konami Justifier P2 láncolva van a 2. vezérlőtől, és 3. portként jelenik meg a rendszer felé."
 
+msgid "Konami Justifiers"
+msgstr "Konami Justifiers"
+
 msgid "Korea"
 msgstr "Korea"
 
@@ -2004,6 +2139,9 @@ msgstr "LCD SZELLEMHATÁS"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "LCD GHOSTING EFFECTS"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "LCD SZELLEMTARTÁS SZŰRŐ"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "LCD szellemkép (pontos)"
 
@@ -2012,6 +2150,9 @@ msgstr "LCD szellemkép (gyors)"
 
 msgid "LIGHT GUN"
 msgstr "FÉNYPUSKA"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "FÉNYPUSKA CÉLKERESZT"
 
 msgid "LIGHT GUNS"
 msgstr "FÉNYPISZTOLYOK"
@@ -2058,6 +2199,9 @@ msgstr "Világoskék"
 msgid "Light Green"
 msgstr "Világoszöld"
 
+msgid "Light Phaser"
+msgstr "Light Phaser"
+
 msgid "Light Pink"
 msgstr "Világos rózsaszín"
 
@@ -2096,6 +2240,15 @@ msgstr "Luxemburg"
 
 msgid "M.A.C.S. Rifle"
 msgstr "M.A.C.S. Rifle"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (Enhanced YM3438)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "KÉZI TEXTÚRA MINTAVÉTELEZÉS"
@@ -2184,6 +2337,15 @@ msgstr "Közepes"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "MegaSD"
+msgstr "MegaSD"
+
+msgid "Megadrive"
+msgstr "Megadrive"
+
+msgid "Menacer Light Gun"
+msgstr "Menacer Light Gun"
+
 msgid "Merge"
 msgstr "Összevonás"
 
@@ -2271,6 +2433,9 @@ msgstr "NTSC SZŰRŐ"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2352,8 +2517,17 @@ msgstr "Normál (alapértelmezett)"
 msgid "Norway"
 msgstr "Norvégia"
 
+msgid "Not all games support 3D pad."
+msgstr "Nem minden játék támogatja a 3D pad-ot."
+
 msgid "November"
 msgstr "November"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "KI (Alapértelmezett)"
@@ -2411,6 +2585,9 @@ msgstr "Be (Sebesség hack)"
 
 msgid "On (Vulkan Only)"
 msgstr "Be (Csak Vulkan)"
+
+msgid "On (forced)"
+msgstr "Be (kényszerítve)"
 
 msgid "Only Overscan Area"
 msgstr "Csak Overscan terület"
@@ -2489,6 +2666,9 @@ msgstr "ELŐNYBEN RÉSZESÍTETT SPU SZÁLAK"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM stílus (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "Tekerővezérlés"
 
 msgid "Paddle can only be used in port 2."
 msgstr "A vezérlő csak a 2-es porton használható."
@@ -2682,6 +2862,9 @@ msgstr "Csökkenti az imbolygó poligonokat és a torzuló textúrákat."
 msgid "Relaxed (Fastest)"
 msgstr "Nyugodt (leggyorsabb)"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "Cserélje ki a hálós átlátszóságot valódi átlátszósággal."
+
 msgid "Required by some games."
 msgstr "Egyes játékokhoz szükséges."
 
@@ -2702,6 +2885,9 @@ msgstr "Felújított Wii VC"
 
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Alap)"
+
+msgid "Retropad (Default)"
+msgstr "Retropad (alapértelmezett)"
 
 msgid "Rice"
 msgstr "Rice"
@@ -2889,6 +3075,12 @@ msgstr "RENDSZERMEMÓRIA"
 msgid "Safe (Default)"
 msgstr "Biztonságos (alapértelmezett)"
 
+msgid "Saturn 3D Pad"
+msgstr "Saturn 3D Pad"
+
+msgid "Saturn Pad"
+msgstr "Saturn Pad"
+
 msgid "Saudi Arabia"
 msgstr "Szaúd-Arábia"
 
@@ -2903,6 +3095,9 @@ msgstr "Skálázott"
 
 msgid "Screen Resolution (Default)"
 msgstr "Képernyőfelbontás (alapértelmezett)"
+
+msgid "Sega/Mega CD"
+msgstr "Sega/Mega CD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "A kiválasztott nyelv akkor kerül használatba, ha a 'Firmware beállítások használata' ki van kapcsolva, vagy ha a firmware fájl nem található."
@@ -3038,6 +3233,9 @@ msgstr "Egyes játékoknál gondot okoz, ha az animáció megjelenik, másoknál
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "Hanggenerátor. A MAME gyorsabb, a Nuked pedig cikluspontos. Az eredeti modell YM2612-t, míg a későbbi verziók YM3438-at használtak."
 
 msgid "South Africa"
 msgstr "Dél-Afrika"
@@ -3176,6 +3374,9 @@ msgstr "ÉRINTÉSES MÓD"
 
 msgid "TOUCH SCREEN MODE"
 msgstr "ÉRINTŐKÉPERNYŐ MÓD"
+
+msgid "TRANSPARENT MESHES"
+msgstr "ÁTLÁTSZÓ HÁLÓK"
 
 msgid "TRILINEAR FILTERING"
 msgstr "TRILINEÁRIS SZŰRÉS"
@@ -3350,6 +3551,9 @@ msgstr "Használjon analóg joysticket a D-Pad DualShock vezérlőkhöz mellett.
 
 msgid "Use Host"
 msgstr "Host használata"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "Használja a Megadrive-ot a 6 gombos Megadrive stílusú vezérlő bemeneteinek automatikus hozzárendeléséhez."
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Használja az SSAA-t az MSAA helyett az anti-aliasinghez. Az SSAA jobban nézhet ki, de nagyobb teljesítményköltséggel jár."

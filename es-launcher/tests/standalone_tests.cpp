@@ -20,6 +20,7 @@
 #include "eden/EdenGenerator.h"
 #include "melonds/MelonDSGenerator.h"
 #include "mupen64plus/Mupen64PlusGenerator.h"
+#include "ymir/YmirGenerator.h"
 #include "util/YamlFile.h"
 
 #include <pugixml.hpp>
@@ -812,6 +813,40 @@ static void testMupen64Plus()
 	CHECK(std::ranges::find(cmd.argv, "--gfx") == cmd.argv.end());
 }
 
+static void testYmir()
+{
+	CHECK(ymir::YmirGenerator::aspectRatio("1.7777777") == "16:9");
+	CHECK(ymir::YmirGenerator::aspectRatio("") == "4:3");
+	CHECK(ymir::YmirGenerator::aspectRatio("nonsense") == "4:3");
+
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "ymir", "#!/bin/sh\n", true);
+	fs::path file = tmp.path / "emulators" / "ymir" / "Ymir.toml";
+	writeFile(file, "ConfigVersion = 4\n\n[Input.Port2]\nPeripheralType = \"AnalogPad\"\n\n[Input.Port2.AnalogPad.Binds]\nA = [ \"old\" ]\n");
+
+	LaunchContext ctx = makeContext(tmp.path, "ymir", "saturn", "/roms/saturn/Nights.chd");
+	ctx.controllers = { makePad(1, 2) };
+	ctx.settings = Settings({}, { { "ymir_aspect", "1.7777" } }, {});
+
+	Command cmd = Launch(ctx).prepare();
+	CHECK(cmd.closeOnHotkey == true);
+	CHECK(cmd.argv.back() == "/roms/saturn/Nights.chd");
+	CHECK(std::ranges::find(cmd.argv, (tmp.path / "emulators" / "ymir").string()) != cmd.argv.end());
+
+	IniFile toml = IniFile::load(file);
+	CHECK(readFile(file).starts_with("ConfigVersion = 6\n"));
+	CHECK(toml.get("Video", "ForcedAspect") == "\"16:9\"");
+	CHECK(toml.get("General.PathOverrides", "SaveStates") == "\"" + (tmp.path / "saves" / "saturn" / "ymir").string() + "\"");
+	CHECK(toml.get("Input.Port1", "PeripheralType") == "\"ControlPad\"");
+	CHECK(toml.get("Input.Port1.ControlPad.Binds", "A") == "[ \"J\", \"GamepadX@2\" ]");
+	CHECK(toml.get("Input.Port1.ControlPad.Binds", "DPad") == "[ \"GamepadLeftStick@2\", \"GamepadDPad@2\" ]");
+	CHECK(toml.get("Input.Port1.ArcadeRacer", "Sensitivity") == "0.5");
+	// player 2 is gone: its port is empty, the old bindings removed
+	CHECK(toml.get("Input.Port2", "PeripheralType") == "\"None\"");
+	CHECK(!toml.hasSection("Input.Port2.AnalogPad.Binds"));
+}
+
 void tests::runStandaloneTests()
 {
 	testIniFile();
@@ -831,4 +866,5 @@ void tests::runStandaloneTests()
 	testEden();
 	testMelonDS();
 	testMupen64Plus();
+	testYmir();
 }

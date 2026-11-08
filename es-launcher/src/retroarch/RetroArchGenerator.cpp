@@ -102,6 +102,14 @@ namespace es::launcher::retroarch
 			// desktop GL 3.3 core on PC, GLES through the "gl" driver on the Raspberry Pi
 			return arch == Architecture::X86_64 ? "glcore" : "gl";
 		}
+
+		// the player's video driver, else the default one as the core wants it
+		std::string videoDriver(const LaunchContext& ctx)
+		{
+			if (auto driver = ctx.settings.get("gfxbackend"))
+				return *driver;
+			return coreProfile(ctx.core).defaultVideoDriver(defaultVideoDriver(ctx.architecture));
+		}
 	}
 
 	std::vector<fs::path> RetroArchGenerator::coreDirectories(const fs::path& catalogCores)
@@ -168,7 +176,7 @@ namespace es::launcher::retroarch
 		if (!name || *name == "none")
 			return std::nullopt;
 
-		std::string driver = ctx.settings.getString("gfxbackend", defaultVideoDriver(ctx.architecture));
+		std::string driver = videoDriver(ctx);
 		const char* preferred = driver == "gl" ? ".glslp" : ".slangp";
 		const char* other = driver == "gl" ? ".slangp" : ".glslp";
 
@@ -296,7 +304,7 @@ namespace es::launcher::retroarch
 	{
 		const Settings& s = ctx.settings;
 
-		config.set("video_driver", s.getString("gfxbackend", defaultVideoDriver(ctx.architecture)));
+		config.set("video_driver", videoDriver(ctx));
 		config.set("video_fullscreen", true);
 		config.set("video_fullscreen_x", 0);   // 0: the desktop resolution
 		config.set("video_fullscreen_y", 0);
@@ -321,9 +329,10 @@ namespace es::launcher::retroarch
 			config.remove("aspect_ratio_index");
 
 		// Rewind and run-ahead (latency reduction)
-		config.set("rewind_enable", s.getBool("rewind", false));
+		bool rewindAndRunAhead = coreProfile(ctx.core).supportsRewindAndRunAhead(ctx);
+		config.set("rewind_enable", rewindAndRunAhead && s.getBool("rewind", false));
 
-		int runAhead = s.getInt("runahead", 0);
+		int runAhead = rewindAndRunAhead ? s.getInt("runahead", 0) : 0;
 		bool preemptive = runAhead > 0 && s.getBool("preemptiveframes", false);
 		config.set("run_ahead_enabled", runAhead > 0 && !preemptive);
 		config.set("preemptive_frames_enable", preemptive);

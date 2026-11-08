@@ -342,8 +342,17 @@ msgstr "45s"
 msgid "48MB"
 msgstr "48MB"
 
+msgid "4:3 (Default)"
+msgstr "4:3 (výchozí)"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "ROZLIŠENÍ VYKRESLOVÁNÍ 4:3"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4X"
 
 msgid "4th"
 msgstr "4."
@@ -423,6 +432,9 @@ msgstr "6x nativní (~2160p/4K)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x nativní (1536 x 1152)"
 
+msgid "720p"
+msgstr "720p"
+
 msgid "72MB"
 msgstr "72MB"
 
@@ -443,6 +455,9 @@ msgstr "7x nativní (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x nativní (1792 x 1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "8."
@@ -558,6 +573,9 @@ msgstr "Adaptivní (horní pole první)"
 msgid "Add color to Game Boy games."
 msgstr "Přidání barev do her pro Game Boy."
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "Úprava míchání zvuku CD. V MSU-MD nejsou zvukové efekty z kazet ovlivněny."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Upravuje poměr stran filmů Video v plném pohybu."
 
@@ -596,6 +614,9 @@ msgstr "Umožňuje načítání chráněných her bez informací o dílčím kan
 
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "Umožňuje až 5 nebo 8 ovladačů v podporovaných hrách."
+
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "Umožňuje použití až 7 nebo 12 ovladačů v podporovaných hrách."
 
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Umožňuje až 8 ovladačů v podporovaných hrách."
@@ -638,6 +659,9 @@ msgstr "Použijte násobitel na vstup joysticku, abyste snížili nebo zvýšili
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "Použijte video filtr pro napodobení různých televizních signálů NTSC."
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "Místo plochého stínování použijte gouraudovo stínování."
 
 msgid "Approximate (Fast)"
 msgstr "Přibližný (Rychlý)"
@@ -704,6 +728,9 @@ msgstr "Ázerbájdžán"
 
 msgid "BILINEAR FILTERING"
 msgstr "BILINEÁRNÍ FILTROVÁNÍ"
+
+msgid "BIOS Language"
+msgstr "Jazyk systému BIOS"
 
 msgid "BIRTH DAY"
 msgstr "Den narozenin"
@@ -825,6 +852,12 @@ msgstr "Vykreslování vyrovnávací paměti"
 msgid "Bulgaria"
 msgstr "Bulharsko"
 
+msgid "CD ADD-ON"
+msgstr "CD ADD-ON"
+
+msgid "CD-DA VOLUME"
+msgstr "HLASITOST CD-DA"
+
 msgid "CHEATS"
 msgstr "CHEATY"
 
@@ -855,11 +888,17 @@ msgstr "TYP KONZOLE"
 msgid "CONTROLLER 1"
 msgstr "OVLADAČ 1"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "Mapování vstupu ovladače 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "TYP OVLADAČE 1"
 
 msgid "CONTROLLER 2"
 msgstr "OVLADAČ 2"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "Mapování vstupu ovladače 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "TYP OVLADAČE 2"
@@ -867,11 +906,17 @@ msgstr "TYP OVLADAČE 2"
 msgid "CONTROLLER 3"
 msgstr "OVLADAČ 3"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "Mapování vstupu ovladače 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "TYP OVLADAČE 3"
 
 msgid "CONTROLLER 4"
 msgstr "OVLADAČ 4"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "Mapování vstupu ovladače 4"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "KOMBINACE OVLADAČE"
@@ -945,6 +990,9 @@ msgstr "Změňte jazyk hry."
 msgid "Change the output resolution ratio."
 msgstr "Změna poměru výstupního rozlišení."
 
+msgid "Change the system's language."
+msgstr "Změna jazyka systému."
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "Změnit, co je připojeno k virtuálním portům GameCube."
 
@@ -965,6 +1013,9 @@ msgstr "Zvolte metodu snižování měřítka."
 
 msgid "Choose mipmapping type."
 msgstr "Zvolte typ mipmapování."
+
+msgid "Choose system BIOS language."
+msgstr "Zvolte jazyk systému BIOS."
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Vyberte zásuvný modul Paralelní grafika N64."
@@ -1037,6 +1088,9 @@ msgstr "Kostarika"
 
 msgid "Croatia"
 msgstr "Chorvatsko"
+
+msgid "Cross"
+msgstr "Kříž"
 
 msgid "Current language"
 msgstr "Současný jazyk"
@@ -1161,6 +1215,9 @@ msgstr "Určuje, jak se má kurzor zobrazovat na spodní obrazovce."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Určuje rychlost a chování systému při běhu vpřed."
 
+msgid "Deutsch"
+msgstr "Němčina"
+
 msgid "Digital Controller"
 msgstr "Digitální Ovladač"
 
@@ -1190,6 +1247,9 @@ msgstr "Dominikánská republika"
 
 msgid "Don't Override"
 msgstr "Nepřepisovat"
+
+msgid "Dot"
+msgstr "Tečka"
 
 msgid "Double buffering"
 msgstr "Dvojitá vyrovnávací paměť"
@@ -1256,6 +1316,9 @@ msgstr "POVOLIT ŠIROKOÚHLÉ ZÁPLATY"
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "VYLEPŠENÉ ROZLIŠENÍ VYKRESLOVÁNÍ"
+
+msgid "EXTENDED SCREEN"
+msgstr "ROZŠÍŘENÁ OBRAZOVKA"
 
 msgid "Ecuador"
 msgstr "Ekvádor"
@@ -1362,6 +1425,9 @@ msgstr "Angličtina (výchozí)"
 msgid "English/Japanese"
 msgstr "Anglický/Japonský"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "Vylepšená podpora zvukového výstupu pro kompatibilní hry."
+
 msgid "Enhancement."
 msgstr "Vylepšení."
 
@@ -1394,6 +1460,9 @@ msgstr "Vylepšení. Odstranění limitu osmi spritů na řádek."
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "Vylepšení. Odstranění limitu osmi spritů na řádek."
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "Vylepšení. Odstranění limitu osmdesáti spritů na řádek."
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Vylepšení. Odstranění limitu třiceti dvou spritů na řádek. V některých hrách dochází k pádům."
@@ -1437,6 +1506,9 @@ msgstr "Dokonce"
 msgid "Exclusive Ubershaders"
 msgstr "Exkluzivní Ubershadery"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "Rozšíření herní plochy podobně jako u systému Master System."
+
 msgid "External"
 msgstr "Externí"
 
@@ -1451,6 +1523,9 @@ msgstr "FIFO Relaxed"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "Nastavení firmwaru"
+
+msgid "FM SYNTHESIZER"
+msgstr "FM SYNTÉZÁTOR"
 
 msgid "FMV ASPECT RATIO"
 msgstr "POMĚR STRAN FMV"
@@ -1686,6 +1761,9 @@ msgstr "GamePad + 4 Pro Controller"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "GamePad + 4 Boční Wiimote"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "Pokud je vybrán nesprávný region, mohou hry běžet rychleji nebo pomaleji než obvykle."
+
 msgid "Gaussian"
 msgstr "Gaussian"
 
@@ -1769,6 +1847,12 @@ msgstr "Hybridní Ubershadery"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IMPROVED BANDING"
+msgstr "Vylepšený BANDING"
+
+msgid "IMPROVED MESH"
+msgstr "Zlepšený MASH"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "Vylepšené dělení Polygonů"
@@ -1875,6 +1959,33 @@ msgstr "Japonština"
 msgid "Jordan"
 msgstr "Jordan"
 
+msgid "Joypad 2 Button"
+msgstr "Tlačítko Joypad 2"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "Tlačítko Joypad 2 + Hlavní Tap"
+
+msgid "Joypad 3 Button"
+msgstr "Tlačítko Joypad 3"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "Tlačítko Joypad 3 + 4-WayPlay"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "Tlačítko Joypad 3 + Týmový Hráč"
+
+msgid "Joypad 6 Button"
+msgstr "Tlačítko Joypad 6"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "Tlačítko Joypad 6 + 4-WayPlay"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "Tlačítko Joypad 6 + Týmový Hráč"
+
+msgid "Joypad Auto"
+msgstr "Joypad Auto"
+
 msgid "Joystick"
 msgstr "Joystick"
 
@@ -1905,6 +2016,9 @@ msgstr "Konami Justifier (P2)"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "Konami Justifier P2 je řetězově propojený z ovladačem 2, v systému se zobrazuje jako port 3."
 
+msgid "Konami Justifiers"
+msgstr "Oprávnění Konami"
+
 msgid "Korea"
 msgstr "Korea"
 
@@ -1926,6 +2040,9 @@ msgstr "EFEKT DUCHŮ NA LCD"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "EFEKTY DUCHŮ LCD"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "FILTR PROTI DUCHŮM NA LCD"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "Duchovost LCD (Přesná)"
 
@@ -1934,6 +2051,9 @@ msgstr "Duchovost LCD (Rychlá)"
 
 msgid "LIGHT GUN"
 msgstr "SVĚTELNÁ ZBRAŇ"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "ZAMĚŘOVAČ SVĚTELNÉ PISTOLE"
 
 msgid "LIGHT GUNS"
 msgstr "SVĚTELNÉ ZBRANĚ"
@@ -1980,6 +2100,9 @@ msgstr "Světle modrá"
 msgid "Light Green"
 msgstr "Světle zelená"
 
+msgid "Light Phaser"
+msgstr "Lehký Phaser"
+
 msgid "Light Pink"
 msgstr "Světle růžová"
 
@@ -2018,6 +2141,15 @@ msgstr "Lucembursko"
 
 msgid "M.A.C.S. Rifle"
 msgstr "M.A.C.S. Puška"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (vylepšený YM3438)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "RUČNÍ VZORKOVÁNÍ TEXTUR"
@@ -2102,6 +2234,15 @@ msgstr "Střední"
 
 msgid "Mega"
 msgstr "Mega"
+
+msgid "MegaSD"
+msgstr "MegaSD"
+
+msgid "Megadrive"
+msgstr "Megadrive"
+
+msgid "Menacer Light Gun"
+msgstr "Lehká zbraň Menacer"
 
 msgid "Merge"
 msgstr "Sloučení"
@@ -2190,6 +2331,9 @@ msgstr "NTSC FILTR"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2265,8 +2409,17 @@ msgstr "Normální (výchozí)"
 msgid "Norway"
 msgstr "Norsko"
 
+msgid "Not all games support 3D pad."
+msgstr "Ne všechny hry podporují 3D ovladač."
+
 msgid "November"
 msgstr "Listopad"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "Vypnuto (výchozí)"
@@ -2318,6 +2471,9 @@ msgstr "Zapnout (Rychlostní hack)"
 
 msgid "On (Vulkan Only)"
 msgstr "Zapnout (pouze Vulkan)"
+
+msgid "On (forced)"
+msgstr "Zapnout (vynucené)"
 
 msgid "Only Overscan Area"
 msgstr "Pouze Oblast Overscan"
@@ -2393,6 +2549,9 @@ msgstr "PREFEROVANÁ VLÁKNA SPU"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "PVM Styl (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "Ovládání Pádlem"
 
 msgid "Paddle can only be used in port 2."
 msgstr "Pádlo lze použít pouze v portu 2."
@@ -2580,6 +2739,9 @@ msgstr "Omezuje rozviklané polygony a deformující se textury."
 msgid "Relaxed (Fastest)"
 msgstr "Uvolněný (Nejrychlejší)"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "Nahraďte průhlednost v okách skutečnou průhledností."
+
 msgid "Required by some games."
 msgstr "Vyžadováno v některých hrách."
 
@@ -2597,6 +2759,9 @@ msgstr "Převzorkování (Pirchův posun)"
 
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Výchozí)"
+
+msgid "Retropad (Default)"
+msgstr "Retropad (výchozí)"
 
 msgid "Rice"
 msgstr "Rýže"
@@ -2763,6 +2928,12 @@ msgstr "PAMĚŤ SYSTÉMU"
 msgid "Safe (Default)"
 msgstr "Bezpečné (Výchozí)"
 
+msgid "Saturn 3D Pad"
+msgstr "Saturn 3D Pad"
+
+msgid "Saturn Pad"
+msgstr "Saturn Pad"
+
 msgid "Saudi Arabia"
 msgstr "Saúdská Arábie"
 
@@ -2777,6 +2948,9 @@ msgstr "Měřítko"
 
 msgid "Screen Resolution (Default)"
 msgstr "Rozlišení obrazovky (Výchozí)"
+
+msgid "Sega/Mega CD"
+msgstr "Sega/Mega CD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Zvolený jazyk se použije, pokud je položka \"Použít nastavení firmwaru\" vypnutá nebo pokud nebyl nalezen soubor firmwaru."
@@ -2906,6 +3080,9 @@ msgstr "Některé hry mají problémy, když se zobrazí animace, jiné ji vyža
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "Generátor zvuku. MAME je rychlejší a Nuked je přesnější. Původní model používal YM2612, zatímco pozdější revize používaly YM3438."
 
 msgid "South Africa"
 msgstr "Jižní Afrika"
@@ -3188,6 +3365,9 @@ msgstr "Pro ovladače DualShock používejte kromě D-Padu také analogové joys
 
 msgid "Use Host"
 msgstr "Použit hostitele"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "Použijte Megadrive k automatickému mapování vstupů pro ovladač ve stylu Megadrive s rozložením 6 tlačítek."
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Pro vyhlazování použijte SSAA místo MSAA. SSAA může vypadat lépe, ale má vyšší náklady na výkon."

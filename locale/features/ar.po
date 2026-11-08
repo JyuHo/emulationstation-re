@@ -342,8 +342,17 @@ msgstr "45 ثانية"
 msgid "48MB"
 msgstr "٤٨ م.ب"
 
+msgid "4:3 (Default)"
+msgstr "٣:٤ (افتراضي)"
+
 msgid "4:3 RENDERING RESOLUTION"
 msgstr "دقة تصيير 4:3"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "4X"
+msgstr "4X"
 
 msgid "4th"
 msgstr "4th"
@@ -423,6 +432,9 @@ msgstr "‫‫‫‫‫‫‫‫‫‫x٦ أصلي (4K / ٢١٦٠p~)"
 msgid "6x native (1536 x 1152)"
 msgstr "6x أساسي (1536 x 1152)"
 
+msgid "720p"
+msgstr "‫٧٢٠p"
+
 msgid "72MB"
 msgstr "72 م.ب"
 
@@ -443,6 +455,9 @@ msgstr "‫‫‫‫‫‫‫‫‫‫‫x٧ أصلي (٢٥٢٠~)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x أساسي (1792 x 1344)"
+
+msgid "8X"
+msgstr "8X"
 
 msgid "8th"
 msgstr "8th"
@@ -467,6 +482,12 @@ msgstr "8x أساسي (2048 x 1536)"
 
 msgid "90 degrees"
 msgstr "٩٠ درجة"
+
+msgid "90 degrees clockwise"
+msgstr "90 درجة في اتجاه عقارب الساعة"
+
+msgid "90 degrees counter-clockwise"
+msgstr "90 درجة عكس اتجاه عقارب الساعة"
 
 msgid "96MB"
 msgstr "٩٦م.ب"
@@ -558,6 +579,9 @@ msgstr "تكيفي (الحقل العلوي أولاً)"
 msgid "Add color to Game Boy games."
 msgstr "أضف لوناً لألعاب الجيم بوي."
 
+msgid "Adjust mixing of CD audio. In MSU-MD, cartridge-sourced sound effects are not affected."
+msgstr "تعديل خلط صوت القرص المضغوط. في MSU-MD، لا تتأثر المؤثرات الصوتية الصادرة من الخرطوشة."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "يضبط نسبة العرض إلى الارتفاع لأفلام الفيديو كاملة الحركة (FMV)."
 
@@ -600,6 +624,9 @@ msgstr "يقلل جودة المنحنيات البصرية لأداء أعلى.
 msgid "Allows up to 5 or 8 controllers in supported games."
 msgstr "يسمح حتى 5 أو 8 وحدات تحكم في الألعاب المدعومة."
 
+msgid "Allows up to 7 or 12 controllers in supported games."
+msgstr "يسمح حتى 7 أو 12 وحدة تحكم في الألعاب المدعومة."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "يسمح حتى 8 وحدات تحكم في الألعاب المدعومة."
 
@@ -641,6 +668,9 @@ msgstr "تطبيق مضاعف لمدخلات عصا التحكم لتقليل أ
 
 msgid "Apply a video filter to mimic various NTSC TV signals."
 msgstr "تطبيق مرشح فيديو لتقليد إشارات NTSC المختلفة."
+
+msgid "Apply gouraud shading instead of flat shading."
+msgstr "تطبيق إضاءة Gouraud بدلاً من الإضاءة المسطحة."
 
 msgid "Approximate (Fast)"
 msgstr "تقريبي (سريع)"
@@ -707,6 +737,9 @@ msgstr "أذربيجان"
 
 msgid "BILINEAR FILTERING"
 msgstr "تصفية BILINEAR"
+
+msgid "BIOS Language"
+msgstr "لغة BIOS"
 
 msgid "BIRTH DAY"
 msgstr "يوم الميلاد"
@@ -840,6 +873,12 @@ msgstr "تصيير مؤقت"
 msgid "Bulgaria"
 msgstr "بلغاريا"
 
+msgid "CD ADD-ON"
+msgstr "إضافة CD"
+
+msgid "CD-DA VOLUME"
+msgstr "مستوى صوت CD-DA"
+
 msgid "CHEATS"
 msgstr "شفرات"
 
@@ -870,11 +909,17 @@ msgstr "نوع الجهاز"
 msgid "CONTROLLER 1"
 msgstr "وحدة التحكم 1"
 
+msgid "CONTROLLER 1 INPUT MAPPING"
+msgstr "تخطيط إدخال وحدة التحكم 1"
+
 msgid "CONTROLLER 1 TYPE"
 msgstr "نوع وحدة التحكم ١"
 
 msgid "CONTROLLER 2"
 msgstr "وحدة التحكم 2"
+
+msgid "CONTROLLER 2 INPUT MAPPING"
+msgstr "تخطيط إدخال وحدة التحكم 2"
 
 msgid "CONTROLLER 2 TYPE"
 msgstr "نوع وحدة التحكم ٢"
@@ -882,11 +927,17 @@ msgstr "نوع وحدة التحكم ٢"
 msgid "CONTROLLER 3"
 msgstr "وحدة التحكم 3"
 
+msgid "CONTROLLER 3 INPUT MAPPING"
+msgstr "تخطيط إدخال وحدة التحكم 3"
+
 msgid "CONTROLLER 3 TYPE"
 msgstr "نوع وحدة التحكم 3"
 
 msgid "CONTROLLER 4"
 msgstr "وحدة التحكم 4"
+
+msgid "CONTROLLER 4 INPUT MAPPING"
+msgstr "تخطيط إدخال وحدة التحكم 4"
 
 msgid "CONTROLLER COMBINATION"
 msgstr "مزيج وحدات التحكم"
@@ -972,6 +1023,12 @@ msgstr "تغيير لغة اللعبة."
 msgid "Change the output resolution ratio."
 msgstr "تغيير نسبة دقة الإخراج."
 
+msgid "Change the rotation of the rendered image."
+msgstr "تغيير دوران الصورة المعروضة."
+
+msgid "Change the system's language."
+msgstr "تغيير لغة النظام."
+
 msgid "Change what's plugged into the virtual GameCube ports."
 msgstr "تغيير ما هو متصل بمنافذ GameCube الافتراضية."
 
@@ -990,11 +1047,17 @@ msgstr "الصينية"
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "اختر لغة الجهاز. قد لا تدعم جميع الألعاب اختيار اللغة."
 
+msgid "Choose deinterlace option."
+msgstr "اختر خيار فك التشابك (Deinterlace)."
+
 msgid "Choose downscaling method."
 msgstr "اختر طريقة تصغير الدقة (Downscaling)."
 
 msgid "Choose mipmapping type."
 msgstr "اختر نوع Mipmapping."
+
+msgid "Choose system BIOS language."
+msgstr "اختر لغة BIOS النظام."
 
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "اختر إضافة رسومات Parallel N64."
@@ -1010,6 +1073,9 @@ msgstr "اختر الموضع على الشاشة لرسائل النظام."
 
 msgid "Choose the scaling mode for the game screen."
 msgstr "اختر وضع تغيير حجم شاشة اللعبة."
+
+msgid "Choose to render meshes as transparent polygons."
+msgstr "اختر تصيير الشبكات (Meshes) كمضلعات شفافة."
 
 msgid "Choose upscaling method."
 msgstr "اختر طريقة تكبير الدقة (Upscaling)."
@@ -1077,6 +1143,9 @@ msgstr "كوستاريكا"
 msgid "Croatia"
 msgstr "كرواتيا"
 
+msgid "Cross"
+msgstr "صليب"
+
 msgid "Current language"
 msgstr "اللغة الحالية"
 
@@ -1094,6 +1163,9 @@ msgstr "المنطقة الميتة"
 
 msgid "DEFAULT POWER ON RAM STATE"
 msgstr "حالة ذاكرة RAM الافتراضية عند التشغيل"
+
+msgid "DEINTERLACE"
+msgstr "إزالة التشابك"
 
 msgid "DEINTERLACING"
 msgstr "إزالة التشابك"
@@ -1173,6 +1245,9 @@ msgstr "وردي داكن"
 msgid "Dark Purple"
 msgstr "بنفسجي داكن"
 
+msgid "De-Interlaced"
+msgstr "مزال التشابك"
+
 msgid "December"
 msgstr "ديسمبر"
 
@@ -1206,6 +1281,9 @@ msgstr "تحديد كيفية ظهور المؤشر على الشاشة السف
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "يحدد السرعة وسلوك التقدم المسبق للنظام."
 
+msgid "Deutsch"
+msgstr "الألمانية"
+
 msgid "Digital Controller"
 msgstr "وحدة تحكم رقمية"
 
@@ -1238,6 +1316,9 @@ msgstr "جمهورية الدومينيكان"
 
 msgid "Don't Override"
 msgstr "لا تتجاوز"
+
+msgid "Dot"
+msgstr "نقطة"
 
 msgid "Double buffering"
 msgstr "تخزين مؤقت مزدوج"
@@ -1304,6 +1385,9 @@ msgstr "تمكين تصحيحات الشاشة العريضة"
 
 msgid "ENHANCED RENDERING RESOLUTION"
 msgstr "دقة عرض معززة"
+
+msgid "EXTENDED SCREEN"
+msgstr "شاشة موسّعة"
 
 msgid "Ecuador"
 msgstr "الإكوادور"
@@ -1413,6 +1497,9 @@ msgstr "الإنجليزية (الإفتراضي)"
 msgid "English/Japanese"
 msgstr "الإنجليزية/اليابانية"
 
+msgid "Enhanced sound output support for compatible games."
+msgstr "دعم مخرج صوت محسن للألعاب المتوافقة."
+
 msgid "Enhancement."
 msgstr "التحسين."
 
@@ -1445,6 +1532,9 @@ msgstr "تحسين. إزالة الحد الأقصى لثمانية كائنات
 
 msgid "Enhancement. Remove the eight sprites per line limit."
 msgstr "تحسين. إزالة الحد الأقصى لثمانية كائنات (sprites) في السطر."
+
+msgid "Enhancement. Remove the eighty sprites per line limit."
+msgstr "تحسين. إزالة الحد الأقصى لثمانين كائناً (sprites) في السطر."
 
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "تحسين. إزالة الحد الأقصى لاثنين وثلاثين كائناً (sprites) في السطر. يتسبب في تعطل بعض الألعاب."
@@ -1488,6 +1578,9 @@ msgstr "زوجي"
 msgid "Exclusive Ubershaders"
 msgstr "Ubershaders حصرية"
 
+msgid "Extend the game screen area, similar to the Master System."
+msgstr "توسيع مساحة شاشة اللعبة، على غرار Master System."
+
 msgid "External"
 msgstr "خارجي"
 
@@ -1502,6 +1595,9 @@ msgstr "FIFO مريح"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "إعدادات البرنامج الثابت (FIRMWARE)"
+
+msgid "FM SYNTHESIZER"
+msgstr "مركب الصوت FM"
 
 msgid "FMV ASPECT RATIO"
 msgstr "نسبة أبعاد FMV"
@@ -1749,6 +1845,9 @@ msgstr "لوحة ألعاب + 4 أذرع تحكم برو"
 msgid "GamePad + 4 Sideway Wiimote"
 msgstr "لوحة ألعاب + 4 أذرع وي موت جانبية"
 
+msgid "Games may run faster/slower than normal if the incorrect region is selected."
+msgstr "الألعاب قد تعمل بشكل أسرع/أبطأ من المعتاد إذا تم اختيار منظقة غير صحيحة."
+
 msgid "Gaussian"
 msgstr "جاوسي"
 
@@ -1838,6 +1937,12 @@ msgstr "مظللات هجينة"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "هايبر بلاستر/جستيفاير"
+
+msgid "IMPROVED BANDING"
+msgstr "تحسين النطاق"
+
+msgid "IMPROVED MESH"
+msgstr "شبكة محسنة"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "تحسين تقسيم المضلع"
@@ -1950,6 +2055,33 @@ msgstr "اليابانية"
 msgid "Jordan"
 msgstr "الأردن"
 
+msgid "Joypad 2 Button"
+msgstr "لوحة ألعاب 2 أزرار"
+
+msgid "Joypad 2 Button + Master Tap"
+msgstr "لوحة ألعاب 2 أزرار + ماستر تاب"
+
+msgid "Joypad 3 Button"
+msgstr "لوحة ألعاب 3 أزرار"
+
+msgid "Joypad 3 Button + 4-WayPlay"
+msgstr "لوحة ألعاب 3 أزرار + 4-WayPlay"
+
+msgid "Joypad 3 Button + Teamplayer"
+msgstr "لوحة لعب بـ 3 أزرار + Teamplayer"
+
+msgid "Joypad 6 Button"
+msgstr "لوحة لعب بـ 6 أزرار"
+
+msgid "Joypad 6 Button + 4-WayPlay"
+msgstr "لوحة لعب بـ 6 أزرار + 4-WayPlay"
+
+msgid "Joypad 6 Button + Teamplayer"
+msgstr "لوحة لعب بـ 6 أزرار + Teamplayer"
+
+msgid "Joypad Auto"
+msgstr "لوحة لعب (تلقائي)"
+
 msgid "Joystick"
 msgstr "ذراع التحكم"
 
@@ -1980,6 +2112,9 @@ msgstr "Konami Justifier (اللاعب 2)"
 msgid "Konami Justifier P2 is daisy chained from controller 2, appears as port 3 to system."
 msgstr "يتم توصيل Konami Justifier للاعب 2 بشكل متسلسل من وحدة التحكم 2، ويظهر كمنفذ 3 للنظام."
 
+msgid "Konami Justifiers"
+msgstr "Konami Justifiers"
+
 msgid "Korea"
 msgstr "كوريا"
 
@@ -2004,6 +2139,9 @@ msgstr "تأثير خيال LCD"
 msgid "LCD GHOSTING EFFECTS"
 msgstr "تأثيرات خيال LCD"
 
+msgid "LCD GHOSTING FILTER"
+msgstr "فلتر خيال LCD"
+
 msgid "LCD Ghosting (Accurate)"
 msgstr "خيال LCD (دقيق)"
 
@@ -2012,6 +2150,9 @@ msgstr "خيال LCD (سريع)"
 
 msgid "LIGHT GUN"
 msgstr "المسدس الضوئي"
+
+msgid "LIGHT GUN CROSSHAIR"
+msgstr "مؤشر تصويب مسدس الضوء"
 
 msgid "LIGHT GUNS"
 msgstr "مسدسات الضوء"
@@ -2058,6 +2199,9 @@ msgstr "أزرق فاتح"
 msgid "Light Green"
 msgstr "أخضر فاتح"
 
+msgid "Light Phaser"
+msgstr "مسدس Light Phaser"
+
 msgid "Light Pink"
 msgstr "وردي فاتح"
 
@@ -2096,6 +2240,15 @@ msgstr "لوكسمبورغ"
 
 msgid "M.A.C.S. Rifle"
 msgstr "بندقية .M.A.C.S"
+
+msgid "MAME (ASIC YM3438)"
+msgstr "MAME (ASIC YM3438)"
+
+msgid "MAME (Enhanced YM3438)"
+msgstr "MAME (YM3438 مُحسن)"
+
+msgid "MAME (YM2612)"
+msgstr "MAME (YM2612)"
 
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "أخذ عينات الإكساءات يدوياً"
@@ -2184,6 +2337,15 @@ msgstr "متوسط"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "MegaSD"
+msgstr "MegaSD"
+
+msgid "Megadrive"
+msgstr "Megadrive"
+
+msgid "Menacer Light Gun"
+msgstr "مسدس ضوء Menacer"
+
 msgid "Merge"
 msgstr "دمج"
 
@@ -2271,6 +2433,9 @@ msgstr "مرشح NTSC"
 msgid "NTSC-J"
 msgstr "NTSC-J"
 
+msgid "NTSC-U"
+msgstr "NTSC-U"
+
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
@@ -2352,8 +2517,17 @@ msgstr "عادي (افتراضي)"
 msgid "Norway"
 msgstr "النرويج"
 
+msgid "Not all games support 3D pad."
+msgstr "ليست كل الألعاب تدعم وحدة تحكم 3D."
+
 msgid "November"
 msgstr "نوفمبر"
+
+msgid "Nuked (YM2612)"
+msgstr "Nuked (YM2612)"
+
+msgid "Nuked (YM3438)"
+msgstr "Nuked (YM3438)"
 
 msgid "OFF (Default)"
 msgstr "إيقاف (الإفتراضي)"
@@ -2411,6 +2585,9 @@ msgstr "تشغيل (اختراق السرعة)"
 
 msgid "On (Vulkan Only)"
 msgstr "تشغيل (Vulkan فقط)"
+
+msgid "On (forced)"
+msgstr "تفعيل(إجباري)"
 
 msgid "Only Overscan Area"
 msgstr "منطقة المسح الزائد فقط"
@@ -2489,6 +2666,9 @@ msgstr "سلاسل SPU المفضلة"
 
 msgid "PVM Style (FirebrandX)"
 msgstr "نمط PVM (FirebrandX)"
+
+msgid "Paddle Control"
+msgstr "التحكم بالمجداف"
 
 msgid "Paddle can only be used in port 2."
 msgstr "يمكن استخدام المجداف في المنفذ 2 فقط."
@@ -2682,6 +2862,9 @@ msgstr "يقلل المضلعات المترنحة والقوام المشوه."
 msgid "Relaxed (Fastest)"
 msgstr "مرن (الأسرع)"
 
+msgid "Replace meshed transparency by real transparency."
+msgstr "استبدال الشفافية الشبكية بشفافية حقيقية."
+
 msgid "Required by some games."
 msgstr "مطلوب من بعض الألعاب."
 
@@ -2702,6 +2885,9 @@ msgstr "Wii VC مستعاد"
 
 msgid "RetroPad (Default)"
 msgstr "RetroPad (افتراضي)"
+
+msgid "Retropad (Default)"
+msgstr "Retropad (افتراضي)"
 
 msgid "Rice"
 msgstr "Rice"
@@ -2889,6 +3075,12 @@ msgstr "ذاكرة النظام"
 msgid "Safe (Default)"
 msgstr "آمن (افتراضي)"
 
+msgid "Saturn 3D Pad"
+msgstr "يد تحكم ثلاثية الأبعاد ساترن"
+
+msgid "Saturn Pad"
+msgstr "يد تحكم ساترن"
+
 msgid "Saudi Arabia"
 msgstr "السعودية"
 
@@ -2903,6 +3095,9 @@ msgstr "مقاس"
 
 msgid "Screen Resolution (Default)"
 msgstr "دقة الشاشة (افتراضي)"
+
+msgid "Sega/Mega CD"
+msgstr "Sega/Mega CD"
 
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "اختر لغة ستستخدم إذا كان \"استخدم إعدادات البرامج الثابتة(FIRMWARE)\" معطل أو ملف البرامج الثابتة(FIRMWARE) غير موجود."
@@ -3038,6 +3233,9 @@ msgstr "بعض الألعاب تواجه مشاكل عند عرض الرسوم �
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
+msgstr "مولد الصوت. MAME أسرع بينما Nuked دقيق في الدورات. الطراز الأصلي استخدم YM2612 بينما استخدمت الإصدارات اللاحقة YM3438."
 
 msgid "South Africa"
 msgstr "جنوب أفريقيا"
@@ -3176,6 +3374,9 @@ msgstr "وضع اللمس"
 
 msgid "TOUCH SCREEN MODE"
 msgstr "وضع شاشة اللمس"
+
+msgid "TRANSPARENT MESHES"
+msgstr "الشبكات الشفافة"
 
 msgid "TRILINEAR FILTERING"
 msgstr "الترشيح ثلاثي الخطوط"
@@ -3350,6 +3551,9 @@ msgstr "استخدم عصي التحكم التناظرية (Analog joysticks) �
 
 msgid "Use Host"
 msgstr "استخدم المضيف"
+
+msgid "Use Megadrive to automap inputs for a Megadrive style controller with a 6 button layout."
+msgstr "استخدم Megadrive لتعيين المدخلات تلقائيًا لوحدة تحكم على طراز Megadrive بتخطيط مكون من 6 أزرار."
 
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "استخدم SSAA بدلاً من MSAA لمكافحة التعرجات. قد تبدو SSAA أفضل ولكنها ذات تكلفة أداء أعلى."
