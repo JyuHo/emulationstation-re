@@ -1,0 +1,73 @@
+# Options of the Eden generator of es-launcher (es-launcher/src/eden/EdenGenerator.cpp).
+# Batocera has no Eden generator: the values are Eden's own (src/common/settings_enums.h).
+custom_features:
+  eden_backend:
+    group: RENDERING
+    prompt: GRAPHICS API
+    description: Choose your graphics rendering API. Vulkan is recommended.
+    choices:
+      OpenGL: "0"
+      Vulkan: "1"
+  eden_resolution:
+    group: RENDERING
+    prompt: RENDERING RESOLUTION
+    description: Render the games at a higher resolution than the Switch.
+    choices:
+      0.5x (360p/540p): "1"
+      0.75x (540p/810p): "2"
+      1x (720p/1080p): "3"
+      1.5x (1080p/1620p): "5"
+      2x (1440p/2160p): "6"
+      3x (2160p/3240p): "7"
+      4x (2880p/4320p): "8"
+  eden_vsync:
+    group: RENDERING
+    prompt: VSYNC
+    description: Synchronize the frames with the screen refresh rate.
+    choices:
+      Immediate (Off): "0"
+      Mailbox: "1"
+      FIFO (On): "2"
+      FIFO Relaxed: "3"
+  eden_ratio:
+    group: RENDERING
+    prompt: GAME ASPECT RATIO
+    choices:
+      16:9: "0"
+      4:3: "1"
+      21:9: "2"
+      16:10: "3"
+      Stretch: "4"
+  eden_antialiasing:
+    group: RENDERING
+    prompt: ANTI-ALIASING
+    choices:
+      None: "0"
+      FXAA: "1"
+      SMAA: "2"
+  eden_scaling:
+    group: RENDERING
+    prompt: SCALING FILTER
+    description: Filter used to scale the image to the screen.
+    choices:
+      Nearest Neighbor: "0"
+      Bilinear: "1"
+      Bicubic: "2"
+      Gaussian: "3"
+      ScaleForce: "5"
+      AMD FidelityFX Super Resolution: "6"
+      Area: "7"
+  eden_accuracy:
+    group: RENDERING
+    prompt: GPU ACCURACY
+    description: High accuracy fixes graphical issues in some games, at the cost of speed.
+    choices:
+      Low: "0"
+      High: "1"
+  eden_docked:
+    group: SYSTEM
+    prompt: DOCKED MODE
+    description: Run the console docked (TV) or in handheld mode.
+    choices:
+      Docked: "1"
+      Handheld: "0"

@@ -128,6 +128,25 @@ source tree: `build/emulationstation`, `build/locale/<lang>/LC_MESSAGES/*.mo` an
 gettext (`msgfmt`) is installed. To refresh the `.pot` template and the `.po` files
 after changing strings in the code, run `cmake --build build --target i18n-update`.
 
+Emulator options (`es_features.cfg`)
+------------------------------------
+
+The options of the per system and per game settings come from `features/es_features.cfg`,
+installed in `<prefix>/share/emulationstation` and linked next to `build/emulationstation`.
+It is built from Batocera's emulator definitions and only keeps the emulators and options
+es-launcher handles. After adding an option to a generator, rebuild it from a batocera.linux
+checkout (`pip install ruamel.yaml`):
+
+```bash
+git clone --depth 1 https://github.com/batocera-linux/batocera.linux.git /tmp/batocera
+python3 features/build_es_features.py /tmp/batocera
+```
+
+This also refreshes the translations of the options (`locale/features/<lang>.po`). Options
+of an emulator Batocera does not have go in `features/<emulator>.emulator.yml` (Eden).
+An `es_features.cfg` in `~/.config/emulationstation` replaces the installed one, and
+`es_features_*.cfg` files add to it.
+
 Running from the build folder
 -----------------------------
 
