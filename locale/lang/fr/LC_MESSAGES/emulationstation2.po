@@ -4253,3 +4253,12 @@ msgstr "EMULATIONSTATION A ÉTÉ MIS À JOUR. LE REDÉMARRER MAINTENANT ?"
 
 msgid "The update was not authorized"
 msgstr "La mise à jour n'a pas été autorisée"
+
+msgid "CHECK FOR UPDATES AT STARTUP"
+msgstr "VÉRIFIER LES MISES À JOUR AU DÉMARRAGE"
+
+msgid "Shows a notification in the top right corner when a new version is available."
+msgstr "Affiche une notification en haut à droite quand une nouvelle version est disponible."
+
+msgid "UPDATE %s AVAILABLE"
+msgstr "MISE À JOUR %s DISPONIBLE"

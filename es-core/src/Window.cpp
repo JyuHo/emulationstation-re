@@ -291,6 +291,16 @@ static std::mutex mNotificationMessagesLock;
 
 void Window::displayNotificationMessage(std::string message, int duration)
 {
+	queueNotificationMessage(message, duration, false);
+}
+
+void Window::displayCornerNotificationMessage(std::string message, int duration)
+{
+	queueNotificationMessage(message, duration, true);
+}
+
+void Window::queueNotificationMessage(const std::string& message, int duration, bool corner)
+{
 	std::unique_lock<std::mutex> lock(mNotificationMessagesLock);
 
 	if (duration <= 0)
@@ -305,6 +315,7 @@ void Window::displayNotificationMessage(std::string message, int duration)
 	NotificationMessage msg;
 	msg.first = message;
 	msg.second = duration;
+	msg.corner = corner;
 	mNotificationMessages.push_back(msg);
 }
 
@@ -324,7 +335,7 @@ void Window::processNotificationMessages()
 	if (mNotificationPopups.size() == 0)
 		PowerSaver::pause();
 
-	auto infoPopup = new GuiInfoPopup(this, msg.first, msg.second);
+	auto infoPopup = new GuiInfoPopup(this, msg.first, msg.second, msg.corner ? GuiInfoPopup::Align::RIGHT : GuiInfoPopup::Align::CENTER);
 	mNotificationPopups.push_back(infoPopup);
 
 	layoutNotificationPopups();
@@ -375,11 +386,17 @@ void Window::updateNotificationPopups(int deltaTime)
 
 void Window::layoutNotificationPopups()
 {
-	float posY = Renderer::getScreenHeight() * 0.02f;
-	int paddingY = (int)posY;
+	float top = Renderer::getScreenHeight() * 0.02f;
+	int paddingY = (int)top;
+
+	// the centered popups and the corner ones are two separate stacks
+	float centerY = top;
+	float cornerY = top;
 
 	for (auto popup : mNotificationPopups)
 	{
+		float& posY = popup->getAlign() == GuiInfoPopup::Align::RIGHT ? cornerY : centerY;
+
 		float fadingOut = popup->getFadeOut();
 		if (fadingOut != 0)
 		{

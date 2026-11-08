@@ -11,7 +11,9 @@ class NinePatchComponent;
 class GuiInfoPopup : public GuiComponent
 {
 public:
-	GuiInfoPopup(Window* window, std::string message, int duration);
+	enum class Align { CENTER, RIGHT }; // horizontally, at the top of the screen
+
+	GuiInfoPopup(Window* window, std::string message, int duration, Align align = Align::CENTER);
 
 	void render(const Transform4x4f& parentTrans) override;	
 	void update(int deltaTime) override;
@@ -20,8 +22,10 @@ public:
 	bool isRunning() { return mRunning; };
 
 	std::string         getMessage() { return mMessage; }
+	Align               getAlign() { return mAlign; }
 
 private:
+	Align               mAlign;
 	std::string         mMessage;
 
 	int                 mStartTime;

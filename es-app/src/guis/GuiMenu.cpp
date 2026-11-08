@@ -803,6 +803,7 @@ void GuiMenu::openUpdatesSettings()
 		if (checkNetwork())
 			checkSelfUpdate(mWindow);
 	});
+	updateGui->addSwitch(_("CHECK FOR UPDATES AT STARTUP"), _("Shows a notification in the top right corner when a new version is available."), "CheckUpdatesAtStartup", true, nullptr);
 
 	updateGui->addGroup(_("DOWNLOADS"));
 

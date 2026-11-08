@@ -45,6 +45,11 @@ release's `SHA256SUMS` and installs it with pacman or apt, run as root by `pkexe
 policy lets the active local session do this without a password; it needs `curl` and `pkexec`
 (package `polkit` on Arch, `pkexec` on Debian).
 
+ES also looks at `latest.json` by itself, 10 seconds after it starts and then once a day: when a
+newer version is out, a small notification shows in the top right corner, and nothing shows
+otherwise, network errors included. **Check for updates at startup**, in the same menu, turns
+this off.
+
 The release packages get their [API keys](#api-keys) from the repository's GitHub Actions
 secrets (see [Keys in the release packages](#keys-in-the-release-packages)). A service whose key
 is not set there (ScreenScraper, TheGamesDB, HfsDB, RetroAchievements) is not available in them.
