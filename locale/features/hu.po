@@ -285,6 +285,9 @@ msgstr "3x Natív (~1080p)"
 msgid "3x native (768 x 576)"
 msgstr "3x natív (768 x 576)"
 
+msgid "4 PLAYER ADAPTER"
+msgstr "4 JÁTÉKOS ADAPTER"
+
 msgid "4 threads"
 msgstr "4 szál"
 
@@ -501,6 +504,9 @@ msgstr "Adaptív (az alsó mező az első)"
 msgid "Adaptive (Top Field First)"
 msgstr "Adaptív (a felső mező az első)"
 
+msgid "Add color to Game Boy games."
+msgstr "Színt ad a Game Boy játékokhoz."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "A Full Motion Video filmek képarányának beállítása."
 
@@ -537,6 +543,9 @@ msgstr "Lehetővé teszi a védett játékok betöltését alcsatorna-informáci
 msgid "Allows reducing the visual quality of these curves for higher performance."
 msgstr "Lehetővé teszi ezen görbék vizuális minőségének csökkentését a jobb teljesítmény érdekében."
 
+msgid "Allows up to 5 or 8 controllers in supported games."
+msgstr "Legfeljebb 5 vagy 8 kontrollert tesz lehetővé a támogatott játékokban."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Legfeljebb 8 vezérlőt tesz lehetővé a támogatott játékokban."
 
@@ -545,6 +554,18 @@ msgstr "Lehetővé teszi a felhasználó által cserélhető textúrákat."
 
 msgid "Always"
 msgstr "Mindig"
+
+msgid "Analog Controller"
+msgstr "Analóg vezérlő"
+
+msgid "Analog Controller (DualShock)"
+msgstr "Analóg vezérlő (DualShock)"
+
+msgid "Analog Joystick"
+msgstr "Analóg Joystick"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "Analóg Joystick (Flystick)"
 
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (Leginkább kompatibilis)"
@@ -789,6 +810,9 @@ msgstr "CPU"
 msgid "CPU CORE"
 msgstr "CPU MAG"
 
+msgid "CPU DYNAREC (SPEED UP)"
+msgstr "CPU DYNAREC (GYORSABB)"
+
 msgid "CPU EXECUTION MODE"
 msgstr "CPU VÉGREHAJTÁSI MÓD"
 
@@ -806,6 +830,9 @@ msgstr "KURZOR IDŐTÚLLÉPÉSE"
 
 msgid "CUSTOMIZE EMULATED WIIMOTE & GAMEPAD"
 msgstr "EMULÁLT WIIMOTE ÉS GAMEPAD TESTRESZABÁSA"
+
+msgid "CXA2025AS (JP)"
+msgstr "CXA2025AS (JP)"
 
 msgid "CXD4 (LLE Fallback)"
 msgstr "CXD4 (LLE Fallback)"
@@ -996,6 +1023,9 @@ msgstr "DITHERING"
 msgid "DK Bongos"
 msgstr "DK Bongók"
 
+msgid "DMA Only (Slightly Faster)"
+msgstr "Csak DMA (kissé gyorsabb)"
+
 msgid "DOLBY PRO LOGIC II"
 msgstr "DOLBY PRO LOGIC II"
 
@@ -1013,6 +1043,9 @@ msgstr "DSi"
 
 msgid "DUAL CORE MODE"
 msgstr "KETTŐS MAG ÜZEMMÓD"
+
+msgid "DYNAREC CODE INVALIDATION"
+msgstr "DYNAREC KÓD ÉRVÉNYTELENÍTÉSE"
 
 msgid "Dance Mat"
 msgstr "Táncszőnyeg"
@@ -1062,6 +1095,15 @@ msgstr "Meghatározza, hogy a kurzor hogyan jelenjen meg a képernyő alján."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Meghatározza a rendszer sebességét és az előrefutás viselkedését."
 
+msgid "Digital Controller"
+msgstr "Digitális vezérlő"
+
+msgid "Digital Controller (Gamepad)"
+msgstr "Digitális vezérlő (Gamepad)"
+
+msgid "Digital Prime FBX"
+msgstr "Digital Prime FBX"
+
 msgid "Disabled"
 msgstr "Letiltva"
 
@@ -1082,6 +1124,15 @@ msgstr "Ne bírálja felül"
 
 msgid "Double buffering"
 msgstr "Dupla pufferelés"
+
+msgid "Double the rendering resolution."
+msgstr "Duplázza meg a renderelési felbontást."
+
+msgid "DualShock Controller"
+msgstr "DualShock vezérlő"
+
+msgid "DualShock has rumble support. Not all games support DualShock."
+msgstr "A DualShock dübörgés támogatással rendelkezik. Nem minden játék támogatja a DualShock-ot."
 
 msgid "During gameplay, press Hotkey + R1 to translate on-screen text. Only on libretro cores."
 msgstr "Játék közben a képernyőn megjelenő szöveg lefordításához nyomja meg a Hotkey + R1 billentyűkombinációt. Csak libretro magokon."
@@ -1130,6 +1181,9 @@ msgstr "AZ IDŐNYÚJTÁS ENGEDÉLYEZÉSE"
 
 msgid "ENABLE WIDESCREEN PATCHES"
 msgstr "SZÉLESKÉPERNYŐ JAVÍTÁSOK ENGEDÉLYEZÉSE"
+
+msgid "ENHANCED RENDERING RESOLUTION"
+msgstr "FEJLESZTETT MEGJELENÍTÉSI FELBONTÁS"
 
 msgid "Ecuador"
 msgstr "Equador"
@@ -1260,6 +1314,9 @@ msgstr "Fokozás. Távolítsa el a harminckét sprite soronkénti korlátot. Ös
 msgid "Enhancement. Removes disc loading."
 msgstr "Fejlesztés. Eltávolítja a lemez betöltését."
 
+msgid "Enhancement. Skipping it can break some games."
+msgstr "Fejlesztés. Ennek kihagyása néhány játékot tönkretehet."
+
 msgid "Enhancement. Smooth out jagged edges on 3D object polygons."
 msgstr "Fokozás. Simítsa ki a szaggatott éleket a 3D objektumok sokszögein."
 
@@ -1268,6 +1325,9 @@ msgstr "Fokozás. Simítsa ki a szaggatott éleket a 3D objektumok sokszögein."
 
 msgid "Enhancement. Smooth/upscale textures on 3D objects."
 msgstr "Fejlesztés. 3D objektumok textúráinak simítása/növelése."
+
+msgid "Enhancement. Smooth/upscale textures."
+msgstr "További. Simított/felskálázott textúrák."
 
 msgid "Enhancement. Upscale textures."
 msgstr "Fokozás. Textúrák felskálázása."
@@ -1305,6 +1365,9 @@ msgstr "FMV film deinterlacing."
 msgid "FORCE NTSC TIMINGS ON PAL"
 msgstr "NTSC IDŐZÍTÉS KÉNYSZERÍTÉSE PAL-ON"
 
+msgid "FRAME DUPING (SPEED UP)"
+msgstr "KERET DUGULÁS (GYORSÍTÁS)"
+
 msgid "FRAME LIMIT"
 msgstr "KÉPKOCKA LIMIT"
 
@@ -1322,6 +1385,9 @@ msgstr "KÉPKOCKA-KIHAGYÁS VEZÉRLÉSE"
 
 msgid "FXAA"
 msgstr "FXAA"
+
+msgid "Famicom (FDS)"
+msgstr "Famicom (FDS)"
 
 msgid "Faroe Islands"
 msgstr "Feröer"
@@ -1356,6 +1422,12 @@ msgstr "Javítsa ki a képernyő szakadását. CPU terhelő."
 msgid "Fix texture banding when upscaling."
 msgstr "A textúra sávosodásának javítása felskálázáskor."
 
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "Gyro-kompatibilis játékokhoz (bal oldali analóg karhoz kötve)"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "For Gyro-enabled games (bound to right analog stick)"
+
 msgid "For emulators and controllers supporting force feedback."
 msgstr "Erővisszacsatolást támogató emulátorokhoz és vezérlőkhöz."
 
@@ -1388,6 +1460,9 @@ msgstr "Teljes (gyorsítótár)"
 
 msgid "Full (Slow)"
 msgstr "Teljes (lassú)"
+
+msgid "Full (more compatible)"
+msgstr "Teljes (kompatibilisebb)"
 
 msgid "Full speed"
 msgstr "Teljes sebesség"
@@ -1445,6 +1520,9 @@ msgstr "GB - Zseb"
 
 msgid "GB - Smart Coloring"
 msgstr "GB - Intelligens színezés"
+
+msgid "GB COLORIZATION"
+msgstr "GB SZÍNEZÉS"
 
 msgid "GBC - Blue"
 msgstr "GBC - kék"
@@ -1539,6 +1617,9 @@ msgstr "Szürke"
 msgid "Greece"
 msgstr "Görögország"
 
+msgid "Green"
+msgstr "Zöld"
+
 msgid "Guatemala"
 msgstr "Guatemala"
 
@@ -1589,6 +1670,9 @@ msgstr "Hybrid Screen Top"
 
 msgid "Hybrid Ubershaders"
 msgstr "Hybrid Ubershaders"
+
+msgid "Hyper Blaster/Justifier"
+msgstr "Hyper Blaster/Justifier"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "TOVÁBBFEJLESZTETT POLIGONFELOSZTÁS"
@@ -1710,6 +1794,9 @@ msgstr "Július"
 msgid "June"
 msgstr "Június"
 
+msgid "Justifier"
+msgstr "Igazoló"
+
 msgid "Kazakhstan"
 msgstr "Kazahsztán"
 
@@ -1806,6 +1893,9 @@ msgstr "Világos lila"
 msgid "Light guns can only be used in port 2."
 msgstr "A fénypuskák csak a 2-es porton használhatók."
 
+msgid "Lightrec Interpreter"
+msgstr "Lightrec fordító"
+
 msgid "Lime"
 msgstr "Lime"
 
@@ -1854,6 +1944,9 @@ msgstr "TÖBBSZÁLAS RSX"
 msgid "Macau"
 msgstr "Makaó"
 
+msgid "Magnum FBX"
+msgstr "Magnum FBX"
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "Nagyobb felbontásoknál sokkal kevésbé nyilvánvalóvá teszi a dither-mintázatot."
 
@@ -1862,6 +1955,9 @@ msgstr "Malajzia"
 
 msgid "Maldives"
 msgstr "Maldív-szigetek"
+
+msgid "Manually activate the adapter for supported games."
+msgstr "Manuálisan aktiválja az adaptert a támogatott játékokhoz."
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Rendelje hozzá a kontrollert egy emulált Wiimote-hoz."
@@ -1874,6 +1970,9 @@ msgstr "Egyeztetési ablak"
 
 msgid "Max (demanding games)"
 msgstr "Max (igényes játékok)"
+
+msgid "Max Performance"
+msgstr "Max teljesítmény"
 
 msgid "Maximum (Very Slow)"
 msgstr "Maximális (nagyon lassú)"
@@ -1932,11 +2031,17 @@ msgstr "Monokróm"
 msgid "Monochrome (Blargg)"
 msgstr "Monokróm (Blargg)"
 
+msgid "More accurate emulation, but slower."
+msgstr "Pontosabb emuláció, de lassabb."
+
 msgid "Morocco"
 msgstr "Marokkó"
 
 msgid "Mouse"
 msgstr "Egér"
+
+msgid "Much faster than interpreter (but may have issues)."
+msgstr "Sokkal gyorsabb, mint a fordító (de lehetnek problémák)."
 
 msgid "NAT"
 msgstr "NAT"
@@ -1959,6 +2064,21 @@ msgstr "HÁLÓZAT TÍPUSA"
 msgid "NEW 3DS MODE"
 msgstr "ÚJ 3DS MÓD"
 
+msgid "NTSC (Composite)"
+msgstr "NTSC (Composite)"
+
+msgid "NTSC (NES)"
+msgstr "NTSC (NES)"
+
+msgid "NTSC (RF)"
+msgstr "NTSC (RF)"
+
+msgid "NTSC (RGB)"
+msgstr "NTSC (RGB)"
+
+msgid "NTSC (S-Video)"
+msgstr "NTSC (S-Video)"
+
 msgid "NTSC FILTER"
 msgstr "NTSC SZŰRŐ"
 
@@ -1968,6 +2088,9 @@ msgstr "NTSC-J"
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
+msgid "Namco GunCon"
+msgstr "Namco GunCon"
+
 msgid "Nat to access internet from xemu machine. Udp for System Link. Default (Auto) disables network access."
 msgstr "Nat internet-hozzáférés a xemu gépről. Udp for System Link. Az alapértelmezett (Auto) letiltja a hálózati hozzáférést."
 
@@ -1976,6 +2099,12 @@ msgstr "Native"
 
 msgid "Native (PS2)(Default)"
 msgstr "Natív (PS2)(alapértelmezett)"
+
+msgid "NeGcon"
+msgstr "NeGcon"
+
+msgid "NeGcon (Rumble)"
+msgstr "NeGcon (Rezgő)"
 
 msgid "Nearest"
 msgstr "Legközelebbi"
@@ -2073,6 +2202,9 @@ msgstr "Ki (zajos)"
 msgid "Off (None)"
 msgstr "Ki (Nincs)"
 
+msgid "Off is safer, On for specific games."
+msgstr "A kikapcsolt állapot biztonságosabb, a bekapcsolt állapot bizonyos játékokhoz."
+
 msgid "Oman"
 msgstr "Omán"
 
@@ -2082,11 +2214,17 @@ msgstr "Be"
 msgid "On (Default)"
 msgstr "Be (alapértelmezett)"
 
+msgid "On (Speed hack)"
+msgstr "Be (Sebesség hack)"
+
 msgid "On (Vulkan Only)"
 msgstr "Be (Csak Vulkan)"
 
 msgid "Only Overscan Area"
 msgstr "Csak Overscan terület"
+
+msgid "Only for games that employed it (for Boktai)"
+msgstr "Csak azokhoz a játékokhoz, amelyek ezt alkalmazták (Boktai esetében)"
 
 msgid "Only increase the image size in integer multiples."
 msgstr "Csak egész számú többszörösökben növelje a képméretet."
@@ -2132,6 +2270,12 @@ msgstr "TELJESÍTMÉNY"
 
 msgid "PERFORMANCE HACKS"
 msgstr "TELJESÍTMÉNY HACKEK"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "JÁTÉKOS 1 CÉLKERESZT SZÍNE"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "JÁTÉKOS 2 CÉLKERESZT SZÍNE"
 
 msgid "PPU DECODER"
 msgstr "PPU DEKÓDOLÓ"
@@ -2193,6 +2337,9 @@ msgstr "Peru"
 msgid "Philippines"
 msgstr "Fülöp-szigetek"
 
+msgid "PlayStation Mouse"
+msgstr "PlayStation egér"
+
 msgid "Pointer"
 msgstr "Mutató"
 
@@ -2201,6 +2348,24 @@ msgstr "Lengyelország"
 
 msgid "Polish"
 msgstr "Lengyel"
+
+msgid "Port 1"
+msgstr "1. port"
+
+msgid "Port 1+2"
+msgstr "1 + 2 port"
+
+msgid "Port 2"
+msgstr "2. port"
+
+msgid "Port1"
+msgstr "Port1"
+
+msgid "Port1+2"
+msgstr "Port1+2"
+
+msgid "Port2"
+msgstr "Port2"
 
 msgid "Portugal"
 msgstr "Portugália"
@@ -2286,6 +2451,9 @@ msgstr "REZGÉS SZINT"
 msgid "Random Values"
 msgstr "Véletlen értékek"
 
+msgid "Raw"
+msgstr "Nyers"
+
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Újrafordító (Leggyorsabb)(Alapértelmezett)"
 
@@ -2315,6 +2483,9 @@ msgstr "BIOS-fájl megléte szükséges."
 
 msgid "Resampling (Pirch Shift)"
 msgstr "Újramintavételezés (Pirch Shift)"
+
+msgid "Restored Wii VC"
+msgstr "Felújított Wii VC"
 
 msgid "Right Stick"
 msgstr "Jobb kar"
@@ -2363,6 +2534,12 @@ msgstr "SDL2"
 
 msgid "SENSOR BAR POSITION"
 msgstr "ÉRZÉKELŐRÁR POZÍCIÓJA"
+
+msgid "SENSOR SENSITIVITY (GYROSCOPE)"
+msgstr "SENSOR SENSITIVITY (GYROSCOPE)"
+
+msgid "SENSOR SENSITIVITY (TILT)"
+msgstr "ÉRZÉKELŐ ÉRZÉKENYSÉGE (TILT)"
 
 msgid "SHOW ACHIEVEMENT MESSAGES"
 msgstr "EREDMÉNYÜZENETEK MUTATÁSA"
@@ -2571,6 +2748,9 @@ msgstr "Szlovákia"
 msgid "Slovenia"
 msgstr "Szlovénia"
 
+msgid "Small performance increase (may drop frames)."
+msgstr "Kismértékű teljesítménynövekedés (a képkockák kieshetnek)."
+
 msgid "Smaller"
 msgstr "Kisebb"
 
@@ -2585,6 +2765,9 @@ msgstr "Sima 3"
 
 msgid "Smooth 4"
 msgstr "Sima 4"
+
+msgid "Smooth V2 FBX"
+msgstr "Smooth V2 FBX"
 
 msgid "Smooth textures on 3D objects."
 msgstr "Sima textúrák 3D objektumokon."
@@ -2660,6 +2843,9 @@ msgstr "Nyújtsd ki teljesen"
 
 msgid "Stretch to window"
 msgstr "Nyújtás az ablakhoz"
+
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
@@ -2856,6 +3042,9 @@ msgstr "DSP AUDIO HASZNÁLATA"
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "HASZNÁLJON MEGELŐZŐ KERETET"
 
+msgid "USE SOFTWARE RENDERING"
+msgstr "SZOFTVERES RENDERELÉS HASZNÁLATA"
+
 msgid "Ukraine"
 msgstr "Ukrajna"
 
@@ -2921,6 +3110,9 @@ msgstr "Üzbegisztán"
 
 msgid "VBI SKIP"
 msgstr "VBI SKIP (KIHAGYÁS)"
+
+msgid "VIDEO FILTERS"
+msgstr "VIDEÓSZŰRŐK"
 
 msgid "VIDEO SETTINGS"
 msgstr "KÉP BEÁLLÍTÁSOK"
@@ -2991,6 +3183,9 @@ msgstr "Ha a 100%-os értéken kívül fut, a képkockák eldobása helyett a h�
 msgid "While Touching"
 msgstr "Érintés közben"
 
+msgid "White"
+msgstr "Fehér"
+
 msgid "Widescreen (16:9)"
 msgstr "Widescreen (16:9)"
 
@@ -3002,6 +3197,9 @@ msgstr "A Wii NAND nyelvi beállítása."
 
 msgid "Wii U Classic Controller"
 msgstr "Wii U Classic kontroller"
+
+msgid "Wii Virtual Console"
+msgstr "Wii virtuális konzol"
 
 msgid "Wiimote Sideway"
 msgstr "Wiimote Sideway"
@@ -3039,14 +3237,44 @@ msgstr "ZCULL PONTOSSÁG"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Nagyítás a fekete keretek elrejtéséhez. A határok játékonként eltérőek."
 
+msgid "black and white"
+msgstr "fekete és fehér"
+
+msgid "blue sea"
+msgstr "kéktenger"
+
+msgid "cxa2025as (US)"
+msgstr "cxa2025as (US)"
+
+msgid "dark knight"
+msgstr "sötét lovag"
+
 msgid "diagonal filter"
 msgstr "diagonális szűrő"
+
+msgid "gba sp"
+msgstr "gba sp"
+
+msgid "green forest"
+msgstr "zöld erdő"
+
+msgid "hot desert"
+msgstr "forró sivatag"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original gameboy"
+msgstr "eredeti gameboy"
+
+msgid "pink dreams"
+msgstr "rózsaszín álmok"
+
+msgid "royaltea"
+msgstr "royaltea"
 
 msgid "scanlines"
 msgstr "scanlines"
@@ -3059,6 +3287,9 @@ msgstr "háromszögszűrő"
 
 msgid "wave filter"
 msgstr "hullámszűrő"
+
+msgid "weird colors"
+msgstr "furcsa színek"
 
 msgid "xBR (Very Slow)"
 msgstr "xBR (nagyon lassú)"

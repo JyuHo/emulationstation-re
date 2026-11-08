@@ -285,6 +285,9 @@ msgstr "3x 原生解析度 (~1080p)"
 msgid "3x native (768 x 576)"
 msgstr "3x 原生解析度 (768 x 576)"
 
+msgid "4 PLAYER ADAPTER"
+msgstr "4人擴充器"
+
 msgid "4 threads"
 msgstr "4 執行緒"
 
@@ -501,6 +504,9 @@ msgstr "自動調整 (底部優先)"
 msgid "Adaptive (Top Field First)"
 msgstr "自動調整 (上方優先)"
 
+msgid "Add color to Game Boy games."
+msgstr "為 Game Boy 遊戲增加顏色。"
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "調整全動態影片的長寬比。"
 
@@ -537,6 +543,9 @@ msgstr "允許讀取沒有子頻道資訊的受保護遊戲。"
 msgid "Allows reducing the visual quality of these curves for higher performance."
 msgstr "允許降低這些曲線的畫質，以提升效能。"
 
+msgid "Allows up to 5 or 8 controllers in supported games."
+msgstr "允許在支援的遊戲使用5到8個控制器。"
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "允許在支援的遊戲使用最多8個控制器。"
 
@@ -545,6 +554,18 @@ msgstr "允許使用者更換紋理材質。"
 
 msgid "Always"
 msgstr "總是"
+
+msgid "Analog Controller"
+msgstr "類比控制器"
+
+msgid "Analog Controller (DualShock)"
+msgstr "類比控制器 (DualShock)"
+
+msgid "Analog Joystick"
+msgstr "類比搖桿"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "類比搖桿 (Flystick)"
 
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (最相容)"
@@ -780,6 +801,9 @@ msgstr "CPU"
 msgid "CPU CORE"
 msgstr "CPU 核心"
 
+msgid "CPU DYNAREC (SPEED UP)"
+msgstr "CPU DYNAREC (加速)"
+
 msgid "CPU EXECUTION MODE"
 msgstr "CPU 執行模式"
 
@@ -972,6 +996,9 @@ msgstr "抖色"
 msgid "DK Bongos"
 msgstr "DK Bongos"
 
+msgid "DMA Only (Slightly Faster)"
+msgstr "僅 DMA（稍快）"
+
 msgid "DOLBY PRO LOGIC II"
 msgstr "DOLBY PRO LOGIC II"
 
@@ -989,6 +1016,9 @@ msgstr "DSi"
 
 msgid "DUAL CORE MODE"
 msgstr "雙核模式"
+
+msgid "DYNAREC CODE INVALIDATION"
+msgstr "DYNAREC 代碼失效"
 
 msgid "Dance Mat"
 msgstr "跳舞墊"
@@ -1038,6 +1068,12 @@ msgstr "確定遊標在底部螢幕上的顯示方式。"
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "確定系統的速度和超前行為。"
 
+msgid "Digital Controller"
+msgstr "數位控制器"
+
+msgid "Digital Controller (Gamepad)"
+msgstr "數位控制器 (手把)"
+
 msgid "Disabled"
 msgstr "停用"
 
@@ -1058,6 +1094,15 @@ msgstr "不要覆寫"
 
 msgid "Double buffering"
 msgstr "雙重緩衝"
+
+msgid "Double the rendering resolution."
+msgstr "加倍的算繪解析度。"
+
+msgid "DualShock Controller"
+msgstr "DualShock 控制器"
+
+msgid "DualShock has rumble support. Not all games support DualShock."
+msgstr "DualShock 支援震動功能。並非所有遊戲都支援 DualShock。"
 
 msgid "During gameplay, press Hotkey + R1 to translate on-screen text. Only on libretro cores."
 msgstr "遊戲中按 熱鍵+R1 翻譯螢幕上的文本。僅適用於libretro核心。"
@@ -1106,6 +1151,9 @@ msgstr "啟用時間拉伸"
 
 msgid "ENABLE WIDESCREEN PATCHES"
 msgstr "啟用寬螢幕補丁"
+
+msgid "ENHANCED RENDERING RESOLUTION"
+msgstr "加強型算繪解析度"
 
 msgid "Ecuador"
 msgstr "Ecuador"
@@ -1236,6 +1284,9 @@ msgstr "增強。取消每行32個精靈的限制，某些遊戲可能崩潰。"
 msgid "Enhancement. Removes disc loading."
 msgstr "增強。移除光碟載入。"
 
+msgid "Enhancement. Skipping it can break some games."
+msgstr "增強。跳過它會破壞一些遊戲。"
+
 msgid "Enhancement. Smooth out jagged edges on 3D object polygons."
 msgstr "增強。平滑3D物件多邊形上的鋸齒狀邊緣。"
 
@@ -1244,6 +1295,9 @@ msgstr "增強。平滑3D物件多邊形上的鋸齒狀邊緣。"
 
 msgid "Enhancement. Smooth/upscale textures on 3D objects."
 msgstr "增強。平滑/升級3D物件上的紋理。"
+
+msgid "Enhancement. Smooth/upscale textures."
+msgstr "增強。平滑/升級紋理。"
 
 msgid "Enhancement. Upscale textures."
 msgstr "增強。升級紋理。"
@@ -1281,6 +1335,9 @@ msgstr "FMV 影片去交錯。"
 msgid "FORCE NTSC TIMINGS ON PAL"
 msgstr "在PAL上強制NTSC計時"
 
+msgid "FRAME DUPING (SPEED UP)"
+msgstr "影格複製(加速)"
+
 msgid "FRAME LIMIT"
 msgstr "影格限制"
 
@@ -1298,6 +1355,9 @@ msgstr "影格跳格控制"
 
 msgid "FXAA"
 msgstr "FXAA"
+
+msgid "Famicom (FDS)"
+msgstr "Famicom (FDS)"
 
 msgid "Faroe Islands"
 msgstr "Faroe Islands"
@@ -1332,6 +1392,12 @@ msgstr "修復螢幕撕裂。CPU吃重。"
 msgid "Fix texture banding when upscaling."
 msgstr "放大時修復紋理條帶。"
 
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "對於啟用陀螺儀的遊戲(綁定到左側模擬搖桿)"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "對於啟用陀螺儀的遊戲(綁定到右側模擬搖桿)"
+
 msgid "For emulators and controllers supporting force feedback."
 msgstr "用於支援力回饋的模擬器與控制器。"
 
@@ -1364,6 +1430,9 @@ msgstr "全部(雜湊快取)"
 
 msgid "Full (Slow)"
 msgstr "全部(慢)"
+
+msgid "Full (more compatible)"
+msgstr "全部(更相容)"
 
 msgid "Full speed"
 msgstr "全速"
@@ -1421,6 +1490,9 @@ msgstr "GB - Pocket"
 
 msgid "GB - Smart Coloring"
 msgstr "GB - 智慧著色"
+
+msgid "GB COLORIZATION"
+msgstr "GB 彩色化"
 
 msgid "GBC - Blue"
 msgstr "GBC - 藍"
@@ -1515,6 +1587,9 @@ msgstr "灰"
 msgid "Greece"
 msgstr "Greece"
 
+msgid "Green"
+msgstr "綠"
+
 msgid "Guatemala"
 msgstr "Guatemala"
 
@@ -1562,6 +1637,9 @@ msgstr "Hybrid Screen Top"
 
 msgid "Hybrid Ubershaders"
 msgstr "Hybrid Ubershaders"
+
+msgid "Hyper Blaster/Justifier"
+msgstr "Hyper Blaster/Justifier"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "改進的多邊形分割"
@@ -1683,6 +1761,9 @@ msgstr "七月"
 msgid "June"
 msgstr "六月"
 
+msgid "Justifier"
+msgstr "Justifier"
+
 msgid "Kazakhstan"
 msgstr "Kazakhstan"
 
@@ -1779,6 +1860,9 @@ msgstr "Light Purple"
 msgid "Light guns can only be used in port 2."
 msgstr "光槍​​只能在2號接口使用。"
 
+msgid "Lightrec Interpreter"
+msgstr "Lightrec 解譯器"
+
 msgid "Lime"
 msgstr "Lime"
 
@@ -1836,6 +1920,9 @@ msgstr "Malaysia"
 msgid "Maldives"
 msgstr "Maldives"
 
+msgid "Manually activate the adapter for supported games."
+msgstr "手動啟動支援遊戲的適配器。"
+
 msgid "Map your controller to an emulated Wiimote."
 msgstr "将您的控制器映射到仿真Wiimote。"
 
@@ -1847,6 +1934,9 @@ msgstr "匹配視窗"
 
 msgid "Max (demanding games)"
 msgstr "最大 (要求苛刻的遊戲)"
+
+msgid "Max Performance"
+msgstr "最大表現"
 
 msgid "Maximum (Very Slow)"
 msgstr "最大值（非常慢）"
@@ -1905,11 +1995,17 @@ msgstr "單色"
 msgid "Monochrome (Blargg)"
 msgstr "單色 (Blargg)"
 
+msgid "More accurate emulation, but slower."
+msgstr "模擬較準確，但速度較慢。"
+
 msgid "Morocco"
 msgstr "Morocco"
 
 msgid "Mouse"
 msgstr "滑鼠"
+
+msgid "Much faster than interpreter (but may have issues)."
+msgstr "比解譯器快得多（但可能有問題）。"
 
 msgid "NAT"
 msgstr "NAT"
@@ -1932,6 +2028,21 @@ msgstr "網路類型"
 msgid "NEW 3DS MODE"
 msgstr "新3DS模式"
 
+msgid "NTSC (Composite)"
+msgstr "NTSC (Composite)"
+
+msgid "NTSC (NES)"
+msgstr "NTSC (NES)"
+
+msgid "NTSC (RF)"
+msgstr "NTSC (RF)"
+
+msgid "NTSC (RGB)"
+msgstr "NTSC (RGB)"
+
+msgid "NTSC (S-Video)"
+msgstr "NTSC (S-Video)"
+
 msgid "NTSC FILTER"
 msgstr "NTSC 過濾器"
 
@@ -1941,6 +2052,9 @@ msgstr "NTSC-J"
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
+msgid "Namco GunCon"
+msgstr "Namco GunCon光槍"
+
 msgid "Nat to access internet from xemu machine. Udp for System Link. Default (Auto) disables network access."
 msgstr "Nat從xemu機器存取網路。系統連結UDP。預設（自動）停用網路存取。"
 
@@ -1949,6 +2063,12 @@ msgstr "原生"
 
 msgid "Native (PS2)(Default)"
 msgstr "原生 (PS2)(預設)"
+
+msgid "NeGcon"
+msgstr "NeGcon"
+
+msgid "NeGcon (Rumble)"
+msgstr "NeGcon (Rumble)"
 
 msgid "Nearest"
 msgstr "最接近的"
@@ -2040,6 +2160,9 @@ msgstr "關閉(噪聲)"
 msgid "Off (None)"
 msgstr "關閉(無)"
 
+msgid "Off is safer, On for specific games."
+msgstr "關閉更安全，開啟則適用於特定遊戲。"
+
 msgid "Oman"
 msgstr "Oman"
 
@@ -2049,11 +2172,17 @@ msgstr "開啟"
 msgid "On (Default)"
 msgstr "開啟(預設)"
 
+msgid "On (Speed hack)"
+msgstr "開啟(快速)"
+
 msgid "On (Vulkan Only)"
 msgstr "開啟(僅限Vulkan)"
 
 msgid "Only Overscan Area"
 msgstr "僅限過掃描區域"
+
+msgid "Only for games that employed it (for Boktai)"
+msgstr "僅適用於使用它的遊戲（例如 Boktai）"
 
 msgid "Only increase the image size in integer multiples."
 msgstr "僅以整數倍放大圖像。"
@@ -2099,6 +2228,12 @@ msgstr "效能"
 
 msgid "PERFORMANCE HACKS"
 msgstr "效能補丁"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "玩家 1 十字準星顏色"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "玩家 2 十字準星顏色"
 
 msgid "PPU DECODER"
 msgstr "PPU解碼器"
@@ -2160,6 +2295,9 @@ msgstr "Peru"
 msgid "Philippines"
 msgstr "Philippines"
 
+msgid "PlayStation Mouse"
+msgstr "PlayStation 滑鼠"
+
 msgid "Pointer"
 msgstr "指針"
 
@@ -2168,6 +2306,24 @@ msgstr "Poland"
 
 msgid "Polish"
 msgstr "Polish"
+
+msgid "Port 1"
+msgstr "Port 1"
+
+msgid "Port 1+2"
+msgstr "Port 1+2"
+
+msgid "Port 2"
+msgstr "Port 2"
+
+msgid "Port1"
+msgstr "Port1"
+
+msgid "Port1+2"
+msgstr "Port1+2"
+
+msgid "Port2"
+msgstr "Port2"
 
 msgid "Portugal"
 msgstr "Portugal"
@@ -2330,6 +2486,12 @@ msgstr "SDL2"
 
 msgid "SENSOR BAR POSITION"
 msgstr "感應器條位置"
+
+msgid "SENSOR SENSITIVITY (GYROSCOPE)"
+msgstr "感測器靈敏度（陀螺儀）"
+
+msgid "SENSOR SENSITIVITY (TILT)"
+msgstr "感測器靈敏度（傾斜）"
 
 msgid "SHOW ACHIEVEMENT MESSAGES"
 msgstr "顯示成就訊息"
@@ -2529,6 +2691,9 @@ msgstr "Slovakia"
 msgid "Slovenia"
 msgstr "Slovenia"
 
+msgid "Small performance increase (may drop frames)."
+msgstr "效能略有提高(可能會丟幀)。"
+
 msgid "Smaller"
 msgstr "較小的"
 
@@ -2618,6 +2783,9 @@ msgstr "伸展到最大"
 
 msgid "Stretch to window"
 msgstr "拉伸到視窗"
+
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
@@ -2799,6 +2967,9 @@ msgstr "使用DSP音訊"
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "使用搶先幀"
 
+msgid "USE SOFTWARE RENDERING"
+msgstr "使用軟體算繪"
+
 msgid "Ukraine"
 msgstr "Ukraine"
 
@@ -2858,6 +3029,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "VBI SKIP"
+
+msgid "VIDEO FILTERS"
+msgstr "影像鏡"
 
 msgid "VIDEO SETTINGS"
 msgstr "影像設定"
@@ -2925,6 +3099,9 @@ msgstr "當在100%之外執行時，會調整溫度而不是丟幀。"
 msgid "While Touching"
 msgstr "觸控時"
 
+msgid "White"
+msgstr "白"
+
 msgid "Widescreen (16:9)"
 msgstr "寬螢幕(16:9)"
 
@@ -2973,14 +3150,38 @@ msgstr "ZCULL 精度"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "放大以隱藏黑色邊框。每個遊戲的邊界都不同。"
 
+msgid "black and white"
+msgstr "黑與白"
+
+msgid "blue sea"
+msgstr "藍海"
+
+msgid "dark knight"
+msgstr "黑暗騎士"
+
 msgid "diagonal filter"
 msgstr "對角濾波器"
+
+msgid "gba sp"
+msgstr "gba sp"
+
+msgid "green forest"
+msgstr "綠森林"
+
+msgid "hot desert"
+msgstr "炎熱的沙漠"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original gameboy"
+msgstr "原來的 gameboy"
+
+msgid "pink dreams"
+msgstr "粉紅夢幻"
 
 msgid "scanlines"
 msgstr "掃瞄線"
@@ -2993,6 +3194,9 @@ msgstr "三角濾波器"
 
 msgid "wave filter"
 msgstr "濾波器"
+
+msgid "weird colors"
+msgstr "奇怪的顏色"
 
 msgid "xBR (Very Slow)"
 msgstr "xBR (非常慢)"

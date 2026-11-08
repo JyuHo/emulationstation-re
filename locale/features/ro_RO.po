@@ -285,6 +285,9 @@ msgstr "3x nativ (~1080p)"
 msgid "3x native (768 x 576)"
 msgstr "3x nativ (768 x 576)"
 
+msgid "4 PLAYER ADAPTER"
+msgstr "ADAPTOR 4 JUCĂTORI"
+
 msgid "4 threads"
 msgstr "4 fire"
 
@@ -501,6 +504,9 @@ msgstr "Adaptive (Rândul de jos mai întâi)"
 msgid "Adaptive (Top Field First)"
 msgstr "Adaptiv (Rândul de sus mai întâi)"
 
+msgid "Add color to Game Boy games."
+msgstr "Adaugă culoare jocurilor Game Boy."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Ajustează raportul de aspect al filmelor."
 
@@ -537,6 +543,9 @@ msgstr "Permite încărcarea jocurilor protejate fără informația de subcanal.
 msgid "Allows reducing the visual quality of these curves for higher performance."
 msgstr "Permite reducerea calității vizuale ale acestor curbe pentru o performanță mai mare."
 
+msgid "Allows up to 5 or 8 controllers in supported games."
+msgstr "Permite până la 5 sau 8 controlere în jocurile suportate."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Permite până la 8 controlere în jocurile suportate."
 
@@ -545,6 +554,18 @@ msgstr "Permite texturi înlocuibile de utilizator."
 
 msgid "Always"
 msgstr "Mereu"
+
+msgid "Analog Controller"
+msgstr "Controler analogic"
+
+msgid "Analog Controller (DualShock)"
+msgstr "Controler analogic (DualShock)"
+
+msgid "Analog Joystick"
+msgstr "Joystick analogic"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "Joystick analogic (Flystick)"
 
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (Cel mai compatibil)"
@@ -789,6 +810,9 @@ msgstr "CPU"
 msgid "CPU CORE"
 msgstr "NUCLEU CPU"
 
+msgid "CPU DYNAREC (SPEED UP)"
+msgstr "DYNAREC CPU (ACCELERARE)"
+
 msgid "CPU EXECUTION MODE"
 msgstr "MOD EXECUȚIE CPU"
 
@@ -806,6 +830,9 @@ msgstr "TIMEOUT CURSOR"
 
 msgid "CUSTOMIZE EMULATED WIIMOTE & GAMEPAD"
 msgstr "PERSONALIZEAZĂ TELECOMANDA WII EMULATĂ ȘI GAMEPAD"
+
+msgid "CXA2025AS (JP)"
+msgstr "CXA2025AS (JP)"
 
 msgid "CXD4 (LLE Fallback)"
 msgstr "CXD4 (LLE de rezervă)"
@@ -996,6 +1023,9 @@ msgstr "DITHERING"
 msgid "DK Bongos"
 msgstr "DK Bongos"
 
+msgid "DMA Only (Slightly Faster)"
+msgstr "Doar DMA (un pic mai rapid)"
+
 msgid "DOLBY PRO LOGIC II"
 msgstr "DOLBY PRO LOGIC II"
 
@@ -1013,6 +1043,9 @@ msgstr "DSi"
 
 msgid "DUAL CORE MODE"
 msgstr "MOD CU DOUĂ NUCLEE"
+
+msgid "DYNAREC CODE INVALIDATION"
+msgstr "INVALIDAREA CODULUI DYNAREC"
 
 msgid "Dance Mat"
 msgstr "Saltea de dans"
@@ -1062,6 +1095,15 @@ msgstr "Determină cum trebuie să apară cursorul pe ecranul de jos."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Determină viteza și comportamentul sistemului la pre-rulare."
 
+msgid "Digital Controller"
+msgstr "Controler digital"
+
+msgid "Digital Controller (Gamepad)"
+msgstr "Controler digital (Gamepad)"
+
+msgid "Digital Prime FBX"
+msgstr "Digital Prime FBX"
+
 msgid "Disabled"
 msgstr "Dezactivat"
 
@@ -1082,6 +1124,15 @@ msgstr "Nu înlocui"
 
 msgid "Double buffering"
 msgstr "Buffering dublu"
+
+msgid "Double the rendering resolution."
+msgstr "Dublează rezoluția de redare."
+
+msgid "DualShock Controller"
+msgstr "Controler DualShock"
+
+msgid "DualShock has rumble support. Not all games support DualShock."
+msgstr "DualShock are suport pentru vibrații. Nu toate jocurile suportă DualShock."
 
 msgid "During gameplay, press Hotkey + R1 to translate on-screen text. Only on libretro cores."
 msgstr "În timpul jocului, apasă tasta rapidă + R1 pentru a traduce textul de pe ecran. Doar în nucleele libretro."
@@ -1130,6 +1181,9 @@ msgstr "ACTIVEAZĂ ÎNTINDEREA TIMPULUI"
 
 msgid "ENABLE WIDESCREEN PATCHES"
 msgstr "ACTIVEAZĂ PATCH-URI PENTRU ECRAN LAN"
+
+msgid "ENHANCED RENDERING RESOLUTION"
+msgstr "REZOLUȚIE DE REDARE ÎMBUNĂTĂȚITĂ"
 
 msgid "Ecuador"
 msgstr "Ecuador"
@@ -1260,6 +1314,9 @@ msgstr "Îmbunătățire. Elimină limita de treizeci și două de sprite-uri pe
 msgid "Enhancement. Removes disc loading."
 msgstr "Îmbunătățire. Elimină încărcarea discului."
 
+msgid "Enhancement. Skipping it can break some games."
+msgstr "Îmbunătățire. Omiterea acestuia poate strica anumite jocuri."
+
 msgid "Enhancement. Smooth out jagged edges on 3D object polygons."
 msgstr "Îmbunătățire. Netezește marginile neregulate ale poligoanelor 3D."
 
@@ -1268,6 +1325,9 @@ msgstr "Îmbunătățire. Netezește marginile zimțate ale poligoanelor 3D."
 
 msgid "Enhancement. Smooth/upscale textures on 3D objects."
 msgstr "Îmbunătățire. Netezește/fă upscale la texturi pe obiectele 3D."
+
+msgid "Enhancement. Smooth/upscale textures."
+msgstr "Îmbunătățire. Netezește/scalează texturile."
 
 msgid "Enhancement. Upscale textures."
 msgstr "Îmbunătățire. Scalează în sus texturile."
@@ -1305,6 +1365,9 @@ msgstr "Deintercalare filme."
 msgid "FORCE NTSC TIMINGS ON PAL"
 msgstr "FORȚEAZĂ TEMPORIZAREA NTSC PE PAL"
 
+msgid "FRAME DUPING (SPEED UP)"
+msgstr "DUPLICARE CADRE (ACCELERARE)"
+
 msgid "FRAME LIMIT"
 msgstr "LIMITĂ DE CADRE"
 
@@ -1322,6 +1385,9 @@ msgstr "CONTROL OMITERE CADRE"
 
 msgid "FXAA"
 msgstr "FXAA"
+
+msgid "Famicom (FDS)"
+msgstr "Famicom (FDS)"
 
 msgid "Faroe Islands"
 msgstr "Insulele Faeroe"
@@ -1356,6 +1422,12 @@ msgstr "Repară ruperea ecranului. Solicitant pentru CPU."
 msgid "Fix texture banding when upscaling."
 msgstr "Repară efectul de bandă la upscaling."
 
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "Pentru jocurile ce folosesc giroscop (asociat cu maneta analogică stângă)"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "Pentru jocurile ce folosesc giroscop (asociat cu maneta analogică dreaptă)"
+
 msgid "For emulators and controllers supporting force feedback."
 msgstr "Pentru emulatoarele și controlerele care suportă redarea forței."
 
@@ -1388,6 +1460,9 @@ msgstr "Întreagă (Cache cu hash)"
 
 msgid "Full (Slow)"
 msgstr "Întreagă (Lent)"
+
+msgid "Full (more compatible)"
+msgstr "Complet (mai compatibil)"
 
 msgid "Full speed"
 msgstr "Viteză întreagă"
@@ -1445,6 +1520,9 @@ msgstr "GB - Pocket"
 
 msgid "GB - Smart Coloring"
 msgstr "GB - Colorare inteligentă"
+
+msgid "GB COLORIZATION"
+msgstr "COLORARE GB"
 
 msgid "GBC - Blue"
 msgstr "GBC - Albastru"
@@ -1539,6 +1617,9 @@ msgstr "Gri"
 msgid "Greece"
 msgstr "Grecia"
 
+msgid "Green"
+msgstr "Verde"
+
 msgid "Guatemala"
 msgstr "Guatemala"
 
@@ -1589,6 +1670,9 @@ msgstr "Ecran hibrid deasupra"
 
 msgid "Hybrid Ubershaders"
 msgstr "Ubershadere hibride"
+
+msgid "Hyper Blaster/Justifier"
+msgstr "Hyper Blaster/Justifier"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "SEPARARE ÎMBUNĂTĂȚITĂ A POLIGOANELOR"
@@ -1710,6 +1794,9 @@ msgstr "Iulie"
 msgid "June"
 msgstr "Iunie"
 
+msgid "Justifier"
+msgstr "Justificator"
+
 msgid "Kazakhstan"
 msgstr "Kazakhstan"
 
@@ -1806,6 +1893,9 @@ msgstr "Mov deschis"
 msgid "Light guns can only be used in port 2."
 msgstr "Pistoalele luminoase pot fi folosite doar în portul 2."
 
+msgid "Lightrec Interpreter"
+msgstr "Interpretor Lightrec"
+
 msgid "Lime"
 msgstr "Lime"
 
@@ -1854,6 +1944,9 @@ msgstr "RSX PE MAI MULTE FIRE DE EXECUȚIE"
 msgid "Macau"
 msgstr "Macau"
 
+msgid "Magnum FBX"
+msgstr "Magnum FBX"
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "Face ca tiparul de dither să fie mult mai puțin vizibil la rezoluții mari."
 
@@ -1862,6 +1955,9 @@ msgstr "Malaezia"
 
 msgid "Maldives"
 msgstr "Maldive"
+
+msgid "Manually activate the adapter for supported games."
+msgstr "Activează adaptorul manual pentru jocurile suportate."
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Asociază controlerul la o telecomandă Wii emulată."
@@ -1874,6 +1970,9 @@ msgstr "Potrivește fereastra"
 
 msgid "Max (demanding games)"
 msgstr "Maxim (jocuri pretențioase)"
+
+msgid "Max Performance"
+msgstr "Performanță maximă"
 
 msgid "Maximum (Very Slow)"
 msgstr "Maximă (Foarte lent)"
@@ -1932,11 +2031,17 @@ msgstr "Monocrom"
 msgid "Monochrome (Blargg)"
 msgstr "Monocrom (Blargg)"
 
+msgid "More accurate emulation, but slower."
+msgstr "O emulare mai exactă, dar mai lentă."
+
 msgid "Morocco"
 msgstr "Maroc"
 
 msgid "Mouse"
 msgstr "Maus"
+
+msgid "Much faster than interpreter (but may have issues)."
+msgstr "Mult mai rapid decât interpretorul (dar poate avea probleme)."
 
 msgid "NAT"
 msgstr "NAT"
@@ -1959,6 +2064,21 @@ msgstr "TIP REȚEA"
 msgid "NEW 3DS MODE"
 msgstr "MOD NOU 3DS"
 
+msgid "NTSC (Composite)"
+msgstr "NTSC (Compozit)"
+
+msgid "NTSC (NES)"
+msgstr "NTSC (NES)"
+
+msgid "NTSC (RF)"
+msgstr "NTSC (RF)"
+
+msgid "NTSC (RGB)"
+msgstr "NTSC (RGB)"
+
+msgid "NTSC (S-Video)"
+msgstr "NTSC (S-Video)"
+
 msgid "NTSC FILTER"
 msgstr "FILTRU NTSC"
 
@@ -1968,6 +2088,9 @@ msgstr "NTSC-J"
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
+msgid "Namco GunCon"
+msgstr "Namco GunCon"
+
 msgid "Nat to access internet from xemu machine. Udp for System Link. Default (Auto) disables network access."
 msgstr "NAT pentru accesarea internetului din mașina xemu. UDP pentru legătură sistem. Implicit (auto) dezactivează accesul la rețea."
 
@@ -1976,6 +2099,12 @@ msgstr "Nativ"
 
 msgid "Native (PS2)(Default)"
 msgstr "Nativ (PS2)(Implicit)"
+
+msgid "NeGcon"
+msgstr "NeGcon"
+
+msgid "NeGcon (Rumble)"
+msgstr "NeGcon (Vibrații)"
 
 msgid "Nearest"
 msgstr "Cea mai apropiată"
@@ -2073,6 +2202,9 @@ msgstr "Oprit (Cu zgomot)"
 msgid "Off (None)"
 msgstr "Fără (Niciuna)"
 
+msgid "Off is safer, On for specific games."
+msgstr "Oprit este mai sigur. Pornit pentru anumite jocuri."
+
 msgid "Oman"
 msgstr "Oman"
 
@@ -2082,11 +2214,17 @@ msgstr "Pornit"
 msgid "On (Default)"
 msgstr "Pornit (Implicit)"
 
+msgid "On (Speed hack)"
+msgstr "Activat (hack viteză)"
+
 msgid "On (Vulkan Only)"
 msgstr "On (doar pentru Vulkan)"
 
 msgid "Only Overscan Area"
 msgstr "Doar aria de overscan"
+
+msgid "Only for games that employed it (for Boktai)"
+msgstr "Doar pentru jocurile care o implementează (pentru Boktai)"
 
 msgid "Only increase the image size in integer multiples."
 msgstr "Crește mărimea imaginii doar în multipli întregi."
@@ -2132,6 +2270,12 @@ msgstr "PERFORMANȚĂ"
 
 msgid "PERFORMANCE HACKS"
 msgstr "HACK-URI DE PERFORMANȚĂ"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "CULOARE MARCAJ ȚINTĂ JUCĂTOR 1"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "CULOARE MARCAJ ȚINTĂ JUCĂTOR 2"
 
 msgid "PPU DECODER"
 msgstr "DECODIFICATOR PPU"
@@ -2193,6 +2337,9 @@ msgstr "Peru"
 msgid "Philippines"
 msgstr "Filipine"
 
+msgid "PlayStation Mouse"
+msgstr "Maus PlayStation"
+
 msgid "Pointer"
 msgstr "Indicator"
 
@@ -2201,6 +2348,24 @@ msgstr "Polonia"
 
 msgid "Polish"
 msgstr "Poloneză"
+
+msgid "Port 1"
+msgstr "Port 1"
+
+msgid "Port 1+2"
+msgstr "Port 1+2"
+
+msgid "Port 2"
+msgstr "Port 2"
+
+msgid "Port1"
+msgstr "Port1"
+
+msgid "Port1+2"
+msgstr "Port1+2"
+
+msgid "Port2"
+msgstr "Port2"
 
 msgid "Portugal"
 msgstr "Portugalia"
@@ -2286,6 +2451,9 @@ msgstr "NIVEL VIBRAȚII"
 msgid "Random Values"
 msgstr "Valori aleatoare"
 
+msgid "Raw"
+msgstr "Raw"
+
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Recompilator (Cel mai rapid)(Implicit)"
 
@@ -2315,6 +2483,9 @@ msgstr "Necesită prezența unui fișier BIOS."
 
 msgid "Resampling (Pirch Shift)"
 msgstr "Reeșantionare (Pirch Shift)"
+
+msgid "Restored Wii VC"
+msgstr "Wii VC restaurat"
 
 msgid "Right Stick"
 msgstr "Maneta dreaptă"
@@ -2363,6 +2534,12 @@ msgstr "SDL2"
 
 msgid "SENSOR BAR POSITION"
 msgstr "POZIȚIE BARĂ INFRAROȘIE"
+
+msgid "SENSOR SENSITIVITY (GYROSCOPE)"
+msgstr "SENSIBILITATE SENZOR (GIROSCOP)"
+
+msgid "SENSOR SENSITIVITY (TILT)"
+msgstr "SENSIBILITATE SENZOR (ÎNCLINARE)"
 
 msgid "SHOW ACHIEVEMENT MESSAGES"
 msgstr "AFIȘEAZĂ MESAJE DE REALIZĂRI"
@@ -2571,6 +2748,9 @@ msgstr "Slovacia"
 msgid "Slovenia"
 msgstr "Slovenia"
 
+msgid "Small performance increase (may drop frames)."
+msgstr "O mică creștere de performanță (poate omite cadre)."
+
 msgid "Smaller"
 msgstr "Mai mică"
 
@@ -2585,6 +2765,9 @@ msgstr "Netezire 3"
 
 msgid "Smooth 4"
 msgstr "Netezire 4"
+
+msgid "Smooth V2 FBX"
+msgstr "Netezire V2 FBX"
 
 msgid "Smooth textures on 3D objects."
 msgstr "Netezește texturile pe obiectele 3D."
@@ -2660,6 +2843,9 @@ msgstr "Întinde pe tot ecranul"
 
 msgid "Stretch to window"
 msgstr "Întinde la fereastră"
+
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
@@ -2856,6 +3042,9 @@ msgstr "FOLOSEȘTE DSP AUDIO"
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "FOLOSEȘTE CADRE PREEMPTIVE"
 
+msgid "USE SOFTWARE RENDERING"
+msgstr "FOLOSEȘTE RANDARE SOFTWARE"
+
 msgid "Ukraine"
 msgstr "Ucraina"
 
@@ -2921,6 +3110,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "OMITERE VBI"
+
+msgid "VIDEO FILTERS"
+msgstr "FILTRE VIDEO"
 
 msgid "VIDEO SETTINGS"
 msgstr "SETĂRI VIDEO"
@@ -2991,6 +3183,9 @@ msgstr "Când se rulează la altceva în afară de 100%, ajustează temperatura 
 msgid "While Touching"
 msgstr "În timp ce se atinge"
 
+msgid "White"
+msgstr "Alb"
+
 msgid "Widescreen (16:9)"
 msgstr "Ecran lat (16:9)"
 
@@ -3002,6 +3197,9 @@ msgstr "Setarea lingvistică din NAND-ului Wii-ului."
 
 msgid "Wii U Classic Controller"
 msgstr "Controler clasic Wii U"
+
+msgid "Wii Virtual Console"
+msgstr "Consolă virtuală Wii"
 
 msgid "Wiimote Sideway"
 msgstr "Telecomandă Wii orizontală"
@@ -3039,14 +3237,44 @@ msgstr "ACURATEȚE ZCULL"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Mărește pentru a ascunde marginile negre. Marginile sunt diferite per joc."
 
+msgid "black and white"
+msgstr "negru și alb"
+
+msgid "blue sea"
+msgstr "mare albastră"
+
+msgid "cxa2025as (US)"
+msgstr "cxa2025as (US)"
+
+msgid "dark knight"
+msgstr "cavaler negru"
+
 msgid "diagonal filter"
 msgstr "filtru diagonal"
+
+msgid "gba sp"
+msgstr "gba sp"
+
+msgid "green forest"
+msgstr "pădure verde"
+
+msgid "hot desert"
+msgstr "deșert fierbinte"
 
 msgid "lottes crt"
 msgstr "crt lottes"
 
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original gameboy"
+msgstr "gameboy original"
+
+msgid "pink dreams"
+msgstr "vise roz"
+
+msgid "royaltea"
+msgstr "royaltea"
 
 msgid "scanlines"
 msgstr "linii scanare"
@@ -3059,6 +3287,9 @@ msgstr "filtru triunghiular"
 
 msgid "wave filter"
 msgstr "filtru în valuri"
+
+msgid "weird colors"
+msgstr "culori ciudate"
 
 msgid "xBR (Very Slow)"
 msgstr "xBR (Foarte lent)"

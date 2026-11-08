@@ -459,7 +459,7 @@ namespace es::launcher::retroarch
 			}
 
 			config.set(player + "joypad_index", pad.deviceIndex);
-			config.set(player + "analog_dpad_mode", core.analogDpadMode(pad));
+			config.set(player + "analog_dpad_mode", core.analogDpadMode(ctx, pad));
 		}
 
 		// Hotkeys on player 1's pad: hold the hotkey button, then press another one

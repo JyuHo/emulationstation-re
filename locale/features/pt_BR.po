@@ -285,6 +285,9 @@ msgstr "3x Nativo (~1080p)"
 msgid "3x native (768 x 576)"
 msgstr "3x nativo (768 x 576)"
 
+msgid "4 PLAYER ADAPTER"
+msgstr "ADAPTADOR DE 4 JOGADORES"
+
 msgid "4 threads"
 msgstr "4 encadeamentos de execução"
 
@@ -501,6 +504,9 @@ msgstr "Adaptativo (Campo Inferior Primeiro)"
 msgid "Adaptive (Top Field First)"
 msgstr "Adaptativo (Campo Superior Primeiro)"
 
+msgid "Add color to Game Boy games."
+msgstr "Adiciona cor aos jogos do Game Boy."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Ajusta a proporção de aspecto de Filmes Full Motion Video."
 
@@ -537,6 +543,9 @@ msgstr "Permite carregar jogos protegidos sem informações de subcanal."
 msgid "Allows reducing the visual quality of these curves for higher performance."
 msgstr "Permite reduzir a qualidade visual destas curvas para um maior desempenho."
 
+msgid "Allows up to 5 or 8 controllers in supported games."
+msgstr "Permite até 5 ou 8 controles em jogos suportados."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Permite até 8 controles em jogos suportados."
 
@@ -545,6 +554,18 @@ msgstr "Permite que o usuário substitua texturas."
 
 msgid "Always"
 msgstr "Sempre"
+
+msgid "Analog Controller"
+msgstr "Controle Analógico"
+
+msgid "Analog Controller (DualShock)"
+msgstr "Controle Analógico (DualShock)"
+
+msgid "Analog Joystick"
+msgstr "Controle analógico"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "Controle Analógico (Flystick)"
 
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (Mais Compatível)"
@@ -789,6 +810,9 @@ msgstr "PROCESSADOR"
 msgid "CPU CORE"
 msgstr "NÚCLEO DO PROCESSADOR"
 
+msgid "CPU DYNAREC (SPEED UP)"
+msgstr "Recompilação Dinâmica (Acelerar)"
+
 msgid "CPU EXECUTION MODE"
 msgstr "MODO DE EXECUÇÃO DO PROCESSADOR"
 
@@ -806,6 +830,9 @@ msgstr "TEMPO LIMITE DO CURSOR"
 
 msgid "CUSTOMIZE EMULATED WIIMOTE & GAMEPAD"
 msgstr "PERSONALIZAR WIIMOTE E CONTROLES EMULADOS"
+
+msgid "CXA2025AS (JP)"
+msgstr "CXA2025AS (JP)"
 
 msgid "CXD4 (LLE Fallback)"
 msgstr "CXD4 (LLE Fallback)"
@@ -996,6 +1023,9 @@ msgstr "MATIZAÇÃO"
 msgid "DK Bongos"
 msgstr "Bongos do DK"
 
+msgid "DMA Only (Slightly Faster)"
+msgstr "Somente DMA (um pouco mais rápido)"
+
 msgid "DOLBY PRO LOGIC II"
 msgstr "DOLBY PRO LOGIC II"
 
@@ -1013,6 +1043,9 @@ msgstr "DSi"
 
 msgid "DUAL CORE MODE"
 msgstr "MODO DOIS NÚCLEOS"
+
+msgid "DYNAREC CODE INVALIDATION"
+msgstr "INVALIDAÇÃO DO CODIGO DYNAREC"
 
 msgid "Dance Mat"
 msgstr "Tapete de Dança"
@@ -1062,6 +1095,15 @@ msgstr "Determina como o cursor deve aparecer na tela inferior."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Determina a velocidade e o comportamento de avanço do sistema."
 
+msgid "Digital Controller"
+msgstr "Controle Digital"
+
+msgid "Digital Controller (Gamepad)"
+msgstr "Controlador Digital (Controle)"
+
+msgid "Digital Prime FBX"
+msgstr "Digital Prime FBX"
+
 msgid "Disabled"
 msgstr "Desativado"
 
@@ -1082,6 +1124,15 @@ msgstr "Não Sobrepor"
 
 msgid "Double buffering"
 msgstr "Dobrar memória temporária de reserva"
+
+msgid "Double the rendering resolution."
+msgstr "Dobra a resolução de renderização."
+
+msgid "DualShock Controller"
+msgstr "Controle Dualshock"
+
+msgid "DualShock has rumble support. Not all games support DualShock."
+msgstr "DualShock tem suporte para vibração. Nem todos os jogos suportam DualShock."
 
 msgid "During gameplay, press Hotkey + R1 to translate on-screen text. Only on libretro cores."
 msgstr "Durante o jogo, pressionar Tecla de Atalho (HotKey) + R1 para traduzir o texto na tela. Apenas em núcleos libretro."
@@ -1130,6 +1181,9 @@ msgstr "ATIVAR A EXTENSÃO DO TEMPO"
 
 msgid "ENABLE WIDESCREEN PATCHES"
 msgstr "ATIVAR CORREÇÕES DE TELA PLANA"
+
+msgid "ENHANCED RENDERING RESOLUTION"
+msgstr "RESOLUÇÃO DE RENDERIZAÇÃO APRIMORADA"
 
 msgid "Ecuador"
 msgstr "Equador"
@@ -1260,6 +1314,9 @@ msgstr "Aprimoramento. Remove o limite de trinta e dois imagens por linha. Trava
 msgid "Enhancement. Removes disc loading."
 msgstr "Aprimoramento. Remove o carregamento do disco."
 
+msgid "Enhancement. Skipping it can break some games."
+msgstr "Aprimoramento. Pular pode quebrar alguns jogos."
+
 msgid "Enhancement. Smooth out jagged edges on 3D object polygons."
 msgstr "Aprimoramento. Suaviza as bordas serrilhadas em polí­gonos de objetos 3D."
 
@@ -1268,6 +1325,9 @@ msgstr "Aprimoramento. Suavize bordas irregulares em polígonos de objetos 3D."
 
 msgid "Enhancement. Smooth/upscale textures on 3D objects."
 msgstr "Aprimoramento. Texturas suaves/de alto nível em objetos 3D."
+
+msgid "Enhancement. Smooth/upscale textures."
+msgstr "Aprimoramento. Texturas suaves/de alto padrão."
 
 msgid "Enhancement. Upscale textures."
 msgstr "Aprimoramento. Texturas de alto nível."
@@ -1305,6 +1365,9 @@ msgstr "Desentrelacamento de filmes FMV."
 msgid "FORCE NTSC TIMINGS ON PAL"
 msgstr "FORÇAR TEMPORIZACÕES NTSC NO PAL"
 
+msgid "FRAME DUPING (SPEED UP)"
+msgstr "DUPLICAÇÃO DO QUADRO (ACELERAR)"
+
 msgid "FRAME LIMIT"
 msgstr "LIMITAR TAXA DE QUADROS"
 
@@ -1322,6 +1385,9 @@ msgstr "CONTROLE DE SALTO DE QUADROS"
 
 msgid "FXAA"
 msgstr "ANTI SERRILHADO DE RÁPIDA APROXIMAÇÃO (FXAA)"
+
+msgid "Famicom (FDS)"
+msgstr "Famicom (FDS)"
 
 msgid "Faroe Islands"
 msgstr "Ilhas Faroe"
@@ -1356,6 +1422,12 @@ msgstr "Corrige a falta de sincronização da taxa de atualização da tela. Pro
 msgid "Fix texture banding when upscaling."
 msgstr "Corrige bandas de textura ao aumentar a escala."
 
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "Para jogos habilitados para giroscópio (ligado ao analógico esquerdo)"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "Para jogos habilitados para giroscópio (ligado ao analógico direito)"
+
 msgid "For emulators and controllers supporting force feedback."
 msgstr "Para emuladores e controladores que suportam force feedback."
 
@@ -1388,6 +1460,9 @@ msgstr "Completo (memória temporária de hash)"
 
 msgid "Full (Slow)"
 msgstr "Completo (Lento)"
+
+msgid "Full (more compatible)"
+msgstr "Completo (mais compatí­vel)"
 
 msgid "Full speed"
 msgstr "Velocidade máxima"
@@ -1445,6 +1520,9 @@ msgstr "GB - Pocket"
 
 msgid "GB - Smart Coloring"
 msgstr "GB - Coloração Inteligente"
+
+msgid "GB COLORIZATION"
+msgstr "GB COLORIZAÇÃO"
 
 msgid "GBC - Blue"
 msgstr "GBC - Azul"
@@ -1539,6 +1617,9 @@ msgstr "Cinza"
 msgid "Greece"
 msgstr "Grécia"
 
+msgid "Green"
+msgstr "Verde"
+
 msgid "Guatemala"
 msgstr "Guatemala"
 
@@ -1589,6 +1670,9 @@ msgstr "Tela Híbrida Superior"
 
 msgid "Hybrid Ubershaders"
 msgstr "Sombreamento Pré-Processado Híbrido"
+
+msgid "Hyper Blaster/Justifier"
+msgstr "Hyper Blaster/Justifier"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "MELHORIA NA DIVISÃO DE POLÍGONOS"
@@ -1710,6 +1794,9 @@ msgstr "Julho"
 msgid "June"
 msgstr "Junho"
 
+msgid "Justifier"
+msgstr "Justifier"
+
 msgid "Kazakhstan"
 msgstr "Cazaquistão"
 
@@ -1806,6 +1893,9 @@ msgstr "Roxo Claro"
 msgid "Light guns can only be used in port 2."
 msgstr "Pistolas só podem ser usadas na porta 2."
 
+msgid "Lightrec Interpreter"
+msgstr "Intérprete de Recompilação de Luz"
+
 msgid "Lime"
 msgstr "Limão"
 
@@ -1854,6 +1944,9 @@ msgstr "ENCADEAMENTO MÚLTIPLO RSX"
 msgid "Macau"
 msgstr "Macau"
 
+msgid "Magnum FBX"
+msgstr "Magnum FBX"
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "Torna o padrão de dither muito menos óbvio em resoluções mais altas."
 
@@ -1862,6 +1955,9 @@ msgstr "Malásia"
 
 msgid "Maldives"
 msgstr "Maldivas"
+
+msgid "Manually activate the adapter for supported games."
+msgstr "Ativa manualmente o adaptador para jogos suportados."
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Mapeia seu controle para um Wiimote emulado."
@@ -1874,6 +1970,9 @@ msgstr "Coincidir com a janela"
 
 msgid "Max (demanding games)"
 msgstr "Máximo (jogos exigentes)"
+
+msgid "Max Performance"
+msgstr "Performance Máxima"
 
 msgid "Maximum (Very Slow)"
 msgstr "Máximo (Muito Lento)"
@@ -1932,11 +2031,17 @@ msgstr "Monocromático"
 msgid "Monochrome (Blargg)"
 msgstr "Monocromático (Blargg)"
 
+msgid "More accurate emulation, but slower."
+msgstr "Emulação mais precisa, porém mais lenta."
+
 msgid "Morocco"
 msgstr "Marrocos"
 
 msgid "Mouse"
 msgstr "Mouse"
+
+msgid "Much faster than interpreter (but may have issues)."
+msgstr "Muito mais rápido que o interpretador (mas pode ter problemas)."
 
 msgid "NAT"
 msgstr "NAT"
@@ -1959,6 +2064,21 @@ msgstr "TIPO DE REDE"
 msgid "NEW 3DS MODE"
 msgstr "MODO NEW 3DS"
 
+msgid "NTSC (Composite)"
+msgstr "NTSC (Composto)"
+
+msgid "NTSC (NES)"
+msgstr "NTSC (NES)"
+
+msgid "NTSC (RF)"
+msgstr "NTSC (RF)"
+
+msgid "NTSC (RGB)"
+msgstr "NTSC (RGB)"
+
+msgid "NTSC (S-Video)"
+msgstr "NTSC (S-Video)"
+
 msgid "NTSC FILTER"
 msgstr "FILTRO NTSC"
 
@@ -1968,6 +2088,9 @@ msgstr "NTSC-J"
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
+msgid "Namco GunCon"
+msgstr "Namco GunCon"
+
 msgid "Nat to access internet from xemu machine. Udp for System Link. Default (Auto) disables network access."
 msgstr "Nat para acessar a Internet a partir da máquina xemu. Udp para o System Link. O padrão (Automático) desativa o acesso à rede."
 
@@ -1976,6 +2099,12 @@ msgstr "Nativo"
 
 msgid "Native (PS2)(Default)"
 msgstr "Nativo (PS2)(Padrão)"
+
+msgid "NeGcon"
+msgstr "NeGcon"
+
+msgid "NeGcon (Rumble)"
+msgstr "NeGcon (Vibração)"
 
 msgid "Nearest"
 msgstr "Mais próximo"
@@ -2073,6 +2202,9 @@ msgstr "Desligado (Ruidoso)"
 msgid "Off (None)"
 msgstr "Desligado (Nenhum)"
 
+msgid "Off is safer, On for specific games."
+msgstr "Desligado é mais seguro, Ativado para jogos específicos."
+
 msgid "Oman"
 msgstr "Oman"
 
@@ -2082,11 +2214,17 @@ msgstr "Ligado"
 msgid "On (Default)"
 msgstr "Ligado (Padrão)"
 
+msgid "On (Speed hack)"
+msgstr "Ligado (truque de velocidade)"
+
 msgid "On (Vulkan Only)"
 msgstr "Ligado (Vulkan Apenas)"
 
 msgid "Only Overscan Area"
 msgstr "Somente área da borda (overscan)"
+
+msgid "Only for games that employed it (for Boktai)"
+msgstr "Somente para jogos que o empregaram (para Boktai)"
 
 msgid "Only increase the image size in integer multiples."
 msgstr "Aumenta o tamanho da imagem apenas em múltiplos inteiros."
@@ -2132,6 +2270,12 @@ msgstr "PERFORMANCE"
 
 msgid "PERFORMANCE HACKS"
 msgstr "TRUQUES DE DESEMPENHO"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "COR DA MIRA PARA O JOGADOR 1"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "COR DA MIRA PARA O JOGADOR 2"
 
 msgid "PPU DECODER"
 msgstr "DECODIFICADOR PPU"
@@ -2193,6 +2337,9 @@ msgstr "Peru"
 msgid "Philippines"
 msgstr "Filipinas"
 
+msgid "PlayStation Mouse"
+msgstr "Mouse do PlayStation"
+
 msgid "Pointer"
 msgstr "Ponteiro"
 
@@ -2201,6 +2348,24 @@ msgstr "Polônia"
 
 msgid "Polish"
 msgstr "Polonês"
+
+msgid "Port 1"
+msgstr "Porta 1"
+
+msgid "Port 1+2"
+msgstr "Porta 1+2"
+
+msgid "Port 2"
+msgstr "Porta 2"
+
+msgid "Port1"
+msgstr "Porta1"
+
+msgid "Port1+2"
+msgstr "Porta1+2"
+
+msgid "Port2"
+msgstr "Porta2"
 
 msgid "Portugal"
 msgstr "Portugal"
@@ -2286,6 +2451,9 @@ msgstr "NIVEL DE VIBRAÇÃO"
 msgid "Random Values"
 msgstr "Valores Aleatórios"
 
+msgid "Raw"
+msgstr "Raw"
+
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Recompilador (Mais Rápido)(Padrão)"
 
@@ -2315,6 +2483,9 @@ msgstr "Requer que o arquivo de BIOS esteja presente."
 
 msgid "Resampling (Pirch Shift)"
 msgstr "Reamostragem (Pitch Shift)"
+
+msgid "Restored Wii VC"
+msgstr "Restaurado do VC do Wii"
 
 msgid "Right Stick"
 msgstr "Analógico Direito"
@@ -2363,6 +2534,12 @@ msgstr "SDL2"
 
 msgid "SENSOR BAR POSITION"
 msgstr "POSIÇÃO DA BARRA DE SENSOR"
+
+msgid "SENSOR SENSITIVITY (GYROSCOPE)"
+msgstr "SENSIBILIDADE DO SENSOR (GIROSCÓPIO)"
+
+msgid "SENSOR SENSITIVITY (TILT)"
+msgstr "SENSIBILIDADE DO SENSOR (INCLINAÇÃO)"
 
 msgid "SHOW ACHIEVEMENT MESSAGES"
 msgstr "MOSTRAR MENSAGENS DE CONQUISTAS"
@@ -2571,6 +2748,9 @@ msgstr "Eslováquia"
 msgid "Slovenia"
 msgstr "Eslovênia"
 
+msgid "Small performance increase (may drop frames)."
+msgstr "Pequeno aumento de desempenho (pode perder quadros)."
+
 msgid "Smaller"
 msgstr "Menor"
 
@@ -2585,6 +2765,9 @@ msgstr "Suave 3"
 
 msgid "Smooth 4"
 msgstr "Suave 4"
+
+msgid "Smooth V2 FBX"
+msgstr "Smooth V2 FBX"
 
 msgid "Smooth textures on 3D objects."
 msgstr "Texturas suaves em objetos 3D."
@@ -2660,6 +2843,9 @@ msgstr "Esticar ao máximo"
 
 msgid "Stretch to window"
 msgstr "Esticar a janela"
+
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Pistola Super Scope"
@@ -2856,6 +3042,9 @@ msgstr "USAR PROCESSADOR DE ÁUDIO DIGITAL (DSP)"
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "USAR FRAMES PREEMPTIVOS"
 
+msgid "USE SOFTWARE RENDERING"
+msgstr "UTILIZAR A RENDERIZAÇÃO DE SOFTWARE"
+
 msgid "Ukraine"
 msgstr "Ucrânia"
 
@@ -2921,6 +3110,9 @@ msgstr "Uzbequistão"
 
 msgid "VBI SKIP"
 msgstr "PULAR INTERRUPÇÕES VERTICAIS VAZIAS"
+
+msgid "VIDEO FILTERS"
+msgstr "FILTROS DE VÍDEO"
 
 msgid "VIDEO SETTINGS"
 msgstr "AJUSTES DE VÍDEO"
@@ -2991,6 +3183,9 @@ msgstr "Ao executar fora de 100%, ajusta o tempo em vez de descartar quadros."
 msgid "While Touching"
 msgstr "Enquanto estiver tocando"
 
+msgid "White"
+msgstr "Branco"
+
 msgid "Widescreen (16:9)"
 msgstr "Tela Plana (16:9)"
 
@@ -3002,6 +3197,9 @@ msgstr "Ajustes de idioma da NAND do Wii."
 
 msgid "Wii U Classic Controller"
 msgstr "Controle Clássico Wii U"
+
+msgid "Wii Virtual Console"
+msgstr "Virtual Console do Wii"
 
 msgid "Wiimote Sideway"
 msgstr "Wiimote de lado"
@@ -3039,14 +3237,44 @@ msgstr "PRECISÃO ZCULL"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Amplia para esconder as bordas pretas. As bordas são diferentes por jogo."
 
+msgid "black and white"
+msgstr "preto e branco"
+
+msgid "blue sea"
+msgstr "azul oceano"
+
+msgid "cxa2025as (US)"
+msgstr "cxa2025as (US)"
+
+msgid "dark knight"
+msgstr "cavaleiro das trevas"
+
 msgid "diagonal filter"
 msgstr "filtro diagonal"
+
+msgid "gba sp"
+msgstr "gba sp"
+
+msgid "green forest"
+msgstr "floresta verde"
+
+msgid "hot desert"
+msgstr "deserto quente"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original gameboy"
+msgstr "gameboy original"
+
+msgid "pink dreams"
+msgstr "sonhos cor de rosa"
+
+msgid "royaltea"
+msgstr "royaltea"
 
 msgid "scanlines"
 msgstr "scanlines"
@@ -3059,6 +3287,9 @@ msgstr "filtro triangular"
 
 msgid "wave filter"
 msgstr "wave filter"
+
+msgid "weird colors"
+msgstr "cores estranhas"
 
 msgid "xBR (Very Slow)"
 msgstr "xBR (Muito Lento)"

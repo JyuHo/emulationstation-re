@@ -285,6 +285,9 @@ msgstr "3x Jatorrizkoa (~1080p)"
 msgid "3x native (768 x 576)"
 msgstr "3x jatorrizkoa (768 x 576)"
 
+msgid "4 PLAYER ADAPTER"
+msgstr "4 JOKALARIRAKO EGOKIGAILUA"
+
 msgid "4 threads"
 msgstr "4 hari"
 
@@ -501,6 +504,9 @@ msgstr "Moldagarria (beheko eremua lehenik)"
 msgid "Adaptive (Top Field First)"
 msgstr "Moldagarria (goiko eremua lehenik)"
 
+msgid "Add color to Game Boy games."
+msgstr "Gehitu kolorea Game Boy jokoei."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Doitzen du Full Motion Video (FMV) filmen aspektu-erlazioa."
 
@@ -537,6 +543,9 @@ msgstr "Babestutako jokoak azpikanaleko informaziorik gabe kargatzea ahalbidetze
 msgid "Allows reducing the visual quality of these curves for higher performance."
 msgstr "Kurba horien kalitate bisuala murriztea ahalbidetzen du, errendimendu hobea lortzeko."
 
+msgid "Allows up to 5 or 8 controllers in supported games."
+msgstr "5 edo 8 aginte-kontrol arte onartzen ditu, bateragarriak diren jokoetan."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "8 aginte-kontrol arte onartzen ditu, bateragarriak diren jokoetan."
 
@@ -545,6 +554,18 @@ msgstr "Erabiltzaileak ordezka ditzakeen testurak onartzen ditu."
 
 msgid "Always"
 msgstr "Beti"
+
+msgid "Analog Controller"
+msgstr "Aginte-kontrol analogikoa"
+
+msgid "Analog Controller (DualShock)"
+msgstr "Aginte-kontrol analogikoa (DualShock)"
+
+msgid "Analog Joystick"
+msgstr "Joystick analogikoa"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "Joystick analogikoa (Flystick)"
 
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (bateragarriena)"
@@ -789,6 +810,9 @@ msgstr "PUZ"
 msgid "CPU CORE"
 msgstr "PUZAREN NUKLEOA"
 
+msgid "CPU DYNAREC (SPEED UP)"
+msgstr "PUZ DYNAREC (AZKARTU)"
+
 msgid "CPU EXECUTION MODE"
 msgstr "PUZAREN EXEKUZIO MODUA"
 
@@ -806,6 +830,9 @@ msgstr "KURTSOREAREN DENBORA-MUGA"
 
 msgid "CUSTOMIZE EMULATED WIIMOTE & GAMEPAD"
 msgstr "PERTSONALIZATU EMULATUTAKO WIIMOTE ETA GAMEPADA"
+
+msgid "CXA2025AS (JP)"
+msgstr "CXA2025AS (JP)"
 
 msgid "CXD4 (LLE Fallback)"
 msgstr "CXD4 (LLE ordezkoa)"
@@ -996,6 +1023,9 @@ msgstr "DITHERING-A"
 msgid "DK Bongos"
 msgstr "DK Bongoak"
 
+msgid "DMA Only (Slightly Faster)"
+msgstr "DMA soilik (apur bat azkarragoa)"
+
 msgid "DOLBY PRO LOGIC II"
 msgstr "DOLBY PRO LOGIC II"
 
@@ -1013,6 +1043,9 @@ msgstr "DSi"
 
 msgid "DUAL CORE MODE"
 msgstr "NUKLEO BIKOITZEKO MODUA"
+
+msgid "DYNAREC CODE INVALIDATION"
+msgstr "DYNAREC KODEAREN BALIOGABETZEA"
 
 msgid "Dance Mat"
 msgstr "Dantza-alfonbra"
@@ -1062,6 +1095,15 @@ msgstr "Kurtsorea beheko pantailan nola agertu behar den zehazten du."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Sistemaren abiadura eta aurrez exekutatzeko (runahead) portaera zehazten ditu."
 
+msgid "Digital Controller"
+msgstr "Aginte-kontrol digitala"
+
+msgid "Digital Controller (Gamepad)"
+msgstr "Aginte-kontrol digitala (gamepada)"
+
+msgid "Digital Prime FBX"
+msgstr "Digital Prime FBX"
+
 msgid "Disabled"
 msgstr "Desgaituta"
 
@@ -1082,6 +1124,15 @@ msgstr "Ez gainidatzi"
 
 msgid "Double buffering"
 msgstr "Buffer bikoitza"
+
+msgid "Double the rendering resolution."
+msgstr "Bikoiztu errendatze-bereizmena."
+
+msgid "DualShock Controller"
+msgstr "DualShock aginte-kontrola"
+
+msgid "DualShock has rumble support. Not all games support DualShock."
+msgstr "DualShock-ak bibrazioa onartzen du. Joko guztiek ez dute DualShock onartzen."
 
 msgid "During gameplay, press Hotkey + R1 to translate on-screen text. Only on libretro cores."
 msgstr "Jokoan zehar, sakatu laster-tekla + R1 pantailako testua itzultzeko. Libretro nukleoetan soilik."
@@ -1130,6 +1181,9 @@ msgstr "GAITU DENBORA-LUZATZEA"
 
 msgid "ENABLE WIDESCREEN PATCHES"
 msgstr "GAITU PANTAILA ZABALERAKO ADABAKIAK"
+
+msgid "ENHANCED RENDERING RESOLUTION"
+msgstr "ERRENDATZE-BEREIZMEN HOBETUA"
 
 msgid "Ecuador"
 msgstr "Ekuador"
@@ -1260,6 +1314,9 @@ msgstr "Hobekuntza. Kendu lerroko hogeita hamabi spriteren muga. Joko batzuk blo
 msgid "Enhancement. Removes disc loading."
 msgstr "Hobekuntza. Diskoaren karga-denborak kentzen ditu."
 
+msgid "Enhancement. Skipping it can break some games."
+msgstr "Hobekuntza. Saltatzeak joko batzuk honda ditzake."
+
 msgid "Enhancement. Smooth out jagged edges on 3D object polygons."
 msgstr "Hobekuntza. Leundu 3D objektuen poligonoetako ertz zerradunak."
 
@@ -1268,6 +1325,9 @@ msgstr "Hobekuntza. Leundu 3D objektuen poligonoetako ertz zerradunak."
 
 msgid "Enhancement. Smooth/upscale textures on 3D objects."
 msgstr "Hobekuntza. Leundu/handitu 3D objektuen testurak."
+
+msgid "Enhancement. Smooth/upscale textures."
+msgstr "Hobekuntza. Leundu/handitu testurak."
 
 msgid "Enhancement. Upscale textures."
 msgstr "Hobekuntza. Handitu testurak."
@@ -1305,6 +1365,9 @@ msgstr "FMV filmen desgurutzelarkatzea."
 msgid "FORCE NTSC TIMINGS ON PAL"
 msgstr "BEHARTU NTSC DENBORAKETA PAL-EN"
 
+msgid "FRAME DUPING (SPEED UP)"
+msgstr "FOTOGRAMAK BIKOIZTU (AZKARTU)"
+
 msgid "FRAME LIMIT"
 msgstr "FOTOGRAMA-MUGA"
 
@@ -1322,6 +1385,9 @@ msgstr "FOTOGRAMA-JAUZIAREN KONTROLA"
 
 msgid "FXAA"
 msgstr "FXAA"
+
+msgid "Famicom (FDS)"
+msgstr "Famicom (FDS)"
 
 msgid "Faroe Islands"
 msgstr "Feroe Irlak"
@@ -1356,6 +1422,12 @@ msgstr "Konpondu irudiaren urradura. PUZ asko behar du."
 msgid "Fix texture banding when upscaling."
 msgstr "Konpondu testuretako banda-efektua bereizmena handitzean."
 
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "Giroskopioa erabiltzen duten jokoetarako (ezkerreko palanka analogikoari lotuta)"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "Giroskopioa erabiltzen duten jokoetarako (eskuineko palanka analogikoari lotuta)"
+
 msgid "For emulators and controllers supporting force feedback."
 msgstr "Indar-atzeraelikadura (force feedback) onartzen duten emuladore eta aginte-kontroletarako."
 
@@ -1388,6 +1460,9 @@ msgstr "Osoa (hash cachea)"
 
 msgid "Full (Slow)"
 msgstr "Osoa (Motela)"
+
+msgid "Full (more compatible)"
+msgstr "Osoa (bateragarriagoa)"
 
 msgid "Full speed"
 msgstr "Abiadura osoa"
@@ -1445,6 +1520,9 @@ msgstr "GB - Pocket"
 
 msgid "GB - Smart Coloring"
 msgstr "GB - Koloreztatze adimenduna"
+
+msgid "GB COLORIZATION"
+msgstr "GB KOLOREZTATZEA"
 
 msgid "GBC - Blue"
 msgstr "GBC - Urdina"
@@ -1539,6 +1617,9 @@ msgstr "Grisa"
 msgid "Greece"
 msgstr "Grezia"
 
+msgid "Green"
+msgstr "Berdea"
+
 msgid "Guatemala"
 msgstr "Guatemala"
 
@@ -1589,6 +1670,9 @@ msgstr "Pantaila hibridoa goian"
 
 msgid "Hybrid Ubershaders"
 msgstr "Ubershader hibridoak"
+
+msgid "Hyper Blaster/Justifier"
+msgstr "Hyper Blaster/Justifier"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "POLIGONOEN ZATIKETA HOBETUA"
@@ -1710,6 +1794,9 @@ msgstr "Uztaila"
 msgid "June"
 msgstr "Ekaina"
 
+msgid "Justifier"
+msgstr "Justifier"
+
 msgid "Kazakhstan"
 msgstr "Kazakhstan"
 
@@ -1806,6 +1893,9 @@ msgstr "More argia"
 msgid "Light guns can only be used in port 2."
 msgstr "Argi-pistolak 2. atakan soilik erabil daitezke."
 
+msgid "Lightrec Interpreter"
+msgstr "Lightrec interpretatzailea"
+
 msgid "Lime"
 msgstr "Lima"
 
@@ -1854,6 +1944,9 @@ msgstr "HARI ANITZEKO RSX"
 msgid "Macau"
 msgstr "Macau"
 
+msgid "Magnum FBX"
+msgstr "Magnum FBX"
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "Dithering eredua askoz ere gutxiago nabaritzen da bereizmen altuetan."
 
@@ -1862,6 +1955,9 @@ msgstr "Malaysia"
 
 msgid "Maldives"
 msgstr "Maldibak"
+
+msgid "Manually activate the adapter for supported games."
+msgstr "Aktibatu egokigailua eskuz joko bateragarrietan."
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Esleitu zure aginte-kontrola emulatutako Wiimote bati."
@@ -1874,6 +1970,9 @@ msgstr "Egokitu leihora"
 
 msgid "Max (demanding games)"
 msgstr "Gehienezkoa (joko zorrotzak)"
+
+msgid "Max Performance"
+msgstr "Gehieneko errendimendua"
 
 msgid "Maximum (Very Slow)"
 msgstr "Gehienezkoa (oso motela)"
@@ -1932,11 +2031,17 @@ msgstr "Monokromoa"
 msgid "Monochrome (Blargg)"
 msgstr "Monokromoa (Blargg)"
 
+msgid "More accurate emulation, but slower."
+msgstr "Emulazio zehatzagoa, baina motelagoa."
+
 msgid "Morocco"
 msgstr "Maroko"
 
 msgid "Mouse"
 msgstr "Xagua"
+
+msgid "Much faster than interpreter (but may have issues)."
+msgstr "Interpretatzailea baino askoz azkarragoa (baina arazoak izan ditzake)."
 
 msgid "NAT"
 msgstr "NAT"
@@ -1959,6 +2064,21 @@ msgstr "SARE MOTA"
 msgid "NEW 3DS MODE"
 msgstr "NEW 3DS MODUA"
 
+msgid "NTSC (Composite)"
+msgstr "NTSC (Composite)"
+
+msgid "NTSC (NES)"
+msgstr "NTSC (NES)"
+
+msgid "NTSC (RF)"
+msgstr "NTSC (RF)"
+
+msgid "NTSC (RGB)"
+msgstr "NTSC (RGB)"
+
+msgid "NTSC (S-Video)"
+msgstr "NTSC (S-Video)"
+
 msgid "NTSC FILTER"
 msgstr "NTSC IRAGAZKIA"
 
@@ -1968,6 +2088,9 @@ msgstr "NTSC-J"
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
+msgid "Namco GunCon"
+msgstr "Namco GunCon"
+
 msgid "Nat to access internet from xemu machine. Udp for System Link. Default (Auto) disables network access."
 msgstr "NAT: Internetera sartzeko xemu makinatik. UDP: System Link-erako. Lehenetsiak (Auto) sarbidea desgaitzen du."
 
@@ -1976,6 +2099,12 @@ msgstr "Jatorrizkoa"
 
 msgid "Native (PS2)(Default)"
 msgstr "Jatorrizkoa (PS2) (Lehenetsia)"
+
+msgid "NeGcon"
+msgstr "NeGcon"
+
+msgid "NeGcon (Rumble)"
+msgstr "NeGcon (bibrazioa)"
 
 msgid "Nearest"
 msgstr "Hurbilena"
@@ -2073,6 +2202,9 @@ msgstr "Desaktibatuta (zarataduna)"
 msgid "Off (None)"
 msgstr "Desaktibatuta (bat ere ez)"
 
+msgid "Off is safer, On for specific games."
+msgstr "Desaktibatuta seguruagoa da; aktibatu joko jakin batzuetarako."
+
 msgid "Oman"
 msgstr "Oman"
 
@@ -2082,11 +2214,17 @@ msgstr "Aktibatuta"
 msgid "On (Default)"
 msgstr "Aktibatuta (Lehenetsia)"
 
+msgid "On (Speed hack)"
+msgstr "Aktibatuta (abiadura-hacka)"
+
 msgid "On (Vulkan Only)"
 msgstr "Aktibatuta (Vulkan soilik)"
 
 msgid "Only Overscan Area"
 msgstr "Overscan eremua soilik"
+
+msgid "Only for games that employed it (for Boktai)"
+msgstr "Erabiltzen zuten jokoetarako soilik (Boktai)."
 
 msgid "Only increase the image size in integer multiples."
 msgstr "Handitu irudiaren tamaina zenbaki osoko multiploetan soilik."
@@ -2132,6 +2270,12 @@ msgstr "ERRENDIMENDUA"
 
 msgid "PERFORMANCE HACKS"
 msgstr "ERRENDIMENDU-HACKAK"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "1. JOKALARIAREN MIRAREN KOLOREA"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "2. JOKALARIAREN MIRAREN KOLOREA"
 
 msgid "PPU DECODER"
 msgstr "PPU DEKODETZAILEA"
@@ -2193,6 +2337,9 @@ msgstr "Peru"
 msgid "Philippines"
 msgstr "Filipinak"
 
+msgid "PlayStation Mouse"
+msgstr "PlayStation xagua"
+
 msgid "Pointer"
 msgstr "Erakuslea"
 
@@ -2201,6 +2348,24 @@ msgstr "Polonia"
 
 msgid "Polish"
 msgstr "Poloniera"
+
+msgid "Port 1"
+msgstr "1. ataka"
+
+msgid "Port 1+2"
+msgstr "1+2 atakak"
+
+msgid "Port 2"
+msgstr "2. ataka"
+
+msgid "Port1"
+msgstr "1. ataka"
+
+msgid "Port1+2"
+msgstr "1+2 atakak"
+
+msgid "Port2"
+msgstr "2. ataka"
 
 msgid "Portugal"
 msgstr "Portugal"
@@ -2286,6 +2451,9 @@ msgstr "BIBRAZIO-MAILA"
 msgid "Random Values"
 msgstr "Ausazko balioak"
 
+msgid "Raw"
+msgstr "Gordina"
+
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Birkonpilatzailea (azkarrena) (Lehenetsia)"
 
@@ -2315,6 +2483,9 @@ msgstr "BIOS fitxategia egotea behar du."
 
 msgid "Resampling (Pirch Shift)"
 msgstr "Berlaginketa (tonu-aldaketa)"
+
+msgid "Restored Wii VC"
+msgstr "Wii VC lehengoratua"
 
 msgid "Right Stick"
 msgstr "Eskuineko palanka"
@@ -2363,6 +2534,12 @@ msgstr "SDL2"
 
 msgid "SENSOR BAR POSITION"
 msgstr "SENTSORE-BARRAREN KOKAPENA"
+
+msgid "SENSOR SENSITIVITY (GYROSCOPE)"
+msgstr "SENTSOREAREN SENTIKORTASUNA (GIROSKOPIOA)"
+
+msgid "SENSOR SENSITIVITY (TILT)"
+msgstr "SENTSOREAREN SENTIKORTASUNA (INKLINAZIOA)"
 
 msgid "SHOW ACHIEVEMENT MESSAGES"
 msgstr "ERAKUTSI LORPEN-MEZUAK"
@@ -2571,6 +2748,9 @@ msgstr "Eslobakia"
 msgid "Slovenia"
 msgstr "Eslobenia"
 
+msgid "Small performance increase (may drop frames)."
+msgstr "Errendimendu-hobekuntza txikia (fotogramak gal daitezke)."
+
 msgid "Smaller"
 msgstr "Txikiagoa"
 
@@ -2585,6 +2765,9 @@ msgstr "Leuna 3"
 
 msgid "Smooth 4"
 msgstr "Leuna 4"
+
+msgid "Smooth V2 FBX"
+msgstr "Smooth V2 FBX"
 
 msgid "Smooth textures on 3D objects."
 msgstr "Leundu 3D objektuen testurak."
@@ -2660,6 +2843,9 @@ msgstr "Luzatu osoa bete arte"
 
 msgid "Stretch to window"
 msgstr "Luzatu leihora"
+
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
@@ -2856,6 +3042,9 @@ msgstr "ERABILI DSP AUDIOA"
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "ERABILI FOTOGRAMA PREBENTIBOAK"
 
+msgid "USE SOFTWARE RENDERING"
+msgstr "ERABILI SOFTWARE BIDEZKO ERRENDATZEA"
+
 msgid "Ukraine"
 msgstr "Ukrainia"
 
@@ -2921,6 +3110,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "VBI JAUZIA"
+
+msgid "VIDEO FILTERS"
+msgstr "BIDEO-IRAGAZKIAK"
 
 msgid "VIDEO SETTINGS"
 msgstr "BIDEO-EZARPENAK"
@@ -2991,6 +3183,9 @@ msgstr "% 100etik kanpo exekutatzean, tempoa doitzen du fotogramak galdu beharre
 msgid "While Touching"
 msgstr "Ukitzen den bitartean"
 
+msgid "White"
+msgstr "Zuria"
+
 msgid "Widescreen (16:9)"
 msgstr "Pantaila zabala (16:9)"
 
@@ -3002,6 +3197,9 @@ msgstr "Wii NANDaren hizkuntza-ezarpena."
 
 msgid "Wii U Classic Controller"
 msgstr "Wii U Classic Controller"
+
+msgid "Wii Virtual Console"
+msgstr "Wii Virtual Console"
 
 msgid "Wiimote Sideway"
 msgstr "Wiimote etzana"
@@ -3039,14 +3237,44 @@ msgstr "ZCULL ZEHAZTASUNA"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Zooma egiten du ertz beltzak ezkutatzeko. Ertzak desberdinak dira joko bakoitzean."
 
+msgid "black and white"
+msgstr "zuri-beltza"
+
+msgid "blue sea"
+msgstr "itsaso urdina"
+
+msgid "cxa2025as (US)"
+msgstr "cxa2025as (AEB)"
+
+msgid "dark knight"
+msgstr "zaldun iluna"
+
 msgid "diagonal filter"
 msgstr "iragazki diagonala"
+
+msgid "gba sp"
+msgstr "gba sp"
+
+msgid "green forest"
+msgstr "baso berdea"
+
+msgid "hot desert"
+msgstr "basamortu beroa"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original gameboy"
+msgstr "jatorrizko Game Boy"
+
+msgid "pink dreams"
+msgstr "pink dreams"
+
+msgid "royaltea"
+msgstr "royaltea"
 
 msgid "scanlines"
 msgstr "eskaner-lerroak"
@@ -3059,6 +3287,9 @@ msgstr "iragazki triangeluarra"
 
 msgid "wave filter"
 msgstr "olatu-iragazkia"
+
+msgid "weird colors"
+msgstr "kolore arraroak"
 
 msgid "xBR (Very Slow)"
 msgstr "xBR (oso motela)"

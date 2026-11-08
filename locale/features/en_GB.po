@@ -3,6 +3,21 @@
 # Compiled together with lang/<lang>/LC_MESSAGES/emulationstation2.po, whose header (UTF-8) applies:
 # this file has none, msgfmt refuses a header defined twice.
 
+msgid "Add color to Game Boy games."
+msgstr "Add colour to Game Boy games."
+
+msgid "Analog Controller"
+msgstr "Analogue Controller"
+
+msgid "Analog Controller (DualShock)"
+msgstr "Analogue Controller (DualShock)"
+
+msgid "Analog Joystick"
+msgstr "Analogue Joystick"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "Analogue Joystick (Flystick)"
+
 msgid "COLOR CORRECTION"
 msgstr "COLOUR CORRECTION"
 
@@ -21,8 +36,23 @@ msgstr "Composite (colour bleeding + artifacts)"
 msgid "FAVORITE COLOR"
 msgstr "FAVOURITE COLOUR"
 
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "For Gyro-enabled games (bound to left analogue stick)"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "For Gyro-enabled games (bound to right analogue stick)"
+
 msgid "GB - Smart Coloring"
 msgstr "GB - Smart Colouring"
+
+msgid "GB COLORIZATION"
+msgstr "GB COLOURISATION"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "PLAYER 1 CROSSHAIR COLOUR"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "PLAYER 2 CROSSHAIR COLOUR"
 
 msgid "Reduces banding between colors and improves the preceived color depth."
 msgstr "Reduces banding between coloUrs and improves the preceived color depth."
@@ -50,3 +80,6 @@ msgstr "Use Analogue joysticks in addition to D-Pad for DualShock controllers."
 
 msgid "WRITE COLOR BUFFERS"
 msgstr "WRITE COLOUR BUFFERS"
+
+msgid "weird colors"
+msgstr "weird colours"

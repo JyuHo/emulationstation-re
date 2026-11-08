@@ -420,6 +420,106 @@ static void testCatalogInstall()
 	setenv("PATH", oldPath.c_str(), 1);
 }
 
+static void testCoreProfiles()
+{
+	LaunchContext ctx;
+	Controller pad = makePad(1, 0);   // d-pad on a hat
+	ctx.controllers = { pad };
+
+	// Nestopia: overscan crop and 4 player adapter
+	{
+		ConfigFile o;
+		ctx.game.system = "nes";
+		ctx.settings = Settings({ { "nestopia_cropoverscan", "h" } }, {}, {});
+		coreProfile("nestopia").setCoreOptions(ctx, o);
+		CHECK(o.get("nestopia_overscan_h_left") == "8");
+		CHECK(o.get("nestopia_overscan_v_top") == "0");
+		CHECK(o.get("nestopia_select_adapter") == "auto");
+		CHECK(o.get("nestopia_palette") == "consumer");
+	}
+
+	// VBA-M: the hardware follows the system, under both names of the core
+	{
+		ConfigFile o;
+		ctx.game.system = "gb";
+		ctx.settings = Settings({ { "palettes", "weird colors" } }, {}, {});
+		coreProfile("vbam").setCoreOptions(ctx, o);
+		CHECK(o.get("vbam_gbHardware") == "gb");
+		CHECK(o.get("vbam_palettes") == "wierd colors");
+
+		ctx.game.system = "gba";
+		coreProfile("vba-m").setCoreOptions(ctx, o);
+		CHECK(o.get("vbam_gbHardware") == "gba");
+		CHECK(o.get("vbam_solarsensor") == "0");
+	}
+
+	// bsnes: video filter only for bsnes, HD mode 7 only for bsnes_hd
+	{
+		ConfigFile o;
+		ctx.game.system = "snes";
+		ctx.settings = Settings({}, {}, {});
+		coreProfile("bsnes").setCoreOptions(ctx, o);
+		CHECK(o.get("bsnes_video_filter") == "None");
+		CHECK(!o.get("bsnes_mode7_scale"));
+
+		ConfigFile hd;
+		coreProfile("bsnes_hd").setCoreOptions(ctx, hd);
+		CHECK(!hd.get("bsnes_video_filter"));
+		CHECK(hd.get("bsnes_mode7_scale") == "disable");
+	}
+
+	// SwanStation: renderer from the video driver, widescreen only in 16/9 without decoration
+	{
+		ConfigFile o;
+		ctx.game.system = "psx";
+		ctx.settings = Settings({ { "gfxbackend", "vulkan" }, { "swanstation_widescreen_hack", "true" }, { "ratio", "16/9" } }, {}, {});
+		const Core& core = coreProfile("swanstation");
+		core.setCoreOptions(ctx, o);
+		CHECK(o.get("swanstation_GPU_Renderer") == "Vulkan");
+		CHECK(o.get("swanstation_GPU_WidescreenHack") == "true");
+		CHECK(o.get("swanstation_Display_AspectRatio") == "16:9");
+		CHECK(core.deviceType(ctx, 1) == "1");
+		CHECK(core.deviceType(ctx, 3) == std::nullopt);
+		CHECK(core.analogDpadMode(ctx, pad) == 0);
+
+		ctx.settings = Settings({ { "swanstation_widescreen_hack", "true" }, { "ratio", "16/9" }, { "bezel", "thebezelproject" }, { "swanstation_Controller1", "261" } }, {}, {});
+		core.setCoreOptions(ctx, o);
+		CHECK(o.get("swanstation_GPU_Renderer") == "Auto");
+		CHECK(o.get("swanstation_GPU_WidescreenHack") == "false");
+		CHECK(core.deviceType(ctx, 1) == "261");
+		CHECK(core.analogDpadMode(ctx, pad) == 1);
+	}
+
+	// Beetle PSX: the options of both builds, multitap, controller type
+	{
+		ConfigFile o;
+		ctx.settings = Settings({ { "beetle_psx_hw_internal_resolution", "4x" }, { "multitap_mednafen", "port2" }, { "beetle_psx_hw_Controller1", "517" } }, {}, {});
+		const Core& core = coreProfile("mednafen_psx_hw");
+		core.setCoreOptions(ctx, o);
+		CHECK(o.get("beetle_psx_hw_internal_resolution") == "4x");
+		CHECK(o.get("beetle_psx_internal_resolution") == "4x");
+		CHECK(o.get("beetle_psx_hw_enable_multitap_port1") == "disabled");
+		CHECK(o.get("beetle_psx_hw_enable_multitap_port2") == "enabled");
+		CHECK(core.deviceType(ctx, 1) == "517");
+		CHECK(core.deviceType(ctx, 2) == std::nullopt);
+		CHECK(core.analogDpadMode(ctx, pad) == 0);
+	}
+
+	// PCSX ReARMed: frame skipping, NEON enhancement
+	{
+		ConfigFile o;
+		ctx.settings = Settings({ { "frameskip_pcsx", "2" }, { "neon_enhancement", "enabled_with_speedhack" }, { "controller1_pcsx", "1" } }, {}, {});
+		const Core& core = coreProfile("pcsx_rearmed");
+		core.setCoreOptions(ctx, o);
+		CHECK(o.get("pcsx_rearmed_frameskip_type") == "fixed_interval");
+		CHECK(o.get("pcsx_rearmed_frameskip_interval") == "2");
+		CHECK(o.get("pcsx_rearmed_neon_enhancement_enable") == "enabled");
+		CHECK(o.get("pcsx_rearmed_neon_enhancement_no_main") == "enabled");
+		CHECK(core.deviceType(ctx, 1) == "1");
+		CHECK(core.analogDpadMode(ctx, pad) == 1);
+	}
+}
+
 void tests::runRetroArchTests()
 {
 	testConfigFile();
@@ -427,6 +527,7 @@ void tests::runRetroArchTests()
 	testControllers();
 	testVideoAndStates();
 	testGameOptions();
+	testCoreProfiles();
 	testFullLaunch();
 	testCatalogInstall();
 }
