@@ -29,7 +29,7 @@ jobs:
           apt-get install -y --no-install-recommends git ca-certificates build-essential cmake \
             ninja-build libsdl3-dev libsdl3-image-dev libfreetype-dev libcurl4-openssl-dev \
             rapidjson-dev libvlc-dev libasound2-dev libgl-dev libudev-dev libfribidi-dev \
-            libcec-dev zlib1g-dev gettext
+            libcec-dev zlib1g-dev gettext python3
 
       - uses: actions/checkout@v4
         with:
@@ -54,6 +54,12 @@ jobs:
       - uses: github/codeql-action/analyze@v3
         with:
           category: /language:c-cpp
+          output: sarif-results
+
+      # lists the alerts in the job summary too, so they can be read without the Security tab
+      - name: List the alerts
+        if: always()
+        run: python3 .github/scripts/sarif-summary.py sarif-results/*.sarif
 
   actions:
     name: CodeQL workflows
@@ -69,3 +75,9 @@ jobs:
       - uses: github/codeql-action/analyze@v3
         with:
           category: /language:actions
+          output: sarif-results
+
+      # lists the alerts in the job summary too, so they can be read without the Security tab
+      - name: List the alerts
+        if: always()
+        run: python3 .github/scripts/sarif-summary.py sarif-results/*.sarif
