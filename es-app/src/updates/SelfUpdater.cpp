@@ -53,7 +53,13 @@ namespace
 	}
 }
 
-std::string SelfUpdater::latestUrl() { return std::string(ES_RELEASES_URL) + "/latest/download/latest.json"; }
+// Built with append(): GCC 14 at -O2 reports a false -Warray-bounds on string + literal here
+std::string SelfUpdater::latestUrl()
+{
+	std::string url(ES_RELEASES_URL);
+	url.append("/latest/download/latest.json");
+	return url;
+}
 std::string SelfUpdater::helperPath() { return ES_UPDATE_HELPER; }
 
 std::string SelfUpdater::platform()
@@ -61,8 +67,11 @@ std::string SelfUpdater::platform()
 	if (access(helperPath().c_str(), X_OK) != 0)
 		return "";
 
+	std::string command = helperPath();
+	command.append(" platform 2>/dev/null");
+
 	std::string result;
-	run(helperPath() + " platform 2>/dev/null", [&result](const std::string& line)
+	run(command, [&result](const std::string& line)
 	{
 		if (result.empty())
 			result = Utils::String::trim(line);
