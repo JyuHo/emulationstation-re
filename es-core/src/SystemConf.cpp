@@ -1,4 +1,5 @@
 #include "SystemConf.h"
+#include <algorithm>
 #include <iostream>
 #include <fstream>
 #include "Log.h"
@@ -225,6 +226,19 @@ std::string SystemConf::get(const std::string &name)
 std::vector<std::string> SystemConf::getKeysStartingWith(const std::string &prefix)
 {
 	std::vector<std::string> keys;
+
+	// Without a configuration file of its own (the default), the values live in es_settings.cfg
+	if (mSystemConfFile.empty())
+	{
+		for (const auto& name : Settings::getInstance()->getSettingsNames())
+			if (Utils::String::startsWith(name, prefix))
+				keys.push_back(name);
+
+		std::sort(keys.begin(), keys.end());
+		keys.erase(std::unique(keys.begin(), keys.end()), keys.end());
+		return keys;
+	}
+
 	for (auto it = confMap.lower_bound(prefix); it != confMap.cend() && Utils::String::startsWith(it->first, prefix); ++it)
 		keys.push_back(it->first);
 
