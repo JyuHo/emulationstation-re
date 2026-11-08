@@ -241,16 +241,6 @@ scraper settings (**Client ID** and **Client secret**, saved as `IGDBClientID` a
 and so are the user name and password of your own ScreenScraper account, which ES adds to the
 developer login.
 
-### Keys in the release packages
-
-The [release workflow](.github/workflows/release.yml) reads the keys from repository secrets of
-the same names (**Settings > Secrets and variables > Actions > New repository secret**):
-`SCREENSCRAPER_DEV_LOGIN`, `SCREENSCRAPER_SOFTNAME`, `GAMESDB_APIKEY`, `HFS_DEV_LOGIN` and
-`CHEEVOS_DEV_LOGIN`, each holding the value shown in the table above, without quotes. Only the
-builds of `vX.Y.Z` tags get them: the packages built for pull requests and pushes to `master`
-can be downloaded by anyone from the workflow's artifacts, so they are built without keys (and
-GitHub never gives secrets to pull requests from forks). A secret that is not set means no key.
-
 Tests
 -----
 
