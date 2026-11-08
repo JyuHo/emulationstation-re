@@ -9,10 +9,14 @@
 #include "retroarch/Cores.h"
 
 #include <algorithm>
-#include <cctype>
 #include <array>
+#include <cctype>
+#include <filesystem>
 #include <map>
 #include <memory>
+#include <string_view>
+#include <system_error>
+#include <vector>
 
 namespace es::launcher::retroarch
 {
@@ -1256,6 +1260,270 @@ namespace es::launcher::retroarch
 		}
 	};
 
+	// DOSBox Pure
+	class DosboxPure : public Core
+	{
+	public:
+		// a .pc or .dos folder starts with the batch file named after it, else dosbox.bat
+		std::filesystem::path romArgument(const LaunchContext& ctx) const override
+		{
+			const std::filesystem::path& rom = ctx.game.rom;
+			std::string extension = rom.extension().string();
+			if (ctx.game.system == "dos" && (extension == ".dos" || extension == ".pc"))
+			{
+				std::error_code ec;
+				std::string stem = rom.stem().string();
+				std::filesystem::path stemBat = rom / (stem + ".bat");
+				bool hasStemBat = std::filesystem::exists(stemBat, ec);
+				if (hasStemBat && stem.find(' ') == std::string::npos)
+					return stemBat;
+				if (!hasStemBat && std::filesystem::exists(rom / "dosbox.bat", ec))
+					return rom / "dosbox.bat";
+			}
+			return rom;
+		}
+
+		void setConfig(const LaunchContext& ctx, ConfigFile& config) const override
+		{
+			// 3: the joystick drives the d-pad; the other types read the stick
+			if (auto device = ctx.settings.get("controller1_dosbox_pure"))
+				config.set("input_player1_analog_dpad_mode", *device == "3" ? "3" : "0");
+			if (auto device = ctx.settings.get("controller2_dosbox_pure"))
+				config.set("input_player2_analog_dpad_mode", *device == "3" ? "3" : "0");
+		}
+
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			// a dosbox.conf in the game folder is read
+			o.set("dosbox_pure_conf", "inside");
+			auto autoOption = [&](const char* key, const char* settingKey) {
+				std::string value = settingOr(ctx, settingKey, "automatic");
+				o.set(key, value == "automatic" ? "auto" : value);
+			};
+			autoOption("dosbox_pure_cpu_type", "pure_cpu_type");
+			autoOption("dosbox_pure_cpu_core", "pure_cpu_core");
+			autoOption("dosbox_pure_cycles", "pure_cycles");
+			option(ctx, o, "dosbox_pure_machine", "pure_machine", "svga");
+			option(ctx, o, "dosbox_pure_memory_size", "pure_memory_size", "16");
+			option(ctx, o, "dosbox_pure_savestate", "pure_savestate", "on");
+			option(ctx, o, "dosbox_pure_keyboard_layout", "pure_keyboard_layout", "us");
+			option(ctx, o, "dosbox_pure_auto_mapping", "pure_auto_mapping", "true");
+			option(ctx, o, "dosbox_pure_joystick_analog_deadzone", "pure_joystick_analog_deadzone", "15");
+			option(ctx, o, "dosbox_pure_joystick_timed", "pure_joystick_timed", "true");
+			option(ctx, o, "dosbox_pure_sblaster_type", "pure_sblaster_type", "sb16");
+			option(ctx, o, "dosbox_pure_gus", "pure_gravis", "false");
+			option(ctx, o, "dosbox_pure_midi", "pure_midi", "disabled");
+			option(ctx, o, "dosbox_pure_bootos_ramdisk", "pure_bootos_ramdisk", "false");
+		}
+
+		std::optional<std::string> deviceType(const LaunchContext& ctx, int player) const override
+		{
+			if (player == 1)
+				return ctx.settings.get("controller1_dosbox_pure");
+			if (player == 2)
+				return ctx.settings.get("controller2_dosbox_pure");
+			return std::nullopt;
+		}
+	};
+
+	class ScummVM : public Core
+	{
+	public:
+		// an empty "game.scummvm" file names the game "game"
+		std::filesystem::path romArgument(const LaunchContext& ctx) const override
+		{
+			std::error_code ec;
+			if (std::filesystem::is_regular_file(ctx.game.rom, ec) && std::filesystem::file_size(ctx.game.rom, ec) == 0)
+				return std::filesystem::path(ctx.game.rom).replace_extension();
+			return ctx.game.rom;
+		}
+
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "scummvm_analog_deadzone", "15");
+			option(ctx, o, "scummvm_gamepad_cursor_speed", "1.0");
+		}
+	};
+
+	class BlueMSX : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			static const std::map<std::string, std::string, std::less<>> machines = {
+				{ "colecovision", "ColecoVision" }, { "msx1", "MSX" }, { "msx2", "MSX2" }, { "msx2+", "MSX2+" },
+				{ "msxturbor", "MSXturboR" }, { "spectravideo", "SVI - Spectravideo SVI-328" },
+			};
+			auto it = machines.find(ctx.game.system);
+			o.set("bluemsx_msxtype", it == machines.end() ? "Auto" : it->second);
+			o.set("bluemsx_nospritelimits", ctx.settings.getBool("bluemsx_nospritelimits", true) ? "ON" : "OFF");
+			bool msx1 = ctx.game.system == "colecovision" || ctx.game.system == "msx1";
+			option(ctx, o, "bluemsx_overscan", msx1 ? "enabled" : "MSX2");
+		}
+
+		std::optional<std::string> deviceType(const LaunchContext& ctx, int player) const override
+		{
+			const std::string& s = ctx.game.system;
+			if ((player == 1 || player == 2) && (s == "msx" || s == "msx1" || s == "msx2" || s == "colecovision"))
+				return "1";
+			return std::nullopt;
+		}
+	};
+
+	// PUAE (Amiga 500, 1200, CD32, CDTV)
+	class Puae : public Core
+	{
+	public:
+		void setConfig(const LaunchContext& ctx, ConfigFile& config) const override
+		{
+			// the Kickstart ROMs are in the amiga folder of the BIOS
+			config.set("system_directory", (ctx.paths.bios / "amiga").string() + "/");
+			// the core reads the d-pad only: the stick drives it
+			config.set("input_player1_analog_dpad_mode", "3");
+			config.set("input_player2_analog_dpad_mode", "3");
+		}
+
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			const std::string& system = ctx.game.system;
+			bool cd32 = system == "amigacd32" || settingOr(ctx, "controller1_puae", "") == "517"
+				|| settingOr(ctx, "controller2_puae", "") == "517";
+			// pad buttons to Amiga keys and mouse
+			using Mapping = std::array<std::pair<const char*, const char*>, 26>;
+			static constexpr Mapping keyboard = { {
+				{ "aspect_ratio_toggle", "---" }, { "mouse_toggle", "RETROK_RCTRL" }, { "statusbar", "RETROK_F11" },
+				{ "vkbd", "---" }, { "reset", "---" }, { "crop_toggle", "RETROK_F12" }, { "zoom_mode_toggle", "---" },
+				{ "a", "---" }, { "b", "---" }, { "x", "RETROK_LALT" }, { "y", "RETROK_SPACE" }, { "l", "RETROK_ESCAPE" },
+				{ "l2", "MOUSE_LEFT_BUTTON" }, { "l3", "SWITCH_JOYMOUSE" }, { "ld", "---" }, { "ll", "---" }, { "lr", "---" },
+				{ "lu", "---" }, { "r", "RETROK_F1" }, { "r2", "MOUSE_RIGHT_BUTTON" }, { "r3", "TOGGLE_STATUSBAR" },
+				{ "rd", "---" }, { "rl", "---" }, { "rr", "---" }, { "ru", "---" }, { "select", "TOGGLE_VKBD" },
+			} };
+			for (const auto& [key, value] : keyboard)
+			{
+				// the CD32 pad keeps its buttons for the game
+				bool kept = std::string_view(value).starts_with("MOUSE_") || std::string_view(key) == "l3" || std::string_view(key) == "r3"
+					|| std::string_view(key) == "mouse_toggle" || std::string_view(key) == "statusbar" || std::string_view(key) == "crop_toggle";
+				o.set(std::string("puae_mapper_") + key, cd32 && !kept ? "---" : value);
+			}
+			o.set("puae_mapper_start", cd32 ? "---" : "RETROK_RETURN");
+
+			o.set("puae_video_options_display", "enabled");
+			// auto: A500 for floppies, A600 for hard disks
+			static const std::map<std::string, std::string, std::less<>> models = {
+				{ "amiga1200", "A1200" }, { "amigacd32", "CD32FR" }, { "amigacdtv", "CDTV" },
+			};
+			std::string model = settingOr(ctx, "puae_model", "automatic");
+			if (model == "automatic")
+			{
+				auto it = models.find(system);
+				model = it == models.end() ? "auto" : it->second;
+			}
+			o.set("puae_model", model);
+
+			option(ctx, o, "puae_cpu_compatibility", "cpu_compatibility", "normal");
+			option(ctx, o, "puae_cpu_throttle", "cpu_throttle", "0.0");
+			o.set("puae_cpu_multiplier", "0");
+			if (settingOr(ctx, "cpu_compatibility", "") == "exact")
+			{
+				o.set("puae_cpu_throttle", "0.0");
+				option(ctx, o, "puae_cpu_multiplier", "cpu_multiplier", "0");
+			}
+			option(ctx, o, "puae_video_standard", "video_standard", "PAL auto");
+			option(ctx, o, "puae_video_resolution", "video_resolution", "hires");
+			std::string zoom = settingOr(ctx, "zoom_mode", "automatic");
+			o.set("puae_crop", zoom == "automatic" ? "auto" : zoom);
+			o.set("puae_zoom_mode", "deprecated");
+			option(ctx, o, "puae_gfx_framerate", "gfx_framerate", "disabled");
+			option(ctx, o, "puae_mouse_speed", "mouse_speed", "200");
+			option(ctx, o, "puae_retropad_options", "pad_options", system == "amigacdtv" ? "disabled" : "jump");
+
+			if (system == "amiga500" || system == "amiga1200")
+			{
+				option(ctx, o, "puae_floppy_speed", "100");
+				option(ctx, o, "puae_keyrah_keypad_mappings", "keyrah_mapping", "enabled");
+				option(ctx, o, "puae_use_whdload_prefs", "whdload", "config");
+				option(ctx, o, "puae_physical_keyboard_pass_through", "disable_joystick", "disabled");
+			}
+			if (system == "amigacd32" || system == "amigacdtv")
+			{
+				option(ctx, o, "puae_cd_startup_delayed_insert", "disabled");
+				option(ctx, o, "puae_cd_speed", "100");
+			}
+			if (system == "amigacd32")
+				option(ctx, o, "puae_cd32pad_options", "disabled");
+		}
+
+		std::optional<std::string> deviceType(const LaunchContext& ctx, int player) const override
+		{
+			bool cd32 = ctx.game.system == "amigacd32";
+			if (player == 1)
+				return cd32 ? std::string("517") : settingOr(ctx, "controller1_puae", "1");   // 517: CD32 pad
+			if (player == 2 && !cd32)
+				return settingOr(ctx, "controller2_puae", "1");
+			return std::nullopt;
+		}
+	};
+
+	// VICE C64 (x64, and x64sc / xscpu64 without the d-pad setting)
+	class ViceX64 : public Core
+	{
+	public:
+		explicit ViceX64(bool forceDpad, bool scpu) : m_forceDpad(forceDpad), m_scpu(scpu) { }
+
+		void setConfig(const LaunchContext& /*ctx*/, ConfigFile& config) const override
+		{
+			if (!m_forceDpad)
+				return;
+			config.set("input_player1_analog_dpad_mode", "3");
+			config.set("input_player2_analog_dpad_mode", "3");
+		}
+
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			// JiffyDOS when its ROMs are all in bios/vice: the core turns off a drive without its ROM
+			std::vector<std::string> roms = { "JiffyDOS_1541-II.bin", "JiffyDOS_1571_repl310654.bin", "JiffyDOS_1581.bin" };
+			if (!m_scpu)
+				roms.emplace_back(settingOr(ctx, "c64_model", "").starts_with("C64SX") ? "JiffyDOS_SX-64.bin" : "JiffyDOS_C64.bin");
+			bool jiffy = std::ranges::all_of(roms, [&](const std::string& rom) {
+				std::error_code ec;
+				return std::filesystem::exists(ctx.paths.bios / "vice" / rom, ec);
+			});
+			o.set("vice_jiffydos", jiffy ? "enabled" : "disabled");
+
+			o.set("vice_autoloadwarp", "enabled");
+			o.set("vice_datasette_hotkeys", "disabled");
+			o.set("vice_read_vicerc", "disabled");
+			o.set("vice_Controller", "joystick");
+			o.set("vice_turbo_fire", "disabled");
+			static constexpr std::array<std::pair<const char*, const char*>, 26> mapping = { {
+				{ "a", "---" }, { "aspect_ratio_toggle", "---" }, { "b", "---" }, { "joyport_switch", "RETROK_F10" },
+				{ "l", "RETROK_ESCAPE" }, { "l2", "RETROK_F11" }, { "l3", "SWITCH_JOYPORT" }, { "ld", "---" }, { "ll", "---" },
+				{ "lr", "---" }, { "lu", "---" }, { "r", "RETROK_PAGEUP" }, { "r2", "RETROK_LSHIFT" }, { "rd", "RETROK_F7" },
+				{ "reset", "---" }, { "rl", "RETROK_F3" }, { "rr", "RETROK_F5" }, { "ru", "RETROK_F1" }, { "select", "TOGGLE_VKBD" },
+				{ "start", "RETROK_RETURN" }, { "statusbar", "RETROK_F9" }, { "vkbd", "RETROK_F12" }, { "warp_mode", "RETROK_F11" },
+				{ "turbo_fire_toggle", "RETROK_RCTRL" }, { "x", "RETROK_RCTRL" }, { "y", "RETROK_SPACE" },
+			} };
+			for (const auto& [key, value] : mapping)
+				o.set(std::string("vice_mapper_") + key, value);
+
+			option(ctx, o, "vice_c64_model", "c64_model", "C64 PAL auto");
+			option(ctx, o, "vice_aspect_ratio", "pal");
+			std::string zoom = settingOr(ctx, "vice_zoom_mode", "auto_disable");
+			o.set("vice_crop", zoom == "automatic" ? "auto" : zoom);
+			o.set("vice_zoom_mode", "deprecated");
+			option(ctx, o, "vice_external_palette", "colodore");
+			option(ctx, o, "vice_retropad_options", "jump");
+			option(ctx, o, "vice_joyport", "2");
+			option(ctx, o, "vice_joyport_type", "1");
+			option(ctx, o, "vice_ram_expansion_unit", "none");
+			option(ctx, o, "vice_physical_keyboard_pass_through", "vice_keyboard_pass_through", "disabled");
+		}
+
+	private:
+		bool m_forceDpad;
+		bool m_scpu;
+	};
+
 	// ---------------------------------------------------------------------------------------------
 
 	const Core& coreProfile(std::string_view core)
@@ -1318,6 +1586,13 @@ namespace es::launcher::retroarch
 			m.emplace("virtualjaguar", std::make_unique<VirtualJaguar>());
 			m.emplace("opera", std::make_unique<Opera>());
 			m.emplace("atari800", std::make_unique<Atari800>());
+			m.emplace("dosbox_pure", std::make_unique<DosboxPure>());
+			m.emplace("scummvm", std::make_unique<ScummVM>());
+			m.emplace("bluemsx", std::make_unique<BlueMSX>());
+			m.emplace("puae", std::make_unique<Puae>());
+			m.emplace("vice_x64", std::make_unique<ViceX64>(true, false));
+			m.emplace("vice_x64sc", std::make_unique<ViceX64>(false, false));
+			m.emplace("vice_xscpu64", std::make_unique<ViceX64>(false, true));
 			return m;
 		}();
 		static const Core generic;

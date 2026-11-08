@@ -3,6 +3,12 @@
 # Compiled together with lang/<lang>/LC_MESSAGES/emulationstation2.po, whose header (UTF-8) applies:
 # this file has none, msgfmt refuses a header defined twice.
 
+msgid "ANALOG DEADZONE"
+msgstr "ANALOGUE DEADZONE"
+
+msgid "ANALOG JOYSTICK DEADZONE"
+msgstr "ANALOGUE JOYSTICK DEADZONE"
+
 msgid "Add color to Game Boy games."
 msgstr "Add colour to Game Boy games."
 
@@ -51,6 +57,9 @@ msgstr "GB - Smart Colouring"
 msgid "GB COLORIZATION"
 msgstr "GB COLOURISATION"
 
+msgid "Optimized (auto)"
+msgstr "Optimised (auto)"
+
 msgid "PALETTE COLORS"
 msgstr "PALETTE COLOURS"
 
@@ -71,6 +80,9 @@ msgstr "Select the palette used to render colours."
 
 msgid "Set the color palette to use."
 msgstr "Set the colour palette to use."
+
+msgid "Set the deadzone of the joystick analog sticks."
+msgstr "Set the deadzone of the joystick analogue sticks."
 
 msgid "Simulate LCD color inaccuracy."
 msgstr "Simulate LCD colour inaccuracy."

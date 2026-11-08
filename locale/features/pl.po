@@ -3,6 +3,12 @@
 # Compiled together with lang/<lang>/LC_MESSAGES/emulationstation2.po, whose header (UTF-8) applies:
 # this file has none, msgfmt refuses a header defined twice.
 
+msgid " 3.54 MHz"
+msgstr " 3.54 MHz"
+
+msgid " 7.09 MHz (A500 speed)"
+msgstr " 7.09 MHz (prędkość A500)"
+
 msgid "(FDS) AUTOMATICALLY LOAD DISK SIDE A"
 msgstr "(FDS) AUTOMATYCZNIE ŁADUJ STRONĘ DYSKU A"
 
@@ -38,6 +44,9 @@ msgstr "1 wątek"
 
 msgid "1% (Default)"
 msgstr "1% (domyślnie)"
+
+msgid "1.0 (240p)"
+msgstr "1.0 (240p)"
 
 msgid "1.0x (12.50Mhz)"
 msgstr "1.0x (12.50Mhz)"
@@ -96,6 +105,9 @@ msgstr "10 sekund"
 msgid "100% (Default)"
 msgstr "100% (domyślnie)"
 
+msgid "1024kB"
+msgstr "1024kB"
+
 msgid "10th"
 msgstr "10"
 
@@ -108,14 +120,23 @@ msgstr "120 kl/s"
 msgid "1280x720 (Default)"
 msgstr "1280x720 (domyślnie)"
 
+msgid "128MB"
+msgstr "128MB"
+
 msgid "128MiB"
 msgstr "128MiB"
+
+msgid "128kB (1700)"
+msgstr "128kB (1700)"
 
 msgid "12th"
 msgstr "12"
 
 msgid "13th"
 msgstr "13"
+
+msgid "14.18 MHz (A1200 speed)"
+msgstr "14.18 MHz (prędkość A500)"
 
 msgid "144fps"
 msgstr "144 kl/s"
@@ -138,6 +159,9 @@ msgstr "15s"
 msgid "15th"
 msgstr "15"
 
+msgid "16384kB"
+msgstr "16384kB"
+
 msgid "165fps"
 msgstr "165 kl/s"
 
@@ -146,6 +170,9 @@ msgstr "16:9 (Domyślnie)"
 
 msgid "16:9 RENDERING RESOLUTION"
 msgstr "ROZDZIELCZOŚĆ RENDEROWANIA 16:9"
+
+msgid "16MB"
+msgstr "16MB"
 
 msgid "16th"
 msgstr "16"
@@ -171,6 +198,9 @@ msgstr "19"
 msgid "1st"
 msgstr "1"
 
+msgid "1st Joystick (2 Axes, 2 Btns)"
+msgstr "1. joystick (2 osie, 2 przyciski)"
+
 msgid "1x (720p/1080p)"
 msgstr "1x (720p/1080p)"
 
@@ -191,6 +221,9 @@ msgstr "2 sekundy"
 
 msgid "2 threads"
 msgstr "2 wątki"
+
+msgid "2.0 (480p)"
+msgstr "2.0 (480p)"
 
 msgid "2.0x (25.00Mhz)"
 msgstr "2.0x (25.00Mhz)"
@@ -219,6 +252,9 @@ msgstr "200ms"
 msgid "2048MB"
 msgstr "2048MB"
 
+msgid "2048kB"
+msgstr "2048kB"
+
 msgid "20ms"
 msgstr "20ms"
 
@@ -227,6 +263,9 @@ msgstr "20"
 
 msgid "21st"
 msgstr "21"
+
+msgid "224MB"
+msgstr "224MB"
 
 msgid "22nd"
 msgstr "22"
@@ -240,11 +279,17 @@ msgstr "23"
 msgid "24-bit, disables dithering."
 msgstr "24-bity, wyłącza dithering."
 
+msgid "24MB"
+msgstr "24MB"
+
 msgid "24MB (Default)"
 msgstr "24MB (domyślnie)"
 
 msgid "24th"
 msgstr "24"
+
+msgid "256kB (1764)"
+msgstr "256kB (1764)"
 
 msgid "25th"
 msgstr "25"
@@ -258,17 +303,32 @@ msgstr "270 stopni"
 msgid "27th"
 msgstr "27"
 
+msgid "28.37 MHz"
+msgstr "28.37 MHz"
+
+msgid "286, 12.5MHz (2750 cps)"
+msgstr "286, 12.5MHz (2750 c/s)"
+
+msgid "286, 6MHz (1320 cps)"
+msgstr "286, 6MHz (1320 c/s)"
+
 msgid "28th"
 msgstr "28"
 
 msgid "29th"
 msgstr "29"
 
+msgid "2P GAMEPAD MAPPING (KEYRAH)"
+msgstr "MAPOWANIE GAMEPADA DWÓCH GRACZY (KEYRAH)"
+
 msgid "2X"
 msgstr "2x"
 
 msgid "2nd"
 msgstr "2"
+
+msgid "2nd Joystick (2 Axes, 2 Btns)"
+msgstr "2. joystick (2 osie, 2 przyciski)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -321,17 +381,35 @@ msgstr "30"
 msgid "31st"
 msgstr "31"
 
+msgid "32MB"
+msgstr "32MB"
+
 msgid "32x MSAA"
 msgstr "32x MSAA"
 
 msgid "32x SSAA"
 msgstr "32x SSAA"
 
+msgid "35.46 MHz"
+msgstr "35.46 MHz"
+
 msgid "3840MB"
 msgstr "3840MB"
 
 msgid "384MB (Default)"
 msgstr "384MB (domyślnie)"
+
+msgid "386 (prefetch)"
+msgstr "386 (prefetch)"
+
+msgid "386 (slow)"
+msgstr "386 (wolny)"
+
+msgid "386, 20MHz (4720 cps)"
+msgstr "386, 20MHz (4720 c/s)"
+
+msgid "386DX, 33MHz (7800 cps)"
+msgstr "386DX, 33MHz (7800 c/s)"
 
 msgid "3rd"
 msgstr "3"
@@ -357,11 +435,26 @@ msgstr "4.5x (1440x1080)"
 msgid "4096MB"
 msgstr "4096MB"
 
+msgid "4096kB"
+msgstr "4096kB"
+
+msgid "42.56 MHz"
+msgstr "42.56 MHz"
+
 msgid "45s"
 msgstr "45s"
 
 msgid "480x272 (Default)"
 msgstr "480x272 (domyślnie)"
+
+msgid "486 (slow)"
+msgstr "486 (wolny)"
+
+msgid "486DX, 33MHz (13400 cps)"
+msgstr "486DX, 33MHz (13400 c/s)"
+
+msgid "486DX2, 66MHz (26800 cps)"
+msgstr "486DX2, 66MHz (26800 c/s)"
 
 msgid "48MB"
 msgstr "48MB"
@@ -374,6 +467,9 @@ msgstr "ROZDZIELCZOŚĆ RENDEROWANIA 4:3"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4MB"
+msgstr "4MB"
 
 msgid "4X"
 msgstr "4X"
@@ -417,6 +513,12 @@ msgstr "5% (domyślnie)"
 msgid "5120MB"
 msgstr "5120MB"
 
+msgid "512kB (1750)"
+msgstr "512kB (1750)"
+
+msgid "56.75 MHz"
+msgstr "56.75 MHz"
+
 msgid "5th"
 msgstr "5"
 
@@ -440,6 +542,9 @@ msgstr "60s"
 
 msgid "6144MB"
 msgstr "6144MB"
+
+msgid "64MB"
+msgstr "64MB"
 
 msgid "64MiB (Default)"
 msgstr "64 MB (domyślnie)"
@@ -479,6 +584,15 @@ msgstr "7x natywnej (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x natywna (1792 x 1344)"
+
+msgid "8086/8088, 4.77MHz (315 cps)"
+msgstr "8086/8088, 4.77MHz (315 c/s)"
+
+msgid "8192kB"
+msgstr "8192kB"
+
+msgid "8MB"
+msgstr "8MB"
 
 msgid "8X"
 msgstr "8X"
@@ -522,6 +636,21 @@ msgstr "9"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "A1200 (2MB Chip + 8MB Fast)"
+msgstr "A1200 (2MB Chip + 8MB Fast)"
+
+msgid "A4000/040 (2MB Chip + 8MB Fast)"
+msgstr "A4000/040 (2MB Chip + 8MB Fast)"
+
+msgid "A500 (512KB Chip + 512KB Slow)"
+msgstr "A500 (512KB Chip + 512KB Slow)"
+
+msgid "A500+ (1MB Chip)"
+msgstr "A500+ (1MB Chip)"
+
+msgid "A600 (2MB Chip + 8MB Fast)"
+msgstr "A600 (2MB Chip + 8MB Fast)"
+
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "POPRAWKA AKTYWNYCH URZĄDZEŃ WEJŚCIOWYCH"
 
@@ -543,11 +672,23 @@ msgstr "ALSA"
 msgid "ALSAThread"
 msgstr "ALSAThread"
 
+msgid "AMD Athlon, 1.2GHz (1000000 cps)"
+msgstr "AMD Athlon, 1.2GHz (1000000 c/s)"
+
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX Super Resolution"
 
+msgid "AMIGA MODEL"
+msgstr "MODEL AMIGI"
+
 msgid "ANAGLYPH PRESET (3D)"
 msgstr "USTAWIENIE ANAGLIFU (3D)"
+
+msgid "ANALOG DEADZONE"
+msgstr "ANALOGOWA STREFA MARTWA"
+
+msgid "ANALOG JOYSTICK DEADZONE"
+msgstr "DEADZONE JOYSTICKA ANALOGOWEGO"
 
 msgid "ANISOTROPIC FILTERING"
 msgstr "FILTROWANIE ANIZOTROPOWE"
@@ -624,8 +765,17 @@ msgstr "Dostosowuje współczynnik proporcji filmów Full Motion Video."
 msgid "Adjusts the positions of the screens."
 msgstr "Umożliwia regulację położenia ekranów."
 
+msgid "AdvMame"
+msgstr "AdvMame"
+
+msgid "Affects efficiency/stability."
+msgstr "Wpływa na wydajność/stabilność."
+
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Wpływa na sposób skalowania emulowanych ekranów. Tylko dla renderera OpenGL."
+
+msgid "Affects mouse speed globally."
+msgstr "Globalnie wpływa na prędkość myszy."
 
 msgid "After NMI"
 msgstr "Po NMI"
@@ -705,6 +855,9 @@ msgstr "Angrylion (najbardziej zgodna)"
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Stosuje algorytm antyaliasingu FXAA w celu poprawy jakości wizualnej gier."
 
+msgid "Apply a joy2key profile for the current game."
+msgstr "Zastosuj profil joy2key dla bieżącej gry."
+
 msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
 msgstr "Zastosuj mnożnik dla wejścia joysticka, aby zmniejszyć lub zwiększyć szybkość reakcji."
 
@@ -771,14 +924,29 @@ msgstr "Auto Maks. Jakość"
 msgid "Auto Standard (4:3 interlaced / 3:2 progressive)"
 msgstr "Auto standardowe (4:3 z przeplotem / 3:2 progresywne)"
 
+msgid "Auto zoom"
+msgstr "Automatyczny zoom"
+
+msgid "Auto-disable zoom"
+msgstr "Automatyczne wyłączanie zoomu"
+
 msgid "Autodetect"
 msgstr "Autowykrywanie"
+
+msgid "Autodetect (Compatible)"
+msgstr "Automatyczne wykrywanie (kompatybilny)"
+
+msgid "Autodetect (by game name tag)"
+msgstr "Automatyczne wykrywanie (według tagu nazwy gry)"
 
 msgid "Automatic"
 msgstr "Automatyczne"
 
 msgid "Automatic ratio"
 msgstr "Proporcje automatyczne"
+
+msgid "Automatic switches region per file path tags"
+msgstr "Automatyczne przełączanie regionu dla znaczników ścieżki pliku"
 
 msgid "Automatically loads and applies cheats on game start."
 msgstr "Automatycznie ładuje i stosuje cheaty podczas uruchamiania gry."
@@ -791,6 +959,12 @@ msgstr "Unikanie konieczności ręcznego ładowania strony A za każdym razem."
 
 msgid "Azerbaijan"
 msgstr "Azerbejdżan"
+
+msgid "B = Fire"
+msgstr "B = Fire"
+
+msgid "B = Fire, A = Up"
+msgstr "B = Fire, A = Góra"
 
 msgid "BILINEAR FILTERING"
 msgstr "FILTROWANIE DWULINIOWE"
@@ -815,6 +989,9 @@ msgstr "MIESZANIE W TRYBIE WYSOKIEJ ROZDZIELCZOŚCI"
 
 msgid "BLENDING ACCURACY"
 msgstr "DOKŁADNOŚĆ MIESZANIA"
+
+msgid "BOOT ANIMATION FIRST"
+msgstr "NAJPIERW ANIMACJA ROZRUCHU"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (zalecane dla wszystkich gier w USA)"
@@ -915,6 +1092,9 @@ msgstr "Boliwia"
 msgid "Both"
 msgstr "Obydwa"
 
+msgid "Both Joysticks (4 Axes, 4 Btns)"
+msgstr "Oba joysticki (4 osie, 4 przyciski)"
+
 msgid "Bottom (Default)"
 msgstr "Na dole (Domyślne)"
 
@@ -948,11 +1128,47 @@ msgstr "Renderowanie buforowane"
 msgid "Bulgaria"
 msgstr "Bułgaria"
 
+msgid "Button Options"
+msgstr "Opcje przycisków"
+
+msgid "C64 Games System PAL"
+msgstr "C64 Games System PAL"
+
+msgid "C64 Japanese NTSC"
+msgstr "C64 japoński NTSC"
+
+msgid "C64 NTSC"
+msgstr "C64 NTSC"
+
+msgid "C64 NTSC Automatic"
+msgstr "C64 NTSC Automatic"
+
+msgid "C64 PAL"
+msgstr "C64 PAL"
+
+msgid "C64 PAL Automatic"
+msgstr "C64 PAL Automatic"
+
 msgid "CD ADD-ON"
 msgstr "CD ADD-ON"
 
+msgid "CD TURBO SPEED"
+msgstr "TURBO PRĘDKOŚĆ CD"
+
 msgid "CD-DA VOLUME"
 msgstr "CD-DA VOLUME"
+
+msgid "CD32 (2MB Chip + 8MB Fast)"
+msgstr "CD32 (2MB Chip + 8MB Fast)"
+
+msgid "CD32 Default (2MB Chip)"
+msgstr "CD32 domyślnie (2MB Chip)"
+
+msgid "CD32 Pad"
+msgstr "CD32 Pad"
+
+msgid "CDTV (1MB Chip)"
+msgstr "CDTV (1MB Chip)"
 
 msgid "CDZ"
 msgstr "CDZ"
@@ -962,6 +1178,9 @@ msgstr "CDZ MAME"
 
 msgid "CDZ Universe 3.3"
 msgstr "CDZ Universe 3.3"
+
+msgid "CGA"
+msgstr "CGA"
 
 msgid "CHEATS"
 msgstr "CHEATY"
@@ -1029,6 +1248,9 @@ msgstr "MAPOWANIE WEJSC KONTROLERA 4"
 msgid "CONTROLLER COMBINATION"
 msgstr "KOMBINACJA KONTROLERÓW"
 
+msgid "CONTROLLER PORT"
+msgstr "PORT KONTROLERA"
+
 msgid "CONTROLLER TYPE"
 msgstr "TYP KONTROLERA"
 
@@ -1047,14 +1269,26 @@ msgstr "CPU"
 msgid "CPU CLOCK"
 msgstr "ZEGAR PROCESORA"
 
+msgid "CPU COMPATIBILITY"
+msgstr "KOMPATYBILNOŚĆ PROCESORA"
+
 msgid "CPU CORE"
 msgstr "RDZEŃ CPU"
+
+msgid "CPU CORE METHOD"
+msgstr "METODA RDZENIA PROCESORA"
 
 msgid "CPU DYNAREC (SPEED UP)"
 msgstr "DYNAREC CPU (PRZYSPIESZENIE)"
 
 msgid "CPU EXECUTION MODE"
 msgstr "TRYB PRACY PROCESORA"
+
+msgid "CPU SPEED"
+msgstr "PRĘDKOŚĆ PROCESORA"
+
+msgid "CPU TYPE"
+msgstr "TYP PROCESORA"
 
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "Limit opóźnienia CPU-GPU. Niższe wartości poprawiają opóźnienia, ale mogą obniżyć wydajność."
@@ -1094,6 +1328,9 @@ msgstr "Może być używany do symulowania kolorów poszczególnych wyświetlacz
 
 msgid "Can change the language of some games."
 msgstr "Może zmienić język niektórych gier."
+
+msgid "Can fix drifting joysticks in games."
+msgstr "Może naprawić dryfujące joysticki w grach."
 
 msgid "Can fix slowdown. Only works on some drivers."
 msgstr "Możliwa naprawa spowolnienia. Działa tylko na niektórych sterownikach."
@@ -1146,6 +1383,9 @@ msgstr "Chiny"
 msgid "Chinese"
 msgstr "Chiński"
 
+msgid "Chinese (Mandarin)"
+msgstr "Chiński (mandaryński)"
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Wybierz język konsoli. Nie wszystkie gry mogą obsługiwać wybrany język."
 
@@ -1190,6 +1430,12 @@ msgstr "Wybierz bibliotekę graficznego interfejsu API, której chcesz użyć."
 
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "Wybierz bibliotekę API grafiki, której chcesz użyć. Biblioteka Vulkan może nie działać w przypadku każdego jądra emulatora."
+
+msgid "Choose your preferred language."
+msgstr "Wybierz preferowany język."
+
+msgid "Choose your preferred renderer."
+msgstr "Wybierz preferowany moduł renderujący."
 
 msgid "Classic Controller"
 msgstr "Kontroler klasyczny"
@@ -1272,6 +1518,15 @@ msgstr "Limit czasu kursora w sekundach podczas korzystania z trybu kursora - Li
 msgid "Custom"
 msgstr "Niestandardowe"
 
+msgid "Custom Keyboard Binds (best for Pad2Key)"
+msgstr "Niestandardowe mapowanie klawiatury (najlepsze dla Pad2Key)"
+
+msgid "Cycle-exact"
+msgstr "Dokładny cyklowo"
+
+msgid "Czech"
+msgstr "Czeski"
+
 msgid "Czech Republic"
 msgstr "Czechy"
 
@@ -1295,6 +1550,9 @@ msgstr "WYŁĄCZ 4MB ROZSZERZENIE PAMIĘCI RAM"
 
 msgid "DISABLE CULLING"
 msgstr "WYŁĄCZ CULLING"
+
+msgid "DISABLE EMULATOR JOYSTICK"
+msgstr "WYŁĄCZ JOYSTICK EMULATORA"
 
 msgid "DISABLE INTERLACING"
 msgstr "WYŁĄCZ PRZEPLOT"
@@ -1374,6 +1632,9 @@ msgstr "Domyślnie"
 msgid "Default Only"
 msgstr "Domyślne"
 
+msgid "Default by model"
+msgstr "Domyślnie według modelu"
+
 msgid "Degree in which 3D graphics are scaled up. OpenGL renderer only."
 msgstr "Stopień skalowania grafiki 3D. Tylko dla renderera OpenGL."
 
@@ -1428,6 +1689,9 @@ msgstr "Wyłączone, jeśli używany jest zestaw shaderów lub rozdzielczość o
 msgid "Display on screen information like savestate, config warning, etc."
 msgstr "Wyświetlaj na ekranie informacje, takie jak stan zapisu, ostrzeżenie o konfiguracji itp."
 
+msgid "Does not affect the on-screen keyboard."
+msgstr "Nie ma wpływu na klawiaturę ekranową."
+
 msgid "Dominican Republic"
 msgstr "Dominikana"
 
@@ -1436,6 +1700,9 @@ msgstr "Nie zastępuj"
 
 msgid "Dot"
 msgstr "Punkt"
+
+msgid "DotMatrix"
+msgstr "DotMatrix"
 
 msgid "Double buffering"
 msgstr "Podwójne buforowanie"
@@ -1458,14 +1725,26 @@ msgstr "Podczas gry, naciśnij Hotkey + R1, aby przetłumaczyć tekst na ekranie
 msgid "Dutch"
 msgstr "Holenderski"
 
+msgid "Dynamic (fast)"
+msgstr "Dynamiczna (szybka)"
+
 msgid "Dynamic Interpreter"
 msgstr "Interpreter dynamiczny"
 
 msgid "Dynarec (Fastest)"
 msgstr "Dynarec (najszybszy)"
 
+msgid "EGA"
+msgstr "EGA"
+
 msgid "EMULATE WIIMOTE"
 msgstr "EMULUJ WIIMOTE"
+
+msgid "EMULATED CPU PERFORMANCE"
+msgstr "EMULOWANA WYDAJNOŚĆ PROCESORA"
+
+msgid "EMULATED RAM SIZE"
+msgstr "EMULOWANY ROZMIAR PAMIĘCI RAM"
 
 msgid "EMULATION"
 msgstr "EMULACJA"
@@ -1484,6 +1763,9 @@ msgstr "WŁĄCZ CHEATY"
 
 msgid "ENABLE GAMEPAD VIEW"
 msgstr "WŁĄCZ WIDOK Z GAMEPADA"
+
+msgid "ENABLE GRAVIS ULTRASOUND"
+msgstr "WŁĄCZ GRAVIS ULTRASOUND"
 
 msgid "ENABLE NOTIFICATIONS"
 msgstr "WŁĄCZ POWIADOMIENIA"
@@ -1512,6 +1794,9 @@ msgstr "ROZSZERZONY EKRAN"
 msgid "Ecuador"
 msgstr "Ekwador"
 
+msgid "Edge (sharper filet)"
+msgstr "Edge (filtr wyostrzający)"
+
 msgid "Egypt"
 msgstr "Egipt"
 
@@ -1536,6 +1821,9 @@ msgstr "Włącz nakładkę wydajności Cemu."
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "Włączenie animacji rozruchu Gamecube i dostępu do BIOS-u (wymaga BIOS-u IPL.bin w odpowiednim katalogu użytkownika)."
 
+msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
+msgstr "Włącz emulację Gravis Ultrasound. Upewnij się, że folder Ultrasound znajduje się w katalogu głównym folderu z rom'ami <game>.pc."
+
 msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
 msgstr "Włącz wyświetlanie MelonDS na dwóch ekranach. Niektóre powiązane opcje ekranu zostaną zignorowane."
 
@@ -1556,6 +1844,9 @@ msgstr "Włączanie celowników w grach strzeleckich dla wybranych graczy."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "Włączenie widoku gamepada w grach z interakcją na dwóch ekranach. Użyj Hotkey+R2, aby przełączać ekrany."
+
+msgid "Enable launching pre-installed WHDLoad installs."
+msgstr "Włącz uruchamianie wstępnie zainstalowanych instalacji WHDLoad."
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Włącz powiadomienia o pamięci podręcznej, zdarzeniach kontrolera, itp."
@@ -1671,6 +1962,9 @@ msgstr "Usprawnienie. Usunięcie limitu ośmiu sprite'ów na linię."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Usprawnienie. Usunięcie limitu osiemdziesięciu sprite'ów na linię."
 
+msgid "Enhancement. Remove the four sprites per line limit."
+msgstr "Usprawnienie. Usunięcie limitu czterech sprite'ów na linię."
+
 msgid "Enhancement. Remove the sixteen sprites per line limit."
 msgstr "Usprawnienie. Usunięcie limitu szesnastu sprite'ów na linię."
 
@@ -1716,6 +2010,9 @@ msgstr "Europa"
 msgid "Even"
 msgstr "Równo"
 
+msgid "Even Pixels"
+msgstr "Równomierne piksele"
+
 msgid "Exclusive Ubershaders"
 msgstr "Ekskluzywne Ubershaders"
 
@@ -1739,6 +2036,9 @@ msgstr "FIFO Relaxed"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "USTAWIENIA FIRMWARE"
+
+msgid "FLOPPY TURBO SPEED"
+msgstr "PRĘDKOŚĆ TURBO DYSKIETKI"
 
 msgid "FM SYNTHESIZER"
 msgstr "SYNTEZYZATOR FM"
@@ -1800,6 +2100,12 @@ msgstr "Wypełnia ekran niezależnie od współczynnika proporcji. Nie działa z
 msgid "Finland"
 msgstr "Finlandia"
 
+msgid "Fit 4:3 Aspect Ratio"
+msgstr "Dopasuj do współczynnika 4:3"
+
+msgid "Fit resolution scale"
+msgstr "Dopasuj skalę rozdzielczości"
+
 msgid "Fit to Window / Fullscreen"
 msgstr "Dopasuj do okna / pełny ekran"
 
@@ -1814,6 +2120,9 @@ msgstr "Napraw prążkowanie tekstur podczas przeskalowania."
 
 msgid "Fixes a possible bug with multiple controllers detection."
 msgstr "Usuwa możliwy błąd z wykrywaniem wielu kontrolerów."
+
+msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
+msgstr "Flight Stick (3 osie, 4 przyciski, 1 przepustnica)"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Dla gier z obsługą żyroskopu (powiązany z lewym drążkiem analogowym)"
@@ -1839,6 +2148,9 @@ msgstr "Wymuś 32bit"
 msgid "Force 4:3"
 msgstr "Wymuszone 4:3"
 
+msgid "Force a specific model and prevent tags detection."
+msgstr "Wymuś określony model i zapobiegaj wykrywaniu znaczników."
+
 msgid "Force progressive render / scan."
 msgstr "Wymuś progresywne renderowanie / skanowanie."
 
@@ -1850,6 +2162,9 @@ msgstr "Francja"
 
 msgid "French"
 msgstr "Francuski"
+
+msgid "Frontend MIDI driver"
+msgstr "Sterownik MIDI frontendu"
 
 msgid "Full (Hash Cache)"
 msgstr "Pełne (Hash Cache)"
@@ -1901,6 +2216,12 @@ msgstr "TYP PORTU GAMECUBE 3"
 
 msgid "GAMECUBE PORT 4 TYPE"
 msgstr "TYP PORTU GAMECUBE 4"
+
+msgid "GAMEPAD AUTOMATIC MAPPING"
+msgstr "AUTOMATYCZNE MAPOWANIE GAMEPADA"
+
+msgid "GAMEPAD CURSOR SPEED"
+msgstr "SZYBKOŚĆ KURSORA GAMEPADA"
 
 msgid "GB - Black and White"
 msgstr "GB - Czarno-biała"
@@ -1977,11 +2298,17 @@ msgstr "GRAFIKA"
 msgid "GRAPHICS API"
 msgstr "API GRAFIKI"
 
+msgid "GRAPHICS CHIP TYPE"
+msgstr "TYP UKŁADU GRAFICZNEGO"
+
 msgid "GRAPHICS PLUGIN"
 msgstr "WTYCZKA GRAFICZNA"
 
 msgid "Game default"
 msgstr "Domyślne ustawienia gry"
+
+msgid "GameBlaster"
+msgstr "GameBlaster"
 
 msgid "GameCube Adapter for Wii U"
 msgstr "Adapter GameCube dla Wii U"
@@ -2000,6 +2327,9 @@ msgstr "Gry mogą działać szybciej/wolniej niż normalnie, jeśli wybrany zost
 
 msgid "Gaussian"
 msgstr "Gaussian"
+
+msgid "Generic Keyboard Binds"
+msgstr "Standardowe mapowanie klawiatury"
 
 msgid "Genesis/Megadrive Style"
 msgstr "Styl Genesis/Megadrive"
@@ -2021,6 +2351,9 @@ msgstr "Glide64"
 
 msgid "Gln64"
 msgstr "Gln64"
+
+msgid "Gravis GamePad (D-pad + 4 Btns)"
+msgstr "Gravis GamePad (D-pad + 4 przyciski)"
 
 msgid "Gray"
 msgstr "Szary"
@@ -2049,17 +2382,38 @@ msgstr "ARTEFAKTY HI-RES"
 msgid "HLE (Fastest)"
 msgstr "HLE (najszybsza)"
 
+msgid "HQ (bilinear filter)"
+msgstr "HQ (filtr dwuliniowy)"
+
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack. Zwiększa szybkość działania większości gier PAL o 17%."
+
+msgid "Hebrew"
+msgstr "Hebrajski"
+
+msgid "Help games which are too quick or that have bugs."
+msgstr "Pomóż w grach, które są zbyt szybkie lub zawierają błędy."
 
 msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
 msgstr "Pomaga w przypadku problemów z teksturą i głębią na procesorach graficznych AMD. W niektórych przypadkach może również pomóc procesorom graficznym Intel."
 
+msgid "Hercules"
+msgstr "Hercules"
+
 msgid "Hermite"
 msgstr "Hermite"
 
+msgid "Hides borders on many games. Some games use the borders."
+msgstr "Ukrywa obramowania w wielu grach. Niektóre gry używają ramek."
+
+msgid "Hides borders on many games. Some games used the borders."
+msgstr "Ukrywa obramowania w wielu grach. Niektóre gry wykorzystywały obramowania."
+
 msgid "High"
 msgstr "Wysokie"
+
+msgid "High 720p"
+msgstr "Wysoka 720p"
 
 msgid "Honduras"
 msgstr "Honduras"
@@ -2130,6 +2484,9 @@ msgstr "Jeśli gra działa z częstotliwością 30 Hz, PPSSPP wyświetli 60 klat
 msgid "If nothing is specified, will use ZTranslate by default."
 msgstr "Jeżeli nie zostanie wskazane to domyślnie zostanie użyty ZTranslate."
 
+msgid "Ignored with 'Cycle-exact'."
+msgstr "Ignorowane z 'Dokładnym cyklowo'."
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "Popraw dokładność dźwięku (eksperymentalne)."
 
@@ -2159,6 +2516,12 @@ msgstr "Indie"
 
 msgid "Indonesia"
 msgstr "Indonezja"
+
+msgid "Inserts CD during boot animation prevent loading fail."
+msgstr "Wkłada płytę CD podczas animacji rozruchu, aby zapobiec niepowodzeniu ładowania."
+
+msgid "Inserts CD during boot animation to prevent loading fail."
+msgstr "Wkłada płytę CD podczas animacji rozruchu, aby zapobiec niepowodzeniu ładowania."
 
 msgid "Interpreter (Slowest)"
 msgstr "Interpreter (najwolniejszy)"
@@ -2204,6 +2567,12 @@ msgstr "CZUŁOŚĆ JOYSTICKA"
 
 msgid "JOYSTICK TO DPAD"
 msgstr "JOYSTICK NA DPAD"
+
+msgid "JUMP ON A"
+msgstr "SKOK NA A"
+
+msgid "JUMP ON B"
+msgstr "SKOK NA B"
 
 msgid "Jamaica"
 msgstr "Jamajka"
@@ -2262,6 +2631,9 @@ msgstr "Czerwiec"
 msgid "Justifier"
 msgstr "Justifier"
 
+msgid "KEYBOARD PASSTHROUGH"
+msgstr "PRZEZ KLAWIATURĘ"
+
 msgid "Kazakhstan"
 msgstr "Kazachstan"
 
@@ -2271,11 +2643,23 @@ msgstr "Kenia"
 msgid "Keyboard"
 msgstr "Klawiatura"
 
+msgid "Keyboard + Mouse (Left An.)"
+msgstr "Klawiatura + mysz (po lewej)"
+
+msgid "Keyboard + Mouse (Right An.)"
+msgstr "Klawiatura + mysz (po prawej)"
+
 msgid "Keyboard passthrough"
 msgstr "Przekazywanie za pomocą klawiatury"
 
 msgid "Keyboard shortcuts unavailable if passing through the keyboard."
 msgstr "Skróty klawiaturowe są niedostępne w przypadku przekazywania przez klawiaturę."
+
+msgid "Keypad to joyport mappings for 2 players."
+msgstr "Mapowanie keypada do joysticka dla dwóch graczy."
+
+msgid "Koalapad"
+msgstr "Koalapad"
 
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
@@ -2409,6 +2793,9 @@ msgstr "Lokalny adres i port do odbierania pakietów. Pozostaw to puste, jeśli 
 msgid "Low"
 msgstr "Słabe"
 
+msgid "Low 360p"
+msgstr "Niska 360p"
+
 msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
 msgstr "Niższe wartości zmniejszają opóźnienia dźwięku i poprawiają."
 
@@ -2430,6 +2817,9 @@ msgstr "MAME (YM2612)"
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "RĘCZNE PRÓBKOWANIE TEKSTUR"
 
+msgid "MAX (as many as possible)"
+msgstr "MAX (jak najwięcej)"
+
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "MAKSYMALNE OGRANICZENIE POBORU MOCY"
 
@@ -2439,11 +2829,23 @@ msgstr "TRYB KARTY PAMIĘCI"
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "JEDNOSTKA ZARZĄDZANIA PAMIĘCIĄ"
 
+msgid "MIDI OUTPUT"
+msgstr "WYJŚCIE MIDI"
+
 msgid "MIPMAPPING"
 msgstr "MIPMAPPING"
 
+msgid "MODEL TYPE"
+msgstr "TYP MODELU"
+
 msgid "MOUNT CACHE"
 msgstr "Montuj pamięć podręczną"
+
+msgid "MOUSE SPEED"
+msgstr "PRĘDKOŚĆ MYSZY"
+
+msgid "MSX2"
+msgstr "MSX2"
 
 msgid "MULTITAP"
 msgstr "MULTITAP"
@@ -2457,6 +2859,12 @@ msgstr "Makau"
 msgid "Magnum FBX"
 msgstr "Magnum FBX"
 
+msgid "Makes second fire button press up instead."
+msgstr "Sprawia naciśnięcie drugiego przycisku 'fire'."
+
+msgid "Makes the blue button press up instead."
+msgstr "Sprawia naciśnięcie przycisku niebieskiego."
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "Sprawia, że wzór ditheringu jest znacznie mniej widoczny w wyższych rozdzielczościach."
 
@@ -2468,6 +2876,12 @@ msgstr "Malediwy"
 
 msgid "Manually activate the adapter for supported games."
 msgstr "Ręcznie aktywuj adapter w przypadku obsługiwanych gier."
+
+msgid "Manually define which resolution to use.&#x0a;Auto defaults to High and switches to Super-High when needed."
+msgstr "Ręcznie zdefiniuj, której rozdzielczości użyć.&#x0a;Auto domyślnie ma wartość Wysoka i przełącza się na Super Wysoka w razie potrzeby."
+
+msgid "Manually set cycles per second. Use with caution."
+msgstr "Ręczne ustawienie cykli na sekundę. Należy używać z zachowaniem ostrożności."
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Zmapuj swój kontroler do emulowanego Wiimote."
@@ -2556,11 +2970,20 @@ msgstr "Monochromatyczny (Blargg)"
 msgid "More accurate emulation, but slower."
 msgstr "Dokładniejsza emulacja, ale wolniejsza."
 
+msgid "More compatible"
+msgstr "Bardziej kompatybilny"
+
 msgid "Morocco"
 msgstr "Maroko"
 
+msgid "Most games use port 2, some use port 1."
+msgstr "Większość gier używa portu 2, niektóre używają portu 1."
+
 msgid "Mouse"
 msgstr "Mysz"
+
+msgid "Mouse (1351)"
+msgstr "Mysz (1351)"
 
 msgid "Mouse sensitivity for paddles. Core default (10)."
 msgstr "Czułość myszy dla paddle. Domyślna wartość (10)."
@@ -2621,6 +3044,12 @@ msgstr "NTSC (S-Video)"
 
 msgid "NTSC 240x480px 60Hz"
 msgstr "NTSC 240x480px 60Hz"
+
+msgid "NTSC 240x480px 60Hz (auto)"
+msgstr "NTSC 240x480px 60Hz (auto)"
+
+msgid "NTSC 492x262px"
+msgstr "NTSC 492x262px"
 
 msgid "NTSC ASPECT"
 msgstr "PROPORCJE NTSC"
@@ -2703,6 +3132,9 @@ msgstr "Nie (domyślnie)"
 msgid "No Buffer"
 msgstr "Brak bufora"
 
+msgid "No EMS/XMS"
+msgstr "Brak EMS/XMS"
+
 msgid "No Limit"
 msgstr "Bez limitu"
 
@@ -2726,6 +3158,9 @@ msgstr "Normalny"
 
 msgid "Normal (Default)"
 msgstr "Normalny (domyślnie)"
+
+msgid "Normal (interpreter)"
+msgstr "Normalna (interpreter)"
 
 msgid "Norway"
 msgstr "Norwegia"
@@ -2802,6 +3237,12 @@ msgstr "Wlaczone (Tylko dla Vulcana)"
 msgid "On (forced)"
 msgstr "Włączone (wymuszone)"
 
+msgid "On with game detection message"
+msgstr "Włączone z komunikatem wykrywania gry"
+
+msgid "On with rewind support"
+msgstr "Włączone z obsługą przewijania"
+
 msgid "Only Overscan Area"
 msgstr "Tylko obszar Overscan"
 
@@ -2828,6 +3269,12 @@ msgstr "OpenGL (domyślnie)"
 
 msgid "OpenGL (Overwrites Libretro API settings)"
 msgstr "OpenGL (nadpisuje ustawienia API Libretro)"
+
+msgid "OpenGL with Shaders"
+msgstr "OpenGL z shaderami"
+
+msgid "Optimized (auto)"
+msgstr "Zoptymalizowana (automatyczna)"
 
 msgid "Orange"
 msgstr "Pomarańczowy"
@@ -2877,6 +3324,12 @@ msgstr "CZUŁOŚĆ MYSZY DLA PADDLE"
 msgid "PAL 288x576px 50Hz"
 msgstr "PAL 288x576px 50Hz"
 
+msgid "PAL 288x576px 50Hz (auto)"
+msgstr "PAL 288x576px 50Hz (auto)"
+
+msgid "PAL 576x312px"
+msgstr "PAL 576x312px"
+
 msgid "PAL ASPECT"
 msgstr "PROPORCJE PAL"
 
@@ -2901,6 +3354,9 @@ msgstr "Joypad PCE"
 msgid "PCE Mouse"
 msgstr "Mysz PCE"
 
+msgid "PCjr"
+msgstr "PCjr"
+
 msgid "PER-GAME SAVES"
 msgstr "ZAPISY NA KAŻDĄ GRĘ"
 
@@ -2915,6 +3371,9 @@ msgstr "MIESZANKA FOSFORU"
 
 msgid "PHOSPHOR MODE"
 msgstr "TRYB FOSFORU"
+
+msgid "PHYSICAL KEYBOARD LAYOUT"
+msgstr "FIZYCZNY UKŁAD KLAWIATURY"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "KOLOR CELOWNIKA GRACZA 1"
@@ -2943,6 +3402,9 @@ msgstr "Kontrola paddle"
 msgid "Paddle can only be used in port 2."
 msgstr "Paddle może być używane tylko w porcie 2."
 
+msgid "Paddles"
+msgstr "Paddles"
+
 msgid "Pakistan"
 msgstr "Pakistan"
 
@@ -2963,6 +3425,21 @@ msgstr "Parallel"
 
 msgid "Partial"
 msgstr "Częściowe"
+
+msgid "Passes all physical keyboard events for Pad2Key."
+msgstr "Przekazuje wszystkie fizyczne zdarzenia klawiatury do Pad2Key."
+
+msgid "Pentium (slow)"
+msgstr "Pentium (wolny)"
+
+msgid "Pentium II, 300MHz (200000 cps)"
+msgstr "Pentium II, 300MHz (200000 c/s)"
+
+msgid "Pentium III, 600MHz (500000 cps)"
+msgstr "Pentium III, 600MHz (500000 c/s)"
+
+msgid "Pentium, 100MHz (77000 cps)"
+msgstr "Pentium, 100MHz (77000 c/s)"
 
 msgid "Per 0.05s, 5s total (550MB|100MB)"
 msgstr "Co 0,05s, łącznie 5s (550MB|100MB)"
@@ -2999,6 +3476,12 @@ msgstr "Filipiny"
 
 msgid "Phosphor blend level. Core default (60%)."
 msgstr "Poziom mieszanki fosforu. Domyślna wartość (60%)."
+
+msgid "Pixel Perfect"
+msgstr "Idealny piksel"
+
+msgid "Pixel-Perfect"
+msgstr "Pixel-Perfect"
 
 msgid "PlayStation Mouse"
 msgstr "Mysz PlayStation"
@@ -3068,6 +3551,9 @@ msgstr "RENDEROWANIE QUAD"
 
 msgid "Qatar"
 msgstr "Katar"
+
+msgid "RAM EXPANSION UNIT"
+msgstr "ROZSZERZENIE RAM"
 
 msgid "RDP PLUGIN"
 msgstr "WTYCZKA RDP"
@@ -3147,6 +3633,9 @@ msgstr "Redukuje chybotliwe wielokąty i wypaczenia tekstur."
 msgid "Relaxed (Fastest)"
 msgstr "Rozluźnione (najszybsze)"
 
+msgid "Removes loading but can add possible glitches/crashes."
+msgstr "Usuwa czas ładowania, ale może spowodować usterki/awarie."
+
 msgid "Replace meshed transparency by real transparency."
 msgstr "Zastąp przezroczystość siatkową przez przezroczystość rzeczywistą."
 
@@ -3171,11 +3660,17 @@ msgstr "Przywrócona Wii VC"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (domyślnie)"
 
+msgid "RetroPad Face Button Options."
+msgstr "Opcje przycisków RetroPad'a."
+
 msgid "Retropad"
 msgstr "Retropad"
 
 msgid "Retropad (Default)"
 msgstr "Retropad (domyślnie)"
+
+msgid "Rewind can be CPU heavy."
+msgstr "Przewijanie może obciążać procesor."
 
 msgid "Rice"
 msgstr "Rice"
@@ -3185,6 +3680,9 @@ msgstr "Prawy joystick"
 
 msgid "Right/Left"
 msgstr "Prawo/Lewo"
+
+msgid "Roland MT-32/CM-32L"
+msgstr "Roland MT-32/CM-32L"
 
 msgid "Romania"
 msgstr "Rumunia"
@@ -3216,8 +3714,17 @@ msgstr "S-Video"
 msgid "S-Video (Blargg)"
 msgstr "S-Video (Blargg)"
 
+msgid "SAVESTATE/REWIND"
+msgstr "ZAPISZ STAN/PRZEWIJAJ"
+
+msgid "SCALE FACTOR"
+msgstr "WSPÓŁCZYNNIK SKALOWANIA"
+
 msgid "SCALED DITHERING"
 msgstr "SKALOWANY DITHERING"
+
+msgid "SCALER MODE"
+msgstr "TRYB SKALOWANIA"
 
 msgid "SCALING MODE"
 msgstr "TRYB SKALOWANIA"
@@ -3330,6 +3837,9 @@ msgstr "POZIOM CZUJNIKA SŁONECZNEGO"
 msgid "SOUND QUALITY"
 msgstr "JAKOŚĆ DŹWIĘKU"
 
+msgid "SOUNDBLASTER TYPE"
+msgstr "TYP SOUNDBLASTERA"
+
 msgid "SPECIAL CONTROL LAYOUTS"
 msgstr "SPECJALNE UKŁADY STEROWANIA"
 
@@ -3369,6 +3879,9 @@ msgstr "PODKRĘCANIE SUPER FX"
 msgid "SUPER GB BORDERS"
 msgstr "OBRAMOWANIE SUPER GB"
 
+msgid "SVGA"
+msgstr "SVGA"
+
 msgid "SVideo (color bleeding only)"
 msgstr "SVideo (tylko rozmycie kolorów)"
 
@@ -3399,14 +3912,29 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Skalowane"
 
+msgid "Scanline Interpolation Filter (SAI)"
+msgstr "Filtr interpolacji linii skanu (SAI)"
+
 msgid "Screen Resolution (Default)"
 msgstr "Rozdzielczość ekranu (domyślnie)"
 
 msgid "Sega/Mega CD"
 msgstr "Sega/Mega CD"
 
+msgid "Select controller type for Amiga P1."
+msgstr "Wybierz typ kontrolera dla gracza 1 Amigi."
+
+msgid "Select controller type for Amiga P2."
+msgstr "Wybierz typ kontrolera dla gracza 2 Amigi."
+
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Wybrany język zostanie użyty, jeśli opcja \"Użyj ustawień oprogramowania\" jest wyłączona lub jeśli plik oprogramowania nie został znaleziony."
+
+msgid "Select scale resolution of the game."
+msgstr "Wybierz rozdzielczość skalowania gry."
+
+msgid "Select the .SF2 SoundFont file, .ROM file, or interface used for MIDI output."
+msgstr "Wybierz plik .SF2 SoundFont, plik .ROM lub interfejs używany dla wyjścia MIDI."
 
 msgid "Select the console video standard / display mode."
 msgstr "Wybierz standard wideo konsoli / tryb wyświetlania."
@@ -3416,6 +3944,9 @@ msgstr "Wybierz typ wprowadzania, aby poruszać się po ekranie dotykowym"
 
 msgid "Select the palette used to render colors."
 msgstr "Wybierz paletę używaną do renderowania kolorów."
+
+msgid "Select which Intel CPU to emulate."
+msgstr "Wybierz typ procesora Intel, który chcesz emulować."
 
 msgid "Separate Windows"
 msgstr "Oddzielne okna"
@@ -3432,8 +3963,14 @@ msgstr "Ustaw paletę kolorów do użycia."
 msgid "Set the controller rumble strength if supported."
 msgstr "Ustaw siłę wibracji kontrolera, jeśli jest obsługiwana."
 
+msgid "Set the deadzone of the joystick analog sticks."
+msgstr "Ustaw deadzone drążków analogowych joysticka."
+
 msgid "Set virtual joysticks gate size. Smaller increases sensitivity. Larger decreases it."
 msgstr "Ustaw rozmiar otworu wirtualnych joysticków. Mniejsza zwiększa czułość. Większa ją zmniejsza."
+
+msgid "Sets the scaler filter mode when rendering."
+msgstr "Ustawia tryb filtra skalowania podczas renderowania."
 
 msgid "Shader Interpreter only"
 msgstr "Tylko interpreter shaderów"
@@ -3464,6 +4001,9 @@ msgstr "Wyświetlanie wiadomości ekranowych (np. zapisy na karcie pamięci)."
 
 msgid "Simple"
 msgstr "Prosty"
+
+msgid "Simple (interpreter for old real-mode games)"
+msgstr "Prosta (interpreter dla starych gier w trybie rzeczywistym)"
 
 msgid "Simplified Chinese"
 msgstr "Chiński uproszczony"
@@ -3546,11 +4086,29 @@ msgstr "Programowo"
 msgid "Software mode is faster and more accurate, while OpenGL mode supports scaling 3D graphics."
 msgstr "Tryb programowy jest szybszy i dokładniejszy, podczas gdy tryb OpenGL obsługuje skalowanie grafiki 3D."
 
+msgid "Some games and homebrews require more RAM"
+msgstr "Niektóre gry i homebrew wymagają więcej RAM"
+
 msgid "Some games have issues when the animation is shown, others require it."
 msgstr "Niektóre gry mają problemy, gdy animacja jest wyświetlana, inne jej wymagają."
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "SounBlaster 1.0"
+msgstr "SounBlaster 1.0"
+
+msgid "SounBlaster 16 (Default)"
+msgstr "SounBlaster 16 (domyślnie)"
+
+msgid "SounBlaster 2.0"
+msgstr "SounBlaster 2.0"
+
+msgid "SounBlaster Pro"
+msgstr "SounBlaster Pro"
+
+msgid "SounBlaster Pro 2"
+msgstr "SounBlaster Pro 2"
 
 msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
 msgstr "Generator dźwięku. MAME jest szybszy, a Nuked dokładniejszy. Oryginalny model używał YM2612, podczas gdy późniejsze wersje używały YM3438."
@@ -3615,14 +4173,29 @@ msgstr "Rozciągnięcie"
 msgid "Stretch to full"
 msgstr "Rozciągnij do pełna"
 
+msgid "Stretch to screen"
+msgstr "Rozciągnij do ekranu"
+
 msgid "Stretch to window"
 msgstr "Rozciągnięcie do okna"
+
+msgid "Stretches the output to fill the display area."
+msgstr "Rozciąga wyjście, aby wypełnić obszar wyświetlania."
 
 msgid "Super Game Boy"
 msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
+
+msgid "Super-high 1440p"
+msgstr "Super wysoka 1440p"
+
+msgid "SuperEagle"
+msgstr "SuperEagle"
+
+msgid "SuperSAI"
+msgstr "SuperSAI"
 
 msgid "Surround"
 msgstr "Surround"
@@ -3639,8 +4212,17 @@ msgstr "Zamień pozycję podwójnych wyświetlaczy."
 msgid "Sweden"
 msgstr "Szwecja"
 
+msgid "Swedish"
+msgstr "Szwedzki"
+
 msgid "Switzerland"
 msgstr "Szwajcaria"
+
+msgid "Switzerland (French)"
+msgstr "Szwajcaria (francuski)"
+
+msgid "Switzerland (German)"
+msgstr "Szwajcaria (niemiecki)"
 
 msgid "Syria"
 msgstr "Syria"
@@ -3696,6 +4278,9 @@ msgstr "WIELOWĄTKOWE WIDEO"
 msgid "TIME STRETCHING THRESHOLD"
 msgstr "PRÓG ROZCIĄGANIA CZASU"
 
+msgid "TIMED AXIS INTERVALS"
+msgstr "INTERWAŁY CZASOWE OSI"
+
 msgid "TOUCH MODE"
 msgstr "TRYB DOTYKU"
 
@@ -3714,6 +4299,9 @@ msgstr "WIERNE ODWZOROWANIE KOLORÓW"
 msgid "TV EFFECTS"
 msgstr "EFEKTY TELEWIZYJNE"
 
+msgid "TV2x CRT Television Filter"
+msgstr "Filtr kineskopowy TV2x"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - Pack 1"
 
@@ -3726,6 +4314,9 @@ msgstr "Tajwan"
 msgid "Taiwanese"
 msgstr "Tajwański"
 
+msgid "Tandy"
+msgstr "Tandy"
+
 msgid "Thailand"
 msgstr "Tajlandia"
 
@@ -3737,6 +4328,9 @@ msgstr "Obszar wokół neutralnej pozycji joysticka, w którym dane wejściowe s
 
 msgid "The day within the month of your birthday."
 msgstr "Dzień w miesiącu Twoich urodzin."
+
+msgid "The emulated graphics card."
+msgstr "Emulowana karta graficzna."
 
 msgid "The final output image, unrelated to the Wii's emulated NAND setting."
 msgstr "Ostateczny obraz wyjścia, niezwiązany z emulowanym ustawieniem NAND Wii."
@@ -3792,6 +4386,9 @@ msgstr "Tylko góra"
 msgid "Touch Screen"
 msgstr "Ekran dotykowy"
 
+msgid "Trackball (Atari CX-22)"
+msgstr "Trackball (Atari CX-22)"
+
 msgid "Traditional Chinese"
 msgstr "Chiński tradycyjny"
 
@@ -3819,6 +4416,9 @@ msgstr "Turkusowy"
 msgid "Twin Stick with Triggers"
 msgstr "Twin Stick with Triggers"
 
+msgid "Type of emulated SoundBlaster card."
+msgstr "Rodzaj emulowanej karty SoundBlaster."
+
 msgid "UBERSHADERS"
 msgstr "UBERSHADERS"
 
@@ -3831,8 +4431,14 @@ msgstr "ZDALNY ADRES UDP"
 msgid "UDP Tunnel"
 msgstr "Tunel UDP"
 
+msgid "UK"
+msgstr "UK"
+
 msgid "UPSCALE FILTER"
 msgstr "FILTR UPSCALE"
+
+msgid "US"
+msgstr "US"
 
 msgid "USA"
 msgstr "USA"
@@ -3912,6 +4518,9 @@ msgstr "Użyj jednego pliku zapisu na każdą grę."
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Używa ramek wstępnych zamiast run-ahead. Działa tylko wtedy, gdy zmienia się stan kontrolera."
 
+msgid "Use to eliminate cursor drift/unwanted input."
+msgstr "Służy do eliminowania dryftu kursora/niepożądanych danych wejściowych."
+
 msgid "Use to eliminate joystick drift/unwanted input. Effects all controllers."
 msgstr "Służy do eliminacji dryftu joysticka/niepożądanego wejścia. Działa na wszystkich kontrolerach."
 
@@ -3954,11 +4563,17 @@ msgstr "POMIŃ VBI"
 msgid "VERTICAL ROTATION (TATE)"
 msgstr "OBRÓT W PIONIE (TATE)"
 
+msgid "VGA"
+msgstr "VGA"
+
 msgid "VIDEO FILTERS"
 msgstr "FILTRY WIDEO"
 
 msgid "VIDEO FORMAT STANDARD"
 msgstr "STANDARD FORMATU WIDEO"
+
+msgid "VIDEO RESOLUTION"
+msgstr "ROZDZIELCZOŚĆ WIDEO"
 
 msgid "VIDEO SETTINGS"
 msgstr "USTAWIENIA WIDEO"
@@ -3992,6 +4607,9 @@ msgstr "OSTRZEGAJ O PROBLEMACH Z BIOSEM"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "OSTRZEGAJ O NIEOBSŁUGIWANYCH FUNKCJACH"
+
+msgid "WHDLOAD LAUNCHER"
+msgstr "URUCHOMIENIE WHDLOAD"
 
 msgid "WHEELS"
 msgstr "KIEROWNICE"
@@ -4062,6 +4680,9 @@ msgstr "Wiimote Sideway + Swing"
 msgid "Wiimote Sideway + Tilt"
 msgstr "Wiimote Sideway + Tilt"
 
+msgid "Works with 'Cycle-exact' mode and for a few games."
+msgstr "Działa z trybem 'Dokładnym cyklowo' i dla kilku gier."
+
 msgid "X2"
 msgstr "2x"
 
@@ -4070,6 +4691,12 @@ msgstr "Włączona licencja XBLA (domyślnie)"
 
 msgid "XBOX LIVE ARCADE"
 msgstr "XBOX LIVE ARCADE"
+
+msgid "Y = Fire"
+msgstr "Y = Fire"
+
+msgid "Y = Fire, B = Up"
+msgstr "Y = Fire, B = Dół"
 
 msgid "YUV v3 (Firebrand)"
 msgstr "YUV v3 (Firebrand)"
@@ -4085,6 +4712,12 @@ msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "DOKŁADNOŚĆ ZCULL"
+
+msgid "ZOOM (HIDE BORDERS)"
+msgstr "ZOOM (UKRYJ OBRAMOWANIA)"
+
+msgid "ZOOM/CROP (HIDE BORDERS)"
+msgstr "POWIĘKSZ/KADRUJ (UKRYJ RAMKĘ)"
 
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Powiększ, aby ukryć czarne ramki. Granice są różne dla poszczególnych gier."
@@ -4164,11 +4797,26 @@ msgstr "hybryda/dół"
 msgid "hybrid/top"
 msgstr "hybryda/góra"
 
+msgid "large"
+msgstr "duże"
+
+msgid "larger"
+msgstr "większe"
+
 msgid "left/right"
 msgstr "lewo/prawo"
 
 msgid "lottes crt"
 msgstr "lottes crt"
+
+msgid "maximum"
+msgstr "maksymalne"
+
+msgid "medium"
+msgstr "średnie"
+
+msgid "minimum"
+msgstr "minimalnie"
 
 msgid "nearest"
 msgstr "najbliższe"
@@ -4202,6 +4850,12 @@ msgstr "royaltea"
 
 msgid "scanlines"
 msgstr "linie skanowania"
+
+msgid "small"
+msgstr "małe"
+
+msgid "smaller"
+msgstr "mniejsze"
 
 msgid "standard"
 msgstr "standardowy"

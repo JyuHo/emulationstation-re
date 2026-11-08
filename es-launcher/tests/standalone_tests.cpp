@@ -20,6 +20,8 @@
 #include "eden/EdenGenerator.h"
 #include "melonds/MelonDSGenerator.h"
 #include "mupen64plus/Mupen64PlusGenerator.h"
+#include "dosbox/DosboxStagingGenerator.h"
+#include "scummvm/ScummVMGenerator.h"
 #include "stella/StellaGenerator.h"
 #include "supermodel/SupermodelGenerator.h"
 #include "ymir/YmirGenerator.h"
@@ -916,6 +918,61 @@ static void testStella()
 	CHECK(cmd.env.contains("SDL_GAMECONTROLLERCONFIG"));
 }
 
+static void testDosboxStaging()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "dosbox-staging", "#!/bin/sh\n", true);
+	fs::path game = tmp.path / "roms" / "dos" / "Doom.pc";
+	writeFile(game / "DOSBOX.BAT", "doom.exe\n");
+	writeFile(game / "dosbox.conf", "[cpu]\n");
+	writeFile(tmp.path / "emulators" / "dosbox" / "dosbox-staging.conf", "");
+
+	LaunchContext ctx = makeContext(tmp.path, "dosbox_staging", "dos", game);
+	Command cmd = Launch(ctx).prepare();
+	auto has = [&cmd](const std::string& arg) { return std::ranges::find(cmd.argv, arg) != cmd.argv.end(); };
+	CHECK(cmd.workingDirectory == game);
+	CHECK(has("--fullscreen"));
+	CHECK(has("set GAMECONF=dosbox.conf"));
+	CHECK(has("DOSBOX.BAT"));
+	CHECK(has("set RESCONF=" + (tmp.path / "emulators" / "dosbox" / "dosbox-staging.conf").string()));
+	CHECK(cmd.argv.back() == "--exit");
+
+	// a folder without them: a C:\> prompt
+	fs::path bare = tmp.path / "roms" / "dos" / "Keen.pc";
+	fs::create_directories(bare);
+	ctx.game.rom = bare;
+	auto args = dosbox::DosboxStagingGenerator::arguments(ctx);
+	CHECK(args.back() == "c:");
+}
+
+static void testScummVM()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "scummvm", "#!/bin/sh\n", true);
+	fs::path rom = tmp.path / "roms" / "scummvm" / "Monkey Island" / "monkey.scummvm";
+	writeFile(rom, "");
+
+	LaunchContext ctx = makeContext(tmp.path, "scummvm", "scummvm", rom);
+	ctx.controllers = { makePad(1, 2) };
+	ctx.settings = Settings({}, { { "scumm_stretch", "pixel-perfect" } }, {});
+	Command cmd = Launch(ctx).prepare();
+	auto has = [&cmd](const std::string& arg) { return std::ranges::find(cmd.argv, arg) != cmd.argv.end(); };
+	CHECK(cmd.argv.back() == "monkey");
+	CHECK(has("--joystick=2"));
+	CHECK(has("--stretch-mode=pixel-perfect"));
+	CHECK(has("--path=" + rom.parent_path().string()));
+	CHECK(has("--savepath=" + (tmp.path / "saves" / "scummvm").string()));
+	CHECK(IniFile::load(tmp.path / "emulators" / "scummvm" / "scummvm.ini").get("scummvm", "gui_browser_native") == "false");
+
+	// a game id written in the file, then one ScummVM cannot take
+	writeFile(rom, "  SCUMM:Monkey\n");
+	CHECK(scummvm::ScummVMGenerator::arguments(ctx).back() == "scumm:monkey");
+	writeFile(rom, "not a game id");
+	CHECK(scummvm::ScummVMGenerator::arguments(ctx).back() == "--auto-detect");
+}
+
 void tests::runStandaloneTests()
 {
 	testIniFile();
@@ -938,4 +995,6 @@ void tests::runStandaloneTests()
 	testYmir();
 	testSupermodel();
 	testStella();
+	testDosboxStaging();
+	testScummVM();
 }

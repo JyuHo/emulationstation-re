@@ -3,6 +3,12 @@
 # Compiled together with lang/<lang>/LC_MESSAGES/emulationstation2.po, whose header (UTF-8) applies:
 # this file has none, msgfmt refuses a header defined twice.
 
+msgid " 3.54 MHz"
+msgstr " 3.54 MHz"
+
+msgid " 7.09 MHz (A500 speed)"
+msgstr " 7.09 MHz (rýchlosť A500)"
+
 msgid "(FDS) AUTOMATICALLY LOAD DISK SIDE A"
 msgstr "(FDS) Automaticky načítať stranu A disku"
 
@@ -38,6 +44,9 @@ msgstr "1 vlákno"
 
 msgid "1% (Default)"
 msgstr "1% (predvolené)"
+
+msgid "1.0 (240p)"
+msgstr "1.0 (240p)"
 
 msgid "1.0x (12.50Mhz)"
 msgstr "1.0x (12.50Mhz)"
@@ -96,6 +105,9 @@ msgstr "10 sekúnd"
 msgid "100% (Default)"
 msgstr "100% (predvolené)"
 
+msgid "1024kB"
+msgstr "1024kB"
+
 msgid "10th"
 msgstr "10."
 
@@ -108,14 +120,23 @@ msgstr "120fps"
 msgid "1280x720 (Default)"
 msgstr "1280x720 (predvolené)"
 
+msgid "128MB"
+msgstr "128MB"
+
 msgid "128MiB"
 msgstr "128MiB"
+
+msgid "128kB (1700)"
+msgstr "128kB (1700)"
 
 msgid "12th"
 msgstr "12."
 
 msgid "13th"
 msgstr "13."
+
+msgid "14.18 MHz (A1200 speed)"
+msgstr "14.18 MHz (rýchlosť A1200)"
 
 msgid "144fps"
 msgstr "144fps"
@@ -138,6 +159,9 @@ msgstr "15s"
 msgid "15th"
 msgstr "15."
 
+msgid "16384kB"
+msgstr "16384kB"
+
 msgid "165fps"
 msgstr "165fps"
 
@@ -146,6 +170,9 @@ msgstr "16:9 (predvolené)"
 
 msgid "16:9 RENDERING RESOLUTION"
 msgstr "Renderovacie rozlíšenie 16:9"
+
+msgid "16MB"
+msgstr "16MB"
 
 msgid "16th"
 msgstr "16."
@@ -171,6 +198,9 @@ msgstr "19."
 msgid "1st"
 msgstr "1."
 
+msgid "1st Joystick (2 Axes, 2 Btns)"
+msgstr "1. joystick (2 osi, 2 tlačidlá)"
+
 msgid "1x (720p/1080p)"
 msgstr "1x (720p/1080p)"
 
@@ -191,6 +221,9 @@ msgstr "2 sekundy"
 
 msgid "2 threads"
 msgstr "2 vlákna"
+
+msgid "2.0 (480p)"
+msgstr "2.0 (480p)"
 
 msgid "2.0x (25.00Mhz)"
 msgstr "2.0x (25.00Mhz)"
@@ -219,6 +252,9 @@ msgstr "200ms"
 msgid "2048MB"
 msgstr "2048MB"
 
+msgid "2048kB"
+msgstr "2048kB"
+
 msgid "20ms"
 msgstr "20ms"
 
@@ -227,6 +263,9 @@ msgstr "20."
 
 msgid "21st"
 msgstr "21."
+
+msgid "224MB"
+msgstr "224MB"
 
 msgid "22nd"
 msgstr "22."
@@ -240,11 +279,17 @@ msgstr "23."
 msgid "24-bit, disables dithering."
 msgstr "24-bit, zakáže rozklad."
 
+msgid "24MB"
+msgstr "24MB"
+
 msgid "24MB (Default)"
 msgstr "24MB (predvolené)"
 
 msgid "24th"
 msgstr "24."
+
+msgid "256kB (1764)"
+msgstr "256kB (1764)"
 
 msgid "25th"
 msgstr "25."
@@ -258,17 +303,32 @@ msgstr "270 stupňov"
 msgid "27th"
 msgstr "27."
 
+msgid "28.37 MHz"
+msgstr "28.37 MHz"
+
+msgid "286, 12.5MHz (2750 cps)"
+msgstr "286, 12.5MHz (2750 cps)"
+
+msgid "286, 6MHz (1320 cps)"
+msgstr "286, 6MHz (1320 cps)"
+
 msgid "28th"
 msgstr "28."
 
 msgid "29th"
 msgstr "29."
 
+msgid "2P GAMEPAD MAPPING (KEYRAH)"
+msgstr "Mapovanie gamepadu 2. hráča (keyrah)"
+
 msgid "2X"
 msgstr "2X"
 
 msgid "2nd"
 msgstr "2."
+
+msgid "2nd Joystick (2 Axes, 2 Btns)"
+msgstr "2. joystick (2 osi, 2 tlačidlá)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -321,17 +381,35 @@ msgstr "30."
 msgid "31st"
 msgstr "31."
 
+msgid "32MB"
+msgstr "32MB"
+
 msgid "32x MSAA"
 msgstr "32x MSAA"
 
 msgid "32x SSAA"
 msgstr "32x SSAA"
 
+msgid "35.46 MHz"
+msgstr "35.46 MHz"
+
 msgid "3840MB"
 msgstr "3840MB"
 
 msgid "384MB (Default)"
 msgstr "384MB (predvolené)"
+
+msgid "386 (prefetch)"
+msgstr "386 (prednačítať)"
+
+msgid "386 (slow)"
+msgstr "386 (pomalé)"
+
+msgid "386, 20MHz (4720 cps)"
+msgstr "386, 20MHz (4720 cps)"
+
+msgid "386DX, 33MHz (7800 cps)"
+msgstr "386DX, 33MHz (7800 cps)"
 
 msgid "3rd"
 msgstr "3."
@@ -357,11 +435,26 @@ msgstr "4.5x (1440x1080)"
 msgid "4096MB"
 msgstr "4096MB"
 
+msgid "4096kB"
+msgstr "4096kB"
+
+msgid "42.56 MHz"
+msgstr "42.56 MHz"
+
 msgid "45s"
 msgstr "45s"
 
 msgid "480x272 (Default)"
 msgstr "480x270 (predvolené)"
+
+msgid "486 (slow)"
+msgstr "486 (pomalé)"
+
+msgid "486DX, 33MHz (13400 cps)"
+msgstr "486DX, 33MHz (13400 cps)"
+
+msgid "486DX2, 66MHz (26800 cps)"
+msgstr "486DX2, 66MHz (26800 cps)"
 
 msgid "48MB"
 msgstr "48MB"
@@ -374,6 +467,9 @@ msgstr "Renderovacie rozlíšenie 4:3"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4MB"
+msgstr "4MB"
 
 msgid "4X"
 msgstr "4X"
@@ -417,6 +513,12 @@ msgstr "5% (predvolené)"
 msgid "5120MB"
 msgstr "5120MB"
 
+msgid "512kB (1750)"
+msgstr "512kB (1750)"
+
+msgid "56.75 MHz"
+msgstr "56.75 MHz"
+
 msgid "5th"
 msgstr "5."
 
@@ -440,6 +542,9 @@ msgstr "60s"
 
 msgid "6144MB"
 msgstr "6144MB"
+
+msgid "64MB"
+msgstr "64MB"
 
 msgid "64MiB (Default)"
 msgstr "64 MiB (predvolené)"
@@ -479,6 +584,15 @@ msgstr "7x natívne (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x natívne (1792 x 1344)"
+
+msgid "8086/8088, 4.77MHz (315 cps)"
+msgstr "8086/8088, 4.77MHz (315 cps)"
+
+msgid "8192kB"
+msgstr "8192kB"
+
+msgid "8MB"
+msgstr "8MB"
 
 msgid "8X"
 msgstr "8X"
@@ -522,6 +636,21 @@ msgstr "9."
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "A1200 (2MB Chip + 8MB Fast)"
+msgstr "A1200 (2MB Chip + 8MB rýchle)"
+
+msgid "A4000/040 (2MB Chip + 8MB Fast)"
+msgstr "A4000/040 (2MB Chip + 8MB rýchle)"
+
+msgid "A500 (512KB Chip + 512KB Slow)"
+msgstr "A500 (512KB Chip + 512KB pomalé)"
+
+msgid "A500+ (1MB Chip)"
+msgstr "A500+ (1MB Chip)"
+
+msgid "A600 (2MB Chip + 8MB Fast)"
+msgstr "A600 (2MB Chip + 8MB rýchle)"
+
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "Oprava aktívnych vstupných zariadení"
 
@@ -543,11 +672,23 @@ msgstr "ALSA"
 msgid "ALSAThread"
 msgstr "ALSAThread"
 
+msgid "AMD Athlon, 1.2GHz (1000000 cps)"
+msgstr "AMD Athlon, 1.2GHz (1000000 cps)"
+
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX Super rozlíšenie"
 
+msgid "AMIGA MODEL"
+msgstr "Model Amihga"
+
 msgid "ANAGLYPH PRESET (3D)"
 msgstr "Anaglyfická predvoľba (3D)"
+
+msgid "ANALOG DEADZONE"
+msgstr "Analógová mŕtva zóna"
+
+msgid "ANALOG JOYSTICK DEADZONE"
+msgstr "Analógová mŕtva zóna"
 
 msgid "ANISOTROPIC FILTERING"
 msgstr "Anizotropické filtrovanie"
@@ -624,8 +765,17 @@ msgstr "Upraví pomer strán plného videa."
 msgid "Adjusts the positions of the screens."
 msgstr "Upravuje polohy obrazoviek."
 
+msgid "AdvMame"
+msgstr "AdvMame"
+
+msgid "Affects efficiency/stability."
+msgstr "Ovplyvní efektivitu/stabilitu."
+
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Ovplyvňuje ako sú emulované obrazovky škálované. Iba OpenGL renderer."
+
+msgid "Affects mouse speed globally."
+msgstr "Globálne ovplyvňuje rýchlosť myši."
 
 msgid "After NMI"
 msgstr "Po NMI"
@@ -705,6 +855,9 @@ msgstr "Angrylion (najkompatibilnejší)"
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Použije anti aliasingový algoritmus FXAA na zlepšenie vizuálnej kvality hier."
 
+msgid "Apply a joy2key profile for the current game."
+msgstr "Použiť pad2key profil pre aktuálnu hru."
+
 msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
 msgstr "Použiť násobič pre vstup joysticku na zníženie alebo zvýšenie odozvy."
 
@@ -771,14 +924,29 @@ msgstr "Auto max kvalita"
 msgid "Auto Standard (4:3 interlaced / 3:2 progressive)"
 msgstr "Automatický štandard (4:3 prekladané / 3:2 progresívne)"
 
+msgid "Auto zoom"
+msgstr "Auto priblíženie"
+
+msgid "Auto-disable zoom"
+msgstr "Automaticky zakázať priblíženie"
+
 msgid "Autodetect"
 msgstr "Automatická detekcia"
+
+msgid "Autodetect (Compatible)"
+msgstr "Autodetekcia (kompatibilné)"
+
+msgid "Autodetect (by game name tag)"
+msgstr "Autodetekcia (podľa značky názvu hry)"
 
 msgid "Automatic"
 msgstr "Automaticky"
 
 msgid "Automatic ratio"
 msgstr "Automatický pomer"
+
+msgid "Automatic switches region per file path tags"
+msgstr "Automatické prepínanie medzi značkami cesty k súboru"
 
 msgid "Automatically loads and applies cheats on game start."
 msgstr "Automaticky načíta a použije cheaty pri spustení hry."
@@ -791,6 +959,12 @@ msgstr "Zabráni nutnosti zakaždým ručne načítať stranu A."
 
 msgid "Azerbaijan"
 msgstr "Azerbajdžan"
+
+msgid "B = Fire"
+msgstr "B = spúšť"
+
+msgid "B = Fire, A = Up"
+msgstr "B = spúšť, A = hore"
 
 msgid "BILINEAR FILTERING"
 msgstr "Bilineárne filtrovanie"
@@ -815,6 +989,9 @@ msgstr "Blend režim vysokého rozlíšenia"
 
 msgid "BLENDING ACCURACY"
 msgstr "Presnosť miešania"
+
+msgid "BOOT ANIMATION FIRST"
+msgstr "Najprv boot animácia"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (odporúčané pre všetky US hry"
@@ -915,6 +1092,9 @@ msgstr "Bolívia"
 msgid "Both"
 msgstr "Obe"
 
+msgid "Both Joysticks (4 Axes, 4 Btns)"
+msgstr "Oba joysticky (4 osi, 4 tlačidlá)"
+
 msgid "Bottom (Default)"
 msgstr "Dolu (predvolené)"
 
@@ -948,11 +1128,47 @@ msgstr "Bufferovaný rendering"
 msgid "Bulgaria"
 msgstr "Bulharsko"
 
+msgid "Button Options"
+msgstr "Voľby tlačidiel"
+
+msgid "C64 Games System PAL"
+msgstr "C64 hry systému PAL"
+
+msgid "C64 Japanese NTSC"
+msgstr "C64 japonské NTSC"
+
+msgid "C64 NTSC"
+msgstr "C64 NTSC"
+
+msgid "C64 NTSC Automatic"
+msgstr "C64 NTSC automaticky"
+
+msgid "C64 PAL"
+msgstr "C64 PAL"
+
+msgid "C64 PAL Automatic"
+msgstr "C64 PAL automaticky"
+
 msgid "CD ADD-ON"
 msgstr "CD doplnok"
 
+msgid "CD TURBO SPEED"
+msgstr "CD turbo rýchlosť"
+
 msgid "CD-DA VOLUME"
 msgstr "CD-DA hlasitosť"
+
+msgid "CD32 (2MB Chip + 8MB Fast)"
+msgstr "CD32 (2MB Chip + 8MB rýchle)"
+
+msgid "CD32 Default (2MB Chip)"
+msgstr "CD32 Default (2MB Chip)"
+
+msgid "CD32 Pad"
+msgstr "CD32 Pad"
+
+msgid "CDTV (1MB Chip)"
+msgstr "CDTV (1MB Chip)"
 
 msgid "CDZ"
 msgstr "CDZ"
@@ -962,6 +1178,9 @@ msgstr "CDZ MAME"
 
 msgid "CDZ Universe 3.3"
 msgstr "CDZ Universe 3.3"
+
+msgid "CGA"
+msgstr "CGA"
 
 msgid "CHEATS"
 msgstr "Cheaty"
@@ -1029,6 +1248,9 @@ msgstr "Mapovanie ovládača 4"
 msgid "CONTROLLER COMBINATION"
 msgstr "Kombinácia ovládača"
 
+msgid "CONTROLLER PORT"
+msgstr "Port ovládača"
+
 msgid "CONTROLLER TYPE"
 msgstr "Typ ovládača"
 
@@ -1047,14 +1269,26 @@ msgstr "CPU"
 msgid "CPU CLOCK"
 msgstr "Frekvencia CPU"
 
+msgid "CPU COMPATIBILITY"
+msgstr "Kompatibilita CPU"
+
 msgid "CPU CORE"
 msgstr "Jadro CPU"
+
+msgid "CPU CORE METHOD"
+msgstr "Metóda jadra CPU"
 
 msgid "CPU DYNAREC (SPEED UP)"
 msgstr "CPU DYNAREC (zrýchli)"
 
 msgid "CPU EXECUTION MODE"
 msgstr "Režim spustenia CPU"
+
+msgid "CPU SPEED"
+msgstr "Rýchlosť CPU"
+
+msgid "CPU TYPE"
+msgstr "Typ CPU"
 
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "Limit latencie CPU-GPU. Nižšie hodnoty zlepšujú latenciu ale môžu znížiť výkon."
@@ -1094,6 +1328,9 @@ msgstr "Môže sa použiť na simuláciu farieb niektorých obrazoviek."
 
 msgid "Can change the language of some games."
 msgstr "Môže zmeniť jazyk niektorých hier."
+
+msgid "Can fix drifting joysticks in games."
+msgstr "Dokáže opraviť driftujúce joysticky v hrách."
 
 msgid "Can fix slowdown. Only works on some drivers."
 msgstr "Môže opraviť spomalenie. Funguje iba na niektorých ovládačoch."
@@ -1146,6 +1383,9 @@ msgstr "Čína"
 msgid "Chinese"
 msgstr "Čínština"
 
+msgid "Chinese (Mandarin)"
+msgstr "Čínština (mandarínska)"
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Vyberte jazyk konzoly. Nie všetky hry môžu podporovať výber jazyka."
 
@@ -1190,6 +1430,12 @@ msgstr "Vyberte, ktorú grafickú API knižnicu použiť."
 
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "Vyberte, ktorá knižnica grafického rozhrania API sa má použiť. Vulkan nemusí fungovať pre každé jadro."
+
+msgid "Choose your preferred language."
+msgstr "Vyberte preferovaný jazyk."
+
+msgid "Choose your preferred renderer."
+msgstr "Vyberte preferovaný vykresľovač."
 
 msgid "Classic Controller"
 msgstr "Klasický ovládač"
@@ -1272,6 +1518,15 @@ msgstr "Časový limit kurzora v sekundách pri použití režimu kurzora - Do v
 msgid "Custom"
 msgstr "Vlastné"
 
+msgid "Custom Keyboard Binds (best for Pad2Key)"
+msgstr "Vlastné väzby klávesnice (najlepšie pre Pad2Key)"
+
+msgid "Cycle-exact"
+msgstr "Presný cyklus"
+
+msgid "Czech"
+msgstr "Čeština"
+
 msgid "Czech Republic"
 msgstr "Česká republika"
 
@@ -1295,6 +1550,9 @@ msgstr "Zakázať 4 MB expansion RAM pack"
 
 msgid "DISABLE CULLING"
 msgstr "ZAKÁZAŤ CULLING"
+
+msgid "DISABLE EMULATOR JOYSTICK"
+msgstr "Zakázať joystick emulátora"
 
 msgid "DISABLE INTERLACING"
 msgstr "Zakázať prekladanie"
@@ -1374,6 +1632,9 @@ msgstr "Predvolené"
 msgid "Default Only"
 msgstr "Iba predvolené"
 
+msgid "Default by model"
+msgstr "Predvolené podľa modelu"
+
 msgid "Degree in which 3D graphics are scaled up. OpenGL renderer only."
 msgstr "Stupeň zväčšenia 3D grafiky. Iba OpenGL renderer."
 
@@ -1428,6 +1689,9 @@ msgstr "Zakázané pri použití sady shaderov alebo výstupný displej sa zhodu
 msgid "Display on screen information like savestate, config warning, etc."
 msgstr "Zobraziť informácie na obrazovke ako stav uloženia, varovania konfigurácie atď...Zobrazenie informácií na obrazovke, ako je stav uloženia, varovanie konfigurácie atď."
 
+msgid "Does not affect the on-screen keyboard."
+msgstr "Nemá vplyv na klávesnicu na obrazovke."
+
 msgid "Dominican Republic"
 msgstr "Dominikánska republika"
 
@@ -1436,6 +1700,9 @@ msgstr "Neprepísať"
 
 msgid "Dot"
 msgstr "Bod"
+
+msgid "DotMatrix"
+msgstr "DotMatrix"
 
 msgid "Double buffering"
 msgstr "Dvojité bufferovanie"
@@ -1458,14 +1725,26 @@ msgstr "Počas hry stlačte Hotkey + R1 na preloženie textu na obrazovke. Iba p
 msgid "Dutch"
 msgstr "Holandčina"
 
+msgid "Dynamic (fast)"
+msgstr "Dynamické (rýchle)"
+
 msgid "Dynamic Interpreter"
 msgstr "Dynamický interpreter"
 
 msgid "Dynarec (Fastest)"
 msgstr "Dynarec (najrýchlejšie)"
 
+msgid "EGA"
+msgstr "EGA"
+
 msgid "EMULATE WIIMOTE"
 msgstr "Emulovať WiiMote"
+
+msgid "EMULATED CPU PERFORMANCE"
+msgstr "Emulovaný CPU výkon"
+
+msgid "EMULATED RAM SIZE"
+msgstr "Emulovaná veľkosť RAM"
 
 msgid "EMULATION"
 msgstr "Emulácia"
@@ -1484,6 +1763,9 @@ msgstr "Povoliť cheaty"
 
 msgid "ENABLE GAMEPAD VIEW"
 msgstr "Povoliť zobrazenie gamepadu"
+
+msgid "ENABLE GRAVIS ULTRASOUND"
+msgstr "Povoliť Gravis Ultrasound"
 
 msgid "ENABLE NOTIFICATIONS"
 msgstr "Povoliť upozornenia"
@@ -1512,6 +1794,9 @@ msgstr "Rozšírená obrazovka"
 msgid "Ecuador"
 msgstr "Ekvádor"
 
+msgid "Edge (sharper filet)"
+msgstr "Edge (ostrejší filet)"
+
 msgid "Egypt"
 msgstr "Egypt"
 
@@ -1536,6 +1821,9 @@ msgstr "Povoliť prekrytie výkonnosti Cemu."
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "Povoliť animáciu zavádzania Gamecube a prístup k systému BIOS (vyžaduje IPL.bin BIOS v príslušnom používateľskom adresári)."
 
+msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
+msgstr "Povoliť emuláciu Gravis Utrasound. Uistite sa, že priečinok ULTRASND je v koreňovom adresári vášho priečinka .pc rom <game>."
+
 msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
 msgstr "Povoliť MelonDS zobrazovať na dvoch obrazovkách. Niektoré súvisiace možnosti obrazovky budú ignorované."
 
@@ -1556,6 +1844,9 @@ msgstr "Povoliť nitkový kríž v strieľačkách pre vybraných hráčov."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "Povoľte zobrazenie gamepadu pre hry, ktoré majú interakciu na dvoch obrazovkách. Na prepínanie obrazoviek použite Hotkey+R2."
+
+msgid "Enable launching pre-installed WHDLoad installs."
+msgstr "Povoliť spustenie predinštalovaných inštalácií WHDLoad."
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Povoliť upozornenia na vyrovnávaciu pamäť, udalosti ovládača atď."
@@ -1671,6 +1962,9 @@ msgstr "Rozšírenie. Odstráni obmedzenie 8 spritov na riadok."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Rozšírenie. Odstráni obmedzenie 80 spritov na riadok."
 
+msgid "Enhancement. Remove the four sprites per line limit."
+msgstr "Rozšírenie. Odstrániť limit štyroch spritov na riadok."
+
 msgid "Enhancement. Remove the sixteen sprites per line limit."
 msgstr "Rozšírenie. Odstráni obmedzenie 16 spritov na riadok."
 
@@ -1716,6 +2010,9 @@ msgstr "Európa"
 msgid "Even"
 msgstr "Párne"
 
+msgid "Even Pixels"
+msgstr "Párne pixely"
+
 msgid "Exclusive Ubershaders"
 msgstr "Exkluzívne Ubershaders"
 
@@ -1739,6 +2036,9 @@ msgstr "FIFO Relaxed"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "Nastavenia firmvéru"
+
+msgid "FLOPPY TURBO SPEED"
+msgstr "Floppy turbo rýchlosť"
 
 msgid "FM SYNTHESIZER"
 msgstr "FM systetizér"
@@ -1800,6 +2100,12 @@ msgstr "Vyplní obrazovku bez ohľadu na pomer strán. Nefunguje s celočíseln�
 msgid "Finland"
 msgstr "Fínsko"
 
+msgid "Fit 4:3 Aspect Ratio"
+msgstr "Prispôsobiť pre 4:3"
+
+msgid "Fit resolution scale"
+msgstr "Prispôsobiť mierku rozlíšenia"
+
 msgid "Fit to Window / Fullscreen"
 msgstr "Roztiahnuť do okna / obrzovky"
 
@@ -1814,6 +2120,9 @@ msgstr "Opraviť pruhovanie textúry pri zmene veľkosti."
 
 msgid "Fixes a possible bug with multiple controllers detection."
 msgstr "Opraví možný bug s detekciou viacerých ovládačov."
+
+msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
+msgstr "Flight Stick (3 osi, 4 tlačidlá, 1 klobúk)"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Pre hry s podporou gyroskopu (viazané na ľavú analógovú páčku)"
@@ -1839,6 +2148,9 @@ msgstr "Vynútiť 32bit"
 msgid "Force 4:3"
 msgstr "Vynútiť 4:3"
 
+msgid "Force a specific model and prevent tags detection."
+msgstr "Vynútiť špecifický model a zabrániť detekcii tagov."
+
 msgid "Force progressive render / scan."
 msgstr "Vynútiť progresívne renderovanie."
 
@@ -1850,6 +2162,9 @@ msgstr "Francúzsko"
 
 msgid "French"
 msgstr "Francúzština"
+
+msgid "Frontend MIDI driver"
+msgstr "MIDI ovládač frontendu"
 
 msgid "Full (Hash Cache)"
 msgstr "Plné (Hash Cache)"
@@ -1901,6 +2216,12 @@ msgstr "Typ Gamecube portu 3"
 
 msgid "GAMECUBE PORT 4 TYPE"
 msgstr "Typ Gamecube portu 4"
+
+msgid "GAMEPAD AUTOMATIC MAPPING"
+msgstr "Automatické mapovanie gamepadu"
+
+msgid "GAMEPAD CURSOR SPEED"
+msgstr "Rýchlosť kurzoru gamepadu"
 
 msgid "GB - Black and White"
 msgstr "GB - Čiernobiely"
@@ -1977,11 +2298,17 @@ msgstr "Grafika"
 msgid "GRAPHICS API"
 msgstr "Grafické API"
 
+msgid "GRAPHICS CHIP TYPE"
+msgstr "Typ grafického čipu"
+
 msgid "GRAPHICS PLUGIN"
 msgstr "Grafický plugin"
 
 msgid "Game default"
 msgstr "Predvolené hrou"
+
+msgid "GameBlaster"
+msgstr "GameBlaster"
 
 msgid "GameCube Adapter for Wii U"
 msgstr "GameCube adaptér pre Wii U"
@@ -2000,6 +2327,9 @@ msgstr "Hry bežia rýchlejšie/pomalšie, ak je vybraný nesprávny región."
 
 msgid "Gaussian"
 msgstr "Gaussovské"
+
+msgid "Generic Keyboard Binds"
+msgstr "Všeobecné väzby klávesnice"
 
 msgid "Genesis/Megadrive Style"
 msgstr "Štýl Genesis/Megadrive"
@@ -2021,6 +2351,9 @@ msgstr "Glide64"
 
 msgid "Gln64"
 msgstr "Gln64"
+
+msgid "Gravis GamePad (D-pad + 4 Btns)"
+msgstr "Gravis GamePad (D-pad + 4 tlačidlá)"
 
 msgid "Gray"
 msgstr "Šedá"
@@ -2049,17 +2382,38 @@ msgstr "Hi-res artefakty"
 msgid "HLE (Fastest)"
 msgstr "HLE (najrýchlejšie)"
 
+msgid "HQ (bilinear filter)"
+msgstr "HQ (bilineárne filtrovanie)"
+
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack. Zvýši rýchlosť väčšiny PAL hier o 17 percent."
+
+msgid "Hebrew"
+msgstr "Hebrejčina"
+
+msgid "Help games which are too quick or that have bugs."
+msgstr "Pomôcť hrám, ktoré sú príliš rýchle alebo ktoré obsahujú chyby."
 
 msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
 msgstr "Pomáha s poškodením textúr a problémami s hĺbkou na AMD GPU. Môže pomôcť aj Intel GPU v niektorých prípadoch."
 
+msgid "Hercules"
+msgstr "Hercules"
+
 msgid "Hermite"
 msgstr "Hermit"
 
+msgid "Hides borders on many games. Some games use the borders."
+msgstr "Skryje okraje v mnohých hrách. Niektoré hry používajú okraje."
+
+msgid "Hides borders on many games. Some games used the borders."
+msgstr "Skryje okraje v mnohých hrách. Niektoré hry používajú okraje."
+
 msgid "High"
 msgstr "Vysoké"
+
+msgid "High 720p"
+msgstr "Vysoké 720p"
 
 msgid "Honduras"
 msgstr "Honduras"
@@ -2130,6 +2484,9 @@ msgstr "Ak hra beží na 30hz, PPSSPP bude stále posielať 60 snímkov na monit
 msgid "If nothing is specified, will use ZTranslate by default."
 msgstr "Ak nič nie je vybrané, použije predvolene ZTranslate."
 
+msgid "Ignored with 'Cycle-exact'."
+msgstr "Ignorované s 'Cycle-exact'."
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "Zlepšiť presnosť zvuku (experimentálne)."
 
@@ -2159,6 +2516,12 @@ msgstr "India"
 
 msgid "Indonesia"
 msgstr "Indonézia"
+
+msgid "Inserts CD during boot animation prevent loading fail."
+msgstr "Vloží CD počas bootovaciej animácie pre zabránenie zlyhaniu načítania.Vloží CD počas bootovacej animácie, aby sa zabránilo zlyhaniu načítania."
+
+msgid "Inserts CD during boot animation to prevent loading fail."
+msgstr "Vloží CD počas bootovaciej animácie pre zabránenie zlyhaniu načítania.Vloží CD počas bootovacej animácie, aby sa zabránilo zlyhaniu načítania."
 
 msgid "Interpreter (Slowest)"
 msgstr "Interpreter (najpomalšie)"
@@ -2204,6 +2567,12 @@ msgstr "Citlivosť joysticku"
 
 msgid "JOYSTICK TO DPAD"
 msgstr "Joystick na Dpad"
+
+msgid "JUMP ON A"
+msgstr "Skočiť na A"
+
+msgid "JUMP ON B"
+msgstr "Skočiť na B"
 
 msgid "Jamaica"
 msgstr "Jamajka"
@@ -2262,6 +2631,9 @@ msgstr "Jún"
 msgid "Justifier"
 msgstr "Justifier"
 
+msgid "KEYBOARD PASSTHROUGH"
+msgstr "Prechod klávesnicou"
+
 msgid "Kazakhstan"
 msgstr "Kazachstan"
 
@@ -2271,11 +2643,23 @@ msgstr "Keňa"
 msgid "Keyboard"
 msgstr "Klávesnica"
 
+msgid "Keyboard + Mouse (Left An.)"
+msgstr "Klávesnica + myš (ľavý an.)"
+
+msgid "Keyboard + Mouse (Right An.)"
+msgstr "Klávesnica + myš (pravý an.)"
+
 msgid "Keyboard passthrough"
 msgstr "Prechod klávesnice"
 
 msgid "Keyboard shortcuts unavailable if passing through the keyboard."
 msgstr "Pri prechode cez klávesnicu nie sú klávesové skratky k dispozícii."
+
+msgid "Keypad to joyport mappings for 2 players."
+msgstr "Mapovania keypadu na joyport pre 2 hráčov."
+
+msgid "Koalapad"
+msgstr "Koalapad"
 
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
@@ -2409,6 +2793,9 @@ msgstr "Lokálna adresa a port pre príjem paketov. Nechajte prázdne, ak chcete
 msgid "Low"
 msgstr "Nízke"
 
+msgid "Low 360p"
+msgstr "Nízke 360p"
+
 msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
 msgstr "Nižšie hodnoty znižujú latenciu zvuku a zlepšujú výkon, ale môžu spôsobiť problémy so zvukom."
 
@@ -2430,6 +2817,9 @@ msgstr "MAME (YM2612)"
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "Manuálne vzorkovanie textúr"
 
+msgid "MAX (as many as possible)"
+msgstr "Max (najviac ako je možné)"
+
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "Maximálna úspora energie procesora"
 
@@ -2439,11 +2829,23 @@ msgstr "Režim pamäťovej karty"
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "Jednotka správy pamäte"
 
+msgid "MIDI OUTPUT"
+msgstr "MIDI výstup"
+
 msgid "MIPMAPPING"
 msgstr "Mipmapping"
 
+msgid "MODEL TYPE"
+msgstr "Typ modelu"
+
 msgid "MOUNT CACHE"
 msgstr "Pripojiť cache"
+
+msgid "MOUSE SPEED"
+msgstr "Rýchlosť myši"
+
+msgid "MSX2"
+msgstr "MSX2"
 
 msgid "MULTITAP"
 msgstr "MULTITAP"
@@ -2457,6 +2859,12 @@ msgstr "Macau"
 msgid "Magnum FBX"
 msgstr "Magnum FBX"
 
+msgid "Makes second fire button press up instead."
+msgstr "Namiesto toho stlačí druhé tlačidlo streľby."
+
+msgid "Makes the blue button press up instead."
+msgstr "Namiesto toho stlačí modré tlačidlo."
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "Pri vyšších rozlíšeniach je vzor rozkladu oveľa menej zreteľný."
 
@@ -2468,6 +2876,12 @@ msgstr "Maldivy"
 
 msgid "Manually activate the adapter for supported games."
 msgstr "Ručne aktivovať adaptér pre podporované hry."
+
+msgid "Manually define which resolution to use.&#x0a;Auto defaults to High and switches to Super-High when needed."
+msgstr "Manuálne definujte, ktoré rozlíšenie sa má použiť.&#x0a;Automaticky sa predvolene nastaví na Vysoké a v prípade potreby sa prepne na Supervysoké."
+
+msgid "Manually set cycles per second. Use with caution."
+msgstr "Ručne nastaviť cykly za sekundu. Používajte opatrne."
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Mapovať váš ovládač na emulovaný Wiimote."
@@ -2556,11 +2970,20 @@ msgstr "Monochromatické (Blargg)"
 msgid "More accurate emulation, but slower."
 msgstr "Presnejšia emulácia, ale pomalšia."
 
+msgid "More compatible"
+msgstr "Viac kompatibilné"
+
 msgid "Morocco"
 msgstr "Maroko"
 
+msgid "Most games use port 2, some use port 1."
+msgstr "Väčšina hier používa port 2, niektoré port 1."
+
 msgid "Mouse"
 msgstr "Myš"
+
+msgid "Mouse (1351)"
+msgstr "Myš (1351)"
 
 msgid "Mouse sensitivity for paddles. Core default (10)."
 msgstr "Citlivosť myši pre paddle. Predvolená hodnota jadra (10)."
@@ -2621,6 +3044,12 @@ msgstr "NTSC (S-Video)"
 
 msgid "NTSC 240x480px 60Hz"
 msgstr "NTSC 240x480px 60Hz"
+
+msgid "NTSC 240x480px 60Hz (auto)"
+msgstr "NTSC 240x480px 60Hz (auto)"
+
+msgid "NTSC 492x262px"
+msgstr "NTSC 492x262px"
 
 msgid "NTSC ASPECT"
 msgstr "NTSC POMER"
@@ -2703,6 +3132,9 @@ msgstr "Nie (Predvolené)"
 msgid "No Buffer"
 msgstr "Bez vyrovnávacej pamäte"
 
+msgid "No EMS/XMS"
+msgstr "Bez EMS/XMS"
+
 msgid "No Limit"
 msgstr "Bez obmedzenia"
 
@@ -2726,6 +3158,9 @@ msgstr "Normálne"
 
 msgid "Normal (Default)"
 msgstr "Normálne (predvolené)"
+
+msgid "Normal (interpreter)"
+msgstr "Normálne (interpreter)"
 
 msgid "Norway"
 msgstr "Nórsko"
@@ -2802,6 +3237,12 @@ msgstr "Zapnuté (iba Vulkan)"
 msgid "On (forced)"
 msgstr "Zapnuté (vynútené)"
 
+msgid "On with game detection message"
+msgstr "HraZapnuté so správou o detekcii hry"
+
+msgid "On with rewind support"
+msgstr "Zapnuté s podporou prevíjania"
+
 msgid "Only Overscan Area"
 msgstr "Iba oblasť overscan"
 
@@ -2828,6 +3269,12 @@ msgstr "OpenGL (predvolené)"
 
 msgid "OpenGL (Overwrites Libretro API settings)"
 msgstr "OpenGL (prepíše Libretro API nastavenia)"
+
+msgid "OpenGL with Shaders"
+msgstr "OpenGL so shadermi"
+
+msgid "Optimized (auto)"
+msgstr "Optimalizované (auto)"
 
 msgid "Orange"
 msgstr "Oranžové"
@@ -2877,6 +3324,12 @@ msgstr "PADDLE CITLIVOSŤ MYŠI"
 msgid "PAL 288x576px 50Hz"
 msgstr "PAL 288x576px 50Hz"
 
+msgid "PAL 288x576px 50Hz (auto)"
+msgstr "PAL 288x576px 50Hz (auto)"
+
+msgid "PAL 576x312px"
+msgstr "PAL 576x312px"
+
 msgid "PAL ASPECT"
 msgstr "PAL POMER"
 
@@ -2901,6 +3354,9 @@ msgstr "PCE joypad"
 msgid "PCE Mouse"
 msgstr "PCE myš"
 
+msgid "PCjr"
+msgstr "PCjr"
+
 msgid "PER-GAME SAVES"
 msgstr "Uloženia podľa hry"
 
@@ -2915,6 +3371,9 @@ msgstr "PHOSPHOR MIEŠANIE"
 
 msgid "PHOSPHOR MODE"
 msgstr "PHOSPHOR REŽIM"
+
+msgid "PHYSICAL KEYBOARD LAYOUT"
+msgstr "Rozloženie fyzickej klávesnice"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "Farba nitkového kríža hráča 1"
@@ -2943,6 +3402,9 @@ msgstr "Ovládač paddle"
 msgid "Paddle can only be used in port 2."
 msgstr "Paddle sa dá použiť len v porte 2."
 
+msgid "Paddles"
+msgstr "Paddles"
+
 msgid "Pakistan"
 msgstr "Pakistan"
 
@@ -2963,6 +3425,21 @@ msgstr "Paralelné"
 
 msgid "Partial"
 msgstr "Čiastočné"
+
+msgid "Passes all physical keyboard events for Pad2Key."
+msgstr "Prejde všetky udalosti fyzickej klávesnice pre Pad2Key."
+
+msgid "Pentium (slow)"
+msgstr "Pentium (pomalé)"
+
+msgid "Pentium II, 300MHz (200000 cps)"
+msgstr "Pentium II, 300MHz (200000 cps)"
+
+msgid "Pentium III, 600MHz (500000 cps)"
+msgstr "Pentium III, 600MHz (500000 cps)"
+
+msgid "Pentium, 100MHz (77000 cps)"
+msgstr "Pentium, 100MHz (77000 cps)"
 
 msgid "Per 0.05s, 5s total (550MB|100MB)"
 msgstr "Za 0.05s, 5s celkovo (550MB|100MB)"
@@ -2999,6 +3476,12 @@ msgstr "Filipíny"
 
 msgid "Phosphor blend level. Core default (60%)."
 msgstr "Úroveň phosphor miešania. Predvolená hodnota jadra (60%)."
+
+msgid "Pixel Perfect"
+msgstr "Celočíselná mierka"
+
+msgid "Pixel-Perfect"
+msgstr "Celočíselná mierka"
 
 msgid "PlayStation Mouse"
 msgstr "PlayStation myš"
@@ -3068,6 +3551,9 @@ msgstr "Štvorité renderovanie"
 
 msgid "Qatar"
 msgstr "Katar"
+
+msgid "RAM EXPANSION UNIT"
+msgstr "JEDNOTKA ROZŠÍRENIA RAM"
 
 msgid "RDP PLUGIN"
 msgstr "RDP plugin"
@@ -3147,6 +3633,9 @@ msgstr "Znižuje vratké polygóny a deformujúce sa textúry."
 msgid "Relaxed (Fastest)"
 msgstr "Uvoľnené (najrýchlejšie)"
 
+msgid "Removes loading but can add possible glitches/crashes."
+msgstr "Odstráni načítavanie, ale môže spôsobiť chyby/pády."
+
 msgid "Replace meshed transparency by real transparency."
 msgstr "Nahradiť sieťovú priehľadnosť skutočnou priehľadnosťou."
 
@@ -3171,11 +3660,17 @@ msgstr "Obnovené Wii VC"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (predvolené)"
 
+msgid "RetroPad Face Button Options."
+msgstr "Možnosti tlačidla RetroPad Face."
+
 msgid "Retropad"
 msgstr "Retropad"
 
 msgid "Retropad (Default)"
 msgstr "Retropad (predvolené)"
+
+msgid "Rewind can be CPU heavy."
+msgstr "Pretočenie môže byť náročné na CPU."
 
 msgid "Rice"
 msgstr "Rice"
@@ -3185,6 +3680,9 @@ msgstr "Pravá páčka"
 
 msgid "Right/Left"
 msgstr "Vpravo/Vľavo"
+
+msgid "Roland MT-32/CM-32L"
+msgstr "Roland MT-32/CM-32L"
 
 msgid "Romania"
 msgstr "Rumunsko"
@@ -3216,8 +3714,17 @@ msgstr "S-Video"
 msgid "S-Video (Blargg)"
 msgstr "S-Video (Blargg)"
 
+msgid "SAVESTATE/REWIND"
+msgstr "Uložiť stav/pretočiť"
+
+msgid "SCALE FACTOR"
+msgstr "Faktor mierky"
+
 msgid "SCALED DITHERING"
 msgstr "Škálovaný rozklad"
+
+msgid "SCALER MODE"
+msgstr "Režim mierky"
 
 msgid "SCALING MODE"
 msgstr "Režim škálovania"
@@ -3330,6 +3837,9 @@ msgstr "Úroveň slnečného senzora"
 msgid "SOUND QUALITY"
 msgstr "Kvalita zvuku"
 
+msgid "SOUNDBLASTER TYPE"
+msgstr "Typ SoundBlastera"
+
 msgid "SPECIAL CONTROL LAYOUTS"
 msgstr "Špeciálne rozloženie ovládania"
 
@@ -3369,6 +3879,9 @@ msgstr "Super FX pretaktovanie"
 msgid "SUPER GB BORDERS"
 msgstr "Super GB okraje"
 
+msgid "SVGA"
+msgstr "SVGA"
+
 msgid "SVideo (color bleeding only)"
 msgstr "SVideo (iba krvácanie farieb)"
 
@@ -3399,14 +3912,29 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Škálované"
 
+msgid "Scanline Interpolation Filter (SAI)"
+msgstr "Filter interpolácie sken riadkov (SAI)"
+
 msgid "Screen Resolution (Default)"
 msgstr "Rozlíšenie obrazovky (predvolené)"
 
 msgid "Sega/Mega CD"
 msgstr "Sega/Mega CD"
 
+msgid "Select controller type for Amiga P1."
+msgstr "Vyberte typ ovládača pre Amiga P1."
+
+msgid "Select controller type for Amiga P2."
+msgstr "Vyberte typ ovládača pre Amiga P2."
+
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Vybraný jazyk bude použitý ak je zakázané 'Použiť nastavenia firmvéru' alebo ak sa nenájde súbor firmvéru."
+
+msgid "Select scale resolution of the game."
+msgstr "Vyberte mierku rozlíšenia hry."
+
+msgid "Select the .SF2 SoundFont file, .ROM file, or interface used for MIDI output."
+msgstr "Vyberte súbor soundfontu .SF2, .ROM súbor alebo rozhranie pre MIDI výstup."
 
 msgid "Select the console video standard / display mode."
 msgstr "Vyberte video štandard konzoly / režim zobrazenia."
@@ -3416,6 +3944,9 @@ msgstr "Vyberte typ vstupu na navigáciu na dotykovej obrazovke"
 
 msgid "Select the palette used to render colors."
 msgstr "Vyberte paletu použitú pre vykresľovanie farieb."
+
+msgid "Select which Intel CPU to emulate."
+msgstr "Vyberte, aké Intel CPU emulovať."
 
 msgid "Separate Windows"
 msgstr "Oddelené okná"
@@ -3432,8 +3963,14 @@ msgstr "Vyberte farebnú paletu na použitie."
 msgid "Set the controller rumble strength if supported."
 msgstr "Nastaviť silu rachotu ovládača, ak je to podporované."
 
+msgid "Set the deadzone of the joystick analog sticks."
+msgstr "Nastavte mŕtvu zónu analógových páčok joysticku."
+
 msgid "Set virtual joysticks gate size. Smaller increases sensitivity. Larger decreases it."
 msgstr "Nastavte veľkosť brány virtuálnych joystickov. Menší zvyšuje citlivosť. Väčšia ju znižuje."
+
+msgid "Sets the scaler filter mode when rendering."
+msgstr "Nastaví režim filtra mierky pri vykreslení."
 
 msgid "Shader Interpreter only"
 msgstr "Iba interpreter shadera"
@@ -3464,6 +4001,9 @@ msgstr "Zobraziť správy na obrazovke (pamäťová karta uložená...)"
 
 msgid "Simple"
 msgstr "Jednoduché"
+
+msgid "Simple (interpreter for old real-mode games)"
+msgstr "Jednoduché (interpreter pre staré hry v reálnom režime)"
 
 msgid "Simplified Chinese"
 msgstr "Zjednodušená čínština"
@@ -3546,11 +4086,29 @@ msgstr "Softvér"
 msgid "Software mode is faster and more accurate, while OpenGL mode supports scaling 3D graphics."
 msgstr "Softvérový režim je rýchlejší a presnejší, zatiaľ čo režim OpenGL podporuje škálovanie 3D grafiky."
 
+msgid "Some games and homebrews require more RAM"
+msgstr "Niektoré doma vyrobené hry potrebujú viac RAM"
+
 msgid "Some games have issues when the animation is shown, others require it."
 msgstr "Niektoré hry majú problémy so zobrazením animácie, iné to vyžadujú."
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "SounBlaster 1.0"
+msgstr "SounBlaster 1.0"
+
+msgid "SounBlaster 16 (Default)"
+msgstr "SounBlaster 16 (predvolené)"
+
+msgid "SounBlaster 2.0"
+msgstr "SounBlaster 2.0"
+
+msgid "SounBlaster Pro"
+msgstr "SounBlaster Pro"
+
+msgid "SounBlaster Pro 2"
+msgstr "SounBlaster Pro 2"
 
 msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
 msgstr "Zvukový generátor. MAME je rýchlejší a Nuked je cyklicky presný. Pôvodný model používal YM2612, zatiaľ čo neskoršie revízie používali YM3438."
@@ -3615,14 +4173,29 @@ msgstr "Roztiahnuť"
 msgid "Stretch to full"
 msgstr "Roztiahnuť na plné"
 
+msgid "Stretch to screen"
+msgstr "Roztiahnuť na obrazovku"
+
 msgid "Stretch to window"
 msgstr "Roztiahnuť do okna"
+
+msgid "Stretches the output to fill the display area."
+msgstr "Roztiahne výstup tak, aby úplne vyplnil displej."
 
 msgid "Super Game Boy"
 msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super rozsah"
+
+msgid "Super-high 1440p"
+msgstr "Super vysoké 1440p"
+
+msgid "SuperEagle"
+msgstr "SuperEagle"
+
+msgid "SuperSAI"
+msgstr "SuperSAI"
 
 msgid "Surround"
 msgstr "Surround"
@@ -3639,8 +4212,17 @@ msgstr "Vymení polohu duálnych obrazoviek."
 msgid "Sweden"
 msgstr "Švédsko"
 
+msgid "Swedish"
+msgstr "Švédčina"
+
 msgid "Switzerland"
 msgstr "Švajčiarsko"
+
+msgid "Switzerland (French)"
+msgstr "Švajčiarsko (francúzština)"
+
+msgid "Switzerland (German)"
+msgstr "Švajčiarsko (nemčina)"
 
 msgid "Syria"
 msgstr "Sýria"
@@ -3696,6 +4278,9 @@ msgstr "Vláknové video"
 msgid "TIME STRETCHING THRESHOLD"
 msgstr "Prah natiahnutia času"
 
+msgid "TIMED AXIS INTERVALS"
+msgstr "Intervaly časových osí"
+
 msgid "TOUCH MODE"
 msgstr "Režim dotyku"
 
@@ -3714,6 +4299,9 @@ msgstr "Renderovanie v pravých farbách"
 msgid "TV EFFECTS"
 msgstr "TV EFEKTY"
 
+msgid "TV2x CRT Television Filter"
+msgstr "Televízny filter TV2x CRT"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - Pack 1"
 
@@ -3726,6 +4314,9 @@ msgstr "Taiwan"
 msgid "Taiwanese"
 msgstr "Taiwančina"
 
+msgid "Tandy"
+msgstr "Tandy"
+
 msgid "Thailand"
 msgstr "Thajsko"
 
@@ -3737,6 +4328,9 @@ msgstr "Oblasť okolo neutrálnej polohy joysticku, kde sa ignoruje vstup. Môž
 
 msgid "The day within the month of your birthday."
 msgstr "Deň v mesiaci vašich narodenín."
+
+msgid "The emulated graphics card."
+msgstr "Emulovaná grafická karta."
 
 msgid "The final output image, unrelated to the Wii's emulated NAND setting."
 msgstr "Konečný výstupný obrázok nesúvisiaci s emulovaným NAND nastavením Wii."
@@ -3792,6 +4386,9 @@ msgstr "Iba hore"
 msgid "Touch Screen"
 msgstr "Dotyková obrazovka"
 
+msgid "Trackball (Atari CX-22)"
+msgstr "Trackball (Atari CX-22)"
+
 msgid "Traditional Chinese"
 msgstr "Tradičná čínština"
 
@@ -3819,6 +4416,9 @@ msgstr "Tyrkysové"
 msgid "Twin Stick with Triggers"
 msgstr "Twin Stick so spúšťou"
 
+msgid "Type of emulated SoundBlaster card."
+msgstr "Typ emulovanej karty SoundBlaster."
+
 msgid "UBERSHADERS"
 msgstr "UBERSHADERS"
 
@@ -3831,8 +4431,14 @@ msgstr "UDP VZDIALENÁ ADRESA"
 msgid "UDP Tunnel"
 msgstr "UDP tunel"
 
+msgid "UK"
+msgstr "UK"
+
 msgid "UPSCALE FILTER"
 msgstr "Filter zväčšenia"
+
+msgid "US"
+msgstr "US"
 
 msgid "USA"
 msgstr "USA"
@@ -3912,6 +4518,9 @@ msgstr "Použiť jeden súbor uloženia pre hru."
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Použiť preemptívne snímky namiesto run-ahead. Beží dopredu iba keď sa zmení stav ovládača."
 
+msgid "Use to eliminate cursor drift/unwanted input."
+msgstr "Použite na odstránenie posunu kurzora/nežiaduceho vstupu."
+
 msgid "Use to eliminate joystick drift/unwanted input. Effects all controllers."
 msgstr "Použite na elimináciu driftu joysticku/nechceného vstupu. Ovplyvňuje všetky ovládače."
 
@@ -3954,11 +4563,17 @@ msgstr "Preskočiť VBI"
 msgid "VERTICAL ROTATION (TATE)"
 msgstr "Zvislá rotácia (tate)"
 
+msgid "VGA"
+msgstr "VGA"
+
 msgid "VIDEO FILTERS"
 msgstr "Video filtre"
 
 msgid "VIDEO FORMAT STANDARD"
 msgstr "Štandard video formátu"
+
+msgid "VIDEO RESOLUTION"
+msgstr "Rozlíšenia videa"
 
 msgid "VIDEO SETTINGS"
 msgstr "Nastavenia videa"
@@ -3992,6 +4607,9 @@ msgstr "Upozorniť na problémy BIOSu"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "Upozorniť na nepodporované funkcie"
+
+msgid "WHDLOAD LAUNCHER"
+msgstr "WHDLOAD spúštač"
 
 msgid "WHEELS"
 msgstr "Kolieska"
@@ -4062,6 +4680,9 @@ msgstr "Wiimote Sideway + Swing"
 msgid "Wiimote Sideway + Tilt"
 msgstr "Wiimote Sideway + Tilt"
 
+msgid "Works with 'Cycle-exact' mode and for a few games."
+msgstr "Funguje s režimom „Cycle-exact“ a pre niekoľko hier."
+
 msgid "X2"
 msgstr "X2"
 
@@ -4070,6 +4691,12 @@ msgstr "XBLA licencia povolená (predvolené)"
 
 msgid "XBOX LIVE ARCADE"
 msgstr "XBOX Live Arcade"
+
+msgid "Y = Fire"
+msgstr "Y = spúšť"
+
+msgid "Y = Fire, B = Up"
+msgstr "Y = spúšť, B = hore"
 
 msgid "YUV v3 (Firebrand)"
 msgstr "YUV v3 (Firebrand)"
@@ -4085,6 +4712,12 @@ msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "Presnosť ZCULL"
+
+msgid "ZOOM (HIDE BORDERS)"
+msgstr "Priblížiť (skryť okraje)"
+
+msgid "ZOOM/CROP (HIDE BORDERS)"
+msgstr "Priblížiť/orezať (skryť okraje)"
 
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Priblíži na skrytie čiernych okrajov. Okraje sú rôzne podľa hry."
@@ -4164,11 +4797,26 @@ msgstr "hybrid/dolu"
 msgid "hybrid/top"
 msgstr "hybrid/hore"
 
+msgid "large"
+msgstr "veľké"
+
+msgid "larger"
+msgstr "väčšie"
+
 msgid "left/right"
 msgstr "vľavo/vpravo"
 
 msgid "lottes crt"
 msgstr "lottes crt"
+
+msgid "maximum"
+msgstr "maximálne"
+
+msgid "medium"
+msgstr "stredné"
+
+msgid "minimum"
+msgstr "minimálne"
 
 msgid "nearest"
 msgstr "najbližšie"
@@ -4202,6 +4850,12 @@ msgstr "royaltea"
 
 msgid "scanlines"
 msgstr "scan riadky"
+
+msgid "small"
+msgstr "malé"
+
+msgid "smaller"
+msgstr "menšie"
 
 msgid "standard"
 msgstr "štandardné"

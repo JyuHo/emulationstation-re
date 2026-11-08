@@ -47,6 +47,8 @@ EMULATORS = {
     'mupen64plus': 'mupen64plus',
     'supermodel': 'supermodel',
     'stella': 'stella',
+    'dosbox_staging': 'dosbox_staging',
+    'scummvm': 'scummvm',
     'ymir': 'ymir',
     'pcsx2': 'pcsx2',
     'ppsspp': 'ppsspp',

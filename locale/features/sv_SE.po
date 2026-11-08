@@ -3,6 +3,12 @@
 # Compiled together with lang/<lang>/LC_MESSAGES/emulationstation2.po, whose header (UTF-8) applies:
 # this file has none, msgfmt refuses a header defined twice.
 
+msgid " 3.54 MHz"
+msgstr " 3.54 MHz"
+
+msgid " 7.09 MHz (A500 speed)"
+msgstr " 7.09 MHz (A500-hastighet)"
+
 msgid "(FDS) AUTOMATICALLY LOAD DISK SIDE A"
 msgstr "(FDS) LÄSER AUTOMATISKT IN DISKENS SIDA A"
 
@@ -38,6 +44,9 @@ msgstr "1 tråd"
 
 msgid "1% (Default)"
 msgstr "1 % (standard)"
+
+msgid "1.0 (240p)"
+msgstr "1.0 (240p)"
 
 msgid "1.0x (12.50Mhz)"
 msgstr "1.0x (12,50 Mhz)"
@@ -96,6 +105,9 @@ msgstr "10 sekunder"
 msgid "100% (Default)"
 msgstr "100 % (standard)"
 
+msgid "1024kB"
+msgstr "1024kB"
+
 msgid "10th"
 msgstr "10:e"
 
@@ -108,14 +120,23 @@ msgstr "120 bilder/s"
 msgid "1280x720 (Default)"
 msgstr "100 % (1280x720) (standard)"
 
+msgid "128MB"
+msgstr "128MB"
+
 msgid "128MiB"
 msgstr "128MiB"
+
+msgid "128kB (1700)"
+msgstr "128kB (1700)"
 
 msgid "12th"
 msgstr "12:e"
 
 msgid "13th"
 msgstr "13:e"
+
+msgid "14.18 MHz (A1200 speed)"
+msgstr "14.18 MHz (A1200-hastighet)"
 
 msgid "144fps"
 msgstr "144 bilder/s"
@@ -138,6 +159,9 @@ msgstr "15 sek"
 msgid "15th"
 msgstr "15:e"
 
+msgid "16384kB"
+msgstr "16384kB"
+
 msgid "165fps"
 msgstr "165 bilder/s"
 
@@ -146,6 +170,9 @@ msgstr "16:9 (standard)"
 
 msgid "16:9 RENDERING RESOLUTION"
 msgstr "16:9 UPPLÖSNING FÖR RENDERING"
+
+msgid "16MB"
+msgstr "16MB"
 
 msgid "16th"
 msgstr "16:e"
@@ -171,6 +198,9 @@ msgstr "19:e"
 msgid "1st"
 msgstr "1st"
 
+msgid "1st Joystick (2 Axes, 2 Btns)"
+msgstr "1:a joystick (2 axlar, 2 knap)"
+
 msgid "1x (720p/1080p)"
 msgstr "1x (720p/1080p)"
 
@@ -191,6 +221,9 @@ msgstr "2 sekunder"
 
 msgid "2 threads"
 msgstr "2 trådar"
+
+msgid "2.0 (480p)"
+msgstr "2.0 (480p)"
 
 msgid "2.0x (25.00Mhz)"
 msgstr "2.0x (25,00 Mhz)"
@@ -219,6 +252,9 @@ msgstr "200 ms"
 msgid "2048MB"
 msgstr "2048 MB"
 
+msgid "2048kB"
+msgstr "2048kB"
+
 msgid "20ms"
 msgstr "20 ms"
 
@@ -227,6 +263,9 @@ msgstr "20:e"
 
 msgid "21st"
 msgstr "21:a"
+
+msgid "224MB"
+msgstr "224MB"
 
 msgid "22nd"
 msgstr "22:a"
@@ -240,11 +279,17 @@ msgstr "23:e"
 msgid "24-bit, disables dithering."
 msgstr "24-bit, inaktiverar dithering."
 
+msgid "24MB"
+msgstr "24MB"
+
 msgid "24MB (Default)"
 msgstr "24 MB (standard)"
 
 msgid "24th"
 msgstr "24:e"
+
+msgid "256kB (1764)"
+msgstr "256kB (1764)"
 
 msgid "25th"
 msgstr "25:e"
@@ -258,17 +303,32 @@ msgstr "270 grader"
 msgid "27th"
 msgstr "27:e"
 
+msgid "28.37 MHz"
+msgstr "28.37 MHz"
+
+msgid "286, 12.5MHz (2750 cps)"
+msgstr "286, 12,5MHz (2750 cps)"
+
+msgid "286, 6MHz (1320 cps)"
+msgstr "286, 6MHz (1320 cps)"
+
 msgid "28th"
 msgstr "28:e"
 
 msgid "29th"
 msgstr "29:e"
 
+msgid "2P GAMEPAD MAPPING (KEYRAH)"
+msgstr "2P MAPPNING AV GAMEPAD (KEYRAH)"
+
 msgid "2X"
 msgstr "2X"
 
 msgid "2nd"
 msgstr "2:a"
+
+msgid "2nd Joystick (2 Axes, 2 Btns)"
+msgstr "2:a joystick (2 axlar, 2 knap)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -321,17 +381,35 @@ msgstr "30:e"
 msgid "31st"
 msgstr "31:a"
 
+msgid "32MB"
+msgstr "32MB"
+
 msgid "32x MSAA"
 msgstr "32x MSAA"
 
 msgid "32x SSAA"
 msgstr "32x SSAA"
 
+msgid "35.46 MHz"
+msgstr "35.46 MHz"
+
 msgid "3840MB"
 msgstr "3840 MB"
 
 msgid "384MB (Default)"
 msgstr "384 MB (standard)"
+
+msgid "386 (prefetch)"
+msgstr "386 (hämtning i förväg)"
+
+msgid "386 (slow)"
+msgstr "386 (långsam)"
+
+msgid "386, 20MHz (4720 cps)"
+msgstr "386, 20MHz (4720 cps)"
+
+msgid "386DX, 33MHz (7800 cps)"
+msgstr "386DX, 33MHz (7800 cps)"
 
 msgid "3rd"
 msgstr "3:e"
@@ -357,11 +435,26 @@ msgstr "4.5x (1440x1080)"
 msgid "4096MB"
 msgstr "4096 MB"
 
+msgid "4096kB"
+msgstr "4096kB"
+
+msgid "42.56 MHz"
+msgstr "42.56 MHz"
+
 msgid "45s"
 msgstr "45s"
 
 msgid "480x272 (Default)"
 msgstr "480x272 (standard)"
+
+msgid "486 (slow)"
+msgstr "486 (långsam)"
+
+msgid "486DX, 33MHz (13400 cps)"
+msgstr "486DX, 33MHz (13400 cps)"
+
+msgid "486DX2, 66MHz (26800 cps)"
+msgstr "486DX2, 66MHz (26800 cps)"
 
 msgid "48MB"
 msgstr "48MB"
@@ -374,6 +467,9 @@ msgstr "4:3 RENDERINGSUPPLÖSNING"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4MB"
+msgstr "4MB"
 
 msgid "4X"
 msgstr "4X"
@@ -417,6 +513,12 @@ msgstr "5 % (standard)"
 msgid "5120MB"
 msgstr "5120 MB"
 
+msgid "512kB (1750)"
+msgstr "512kB (1750)"
+
+msgid "56.75 MHz"
+msgstr "56.75 MHz"
+
 msgid "5th"
 msgstr "5:e"
 
@@ -440,6 +542,9 @@ msgstr "60s"
 
 msgid "6144MB"
 msgstr "6144MB"
+
+msgid "64MB"
+msgstr "64MB"
 
 msgid "64MiB (Default)"
 msgstr "64MiB (standard)"
@@ -479,6 +584,15 @@ msgstr "7x inbyggd (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x inbyggd (1792 x 1344)"
+
+msgid "8086/8088, 4.77MHz (315 cps)"
+msgstr "8086/8088, 4,77MHz (315 cps)"
+
+msgid "8192kB"
+msgstr "8192kB"
+
+msgid "8MB"
+msgstr "8MB"
 
 msgid "8X"
 msgstr "8X"
@@ -522,6 +636,21 @@ msgstr "9"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "A1200 (2MB Chip + 8MB Fast)"
+msgstr "A1200 (2 MB chip + 8 MB snabb)"
+
+msgid "A4000/040 (2MB Chip + 8MB Fast)"
+msgstr "A4000/040 (2 MB chip + 8 MB snabb)"
+
+msgid "A500 (512KB Chip + 512KB Slow)"
+msgstr "A500 (512KB Chip + 512KB långsam)"
+
+msgid "A500+ (1MB Chip)"
+msgstr "A500+ (1MB-chip)"
+
+msgid "A600 (2MB Chip + 8MB Fast)"
+msgstr "A600 (2 MB chip + 8 MB snabb)"
+
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "FIX FÖR AKTIVA INMATNINGSENHETER"
 
@@ -543,11 +672,23 @@ msgstr "ALSA"
 msgid "ALSAThread"
 msgstr "ALSAThread"
 
+msgid "AMD Athlon, 1.2GHz (1000000 cps)"
+msgstr "AMD Athlon, 1,2 GHz (1000000 cps)"
+
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX Super Resolution"
 
+msgid "AMIGA MODEL"
+msgstr "AMIGA-MODELL"
+
 msgid "ANAGLYPH PRESET (3D)"
 msgstr "ANAGLYFISK FÖRINSTÄLLNING (3D)"
+
+msgid "ANALOG DEADZONE"
+msgstr "ANALOG DÖDZON"
+
+msgid "ANALOG JOYSTICK DEADZONE"
+msgstr "DÖDZON FÖR ANALOG STYRSPAK"
 
 msgid "ANISOTROPIC FILTERING"
 msgstr "ANISOTROPISK FILTRERING"
@@ -624,8 +765,17 @@ msgstr "Justerar bildförhållandet för Full Motion Video-filmer."
 msgid "Adjusts the positions of the screens."
 msgstr "Justerar skärmarnas positioner."
 
+msgid "AdvMame"
+msgstr "AdvMame"
+
+msgid "Affects efficiency/stability."
+msgstr "Påverkar effektivitet/stabilitet."
+
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Påverkar hur de emulerade skärmarna skalas. Endast OpenGL-renderare."
+
+msgid "Affects mouse speed globally."
+msgstr "Påverkar musens hastighet globalt."
 
 msgid "After NMI"
 msgstr "Efter NMI"
@@ -705,6 +855,9 @@ msgstr "Angrylion (mest kompatibla)"
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Använder FXAA-kantutjämningsalgoritmen för att förbättra den visuella kvaliteten i spel."
 
+msgid "Apply a joy2key profile for the current game."
+msgstr "Tillämpa en joy2key-profil för det aktuella spelet."
+
 msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
 msgstr "Tillämpa en multiplikator på styrspakens inmatning för att minska eller öka responsen."
 
@@ -771,14 +924,29 @@ msgstr "Auto max kvalitet"
 msgid "Auto Standard (4:3 interlaced / 3:2 progressive)"
 msgstr "Auto standard (4:3 interlaced / 3:2 progressiv)"
 
+msgid "Auto zoom"
+msgstr "Automatisk zoom"
+
+msgid "Auto-disable zoom"
+msgstr "Automatisk inaktivering av zoom"
+
 msgid "Autodetect"
 msgstr "Identifiera automatiskt"
+
+msgid "Autodetect (Compatible)"
+msgstr "Autodetektering (kompatibel)"
+
+msgid "Autodetect (by game name tag)"
+msgstr "Autodetektering (genom spelets namntagg)"
 
 msgid "Automatic"
 msgstr "Automatiskt"
 
 msgid "Automatic ratio"
 msgstr "Automatiskt förhållande"
+
+msgid "Automatic switches region per file path tags"
+msgstr "Automatisk växling av region per filsökvägstaggar"
 
 msgid "Automatically loads and applies cheats on game start."
 msgstr "Läser automatiskt in och tillämpar fusk när spelet startar."
@@ -791,6 +959,12 @@ msgstr "Du slipper läsa in sida A manuellt varje gång."
 
 msgid "Azerbaijan"
 msgstr "Azerbajdzjan"
+
+msgid "B = Fire"
+msgstr "B = Skjut"
+
+msgid "B = Fire, A = Up"
+msgstr "B = Skjut, A = Upp"
 
 msgid "BILINEAR FILTERING"
 msgstr "BILINJÄR FILTRERING"
@@ -815,6 +989,9 @@ msgstr "BLANDA HÖGUPPLÖST LÄGE"
 
 msgid "BLENDING ACCURACY"
 msgstr "BLANDNINGSNOGGRANNHET"
+
+msgid "BOOT ANIMATION FIRST"
+msgstr "UPPSTARTSANIMERING FÖRST"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (rekommenderas för alla spel som utvecklats i USA)"
@@ -915,6 +1092,9 @@ msgstr "Bolivia"
 msgid "Both"
 msgstr "Båda"
 
+msgid "Both Joysticks (4 Axes, 4 Btns)"
+msgstr "Båda styrspakarna (4 axlar, 4 knap)"
+
 msgid "Bottom (Default)"
 msgstr "Botten (standard)"
 
@@ -948,11 +1128,47 @@ msgstr "Buffrad rendering"
 msgid "Bulgaria"
 msgstr "Bulgarien"
 
+msgid "Button Options"
+msgstr "Knappalternativ"
+
+msgid "C64 Games System PAL"
+msgstr "C64 Spelsystem PAL"
+
+msgid "C64 Japanese NTSC"
+msgstr "C64 Japanska NTSC"
+
+msgid "C64 NTSC"
+msgstr "C64 NTSC"
+
+msgid "C64 NTSC Automatic"
+msgstr "C64 NTSC Automatisk"
+
+msgid "C64 PAL"
+msgstr "C64 PAL"
+
+msgid "C64 PAL Automatic"
+msgstr "C64 PAL Automatisk"
+
 msgid "CD ADD-ON"
 msgstr "CD-TILLÄGG"
 
+msgid "CD TURBO SPEED"
+msgstr "CD TURBOHASTIGHET"
+
 msgid "CD-DA VOLUME"
 msgstr "CD-DA VOLYM"
+
+msgid "CD32 (2MB Chip + 8MB Fast)"
+msgstr "CD32 (2 MB chip + 8 MB Fast)"
+
+msgid "CD32 Default (2MB Chip)"
+msgstr "CD32 standard (2MB chip)"
+
+msgid "CD32 Pad"
+msgstr "CD32 Pad"
+
+msgid "CDTV (1MB Chip)"
+msgstr "CDTV (1 MB chip)"
 
 msgid "CDZ"
 msgstr "CDZ"
@@ -962,6 +1178,9 @@ msgstr "CDZ MAME"
 
 msgid "CDZ Universe 3.3"
 msgstr "CDZ Universe 3.3"
+
+msgid "CGA"
+msgstr "CGA"
 
 msgid "CHEATS"
 msgstr "FUSK"
@@ -1029,6 +1248,9 @@ msgstr "INMATNINGSMAPPNING FÖR KONTROLLER 4"
 msgid "CONTROLLER COMBINATION"
 msgstr "KOMBINATION AV STYRENHETER"
 
+msgid "CONTROLLER PORT"
+msgstr "KONTROLLERPORT"
+
 msgid "CONTROLLER TYPE"
 msgstr "TYP AV KONTROLLER"
 
@@ -1047,14 +1269,26 @@ msgstr "CPU"
 msgid "CPU CLOCK"
 msgstr "CPU-KLOCKA"
 
+msgid "CPU COMPATIBILITY"
+msgstr "CPU-KOMPATIBILITET"
+
 msgid "CPU CORE"
 msgstr "CPU-KÄRNA"
+
+msgid "CPU CORE METHOD"
+msgstr "CPU-KÄRNMETOD"
 
 msgid "CPU DYNAREC (SPEED UP)"
 msgstr "CPU DYNAREC (SNABBARE)"
 
 msgid "CPU EXECUTION MODE"
 msgstr "EXEKVERINGSLÄGE FÖR CPU"
+
+msgid "CPU SPEED"
+msgstr "CPU-HASTIGHET"
+
+msgid "CPU TYPE"
+msgstr "CPU-TYP"
 
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "Gräns för latens mellan CPU och GPU. Lägre värden förbättrar latensen men kan minska prestandan."
@@ -1094,6 +1328,9 @@ msgstr "Kan användas för att simulera färger på särskilda skärmar."
 
 msgid "Can change the language of some games."
 msgstr "Kan ändra språket i vissa spel."
+
+msgid "Can fix drifting joysticks in games."
+msgstr "Kan åtgärda driftande styrspakar i spel."
 
 msgid "Can fix slowdown. Only works on some drivers."
 msgstr "Kan fixa långsamhet. Fungerar bara på vissa drivrutiner."
@@ -1146,6 +1383,9 @@ msgstr "Kina"
 msgid "Chinese"
 msgstr "Kinesiska"
 
+msgid "Chinese (Mandarin)"
+msgstr "Kinesiska (mandarin)"
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Välj konsolens språk. Det är inte säkert att alla spel stöder språkvalet."
 
@@ -1190,6 +1430,12 @@ msgstr "Välj vilket grafik-API-bibliotek som ska användas."
 
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "Välj vilket grafik-API-bibliotek som ska användas. Vulkan kanske inte fungerar för alla kärnor."
+
+msgid "Choose your preferred language."
+msgstr "Välj önskat språk."
+
+msgid "Choose your preferred renderer."
+msgstr "Välj den renderingsmetod du föredrar."
 
 msgid "Classic Controller"
 msgstr "Klassisk styrenhet"
@@ -1272,6 +1518,15 @@ msgstr "Tidsgräns för markören i sekunder vid användning av Markörläge - T
 msgid "Custom"
 msgstr "Anpassad"
 
+msgid "Custom Keyboard Binds (best for Pad2Key)"
+msgstr "Anpassade tangentbordsbindningar (bäst för Pad2Key)"
+
+msgid "Cycle-exact"
+msgstr "Cykel-exakt"
+
+msgid "Czech"
+msgstr "Tjeckiska"
+
 msgid "Czech Republic"
 msgstr "Tjeckien"
 
@@ -1295,6 +1550,9 @@ msgstr "INAKTIVERA 4MB EXPANSION RAM PACK"
 
 msgid "DISABLE CULLING"
 msgstr "INAKTIVERA CULLING"
+
+msgid "DISABLE EMULATOR JOYSTICK"
+msgstr "INAKTIVERA EMULATORNS STYRSPAK"
 
 msgid "DISABLE INTERLACING"
 msgstr "INAKTIVERA INTERLACING"
@@ -1374,6 +1632,9 @@ msgstr "Standard"
 msgid "Default Only"
 msgstr "Endast standard"
 
+msgid "Default by model"
+msgstr "Standard efter modell"
+
 msgid "Degree in which 3D graphics are scaled up. OpenGL renderer only."
 msgstr "Grad i vilken 3D-grafik skalas upp. Endast OpenGL-renderare."
 
@@ -1428,6 +1689,9 @@ msgstr "Inaktiverad om du använder en shaderuppsättning eller om skärmen matc
 msgid "Display on screen information like savestate, config warning, etc."
 msgstr "Visa information på skärmen, t.ex. sparade tillstånd, konfigurationsvarning etc."
 
+msgid "Does not affect the on-screen keyboard."
+msgstr "Påverkar inte tangentbordet på skärmen."
+
 msgid "Dominican Republic"
 msgstr "Dominikanska republiken"
 
@@ -1436,6 +1700,9 @@ msgstr "Åsidosätt inte"
 
 msgid "Dot"
 msgstr "Punkt"
+
+msgid "DotMatrix"
+msgstr "DotMatrix"
 
 msgid "Double buffering"
 msgstr "Dubbelbuffring"
@@ -1458,14 +1725,26 @@ msgstr "Under spelets gång trycker du på Hotkey + R1 för att översätta text
 msgid "Dutch"
 msgstr "Nederländska"
 
+msgid "Dynamic (fast)"
+msgstr "Dynamisk (snabb)"
+
 msgid "Dynamic Interpreter"
 msgstr "Dynamisk tolk"
 
 msgid "Dynarec (Fastest)"
 msgstr "Dynarec (snabbast)"
 
+msgid "EGA"
+msgstr "EGA"
+
 msgid "EMULATE WIIMOTE"
 msgstr "EMULERA WIIMOTE"
+
+msgid "EMULATED CPU PERFORMANCE"
+msgstr "EMULERAD CPU-PRESTANDA"
+
+msgid "EMULATED RAM SIZE"
+msgstr "EMULERAD RAM-STORLEK"
 
 msgid "EMULATION"
 msgstr "EMULERING"
@@ -1484,6 +1763,9 @@ msgstr "AKTIVERA FUSK"
 
 msgid "ENABLE GAMEPAD VIEW"
 msgstr "AKTIVERA GAMEPAD-VY"
+
+msgid "ENABLE GRAVIS ULTRASOUND"
+msgstr "AKTIVERA GRAVIS ULTRASOUND"
 
 msgid "ENABLE NOTIFICATIONS"
 msgstr "AKTIVERA MEDDELANDEN"
@@ -1512,6 +1794,9 @@ msgstr "UTÖKAD SKÄRM"
 msgid "Ecuador"
 msgstr "Ecuador"
 
+msgid "Edge (sharper filet)"
+msgstr "Kant (skarpare fyllnad)"
+
 msgid "Egypt"
 msgstr "Egypten"
 
@@ -1536,6 +1821,9 @@ msgstr "Aktivera Cemus prestandaöverlagring."
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "Aktivera Gamecube-uppstartsanimering och BIOS-åtkomst (kräver IPL.bin BIOS i lämplig användarkatalog)."
 
+msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
+msgstr "Aktivera Gravis Ultrasound-emulering. Se till att mappen ULTRASND finns i roten av din <game>.pc rom-mapp."
+
 msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
 msgstr "Aktivera MelonDS för visning på två skärmar. Vissa relaterade skärmalternativ kommer att ignoreras."
 
@@ -1556,6 +1844,9 @@ msgstr "Aktivera hårkors i skjutspel för de utvalda spelarna."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "Aktivera gamepad-vy för spel som har interaktion över två skärmar. Använd snabbtangent+R2 för att växla mellan skärmar."
+
+msgid "Enable launching pre-installed WHDLoad installs."
+msgstr "Aktivera start av förinstallerade WHDLoad-installationer."
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Aktivera meddelanden om cache, kontrollerhändelser etc."
@@ -1671,6 +1962,9 @@ msgstr "Förbättring. Tar bort gränsen på åtta sprites per rad."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Förbättring. Tar bort gränsen på åttio sprites per rad."
 
+msgid "Enhancement. Remove the four sprites per line limit."
+msgstr "Förbättring. Tar bort gränsen på fyra sprites per rad."
+
 msgid "Enhancement. Remove the sixteen sprites per line limit."
 msgstr "Förbättring. Tar bort gränsen på sexton sprites per rad."
 
@@ -1716,6 +2010,9 @@ msgstr "Europa"
 msgid "Even"
 msgstr "Jämna"
 
+msgid "Even Pixels"
+msgstr "Jämna bildpunkter"
+
 msgid "Exclusive Ubershaders"
 msgstr "Exklusiva Ubershaders"
 
@@ -1739,6 +2036,9 @@ msgstr "FIFO Relaxed"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "INSTÄLLNINGAR FÖR FIRMWARE"
+
+msgid "FLOPPY TURBO SPEED"
+msgstr "DISKETT TURBOHASTIGHET"
 
 msgid "FM SYNTHESIZER"
 msgstr "FM SYNTHESIZER"
@@ -1800,6 +2100,12 @@ msgstr "Fyller skärmen oavsett bildförhållande. Fungerar inte med uppskalning
 msgid "Finland"
 msgstr "Finland"
 
+msgid "Fit 4:3 Aspect Ratio"
+msgstr "Anpassa 4:3 bildförhållande"
+
+msgid "Fit resolution scale"
+msgstr "Anpassa upplösningsskala"
+
 msgid "Fit to Window / Fullscreen"
 msgstr "Anpassa till fönster / Helskärm"
 
@@ -1814,6 +2120,9 @@ msgstr "Fixar texturbandning vid uppskalning."
 
 msgid "Fixes a possible bug with multiple controllers detection."
 msgstr "Åtgärdar ett möjligt fel med detektering av flera kontroller."
+
+msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
+msgstr "Flight Stick (3 axlar, 4 knap, 1 hat)"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "För spel med gyrofunktion (bunden till vänster analoga spak)"
@@ -1839,6 +2148,9 @@ msgstr "Tvinga 32bit"
 msgid "Force 4:3"
 msgstr "Tvinga 4:3"
 
+msgid "Force a specific model and prevent tags detection."
+msgstr "Tvinga fram en specifik modell och förhindra att taggar upptäcks."
+
 msgid "Force progressive render / scan."
 msgstr "Tvinga fram progressiv rendering/skanning."
 
@@ -1850,6 +2162,9 @@ msgstr "Frankrike"
 
 msgid "French"
 msgstr "Franska"
+
+msgid "Frontend MIDI driver"
+msgstr "MIDI-drivrutin för frontend"
 
 msgid "Full (Hash Cache)"
 msgstr "Fullständig (Hash-cache)"
@@ -1901,6 +2216,12 @@ msgstr "GAMECUBE PORT 3 TYP"
 
 msgid "GAMECUBE PORT 4 TYPE"
 msgstr "GAMECUBE PORT 4 TYP"
+
+msgid "GAMEPAD AUTOMATIC MAPPING"
+msgstr "AUTOMATISK MAPPNING AV GAMEPAD"
+
+msgid "GAMEPAD CURSOR SPEED"
+msgstr "GAMEPAD-MARKÖRENS HASTIGHET"
 
 msgid "GB - Black and White"
 msgstr "GB - Svart och vitt"
@@ -1977,11 +2298,17 @@ msgstr "GRAFIK"
 msgid "GRAPHICS API"
 msgstr "GRAFIK-API"
 
+msgid "GRAPHICS CHIP TYPE"
+msgstr "GRAFIKKORTSTYP"
+
 msgid "GRAPHICS PLUGIN"
 msgstr "GRAFIKINSTICKSMODUL"
 
 msgid "Game default"
 msgstr "Spelets standard"
+
+msgid "GameBlaster"
+msgstr "GameBlaster"
 
 msgid "GameCube Adapter for Wii U"
 msgstr "GameCube-adapter för Wii U"
@@ -2000,6 +2327,9 @@ msgstr "Spelen kan gå snabbare/saktare än normalt om fel region har valts."
 
 msgid "Gaussian"
 msgstr "Gaussisk"
+
+msgid "Generic Keyboard Binds"
+msgstr "Allmänna tangentbordsbindningar"
 
 msgid "Genesis/Megadrive Style"
 msgstr "Genesis/Megadrive-stil"
@@ -2021,6 +2351,9 @@ msgstr "Glide64"
 
 msgid "Gln64"
 msgstr "Gln64"
+
+msgid "Gravis GamePad (D-pad + 4 Btns)"
+msgstr "Gravis GamePad (D-pad + 4 knap)"
 
 msgid "Gray"
 msgstr "Grå"
@@ -2049,17 +2382,38 @@ msgstr "HÖGUPPLÖSTA ARTEFAKTER"
 msgid "HLE (Fastest)"
 msgstr "HLE (snabbast)"
 
+msgid "HQ (bilinear filter)"
+msgstr "HQ (bilinjärt filter)"
+
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack. Ökar de flesta PAL-spels hastighet med 17 %."
+
+msgid "Hebrew"
+msgstr "Hebreiska"
+
+msgid "Help games which are too quick or that have bugs."
+msgstr "Hjälp spel som är för snabba eller som har buggar."
 
 msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
 msgstr "Hjälper till med texturkorruption och djupproblem på AMD GPU:er. Kan även hjälpa Intel GPU:er i vissa fall."
 
+msgid "Hercules"
+msgstr "Hercules"
+
 msgid "Hermite"
 msgstr "Hermite"
 
+msgid "Hides borders on many games. Some games use the borders."
+msgstr "Döljer ramar på många spel. Vissa spel använder ramarna."
+
+msgid "Hides borders on many games. Some games used the borders."
+msgstr "Döljer ramar på många spel. Vissa spel använde ramarna."
+
 msgid "High"
 msgstr "Hög"
+
+msgid "High 720p"
+msgstr "Hög 720p"
 
 msgid "Honduras"
 msgstr "Honduras"
@@ -2130,6 +2484,9 @@ msgstr "Om ett spel körs i 30 Hz kommer PPSSPP att skicka 60 bildrutor till bil
 msgid "If nothing is specified, will use ZTranslate by default."
 msgstr "Om inget anges används ZTranslate som standard."
 
+msgid "Ignored with 'Cycle-exact'."
+msgstr "Ignoreras med \"Cykel-exakt\"."
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "Förbättra ljudets noggrannhet (experimentellt)."
 
@@ -2159,6 +2516,12 @@ msgstr "Indien"
 
 msgid "Indonesia"
 msgstr "Indonesien"
+
+msgid "Inserts CD during boot animation prevent loading fail."
+msgstr "Infogar CD under startanimationen för att förhindra att inläsningen misslyckas."
+
+msgid "Inserts CD during boot animation to prevent loading fail."
+msgstr "Infogar CD under startanimationen för att förhindra att inläsningen misslyckas."
 
 msgid "Interpreter (Slowest)"
 msgstr "Tolk (långsammast)"
@@ -2204,6 +2567,12 @@ msgstr "STYRSPAKENS KÄNSLIGHET"
 
 msgid "JOYSTICK TO DPAD"
 msgstr "STYRSPAK TILL DPAD"
+
+msgid "JUMP ON A"
+msgstr "HOPPA PÅ A"
+
+msgid "JUMP ON B"
+msgstr "HOPPA PÅ B"
 
 msgid "Jamaica"
 msgstr "Jamaica"
@@ -2262,6 +2631,9 @@ msgstr "juni"
 msgid "Justifier"
 msgstr "Justifier"
 
+msgid "KEYBOARD PASSTHROUGH"
+msgstr "GENOMGÅNG AV TANGENTBORD"
+
 msgid "Kazakhstan"
 msgstr "Kazakstan"
 
@@ -2271,11 +2643,23 @@ msgstr "Kenya"
 msgid "Keyboard"
 msgstr "Tangentbord"
 
+msgid "Keyboard + Mouse (Left An.)"
+msgstr "Tangentbord + mus (vänster ana.)"
+
+msgid "Keyboard + Mouse (Right An.)"
+msgstr "Tangentbord + mus (höger ana.)"
+
 msgid "Keyboard passthrough"
 msgstr "Genomgång av tangentbord"
 
 msgid "Keyboard shortcuts unavailable if passing through the keyboard."
 msgstr "Kortkommandon är inte tillgängliga om de skickas genom tangentbordet."
+
+msgid "Keypad to joyport mappings for 2 players."
+msgstr "Mappning av knappsats till joyport för 2 spelare."
+
+msgid "Koalapad"
+msgstr "Koalapad"
 
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
@@ -2409,6 +2793,9 @@ msgstr "Lokal adress och port att ta emot paket på. Lämna detta tomt om du vil
 msgid "Low"
 msgstr "Låg"
 
+msgid "Low 360p"
+msgstr "Låg 360p"
+
 msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
 msgstr "Lägre värden minskar ljudfördröjningen och förbättrar prestandan, men kan orsaka ljudproblem."
 
@@ -2430,6 +2817,9 @@ msgstr "MAME (YM2612)"
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "MANUELL TEXTURSAMPLING"
 
+msgid "MAX (as many as possible)"
+msgstr "MAX (så många som möjligt)"
+
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "Max strömsparande CPU-preemptions"
 
@@ -2439,11 +2829,23 @@ msgstr "MINNESKORTSLÄGE"
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "ENHET FÖR MINNESHANTERING"
 
+msgid "MIDI OUTPUT"
+msgstr "MIDI-UTGÅNG"
+
 msgid "MIPMAPPING"
 msgstr "MIPMAPPING"
 
+msgid "MODEL TYPE"
+msgstr "MODELLTYP"
+
 msgid "MOUNT CACHE"
 msgstr "MONTERA CACHE"
+
+msgid "MOUSE SPEED"
+msgstr "MUSHASTIGHET"
+
+msgid "MSX2"
+msgstr "MSX2"
 
 msgid "MULTITAP"
 msgstr "MULTITAP"
@@ -2457,6 +2859,12 @@ msgstr "Macau"
 msgid "Magnum FBX"
 msgstr "Magnum FBX"
 
+msgid "Makes second fire button press up instead."
+msgstr "Gör att den andra eldknappen trycks upp istället."
+
+msgid "Makes the blue button press up instead."
+msgstr "Gör att den blå knappen trycks upp istället."
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "Gör dither-mönstret mycket mindre tydligt i högre upplösningar."
 
@@ -2468,6 +2876,12 @@ msgstr "Maldiverna"
 
 msgid "Manually activate the adapter for supported games."
 msgstr "Aktivera adaptern manuellt för spel som stöds."
+
+msgid "Manually define which resolution to use.&#x0a;Auto defaults to High and switches to Super-High when needed."
+msgstr "Definiera manuellt vilken upplösning som ska användas.&#x0a;Automatisk standard är hög och växlar till superhög vid behov."
+
+msgid "Manually set cycles per second. Use with caution."
+msgstr "Ställ in cykler per sekund manuellt. Använd med försiktighet."
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Mappa din handkontroll till en emulerad Wiimote."
@@ -2556,11 +2970,20 @@ msgstr "Monokrom (Blargg)"
 msgid "More accurate emulation, but slower."
 msgstr "Mer exakt emulering, men långsammare."
 
+msgid "More compatible"
+msgstr "Mer kompatibel"
+
 msgid "Morocco"
 msgstr "Marocko"
 
+msgid "Most games use port 2, some use port 1."
+msgstr "De flesta spel använder port 2, vissa använder port 1."
+
 msgid "Mouse"
 msgstr "Mus"
+
+msgid "Mouse (1351)"
+msgstr "Mus (1351)"
 
 msgid "Mouse sensitivity for paddles. Core default (10)."
 msgstr "Musens känslighet för paddlar. Standardinställning (10)."
@@ -2621,6 +3044,12 @@ msgstr "NTSC (S-Video)"
 
 msgid "NTSC 240x480px 60Hz"
 msgstr "NTSC 240x480px 60Hz"
+
+msgid "NTSC 240x480px 60Hz (auto)"
+msgstr "NTSC 240x480px 60Hz (auto)"
+
+msgid "NTSC 492x262px"
+msgstr "NTSC 492x262px"
 
 msgid "NTSC ASPECT"
 msgstr "NTSC-FÖRHÅLLANDE"
@@ -2703,6 +3132,9 @@ msgstr "Nej (standard)"
 msgid "No Buffer"
 msgstr "Ingen buffert"
 
+msgid "No EMS/XMS"
+msgstr "Ingen EMS/XMS"
+
 msgid "No Limit"
 msgstr "Ingen gräns"
 
@@ -2726,6 +3158,9 @@ msgstr "Normal"
 
 msgid "Normal (Default)"
 msgstr "Normal (standard)"
+
+msgid "Normal (interpreter)"
+msgstr "Normal (tolk)"
 
 msgid "Norway"
 msgstr "Norge"
@@ -2802,6 +3237,12 @@ msgstr "På (endast Vulkan)"
 msgid "On (forced)"
 msgstr "På (tvingad)"
 
+msgid "On with game detection message"
+msgstr "På med spelupptäcktsmeddelande"
+
+msgid "On with rewind support"
+msgstr "På med stöd för återspolning"
+
 msgid "Only Overscan Area"
 msgstr "Endast överskanningsområde"
 
@@ -2828,6 +3269,12 @@ msgstr "OpenGL (standard)"
 
 msgid "OpenGL (Overwrites Libretro API settings)"
 msgstr "OpenGL (skriver över Libretro API-inställningar)"
+
+msgid "OpenGL with Shaders"
+msgstr "OpenGL med shaders"
+
+msgid "Optimized (auto)"
+msgstr "Optimerad (auto)"
 
 msgid "Orange"
 msgstr "Orange"
@@ -2877,6 +3324,12 @@ msgstr "PADDELKÄNSLIGHET FÖR MUS"
 msgid "PAL 288x576px 50Hz"
 msgstr "PAL 288x576px 50Hz"
 
+msgid "PAL 288x576px 50Hz (auto)"
+msgstr "PAL 288x576px 50Hz (auto)"
+
+msgid "PAL 576x312px"
+msgstr "PAL 576x312 pixlar"
+
 msgid "PAL ASPECT"
 msgstr "PAL-FÖRHÅLLANDE"
 
@@ -2901,6 +3354,9 @@ msgstr "PCE Joypad"
 msgid "PCE Mouse"
 msgstr "PCE-mus"
 
+msgid "PCjr"
+msgstr "PCjr"
+
 msgid "PER-GAME SAVES"
 msgstr "PER-SPEL-SPARNINGAR"
 
@@ -2915,6 +3371,9 @@ msgstr "FOSFORBLANDNING"
 
 msgid "PHOSPHOR MODE"
 msgstr "FOSFORLÄGE"
+
+msgid "PHYSICAL KEYBOARD LAYOUT"
+msgstr "FYSISK TANGENTBORDSLAYOUT"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "SPELARE 1 HÅRKORSETS FÄRG"
@@ -2943,6 +3402,9 @@ msgstr "Paddelstyrning"
 msgid "Paddle can only be used in port 2."
 msgstr "Paddeln kan endast användas i port 2."
 
+msgid "Paddles"
+msgstr "Paddlar"
+
 msgid "Pakistan"
 msgstr "Pakistan"
 
@@ -2963,6 +3425,21 @@ msgstr "Parallell"
 
 msgid "Partial"
 msgstr "Delvis"
+
+msgid "Passes all physical keyboard events for Pad2Key."
+msgstr "Skickar alla fysiska tangentbordshändelser för Pad2Key."
+
+msgid "Pentium (slow)"
+msgstr "Pentium (långsam)"
+
+msgid "Pentium II, 300MHz (200000 cps)"
+msgstr "Pentium II, 300MHz (200000 cps)"
+
+msgid "Pentium III, 600MHz (500000 cps)"
+msgstr "Pentium III, 600MHz (500000 cps)"
+
+msgid "Pentium, 100MHz (77000 cps)"
+msgstr "Pentium, 100MHz (77000 cps)"
 
 msgid "Per 0.05s, 5s total (550MB|100MB)"
 msgstr "Per 0,05 s, totalt 5 s (550 MB|100 MB)"
@@ -2999,6 +3476,12 @@ msgstr "Filippinerna"
 
 msgid "Phosphor blend level. Core default (60%)."
 msgstr "Fosforblandningsnivå. Standardinställning (60 %)."
+
+msgid "Pixel Perfect"
+msgstr "Bildpunktsperfekt"
+
+msgid "Pixel-Perfect"
+msgstr "Bildpunktsperfekt"
 
 msgid "PlayStation Mouse"
 msgstr "PlayStation-mus"
@@ -3068,6 +3551,9 @@ msgstr "QUAD-RENDERING"
 
 msgid "Qatar"
 msgstr "Qatar"
+
+msgid "RAM EXPANSION UNIT"
+msgstr "RAM-EXPANSIONSENHET"
 
 msgid "RDP PLUGIN"
 msgstr "RDP-INSTICKSMODUL"
@@ -3147,6 +3633,9 @@ msgstr "Minskar vingliga polygoner och förvrängda texturer."
 msgid "Relaxed (Fastest)"
 msgstr "Avslappnad (snabbast)"
 
+msgid "Removes loading but can add possible glitches/crashes."
+msgstr "Tar bort inläsning men kan lägga till möjliga glitches/krascher."
+
 msgid "Replace meshed transparency by real transparency."
 msgstr "Ersätt maskad transparens med verklig transparens."
 
@@ -3171,11 +3660,17 @@ msgstr "Återställd Wii VC"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (standard)"
 
+msgid "RetroPad Face Button Options."
+msgstr "Alternativ för RetroPads handlingsknappar."
+
 msgid "Retropad"
 msgstr "Retropad"
 
 msgid "Retropad (Default)"
 msgstr "Retropad (standard)"
+
+msgid "Rewind can be CPU heavy."
+msgstr "Tillbakaspolning kan vara CPU-tungt."
 
 msgid "Rice"
 msgstr "Ris"
@@ -3185,6 +3680,9 @@ msgstr "Högerspak"
 
 msgid "Right/Left"
 msgstr "Höger/Vänster"
+
+msgid "Roland MT-32/CM-32L"
+msgstr "Roland MT-32/CM-32L"
 
 msgid "Romania"
 msgstr "Rumänien"
@@ -3216,8 +3714,17 @@ msgstr "S-Video"
 msgid "S-Video (Blargg)"
 msgstr "S-Video (Blargg)"
 
+msgid "SAVESTATE/REWIND"
+msgstr "SPARAT TILLSTÅND/SPOLA TILLBAKA"
+
+msgid "SCALE FACTOR"
+msgstr "SKALNINGSFAKTOR"
+
 msgid "SCALED DITHERING"
 msgstr "SKALAD DITHERING"
+
+msgid "SCALER MODE"
+msgstr "SKALNINGSLÄGE"
 
 msgid "SCALING MODE"
 msgstr "SKALNINGSLÄGE"
@@ -3330,6 +3837,9 @@ msgstr "SOLSENSORNIVÅ"
 msgid "SOUND QUALITY"
 msgstr "LJUDKVALITET"
 
+msgid "SOUNDBLASTER TYPE"
+msgstr "TYP AV SOUNDBLASTER"
+
 msgid "SPECIAL CONTROL LAYOUTS"
 msgstr "SPECIELLA KONTROLLERLAYOUTER"
 
@@ -3369,6 +3879,9 @@ msgstr "SUPER FX-ÖVERKLOCKNING"
 msgid "SUPER GB BORDERS"
 msgstr "SUPER GB-RAMAR"
 
+msgid "SVGA"
+msgstr "SVGA"
+
 msgid "SVideo (color bleeding only)"
 msgstr "SVideo (endast färgblödning)"
 
@@ -3399,14 +3912,29 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Skalad"
 
+msgid "Scanline Interpolation Filter (SAI)"
+msgstr "Interpolationsfilter för skanlinjer (SAI)"
+
 msgid "Screen Resolution (Default)"
 msgstr "Skärmupplösning (standard)"
 
 msgid "Sega/Mega CD"
 msgstr "Sega/Mega CD"
 
+msgid "Select controller type for Amiga P1."
+msgstr "Välj typ av styrenhet för Amiga P1."
+
+msgid "Select controller type for Amiga P2."
+msgstr "Välj typ av styrenhet för Amiga P2."
+
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Välj det språk som ska användas om \"Använd firmware-inställningar\" är avaktiverat eller om firmware-filen inte hittades."
+
+msgid "Select scale resolution of the game."
+msgstr "Välj skalupplösning för spelet."
+
+msgid "Select the .SF2 SoundFont file, .ROM file, or interface used for MIDI output."
+msgstr "Välj den .SF2 SoundFont-fil, .ROM-fil eller det gränssnitt som används för MIDI-utmatning."
 
 msgid "Select the console video standard / display mode."
 msgstr "Välj konsolens videostandard/visningsläge."
@@ -3416,6 +3944,9 @@ msgstr "Välj typ av inmatning för att navigera på pekskärmen"
 
 msgid "Select the palette used to render colors."
 msgstr "Välj paletten som används för att återge färger."
+
+msgid "Select which Intel CPU to emulate."
+msgstr "Välj vilken Intel-processor som ska emuleras."
 
 msgid "Separate Windows"
 msgstr "Separata fönster"
@@ -3432,8 +3963,14 @@ msgstr "Ange vilken färgpalett som ska användas."
 msgid "Set the controller rumble strength if supported."
 msgstr "Ställ in kontrollerns ljudstyrka om sådan stöds."
 
+msgid "Set the deadzone of the joystick analog sticks."
+msgstr "Ställ in dödzonen för joystickens analoga spakar."
+
 msgid "Set virtual joysticks gate size. Smaller increases sensitivity. Larger decreases it."
 msgstr "Ställ in portstorleken för virtuella joysticks. Mindre ökar känsligheten. Större minskar den."
+
+msgid "Sets the scaler filter mode when rendering."
+msgstr "Ställer in skalarens filterläge vid rendering."
 
 msgid "Shader Interpreter only"
 msgstr "Endast Shader-tolk"
@@ -3464,6 +4001,9 @@ msgstr "Visa meddelanden på skärmen (minneskortet sparar …)."
 
 msgid "Simple"
 msgstr "Enkel"
+
+msgid "Simple (interpreter for old real-mode games)"
+msgstr "Enkel (tolk för gamla real-mode-spel)"
 
 msgid "Simplified Chinese"
 msgstr "Förenklad kinesiska"
@@ -3546,11 +4086,29 @@ msgstr "Programvara"
 msgid "Software mode is faster and more accurate, while OpenGL mode supports scaling 3D graphics."
 msgstr "Programvaruläget är snabbare och mer exakt, medan OpenGL-läget stöder skalning av 3D-grafik."
 
+msgid "Some games and homebrews require more RAM"
+msgstr "Vissa spel och homebrews kräver mer RAM"
+
 msgid "Some games have issues when the animation is shown, others require it."
 msgstr "Vissa spel har problem när animationen visas, andra kräver det."
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "SounBlaster 1.0"
+msgstr "SounBlaster 1.0"
+
+msgid "SounBlaster 16 (Default)"
+msgstr "SounBlaster 16 (standard)"
+
+msgid "SounBlaster 2.0"
+msgstr "SounBlaster 2.0"
+
+msgid "SounBlaster Pro"
+msgstr "SounBlaster Pro"
+
+msgid "SounBlaster Pro 2"
+msgstr "SounBlaster Pro 2"
 
 msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
 msgstr "Ljudgenerator. MAME är snabbare och Nuked är cykelkorrekt. Originalmodellen använde YM2612 medan senare revisioner använde YM3438."
@@ -3615,14 +4173,29 @@ msgstr "Sträck ut"
 msgid "Stretch to full"
 msgstr "Sträck ut till full"
 
+msgid "Stretch to screen"
+msgstr "Sträck ut till skärm"
+
 msgid "Stretch to window"
 msgstr "Sträck ut till fönster"
+
+msgid "Stretches the output to fill the display area."
+msgstr "Stäcker ut utmatningen så att den fyller hela skärmområdet."
 
 msgid "Super Game Boy"
 msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
+
+msgid "Super-high 1440p"
+msgstr "Superhög 1440p"
+
+msgid "SuperEagle"
+msgstr "SuperEagle"
+
+msgid "SuperSAI"
+msgstr "SuperSAI"
 
 msgid "Surround"
 msgstr "Surround"
@@ -3639,8 +4212,17 @@ msgstr "Byt position på de dubbla skärmarna."
 msgid "Sweden"
 msgstr "Sverige"
 
+msgid "Swedish"
+msgstr "Svenska"
+
 msgid "Switzerland"
 msgstr "Schweiz"
+
+msgid "Switzerland (French)"
+msgstr "Schweiz (franska)"
+
+msgid "Switzerland (German)"
+msgstr "Schweiz (tyska)"
 
 msgid "Syria"
 msgstr "Syrien"
@@ -3696,6 +4278,9 @@ msgstr "TRÅDAD VIDEO"
 msgid "TIME STRETCHING THRESHOLD"
 msgstr "TRÖSKELVÄRDE FÖR TIDSSTRÄCKNING"
 
+msgid "TIMED AXIS INTERVALS"
+msgstr "TIDSBESTÄMDA AXELINTERVALL"
+
 msgid "TOUCH MODE"
 msgstr "PEKLÄGE"
 
@@ -3714,6 +4299,9 @@ msgstr "TRUE COLOR-RENDERING"
 msgid "TV EFFECTS"
 msgstr "TV-EFFEKTER"
 
+msgid "TV2x CRT Television Filter"
+msgstr "TV2x CRT TV-filter"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - Pack 1"
 
@@ -3726,6 +4314,9 @@ msgstr "Taiwan"
 msgid "Taiwanese"
 msgstr "Taiwanesiska"
 
+msgid "Tandy"
+msgstr "Tandy"
+
 msgid "Thailand"
 msgstr "Thailand"
 
@@ -3737,6 +4328,9 @@ msgstr "Området runt styrspakens neutrala läge där inmatning ignoreras. Kan b
 
 msgid "The day within the month of your birthday."
 msgstr "Den dag i månaden då du fyller år."
+
+msgid "The emulated graphics card."
+msgstr "Det emulerade grafikkortet."
 
 msgid "The final output image, unrelated to the Wii's emulated NAND setting."
 msgstr "Den slutliga utmatningsbilden, som inte är relaterad till Wii:s emulerade NAND-inställning."
@@ -3792,6 +4386,9 @@ msgstr "Endast topp"
 msgid "Touch Screen"
 msgstr "Pekskärm"
 
+msgid "Trackball (Atari CX-22)"
+msgstr "Styrkula (Atari CX-22)"
+
 msgid "Traditional Chinese"
 msgstr "Traditionell kinesiska"
 
@@ -3819,6 +4416,9 @@ msgstr "Turkos"
 msgid "Twin Stick with Triggers"
 msgstr "Twin Stick med avtryckare"
 
+msgid "Type of emulated SoundBlaster card."
+msgstr "Typ av emulerat SoundBlaster-kort."
+
 msgid "UBERSHADERS"
 msgstr "UBERSHADERS"
 
@@ -3831,8 +4431,14 @@ msgstr "UDP FJÄRRADRESS"
 msgid "UDP Tunnel"
 msgstr "UDP-tunnel"
 
+msgid "UK"
+msgstr "UK"
+
 msgid "UPSCALE FILTER"
 msgstr "UPPSKALNINGSFILTER"
+
+msgid "US"
+msgstr "USA"
 
 msgid "USA"
 msgstr "USA"
@@ -3912,6 +4518,9 @@ msgstr "Använd en sparfil per spel."
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Använd preemptive frames istället för run-ahead. Kör endast framåt när styrenhetens tillstånd ändras."
 
+msgid "Use to eliminate cursor drift/unwanted input."
+msgstr "Används för att eliminera markördrift/oönskad inmatning."
+
 msgid "Use to eliminate joystick drift/unwanted input. Effects all controllers."
 msgstr "Används för att eliminera joystickdrift/oönskad inmatning. Påverkar alla styrenheter."
 
@@ -3954,11 +4563,17 @@ msgstr "VBI SKIP"
 msgid "VERTICAL ROTATION (TATE)"
 msgstr "VERTIKAL ROTATION (TATE)"
 
+msgid "VGA"
+msgstr "VGA"
+
 msgid "VIDEO FILTERS"
 msgstr "VIDEOFILTER"
 
 msgid "VIDEO FORMAT STANDARD"
 msgstr "STANDARD FÖR VIDEOFORMAT"
+
+msgid "VIDEO RESOLUTION"
+msgstr "VIDEOUPPLÖSNING"
 
 msgid "VIDEO SETTINGS"
 msgstr "VIDEOINSTÄLLNINGAR"
@@ -3992,6 +4607,9 @@ msgstr "VARNA FÖR BIOS-PROBLEM"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "VARNA FÖR FUNKTIONER SOM INTE STÖDS"
+
+msgid "WHDLOAD LAUNCHER"
+msgstr "WHDLOAD STARTPROGRAM"
 
 msgid "WHEELS"
 msgstr "RATTAR"
@@ -4062,6 +4680,9 @@ msgstr "Wiimote sidled + sväng"
 msgid "Wiimote Sideway + Tilt"
 msgstr "Wiimote sidled + lutning"
 
+msgid "Works with 'Cycle-exact' mode and for a few games."
+msgstr "Fungerar med \"Cykel-exakt\"-läget och för ett fåtal spel."
+
 msgid "X2"
 msgstr "X2"
 
@@ -4070,6 +4691,12 @@ msgstr "XBLA-licens aktiverad (standard)"
 
 msgid "XBOX LIVE ARCADE"
 msgstr "XBOX LIVE ARCADE"
+
+msgid "Y = Fire"
+msgstr "Y = Skjut"
+
+msgid "Y = Fire, B = Up"
+msgstr "Y = Skjut, B = Upp"
 
 msgid "YUV v3 (Firebrand)"
 msgstr "YUV v3 (Firebrand)"
@@ -4085,6 +4712,12 @@ msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "NOGGRANNHET FÖR ZCULL"
+
+msgid "ZOOM (HIDE BORDERS)"
+msgstr "ZOOM (DÖLJ RAMAR)"
+
+msgid "ZOOM/CROP (HIDE BORDERS)"
+msgstr "ZOOM/BESKÄR (DÖLJ RAMAR)"
 
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Zooma in för att dölja svarta kanter. Kanter är olika för olika spel."
@@ -4164,11 +4797,26 @@ msgstr "hybrid/botten"
 msgid "hybrid/top"
 msgstr "hybrid/topp"
 
+msgid "large"
+msgstr "stor"
+
+msgid "larger"
+msgstr "större"
+
 msgid "left/right"
 msgstr "vänster/höger"
 
 msgid "lottes crt"
 msgstr "lottes crt"
+
+msgid "maximum"
+msgstr "maximalt"
+
+msgid "medium"
+msgstr "medel"
+
+msgid "minimum"
+msgstr "minimal"
 
 msgid "nearest"
 msgstr "närmaste"
@@ -4202,6 +4850,12 @@ msgstr "royaltea"
 
 msgid "scanlines"
 msgstr "skanlinjer"
+
+msgid "small"
+msgstr "liten"
+
+msgid "smaller"
+msgstr "mindre"
 
 msgid "standard"
 msgstr "standard"

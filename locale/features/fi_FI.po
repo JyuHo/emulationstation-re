@@ -210,6 +210,9 @@ msgstr "Päällä (pakotettu)"
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "PHYSICAL KEYBOARD LAYOUT"
+msgstr "FYYSISEN NÄPPÄIMISTÖN ASETTELU"
+
 msgid "Poland"
 msgstr "Puola"
 
@@ -227,6 +230,9 @@ msgstr "Satunnaiset arvot"
 
 msgid "Retropad"
 msgstr "Retropad"
+
+msgid "Rewind can be CPU heavy."
+msgstr "Takaisinkelaus saattaa olla prosessorilla raskasta."
 
 msgid "Rotate the screen, useful for certain vertical gameplay homebrews."
 msgstr "Kierrä näyttöä. Hyödyllinen joillekin pystysuuntaisille kotitekoisille peleille."
@@ -270,6 +276,12 @@ msgstr "Neliöpikseli"
 msgid "Sweden"
 msgstr "Ruotsi"
 
+msgid "Switzerland (French)"
+msgstr "Sveitsi (Ranska)"
+
+msgid "Switzerland (German)"
+msgstr "Sveitsi (Saksa)"
+
 msgid "THREADED VIDEO"
 msgstr "SÄIKEISTETTY VIDEO"
 
@@ -278,6 +290,12 @@ msgstr "Kieli, jolle käännetään."
 
 msgid "Turkey"
 msgstr "Turkki"
+
+msgid "UK"
+msgstr "Yhdistynyt kuningaskunta"
+
+msgid "US"
+msgstr "Yhdysvallat"
 
 msgid "Use an alternate resolution. Some games need this."
 msgstr "Käytä vaihtoehtoista resoluutiota. Jotkin pelit tarvitsevat tämän käyttöön."
