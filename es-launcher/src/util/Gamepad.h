@@ -5,6 +5,7 @@
 
 #pragma once
 
+#include "es-launcher/Command.h"
 #include "es-launcher/LaunchContext.h"
 
 #include <optional>
@@ -49,6 +50,20 @@ namespace es::launcher::util
 	// One SDL_GAMECONTROLLERCONFIG line per pad ("guid,name,platform:Linux,a:b0,..."), from the
 	// mapping the player made in ES. Keyboard inputs are left out.
 	std::string gameControllerConfig(const std::vector<Controller>& controllers);
+
+	// A pad GUID without the CRC of its name (characters 4 to 7), lower case. SDL computes the CRC
+	// from the name of the pad, which is not the same for every SDL backend and version: lists of
+	// known pads and emulators that ignore it compare GUIDs this way.
+	std::string guidWithoutCrc(std::string_view guid);
+
+	// The environment that makes the SDL of an emulator (SDL2 or SDL3) see the pads as ES does:
+	// - SDL_JOYSTICK_HIDAPI=0: ES reads the pads through Linux evdev, as RetroArch's udev driver.
+	//   SDL's HIDAPI drivers (PlayStation, Switch, Xbox... pads) give them other GUIDs, buttons and
+	//   axes, and SDL2 and SDL3 do not drive the same pads through HIDAPI. Through evdev, SDL2 and
+	//   SDL3 give a pad the same GUID and the same numbers. A SDL_JOYSTICK_HIDAPI set in the
+	//   environment of ES wins, as it does in ES.
+	// - SDL_GAMECONTROLLERCONFIG: the mapping of each pad in ES (gameControllerConfig()).
+	void setPadEnvironment(Command& cmd, const std::vector<Controller>& controllers);
 
 	// The emulator actions ES binds to the hotkey + another control of player 1, the same as for
 	// RetroArch.

@@ -81,8 +81,9 @@ namespace es::launcher::rpcs3
 
 		const SonyPad* sonyPad(std::string_view guid)
 		{
+			std::string withoutCrc = util::guidWithoutCrc(guid);
 			for (const SonyPad& pad : sonyPads)
-				if (pad.guid == guid)
+				if (pad.guid == withoutCrc)
 					return &pad;
 			return nullptr;
 		}
@@ -455,7 +456,7 @@ namespace es::launcher::rpcs3
 		cmd.env["XDG_CONFIG_HOME"] = home.string();
 		cmd.env["XDG_CACHE_HOME"] = ctx.paths.cache.string();
 		cmd.env["LC_ALL"] = "C";
-		cmd.env["SDL_GAMECONTROLLERCONFIG"] = util::gameControllerConfig(ctx.controllers);
+		util::setPadEnvironment(cmd, ctx.controllers);
 		util::forwardEnvironment(cmd);
 
 		if (!installed)

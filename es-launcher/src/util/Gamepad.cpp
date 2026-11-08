@@ -6,6 +6,8 @@
 #include "util/Gamepad.h"
 
 #include <algorithm>
+#include <cctype>
+#include <cstdlib>
 #include <utility>
 
 namespace es::launcher::util
@@ -151,6 +153,22 @@ namespace es::launcher::util
 		}
 
 		return result;
+	}
+
+	std::string guidWithoutCrc(std::string_view guid)
+	{
+		std::string result(guid);
+		std::ranges::transform(result, result.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+		if (result.size() == 32)
+			result.replace(4, 4, "0000");
+		return result;
+	}
+
+	void setPadEnvironment(Command& cmd, const std::vector<Controller>& controllers)
+	{
+		if (const char* hidapi = std::getenv("SDL_JOYSTICK_HIDAPI"); hidapi == nullptr || hidapi[0] == 0)
+			cmd.env["SDL_JOYSTICK_HIDAPI"] = "0";
+		cmd.env["SDL_GAMECONTROLLERCONFIG"] = gameControllerConfig(controllers);
 	}
 
 	const Controller* firstPlayer(const LaunchContext& ctx)

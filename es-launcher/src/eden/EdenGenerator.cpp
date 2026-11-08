@@ -167,11 +167,8 @@ namespace es::launcher::eden
 
 	std::string EdenGenerator::edenGuid(const std::string& sdlGuid)
 	{
-		std::string guid = sdlGuid;
-		std::ranges::transform(guid, guid.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
-		if (guid.size() == 32)
-			guid.replace(4, 4, "0000");
-		return guid;
+		// Eden clears the CRC of the GUIDs it reads from SDL
+		return util::guidWithoutCrc(sdlGuid);
 	}
 
 	fs::path EdenGenerator::settingsPath(const LaunchContext& ctx)
@@ -295,7 +292,7 @@ namespace es::launcher::eden
 		cmd.env["XDG_CONFIG_HOME"] = home.string();
 		cmd.env["XDG_DATA_HOME"] = saves.string();
 		cmd.env["XDG_CACHE_HOME"] = ctx.paths.cache.string();
-		cmd.env["SDL_GAMECONTROLLERCONFIG"] = util::gameControllerConfig(ctx.controllers);
+		util::setPadEnvironment(cmd, ctx.controllers);
 		util::forwardEnvironment(cmd);
 
 		cmd.argv.insert(cmd.argv.end(), { "-f", "-g", ctx.game.rom.string() });

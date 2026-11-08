@@ -532,7 +532,7 @@ namespace es::launcher::dolphin
 			cmd.argv.push_back("--save_state=" + ctx.saveState.file.string());
 		cmd.argv.insert(cmd.argv.end(), { "-e", ctx.game.rom.string() });
 
-		cmd.env["SDL_GAMECONTROLLERCONFIG"] = util::gameControllerConfig(ctx.controllers);
+		util::setPadEnvironment(cmd, ctx.controllers);
 		util::forwardEnvironment(cmd);
 		return cmd;
 	}
