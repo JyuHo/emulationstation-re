@@ -474,7 +474,7 @@ namespace es::launcher::duckstation
 		cmd.argv.insert(cmd.argv.end(), { "--", rom.string() });
 
 		cmd.env["XDG_CONFIG_HOME"] = home.string();
-		cmd.env["SDL_GAMECONTROLLERCONFIG"] = util::gameControllerConfig(ctx.controllers);
+		util::setPadEnvironment(cmd, ctx.controllers);
 		util::forwardEnvironment(cmd);
 		return cmd;
 	}

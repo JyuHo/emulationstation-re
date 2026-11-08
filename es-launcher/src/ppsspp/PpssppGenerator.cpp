@@ -264,7 +264,7 @@ namespace es::launcher::ppsspp
 			cmd.argv.push_back("--state=" + ctx.saveState.file.string());
 
 		cmd.env["XDG_CONFIG_HOME"] = home.string();
-		cmd.env["SDL_GAMECONTROLLERCONFIG"] = util::gameControllerConfig(ctx.controllers);
+		util::setPadEnvironment(cmd, ctx.controllers);
 		util::forwardEnvironment(cmd);
 		return cmd;
 	}

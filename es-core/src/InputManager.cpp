@@ -252,6 +252,12 @@ void InputManager::rebuildAllJoysticks(bool deinit)
 
 			
 	SDL_SetHint(SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS, Settings::getInstance()->getBool("BackgroundJoystickInput") ? "1" : "0");
+
+	// Read the pads through Linux evdev, never through SDL's HIDAPI drivers: RetroArch's udev
+	// driver sees them that way, and through evdev SDL2 and SDL3 give a pad the same GUID and the
+	// same button and axis numbers, so the mappings made in ES work in every emulator (es-launcher
+	// starts them with SDL_JOYSTICK_HIDAPI=0 too). The SDL_JOYSTICK_HIDAPI variable overrides it.
+	SDL_SetHint(SDL_HINT_JOYSTICK_HIDAPI, "0");
 	SDL_InitSubSystem(SDL_INIT_JOYSTICK);
 
 

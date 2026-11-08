@@ -290,7 +290,7 @@ namespace es::launcher::pcsx2
 			for (const auto& [option, binding] : padBindings)
 				ini.set(section, option, sdl + binding);
 
-			sony = sony || std::ranges::find(sonyGuids, pad.guid) != std::end(sonyGuids);
+			sony = sony || std::ranges::find(sonyGuids, util::guidWithoutCrc(pad.guid)) != std::end(sonyGuids);
 		}
 		ini.set("InputSources", "SDLControllerEnhancedMode", boolString(sony));
 
@@ -347,7 +347,7 @@ namespace es::launcher::pcsx2
 		cmd.argv.insert(cmd.argv.end(), { "--", ctx.game.rom.string() });
 
 		cmd.env["XDG_CONFIG_HOME"] = home.string();
-		cmd.env["SDL_GAMECONTROLLERCONFIG"] = util::gameControllerConfig(ctx.controllers);
+		util::setPadEnvironment(cmd, ctx.controllers);
 		util::forwardEnvironment(cmd);
 		return cmd;
 	}

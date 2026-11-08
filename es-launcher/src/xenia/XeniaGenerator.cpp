@@ -147,7 +147,7 @@ namespace es::launcher::xenia
 		cmd.argv.push_back(rom.string());
 
 		cmd.env["XDG_DATA_HOME"] = home.string();
-		cmd.env["SDL_GAMECONTROLLERCONFIG"] = util::gameControllerConfig(ctx.controllers);
+		util::setPadEnvironment(cmd, ctx.controllers);
 		cmd.closeOnHotkey = true;   // no pad hotkeys of its own
 		util::forwardEnvironment(cmd);
 		return cmd;

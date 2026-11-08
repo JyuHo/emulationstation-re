@@ -23,6 +23,7 @@
 #include <pugixml.hpp>
 
 #include <algorithm>
+#include <cstdlib>
 #include <string>
 
 using namespace tests;
@@ -128,6 +129,26 @@ static void testGamepad()
 	keyboard.guid = "keyboard";
 	keyboard.inputs = { { "a", { InputBinding::Type::Key, 97, 1 } } };
 	CHECK(gameControllerConfig({ keyboard }) == "keyboard,,platform:Linux,");
+
+	// the CRC of the name (characters 4 to 7) is left out
+	CHECK(guidWithoutCrc("0300ABCD4C050000CE0D000011810000") == "030000004c050000ce0d000011810000");
+	CHECK(guidWithoutCrc("keyboard") == "keyboard");
+
+	// the emulator reads the pads through evdev, as ES, with ES's mapping
+	{
+		Command padCmd;
+		unsetenv("SDL_JOYSTICK_HIDAPI");
+		setPadEnvironment(padCmd, { makePad(1, 0) });
+		CHECK(padCmd.env["SDL_JOYSTICK_HIDAPI"] == "0");
+		CHECK(padCmd.env["SDL_GAMECONTROLLERCONFIG"].starts_with("030000005e0400008e02000010010000,"));
+
+		// the variable of the environment of ES wins
+		setenv("SDL_JOYSTICK_HIDAPI", "1", 1);
+		Command userCmd;
+		setPadEnvironment(userCmd, { makePad(1, 0) });
+		CHECK(!userCmd.env.contains("SDL_JOYSTICK_HIDAPI"));
+		unsetenv("SDL_JOYSTICK_HIDAPI");
+	}
 
 	// a Flatpak gets the environment as options, before the application id
 	Command cmd;

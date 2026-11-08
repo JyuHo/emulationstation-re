@@ -142,6 +142,11 @@ leaves the others as the player set them in the emulator's menus.
 * Pads: the emulators read them through SDL. ES passes its own mapping of each pad in
   `SDL_GAMECONTROLLERCONFIG`, so the generators bind SDL's gamepad names and any pad works the way
   it was mapped in ES. A Flatpak gets this environment through `--env=` options.
+  ES and the emulators read the pads through Linux evdev (`SDL_JOYSTICK_HIDAPI=0`), like
+  RetroArch's udev driver. Through evdev, SDL2 (Azahar, Xenia) and SDL3 (the other emulators)
+  give a pad the same GUID and the same button numbers as ES. SDL's HIDAPI drivers would give
+  PlayStation, Switch or Xbox pads other GUIDs and numbers, which also differ between SDL2 and
+  SDL3. If `SDL_JOYSTICK_HIDAPI` is set in the environment of ES, that value is used instead.
 * Hotkeys: the same as RetroArch, bound in the emulator to player 1's hotkey held with the other
   button (Start quits, B opens the menu or pauses, Y/X save and load a state...), where the
   emulator has the action; Eden gets them as its controller shortcuts. Without a pad, the keyboard

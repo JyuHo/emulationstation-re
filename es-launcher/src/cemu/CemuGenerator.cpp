@@ -280,7 +280,7 @@ namespace es::launcher::cemu
 		cmd.env["XDG_CONFIG_HOME"] = home.string();
 		cmd.env["XDG_DATA_HOME"] = saves.string();
 		cmd.env["XDG_CACHE_HOME"] = ctx.paths.cache.string();
-		cmd.env["SDL_GAMECONTROLLERCONFIG"] = util::gameControllerConfig(ctx.controllers);
+		util::setPadEnvironment(cmd, ctx.controllers);
 		cmd.closeOnHotkey = true;   // no pad hotkeys of its own
 		util::forwardEnvironment(cmd);
 		return cmd;
