@@ -36,6 +36,9 @@ msgstr "0.8x"
 msgid "0.9x"
 msgstr "0.9x"
 
+msgid "1 MB"
+msgstr "1 MB"
+
 msgid "1 second"
 msgstr "1 saniye"
 
@@ -99,6 +102,9 @@ msgstr "1.75x Doğal"
 msgid "1.8x (22.50Mhz)"
 msgstr "1.8x (22.50Mhz)"
 
+msgid "10 MB"
+msgstr "10 MB"
+
 msgid "10 seconds"
 msgstr "10 saniye"
 
@@ -107,6 +113,18 @@ msgstr "100% (Varsayılan)"
 
 msgid "1024kB"
 msgstr "1024kB"
+
+msgid "1040 STE 1.06"
+msgstr "1040 STE 1.06"
+
+msgid "1040 STE 1.62"
+msgstr "1040 STE 1.62"
+
+msgid "1040 STE AUTO"
+msgstr "1040 STE OTO"
+
+msgid "1040 STE ETOS 256k"
+msgstr "1040 STE ETOS 256k"
 
 msgid "10th"
 msgstr "10."
@@ -135,6 +153,9 @@ msgstr "12."
 msgid "13th"
 msgstr "13."
 
+msgid "14 MB"
+msgstr "14 MB"
+
 msgid "14.18 MHz (A1200 speed)"
 msgstr "14.18 MHz (A1200 hızı)"
 
@@ -158,6 +179,9 @@ msgstr "15s"
 
 msgid "15th"
 msgstr "15."
+
+msgid "16 MHz"
+msgstr "16 MHz"
 
 msgid "16384kB"
 msgstr "16384kB"
@@ -195,6 +219,9 @@ msgstr "18."
 msgid "19th"
 msgstr "19."
 
+msgid "1M"
+msgstr "1M"
+
 msgid "1st"
 msgstr "1."
 
@@ -216,6 +243,9 @@ msgstr "1x doğal (320x240)"
 msgid "1x native (640x528)"
 msgstr "1x doğal (640x528)"
 
+msgid "2 MB"
+msgstr "2 MB"
+
 msgid "2 seconds"
 msgstr "2 saniye"
 
@@ -233,6 +263,9 @@ msgstr "2.25x (1440x1080)"
 
 msgid "2.25x Native"
 msgstr "2.25x Doğal"
+
+msgid "2.5 MB"
+msgstr "2.5 MB"
 
 msgid "2.5x (1600x1200)"
 msgstr "2.5x (1600x1200)"
@@ -318,6 +351,9 @@ msgstr "28."
 msgid "29th"
 msgstr "29."
 
+msgid "2M"
+msgstr "2M"
+
 msgid "2P GAMEPAD MAPPING (KEYRAH)"
 msgstr "2P OYUN KOLU EŞLEMESİ (KEYRAH)"
 
@@ -329,6 +365,9 @@ msgstr "2."
 
 msgid "2nd Joystick (2 Axes, 2 Btns)"
 msgstr "2. Joystick (2 Eksen, 2 Btn)"
+
+msgid "2x (1280x960) (Default)"
+msgstr "2x (1280x960) (Varsayılan)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -381,6 +420,9 @@ msgstr "30."
 msgid "31st"
 msgstr "31."
 
+msgid "32 MHz"
+msgstr "32 MHz"
+
 msgid "32MB"
 msgstr "32MB"
 
@@ -422,6 +464,9 @@ msgstr "3x Doğal (~1080p)"
 
 msgid "3x native (768 x 576)"
 msgstr "3x doğal (768 x 576)"
+
+msgid "4 MB"
+msgstr "4 MB"
 
 msgid "4 PLAYER ADAPTER"
 msgstr "4 OYUNCU ADAPTÖR"
@@ -467,6 +512,9 @@ msgstr "4:3 İŞLEME ÇÖZÜNÜRLÜĞÜ"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4M"
+msgstr "4M"
 
 msgid "4MB"
 msgstr "4MB"
@@ -515,6 +563,24 @@ msgstr "5120MB"
 
 msgid "512kB (1750)"
 msgstr "512kB (1750)"
+
+msgid "520 ST AUTO"
+msgstr "520 ST AUTO"
+
+msgid "520 ST EMUTOS 256k"
+msgstr "520 ST EMUTOS 256k"
+
+msgid "520 ST TOS 1.00"
+msgstr "520 ST TOS 1.00"
+
+msgid "520 ST TOS 1.02"
+msgstr "520 ST TOS 1.02"
+
+msgid "520 ST TOS 1.04"
+msgstr "520 ST TOS 1.04"
+
+msgid "520K"
+msgstr "520K"
 
 msgid "56.75 MHz"
 msgstr "56.75 MHz"
@@ -585,6 +651,12 @@ msgstr "7x Doğal (~2520p)"
 msgid "7x native (1792 x 1344)"
 msgstr "7x doğal (1792 x 1344)"
 
+msgid "8 MB"
+msgstr "8 MB"
+
+msgid "8 MHz"
+msgstr "8 MHz"
+
 msgid "8086/8088, 4.77MHz (315 cps)"
 msgstr "8086/8088, 4.77MHz (315 cps)"
 
@@ -650,6 +722,9 @@ msgstr "A500+ (1MB Çip)"
 
 msgid "A600 (2MB Chip + 8MB Fast)"
 msgstr "A600 (2MB Çip + 8MB Hızlı)"
+
+msgid "ACSI"
+msgstr "ACSI"
 
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "AKTİF GİRİŞ CİHAZLARINI DÜZELT"
@@ -719,6 +794,24 @@ msgstr "EŞ ZAMANSIZ GÖLGELENDİRİCİ DERLE (SADECE VULKAN)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "EŞ ZAMANSIZ DOKU AKIŞI"
+
+msgid "ATARI CPU CLOCK RATE"
+msgstr "ATARİ CPU SAAT HIZI"
+
+msgid "ATARI CPU TYPE"
+msgstr "ATARİ CPU TÜRÜ"
+
+msgid "ATARI HARD DRIVE TYPE"
+msgstr "ATARİ SABİT SÜRÜCÜ TÜRÜ"
+
+msgid "ATARI MACHINE TYPE"
+msgstr "ATARİ MAKİNA TÜRÜ"
+
+msgid "ATARI MONITOR TYPE"
+msgstr "ATARİ MONİTÖR TÜRÜ"
+
+msgid "ATARI ST MEMORY SIZE"
+msgstr "ATARİ ST HAFIZA BOYUTU"
 
 msgid "ATARI SYSTEM"
 msgstr "ATARİ SİSTEMİ"
@@ -873,6 +966,12 @@ msgstr "Yaklaşık (Hızlı)"
 msgid "April"
 msgstr "Nisan"
 
+msgid "Arabic"
+msgstr "Arapça"
+
+msgid "Arabic (ar)"
+msgstr "Arapça (ar)"
+
 msgid "Arcade MVS Europe"
 msgstr "Arcade MVS Avrupa"
 
@@ -905,6 +1004,12 @@ msgstr "Olduğu gibi"
 
 msgid "As game specifies"
 msgstr "Oyunun belirttiği gibi"
+
+msgid "Atari Monitor"
+msgstr "Atari Monitor"
+
+msgid "Atari ST monitors had a visible border around the main screen area, but most software does not display anything in it."
+msgstr "Atari ST monitörlerinin ana ekran alanının çevresinde görünür bir kenarlığı vardı ancak çoğu yazılım bu kenarda hiçbir şey görüntülemiyor."
 
 msgid "August"
 msgstr "Ağustos"
@@ -992,6 +1097,9 @@ msgstr "HARMANLAMA DOĞRULUĞU"
 
 msgid "BOOT ANIMATION FIRST"
 msgstr "ÖNCE ÖNYÜKLEME ANİMASYONU"
+
+msgid "BROADCAST"
+msgstr "YAYIN"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (ABD üstünde geliştirilen tüm oyunlar için önerilir)"
@@ -1113,8 +1221,14 @@ msgstr "Sağ Alt"
 msgid "Bottom only"
 msgstr "Sadece alt"
 
+msgid "Bouncing Box"
+msgstr "Zıplayan Kutu"
+
 msgid "Brazil"
 msgstr "Brezilya"
+
+msgid "British English (uk)"
+msgstr "İngiliz İngilizcesi (uk)"
 
 msgid "Brown"
 msgstr "Kahverengi"
@@ -1148,6 +1262,9 @@ msgstr "C64 PAL"
 
 msgid "C64 PAL Automatic"
 msgstr "C64 PAL Otomatik"
+
+msgid "CABLE"
+msgstr "KABLO"
 
 msgid "CD ADD-ON"
 msgstr "CD EKLENTİSİ"
@@ -1386,6 +1503,15 @@ msgstr "Çince"
 msgid "Chinese (Mandarin)"
 msgstr "Çince (Mandarin)"
 
+msgid "Chinese (Simplified)"
+msgstr "Çince (Basitleştirilmiş)"
+
+msgid "Choose broadcast standard (for older TV's)."
+msgstr "Yayın standardını seç (eski TV'ler için)."
+
+msgid "Choose cable type for the TV."
+msgstr "TV için kablo türünü seç."
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Konsol dilini seçin. Tüm oyunlar dil seçimini desteklemeyebilir."
 
@@ -1431,11 +1557,41 @@ msgstr "Hangi grafik API kitaplığının kullanılacağını seçin."
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "Hangi grafik API kitaplığının kullanılacağını seçin. Vulkan her çekirdekte çalışmayabilir."
 
+msgid "Choose your Atari hard drive type for the .hd extension file."
+msgstr ".hd uzantılı dosya için Atari sabit sürücü türünüzü seçin."
+
+msgid "Choose your desired Atari CPU clock rate."
+msgstr "İstediğiniz Atari CPU saat hızını seçin."
+
+msgid "Choose your desired Atari CPU type."
+msgstr "İstediğiniz Atari CPU türünü seçin."
+
+msgid "Choose your desired Atari Monitor."
+msgstr "İstediğiniz Atarı Monitörü seçin."
+
+msgid "Choose your desired Atari ST memory size."
+msgstr "İstediğiniz Atari ST hafıza boyutunu seçin."
+
+msgid "Choose your desired Atari machine type."
+msgstr "İstediğiniz Atari Makina Türünü Seçin."
+
+msgid "Choose your desired pause screen display type."
+msgstr "İstediğiniz duraklatma ekranı görüntüleme türünü seçin."
+
+msgid "Choose your desired pixel aspect ratio."
+msgstr "İstediğiniz piksel en boy oranını seçin."
+
+msgid "Choose your preferred aspect ratio."
+msgstr "Tercih ettiğiniz en boy oranını seçin."
+
 msgid "Choose your preferred language."
 msgstr "Tercih ettiğiniz dili seçin."
 
 msgid "Choose your preferred renderer."
 msgstr "Tercih ettiğiniz işleyiciyi seçin."
+
+msgid "Choose your render resolution (Requires personal redream.key file)."
+msgstr "İşleme çözünürlüğünüzü seçin (Kişisel redream.key dosyası gerektirir)."
 
 msgid "Classic Controller"
 msgstr "Klasik Kontrolcü"
@@ -1500,6 +1656,12 @@ msgstr "Kosta Rika"
 msgid "Croatia"
 msgstr "Hırvatistan"
 
+msgid "Crop 1080p (270, 540)"
+msgstr "Kırp 1080p (270, 540)"
+
+msgid "Crop 720p (240, 480)"
+msgstr "Kırp 720p (240, 480)"
+
 msgid "Crop horizontal overscan."
 msgstr "Yatay aşırı taramayı kırp."
 
@@ -1526,6 +1688,9 @@ msgstr "Tam-döngü"
 
 msgid "Czech"
 msgstr "Çekçe"
+
+msgid "Czech (cz)"
+msgstr "Çekce (cz)"
 
 msgid "Czech Republic"
 msgstr "Çekya"
@@ -1556,6 +1721,9 @@ msgstr "EMÜLATÖR JOYSTICK DEVRE DIŞI BIRAK"
 
 msgid "DISABLE INTERLACING"
 msgstr "TARAMASIZLAŞTIRMAYI DEVRE DIŞI BIRAK"
+
+msgid "DISABLE SURFACE SYNC"
+msgstr "YÜZEY EŞİTLEMESİ DEVRE DIŞI"
 
 msgid "DISABLE VERTEX CACHE"
 msgstr "VERTEX ÖNBELLEĞİ DEVRE DIŞI BIRAK"
@@ -1608,6 +1776,12 @@ msgstr "DİNAMİK YENİDEN DERLEYİCİ KODU ETKİSİZŞLEŞTİR"
 msgid "Dance Mat"
 msgstr "Dans Minderi"
 
+msgid "Danish"
+msgstr "Danimarka"
+
+msgid "Danish (dk)"
+msgstr "Danimarka (dk)"
+
 msgid "Dark Blue"
 msgstr "Koyu Mavi"
 
@@ -1619,6 +1793,9 @@ msgstr "Koyu Pembe"
 
 msgid "Dark Purple"
 msgstr "Koyu Mor"
+
+msgid "Darken"
+msgstr "Karartma"
 
 msgid "De-Interlaced"
 msgstr "Taramasızlaştır"
@@ -1725,6 +1902,9 @@ msgstr "Oyun sırasında, ekrandaki metni çevirmek için Hotkey + R1'e basın. 
 msgid "Dutch"
 msgstr "Flemenkçe"
 
+msgid "Dutch (nl)"
+msgstr "Felemenkçe (nl)"
+
 msgid "Dynamic (fast)"
 msgstr "Dinamik (hızlı)"
 
@@ -1812,6 +1992,9 @@ msgstr "Yukarıyı vurgula"
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Shake için L2 ve Nunchuk R-Stick'i Wiimote Sideway ile taklit et."
 
+msgid "Emutos language && region setting."
+msgstr "Emutos dil && bölge ayarı."
+
 msgid "Enable"
 msgstr "Etkinleştir"
 
@@ -1824,6 +2007,9 @@ msgstr "Gamecube önyükleme animasyonunu ve BIOS erişimini etkinleştirin (uyg
 msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
 msgstr "Gravis Utrasound takliti etkinleştir.ULTRASND klasörünün <game>.pc rom klasörü içinde olduğundan emin olun."
 
+msgid "Enable High Dynamic Range if your display supports it."
+msgstr "Ekranınız destekliyorsa Yüksek Dinamik Aralık özelliğini etkinleştirin."
+
 msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
 msgstr "MelonDS iki ekranda görüntülenmesini etkinleştirin. Bazı ilgili ekran seçenekleri göz ardı edilecektir."
 
@@ -1832,6 +2018,9 @@ msgstr "Taramasız Yamaları Etkinleştir."
 
 msgid "Enable TV-like filtering / effects."
 msgstr "TV benzeri filtrelemeyi / efektleri etkinleştir."
+
+msgid "Enable auto frameskipping for performance on lower-end systems."
+msgstr "Düşük bütçeli sistemlerde performans için otomatik çerçeve atlama özelliğini etkinleştir."
 
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "Önbellek bağlamayı etkinleştirin. Bazı oyunlarda performansı ve uyumluluğu artırabilir."
@@ -1893,6 +2082,9 @@ msgstr "Cihazınızın mikrofonunun etkin olup olmadığını göstermek için e
 msgid "Enable to show which screen layout with the configured sequence is active."
 msgstr "Yapılandırılmış sıra ile hangi ekran düzeninin etkin olduğunu göstermek için etkinleştirin."
 
+msgid "Enable vertical sync to avoid tearing in some cases."
+msgstr "Bazı durumlarda yırtılmayı önlemek için dikey senkronizasyonu etkinleştirin."
+
 msgid "Enabled"
 msgstr "Etkin"
 
@@ -1919,6 +2111,15 @@ msgstr "İngilizce"
 
 msgid "English (Default)"
 msgstr "İngilizce (Varsayılan)"
+
+msgid "English (United Kingdom)"
+msgstr "İngilizce (Birleşik Krallık)"
+
+msgid "English (United States)"
+msgstr "İngilizce (ABD)"
+
+msgid "English (us)"
+msgstr "Amerikan ingilizcesi (us)"
 
 msgid "English/Japanese"
 msgstr "İngilizce/Japonca"
@@ -2076,6 +2277,24 @@ msgstr "KARE ATLAMA KONTROLÜ"
 msgid "FXAA"
 msgstr "FXAA"
 
+msgid "Falcon"
+msgstr "Falcon"
+
+msgid "Falcon 4.0"
+msgstr "Falcon 4.0"
+
+msgid "Falcon 4.02"
+msgstr "Falcon 4.02"
+
+msgid "Falcon 4.04"
+msgstr "Falcon 4.04"
+
+msgid "Falcon AUTO"
+msgstr "Falcon OTOMATİK"
+
+msgid "Falcon ETOS 512k"
+msgstr "Falcon ETOS 512k"
+
 msgid "Famicom (FDS)"
 msgstr "Famicom (FDS)"
 
@@ -2100,6 +2319,12 @@ msgstr "En boy oranından bağımsız olarak ekranı doldurur. Tamsayı Yükselt
 msgid "Finland"
 msgstr "Finlandiya"
 
+msgid "Finnish"
+msgstr "Fince"
+
+msgid "Finnish (fi)"
+msgstr "Fince (fi)"
+
 msgid "Fit 4:3 Aspect Ratio"
 msgstr "4:3 En Boy Oranına Sığdır"
 
@@ -2123,6 +2348,9 @@ msgstr "Çoklu kontrolcüleri tanımlamada potansiyel hataları düzeltir."
 
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Uçuş Çubuğu (3 Eksen, 4 Düğme, 1 Hat)"
+
+msgid "Floppy Disk List"
+msgstr "Disket Sürücü Listesi"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Gyro özellikli oyunlar için (sol analog çubuğa bağlı)"
@@ -2162,6 +2390,15 @@ msgstr "Fransa"
 
 msgid "French"
 msgstr "Fransızca"
+
+msgid "French (Canada)"
+msgstr "Fransızca (Kanada)"
+
+msgid "French (France)"
+msgstr "Fransızca (Fransa)"
+
+msgid "French (fr)"
+msgstr "Fransızca (fr)"
 
 msgid "Frontend MIDI driver"
 msgstr "Ön MIDI sürücüsü"
@@ -2340,6 +2577,9 @@ msgstr "Gürcistan"
 msgid "German"
 msgstr "Almanca"
 
+msgid "German (de)"
+msgstr "Almanca (de)"
+
 msgid "Germany"
 msgstr "Almanya"
 
@@ -2360,6 +2600,12 @@ msgstr "Gri"
 
 msgid "Greece"
 msgstr "Yunanistan"
+
+msgid "Greek"
+msgstr "Yunanca"
+
+msgid "Greek (gk)"
+msgstr "Yunanca (gk)"
 
 msgid "Green"
 msgstr "Yeşil"
@@ -2382,6 +2628,9 @@ msgstr "HI-RES YAPAY OLGU"
 msgid "HLE (Fastest)"
 msgstr "HLE (Hızlı)"
 
+msgid "HLE (per-pixel)"
+msgstr "HLE (pixel başına)"
+
 msgid "HQ (bilinear filter)"
 msgstr "HQ (çift doğrusal filtre)"
 
@@ -2390,6 +2639,9 @@ msgstr "Geliştir. Çoğu PAL oyununun hızını %17 artırır."
 
 msgid "Hebrew"
 msgstr "İbranice"
+
+msgid "Help and Information"
+msgstr "Yardım ve Bilgilendirme"
 
 msgid "Help games which are too quick or that have bugs."
 msgstr "Çok hızlı olan veya hataları olan oyunlara yardım et."
@@ -2402,6 +2654,9 @@ msgstr "Hercules"
 
 msgid "Hermite"
 msgstr "Hermite"
+
+msgid "Hide"
+msgstr "Gizle"
 
 msgid "Hides borders on many games. Some games use the borders."
 msgstr "Birçok oyunda kenarları gizler. Bazı oyunlar kenarları kullanır."
@@ -2427,6 +2682,12 @@ msgstr "Yatay"
 msgid "How the window space is distributed between the screens."
 msgstr "Pencere alanı ekranlar arasında nasıl dağıtılacak."
 
+msgid "Hungarian"
+msgstr "Macarca"
+
+msgid "Hungarian (hg)"
+msgstr "Macarca (hg)"
+
 msgid "Hungary"
 msgstr "Macaristan"
 
@@ -2447,6 +2708,9 @@ msgstr "Hibrit Üstün Gölgelendiriciler"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IDE (Default)"
+msgstr "IDE (Varsayılan)"
 
 msgid "IMPROVED BANDING"
 msgstr "GELİŞMİŞ BANTLAMA"
@@ -2487,6 +2751,9 @@ msgstr "Hiçbir şey belirtilmezse, varsayılan olarak ZTranslate kullan."
 msgid "Ignored with 'Cycle-exact'."
 msgstr "'Tam-döngü' ile göz ardı edildi."
 
+msgid "Immediate"
+msgstr "Hemen"
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "Ses doğruluğunu iyileştir (deneysel)."
 
@@ -2517,6 +2784,9 @@ msgstr "Hindistan"
 msgid "Indonesia"
 msgstr "Endonezya"
 
+msgid "Indonesian"
+msgstr "Endonezce"
+
 msgid "Inserts CD during boot animation prevent loading fail."
 msgstr "Önyükleme animasyonu sırasında CD yerleştirmek, yükleme hatasını önler."
 
@@ -2543,6 +2813,9 @@ msgstr "İsrail"
 
 msgid "Italian"
 msgstr "İtalyanca"
+
+msgid "Italian (it)"
+msgstr "İtalyanca (it)"
 
 msgid "Italy"
 msgstr "İtalya"
@@ -2720,6 +2993,9 @@ msgstr "KARE HIZINI SINIRLA"
 
 msgid "LINEAR UPSCALING"
 msgstr "DOĞRUSAL YÜKSELTME"
+
+msgid "LLE"
+msgstr "LLE"
 
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "ÖZEL DESENLERİ YÜKLE"
@@ -2931,6 +3207,24 @@ msgstr "Orta"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "Mega ST"
+msgstr "Mega ST"
+
+msgid "Mega STE"
+msgstr "Mega STE"
+
+msgid "Mega STE 2.05"
+msgstr "Mega STE 2.05"
+
+msgid "Mega STE 2.06"
+msgstr "Mega STE 2.06"
+
+msgid "Mega STE AUTO"
+msgstr "Mega STE OTO"
+
+msgid "Mega STE ETOS 256k"
+msgstr "Mega STE ETOS 256k"
+
 msgid "MegaSD"
 msgstr "MegaSD"
 
@@ -2966,6 +3260,9 @@ msgstr "Tek Renkli"
 
 msgid "Monochrome (Blargg)"
 msgstr "Tek Renkli (Blargg)"
+
+msgid "Monochrome High-Resolution"
+msgstr "Tek Renkli Yüksek-Çözünürlük"
 
 msgid "More accurate emulation, but slower."
 msgstr "Daha doğru emülasyon, ancak daha yavaş."
@@ -3030,6 +3327,9 @@ msgstr "YENİ 3DS MODU"
 msgid "NTSC (Composite)"
 msgstr "NTSC (Karışık)"
 
+msgid "NTSC (Default)"
+msgstr "NTSC (Varsayılan)"
+
 msgid "NTSC (NES)"
 msgstr "NTSC (NES)"
 
@@ -3056,6 +3356,9 @@ msgstr "NTSC GÖRÜNTÜ ORANI"
 
 msgid "NTSC FILTER"
 msgstr "NTSC FİLTRE"
+
+msgid "NTSC TV"
+msgstr "NTSC TV"
 
 msgid "NTSC aspect ratio correction. Core default (PAR)."
 msgstr "NTSC en-boy oranı düzeltmesi. Çekirdek varsayılanı (PAR)."
@@ -3117,6 +3420,9 @@ msgstr "Nestopia (RGB)"
 msgid "Netherlands"
 msgstr "Hollanda"
 
+msgid "Netherlands (nl)"
+msgstr "Hollanda (nl)"
+
 msgid "Never"
 msgstr "Asla"
 
@@ -3134,6 +3440,9 @@ msgstr "Arabellek Yok"
 
 msgid "No EMS/XMS"
 msgstr "EMS/XMS Yok"
+
+msgid "No Indicator"
+msgstr "Gösterge Yok"
 
 msgid "No Limit"
 msgstr "Sınırsız"
@@ -3164,6 +3473,15 @@ msgstr "Normal (yorumlayıcı)"
 
 msgid "Norway"
 msgstr "Norveç"
+
+msgid "Norwegian"
+msgstr "Norveççe"
+
+msgid "Norwegian (Bokmaal)"
+msgstr "Norveççe (Bokmaal)"
+
+msgid "Norwegian (no)"
+msgstr "Norveççe (no)"
 
 msgid "Not all games support 3D pad."
 msgstr "Tüm oyunlar 3D pad'i desteklemez."
@@ -3333,6 +3651,9 @@ msgstr "PAL 576x312px"
 msgid "PAL ASPECT"
 msgstr "PAL GÖRÜNTÜ ORANI"
 
+msgid "PAL TV"
+msgstr "PAL TV"
+
 msgid "PAL aspect ratio correction. Core default (PAR)."
 msgstr "PAL en-boy oranı düzeltmesi. Çekirdek varsayılanı (PAR)."
 
@@ -3342,11 +3663,20 @@ msgstr "PAL60"
 msgid "PALETTE COLORS"
 msgstr "PALET RENKLERİ"
 
+msgid "PAL_M"
+msgstr "PAL_M"
+
+msgid "PAL_N"
+msgstr "PAL_N"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLEL-RDP YÜKSELTİCİ"
+
+msgid "PAUSE SCREEN DISPLAY"
+msgstr "EKRANI GÖRÜNTÜLERKEN DURAKLAT"
 
 msgid "PCE Joypad"
 msgstr "PCE Joypad"
@@ -3492,6 +3822,9 @@ msgstr "İşaretçi"
 msgid "Poland"
 msgstr "Polonya"
 
+msgid "Poland (pl)"
+msgstr "Polonya (pl)"
+
 msgid "Polish"
 msgstr "Lehçe"
 
@@ -3521,6 +3854,12 @@ msgstr "Portekiz"
 
 msgid "Portuguese"
 msgstr "Portekizce"
+
+msgid "Portuguese (Brazil)"
+msgstr "Portekizce (Brezilya)"
+
+msgid "Portuguese (Portugal)"
+msgstr "Portekizce (Portekiz)"
 
 msgid "Position of wii sensor bar relative to the disaply for real wiimotes."
 msgstr "Wii sensör çubuğunun gerçek wiimote'lar için ekrana göre konumu."
@@ -3572,6 +3911,9 @@ msgstr "İŞLEME"
 
 msgid "RENDER DUPLICATE FRAMES TO 60 HZ"
 msgstr "ÇİFT KARELERİ 60 HZ İLE İŞLE"
+
+msgid "RENDER MODE"
+msgstr "İŞLEME MODU"
 
 msgid "RENDER RESOLUTION (SCALING)"
 msgstr "İŞLEME ÇÖZÜNÜRLÜĞÜ (ÖLÇEK)"
@@ -3687,6 +4029,9 @@ msgstr "Roland MT-32/CM-32L"
 msgid "Romania"
 msgstr "Romanya"
 
+msgid "Romanian"
+msgstr "Romen"
+
 msgid "Rotate the screen, useful for certain vertical gameplay homebrews."
 msgstr "Ekranı döndür, bazı dikey oyunlarda kullanışlıdır."
 
@@ -3708,6 +4053,9 @@ msgstr "Rusya"
 msgid "Russian"
 msgstr "Rusça"
 
+msgid "Russian (ru)"
+msgstr "Rusça (ru)"
+
 msgid "S-Video"
 msgstr "S-Video"
 
@@ -3728,6 +4076,12 @@ msgstr "ÖLÇEKLEME MODU"
 
 msgid "SCALING MODE"
 msgstr "ÖLÇEKLEME MODU"
+
+msgid "SCREEN BORDERS"
+msgstr "EKRAN KENARLARI"
+
+msgid "SCREEN FILTER"
+msgstr "EKRAN FİLTRESİ"
 
 msgid "SCREEN FILTERING"
 msgstr "EKRAN FİLTRELEMESİ"
@@ -3857,6 +4211,12 @@ msgstr "SPU DEKODER"
 
 msgid "SPU LOOP DETECTION"
 msgstr "SPU DÖNGÜ TESPİTİ"
+
+msgid "ST"
+msgstr "ST"
+
+msgid "STE"
+msgstr "STE"
 
 msgid "STEREO SOUND"
 msgstr "STEREO SES"
@@ -4080,6 +4440,9 @@ msgstr "3D nesnelerdeki dokuları pürüzsüzleştirir."
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Ekranda görüntülenen genel resmi düzgünleştirir. Pikseller arasındaki konumlandırmayı düzeltir."
 
+msgid "Snow"
+msgstr "Kar"
+
 msgid "Software"
 msgstr "Yazılım"
 
@@ -4122,6 +4485,15 @@ msgstr "İspanya"
 msgid "Spanish"
 msgstr "İspanyolca"
 
+msgid "Spanish (Latin America)"
+msgstr "İspanyolca (Latin Amerika)"
+
+msgid "Spanish (Spain)"
+msgstr "İspanyolca (İspanya)"
+
+msgid "Spanish (es)"
+msgstr "İspanyolca (es)"
+
 msgid "Special 1"
 msgstr "Özel 1"
 
@@ -4137,11 +4509,17 @@ msgstr "Özel 4 (TI-83 Eski Sistem)"
 msgid "Speed hack for dual core mode to fix some glitches."
 msgstr "Çift çekirdek modunda bazı aksaklıkları gidermek için hız hilesi."
 
+msgid "Speed hack, enable to disable surface syncing between CPU and GPU. Surface syncing is needed by a few games."
+msgstr "Hız hilesi, CPU ve GPU arasındaki yüzey eşitlemesini devre dışı bırakır. Birkaç oyun yüzey eşitlemesine ihtiyaç duyar."
+
 msgid "Speed up shader compilation."
 msgstr "Gölgelendirici derlemesini hızlandır."
 
 msgid "Speeds up file loading. Some games won't load with this."
 msgstr "Dosya yüklenmesini hızlandırır. Bazı oyunlar bununla yüklenmez."
+
+msgid "Square Pixels"
+msgstr "Kare Piksel"
 
 msgid "Square pixel"
 msgstr "Kare piksel"
@@ -4215,6 +4593,15 @@ msgstr "İsveç"
 msgid "Swedish"
 msgstr "İsveççe"
 
+msgid "Swedish (se)"
+msgstr "İsveççe (se)"
+
+msgid "Swiss French (ch)"
+msgstr "İsviçre Fransızcası (ch)"
+
+msgid "Swiss German (ch)"
+msgstr "İsviçre Almancası (ch)"
+
 msgid "Switzerland"
 msgstr "İsviçre"
 
@@ -4281,6 +4668,9 @@ msgstr "ZAMAN ESNEME EŞİĞİ"
 msgid "TIMED AXIS INTERVALS"
 msgstr "ZAMANLI EKSEN ARALIKLARI"
 
+msgid "TOS languages."
+msgstr "TOS dilleri."
+
 msgid "TOUCH MODE"
 msgstr "DOKUNMATİK MOD"
 
@@ -4295,6 +4685,21 @@ msgstr "ÜÇ DOĞRUSAL FİLTRELEME"
 
 msgid "TRUE COLOR RENDERING"
 msgstr "GERÇEK RENK İLE İŞLE"
+
+msgid "TT"
+msgstr "TT"
+
+msgid "TT 3.06"
+msgstr "TT 3.06"
+
+msgid "TT AUTO"
+msgstr "TT AUTO"
+
+msgid "TT ETOS 512k"
+msgstr "TT ETOS 512k"
+
+msgid "TV"
+msgstr "TV"
 
 msgid "TV EFFECTS"
 msgstr "TV EFEKTLERİ"
@@ -4316,6 +4721,9 @@ msgstr "Tayvanca"
 
 msgid "Tandy"
 msgstr "Tandy"
+
+msgid "Thai"
+msgstr "Tayca"
 
 msgid "Thailand"
 msgstr "Tayland"
@@ -4410,6 +4818,12 @@ msgstr "Tunus"
 msgid "Turkey"
 msgstr "Türkiye"
 
+msgid "Turkish"
+msgstr "Türkçe"
+
+msgid "Turkish (tr)"
+msgstr "Türkçe (tr)"
+
 msgid "Turquoise"
 msgstr "Turkuaz"
 
@@ -4443,6 +4857,9 @@ msgstr "US"
 msgid "USA"
 msgstr "ABD"
 
+msgid "USA (Default)"
+msgstr "ABD (Varsayılan)"
+
 msgid "USE DSP AUDIO"
 msgstr "DSP SES KULLAN"
 
@@ -4457,6 +4874,9 @@ msgstr "YAZILIMSAL İŞLEYİCİ KULLAN"
 
 msgid "Ukraine"
 msgstr "Ukrayna"
+
+msgid "Ukrainian"
+msgstr "Ukraynalı"
 
 msgid "Ultra"
 msgstr "Ultra"
@@ -4566,6 +4986,9 @@ msgstr "DİKEY DÖNÜŞ (TATE)"
 msgid "VGA"
 msgstr "VGA"
 
+msgid "VGA (Default)"
+msgstr "VGA (Varsayılan)"
+
 msgid "VIDEO FILTERS"
 msgstr "VİDEO FİLTRELERİ"
 
@@ -4594,6 +5017,9 @@ msgid "Very High"
 msgstr "Çok Yüksek"
 
 msgid "Vietnam"
+msgstr "Vietnam"
+
+msgid "Vietnamese"
 msgstr "Vietnam"
 
 msgid "Vulkan"

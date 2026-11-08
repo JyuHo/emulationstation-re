@@ -36,6 +36,9 @@ msgstr "0.8x"
 msgid "0.9x"
 msgstr "0.9x"
 
+msgid "1 MB"
+msgstr "1 MB"
+
 msgid "1 second"
 msgstr "1 秒"
 
@@ -99,6 +102,9 @@ msgstr "1.75x 原生解析度"
 msgid "1.8x (22.50Mhz)"
 msgstr "1.8x (22.50Mhz)"
 
+msgid "10 MB"
+msgstr "10 MB"
+
 msgid "10 seconds"
 msgstr "10 秒"
 
@@ -107,6 +113,18 @@ msgstr "100% (預設)"
 
 msgid "1024kB"
 msgstr "1024kB"
+
+msgid "1040 STE 1.06"
+msgstr "1040 STE 1.06"
+
+msgid "1040 STE 1.62"
+msgstr "1040 STE 1.62"
+
+msgid "1040 STE AUTO"
+msgstr "1040 STE 自動"
+
+msgid "1040 STE ETOS 256k"
+msgstr "1040 STE ETOS 256k"
 
 msgid "10th"
 msgstr "10th"
@@ -135,6 +153,9 @@ msgstr "12th"
 msgid "13th"
 msgstr "13th"
 
+msgid "14 MB"
+msgstr "14 MB"
+
 msgid "14.18 MHz (A1200 speed)"
 msgstr "14.18 MHz (A1200 速度)"
 
@@ -158,6 +179,9 @@ msgstr "15s"
 
 msgid "15th"
 msgstr "15th"
+
+msgid "16 MHz"
+msgstr "16 MHz"
 
 msgid "16384kB"
 msgstr "16384kB"
@@ -195,6 +219,9 @@ msgstr "18th"
 msgid "19th"
 msgstr "19th"
 
+msgid "1M"
+msgstr "1M"
+
 msgid "1st"
 msgstr "1st"
 
@@ -216,6 +243,9 @@ msgstr "1x 原生解析度 (320x240)"
 msgid "1x native (640x528)"
 msgstr "1x 原生解析度 (640x528)"
 
+msgid "2 MB"
+msgstr "2 MB"
+
 msgid "2 seconds"
 msgstr "2 秒"
 
@@ -233,6 +263,9 @@ msgstr "2.25x (1440x1080)"
 
 msgid "2.25x Native"
 msgstr "2.25x 原生解析度"
+
+msgid "2.5 MB"
+msgstr "2.5 MB"
 
 msgid "2.5x (1600x1200)"
 msgstr "2.5x (1600x1200)"
@@ -318,6 +351,9 @@ msgstr "28th"
 msgid "29th"
 msgstr "29th"
 
+msgid "2M"
+msgstr "2M"
+
 msgid "2P GAMEPAD MAPPING (KEYRAH)"
 msgstr "2P 手把按鍵對應 (KEYRAH)"
 
@@ -329,6 +365,9 @@ msgstr "2nd"
 
 msgid "2nd Joystick (2 Axes, 2 Btns)"
 msgstr "2nd 搖桿 (雙軸，雙鍵"
+
+msgid "2x (1280x960) (Default)"
+msgstr "2x (1280x960) (預設)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -381,6 +420,9 @@ msgstr "30th"
 msgid "31st"
 msgstr "31st"
 
+msgid "32 MHz"
+msgstr "32 MHz"
+
 msgid "32MB"
 msgstr "32MB"
 
@@ -422,6 +464,9 @@ msgstr "3x 原生解析度 (~1080p)"
 
 msgid "3x native (768 x 576)"
 msgstr "3x 原生解析度 (768 x 576)"
+
+msgid "4 MB"
+msgstr "4 MB"
 
 msgid "4 PLAYER ADAPTER"
 msgstr "4人擴充器"
@@ -467,6 +512,9 @@ msgstr "4:3 算繪解析度"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4M"
+msgstr "4M"
 
 msgid "4MB"
 msgstr "4MB"
@@ -515,6 +563,24 @@ msgstr "5120MB"
 
 msgid "512kB (1750)"
 msgstr "512kB (1750)"
+
+msgid "520 ST AUTO"
+msgstr "520 ST 自動"
+
+msgid "520 ST EMUTOS 256k"
+msgstr "520 ST EMUTOS 256k"
+
+msgid "520 ST TOS 1.00"
+msgstr "520 ST TOS 1.00"
+
+msgid "520 ST TOS 1.02"
+msgstr "520 ST TOS 1.02"
+
+msgid "520 ST TOS 1.04"
+msgstr "520 ST TOS 1.04"
+
+msgid "520K"
+msgstr "520K"
 
 msgid "56.75 MHz"
 msgstr "56.75 MHz"
@@ -585,6 +651,12 @@ msgstr "7x 原生解析度 (~2520p)"
 msgid "7x native (1792 x 1344)"
 msgstr "7x 原生解析度 (1792x1344)"
 
+msgid "8 MB"
+msgstr "8 MB"
+
+msgid "8 MHz"
+msgstr "8 MHz"
+
 msgid "8086/8088, 4.77MHz (315 cps)"
 msgstr "8086/8088, 4.77MHz (315 cps)"
 
@@ -644,6 +716,9 @@ msgstr "A500+ (1MB Chip)"
 
 msgid "A600 (2MB Chip + 8MB Fast)"
 msgstr "A600 (2MB Chip + 8MB Fast)"
+
+msgid "ACSI"
+msgstr "ACSI"
 
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "主動輸入裝置修復"
@@ -713,6 +788,24 @@ msgstr "非同步著色器編譯 (VULKAN ONLY)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "非同步材質串流"
+
+msgid "ATARI CPU CLOCK RATE"
+msgstr "ATARI CPU 時鐘頻率"
+
+msgid "ATARI CPU TYPE"
+msgstr "ATARI CPU 類型"
+
+msgid "ATARI HARD DRIVE TYPE"
+msgstr "ATARI 硬碟類型"
+
+msgid "ATARI MACHINE TYPE"
+msgstr "ATARI 主機類型"
+
+msgid "ATARI MONITOR TYPE"
+msgstr "ATARI 螢幕類型"
+
+msgid "ATARI ST MEMORY SIZE"
+msgstr "ATARI ST 記憶體容量"
 
 msgid "ATARI SYSTEM"
 msgstr "ATARI系統"
@@ -861,6 +954,12 @@ msgstr "近似（快速）"
 msgid "April"
 msgstr "四月"
 
+msgid "Arabic"
+msgstr "Arabic"
+
+msgid "Arabic (ar)"
+msgstr "Arabic (ar)"
+
 msgid "Arcade MVS Europe"
 msgstr "Arcade MVS Europe"
 
@@ -893,6 +992,12 @@ msgstr "現狀"
 
 msgid "As game specifies"
 msgstr "依遊戲設定"
+
+msgid "Atari Monitor"
+msgstr "Atari 螢幕"
+
+msgid "Atari ST monitors had a visible border around the main screen area, but most software does not display anything in it."
+msgstr "Atari ST 顯示器的主螢幕區域周圍有可見的邊框但大多數軟體不會在其中顯示任何內容。"
 
 msgid "August"
 msgstr "八月"
@@ -977,6 +1082,9 @@ msgstr "混合精度"
 
 msgid "BOOT ANIMATION FIRST"
 msgstr "啟動動畫優先"
+
+msgid "BROADCAST"
+msgstr "廣播"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (推薦所有US美版遊戲使用)"
@@ -1086,8 +1194,14 @@ msgstr "僅限底部"
 msgid "Bottom only"
 msgstr "僅限底部"
 
+msgid "Bouncing Box"
+msgstr "Bouncing Box"
+
 msgid "Brazil"
 msgstr "Brazil"
+
+msgid "British English (uk)"
+msgstr "英式英語 (uk)"
 
 msgid "Brown"
 msgstr "Brown"
@@ -1121,6 +1235,9 @@ msgstr "C64 PAL"
 
 msgid "C64 PAL Automatic"
 msgstr "C64 PAL Automatic"
+
+msgid "CABLE"
+msgstr "電纜"
 
 msgid "CD ADD-ON"
 msgstr "CD光碟附加組件"
@@ -1338,6 +1455,15 @@ msgstr "中文"
 msgid "Chinese (Mandarin)"
 msgstr "中文(華語)"
 
+msgid "Chinese (Simplified)"
+msgstr "中文(簡體)"
+
+msgid "Choose broadcast standard (for older TV's)."
+msgstr "選擇廣播標準（適用於較舊的電視）"
+
+msgid "Choose cable type for the TV."
+msgstr "選擇電視的電纜類型。"
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "選擇主機語言，並非所有遊戲都支援語言選擇。"
 
@@ -1371,11 +1497,41 @@ msgstr "選擇要使用的圖形 API 庫。"
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "選擇要使用的圖形API。 Vulkan 可能不適用於每個核心。"
 
+msgid "Choose your Atari hard drive type for the .hd extension file."
+msgstr "為 .hd 擴充檔選擇 Atari 硬碟類型。"
+
+msgid "Choose your desired Atari CPU clock rate."
+msgstr "選擇您想要的 Atari CPU 時脈頻率。"
+
+msgid "Choose your desired Atari CPU type."
+msgstr "選擇您想要的 Atari CPU 類型。"
+
+msgid "Choose your desired Atari Monitor."
+msgstr "選擇您想要的 Atari 螢幕。"
+
+msgid "Choose your desired Atari ST memory size."
+msgstr "選擇您想要的 Atari ST 記憶體大小。"
+
+msgid "Choose your desired Atari machine type."
+msgstr "選擇您想要的 Atari 主機類型。"
+
+msgid "Choose your desired pause screen display type."
+msgstr "選擇您想要的暫停螢幕顯示類型。"
+
+msgid "Choose your desired pixel aspect ratio."
+msgstr "選擇您想要的像素長寬比。"
+
+msgid "Choose your preferred aspect ratio."
+msgstr "選擇您喜歡的長寬比。"
+
 msgid "Choose your preferred language."
 msgstr "選擇您的首選語言。"
 
 msgid "Choose your preferred renderer."
 msgstr "選擇您喜歡的算繪器。"
+
+msgid "Choose your render resolution (Requires personal redream.key file)."
+msgstr "選擇您的算繪解析度（需要個人 redream.key 檔案）"
 
 msgid "Classic Controller"
 msgstr "經典控制器"
@@ -1440,6 +1596,12 @@ msgstr "Costa Rica"
 msgid "Croatia"
 msgstr "Croatia"
 
+msgid "Crop 1080p (270, 540)"
+msgstr "裁切 1080p (270, 540)"
+
+msgid "Crop 720p (240, 480)"
+msgstr "裁切 720p (240, 480)"
+
 msgid "Cross"
 msgstr "交叉"
 
@@ -1460,6 +1622,9 @@ msgstr "週期精準"
 
 msgid "Czech"
 msgstr "Czech"
+
+msgid "Czech (cz)"
+msgstr "Czech (cz)"
 
 msgid "Czech Republic"
 msgstr "Czech Republic"
@@ -1484,6 +1649,9 @@ msgstr "停用模擬器搖桿"
 
 msgid "DISABLE INTERLACING"
 msgstr "停用隔行掃描"
+
+msgid "DISABLE SURFACE SYNC"
+msgstr "停用表面同步"
 
 msgid "DISABLE VERTEX CACHE"
 msgstr "停用頂點快取"
@@ -1533,6 +1701,12 @@ msgstr "DYNAREC 代碼失效"
 msgid "Dance Mat"
 msgstr "跳舞墊"
 
+msgid "Danish"
+msgstr "Danish"
+
+msgid "Danish (dk)"
+msgstr "Danish (dk)"
+
 msgid "Dark Blue"
 msgstr "深藍"
 
@@ -1544,6 +1718,9 @@ msgstr "深粉紅"
 
 msgid "Dark Purple"
 msgstr "深紫"
+
+msgid "Darken"
+msgstr "變暗"
 
 msgid "December"
 msgstr "12月"
@@ -1644,6 +1821,9 @@ msgstr "遊戲中按 熱鍵+R1 翻譯螢幕上的文本。僅適用於libretro�
 msgid "Dutch"
 msgstr "Dutch"
 
+msgid "Dutch (nl)"
+msgstr "Dutch (nl)"
+
 msgid "Dynamic (fast)"
 msgstr "動態(快速)"
 
@@ -1731,6 +1911,9 @@ msgstr "強調頂部"
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "使用 L2 模擬 Wiimote(橫持) 搖晃並在 R2 模擬 Nunchuk。"
 
+msgid "Emutos language && region setting."
+msgstr "Emutos 語言與地區設定。"
+
 msgid "Enable"
 msgstr "啟用"
 
@@ -1743,8 +1926,14 @@ msgstr "啟用 Gamecube 開機動畫和 BIOS 存取（需要正確使用者目�
 msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
 msgstr "啟用 Gravis Ultrasound 模擬。確保 ULTRASND 資料夾位於 <game>.pc rom 資料夾的根目錄中。"
 
+msgid "Enable High Dynamic Range if your display supports it."
+msgstr "如果您的顯示器支持，請啟用高動態範圍。"
+
 msgid "Enable No-interlacing Patches."
 msgstr "啟用無隔行掃描補丁。"
+
+msgid "Enable auto frameskipping for performance on lower-end systems."
+msgstr "啟用自動跳幀以提高低階系統的效能。"
 
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "啟用快取掛載。可以提高某些遊戲​​的效能和相容性。"
@@ -1803,6 +1992,9 @@ msgstr "啟用以顯示裝置的麥克風是否啟用。"
 msgid "Enable to show which screen layout with the configured sequence is active."
 msgstr "啟用以顯示具有已配置序列的螢幕佈局處於活動狀態。"
 
+msgid "Enable vertical sync to avoid tearing in some cases."
+msgstr "啟用垂直同步，以避免在某些情況下撕裂。"
+
 msgid "Enabled"
 msgstr "啟用"
 
@@ -1829,6 +2021,15 @@ msgstr "英語"
 
 msgid "English (Default)"
 msgstr "英語(預設)"
+
+msgid "English (United Kingdom)"
+msgstr "英語(英國)"
+
+msgid "English (United States)"
+msgstr "英語(美國)"
+
+msgid "English (us)"
+msgstr "英語 (us)"
 
 msgid "English/Japanese"
 msgstr "英語/日語"
@@ -1986,6 +2187,24 @@ msgstr "影格跳格控制"
 msgid "FXAA"
 msgstr "FXAA"
 
+msgid "Falcon"
+msgstr "Falcon"
+
+msgid "Falcon 4.0"
+msgstr "Falcon 4.0"
+
+msgid "Falcon 4.02"
+msgstr "Falcon 4.02"
+
+msgid "Falcon 4.04"
+msgstr "Falcon 4.04"
+
+msgid "Falcon AUTO"
+msgstr "Falcon AUTO"
+
+msgid "Falcon ETOS 512k"
+msgstr "Falcon ETOS 512k"
+
 msgid "Famicom (FDS)"
 msgstr "Famicom (FDS)"
 
@@ -2010,6 +2229,12 @@ msgstr "填充螢幕，不考慮縱橫比。不適用于整數向上擴充套件
 msgid "Finland"
 msgstr "Finland"
 
+msgid "Finnish"
+msgstr "Finnish"
+
+msgid "Finnish (fi)"
+msgstr "Finnish (fi)"
+
 msgid "Fit 4:3 Aspect Ratio"
 msgstr "符合4:3的長寬比"
 
@@ -2033,6 +2258,9 @@ msgstr "修復了多控制器檢測的一個可能的錯誤。"
 
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "飛行搖桿(3軸，4鍵，1個Hat)"
+
+msgid "Floppy Disk List"
+msgstr "軟碟列表"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "對於啟用陀螺儀的遊戲(綁定到左側模擬搖桿)"
@@ -2072,6 +2300,15 @@ msgstr "France"
 
 msgid "French"
 msgstr "French"
+
+msgid "French (Canada)"
+msgstr "French (Canada)"
+
+msgid "French (France)"
+msgstr "French (France)"
+
+msgid "French (fr)"
+msgstr "French (fr)"
 
 msgid "Frontend MIDI driver"
 msgstr "前端MIDI驅動程式"
@@ -2250,6 +2487,9 @@ msgstr "Georgia"
 msgid "German"
 msgstr "German"
 
+msgid "German (de)"
+msgstr "German (de)"
+
 msgid "Germany"
 msgstr "Germany"
 
@@ -2271,6 +2511,12 @@ msgstr "灰"
 msgid "Greece"
 msgstr "Greece"
 
+msgid "Greek"
+msgstr "Greek"
+
+msgid "Greek (gk)"
+msgstr "Greek (gk)"
+
 msgid "Green"
 msgstr "綠"
 
@@ -2289,6 +2535,9 @@ msgstr "高解析度瑕疵"
 msgid "HLE (Fastest)"
 msgstr "HLE (最快)"
 
+msgid "HLE (per-pixel)"
+msgstr "HLE (per-pixel)"
+
 msgid "HQ (bilinear filter)"
 msgstr "HQ (線性濾鏡)"
 
@@ -2298,6 +2547,9 @@ msgstr "破解將大多數 PAL 遊戲的速度提高 17%。"
 msgid "Hebrew"
 msgstr "Hebrew"
 
+msgid "Help and Information"
+msgstr "幫助和資訊"
+
 msgid "Help games which are too quick or that have bugs."
 msgstr "幫助那些速度太快或有錯誤的遊戲。"
 
@@ -2306,6 +2558,9 @@ msgstr "單色顯示卡"
 
 msgid "Hermite"
 msgstr "Hermite"
+
+msgid "Hide"
+msgstr "隱藏"
 
 msgid "Hides borders on many games. Some games use the borders."
 msgstr "隱藏許多遊戲的邊界。有些遊戲使用邊框。"
@@ -2331,6 +2586,12 @@ msgstr "水平的"
 msgid "How the window space is distributed between the screens."
 msgstr "視窗空間如何在螢幕之間分配。"
 
+msgid "Hungarian"
+msgstr "Hungarian"
+
+msgid "Hungarian (hg)"
+msgstr "Hungarian (hg)"
+
 msgid "Hungary"
 msgstr "Hungary"
 
@@ -2351,6 +2612,9 @@ msgstr "Hybrid Ubershaders"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IDE (Default)"
+msgstr "IDE (預設)"
 
 msgid "IMPROVED BANDING"
 msgstr "IMPROVED BANDING"
@@ -2391,6 +2655,9 @@ msgstr "如果未指定，將會預設使用ZTranslate。"
 msgid "Ignored with 'Cycle-exact'."
 msgstr "忽略 Cycle-exact。"
 
+msgid "Immediate"
+msgstr "立刻"
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "提高音訊準確性（實驗性）。"
 
@@ -2421,6 +2688,9 @@ msgstr "India"
 msgid "Indonesia"
 msgstr "Indonesia"
 
+msgid "Indonesian"
+msgstr "Indonesian"
+
 msgid "Inserts CD during boot animation prevent loading fail."
 msgstr "在啟動動畫期間插入 CD 可防止載入失敗。"
 
@@ -2447,6 +2717,9 @@ msgstr "Israel"
 
 msgid "Italian"
 msgstr "Italian"
+
+msgid "Italian (it)"
+msgstr "Italian (it)"
 
 msgid "Italy"
 msgstr "Italy"
@@ -2621,6 +2894,9 @@ msgstr "限制FPS"
 
 msgid "LINEAR UPSCALING"
 msgstr "線性縮放"
+
+msgid "LLE"
+msgstr "LLE"
 
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "讀取自訂紋理"
@@ -2829,6 +3105,24 @@ msgstr "中"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "Mega ST"
+msgstr "Mega ST"
+
+msgid "Mega STE"
+msgstr "Mega STE"
+
+msgid "Mega STE 2.05"
+msgstr "Mega STE 2.05"
+
+msgid "Mega STE 2.06"
+msgstr "Mega STE 2.06"
+
+msgid "Mega STE AUTO"
+msgstr "Mega STE 自動"
+
+msgid "Mega STE ETOS 256k"
+msgstr "Mega STE ETOS 256k"
+
 msgid "MegaSD"
 msgstr "MegaSD"
 
@@ -2864,6 +3158,9 @@ msgstr "單色"
 
 msgid "Monochrome (Blargg)"
 msgstr "單色 (Blargg)"
+
+msgid "Monochrome High-Resolution"
+msgstr "單色高解析度"
 
 msgid "More accurate emulation, but slower."
 msgstr "模擬較準確，但速度較慢。"
@@ -2922,6 +3219,9 @@ msgstr "新3DS模式"
 msgid "NTSC (Composite)"
 msgstr "NTSC (Composite)"
 
+msgid "NTSC (Default)"
+msgstr "NTSC (Default)"
+
 msgid "NTSC (NES)"
 msgstr "NTSC (NES)"
 
@@ -2945,6 +3245,9 @@ msgstr "NTSC 492x262px"
 
 msgid "NTSC FILTER"
 msgstr "NTSC 過濾器"
+
+msgid "NTSC TV"
+msgstr "NTSC 電視"
 
 msgid "NTSC-J"
 msgstr "NTSC-J"
@@ -3000,6 +3303,9 @@ msgstr "Nestopia (RGB)"
 msgid "Netherlands"
 msgstr "Netherlands"
 
+msgid "Netherlands (nl)"
+msgstr "Netherlands (nl)"
+
 msgid "Never"
 msgstr "從未"
 
@@ -3017,6 +3323,9 @@ msgstr "無緩衝區"
 
 msgid "No EMS/XMS"
 msgstr "沒有 EMS/XMS"
+
+msgid "No Indicator"
+msgstr "沒有指標"
 
 msgid "No Limit"
 msgstr "沒有限制"
@@ -3047,6 +3356,15 @@ msgstr "正常 (解譯器)"
 
 msgid "Norway"
 msgstr "Norway"
+
+msgid "Norwegian"
+msgstr "Norwegian"
+
+msgid "Norwegian (Bokmaal)"
+msgstr "Norwegian (Bokmaal)"
+
+msgid "Norwegian (no)"
+msgstr "Norwegian (no)"
 
 msgid "Not all games support 3D pad."
 msgstr "並非所有遊戲支援3D手把。"
@@ -3195,11 +3513,23 @@ msgstr "PAL 288x576px 50Hz (自動)"
 msgid "PAL 576x312px"
 msgstr "PAL 576x312px"
 
+msgid "PAL TV"
+msgstr "PAL TV"
+
+msgid "PAL_M"
+msgstr "PAL_M"
+
+msgid "PAL_N"
+msgstr "PAL_N"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLEL-RDP UPSCALER"
+
+msgid "PAUSE SCREEN DISPLAY"
+msgstr "暫停螢幕顯示"
 
 msgid "PCE Joypad"
 msgstr "PCE 手把"
@@ -3336,6 +3666,9 @@ msgstr "指針"
 msgid "Poland"
 msgstr "Poland"
 
+msgid "Poland (pl)"
+msgstr "Poland (pl)"
+
 msgid "Polish"
 msgstr "Polish"
 
@@ -3365,6 +3698,12 @@ msgstr "Portugal"
 
 msgid "Portuguese"
 msgstr "Portuguese"
+
+msgid "Portuguese (Brazil)"
+msgstr "Portuguese (Brazil)"
+
+msgid "Portuguese (Portugal)"
+msgstr "Portuguese (Portugal)"
 
 msgid "Position of wii sensor bar relative to the disaply for real wiimotes."
 msgstr "Wii 感光元件相對於真實 Wiimotes 顯示器的位置。"
@@ -3416,6 +3755,9 @@ msgstr "算繪"
 
 msgid "RENDER DUPLICATE FRAMES TO 60 HZ"
 msgstr "將重複畫面渲染至 60 赫茲"
+
+msgid "RENDER MODE"
+msgstr "算繪模式"
 
 msgid "RENDER RESOLUTION (SCALING)"
 msgstr "算繪解析度 (縮放)"
@@ -3525,6 +3867,9 @@ msgstr "Roland MT-32/CM-32L"
 msgid "Romania"
 msgstr "Romania"
 
+msgid "Romanian"
+msgstr "Romanian"
+
 msgid "Rotate the screen, useful for certain vertical gameplay homebrews."
 msgstr "旋轉螢幕，對於某些垂直遊戲自製很有用。"
 
@@ -3546,6 +3891,9 @@ msgstr "Russia"
 msgid "Russian"
 msgstr "Russian"
 
+msgid "Russian (ru)"
+msgstr "Russian (ru)"
+
 msgid "S-Video"
 msgstr "S-Video"
 
@@ -3566,6 +3914,12 @@ msgstr "縮放模式"
 
 msgid "SCALING MODE"
 msgstr "縮放模式"
+
+msgid "SCREEN BORDERS"
+msgstr "螢幕邊框"
+
+msgid "SCREEN FILTER"
+msgstr "螢幕濾鏡"
 
 msgid "SCREEN FILTERING"
 msgstr "螢幕濾鏡"
@@ -3683,6 +4037,12 @@ msgstr "SPU解碼器"
 
 msgid "SPU LOOP DETECTION"
 msgstr "SPU 環路偵測"
+
+msgid "ST"
+msgstr "ST"
+
+msgid "STE"
+msgstr "STE"
 
 msgid "STRETCH MODE"
 msgstr "拉伸模式"
@@ -3891,6 +4251,9 @@ msgstr "平滑3D物件上的紋理。"
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "使整個畫面在螢幕上顯示時變得平滑。校正畫素之間的位置。"
 
+msgid "Snow"
+msgstr "雪"
+
 msgid "Software"
 msgstr "軟體"
 
@@ -3933,6 +4296,15 @@ msgstr "Spain"
 msgid "Spanish"
 msgstr "Spanish"
 
+msgid "Spanish (Latin America)"
+msgstr "Spanish (Latin America)"
+
+msgid "Spanish (Spain)"
+msgstr "Spanish (Spain)"
+
+msgid "Spanish (es)"
+msgstr "Spanish (es)"
+
 msgid "Special 1"
 msgstr "特別1"
 
@@ -3948,11 +4320,17 @@ msgstr "特別4 (TI-83遺留)"
 msgid "Speed hack for dual core mode to fix some glitches."
 msgstr "雙核模式的速度補丁修復一些小故障。"
 
+msgid "Speed hack, enable to disable surface syncing between CPU and GPU. Surface syncing is needed by a few games."
+msgstr "速度補丁，可以禁用CPU和GPU之間的表面同步。一些遊戲需要表面同步。"
+
 msgid "Speed up shader compilation."
 msgstr "加速著色器編譯。"
 
 msgid "Speeds up file loading. Some games won't load with this."
 msgstr "加快檔案載入速度。有些遊戲會無法啟動。"
+
+msgid "Square Pixels"
+msgstr "方形畫素"
 
 msgid "Square pixel"
 msgstr "方形畫素"
@@ -4020,6 +4398,15 @@ msgstr "Sweden"
 msgid "Swedish"
 msgstr "Swedish"
 
+msgid "Swedish (se)"
+msgstr "Swedish (se)"
+
+msgid "Swiss French (ch)"
+msgstr "Swiss French (ch)"
+
+msgid "Swiss German (ch)"
+msgstr "Swiss German (ch)"
+
 msgid "Switzerland"
 msgstr "Switzerland"
 
@@ -4086,6 +4473,9 @@ msgstr "時間拉伸閾值"
 msgid "TIMED AXIS INTERVALS"
 msgstr "定時軸間隔"
 
+msgid "TOS languages."
+msgstr "TOS語言。"
+
 msgid "TOUCH MODE"
 msgstr "觸控模式"
 
@@ -4097,6 +4487,21 @@ msgstr "三線濾波"
 
 msgid "TRUE COLOR RENDERING"
 msgstr "真彩色再現"
+
+msgid "TT"
+msgstr "TT"
+
+msgid "TT 3.06"
+msgstr "TT 3.06"
+
+msgid "TT AUTO"
+msgstr "TT AUTO"
+
+msgid "TT ETOS 512k"
+msgstr "TT ETOS 512k"
+
+msgid "TV"
+msgstr "電視"
 
 msgid "TV2x CRT Television Filter"
 msgstr "TV2x CRT 電視濾鏡"
@@ -4115,6 +4520,9 @@ msgstr "Taiwanese"
 
 msgid "Tandy"
 msgstr "Tandy"
+
+msgid "Thai"
+msgstr "Thai"
 
 msgid "Thailand"
 msgstr "Thailand"
@@ -4194,6 +4602,12 @@ msgstr "Tunisia"
 msgid "Turkey"
 msgstr "Turkey"
 
+msgid "Turkish"
+msgstr "Turkish"
+
+msgid "Turkish (tr)"
+msgstr "Turkish (tr)"
+
 msgid "Turquoise"
 msgstr "Turquoise"
 
@@ -4227,6 +4641,9 @@ msgstr "US"
 msgid "USA"
 msgstr "USA"
 
+msgid "USA (Default)"
+msgstr "USA (預設)"
+
 msgid "USE DSP AUDIO"
 msgstr "使用DSP音訊"
 
@@ -4241,6 +4658,9 @@ msgstr "使用軟體算繪"
 
 msgid "Ukraine"
 msgstr "Ukraine"
+
+msgid "Ukrainian"
+msgstr "Ukrainian"
 
 msgid "Ultra"
 msgstr "Ultra"
@@ -4338,6 +4758,9 @@ msgstr "垂直旋轉(TATE)"
 msgid "VGA"
 msgstr "VGA"
 
+msgid "VGA (Default)"
+msgstr "VGA (預設)"
+
 msgid "VIDEO FILTERS"
 msgstr "影像鏡"
 
@@ -4367,6 +4790,9 @@ msgstr "非常高"
 
 msgid "Vietnam"
 msgstr "Vietnam"
+
+msgid "Vietnamese"
+msgstr "Vietnamese"
 
 msgid "Vulkan"
 msgstr "Vulkan"

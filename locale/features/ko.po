@@ -36,6 +36,9 @@ msgstr "0.8배"
 msgid "0.9x"
 msgstr "0.9배"
 
+msgid "1 MB"
+msgstr "1 MB"
+
 msgid "1 second"
 msgstr "1 초"
 
@@ -99,6 +102,9 @@ msgstr "1.75배 원본"
 msgid "1.8x (22.50Mhz)"
 msgstr "1.8배 (22.50Mhz)"
 
+msgid "10 MB"
+msgstr "10 MB"
+
 msgid "10 seconds"
 msgstr "10 초"
 
@@ -107,6 +113,18 @@ msgstr "100% (기본)"
 
 msgid "1024kB"
 msgstr "1024kB"
+
+msgid "1040 STE 1.06"
+msgstr "1040 STE 1.06"
+
+msgid "1040 STE 1.62"
+msgstr "1040 STE 1.62"
+
+msgid "1040 STE AUTO"
+msgstr "1040 STE 자동"
+
+msgid "1040 STE ETOS 256k"
+msgstr "1040 STE ETOS 256k"
 
 msgid "10th"
 msgstr "10일"
@@ -135,6 +153,9 @@ msgstr "12일"
 msgid "13th"
 msgstr "13일"
 
+msgid "14 MB"
+msgstr "14 MB"
+
 msgid "14.18 MHz (A1200 speed)"
 msgstr "14.18 MHz (A1200 속도)"
 
@@ -158,6 +179,9 @@ msgstr "15s"
 
 msgid "15th"
 msgstr "15일"
+
+msgid "16 MHz"
+msgstr "16 MHz"
 
 msgid "16384kB"
 msgstr "16384kB"
@@ -195,6 +219,9 @@ msgstr "18일"
 msgid "19th"
 msgstr "19일"
 
+msgid "1M"
+msgstr "1M"
+
 msgid "1st"
 msgstr "1일"
 
@@ -216,6 +243,9 @@ msgstr "1배 원본 (320x240)"
 msgid "1x native (640x528)"
 msgstr "1배 원본 (640x528)"
 
+msgid "2 MB"
+msgstr "2 MB"
+
 msgid "2 seconds"
 msgstr "2 초"
 
@@ -233,6 +263,9 @@ msgstr "2.25배 (1440x1080)"
 
 msgid "2.25x Native"
 msgstr "2.25배 원본"
+
+msgid "2.5 MB"
+msgstr "2.5 MB"
 
 msgid "2.5x (1600x1200)"
 msgstr "2.5배 (1600x1200)"
@@ -318,6 +351,9 @@ msgstr "28일"
 msgid "29th"
 msgstr "29일"
 
+msgid "2M"
+msgstr "2M"
+
 msgid "2P GAMEPAD MAPPING (KEYRAH)"
 msgstr "2P 게임패드 매핑 (키라)"
 
@@ -329,6 +365,9 @@ msgstr "2일"
 
 msgid "2nd Joystick (2 Axes, 2 Btns)"
 msgstr "두 번째 조이스틱 (2 축, 2 버튼)"
+
+msgid "2x (1280x960) (Default)"
+msgstr "2배 (1280x960) (기본)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2배 (1440p/2160p)"
@@ -381,6 +420,9 @@ msgstr "30일"
 msgid "31st"
 msgstr "31일"
 
+msgid "32 MHz"
+msgstr "32 MHz"
+
 msgid "32MB"
 msgstr "32MB"
 
@@ -422,6 +464,9 @@ msgstr "3배 원본 (~1080p)"
 
 msgid "3x native (768 x 576)"
 msgstr "3배 원본 (768 x 576)"
+
+msgid "4 MB"
+msgstr "4 MB"
 
 msgid "4 PLAYER ADAPTER"
 msgstr "4 플레이어 어댑터"
@@ -467,6 +512,9 @@ msgstr "4:3 렌더링 해상도"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4M"
+msgstr "4M"
 
 msgid "4MB"
 msgstr "4MB"
@@ -515,6 +563,24 @@ msgstr "5120MB"
 
 msgid "512kB (1750)"
 msgstr "512kB (1750)"
+
+msgid "520 ST AUTO"
+msgstr "520 ST AUTO"
+
+msgid "520 ST EMUTOS 256k"
+msgstr "520 ST EMUTOS 256k"
+
+msgid "520 ST TOS 1.00"
+msgstr "520 ST TOS 1.00"
+
+msgid "520 ST TOS 1.02"
+msgstr "520 ST TOS 1.02"
+
+msgid "520 ST TOS 1.04"
+msgstr "520 ST TOS 1.04"
+
+msgid "520K"
+msgstr "520K"
 
 msgid "56.75 MHz"
 msgstr "56.75 MHz"
@@ -585,6 +651,12 @@ msgstr "7배 원본 (~2520p)"
 msgid "7x native (1792 x 1344)"
 msgstr "7배 원본 (1792 x 1344)"
 
+msgid "8 MB"
+msgstr "8 MB"
+
+msgid "8 MHz"
+msgstr "8 MHz"
+
 msgid "8086/8088, 4.77MHz (315 cps)"
 msgstr "8086/8088, 4.77MHz (315 cps)"
 
@@ -650,6 +722,9 @@ msgstr "A500+ (1MB 칩)"
 
 msgid "A600 (2MB Chip + 8MB Fast)"
 msgstr "A600 (2MB 칩 + 8MB 빠름)"
+
+msgid "ACSI"
+msgstr "ACSI"
 
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "활성 입력 장치 수정"
@@ -719,6 +794,24 @@ msgstr "비동기 셰이더 컴파일 (VULKAN 전용)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "비동기 텍스처 스트리밍"
+
+msgid "ATARI CPU CLOCK RATE"
+msgstr "아타리 CPU 클럭 속도"
+
+msgid "ATARI CPU TYPE"
+msgstr "아타리 CPU 유형"
+
+msgid "ATARI HARD DRIVE TYPE"
+msgstr "아타리 하드 드라이브 유형"
+
+msgid "ATARI MACHINE TYPE"
+msgstr "아타리 머신 유형"
+
+msgid "ATARI MONITOR TYPE"
+msgstr "아타리 모니터 유형"
+
+msgid "ATARI ST MEMORY SIZE"
+msgstr "아타리 ST 메모리 크기"
 
 msgid "ATARI SYSTEM"
 msgstr "아타리 시스템"
@@ -873,6 +966,12 @@ msgstr "대략적인 (빠름)"
 msgid "April"
 msgstr "4월"
 
+msgid "Arabic"
+msgstr "아라비아어"
+
+msgid "Arabic (ar)"
+msgstr "아랍어 (ar)"
+
 msgid "Arcade MVS Europe"
 msgstr "아케이드 MVS 유럽"
 
@@ -905,6 +1004,12 @@ msgstr "있는 그대로"
 
 msgid "As game specifies"
 msgstr "게임이 지정한 대로"
+
+msgid "Atari Monitor"
+msgstr "아타리 모니터"
+
+msgid "Atari ST monitors had a visible border around the main screen area, but most software does not display anything in it."
+msgstr "아타리 ST 모니터는 메인 화면 주변에 눈에 띄는 테두리가 있지만, 대부분 소프트웨어는 테두리에 아무것도 표시하지 않습니다."
 
 msgid "August"
 msgstr "8월"
@@ -992,6 +1097,9 @@ msgstr "혼합 정확도"
 
 msgid "BOOT ANIMATION FIRST"
 msgstr "부팅 애니메이션 먼저"
+
+msgid "BROADCAST"
+msgstr "방송"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (모든 미국 개발 게임에 권장)"
@@ -1113,8 +1221,14 @@ msgstr "오른쪽 하단"
 msgid "Bottom only"
 msgstr "하단만"
 
+msgid "Bouncing Box"
+msgstr "바운싱 박스"
+
 msgid "Brazil"
 msgstr "브라질"
+
+msgid "British English (uk)"
+msgstr "영국 영어 (uk)"
 
 msgid "Brown"
 msgstr "갈색"
@@ -1148,6 +1262,9 @@ msgstr "C64 PAL"
 
 msgid "C64 PAL Automatic"
 msgstr "C64 PAL 자동"
+
+msgid "CABLE"
+msgstr "케이블"
 
 msgid "CD ADD-ON"
 msgstr "CD 애드온"
@@ -1386,6 +1503,15 @@ msgstr "중국어"
 msgid "Chinese (Mandarin)"
 msgstr "중국어 (만다린)"
 
+msgid "Chinese (Simplified)"
+msgstr "중국어 (간체)"
+
+msgid "Choose broadcast standard (for older TV's)."
+msgstr "(오래된 TV에 맞는) 방송 표준을 선택하세요."
+
+msgid "Choose cable type for the TV."
+msgstr "TV의 케이블 유형을 선택하세요."
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "콘솔 언어를 선택하세요. 일부 게임에서는 언어 선택이 지원되지 않을 수 있습니다."
 
@@ -1431,11 +1557,41 @@ msgstr "사용할 그래픽 API 라이브러리를 선택하세요."
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "사용할 그래픽 API 라이브러리를 선택하세요. Vulkan은 모든 코어에서 작동하지 않을 수 있습니다."
 
+msgid "Choose your Atari hard drive type for the .hd extension file."
+msgstr ".hd 확장자 파일에 아타리 하드 드라이브 유형을 선택하세요."
+
+msgid "Choose your desired Atari CPU clock rate."
+msgstr "원하는 아타리 CPU 클럭 속도를 선택하세요."
+
+msgid "Choose your desired Atari CPU type."
+msgstr "원하는 아타리 CPU 유형을 선택하세요."
+
+msgid "Choose your desired Atari Monitor."
+msgstr "원하는 아타리 모니터를 선택하세요."
+
+msgid "Choose your desired Atari ST memory size."
+msgstr "원하는 아타리 ST 메모리 크기를 선택하세요."
+
+msgid "Choose your desired Atari machine type."
+msgstr "원하는 아타리 머신 유형을 선택하세요."
+
+msgid "Choose your desired pause screen display type."
+msgstr "원하는 일시중지 화면 표시 유형을 선택하세요."
+
+msgid "Choose your desired pixel aspect ratio."
+msgstr "원하는 픽셀 화면비를 선택하세요."
+
+msgid "Choose your preferred aspect ratio."
+msgstr "원하는 화면비를 선택하세요."
+
 msgid "Choose your preferred language."
 msgstr "원하는 언어를 선택하세요."
 
 msgid "Choose your preferred renderer."
 msgstr "원하는 렌더러를 선택하세요."
+
+msgid "Choose your render resolution (Requires personal redream.key file)."
+msgstr "렌더링 해상도를 선택합니다(개인 redream.key 파일 필요)."
 
 msgid "Classic Controller"
 msgstr "클래식 컨트롤러"
@@ -1500,6 +1656,12 @@ msgstr "코스타리카"
 msgid "Croatia"
 msgstr "크로아티아"
 
+msgid "Crop 1080p (270, 540)"
+msgstr "1080p (270, 540) 자르기"
+
+msgid "Crop 720p (240, 480)"
+msgstr "720p (240, 480) 자르기"
+
 msgid "Crop horizontal overscan."
 msgstr "가로 방향으로 오버스캔을 자릅니다."
 
@@ -1526,6 +1688,9 @@ msgstr "주기 정확"
 
 msgid "Czech"
 msgstr "체코"
+
+msgid "Czech (cz)"
+msgstr "체코 (cz)"
 
 msgid "Czech Republic"
 msgstr "체코"
@@ -1556,6 +1721,9 @@ msgstr "에뮬레이터 조이스틱 비활성화"
 
 msgid "DISABLE INTERLACING"
 msgstr "인터레이싱 비활성화"
+
+msgid "DISABLE SURFACE SYNC"
+msgstr "표면 동기화 비활성화"
 
 msgid "DISABLE VERTEX CACHE"
 msgstr "VERTEX 캐시 비활성화"
@@ -1608,6 +1776,12 @@ msgstr "동적 재컴파일 코드 무효화"
 msgid "Dance Mat"
 msgstr "댄스 매트"
 
+msgid "Danish"
+msgstr "덴마크"
+
+msgid "Danish (dk)"
+msgstr "덴마크 (dk)"
+
 msgid "Dark Blue"
 msgstr "진파란색"
 
@@ -1619,6 +1793,9 @@ msgstr "진분홍색"
 
 msgid "Dark Purple"
 msgstr "진보라색"
+
+msgid "Darken"
+msgstr "어두워짐"
 
 msgid "De-Interlaced"
 msgstr "디인터레이스"
@@ -1725,6 +1902,9 @@ msgstr "게임 플레이 중에 단축키 + R1을 눌러 화면 텍스트를 번
 msgid "Dutch"
 msgstr "네덜란드어"
 
+msgid "Dutch (nl)"
+msgstr "네덜란드어 (nl)"
+
 msgid "Dynamic (fast)"
 msgstr "동적 (빠름)"
 
@@ -1812,6 +1992,9 @@ msgstr "상단 강조"
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "L2 버튼의 흔들기와 R 스틱의 눈챠크를 사용하여 위모컨 사이드웨이를 에뮬레이트합니다."
 
+msgid "Emutos language && region setting."
+msgstr "Emutos 언어 && 지역 설정."
+
 msgid "Enable"
 msgstr "활성화"
 
@@ -1824,6 +2007,9 @@ msgstr "게임큐브 부팅 애니메이션과 바이오스 접속을 활성화�
 msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
 msgstr "그레비스 울트라사운드 에뮬레이션을 활성화합니다. ULTRASND 폴더가 <game>.pc rom 폴더의 루트에 있는지 확인합니다."
 
+msgid "Enable High Dynamic Range if your display supports it."
+msgstr "디스플레이가 지원한다면 HDR(High Dynamic Range)을 활성화하세요."
+
 msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
 msgstr "MelonDS에서 두 개 이상의 화면을 표시할 수 있도록 설정합니다. 일부 관련 화면 옵션은 무시됩니다."
 
@@ -1832,6 +2018,9 @@ msgstr "비인터레이스 패치를 활성화합니다."
 
 msgid "Enable TV-like filtering / effects."
 msgstr "TV와 유사한 필터링/효과를 활성화합니다."
+
+msgid "Enable auto frameskipping for performance on lower-end systems."
+msgstr "저사양 시스템에서 성능을 위해 자동 프레임 건너뛰기를 활성화합니다."
 
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "캐시 마운트를 활성화합니다. 일부 게임에서 성능과 호환성을 향상할 수 있습니다."
@@ -1893,6 +2082,9 @@ msgstr "장치의 마이크가 활성화되어 있는지 표시하도록 설정�
 msgid "Enable to show which screen layout with the configured sequence is active."
 msgstr "구성된 순서로 활성화된 화면 레이아웃을 표시합니다."
 
+msgid "Enable vertical sync to avoid tearing in some cases."
+msgstr "경우에 따라 찢어짐 현상을 방지하기 위해 수직 동기화를 활성화합니다."
+
 msgid "Enabled"
 msgstr "활성화"
 
@@ -1919,6 +2111,15 @@ msgstr "영어"
 
 msgid "English (Default)"
 msgstr "영어 (기본)"
+
+msgid "English (United Kingdom)"
+msgstr "영어 (영국)"
+
+msgid "English (United States)"
+msgstr "영어 (미국)"
+
+msgid "English (us)"
+msgstr "영어 (us)"
 
 msgid "English/Japanese"
 msgstr "영어/일본어"
@@ -2076,6 +2277,24 @@ msgstr "프레임스킵 제어"
 msgid "FXAA"
 msgstr "FXAA (빠른 대략적 안티에일리어싱)"
 
+msgid "Falcon"
+msgstr "팔콘"
+
+msgid "Falcon 4.0"
+msgstr "팔콘 4.0"
+
+msgid "Falcon 4.02"
+msgstr "팔콘 4.02"
+
+msgid "Falcon 4.04"
+msgstr "팔콘 4.04"
+
+msgid "Falcon AUTO"
+msgstr "팔콘 오토"
+
+msgid "Falcon ETOS 512k"
+msgstr "팔콘 ETOS 512k"
+
 msgid "Famicom (FDS)"
 msgstr "패미컴 (FDS)"
 
@@ -2100,6 +2319,12 @@ msgstr "화면 비율에 관계없이 화면을 채웁니다. 정수 업스케�
 msgid "Finland"
 msgstr "핀란드"
 
+msgid "Finnish"
+msgstr "핀란드어"
+
+msgid "Finnish (fi)"
+msgstr "핀란드어 (fi)"
+
 msgid "Fit 4:3 Aspect Ratio"
 msgstr "4:3 화면비율 맞추기"
 
@@ -2123,6 +2348,9 @@ msgstr "여러 컨트롤러 검색에서 발생할 수 있는 버그를 수정�
 
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "비행 스틱 (3 축, 4 버튼, 1 햇)"
+
+msgid "Floppy Disk List"
+msgstr "플로피 디스크 목록"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "자이로 지원 게임용 (왼쪽 아날로그 스틱에 바인딩됨)"
@@ -2162,6 +2390,15 @@ msgstr "프랑스"
 
 msgid "French"
 msgstr "프랑스어"
+
+msgid "French (Canada)"
+msgstr "프랑스어 (캐나다)"
+
+msgid "French (France)"
+msgstr "프랑스어 (프랑스)"
+
+msgid "French (fr)"
+msgstr "프랑스어 (fr)"
 
 msgid "Frontend MIDI driver"
 msgstr "프런트엔드 미디 드라이버"
@@ -2340,6 +2577,9 @@ msgstr "그루지야"
 msgid "German"
 msgstr "독일어"
 
+msgid "German (de)"
+msgstr "독일어 (de)"
+
 msgid "Germany"
 msgstr "독일"
 
@@ -2360,6 +2600,12 @@ msgstr "회색"
 
 msgid "Greece"
 msgstr "그리스"
+
+msgid "Greek"
+msgstr "그리스어"
+
+msgid "Greek (gk)"
+msgstr "그리스어 (gk)"
 
 msgid "Green"
 msgstr "초록색"
@@ -2382,6 +2628,9 @@ msgstr "고해상도 아티팩트"
 msgid "HLE (Fastest)"
 msgstr "고수준 에뮬레이션 (가장 빠름)"
 
+msgid "HLE (per-pixel)"
+msgstr "고수준 에뮬레이션 (픽셀당)"
+
 msgid "HQ (bilinear filter)"
 msgstr "고품질 (이중선형 필터)"
 
@@ -2390,6 +2639,9 @@ msgstr "해킹. 대부분의 PAL 게임의 속도가 17% 증가합니다."
 
 msgid "Hebrew"
 msgstr "히브리어"
+
+msgid "Help and Information"
+msgstr "도움말과 정보"
 
 msgid "Help games which are too quick or that have bugs."
 msgstr "너무 빠르거나 버그가 있는 게임을 도와주세요."
@@ -2402,6 +2654,9 @@ msgstr "허큘리스"
 
 msgid "Hermite"
 msgstr "에르미트"
+
+msgid "Hide"
+msgstr "숨기기"
 
 msgid "Hides borders on many games. Some games use the borders."
 msgstr "많은 게임에서 테두리를 숨깁니다. 어떤 게임은 테두리를 사용합니다."
@@ -2427,6 +2682,12 @@ msgstr "수평 (가로)"
 msgid "How the window space is distributed between the screens."
 msgstr "창 공간이 화면 사이에 분산되는 방식입니다."
 
+msgid "Hungarian"
+msgstr "헝가리어"
+
+msgid "Hungarian (hg)"
+msgstr "헝가리어 (hg)"
+
 msgid "Hungary"
 msgstr "헝가리"
 
@@ -2447,6 +2708,9 @@ msgstr "하이브리드 우버셰이더"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "하이퍼 블래스터/저스티파이어"
+
+msgid "IDE (Default)"
+msgstr "IDE (기본)"
 
 msgid "IMPROVED BANDING"
 msgstr "향상된 밴딩"
@@ -2487,6 +2751,9 @@ msgstr "아무것도 지정하지 않으면 기본적으로 ZTranslate를 사용
 msgid "Ignored with 'Cycle-exact'."
 msgstr "'주기 정확'에서 무시됩니다."
 
+msgid "Immediate"
+msgstr "즉시"
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "오디오 정확도 향상 (실험적)."
 
@@ -2517,6 +2784,9 @@ msgstr "인도"
 msgid "Indonesia"
 msgstr "인도네시아"
 
+msgid "Indonesian"
+msgstr "인도네시아어"
+
 msgid "Inserts CD during boot animation prevent loading fail."
 msgstr "부팅 애니메이션 중에 CD를 넣어 로딩 실패를 방지합니다."
 
@@ -2543,6 +2813,9 @@ msgstr "이스라엘"
 
 msgid "Italian"
 msgstr "이탈리아어"
+
+msgid "Italian (it)"
+msgstr "이탈리아어 (it)"
 
 msgid "Italy"
 msgstr "이탈리아"
@@ -2720,6 +2993,9 @@ msgstr "프레임 속도 제한"
 
 msgid "LINEAR UPSCALING"
 msgstr "선형 업스케일러"
+
+msgid "LLE"
+msgstr "저수준 에뮬레이션"
 
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "커스텀 텍스처 로드"
@@ -2931,6 +3207,24 @@ msgstr "보통"
 msgid "Mega"
 msgstr "메가"
 
+msgid "Mega ST"
+msgstr "메가 ST"
+
+msgid "Mega STE"
+msgstr "메가 STE"
+
+msgid "Mega STE 2.05"
+msgstr "메가 STE 2.05"
+
+msgid "Mega STE 2.06"
+msgstr "메가 STE 2.06"
+
+msgid "Mega STE AUTO"
+msgstr "메가 STE 자동"
+
+msgid "Mega STE ETOS 256k"
+msgstr "메가 STE ETOS 256k"
+
 msgid "MegaSD"
 msgstr "메가SD"
 
@@ -2966,6 +3260,9 @@ msgstr "모노크롬"
 
 msgid "Monochrome (Blargg)"
 msgstr "모노크롬 (Blargg)"
+
+msgid "Monochrome High-Resolution"
+msgstr "모노크롬 고해상도"
 
 msgid "More accurate emulation, but slower."
 msgstr "더 정확한 에뮬레이션이지만 느립니다."
@@ -3030,6 +3327,9 @@ msgstr "새 3DS 모드"
 msgid "NTSC (Composite)"
 msgstr "NTSC (컴포지트)"
 
+msgid "NTSC (Default)"
+msgstr "NTSC (기본)"
+
 msgid "NTSC (NES)"
 msgstr "NTSC (NES)"
 
@@ -3056,6 +3356,9 @@ msgstr "NTSC 화면비"
 
 msgid "NTSC FILTER"
 msgstr "NTSC 필터"
+
+msgid "NTSC TV"
+msgstr "NTSC TV"
 
 msgid "NTSC aspect ratio correction. Core default (PAR)."
 msgstr "NTSC 화면비 보정입니다. 코어 기본값 (PAR)입니다."
@@ -3117,6 +3420,9 @@ msgstr "네스토피아 (RGB)"
 msgid "Netherlands"
 msgstr "네덜란드"
 
+msgid "Netherlands (nl)"
+msgstr "네덜란드 (nl)"
+
 msgid "Never"
 msgstr "절대 안 함"
 
@@ -3134,6 +3440,9 @@ msgstr "버퍼 없음"
 
 msgid "No EMS/XMS"
 msgstr "EMS/XMS 없음"
+
+msgid "No Indicator"
+msgstr "표시기 없음"
 
 msgid "No Limit"
 msgstr "제한 없음"
@@ -3164,6 +3473,15 @@ msgstr "보통 (해석기)"
 
 msgid "Norway"
 msgstr "노르웨이"
+
+msgid "Norwegian"
+msgstr "노르웨이어"
+
+msgid "Norwegian (Bokmaal)"
+msgstr "노르웨이어 (보크말)"
+
+msgid "Norwegian (no)"
+msgstr "노르웨이어 (no)"
 
 msgid "Not all games support 3D pad."
 msgstr "모든 게임이 3D 패드를 지원하는 것은 아닙니다."
@@ -3333,6 +3651,9 @@ msgstr "PAL 576x312픽셀"
 msgid "PAL ASPECT"
 msgstr "PAL 화면비"
 
+msgid "PAL TV"
+msgstr "PAL TV"
+
 msgid "PAL aspect ratio correction. Core default (PAR)."
 msgstr "PAL 화면비 보정입니다. 코어 기본값 (PAR)입니다."
 
@@ -3342,11 +3663,20 @@ msgstr "PAL60"
 msgid "PALETTE COLORS"
 msgstr "팔레트 색상"
 
+msgid "PAL_M"
+msgstr "PAL_M"
+
+msgid "PAL_N"
+msgstr "PAL_N"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "병렬-RDP 업스케일러"
+
+msgid "PAUSE SCREEN DISPLAY"
+msgstr "화면 표시 일시중지"
 
 msgid "PCE Joypad"
 msgstr "PCE 조이패드"
@@ -3492,6 +3822,9 @@ msgstr "포인터"
 msgid "Poland"
 msgstr "폴란드"
 
+msgid "Poland (pl)"
+msgstr "폴란드 (pl)"
+
 msgid "Polish"
 msgstr "폴란드어"
 
@@ -3521,6 +3854,12 @@ msgstr "포르투갈"
 
 msgid "Portuguese"
 msgstr "포르투갈어"
+
+msgid "Portuguese (Brazil)"
+msgstr "포르투갈어 (브라질)"
+
+msgid "Portuguese (Portugal)"
+msgstr "포르투갈어 (포르투갈)"
 
 msgid "Position of wii sensor bar relative to the disaply for real wiimotes."
 msgstr "실제 위모트 디스플레이에 대한 Wii 센서바의 위치입니다."
@@ -3572,6 +3911,9 @@ msgstr "렌더"
 
 msgid "RENDER DUPLICATE FRAMES TO 60 HZ"
 msgstr "중복 프레임을 60Hz로 렌더링"
+
+msgid "RENDER MODE"
+msgstr "렌더 모드"
 
 msgid "RENDER RESOLUTION (SCALING)"
 msgstr "렌더 해상도 (스케일링)"
@@ -3687,6 +4029,9 @@ msgstr "롤랜드 MT-32/CM-32L"
 msgid "Romania"
 msgstr "루마니아"
 
+msgid "Romanian"
+msgstr "루마니아어"
+
 msgid "Rotate the screen, useful for certain vertical gameplay homebrews."
 msgstr "화면을 회전하면, 특정 수직 게임플레이 홈브류에 유용합니다."
 
@@ -3708,6 +4053,9 @@ msgstr "러시아"
 msgid "Russian"
 msgstr "러시아어"
 
+msgid "Russian (ru)"
+msgstr "러시아어 (ru)"
+
 msgid "S-Video"
 msgstr "S-비디오"
 
@@ -3728,6 +4076,12 @@ msgstr "스케일러 모드"
 
 msgid "SCALING MODE"
 msgstr "스케일링 모드"
+
+msgid "SCREEN BORDERS"
+msgstr "화면 테두리"
+
+msgid "SCREEN FILTER"
+msgstr "화면 필터"
 
 msgid "SCREEN FILTERING"
 msgstr "화면 필터링"
@@ -3857,6 +4211,12 @@ msgstr "SPU 디코더"
 
 msgid "SPU LOOP DETECTION"
 msgstr "SPU 루프 감지"
+
+msgid "ST"
+msgstr "ST"
+
+msgid "STE"
+msgstr "STE"
 
 msgid "STEREO SOUND"
 msgstr "스트레오 사운드"
@@ -4080,6 +4440,9 @@ msgstr "3D 개체의 텍스처를 부드럽게 만듭니다."
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "화면에 표시되는 전체 그림을 부드럽게 합니다. 픽셀 간의 위치를 ​​수정합니다."
 
+msgid "Snow"
+msgstr "눈"
+
 msgid "Software"
 msgstr "소프트웨어"
 
@@ -4122,6 +4485,15 @@ msgstr "스페인"
 msgid "Spanish"
 msgstr "스페인어"
 
+msgid "Spanish (Latin America)"
+msgstr "스페인어 (라틴 아메리카)"
+
+msgid "Spanish (Spain)"
+msgstr "스페인어 (스페인)"
+
+msgid "Spanish (es)"
+msgstr "스페인어 (es)"
+
 msgid "Special 1"
 msgstr "스페셜 1"
 
@@ -4137,11 +4509,17 @@ msgstr "스페셜 4 (TI-83 레거시)"
 msgid "Speed hack for dual core mode to fix some glitches."
 msgstr "듀얼 코어 모드의 속도를 높이는 해킹으로 일부 결함을 해결하세요."
 
+msgid "Speed hack, enable to disable surface syncing between CPU and GPU. Surface syncing is needed by a few games."
+msgstr "속도 해킹, CPU와 GPU 사이의 표면 동기화를 비활성화할 수 있습니다. 표면 동기화는 몇몇 게임에서 필요합니다."
+
 msgid "Speed up shader compilation."
 msgstr "셰이더 컴파일 속도를 높입니다."
 
 msgid "Speeds up file loading. Some games won't load with this."
 msgstr "파일 로딩 속도를 높입니다. 일부 게임은 이 방법으로는 로딩되지 않습니다."
+
+msgid "Square Pixels"
+msgstr "정사각형 픽셀"
 
 msgid "Square pixel"
 msgstr "정사각형 픽셀"
@@ -4215,6 +4593,15 @@ msgstr "스웨덴"
 msgid "Swedish"
 msgstr "스웨덴어"
 
+msgid "Swedish (se)"
+msgstr "스웨덴어 (se)"
+
+msgid "Swiss French (ch)"
+msgstr "스위스 프랑스어 (ch)"
+
+msgid "Swiss German (ch)"
+msgstr "스위스 독일어 (ch)"
+
 msgid "Switzerland"
 msgstr "스위스"
 
@@ -4281,6 +4668,9 @@ msgstr "시간 늘리기 임계값"
 msgid "TIMED AXIS INTERVALS"
 msgstr "시간 축 간격"
 
+msgid "TOS languages."
+msgstr "TOS 언어."
+
 msgid "TOUCH MODE"
 msgstr "터치 모드"
 
@@ -4295,6 +4685,21 @@ msgstr "삼중선형 필터링"
 
 msgid "TRUE COLOR RENDERING"
 msgstr "트루 컬러 렌더링"
+
+msgid "TT"
+msgstr "TT"
+
+msgid "TT 3.06"
+msgstr "TT 3.06"
+
+msgid "TT AUTO"
+msgstr "TT 오토"
+
+msgid "TT ETOS 512k"
+msgstr "TT ETOS 512k"
+
+msgid "TV"
+msgstr "TV"
 
 msgid "TV EFFECTS"
 msgstr "TV 효과"
@@ -4316,6 +4721,9 @@ msgstr "대만어"
 
 msgid "Tandy"
 msgstr "탠디"
+
+msgid "Thai"
+msgstr "태국어"
 
 msgid "Thailand"
 msgstr "태국"
@@ -4410,6 +4818,12 @@ msgstr "튀니지"
 msgid "Turkey"
 msgstr "튀르키예"
 
+msgid "Turkish"
+msgstr "튀르키예어"
+
+msgid "Turkish (tr)"
+msgstr "튀르키예어 (tr)"
+
 msgid "Turquoise"
 msgstr "청록색"
 
@@ -4443,6 +4857,9 @@ msgstr "미국"
 msgid "USA"
 msgstr "미국"
 
+msgid "USA (Default)"
+msgstr "미국 (기본)"
+
 msgid "USE DSP AUDIO"
 msgstr "DSP 오디오 사용"
 
@@ -4457,6 +4874,9 @@ msgstr "소프트웨어 렌더링 사용"
 
 msgid "Ukraine"
 msgstr "우크라이나"
+
+msgid "Ukrainian"
+msgstr "우크라이나어"
 
 msgid "Ultra"
 msgstr "울트라"
@@ -4566,6 +4986,9 @@ msgstr "수직 회전 (테이트)"
 msgid "VGA"
 msgstr "VGA"
 
+msgid "VGA (Default)"
+msgstr "VGA (기본)"
+
 msgid "VIDEO FILTERS"
 msgstr "비디오 필터"
 
@@ -4595,6 +5018,9 @@ msgstr "매우 높음"
 
 msgid "Vietnam"
 msgstr "베트남"
+
+msgid "Vietnamese"
+msgstr "베트남어"
 
 msgid "Vulkan"
 msgstr "Vulkan"

@@ -806,6 +806,22 @@ static void testCoreProfiles()
 		ConfigFile scConfig;
 		coreProfile("vice_x64sc").setConfig(ctx, scConfig);
 		CHECK(!scConfig.get("input_player1_analog_dpad_mode"));
+
+		// hatariB: a floppy is the content, a hard disk is linked in the BIOS folder
+		const Core& hatarib = coreProfile("hatarib");
+		ctx.game.system = "atarist";
+		ctx.game.rom = tmp.path / "roms" / "Game.st";
+		hatarib.setCoreOptions(ctx, o);
+		CHECK(hatarib.romArgument(ctx) == ctx.game.rom);
+		CHECK(o.get("hatarib_tos") == "<etos1024k>");
+		CHECK(o.get("hatarib_hardboot") == "0");
+		ctx.game.rom = tmp.path / "roms" / "Disk.HD";
+		writeFile(ctx.game.rom, "");
+		hatarib.setCoreOptions(ctx, o);
+		CHECK(hatarib.romArgument(ctx).empty());
+		CHECK(o.get("hatarib_hardimg") == "hatarib/hdd");
+		CHECK(o.get("hatarib_hardtype") == "4");
+		CHECK(fs::read_symlink(tmp.path / "bios" / "hatarib" / "hdd") == ctx.game.rom);
 	}
 }
 

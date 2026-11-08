@@ -36,6 +36,9 @@ msgstr "0.8x"
 msgid "0.9x"
 msgstr "0.9x"
 
+msgid "1 MB"
+msgstr "1 MB"
+
 msgid "1 second"
 msgstr "1 detik"
 
@@ -99,6 +102,9 @@ msgstr "1.75x Native / Asli"
 msgid "1.8x (22.50Mhz)"
 msgstr "1.8x (22.50Mhz)"
 
+msgid "10 MB"
+msgstr "10 MB"
+
 msgid "10 seconds"
 msgstr "10 detik"
 
@@ -107,6 +113,18 @@ msgstr "100% (Default / Bawaan)"
 
 msgid "1024kB"
 msgstr "1024kB"
+
+msgid "1040 STE 1.06"
+msgstr "1040 STE 1.06"
+
+msgid "1040 STE 1.62"
+msgstr "1040 STE 1.62"
+
+msgid "1040 STE AUTO"
+msgstr "1040 STE OTOMATIS"
+
+msgid "1040 STE ETOS 256k"
+msgstr "1040 STE ETOS 256k"
 
 msgid "10th"
 msgstr "ke-10"
@@ -135,6 +153,9 @@ msgstr "ke-12"
 msgid "13th"
 msgstr "ke-13"
 
+msgid "14 MB"
+msgstr "14 MB"
+
 msgid "14.18 MHz (A1200 speed)"
 msgstr "14.18 MHz (kecepatan A1200)"
 
@@ -158,6 +179,9 @@ msgstr "15s"
 
 msgid "15th"
 msgstr "ke-15"
+
+msgid "16 MHz"
+msgstr "16 MHz"
 
 msgid "16384kB"
 msgstr "16384kB"
@@ -195,6 +219,9 @@ msgstr "ke-18"
 msgid "19th"
 msgstr "ke-19"
 
+msgid "1M"
+msgstr "1M"
+
 msgid "1st"
 msgstr "ke-1"
 
@@ -216,6 +243,9 @@ msgstr "1x native / Asli (320x240)"
 msgid "1x native (640x528)"
 msgstr "1x native / Asli (640x528)"
 
+msgid "2 MB"
+msgstr "2 MB"
+
 msgid "2 seconds"
 msgstr "2 detik"
 
@@ -233,6 +263,9 @@ msgstr "2.25x (1440x1080)"
 
 msgid "2.25x Native"
 msgstr "2.25x Native / Asli"
+
+msgid "2.5 MB"
+msgstr "2.5 MB"
 
 msgid "2.5x (1600x1200)"
 msgstr "2.5x (1600x1200)"
@@ -318,6 +351,9 @@ msgstr "ke-28"
 msgid "29th"
 msgstr "ke-29"
 
+msgid "2M"
+msgstr "2M"
+
 msgid "2P GAMEPAD MAPPING (KEYRAH)"
 msgstr "Pengaturan Tombol Gamepad Pemain 2 (Keyrah)"
 
@@ -329,6 +365,9 @@ msgstr "ke-2"
 
 msgid "2nd Joystick (2 Axes, 2 Btns)"
 msgstr "Joystick Kedua (2 Sumbu, 2 Tombol)"
+
+msgid "2x (1280x960) (Default)"
+msgstr "2x (1280x960) (Default / Bawaan)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -381,6 +420,9 @@ msgstr "ke-30"
 msgid "31st"
 msgstr "ke-31"
 
+msgid "32 MHz"
+msgstr "32 MHz"
+
 msgid "32MB"
 msgstr "32MB"
 
@@ -422,6 +464,9 @@ msgstr "3x Native / Asli (~1080p)"
 
 msgid "3x native (768 x 576)"
 msgstr "3x native / asli (768 x 576)"
+
+msgid "4 MB"
+msgstr "4 MB"
 
 msgid "4 PLAYER ADAPTER"
 msgstr "ADAPTER 4 PEMAIN"
@@ -467,6 +512,9 @@ msgstr "4:3 RESOLUSI RENDERING "
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4M"
+msgstr "4M"
 
 msgid "4MB"
 msgstr "4MB"
@@ -515,6 +563,24 @@ msgstr "5120MB"
 
 msgid "512kB (1750)"
 msgstr "512kB (1750)"
+
+msgid "520 ST AUTO"
+msgstr "520 ST AUTO / OTOMATIS"
+
+msgid "520 ST EMUTOS 256k"
+msgstr "520 ST EMUTOS 256k"
+
+msgid "520 ST TOS 1.00"
+msgstr "520 ST TOS 1.00"
+
+msgid "520 ST TOS 1.02"
+msgstr "520 ST TOS 1.02"
+
+msgid "520 ST TOS 1.04"
+msgstr "520 ST TOS 1.04"
+
+msgid "520K"
+msgstr "520K"
 
 msgid "56.75 MHz"
 msgstr "56.75 MHz"
@@ -585,6 +651,12 @@ msgstr "7x Native / Asli (~2520p)"
 msgid "7x native (1792 x 1344)"
 msgstr "7x native / asli (1792 x 1344)"
 
+msgid "8 MB"
+msgstr "8 MB"
+
+msgid "8 MHz"
+msgstr "8 MHz"
+
 msgid "8086/8088, 4.77MHz (315 cps)"
 msgstr "8086/8088, 4.77MHz (315 cps)"
 
@@ -650,6 +722,9 @@ msgstr "A500+ (1MB Chip)"
 
 msgid "A600 (2MB Chip + 8MB Fast)"
 msgstr "A600 (2MB Chip + 8MB Fast / Cepat)"
+
+msgid "ACSI"
+msgstr "ACSI"
 
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "PERBAIKAN PERANGKAT INPUT-(MASUKAN) AKTIF"
@@ -719,6 +794,24 @@ msgstr "KOMPILASI SHADER ASINKRON (KHUSUS VULKAN)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "STREAMING TEKSTUR ASYNCHRONOUS-(ASINKRON)"
+
+msgid "ATARI CPU CLOCK RATE"
+msgstr "KECEPATAN CLOCK CPU ATARI"
+
+msgid "ATARI CPU TYPE"
+msgstr "JENIS CPU ATARI"
+
+msgid "ATARI HARD DRIVE TYPE"
+msgstr "JENIS HARD DRIVE ATARI"
+
+msgid "ATARI MACHINE TYPE"
+msgstr "JENIS MESIN ATARI"
+
+msgid "ATARI MONITOR TYPE"
+msgstr "JENIS MONITOR ATARI"
+
+msgid "ATARI ST MEMORY SIZE"
+msgstr "UKURAN MEMORI ATARI ST"
 
 msgid "ATARI SYSTEM"
 msgstr "SISTEM ATARI"
@@ -873,6 +966,12 @@ msgstr "Approximate / Perkiraan (Cepat)"
 msgid "April"
 msgstr "April"
 
+msgid "Arabic"
+msgstr "Bahasa Arab"
+
+msgid "Arabic (ar)"
+msgstr "Bahasa Arab (ar)"
+
 msgid "Arcade MVS Europe"
 msgstr "Arcade MVS Eropa"
 
@@ -905,6 +1004,12 @@ msgstr "Apa Adanya"
 
 msgid "As game specifies"
 msgstr "Sesuai pengaturan game"
+
+msgid "Atari Monitor"
+msgstr "Monitor Atari"
+
+msgid "Atari ST monitors had a visible border around the main screen area, but most software does not display anything in it."
+msgstr "Monitor Atari ST memiliki bingkai hitam di sekitar area layar utamatetapi sebagian besar perangkat lunak tidak menampilkan apa pun di area tersebut."
 
 msgid "August"
 msgstr "Agustus"
@@ -992,6 +1097,9 @@ msgstr "Akurasi Pencampuran Warna (Blending)"
 
 msgid "BOOT ANIMATION FIRST"
 msgstr "ANIMASI BOOT TERLEBIH DAHULU"
+
+msgid "BROADCAST"
+msgstr "BROADCAST / SIARAN"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (disarankan untuk semua game buatan AS)"
@@ -1113,8 +1221,14 @@ msgstr "Bawah Kanan"
 msgid "Bottom only"
 msgstr "Bawah Kanan"
 
+msgid "Bouncing Box"
+msgstr "Kotak Membal / Memantul"
+
 msgid "Brazil"
 msgstr "Brazil"
+
+msgid "British English (uk)"
+msgstr "Inggris British (uk)"
 
 msgid "Brown"
 msgstr "Cokelat"
@@ -1148,6 +1262,9 @@ msgstr "C64 PAL"
 
 msgid "C64 PAL Automatic"
 msgstr "C64 PAL Otomatis"
+
+msgid "CABLE"
+msgstr "KABEL"
 
 msgid "CD ADD-ON"
 msgstr "CD ADD-ON"
@@ -1386,6 +1503,15 @@ msgstr "Cina"
 msgid "Chinese (Mandarin)"
 msgstr "Bahasa Tionghoa (Mandarin)"
 
+msgid "Chinese (Simplified)"
+msgstr "Cina (Sederhana)"
+
+msgid "Choose broadcast standard (for older TV's)."
+msgstr "Pilih metode siaran (tampilan video) (untuk TV lama)"
+
+msgid "Choose cable type for the TV."
+msgstr "Pilih Tipe Kabel untuk TV"
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Pilih bahasa konsol. Tidak semua game mendukung pilihan bahasa ini."
 
@@ -1431,11 +1557,41 @@ msgstr "Pilih perpustakaan API yang akan di pakai"
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "Pilih perpustakaan grafis API untuk dipakaiVulkan mungkin tidak akan berjalan disetiap cores"
 
+msgid "Choose your Atari hard drive type for the .hd extension file."
+msgstr "Pilih jenis hard drive Atari untuk file berekstensi .hd."
+
+msgid "Choose your desired Atari CPU clock rate."
+msgstr "Pilih kecepatan prosesor (CPU) Atari yang diinginkan."
+
+msgid "Choose your desired Atari CPU type."
+msgstr "Pilih jenis CPU Atari yang diinginkan."
+
+msgid "Choose your desired Atari Monitor."
+msgstr "Pilih jenis monitor Atari yang diinginkan."
+
+msgid "Choose your desired Atari ST memory size."
+msgstr "Pilih ukuran memori (RAM) Atari ST yang diinginkan."
+
+msgid "Choose your desired Atari machine type."
+msgstr "Pilih jenis mesin Atari yang diinginkan."
+
+msgid "Choose your desired pause screen display type."
+msgstr "Pilih tampilan layar jeda (pause) yang diinginkan."
+
+msgid "Choose your desired pixel aspect ratio."
+msgstr "Pilih rasio aspek piksel yang diinginkan."
+
+msgid "Choose your preferred aspect ratio."
+msgstr "Pilih aspek rasio pilihan kamu"
+
 msgid "Choose your preferred language."
 msgstr "Pilih bahasa yang Anda inginkan."
 
 msgid "Choose your preferred renderer."
 msgstr "Pilih perupa (renderer) yang diinginkan."
+
+msgid "Choose your render resolution (Requires personal redream.key file)."
+msgstr "Pilih resolusi tampilan (memerlukan file redream.key pribadi)"
 
 msgid "Classic Controller"
 msgstr "Kontroler Klasik"
@@ -1500,6 +1656,12 @@ msgstr "Kosta Rika"
 msgid "Croatia"
 msgstr "Croasia"
 
+msgid "Crop 1080p (270, 540)"
+msgstr "Potong 1080p (270, 540)"
+
+msgid "Crop 720p (240, 480)"
+msgstr "Potong 720p (240, 480)"
+
 msgid "Crop horizontal overscan."
 msgstr "Potong sisi hitam horizontal (kiri/kanan)."
 
@@ -1526,6 +1688,9 @@ msgstr "Cycle-exact"
 
 msgid "Czech"
 msgstr "Ceko"
+
+msgid "Czech (cz)"
+msgstr "Bahasa Ceko (cz)"
 
 msgid "Czech Republic"
 msgstr "Republik Ceko"
@@ -1556,6 +1721,9 @@ msgstr "NONAKTIFKAN JOYSTICK EMULATOR"
 
 msgid "DISABLE INTERLACING"
 msgstr "Nonaktifkan Interlacing"
+
+msgid "DISABLE SURFACE SYNC"
+msgstr "Nonaktifkan Sinkronisasi Permukaan"
 
 msgid "DISABLE VERTEX CACHE"
 msgstr "MATIKAN CACHE VERTEX"
@@ -1608,6 +1776,12 @@ msgstr "PEMBATALAN KODE DYNAREC"
 msgid "Dance Mat"
 msgstr "Matras Dansa"
 
+msgid "Danish"
+msgstr "Bahasa Denmark"
+
+msgid "Danish (dk)"
+msgstr "Bahasa Denmark (dk)"
+
 msgid "Dark Blue"
 msgstr "Biru Tua"
 
@@ -1619,6 +1793,9 @@ msgstr "Merah Muda Tua"
 
 msgid "Dark Purple"
 msgstr "Ungu Tua"
+
+msgid "Darken"
+msgstr "Gelapkan"
 
 msgid "De-Interlaced"
 msgstr "De-Interlaced (Video yang sudah dihilangkan efek garisnya)"
@@ -1725,6 +1902,9 @@ msgstr "Selama bermain game, tekan Hotkey + R1 untuk menerjemahkan teks di layar
 msgid "Dutch"
 msgstr "Dutch (Beland)"
 
+msgid "Dutch (nl)"
+msgstr "Dutch (nl)"
+
 msgid "Dynamic (fast)"
 msgstr "Dinamis（Cepat）"
 
@@ -1812,6 +1992,9 @@ msgstr "Menekan Atas"
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Meniru Wiimote Sideway dengan L2 untuk Guncangan dan Nunchuk pada R-stick."
 
+msgid "Emutos language && region setting."
+msgstr "Pengaturan bahasa && wilayah Emutos."
+
 msgid "Enable"
 msgstr "Aktifkan"
 
@@ -1824,6 +2007,9 @@ msgstr "Aktifkan animasi boot Gamecube dan akses BIOS(memerlukan berkas BIOS IPL
 msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
 msgstr "Aktifkan emulasi Gravis Ultrasound. Pastikan folder ULTRASNDberada di dalam folder utama (root) rom .pc Anda."
 
+msgid "Enable High Dynamic Range if your display supports it."
+msgstr "Aktifkan High Dynamic Range (HDR) jika layar Anda mendukungnya."
+
 msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
 msgstr "Aktifkan MelonDS untuk menampilkan game di dua layar.Beberapa opsi layar terkait akan diabaikan."
 
@@ -1832,6 +2018,9 @@ msgstr "Aktifkan Patch Tanpa Interlacing."
 
 msgid "Enable TV-like filtering / effects."
 msgstr "Aktifkan filter / efek visual ala layar TV jadul."
+
+msgid "Enable auto frameskipping for performance on lower-end systems."
+msgstr "Aktifkan frameskipping otomatis untuk perangkat spesifikasi rendah"
 
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "Aktifkan pemasangan cache. Dapat meningkatkan performa dan kompatibilitas pada beberapa game."
@@ -1893,6 +2082,9 @@ msgstr "Aktifkan untuk menampilkan indikator apakah mikrofon perangkat Anda seda
 msgid "Enable to show which screen layout with the configured sequence is active."
 msgstr "Aktifkan untuk menampilkan tata letak layar mana yang sedang aktif sesuai urutan yang diatur."
 
+msgid "Enable vertical sync to avoid tearing in some cases."
+msgstr "Aktifkan sinkronisasi vertikal untuk menghindari penyimpangan layar dalam beberapa kasus"
+
 msgid "Enabled"
 msgstr "Aktifkan"
 
@@ -1919,6 +2111,15 @@ msgstr "Inggris"
 
 msgid "English (Default)"
 msgstr "Inggris (Standar)"
+
+msgid "English (United Kingdom)"
+msgstr "Bahasa Inggris (Inggris Raya)"
+
+msgid "English (United States)"
+msgstr "Bahasa Inggris (Amerika Serikat)"
+
+msgid "English (us)"
+msgstr "Inggris (us)"
 
 msgid "English/Japanese"
 msgstr "Bahasa Inggris/Jepang"
@@ -2076,6 +2277,24 @@ msgstr "Kontrol Lompat Bingkai"
 msgid "FXAA"
 msgstr "FXAA"
 
+msgid "Falcon"
+msgstr "Falcon: Falcon (Model komputer Atari)"
+
+msgid "Falcon 4.0"
+msgstr "Falcon 4.0: Falcon 4.0"
+
+msgid "Falcon 4.02"
+msgstr "Falcon 4.02: Falcon 4.02"
+
+msgid "Falcon 4.04"
+msgstr "Falcon 4.04"
+
+msgid "Falcon AUTO"
+msgstr "Falcon OTOMATIS"
+
+msgid "Falcon ETOS 512k"
+msgstr "Falcon ETOS 512k"
+
 msgid "Famicom (FDS)"
 msgstr "Famicom (FDS)"
 
@@ -2100,6 +2319,12 @@ msgstr "Memenuhi layar tanpa memedulikan rasio aspek asli.Tidak berfungsi jika P
 msgid "Finland"
 msgstr "Finlandia"
 
+msgid "Finnish"
+msgstr "Bahasa Finlandia"
+
+msgid "Finnish (fi)"
+msgstr "Bahasa Finlandia (fi)"
+
 msgid "Fit 4:3 Aspect Ratio"
 msgstr "Sesuai Rasio Aspek 4:3"
 
@@ -2123,6 +2348,9 @@ msgstr "Memperbaiki kemungkinan bug dalam deteksi pengontrol"
 
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Flight Stick (3 Sumbu, 4 Tombol, 1 Hat)"
+
+msgid "Floppy Disk List"
+msgstr "Daftar Disket"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Aktifkan untuk permainan Gyro (terikat pada stik analog kiri)"
@@ -2162,6 +2390,15 @@ msgstr "Prancis"
 
 msgid "French"
 msgstr "Prancis"
+
+msgid "French (Canada)"
+msgstr "Bahasa Prancis (Kanada)"
+
+msgid "French (France)"
+msgstr "Bahasa Prancis (Prancis)"
+
+msgid "French (fr)"
+msgstr "Prancis (fr)"
 
 msgid "Frontend MIDI driver"
 msgstr "Driver MIDI Pengelola (Frontend)"
@@ -2340,6 +2577,9 @@ msgstr "Georgia (Negara / Nama font)"
 msgid "German"
 msgstr "Jerman"
 
+msgid "German (de)"
+msgstr "Jerman (de)"
+
 msgid "Germany"
 msgstr "Jerman"
 
@@ -2360,6 +2600,12 @@ msgstr "Abu-abu"
 
 msgid "Greece"
 msgstr "Yunani"
+
+msgid "Greek"
+msgstr "Greek"
+
+msgid "Greek (gk)"
+msgstr "Bahasa Yunani (gk)"
 
 msgid "Green"
 msgstr "Hijau"
@@ -2382,6 +2628,9 @@ msgstr "ARTEFAK HI-RES"
 msgid "HLE (Fastest)"
 msgstr "HLE (Cepat)"
 
+msgid "HLE (per-pixel)"
+msgstr "HLE (Per Piksel) (HLE: High-Level Emulation)"
+
 msgid "HQ (bilinear filter)"
 msgstr "HQ / Kualitas Tinggi (Filter Bilinear)"
 
@@ -2390,6 +2639,9 @@ msgstr "Peretasan. meningkatkan kebanyakan games PAL' kecepatan dengan 17%"
 
 msgid "Hebrew"
 msgstr "Bahasa Ibrani"
+
+msgid "Help and Information"
+msgstr "Bantuan dan Informasi"
 
 msgid "Help games which are too quick or that have bugs."
 msgstr "Bantu game yang terlalu cepat atau yang memiliki bug."
@@ -2402,6 +2654,9 @@ msgstr "Hercules"
 
 msgid "Hermite"
 msgstr "Hermite"
+
+msgid "Hide"
+msgstr "Sembunyikan"
 
 msgid "Hides borders on many games. Some games use the borders."
 msgstr "Sembunyikan batas untuk banyak game. Beberapa game menggunakan borders"
@@ -2427,6 +2682,12 @@ msgstr "Horizontal"
 msgid "How the window space is distributed between the screens."
 msgstr "Bagaimana ruang layar di-distribusikan antar tampilan"
 
+msgid "Hungarian"
+msgstr "Bahasa Hungaria"
+
+msgid "Hungarian (hg)"
+msgstr "Bahasa Hungaria (hg)"
+
 msgid "Hungary"
 msgstr "Hungaria"
 
@@ -2447,6 +2708,9 @@ msgstr "Ubershaders Hibrida"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier (Jenis pistol mainan/lightgun jadul)"
+
+msgid "IDE (Default)"
+msgstr "IDE (Bawaan) (Jenis koneksi hard disk)"
 
 msgid "IMPROVED BANDING"
 msgstr "Perbaikan Efek Garis Warna (Banding)"
@@ -2487,6 +2751,9 @@ msgstr "Jika tidak ada yang ditentukan, ZTranslate akan digunakan secara default
 msgid "Ignored with 'Cycle-exact'."
 msgstr "Abaikan dengan 'Cycle-exact'."
 
+msgid "Immediate"
+msgstr "Segera / Langsung"
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "Tingkatkan Akurasi Audio (Dalam Uji Coba)"
 
@@ -2517,6 +2784,9 @@ msgstr "India"
 msgid "Indonesia"
 msgstr "Indonesia"
 
+msgid "Indonesian"
+msgstr "Bahasa Indonesia"
+
 msgid "Inserts CD during boot animation prevent loading fail."
 msgstr "Memasukkan CD selama animasi booting mencegah pemuatan gagal."
 
@@ -2543,6 +2813,9 @@ msgstr "Israel"
 
 msgid "Italian"
 msgstr "Italia"
+
+msgid "Italian (it)"
+msgstr "Italia (it)"
 
 msgid "Italy"
 msgstr "Italia"
@@ -2720,6 +2993,9 @@ msgstr "BATASI FRAME RATE"
 
 msgid "LINEAR UPSCALING"
 msgstr "Peningkatan Ukuran Skala Linear (Linear Upscaling)"
+
+msgid "LLE"
+msgstr "LLE (Low-Level Emulation / Emulation tingkat rendah yang lebih akurat)"
 
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "MUAT KOSTUM TEXTURES"
@@ -2931,6 +3207,24 @@ msgstr "Sedang"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "Mega ST"
+msgstr "Mega ST (Model komputer Atari)"
+
+msgid "Mega STE"
+msgstr "Mega STE"
+
+msgid "Mega STE 2.05"
+msgstr "Mega STE 2.05"
+
+msgid "Mega STE 2.06"
+msgstr "Mega STE 2.06"
+
+msgid "Mega STE AUTO"
+msgstr "Mega STE OTOMATIS"
+
+msgid "Mega STE ETOS 256k"
+msgstr "Mega STE ETOS 256k"
+
 msgid "MegaSD"
 msgstr "MegaSD"
 
@@ -2966,6 +3260,9 @@ msgstr "Hitam Putih / Monokrom"
 
 msgid "Monochrome (Blargg)"
 msgstr "Monochrome (Blargg)"
+
+msgid "Monochrome High-Resolution"
+msgstr "Monokrom Resolusi Tinggi"
 
 msgid "More accurate emulation, but slower."
 msgstr "Emulasi akurasi lebih akurat, tapi lamban"
@@ -3030,6 +3327,9 @@ msgstr "MODE NEW 3DS"
 msgid "NTSC (Composite)"
 msgstr "NTSC (Komposit) (Sinyal video TV jadul)"
 
+msgid "NTSC (Default)"
+msgstr "NTSC (Standar)"
+
 msgid "NTSC (NES)"
 msgstr "NTSC (NES)"
 
@@ -3056,6 +3356,9 @@ msgstr "Rasio Layar NTSC"
 
 msgid "NTSC FILTER"
 msgstr "NTSC FILTER"
+
+msgid "NTSC TV"
+msgstr "TV NTSC"
 
 msgid "NTSC aspect ratio correction. Core default (PAR)."
 msgstr "Perbaikan rasio aspek NTSC. Bawaan sistem (PAR)."
@@ -3117,6 +3420,9 @@ msgstr "Nestopia (RGB)"
 msgid "Netherlands"
 msgstr "Netherlands (Belanda)"
 
+msgid "Netherlands (nl)"
+msgstr "Belanda (nl)"
+
 msgid "Never"
 msgstr "Jangan Pernah"
 
@@ -3134,6 +3440,9 @@ msgstr "Tanpa Penyangga (No Buffer)"
 
 msgid "No EMS/XMS"
 msgstr "No EMS/XMS"
+
+msgid "No Indicator"
+msgstr "Tanpa Indikator"
 
 msgid "No Limit"
 msgstr "Tanpa Batas"
@@ -3164,6 +3473,15 @@ msgstr "Normal（Penerjemah)"
 
 msgid "Norway"
 msgstr "Norwagia"
+
+msgid "Norwegian"
+msgstr "Bahasa Norwegia"
+
+msgid "Norwegian (Bokmaal)"
+msgstr "Bahasa Norwegia (Bokmal)"
+
+msgid "Norwegian (no)"
+msgstr "Bahasa Norwegia (no)"
 
 msgid "Not all games support 3D pad."
 msgstr "Tidak Semua Game Mendukung 3D Pad"
@@ -3333,6 +3651,9 @@ msgstr "PAL 576x312px"
 msgid "PAL ASPECT"
 msgstr "Rasio Layar PAL"
 
+msgid "PAL TV"
+msgstr "TV PAL"
+
 msgid "PAL aspect ratio correction. Core default (PAR)."
 msgstr "Perbaikan rasio aspek PAL. Bawaan sistem (PAR)."
 
@@ -3342,11 +3663,20 @@ msgstr "PAL60"
 msgid "PALETTE COLORS"
 msgstr "Warna Palet"
 
+msgid "PAL_M"
+msgstr "PAL_M"
+
+msgid "PAL_N"
+msgstr "PAL_N"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1 (Pixel Aspect Ratio)"
 
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "Peningkat Ukuran (Upscaler) Parallel-RDP"
+
+msgid "PAUSE SCREEN DISPLAY"
+msgstr "TAMPILAN LAYAR JEDA (PAUSE)"
 
 msgid "PCE Joypad"
 msgstr "Joypad PCE"
@@ -3492,6 +3822,9 @@ msgstr "Penunjuk / Pointer"
 msgid "Poland"
 msgstr "Polandia"
 
+msgid "Poland (pl)"
+msgstr "Polandia (pl)"
+
 msgid "Polish"
 msgstr "Bahasa Polandia"
 
@@ -3521,6 +3854,12 @@ msgstr "Portugal"
 
 msgid "Portuguese"
 msgstr "Portugis"
+
+msgid "Portuguese (Brazil)"
+msgstr "Bahasa Portugis (Brasil)"
+
+msgid "Portuguese (Portugal)"
+msgstr "Bahasa Portugis (Portugal)"
 
 msgid "Position of wii sensor bar relative to the disaply for real wiimotes."
 msgstr "Posisi sensor bar Wii terhadap layar untuk penggunaan Wiimote asli."
@@ -3572,6 +3911,9 @@ msgstr "RENDER / PERUPAAN"
 
 msgid "RENDER DUPLICATE FRAMES TO 60 HZ"
 msgstr "RENDER BINGKAI DUPLIKAT KE 60 HZ"
+
+msgid "RENDER MODE"
+msgstr "MODE RENDER"
 
 msgid "RENDER RESOLUTION (SCALING)"
 msgstr "RESOLUSI RENDER (PENYESUAIAN SKALA)"
@@ -3687,6 +4029,9 @@ msgstr "Roland MT-32/CM-32L (Modul suara/MIDI jadul)"
 msgid "Romania"
 msgstr "Rumania"
 
+msgid "Romanian"
+msgstr "Bahasa Rumania"
+
 msgid "Rotate the screen, useful for certain vertical gameplay homebrews."
 msgstr "Putar layar, berguna untuk gameplay homebrew vertikal tertentu."
 
@@ -3708,6 +4053,9 @@ msgstr "Russia"
 msgid "Russian"
 msgstr "Rusia"
 
+msgid "Russian (ru)"
+msgstr "Rusia (ru)"
+
 msgid "S-Video"
 msgstr "S-Video (Jenis kabel video)"
 
@@ -3728,6 +4076,12 @@ msgstr "MODE PENYESUAIAN SKALA (SCALER)"
 
 msgid "SCALING MODE"
 msgstr "MODE SKALA"
+
+msgid "SCREEN BORDERS"
+msgstr "BINGKAI LAYAR"
+
+msgid "SCREEN FILTER"
+msgstr "FILTER LAYAR"
 
 msgid "SCREEN FILTERING"
 msgstr "PENYARINGAN LAYAR"
@@ -3857,6 +4211,12 @@ msgstr "SPU DECODER"
 
 msgid "SPU LOOP DETECTION"
 msgstr "DETEKSI PENGULANGAN (LOOP) SPU"
+
+msgid "ST"
+msgstr "ST (Model komputer Atari)"
+
+msgid "STE"
+msgstr "STE (Model komputer Atari)"
 
 msgid "STEREO SOUND"
 msgstr "SUARA STEREO"
@@ -4080,6 +4440,9 @@ msgstr "Menghaluskan tekstur pada objek 3D."
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Menghaluskan keseluruhan gambar yang ditampilkan di layar.Memperbaiki penyelarasan posisi antar piksel."
 
+msgid "Snow"
+msgstr "Efek Salju / Semut (Efek bintik statis TV jadul)"
+
 msgid "Software"
 msgstr "Perangkat Lunak"
 
@@ -4122,6 +4485,15 @@ msgstr "Spanyol"
 msgid "Spanish"
 msgstr "Spanyol"
 
+msgid "Spanish (Latin America)"
+msgstr "Bahasa Spanyol (Amerika Latin)"
+
+msgid "Spanish (Spain)"
+msgstr "Bahasa Spanyol (Spanyol)"
+
+msgid "Spanish (es)"
+msgstr "Spanyol (es)"
+
 msgid "Special 1"
 msgstr "Spesial 1"
 
@@ -4137,11 +4509,17 @@ msgstr "Spesial 4 (TI-83 Legacy)"
 msgid "Speed hack for dual core mode to fix some glitches."
 msgstr "Retas kecepatan untuk mode dual core untuk memperbaiki beberapa glitches."
 
+msgid "Speed hack, enable to disable surface syncing between CPU and GPU. Surface syncing is needed by a few games."
+msgstr "Modifikasi kecepatan (speed hack);aktifkan untuk mematikan sinkronisasi permukaan (surface syncing) antara CPU dan GPU.Fitur ini hanya dibutuhkan oleh beberapa game tertentu."
+
 msgid "Speed up shader compilation."
 msgstr "Percepat Kompilasi Shader"
 
 msgid "Speeds up file loading. Some games won't load with this."
 msgstr "Percepat pemuatan file. beberapa game tidak dapat dimuat"
+
+msgid "Square Pixels"
+msgstr "Piksel Kotak (Square Pixels)"
 
 msgid "Square pixel"
 msgstr "Pixel persegi"
@@ -4215,6 +4593,15 @@ msgstr "Swedia"
 msgid "Swedish"
 msgstr "Bahasa Swedia"
 
+msgid "Swedish (se)"
+msgstr "Swedia (se)"
+
+msgid "Swiss French (ch)"
+msgstr "Bahasa Prancis Swiss (ch)"
+
+msgid "Swiss German (ch)"
+msgstr "Bahasa Jerman Swiss (ch)"
+
 msgid "Switzerland"
 msgstr "Swiss"
 
@@ -4281,6 +4668,9 @@ msgstr "AMBANG BATAS PENGULURAN WAKTU AUDIO (TIME STRETCHING)"
 msgid "TIMED AXIS INTERVALS"
 msgstr "JEDA WAKTU SUMBU"
 
+msgid "TOS languages."
+msgstr "TOS Bahasa."
+
 msgid "TOUCH MODE"
 msgstr "MODE SENTUH"
 
@@ -4295,6 +4685,21 @@ msgstr "PENYARINGAN TRILINEAR"
 
 msgid "TRUE COLOR RENDERING"
 msgstr "PERUPAAN WARNA ASLI (TRUE COLOR RENDERING)"
+
+msgid "TT"
+msgstr "TT (Model komputer Atari)"
+
+msgid "TT 3.06"
+msgstr "TT 3.06"
+
+msgid "TT AUTO"
+msgstr "TT OTOMATIS"
+
+msgid "TT ETOS 512k"
+msgstr "TT ETOS 512k"
+
+msgid "TV"
+msgstr "TV"
 
 msgid "TV EFFECTS"
 msgstr "EFEK LAYAR TV"
@@ -4316,6 +4721,9 @@ msgstr "Taiwan"
 
 msgid "Tandy"
 msgstr "Tandy"
+
+msgid "Thai"
+msgstr "Bahasa Thailand"
 
 msgid "Thailand"
 msgstr "Thailand"
@@ -4410,6 +4818,12 @@ msgstr "Tunisia"
 msgid "Turkey"
 msgstr "Tiruki"
 
+msgid "Turkish"
+msgstr "Turki"
+
+msgid "Turkish (tr)"
+msgstr "Bahasa Turki (tr)"
+
 msgid "Turquoise"
 msgstr "Pirus / Toska"
 
@@ -4443,6 +4857,9 @@ msgstr "US"
 msgid "USA"
 msgstr "Amerika"
 
+msgid "USA (Default)"
+msgstr "USA (Standar)"
+
 msgid "USE DSP AUDIO"
 msgstr "GUNAKAN AUDIO DSP"
 
@@ -4457,6 +4874,9 @@ msgstr "GUNAKAN SOFTWARE RENDERING"
 
 msgid "Ukraine"
 msgstr "Ukraina"
+
+msgid "Ukrainian"
+msgstr "Bahasa Ukraina"
 
 msgid "Ultra"
 msgstr "Ultra / Maksimal"
@@ -4566,6 +4986,9 @@ msgstr "ROTASI VERTIKAL（KEADAAN"
 msgid "VGA"
 msgstr "VGA"
 
+msgid "VGA (Default)"
+msgstr "VGA (Standar)"
+
 msgid "VIDEO FILTERS"
 msgstr "FILTER VIDEO"
 
@@ -4595,6 +5018,9 @@ msgstr "Sangat Tinggi"
 
 msgid "Vietnam"
 msgstr "Vietnam"
+
+msgid "Vietnamese"
+msgstr "Bahasa Vietnam"
 
 msgid "Vulkan"
 msgstr "Vulkan"

@@ -25,6 +25,10 @@
 #include "stella/StellaGenerator.h"
 #include "supermodel/SupermodelGenerator.h"
 #include "ymir/YmirGenerator.h"
+#include "vita3k/Vita3KGenerator.h"
+#include "shadps4/ShadPS4Generator.h"
+#include "redream/RedreamGenerator.h"
+#include "hatari/HatariGenerator.h"
 #include "util/YamlFile.h"
 
 #include <pugixml.hpp>
@@ -39,6 +43,20 @@ using es::launcher::util::YamlFile;
 
 namespace
 {
+	// prepare() refuses to start the game
+	bool refused(const LaunchContext& ctx)
+	{
+		try
+		{
+			Launch(ctx).prepare();
+		}
+		catch (const LaunchError&)
+		{
+			return true;
+		}
+		return false;
+	}
+
 	bool contains(const std::vector<std::string>& argv, std::string_view word)
 	{
 		return std::ranges::find(argv, word) != argv.end();
@@ -973,6 +991,140 @@ static void testScummVM()
 	CHECK(scummvm::ScummVMGenerator::arguments(ctx).back() == "--auto-detect");
 }
 
+static void testVita3K()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "Vita3K", "#!/bin/sh\n", true);
+	fs::path config = tmp.path / "emulators" / "vita3k" / "config.yml";
+	writeFile(config, "---\nlle-modules:\n  - libfoo\nbackend-renderer: Vulkan\n...\n");
+
+	LaunchContext ctx = makeContext(tmp.path, "vita3k", "psvita", "/roms/psvita/Persona 4 Golden [PCSG00004].zip");
+	ctx.settings = Settings({}, { { "vita3k_resolution", ".5" }, { "vita3k_vsync", "0" } }, {});
+	Command cmd = Launch(ctx).prepare();
+	// not installed yet: Vita3K installs the file
+	CHECK(cmd.argv.back() == "/roms/psvita/Persona 4 Golden [PCSG00004].zip");
+	CHECK(contains(cmd.argv, "-c"));
+
+	YamlFile yaml = YamlFile::load(config);
+	CHECK(yaml.get({ "pref-path" }) == (tmp.path / "saves" / "psvita").string());
+	CHECK(yaml.get({ "resolution-multiplier" }) == "0.5");
+	CHECK(yaml.get({ "v-sync" }) == "false");
+	CHECK(yaml.get({ "backend-renderer" }) == "Vulkan");   // the player's choice is kept
+	CHECK(yaml.toString().find("  - libfoo") != std::string::npos);
+
+	// installed: started by its title id
+	fs::create_directories(tmp.path / "saves" / "psvita" / "ux0" / "app" / "PCSG00004");
+	cmd = Launch(ctx).prepare();
+	CHECK(cmd.argv[cmd.argv.size() - 2] == "-r");
+	CHECK(cmd.argv.back() == "PCSG00004");
+	CHECK(vita3k::Vita3KGenerator::titleId("Game") == "");
+}
+
+static void testShadPS4()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "shadps4", "#!/bin/sh\n", true);
+	fs::path game = tmp.path / "roms" / "ps4" / "Bloodborne";
+	writeFile(game / "eboot.bin", "");
+	fs::path config = tmp.path / "emulators" / "shadps4" / "shadPS4" / "config.json";
+	writeFile(config, R"({"General": {"volume_slider": 80}, "Keys": "kept"})");
+
+	LaunchContext ctx = makeContext(tmp.path, "shadps4", "ps4", game);
+	ctx.settings = Settings({}, { { "shadps4_present_mode", "Fifo" }, { "shadps4_neo_mode", "1" } }, {});
+	Command cmd = Launch(ctx).prepare();
+	CHECK(cmd.argv[1] == "--game");
+	CHECK(cmd.argv[2] == (game / "eboot.bin").string());
+	CHECK(cmd.env["XDG_DATA_HOME"] == (tmp.path / "emulators" / "shadps4").string());
+	CHECK(fs::is_directory(tmp.path / "emulators" / "shadps4" / "shadPS4" / "input_config"));
+
+	std::string json = readFile(config);
+	CHECK(json.find("\"volume_slider\": 80") != std::string::npos);
+	CHECK(json.find("\"Keys\": \"kept\"") != std::string::npos);
+	CHECK(json.find("\"present_mode\": \"Fifo\"") != std::string::npos);
+	CHECK(json.find("\"neo_mode\": true") != std::string::npos);
+	CHECK(json.find("\"path\": \"" + (tmp.path / "roms" / "ps4").string() + "\"") != std::string::npos);
+
+	// a file inside the game folder, a .zar
+	CHECK(shadps4::ShadPS4Generator::gameFile(game / "Bloodborne.ps4") == game / "eboot.bin");
+	CHECK(shadps4::ShadPS4Generator::gameFile("/roms/ps4/Game.ZAR") == "/roms/ps4/Game.ZAR");
+
+	ctx.architecture = Architecture::AArch64;
+	CHECK(refused(ctx));
+}
+
+static void testRedream()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "redream", "#!/bin/sh\n", true);
+	fs::path home = tmp.path / "emulators" / "redream";
+	writeFile(home / "redream.cfg", "volume=50\nres=1\nport0=dev:9,desc:old,type:controller\n");
+
+	LaunchContext ctx = makeContext(tmp.path, "redream", "dreamcast", "/roms/dreamcast/Crazy Taxi.chd");
+	ctx.controllers = { makePad(1, 0), makePad(2, 1) };
+	ctx.settings = Settings({}, { { "redreamRender", "hle_perpixel" } }, {});
+	Command cmd = Launch(ctx).prepare();
+	CHECK(cmd.argv[0] == (home / "redream").string());
+	CHECK(fs::exists(home / "redream"));
+	CHECK(cmd.argv[1] == "/roms/dreamcast/Crazy Taxi.chd");
+
+	std::string cfg = readFile(home / "redream.cfg");
+	CHECK(cfg.find("volume=50\n") != std::string::npos);    // the player's line
+	CHECK(cfg.find("res=1") == std::string::npos);           // ES's setting replaces it
+	CHECK(cfg.find("res=2\n") != std::string::npos);
+	CHECK(cfg.find("desc:old") == std::string::npos);
+	CHECK(cfg.find("port1=dev:5,desc:030000005e0400008e02000010010000,type:controller\n") != std::string::npos);
+	CHECK(cfg.find("renderer=gl_hle_perpixel\n") != std::string::npos);
+	// one profile for the two pads of the same model
+	CHECK(cfg.find("profile0=") != std::string::npos);
+	CHECK(cfg.find("profile1=") == std::string::npos);
+
+	std::string profile = redream::RedreamGenerator::padProfile(makePad(1, 0), 0);
+	CHECK(profile.find(",b:joy0,") != std::string::npos);    // ES "a" is the Dreamcast B
+	CHECK(profile.find(",rtrig:+axis5,") != std::string::npos);
+	CHECK(profile.find(",dpad_left:hat2,") != std::string::npos);
+	CHECK(profile.find(",ljoy_up:-axis1,") != std::string::npos);
+	CHECK(profile.ends_with(",exit:f10"));
+}
+
+static void testHatari()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "hatari", "#!/bin/sh\n", true);
+	fs::path config = tmp.path / "emulators" / "hatari" / "hatari.cfg";
+	writeFile(config, "[Joystick3]\nnJoyId = 2\nnJoystickMode = 1\n");
+
+	LaunchContext ctx = makeContext(tmp.path, "hatari", "atarist", "/roms/atarist/Dungeon Master.st");
+	ctx.settings = Settings({}, { { "model", "1040ste_auto" }, { "language", "fr" } }, {});
+	CHECK(refused(ctx));   // no TOS
+
+	writeFile(tmp.path / "bios" / "tos162us.img", "");
+	writeFile(tmp.path / "bios" / "tos106fr.img", "");
+	Command cmd = Launch(ctx).prepare();
+	CHECK(contains(cmd.argv, "ste"));
+	// EmuTOS, then 1.62, then 1.06: the best version before the language
+	CHECK(contains(cmd.argv, (tmp.path / "bios" / "tos162us.img").string()));
+	CHECK(cmd.argv[cmd.argv.size() - 4] == "--disk-a");
+
+	IniFile ini = IniFile::load(config);
+	CHECK(ini.get("Joystick3", "nJoyId") == "-1");
+	CHECK(ini.get("Joystick1", "nJoyId") == "0");
+	CHECK(ini.get("Joystick1", "nJoyBut1Index") == "3");   // ES "y"
+	CHECK(ini.get("Log", "bConfirmQuit") == "FALSE");
+
+	CHECK((hatari::HatariGenerator::model("falcon_404") == std::pair<std::string, std::string>("falcon", "404")));
+	CHECK((hatari::HatariGenerator::model("falcon_999") == std::pair<std::string, std::string>("st", "auto")));
+
+	ctx.game.rom = "/roms/atarist/Disk.hd";
+	ctx.settings = Settings({}, { { "hatari_drive", "ACSI" } }, {});
+	writeFile(tmp.path / "bios" / "tos104uk.img", "");
+	cmd = Launch(ctx).prepare();
+	CHECK(cmd.argv[cmd.argv.size() - 2] == "--acsi");
+}
+
 void tests::runStandaloneTests()
 {
 	testIniFile();
@@ -997,4 +1149,8 @@ void tests::runStandaloneTests()
 	testStella();
 	testDosboxStaging();
 	testScummVM();
+	testVita3K();
+	testShadPS4();
+	testRedream();
+	testHatari();
 }

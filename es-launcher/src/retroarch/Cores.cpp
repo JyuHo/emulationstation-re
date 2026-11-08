@@ -1186,6 +1186,78 @@ namespace es::launcher::retroarch
 		}
 	};
 
+	// hatariB, the newer Atari ST core
+	class Hatarib : public Core
+	{
+		static std::string extension(const LaunchContext& ctx)
+		{
+			std::string ext = ctx.game.rom.extension().string();
+			std::ranges::transform(ext, ext.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+			return ext;
+		}
+
+		static bool hardDisk(const LaunchContext& ctx)
+		{
+			std::string ext = extension(ctx);
+			return ext == ".hd" || ext == ".gemdos";
+		}
+
+	public:
+		// a hard disk is not given as the content: the core finds it in its system folder
+		std::filesystem::path romArgument(const LaunchContext& ctx) const override
+		{
+			return hardDisk(ctx) ? std::filesystem::path() : ctx.game.rom;
+		}
+
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			o.set("hatarib_statusbar", "0");
+			o.set("hatarib_fast_floppy", "1");
+			o.set("hatarib_show_welcome", "0");
+			o.set("hatarib_tos", "<etos1024k>");
+			option(ctx, o, "hatarib_machine", "0");
+			option(ctx, o, "hatarib_emutos_region", "hatarib_language", "-1");
+			option(ctx, o, "hatarib_monitor", "1");
+			option(ctx, o, "hatarib_cpu", "-1");
+			option(ctx, o, "hatarib_cpu_clock", "-1");
+			option(ctx, o, "hatarib_memory", "1024");
+			option(ctx, o, "hatarib_pause_osk", "hatarib_pause", "2");
+			option(ctx, o, "hatarib_aspect", "hatarib_ratio", "0");
+			option(ctx, o, "hatarib_borders", "0");
+
+			// RetroArch only lets the core open hard disks in its system folder (the BIOS
+			// folder): bios/hatarib/hdd is a link to the game
+			std::filesystem::path link = ctx.paths.bios / "hatarib" / "hdd";
+			std::error_code ec;
+			std::filesystem::remove(link, ec);
+			if (hardDisk(ctx))
+			{
+				std::filesystem::create_directories(link.parent_path(), ec);
+				std::filesystem::create_symlink(ctx.game.rom, link, ec);
+				o.set("hatarib_hardimg", "hatarib/hdd");
+				o.set("hatarib_hardboot", "1");
+				if (extension(ctx) == ".hd")
+				{
+					std::string drive = settingOr(ctx, "hatarib_drive", "");
+					o.set("hatarib_hardtype", drive == "ACSI" ? "2" : drive == "SCSI" ? "3" : "4");
+					o.set("hatarib_hard_readonly", "1");
+				}
+				else
+				{
+					o.set("hatarib_hardtype", "0");
+					o.set("hatarib_hard_readonly", "0");
+				}
+			}
+			else
+			{
+				o.remove("hatarib_hardimg");
+				o.set("hatarib_hardtype", "0");
+				o.set("hatarib_hardboot", "0");
+				o.set("hatarib_hard_readonly", "1");
+			}
+		}
+	};
+
 	class Handy : public Core
 	{
 	public:
@@ -1582,6 +1654,7 @@ namespace es::launcher::retroarch
 			m.emplace("mame2003_plus", std::make_unique<Mame2003Plus>());
 			m.emplace("neocd", std::make_unique<Neocd>());
 			m.emplace("stella", std::make_unique<Stella>());
+			m.emplace("hatarib", std::make_unique<Hatarib>());
 			m.emplace("handy", std::make_unique<Handy>());
 			m.emplace("virtualjaguar", std::make_unique<VirtualJaguar>());
 			m.emplace("opera", std::make_unique<Opera>());

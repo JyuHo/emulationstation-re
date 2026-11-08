@@ -36,6 +36,9 @@ msgstr "0.8x"
 msgid "0.9x"
 msgstr "0.9x"
 
+msgid "1 MB"
+msgstr "1 MB"
+
 msgid "1 second"
 msgstr "1 giây"
 
@@ -99,6 +102,9 @@ msgstr "1.75x Native"
 msgid "1.8x (22.50Mhz)"
 msgstr "1.8x (22.50Mhz)"
 
+msgid "10 MB"
+msgstr "10 MB"
+
 msgid "10 seconds"
 msgstr "10 giây"
 
@@ -107,6 +113,18 @@ msgstr "100% (Mặc định)"
 
 msgid "1024kB"
 msgstr "1024kb"
+
+msgid "1040 STE 1.06"
+msgstr "1040 STE 1.06"
+
+msgid "1040 STE 1.62"
+msgstr "1040 STE 1.62"
+
+msgid "1040 STE AUTO"
+msgstr "1040 STE AUTO"
+
+msgid "1040 STE ETOS 256k"
+msgstr "1040 STE ETOS 256k"
 
 msgid "10th"
 msgstr "10"
@@ -135,6 +153,9 @@ msgstr "12"
 msgid "13th"
 msgstr "13"
 
+msgid "14 MB"
+msgstr "14 MB"
+
 msgid "14.18 MHz (A1200 speed)"
 msgstr "14.18 MHz (A1200 speed)"
 
@@ -158,6 +179,9 @@ msgstr "15s"
 
 msgid "15th"
 msgstr "15"
+
+msgid "16 MHz"
+msgstr "16 MHz"
 
 msgid "16384kB"
 msgstr "16384kb"
@@ -195,6 +219,9 @@ msgstr "18"
 msgid "19th"
 msgstr "19"
 
+msgid "1M"
+msgstr "1M"
+
 msgid "1st"
 msgstr "1"
 
@@ -216,6 +243,9 @@ msgstr "1x native (320x240)"
 msgid "1x native (640x528)"
 msgstr "1x native (640x528)"
 
+msgid "2 MB"
+msgstr "2 MB"
+
 msgid "2 seconds"
 msgstr "2 giây"
 
@@ -233,6 +263,9 @@ msgstr "2.25x (1440x1080)"
 
 msgid "2.25x Native"
 msgstr "2.25x Native"
+
+msgid "2.5 MB"
+msgstr "2.5 MB"
 
 msgid "2.5x (1600x1200)"
 msgstr "2.5x (1600x1200)"
@@ -318,6 +351,9 @@ msgstr "28"
 msgid "29th"
 msgstr "29"
 
+msgid "2M"
+msgstr "2M"
+
 msgid "2P GAMEPAD MAPPING (KEYRAH)"
 msgstr "2P GAMEPAD MAPPING (KEYRAH)"
 
@@ -329,6 +365,9 @@ msgstr "2"
 
 msgid "2nd Joystick (2 Axes, 2 Btns)"
 msgstr "Joystick 2 (2 Axes, 2 Btns)"
+
+msgid "2x (1280x960) (Default)"
+msgstr "2x (1280x960) (mặc định)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -381,6 +420,9 @@ msgstr "30"
 msgid "31st"
 msgstr "31"
 
+msgid "32 MHz"
+msgstr "32 MHz"
+
 msgid "32MB"
 msgstr "32MB"
 
@@ -422,6 +464,9 @@ msgstr "3x Native (~1080p)"
 
 msgid "3x native (768 x 576)"
 msgstr "3x native (768 x 576)"
+
+msgid "4 MB"
+msgstr "4 MB"
 
 msgid "4 PLAYER ADAPTER"
 msgstr "BỘ CHUYỂN ĐỔI 4 NGƯỜI CHƠI"
@@ -467,6 +512,9 @@ msgstr "ĐỘ PHÂN GIẢI KẾT XUẤT 4:3"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4M"
+msgstr "4M"
 
 msgid "4MB"
 msgstr "4MB"
@@ -515,6 +563,24 @@ msgstr "5120MB"
 
 msgid "512kB (1750)"
 msgstr "512kb (1750)"
+
+msgid "520 ST AUTO"
+msgstr "520 ST AUTO"
+
+msgid "520 ST EMUTOS 256k"
+msgstr "520 ST EMUTOS 256k"
+
+msgid "520 ST TOS 1.00"
+msgstr "520 ST TOS 1.00"
+
+msgid "520 ST TOS 1.02"
+msgstr "520 ST TOS 1.02"
+
+msgid "520 ST TOS 1.04"
+msgstr "520 ST TOS 1.04"
+
+msgid "520K"
+msgstr "520K"
 
 msgid "56.75 MHz"
 msgstr "56.75 MHz"
@@ -585,6 +651,12 @@ msgstr "7x Native (~2520p)"
 msgid "7x native (1792 x 1344)"
 msgstr "7x native (1792 x 1344)"
 
+msgid "8 MB"
+msgstr "8 MB"
+
+msgid "8 MHz"
+msgstr "8 MHz"
+
 msgid "8086/8088, 4.77MHz (315 cps)"
 msgstr "8086/8088, 4.77MHz (315 cps)"
 
@@ -644,6 +716,9 @@ msgstr "A500+ (chip 1MB)"
 
 msgid "A600 (2MB Chip + 8MB Fast)"
 msgstr "A600 (chip 2MB + 8MB nhanh)"
+
+msgid "ACSI"
+msgstr "ACSI"
 
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "CỐ ĐỊNH THIẾT BỊ ĐẦU VÀO HOẠT ĐỘNG"
@@ -713,6 +788,24 @@ msgstr "BIÊN DỊCH SHADER BẤT ĐỒNG BỘ (CHỈ VULKAN)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "ASYNCHRONOUS TEXTURE STREAMING"
+
+msgid "ATARI CPU CLOCK RATE"
+msgstr "TỐC ĐỘ ĐỒNG HỒ CPU ATARI"
+
+msgid "ATARI CPU TYPE"
+msgstr "LOẠI CPU ATARI"
+
+msgid "ATARI HARD DRIVE TYPE"
+msgstr "LOẠI Ổ CỨNG ATARI"
+
+msgid "ATARI MACHINE TYPE"
+msgstr "LOẠI MÁY ATARI"
+
+msgid "ATARI MONITOR TYPE"
+msgstr "LOẠI MÀN HÌNH ATARI"
+
+msgid "ATARI ST MEMORY SIZE"
+msgstr "KÍCH THƯỚC BỘ NHỚ ATARI ST"
 
 msgid "ATARI SYSTEM"
 msgstr "HỆ THỐNG ATARI"
@@ -855,6 +948,9 @@ msgstr "Gần đúng (Nhanh)"
 msgid "April"
 msgstr "Tháng 4"
 
+msgid "Arabic (ar)"
+msgstr "Tiếng Ả Rập (ar)"
+
 msgid "Arcade MVS Europe"
 msgstr "Arcade MVS Europe"
 
@@ -884,6 +980,12 @@ msgstr "Như là"
 
 msgid "As game specifies"
 msgstr "Như trò chơi chỉ định"
+
+msgid "Atari Monitor"
+msgstr "Màn hình Atari"
+
+msgid "Atari ST monitors had a visible border around the main screen area, but most software does not display anything in it."
+msgstr "Màn hình Atari ST có đường viền hiển thị xung quanh khu vực màn hình chính, nhưng hầu hết phần mềm không hiển thị bất kỳ thứ gì trong đó."
 
 msgid "August"
 msgstr "Tháng 8"
@@ -968,6 +1070,9 @@ msgstr "ĐỘ CHÍNH XÁC PHA TRỘN"
 
 msgid "BOOT ANIMATION FIRST"
 msgstr "HÌNH ẢNH KHỞI ĐỘNG ĐẦU TIÊN"
+
+msgid "BROADCAST"
+msgstr "BROADCAST"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (được khuyến nghị cho tất cả các trò chơi do Hoa Kỳ phát triển)"
@@ -1074,8 +1179,14 @@ msgstr "Chỉ bên dưới"
 msgid "Bottom only"
 msgstr "Chỉ bên dưới"
 
+msgid "Bouncing Box"
+msgstr "Bouncing Box"
+
 msgid "Brazil"
 msgstr "Brazil"
+
+msgid "British English (uk)"
+msgstr "Anh Anh (uk)"
 
 msgid "Brown"
 msgstr "Nâu"
@@ -1109,6 +1220,9 @@ msgstr "C64 PAL"
 
 msgid "C64 PAL Automatic"
 msgstr "C64 PAL Tự động"
+
+msgid "CABLE"
+msgstr "CÁP"
 
 msgid "CD ADD-ON"
 msgstr "CD ADD-ON"
@@ -1323,6 +1437,15 @@ msgstr "Trung Quốc"
 msgid "Chinese (Mandarin)"
 msgstr "Tiếng Trung (tiếng Quan thoại)"
 
+msgid "Chinese (Simplified)"
+msgstr "Trung Quốc (Giản thể)"
+
+msgid "Choose broadcast standard (for older TV's)."
+msgstr "Chọn tiêu chuẩn phát sóng (đối với TV cũ)."
+
+msgid "Choose cable type for the TV."
+msgstr "Chọn loại cáp cho TV."
+
 msgid "Choose downscaling method."
 msgstr "Chọn phương pháp giảm cấp."
 
@@ -1353,11 +1476,41 @@ msgstr "Chọn thư viện API đồ họa nào sẽ sử dụng."
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "Chọn thư viện API đồ họa nào sẽ sử dụng. Vulkan có thể không hoạt động với mọi lõi."
 
+msgid "Choose your Atari hard drive type for the .hd extension file."
+msgstr "Chọn loại ổ cứng Atari của bạn cho tệp mở rộng .hd."
+
+msgid "Choose your desired Atari CPU clock rate."
+msgstr "Chọn tốc độ đồng hồ CPU ATARI mong muốn của bạn."
+
+msgid "Choose your desired Atari CPU type."
+msgstr "Chọn loại CPU Atari mong muốn của bạn."
+
+msgid "Choose your desired Atari Monitor."
+msgstr "Chọn Màn hình Atari mong muốn của bạn."
+
+msgid "Choose your desired Atari ST memory size."
+msgstr "Chọn kích thước bộ nhớ Atari ST mong muốn của bạn."
+
+msgid "Choose your desired Atari machine type."
+msgstr "Chọn loại máy Atari mong muốn của bạn."
+
+msgid "Choose your desired pause screen display type."
+msgstr "Chọn màn hình tạm dừng mong muốn của bạn."
+
+msgid "Choose your desired pixel aspect ratio."
+msgstr "Chọn tỷ lệ khung hình pixel mong muốn của bạn."
+
+msgid "Choose your preferred aspect ratio."
+msgstr "Chọn tỷ lệ khung hình ưa thích của bạn."
+
 msgid "Choose your preferred language."
 msgstr "Chọn ngôn ngữ ưa thích của bạn."
 
 msgid "Choose your preferred renderer."
 msgstr "Chọn trình kết xuất ưa thích của bạn."
+
+msgid "Choose your render resolution (Requires personal redream.key file)."
+msgstr "Chọn độ phân giải kết xuất của bạn (Yêu cầu tệp redream.key cá nhân)."
 
 msgid "Classic Controller"
 msgstr "Classic Controller"
@@ -1419,6 +1572,12 @@ msgstr "Costa Rica"
 msgid "Croatia"
 msgstr "Croatia"
 
+msgid "Crop 1080p (270, 540)"
+msgstr "Cắt 1080p (270, 540)"
+
+msgid "Crop 720p (240, 480)"
+msgstr "Cắt 720p (240, 480)"
+
 msgid "Cross"
 msgstr "Chéo"
 
@@ -1439,6 +1598,9 @@ msgstr "Chu kỳ chính xác"
 
 msgid "Czech"
 msgstr "Séc"
+
+msgid "Czech (cz)"
+msgstr "Séc (cz)"
 
 msgid "Czech Republic"
 msgstr "Cộng hòa Séc"
@@ -1463,6 +1625,9 @@ msgstr "TẮT CẦN ĐIỀU KHIỂN CỦA TRÌNH MÔ PHỎNG"
 
 msgid "DISABLE INTERLACING"
 msgstr "DISABLE INTERLACING"
+
+msgid "DISABLE SURFACE SYNC"
+msgstr "DISABLE SURFACE SYNC"
 
 msgid "DISABLE VERTEX CACHE"
 msgstr "DISABLE VERTEX CACHE"
@@ -1512,6 +1677,12 @@ msgstr "DYNAREC CODE INVALIDATION"
 msgid "Dance Mat"
 msgstr "Dance Mat"
 
+msgid "Danish"
+msgstr "Đan Mạch"
+
+msgid "Danish (dk)"
+msgstr "Đan Mạch (dk)"
+
 msgid "Dark Blue"
 msgstr "Xanh da trời tối"
 
@@ -1523,6 +1694,9 @@ msgstr "Hồng tối"
 
 msgid "Dark Purple"
 msgstr "Tím tối"
+
+msgid "Darken"
+msgstr "Darken"
 
 msgid "December"
 msgstr "Tháng 12"
@@ -1623,6 +1797,9 @@ msgstr "Trong quá trình chơi game, nhấn Hotkey + R1 để dịch văn bản
 msgid "Dutch"
 msgstr "Tiếng Hà Lan"
 
+msgid "Dutch (nl)"
+msgstr "Hà Lan (nl)"
+
 msgid "Dynamic (fast)"
 msgstr "Linh hoạt (nhanh)"
 
@@ -1710,6 +1887,9 @@ msgstr "Emphasize top"
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Mô phỏng Wiimote Sideway với L2 cho Shake và Nunchuk trên R-stick."
 
+msgid "Emutos language && region setting."
+msgstr "Cài đặt ngôn ngữ và vùng của trình giả lập."
+
 msgid "Enable"
 msgstr "Cho phép"
 
@@ -1724,6 +1904,9 @@ msgstr "Kích hoạt mô phỏng Gravis Utrasound. Đảm bảo thư mục ULTRA
 
 msgid "Enable No-interlacing Patches."
 msgstr "Kích hoạt các bản vá không xen kẽ."
+
+msgid "Enable auto frameskipping for performance on lower-end systems."
+msgstr "Bật tính năng tự động bỏ qua khung hình để tăng hiệu suất trên các hệ thống cấp thấp hơn."
 
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "Kích hoạt gắn kết bộ đệm. Có thể cải thiện hiệu suất và khả năng tương thích trong một số trò chơi."
@@ -1782,6 +1965,9 @@ msgstr "Cho phép hiển thị liệu micrô của thiết bị của bạn có 
 msgid "Enable to show which screen layout with the configured sequence is active."
 msgstr "Bật để hiển thị bố cục màn hình nào với trình tự đã định cấu hình đang hoạt động."
 
+msgid "Enable vertical sync to avoid tearing in some cases."
+msgstr "Bật đồng bộ dọc để tránh bị xé hình trong một số trường hợp."
+
 msgid "Enabled"
 msgstr "Bật"
 
@@ -1808,6 +1994,9 @@ msgstr "Tiếng Anh"
 
 msgid "English (Default)"
 msgstr "Tiếng Anh (Mặc định)"
+
+msgid "English (us)"
+msgstr "Tiếng Anh (us)"
 
 msgid "English/Japanese"
 msgstr "Tiếng Anh/Tiếng Nhật"
@@ -1959,6 +2148,24 @@ msgstr "FRAMESKIP (GL64MK2 ONLY)"
 msgid "FXAA"
 msgstr "FXAA"
 
+msgid "Falcon"
+msgstr "Falcon"
+
+msgid "Falcon 4.0"
+msgstr "Falcon 4.0"
+
+msgid "Falcon 4.02"
+msgstr "Falcon 4.02"
+
+msgid "Falcon 4.04"
+msgstr "Falcon 4.04"
+
+msgid "Falcon AUTO"
+msgstr "Falcon Auto"
+
+msgid "Falcon ETOS 512k"
+msgstr "Falcon Etos 512K"
+
 msgid "Famicom (FDS)"
 msgstr "Famicom (FDS)"
 
@@ -1976,6 +2183,12 @@ msgstr "Lấp đầy màn hình bất kể tỷ lệ khung hình. Không hoạt 
 
 msgid "Finland"
 msgstr "Phần Lan"
+
+msgid "Finnish"
+msgstr "Tiếng Phần Lan"
+
+msgid "Finnish (fi)"
+msgstr "Phần Lan (fi)"
 
 msgid "Fit 4:3 Aspect Ratio"
 msgstr "Phù hợp tỷ lệ khung hình 4:3"
@@ -2000,6 +2213,9 @@ msgstr "Sửa lỗi có thể xảy ra khi phát hiện nhiều bộ điều khi
 
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
+
+msgid "Floppy Disk List"
+msgstr "Danh Sách Đĩa Mềm"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Dành cho các trò chơi hỗ trợ Gyro (liên kết với cần analog bên trái)"
@@ -2039,6 +2255,9 @@ msgstr "Pháp"
 
 msgid "French"
 msgstr "Tiếng Pháp"
+
+msgid "French (fr)"
+msgstr "Pháp (fr)"
 
 msgid "Frontend MIDI driver"
 msgstr "Frontend MIDI driver"
@@ -2217,6 +2436,9 @@ msgstr "Georgia"
 msgid "German"
 msgstr "Tiếng Đức"
 
+msgid "German (de)"
+msgstr "Đức (de)"
+
 msgid "Germany"
 msgstr "Đức"
 
@@ -2238,6 +2460,12 @@ msgstr "Xám"
 msgid "Greece"
 msgstr "Hy Lạp"
 
+msgid "Greek"
+msgstr "Hy Lạp"
+
+msgid "Greek (gk)"
+msgstr "Hy Lạp (gk)"
+
 msgid "Green"
 msgstr "Màu xanh lá"
 
@@ -2253,6 +2481,9 @@ msgstr "HÌNH ẢNH HI-RES"
 msgid "HLE (Fastest)"
 msgstr "HLE (Nhanh nhất)"
 
+msgid "HLE (per-pixel)"
+msgstr "HLE (per-pixel)"
+
 msgid "HQ (bilinear filter)"
 msgstr "HQ (bilinear filter)"
 
@@ -2262,6 +2493,9 @@ msgstr "Hack. Tăng tốc độ của hầu hết các trò chơi PAL lên 17%."
 msgid "Hebrew"
 msgstr "Tiếng Do Thái"
 
+msgid "Help and Information"
+msgstr "Thông tin và Trợ giúp"
+
 msgid "Help games which are too quick or that have bugs."
 msgstr "Trợ giúp các trò chơi quá nhanh hoặc có lỗi."
 
@@ -2270,6 +2504,9 @@ msgstr "Hercules"
 
 msgid "Hermite"
 msgstr "Hermite"
+
+msgid "Hide"
+msgstr "Ẩn"
 
 msgid "Hides borders on many games. Some games use the borders."
 msgstr "Ẩn đường viền trên nhiều trò chơi. Một số trò chơi sử dụng đường viền."
@@ -2295,6 +2532,12 @@ msgstr "Nằm ngang"
 msgid "How the window space is distributed between the screens."
 msgstr "Cách phân bổ không gian cửa sổ giữa các màn hình."
 
+msgid "Hungarian"
+msgstr "Hungary"
+
+msgid "Hungarian (hg)"
+msgstr "Hungary (hg)"
+
 msgid "Hungary"
 msgstr "Hungary"
 
@@ -2315,6 +2558,9 @@ msgstr "Hybrid Ubershaders"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "Hyper Blaster/Justifier"
+
+msgid "IDE (Default)"
+msgstr "IDE (Mặc định)"
 
 msgid "IMPROVED BANDING"
 msgstr "CẢI THIỆN DẢI"
@@ -2351,6 +2597,9 @@ msgstr "Nếu không có gì được chỉ định, sẽ sử dụng ZTranslate
 
 msgid "Ignored with 'Cycle-exact'."
 msgstr "Bỏ qua 'Chu kỳ chính xác'."
+
+msgid "Immediate"
+msgstr "Ngay lập tức"
 
 msgid "Improve audio accuracy (experimental)."
 msgstr "Cải thiện độ chính xác âm thanh (thử nghiệm)."
@@ -2405,6 +2654,9 @@ msgstr "Israel"
 
 msgid "Italian"
 msgstr "Tiếng Ý"
+
+msgid "Italian (it)"
+msgstr "Ý (it)"
 
 msgid "Italy"
 msgstr "Ý"
@@ -2576,6 +2828,9 @@ msgstr "GIỚI HẠN TỶ LỆ KHUNG HÌNH"
 
 msgid "LINEAR UPSCALING"
 msgstr "LINEAR UPSCALING"
+
+msgid "LLE"
+msgstr "LLE"
 
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "TẢI TEXTURES CÁ NHÂN"
@@ -2784,6 +3039,24 @@ msgstr "Trung bình"
 msgid "Mega"
 msgstr "Mega"
 
+msgid "Mega ST"
+msgstr "Mega ST"
+
+msgid "Mega STE"
+msgstr "Mega STE"
+
+msgid "Mega STE 2.05"
+msgstr "Mega STE 2.05"
+
+msgid "Mega STE 2.06"
+msgstr "Mega STE 2.06"
+
+msgid "Mega STE AUTO"
+msgstr "Mega STE AUTO"
+
+msgid "Mega STE ETOS 256k"
+msgstr "Mega Ste Etos 256K"
+
 msgid "MegaSD"
 msgstr "MegaSD"
 
@@ -2819,6 +3092,9 @@ msgstr "Đơn sắc"
 
 msgid "Monochrome (Blargg)"
 msgstr "Monochrome (Blargg)"
+
+msgid "Monochrome High-Resolution"
+msgstr "Độ phân giải cao đơn sắc"
 
 msgid "More accurate emulation, but slower."
 msgstr "Mô phỏng chính xác hơn, nhưng chậm hơn."
@@ -2877,6 +3153,9 @@ msgstr "CHẾ ĐỘ 3DS MỚI"
 msgid "NTSC (Composite)"
 msgstr "NTSC (Tổng hợp)"
 
+msgid "NTSC (Default)"
+msgstr "NTSC (Mặc định)"
+
 msgid "NTSC (NES)"
 msgstr "NTSC (NES)"
 
@@ -2900,6 +3179,9 @@ msgstr "NTSC 492x262px"
 
 msgid "NTSC FILTER"
 msgstr "BỘ LỌC NTSC"
+
+msgid "NTSC TV"
+msgstr "NTSC TV"
 
 msgid "NTSC-J"
 msgstr "NTSC-J"
@@ -2955,6 +3237,9 @@ msgstr "Nestopia (RGB)"
 msgid "Netherlands"
 msgstr "Hà Lan"
 
+msgid "Netherlands (nl)"
+msgstr "Hà Lan (nl)"
+
 msgid "Never"
 msgstr "Không bao giờ"
 
@@ -2966,6 +3251,9 @@ msgstr "Nicaragua"
 
 msgid "No EMS/XMS"
 msgstr "Không EMS/XMS"
+
+msgid "No Indicator"
+msgstr "Không có chỉ báo"
 
 msgid "No Limit"
 msgstr "Không giới hạn"
@@ -2996,6 +3284,12 @@ msgstr "Bình thường (trình thông dịch)"
 
 msgid "Norway"
 msgstr "Na Uy"
+
+msgid "Norwegian"
+msgstr "Na Uy"
+
+msgid "Norwegian (no)"
+msgstr "Na Uy (no)"
 
 msgid "Not all games support 3D pad."
 msgstr "Không phải tất cả các trò chơi đều hỗ trợ pad 3D."
@@ -3141,11 +3435,23 @@ msgstr "PAL 288x576px 50Hz (Tự động)"
 msgid "PAL 576x312px"
 msgstr "PAL 576x312px"
 
+msgid "PAL TV"
+msgstr "PAL TV"
+
+msgid "PAL_M"
+msgstr "PAL_M"
+
+msgid "PAL_N"
+msgstr "PAL_N"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLEL-RDP UPSCALER"
+
+msgid "PAUSE SCREEN DISPLAY"
+msgstr "MÀN HÌNH TẠM DỪNG"
 
 msgid "PCE Joypad"
 msgstr "PCE Joypad"
@@ -3279,6 +3585,9 @@ msgstr "Con trỏ"
 msgid "Poland"
 msgstr "Ba Lan"
 
+msgid "Poland (pl)"
+msgstr "Ba Lan (pl)"
+
 msgid "Polish"
 msgstr "Ba Lan"
 
@@ -3356,6 +3665,9 @@ msgstr "GIẢM SPRITE NHẤP NHÁY (KHÔNG ỔN ĐỊNH)"
 
 msgid "RENDER"
 msgstr "RENDER"
+
+msgid "RENDER MODE"
+msgstr "RENDER MODE"
 
 msgid "RENDER RESOLUTION (SCALING)"
 msgstr "RENDER RESOLUTION (SCALING)"
@@ -3465,6 +3777,9 @@ msgstr "Roland MT-32/CM-32L"
 msgid "Romania"
 msgstr "Romania"
 
+msgid "Romanian"
+msgstr "Rumani"
+
 msgid "Rotate the screen, useful for certain vertical gameplay homebrews."
 msgstr "Xoay màn hình, hữu ích cho một số trò chơi thẳng đứng nhất định homebrews.Xoay màn hình, hữu ích cho một số homebrew chơi trò chơi dọc nhất định."
 
@@ -3482,6 +3797,9 @@ msgstr "Nga"
 
 msgid "Russian"
 msgstr "Tiếng Nga"
+
+msgid "Russian (ru)"
+msgstr "Nga (ru)"
 
 msgid "S-Video"
 msgstr "S-Video"
@@ -3503,6 +3821,12 @@ msgstr "SCALER MODE"
 
 msgid "SCALING MODE"
 msgstr "SCALING MODE"
+
+msgid "SCREEN BORDERS"
+msgstr "ĐƯỜNG VIỀN MÀN HÌNH"
+
+msgid "SCREEN FILTER"
+msgstr "BỘ LỌC MÀN HÌNH"
 
 msgid "SCREEN FILTERING"
 msgstr "LỌC MÀN HÌNH"
@@ -3605,6 +3929,12 @@ msgstr "BỘ GIẢI MÃ SPU"
 
 msgid "SPU LOOP DETECTION"
 msgstr "SPU LOOP DETECTION"
+
+msgid "ST"
+msgstr "ST"
+
+msgid "STE"
+msgstr "STE"
 
 msgid "STRETCH MODE"
 msgstr "CHẾ ĐỘ KÉO CĂNG"
@@ -3813,6 +4143,9 @@ msgstr "Làm mịn kết cấu trên các đối tượng 3D."
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "Làm mịn hình ảnh tổng thể khi nó được hiển thị trên màn hình. Sửa vị trí giữa các pixel."
 
+msgid "Snow"
+msgstr "Snow"
+
 msgid "Software"
 msgstr "Phần mềm"
 
@@ -3855,6 +4188,9 @@ msgstr "Tây Ban Nha"
 msgid "Spanish"
 msgstr "Tiếng Tây Ban Nha"
 
+msgid "Spanish (es)"
+msgstr "Tây Ban Nha (es)"
+
 msgid "Special 1"
 msgstr "Đặc biệt 1"
 
@@ -3870,11 +4206,17 @@ msgstr "Đặc biệt 4 (TI-83 Legacy)"
 msgid "Speed hack for dual core mode to fix some glitches."
 msgstr "Hack tốc độ cho chế độ lõi kép để khắc phục một số trục trặc."
 
+msgid "Speed hack, enable to disable surface syncing between CPU and GPU. Surface syncing is needed by a few games."
+msgstr "Hack tốc độ, kích hoạt để tắt đồng bộ hóa bề mặt giữa CPU và GPU. Một số trò chơi cần đồng bộ hóa bề mặt."
+
 msgid "Speed up shader compilation."
 msgstr "Tăng tốc độ biên dịch shader."
 
 msgid "Speeds up file loading. Some games won't load with this."
 msgstr "Tăng tốc độ tải tập tin. Một số game sẽ không tải được khi bật."
+
+msgid "Square Pixels"
+msgstr "Pixel vuông"
 
 msgid "Square pixel"
 msgstr "Pixel vuông"
@@ -3942,6 +4284,15 @@ msgstr "Thụy Điển"
 msgid "Swedish"
 msgstr "Thụy Điển"
 
+msgid "Swedish (se)"
+msgstr "Thụy Điển (se)"
+
+msgid "Swiss French (ch)"
+msgstr "Tiếng Pháp Thụy Sĩ (ch)"
+
+msgid "Swiss German (ch)"
+msgstr "Tiếng Đức Thụy Sĩ (ch)"
+
 msgid "Switzerland"
 msgstr "Thụy Sĩ"
 
@@ -4002,6 +4353,9 @@ msgstr "TIME STRETCHING THRESHOLD"
 msgid "TIMED AXIS INTERVALS"
 msgstr "TIMED AXIS INTERVALS"
 
+msgid "TOS languages."
+msgstr "Ngôn ngữ Tos."
+
 msgid "TOUCH MODE"
 msgstr "TOUCH MODE"
 
@@ -4013,6 +4367,21 @@ msgstr "TRILINEAR FILTERING"
 
 msgid "TRUE COLOR RENDERING"
 msgstr "KẾT XUẤT MÀU SẮC THẬT"
+
+msgid "TT"
+msgstr "TT"
+
+msgid "TT 3.06"
+msgstr "TT 3.06"
+
+msgid "TT AUTO"
+msgstr "TT tự động"
+
+msgid "TT ETOS 512k"
+msgstr "TT ETOS 512K"
+
+msgid "TV"
+msgstr "TV"
 
 msgid "TV2x CRT Television Filter"
 msgstr "TV2x CRT Television Filter"
@@ -4107,6 +4476,12 @@ msgstr "Tunisia"
 msgid "Turkey"
 msgstr "Thổ Nhĩ Kỳ"
 
+msgid "Turkish"
+msgstr "Thổ Nhĩ Kỳ"
+
+msgid "Turkish (tr)"
+msgstr "Thổ Nhĩ Kỳ (tr)"
+
 msgid "Turquoise"
 msgstr "Ngọc lam"
 
@@ -4140,6 +4515,9 @@ msgstr "Mỹ"
 msgid "USA"
 msgstr "Hoa Kỳ"
 
+msgid "USA (Default)"
+msgstr "Hoa Kỳ (mặc định)"
+
 msgid "USE DSP AUDIO"
 msgstr "SỬ DỤNG ÂM THANH DSP"
 
@@ -4153,6 +4531,9 @@ msgid "USE SOFTWARE RENDERING"
 msgstr "SỬ DỤNG KẾT XUẤT PHẦN MỀM"
 
 msgid "Ukraine"
+msgstr "Ukraine"
+
+msgid "Ukrainian"
 msgstr "Ukraine"
 
 msgid "Ultra"
@@ -4244,6 +4625,9 @@ msgstr "XOAY DỌC (TATE)"
 
 msgid "VGA"
 msgstr "VGA"
+
+msgid "VGA (Default)"
+msgstr "VGA (Mặc định)"
 
 msgid "VIDEO FILTERS"
 msgstr "BỘ LỌC VIDEO"

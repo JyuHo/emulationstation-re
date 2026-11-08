@@ -36,6 +36,9 @@ msgstr "0.8x"
 msgid "0.9x"
 msgstr "0.9x"
 
+msgid "1 MB"
+msgstr "1 MB"
+
 msgid "1 second"
 msgstr "1 秒"
 
@@ -99,6 +102,9 @@ msgstr "1.75x 標準"
 msgid "1.8x (22.50Mhz)"
 msgstr "1.8x (22.50Mhz)"
 
+msgid "10 MB"
+msgstr "10 MB"
+
 msgid "10 seconds"
 msgstr "10 秒"
 
@@ -107,6 +113,18 @@ msgstr "100% (標準)"
 
 msgid "1024kB"
 msgstr "1024kB"
+
+msgid "1040 STE 1.06"
+msgstr "1040 STE 1.06"
+
+msgid "1040 STE 1.62"
+msgstr "1040 STE 1.62"
+
+msgid "1040 STE AUTO"
+msgstr "1040 STE (TOS自動)"
+
+msgid "1040 STE ETOS 256k"
+msgstr "1040 STE ETOS 256k"
 
 msgid "10th"
 msgstr "10"
@@ -135,6 +153,9 @@ msgstr "12"
 msgid "13th"
 msgstr "13"
 
+msgid "14 MB"
+msgstr "14 MB"
+
 msgid "14.18 MHz (A1200 speed)"
 msgstr "14.18 MHz (A1200 の実行速度)"
 
@@ -158,6 +179,9 @@ msgstr "15秒"
 
 msgid "15th"
 msgstr "15"
+
+msgid "16 MHz"
+msgstr "16 MHz"
 
 msgid "16384kB"
 msgstr "16384kB"
@@ -195,6 +219,9 @@ msgstr "18"
 msgid "19th"
 msgstr "19"
 
+msgid "1M"
+msgstr "1M"
+
 msgid "1st"
 msgstr "1"
 
@@ -216,6 +243,9 @@ msgstr "1x 標準 (320x240)"
 msgid "1x native (640x528)"
 msgstr "1x 標準 (640x528)"
 
+msgid "2 MB"
+msgstr "2 MB"
+
 msgid "2 seconds"
 msgstr "2 秒"
 
@@ -233,6 +263,9 @@ msgstr "2.25x (1440x1080)"
 
 msgid "2.25x Native"
 msgstr "2.25x 標準"
+
+msgid "2.5 MB"
+msgstr "2.5 MB"
 
 msgid "2.5x (1600x1200)"
 msgstr "2.5x (1600x1200)"
@@ -318,6 +351,9 @@ msgstr "28"
 msgid "29th"
 msgstr "29"
 
+msgid "2M"
+msgstr "2M"
+
 msgid "2P GAMEPAD MAPPING (KEYRAH)"
 msgstr "2P ゲームパッド割当（KEYRAH）"
 
@@ -329,6 +365,9 @@ msgstr "2"
 
 msgid "2nd Joystick (2 Axes, 2 Btns)"
 msgstr "ジョイスティック 2(2軸,2ボタン)"
+
+msgid "2x (1280x960) (Default)"
+msgstr "2x (1280x960)（標準）"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -381,6 +420,9 @@ msgstr "30"
 msgid "31st"
 msgstr "31"
 
+msgid "32 MHz"
+msgstr "32 MHz"
+
 msgid "32MB"
 msgstr "32MB"
 
@@ -422,6 +464,9 @@ msgstr "3x 標準 (~1080p)"
 
 msgid "3x native (768 x 576)"
 msgstr "3x 標準 (768 x 576)"
+
+msgid "4 MB"
+msgstr "4 MB"
 
 msgid "4 PLAYER ADAPTER"
 msgstr "4プレーヤーアダプター"
@@ -467,6 +512,9 @@ msgstr "4:3 レンダリング解像度"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4M"
+msgstr "4M"
 
 msgid "4MB"
 msgstr "4MB"
@@ -515,6 +563,24 @@ msgstr "5120MB"
 
 msgid "512kB (1750)"
 msgstr "512kB (1750)"
+
+msgid "520 ST AUTO"
+msgstr "520 ST (TOS自動)"
+
+msgid "520 ST EMUTOS 256k"
+msgstr "520 ST EMUTOS 256k"
+
+msgid "520 ST TOS 1.00"
+msgstr "520 ST TOS 1.00"
+
+msgid "520 ST TOS 1.02"
+msgstr "520 ST TOS 1.02"
+
+msgid "520 ST TOS 1.04"
+msgstr "520 ST TOS 1.04"
+
+msgid "520K"
+msgstr "520K"
 
 msgid "56.75 MHz"
 msgstr "56.75 MHz"
@@ -585,6 +651,12 @@ msgstr "7x 標準 (~2520p)"
 msgid "7x native (1792 x 1344)"
 msgstr "7x 標準 (1792 x 1344)"
 
+msgid "8 MB"
+msgstr "8 MB"
+
+msgid "8 MHz"
+msgstr "8 MHz"
+
 msgid "8086/8088, 4.77MHz (315 cps)"
 msgstr "8086/8088, 4.77MHz (315 cps)"
 
@@ -650,6 +722,9 @@ msgstr "A500+ (1MB チップ)"
 
 msgid "A600 (2MB Chip + 8MB Fast)"
 msgstr "A600 (2MB チップ+ 8MB[速])"
+
+msgid "ACSI"
+msgstr "ACSI"
 
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "アクティブな入力デバイスの修正"
@@ -719,6 +794,24 @@ msgstr "非同期シェーダーのコンパイル (VULKAN のみ)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "非同期テクスチャ ストリーミング"
+
+msgid "ATARI CPU CLOCK RATE"
+msgstr "ATARI CPU クロックレート"
+
+msgid "ATARI CPU TYPE"
+msgstr "ATARI CPU タイプ"
+
+msgid "ATARI HARD DRIVE TYPE"
+msgstr "ATARI ハードドライブタイプ"
+
+msgid "ATARI MACHINE TYPE"
+msgstr "ATARI 機種"
+
+msgid "ATARI MONITOR TYPE"
+msgstr "Atari モニタータイプ"
+
+msgid "ATARI ST MEMORY SIZE"
+msgstr "ATARI ST メモリ サイズ"
 
 msgid "ATARI SYSTEM"
 msgstr "ATARI システム"
@@ -873,6 +966,12 @@ msgstr "近似（高速）"
 msgid "April"
 msgstr "4月"
 
+msgid "Arabic"
+msgstr "アラビア語"
+
+msgid "Arabic (ar)"
+msgstr "アラビア語 (ar)"
+
 msgid "Arcade MVS Europe"
 msgstr "MVS版 ヨーロッパ"
 
@@ -905,6 +1004,12 @@ msgstr "そのまま"
 
 msgid "As game specifies"
 msgstr "ゲームの指定通り"
+
+msgid "Atari Monitor"
+msgstr "Atari モニター"
+
+msgid "Atari ST monitors had a visible border around the main screen area, but most software does not display anything in it."
+msgstr "Atari ST モニターにはメイン画面領域の周囲に目に見える境界線がありましたが、ほとんどのソフトウェアではその中には何も表示されません"
 
 msgid "August"
 msgstr "8月"
@@ -992,6 +1097,9 @@ msgstr "ブレンディング精度"
 
 msgid "BOOT ANIMATION FIRST"
 msgstr "起動アニメーションを表示"
+
+msgid "BROADCAST"
+msgstr "ブロードキャスト"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (米国で開発されたすべてのゲームに推奨)"
@@ -1113,8 +1221,14 @@ msgstr "右下"
 msgid "Bottom only"
 msgstr "下画面のみ（切替不可）"
 
+msgid "Bouncing Box"
+msgstr "境界ボックス"
+
 msgid "Brazil"
 msgstr "ブラジル"
+
+msgid "British English (uk)"
+msgstr "イギリス英語 (uk)"
 
 msgid "Brown"
 msgstr "茶色"
@@ -1148,6 +1262,9 @@ msgstr "C64 PAL"
 
 msgid "C64 PAL Automatic"
 msgstr "C64 PAL (自動)"
+
+msgid "CABLE"
+msgstr "ケーブル"
 
 msgid "CD ADD-ON"
 msgstr "CD アドオン"
@@ -1386,6 +1503,15 @@ msgstr "中国語"
 msgid "Chinese (Mandarin)"
 msgstr "中国語（北京語）"
 
+msgid "Chinese (Simplified)"
+msgstr "中国語 (簡体字)"
+
+msgid "Choose broadcast standard (for older TV's)."
+msgstr "放送(映像表示)方式を選択します（古いテレビ用）"
+
+msgid "Choose cable type for the TV."
+msgstr "テレビのケーブル接続タイプを選択します"
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "ゲーム機の言語を選択してください。すべてのゲームが言語選択をサポートしているわけではありません。"
 
@@ -1431,11 +1557,41 @@ msgstr "使用するグラフィック API を選択します"
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "グラフィックAPIを選択します。Vulkanが機能しないコアもあります"
 
+msgid "Choose your Atari hard drive type for the .hd extension file."
+msgstr "拡張子.hd ファイルの Atari ハード ドライブの種類を選択します"
+
+msgid "Choose your desired Atari CPU clock rate."
+msgstr "Atari CPU クロック レートを選択します"
+
+msgid "Choose your desired Atari CPU type."
+msgstr "Atari CPU タイプを選択します"
+
+msgid "Choose your desired Atari Monitor."
+msgstr "Atari モニターを選択します"
+
+msgid "Choose your desired Atari ST memory size."
+msgstr "Atari ST メモリ サイズを選択します"
+
+msgid "Choose your desired Atari machine type."
+msgstr "Atari 機種を選択します"
+
+msgid "Choose your desired pause screen display type."
+msgstr "一時停止画面の表示タイプを選択します"
+
+msgid "Choose your desired pixel aspect ratio."
+msgstr "ピクセルアスペクト比を選択します"
+
+msgid "Choose your preferred aspect ratio."
+msgstr "アスペクト比を選択します"
+
 msgid "Choose your preferred language."
 msgstr "使用する言語を選択します"
 
 msgid "Choose your preferred renderer."
 msgstr "好みのレンダラーを選択します"
+
+msgid "Choose your render resolution (Requires personal redream.key file)."
+msgstr "表示解像度を選択します（redream.keyファイルを購入、設置が必要）"
 
 msgid "Classic Controller"
 msgstr "クラシックコントローラ"
@@ -1500,6 +1656,12 @@ msgstr "コスタリカ"
 msgid "Croatia"
 msgstr "クロアチア"
 
+msgid "Crop 1080p (270, 540)"
+msgstr "クロップ 1080p (270、540)"
+
+msgid "Crop 720p (240, 480)"
+msgstr "クロップ 720p (240、480)"
+
 msgid "Crop horizontal overscan."
 msgstr "水平オーバースキャンを切り取ります"
 
@@ -1526,6 +1688,9 @@ msgstr "正確な動作"
 
 msgid "Czech"
 msgstr "チェコ語"
+
+msgid "Czech (cz)"
+msgstr "チェコ語 (cz)"
 
 msgid "Czech Republic"
 msgstr "チェコ共和国"
@@ -1556,6 +1721,9 @@ msgstr "エミュレータのジョイスティックを無効にする"
 
 msgid "DISABLE INTERLACING"
 msgstr "インターレースを無効"
+
+msgid "DISABLE SURFACE SYNC"
+msgstr "サーフェスの同期を無効"
 
 msgid "DISABLE VERTEX CACHE"
 msgstr "VERTEXキャッシュを無効"
@@ -1608,6 +1776,12 @@ msgstr "ダイナレックコードの無効化"
 msgid "Dance Mat"
 msgstr "ダンスマット"
 
+msgid "Danish"
+msgstr "デンマーク語"
+
+msgid "Danish (dk)"
+msgstr "デンマーク語 (dk)"
+
 msgid "Dark Blue"
 msgstr "ダークブルー"
 
@@ -1619,6 +1793,9 @@ msgstr "ダークピンク"
 
 msgid "Dark Purple"
 msgstr "ダークパープル"
+
+msgid "Darken"
+msgstr "暗くする"
 
 msgid "De-Interlaced"
 msgstr "インターレース解除"
@@ -1725,6 +1902,9 @@ msgstr "ゲームプレイ中に、ホットキー+R1で、画面上のテキス
 msgid "Dutch"
 msgstr "オランダ語"
 
+msgid "Dutch (nl)"
+msgstr "オランダ語 (nl)"
+
 msgid "Dynamic (fast)"
 msgstr "ダイナミック（高速）"
 
@@ -1812,6 +1992,9 @@ msgstr "上画面を強調表示"
 msgid "Emulate a Wiimote Sideway with L2 for Shake and Nunchuk on R-stick."
 msgstr "Rスティックをヌンチャク、L2を振る動作としてWiiリモコンをエミュレートします"
 
+msgid "Emutos language && region setting."
+msgstr "Emutos の言語と地域の設定"
+
 msgid "Enable"
 msgstr "有効（使用）"
 
@@ -1824,6 +2007,9 @@ msgstr "BIOSを使用します(Gamecube 起動アニメーションを表示)\nb
 msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
 msgstr "Gravis Utrasound エミュレーションを有効にします。ULTRASNDフォルダが\n<game>.pc(romフォルダのルート)にあることを確認してください"
 
+msgid "Enable High Dynamic Range if your display supports it."
+msgstr "ディスプレイがハイダイナミックレンジに対応している場合は、有効にしてください。"
+
 msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
 msgstr "MelonDS を2画面表示できるようにします。一部の関連画面オプションは無視されます"
 
@@ -1832,6 +2018,9 @@ msgstr "インターレース解除パッチを使用します"
 
 msgid "Enable TV-like filtering / effects."
 msgstr "テレビのようなフィルタリング/エフェクトを有効にします"
+
+msgid "Enable auto frameskipping for performance on lower-end systems."
+msgstr "低スペック機器のために自動フレームスキップを有効にします"
 
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "キャッシュマウントを有効にします。一部のゲームの動作と互換性が向上します"
@@ -1893,6 +2082,9 @@ msgstr "有効にすると、デバイスのマイクの状態を表示します
 msgid "Enable to show which screen layout with the configured sequence is active."
 msgstr "設定された順序を持つどの画面レイアウトが有効であるかを表示できるようにします"
 
+msgid "Enable vertical sync to avoid tearing in some cases."
+msgstr "場合によっては画面ずれ回避のために、垂直同期を有効にします"
+
 msgid "Enabled"
 msgstr "使用（有効）"
 
@@ -1919,6 +2111,15 @@ msgstr "英語"
 
 msgid "English (Default)"
 msgstr "英語 (標準)"
+
+msgid "English (United Kingdom)"
+msgstr "英語 (イギリス)"
+
+msgid "English (United States)"
+msgstr "英語 (アメリカ)"
+
+msgid "English (us)"
+msgstr "英語 (us)"
 
 msgid "English/Japanese"
 msgstr "英語/日本語"
@@ -2076,6 +2277,24 @@ msgstr "フレームスキップ制御"
 msgid "FXAA"
 msgstr "FXAA(アンチエイリアシング アルゴリズム)"
 
+msgid "Falcon"
+msgstr "Falcon"
+
+msgid "Falcon 4.0"
+msgstr "Falcon 4.0"
+
+msgid "Falcon 4.02"
+msgstr "Falcon 4.02"
+
+msgid "Falcon 4.04"
+msgstr "Falcon 4.04"
+
+msgid "Falcon AUTO"
+msgstr "Falcon (Ver自動)"
+
+msgid "Falcon ETOS 512k"
+msgstr "Falcon ETOS 512k"
+
 msgid "Famicom (FDS)"
 msgstr "ファミコン (FDS)"
 
@@ -2100,6 +2319,12 @@ msgstr "アスペクト比に関係なく、画面全体に表示します(整�
 msgid "Finland"
 msgstr "フィンランド"
 
+msgid "Finnish"
+msgstr "フィンランド語"
+
+msgid "Finnish (fi)"
+msgstr "フィンランド語 (fi)"
+
 msgid "Fit 4:3 Aspect Ratio"
 msgstr "アスペクト比を 4:3 に合わせる"
 
@@ -2123,6 +2348,9 @@ msgstr "コントローラー検出で発生する可能性のあるバグを修
 
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "フライトスティック (3軸,4ボタン,1ハット)"
+
+msgid "Floppy Disk List"
+msgstr "フロッピーリスト"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "ジャイロ対応ゲーム時（左アナログスティックに割り当てる）"
@@ -2162,6 +2390,15 @@ msgstr "フランス"
 
 msgid "French"
 msgstr "フランス語"
+
+msgid "French (Canada)"
+msgstr "フランス語 (カナダ)"
+
+msgid "French (France)"
+msgstr "フランス語 (フランス)"
+
+msgid "French (fr)"
+msgstr "フランス語 (fr)"
 
 msgid "Frontend MIDI driver"
 msgstr "フロントエンドMIDIドライバ"
@@ -2340,6 +2577,9 @@ msgstr "ジョージア"
 msgid "German"
 msgstr "ドイツ語"
 
+msgid "German (de)"
+msgstr "ドイツ語 (de)"
+
 msgid "Germany"
 msgstr "ドイツ"
 
@@ -2360,6 +2600,12 @@ msgstr "グレー"
 
 msgid "Greece"
 msgstr "ギリシャ"
+
+msgid "Greek"
+msgstr "ギリシャ語"
+
+msgid "Greek (gk)"
+msgstr "ギリシャ語 (gk)"
 
 msgid "Green"
 msgstr "緑"
@@ -2382,6 +2628,9 @@ msgstr "高解像度アーティファクト"
 msgid "HLE (Fastest)"
 msgstr "HLE (最速)"
 
+msgid "HLE (per-pixel)"
+msgstr "HLE (ピクセルごと)"
+
 msgid "HQ (bilinear filter)"
 msgstr "HQ (バイリニアフィルター)"
 
@@ -2390,6 +2639,9 @@ msgstr "ハック：ほとんどのPALゲームの速度が17％向上します"
 
 msgid "Hebrew"
 msgstr "ヘブライ語"
+
+msgid "Help and Information"
+msgstr "ヘルプと情報"
 
 msgid "Help games which are too quick or that have bugs."
 msgstr "速すぎるゲームやバグのあるゲームを対処します"
@@ -2402,6 +2654,9 @@ msgstr "ヘラクレス"
 
 msgid "Hermite"
 msgstr "エルミート"
+
+msgid "Hide"
+msgstr "非表示"
 
 msgid "Hides borders on many games. Some games use the borders."
 msgstr "多くのゲームの境界線を非表示にします。一部のゲームは境界線を使用します"
@@ -2427,6 +2682,12 @@ msgstr "横表示"
 msgid "How the window space is distributed between the screens."
 msgstr "画面間の表示領域の配分方法"
 
+msgid "Hungarian"
+msgstr "ハンガリー語"
+
+msgid "Hungarian (hg)"
+msgstr "ハンガリー語 (hg)"
+
 msgid "Hungary"
 msgstr "ハンガリー"
 
@@ -2447,6 +2708,9 @@ msgstr "ハイブリッドUS"
 
 msgid "Hyper Blaster/Justifier"
 msgstr "ハイパーブラスター/ジャスティファイア"
+
+msgid "IDE (Default)"
+msgstr "IDE (標準)"
 
 msgid "IMPROVED BANDING"
 msgstr "濃淡の縞(バンディング)の改良"
@@ -2487,6 +2751,9 @@ msgstr "指定されていない場合は、ZTranslateを使用します"
 msgid "Ignored with 'Cycle-exact'."
 msgstr "CPU互換性'正確な動作'モードでは無視されます"
 
+msgid "Immediate"
+msgstr "直接"
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "音声の精度を向上（実験的）"
 
@@ -2517,6 +2784,9 @@ msgstr "インド"
 msgid "Indonesia"
 msgstr "インドネシア"
 
+msgid "Indonesian"
+msgstr "インドネシア語"
+
 msgid "Inserts CD during boot animation prevent loading fail."
 msgstr "起動アニメーション中にCDを挿入して、読み込みの失敗を防ぎます"
 
@@ -2543,6 +2813,9 @@ msgstr "イスラエル"
 
 msgid "Italian"
 msgstr "イタリア語"
+
+msgid "Italian (it)"
+msgstr "イタリア語 (it)"
 
 msgid "Italy"
 msgstr "イタリア"
@@ -2720,6 +2993,9 @@ msgstr "フレームレート制限"
 
 msgid "LINEAR UPSCALING"
 msgstr "リニアアップスケーリング"
+
+msgid "LLE"
+msgstr "LLE"
 
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "カスタムテクスチャを読み込む"
@@ -2931,6 +3207,24 @@ msgstr "中"
 msgid "Mega"
 msgstr "メガ モード"
 
+msgid "Mega ST"
+msgstr "Mega ST"
+
+msgid "Mega STE"
+msgstr "Mega STE"
+
+msgid "Mega STE 2.05"
+msgstr "Mega STE 2.05"
+
+msgid "Mega STE 2.06"
+msgstr "Mega STE 2.06"
+
+msgid "Mega STE AUTO"
+msgstr "Mega STE (TOS自動)"
+
+msgid "Mega STE ETOS 256k"
+msgstr "Mega STE ETOS 256k"
+
 msgid "MegaSD"
 msgstr "メガSD"
 
@@ -2966,6 +3260,9 @@ msgstr "モノクロ"
 
 msgid "Monochrome (Blargg)"
 msgstr "モノクロ (Blargg)"
+
+msgid "Monochrome High-Resolution"
+msgstr "モノクロ高解像度"
 
 msgid "More accurate emulation, but slower."
 msgstr "より正確なエミュレーションですが、速度は遅くなります"
@@ -3030,6 +3327,9 @@ msgstr "New 3DS モード"
 msgid "NTSC (Composite)"
 msgstr "NTSC（コンポジット）"
 
+msgid "NTSC (Default)"
+msgstr "NTSC (標準)"
+
 msgid "NTSC (NES)"
 msgstr "NTSC (NES)"
 
@@ -3056,6 +3356,9 @@ msgstr "NTSC アスペクト比"
 
 msgid "NTSC FILTER"
 msgstr "NTSC フィルター"
+
+msgid "NTSC TV"
+msgstr "NTSC TV"
 
 msgid "NTSC aspect ratio correction. Core default (PAR)."
 msgstr "NTSCアスペクト比補正（コアの標準=PAR）"
@@ -3117,6 +3420,9 @@ msgstr "Nestopia (RGB)"
 msgid "Netherlands"
 msgstr "オランダ"
 
+msgid "Netherlands (nl)"
+msgstr "オランダ語 (nl)"
+
 msgid "Never"
 msgstr "しない"
 
@@ -3134,6 +3440,9 @@ msgstr "バッファなし"
 
 msgid "No EMS/XMS"
 msgstr "EMS/XMS を使用しない"
+
+msgid "No Indicator"
+msgstr "インジケーターなし"
 
 msgid "No Limit"
 msgstr "制限しない"
@@ -3164,6 +3473,15 @@ msgstr "通常（インタープリター)"
 
 msgid "Norway"
 msgstr "ノルウェー"
+
+msgid "Norwegian"
+msgstr "ノルウェイ語"
+
+msgid "Norwegian (Bokmaal)"
+msgstr "ノルウェイ語（ブークマール）"
+
+msgid "Norwegian (no)"
+msgstr "ノルウェイ語 (no)"
 
 msgid "Not all games support 3D pad."
 msgstr "すべてのゲームに3Dパッドは対応していません"
@@ -3333,6 +3651,9 @@ msgstr "PAL 576x312px"
 msgid "PAL ASPECT"
 msgstr "PAL アスペクト比"
 
+msgid "PAL TV"
+msgstr "PAL TV"
+
 msgid "PAL aspect ratio correction. Core default (PAR)."
 msgstr "PALアスペクト比補正（コアの標準=PAR）"
 
@@ -3342,11 +3663,20 @@ msgstr "PAL60"
 msgid "PALETTE COLORS"
 msgstr "パレットカラー"
 
+msgid "PAL_M"
+msgstr "PAL_M"
+
+msgid "PAL_N"
+msgstr "PAL_N"
+
 msgid "PAR 1:1"
 msgstr "ピクセルアスペクト比 1:1"
 
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLEL-RDP アップスケーラー"
+
+msgid "PAUSE SCREEN DISPLAY"
+msgstr "一時停止画面"
 
 msgid "PCE Joypad"
 msgstr "ジョイパッド"
@@ -3492,6 +3822,9 @@ msgstr "ポインター"
 msgid "Poland"
 msgstr "ポーランド"
 
+msgid "Poland (pl)"
+msgstr "ポーランド語 (pl)"
+
 msgid "Polish"
 msgstr "ポーランド語"
 
@@ -3521,6 +3854,12 @@ msgstr "ポルトガル"
 
 msgid "Portuguese"
 msgstr "ポルトガル語"
+
+msgid "Portuguese (Brazil)"
+msgstr "ポルトガル語（ブラジル）"
+
+msgid "Portuguese (Portugal)"
+msgstr "ポルトガル語（ポルトガル）"
 
 msgid "Position of wii sensor bar relative to the disaply for real wiimotes."
 msgstr "実際の Wii リモコンに対する Wii センサー バーの位置を選択します"
@@ -3572,6 +3911,9 @@ msgstr "レンダラ"
 
 msgid "RENDER DUPLICATE FRAMES TO 60 HZ"
 msgstr "重複フレームを60Hzでレンダリング"
+
+msgid "RENDER MODE"
+msgstr "レンダーモード"
 
 msgid "RENDER RESOLUTION (SCALING)"
 msgstr "レンダリング解像度 (スケーリング)"
@@ -3687,6 +4029,9 @@ msgstr "Roland MT-32/CM-32L"
 msgid "Romania"
 msgstr "ルーマニア"
 
+msgid "Romanian"
+msgstr "ルーマニア語"
+
 msgid "Rotate the screen, useful for certain vertical gameplay homebrews."
 msgstr "画面を回転します。特定の垂直ゲームプレイ環境構築に役立ちます"
 
@@ -3708,6 +4053,9 @@ msgstr "ロシア"
 msgid "Russian"
 msgstr "ロシア語"
 
+msgid "Russian (ru)"
+msgstr "ロシア語 (ru)"
+
 msgid "S-Video"
 msgstr "S-ビデオ"
 
@@ -3728,6 +4076,12 @@ msgstr "スケーラーモード"
 
 msgid "SCALING MODE"
 msgstr "スケーリングモード"
+
+msgid "SCREEN BORDERS"
+msgstr "スクリーンボーダー"
+
+msgid "SCREEN FILTER"
+msgstr "スクリーンフィルター"
 
 msgid "SCREEN FILTERING"
 msgstr "スクリーンフィルタリング"
@@ -3857,6 +4211,12 @@ msgstr "SPU デコーダー"
 
 msgid "SPU LOOP DETECTION"
 msgstr "SPU ループの検出"
+
+msgid "ST"
+msgstr "ST"
+
+msgid "STE"
+msgstr "STE"
 
 msgid "STEREO SOUND"
 msgstr "ステレオサウンド"
@@ -4080,6 +4440,9 @@ msgstr "3Dオブジェクトのテクスチャを滑らかにします"
 msgid "Smooths the overall picture as it is displayed on the screen. Corrects positioning between pixels."
 msgstr "画面に表示される画像全体を滑らかにして、ピクセル間の位置を修正します"
 
+msgid "Snow"
+msgstr "スノー"
+
 msgid "Software"
 msgstr "ソフトウェア"
 
@@ -4122,6 +4485,15 @@ msgstr "スペイン"
 msgid "Spanish"
 msgstr "スペイン語"
 
+msgid "Spanish (Latin America)"
+msgstr "スペイン語（ラテンアメリカ）"
+
+msgid "Spanish (Spain)"
+msgstr "スペイン語（スペイン）"
+
+msgid "Spanish (es)"
+msgstr "スペイン語 (es)"
+
 msgid "Special 1"
 msgstr "スペシャル 1"
 
@@ -4137,11 +4509,17 @@ msgstr "スペシャル 4 (TI-83)"
 msgid "Speed hack for dual core mode to fix some glitches."
 msgstr "いくつかの不具合を修正するデュアルコアモードのスピードハック"
 
+msgid "Speed hack, enable to disable surface syncing between CPU and GPU. Surface syncing is needed by a few games."
+msgstr "スピードハック：CPU と GPU 間のサーフェスの同期を無効にします\nいくつかのゲームでは サーフェスの同期が必要です"
+
 msgid "Speed up shader compilation."
 msgstr "シェーダーのコンパイルを高速化します"
 
 msgid "Speeds up file loading. Some games won't load with this."
 msgstr "ファイルの読み込みを高速化します。いくつかのゲームは読み込めません"
+
+msgid "Square Pixels"
+msgstr "正方形ピクセル"
 
 msgid "Square pixel"
 msgstr "正方形ピクセル"
@@ -4215,6 +4593,15 @@ msgstr "スウェーデン"
 msgid "Swedish"
 msgstr "スウェーデン語"
 
+msgid "Swedish (se)"
+msgstr "スウェーデン語 (se)"
+
+msgid "Swiss French (ch)"
+msgstr "スイスフランス語 (ch)"
+
+msgid "Swiss German (ch)"
+msgstr "スイスドイツ語 (ch)"
+
 msgid "Switzerland"
 msgstr "スイス"
 
@@ -4281,6 +4668,9 @@ msgstr "タイムストレッチしきい値"
 msgid "TIMED AXIS INTERVALS"
 msgstr "ジョイスティック軸の時間間隔"
 
+msgid "TOS languages."
+msgstr "TOS言語"
+
 msgid "TOUCH MODE"
 msgstr "タッチモード"
 
@@ -4295,6 +4685,21 @@ msgstr "トライリニアフィルタリング"
 
 msgid "TRUE COLOR RENDERING"
 msgstr "トゥルー カラー (レンダリング)"
+
+msgid "TT"
+msgstr "TT"
+
+msgid "TT 3.06"
+msgstr "TT 3.06"
+
+msgid "TT AUTO"
+msgstr "TT (TOS自動)"
+
+msgid "TT ETOS 512k"
+msgstr "TT ETOS 512k"
+
+msgid "TV"
+msgstr "TV"
 
 msgid "TV EFFECTS"
 msgstr "TV エフェクト"
@@ -4316,6 +4721,9 @@ msgstr "台湾語"
 
 msgid "Tandy"
 msgstr "Tandy"
+
+msgid "Thai"
+msgstr "タイ"
 
 msgid "Thailand"
 msgstr "タイ"
@@ -4410,6 +4818,12 @@ msgstr "チュニジア"
 msgid "Turkey"
 msgstr "Turkey"
 
+msgid "Turkish"
+msgstr "トルコ語"
+
+msgid "Turkish (tr)"
+msgstr "トルコ語 (tr)"
+
 msgid "Turquoise"
 msgstr "ターコイズ"
 
@@ -4443,6 +4857,9 @@ msgstr "アメリカ"
 msgid "USA"
 msgstr "USA"
 
+msgid "USA (Default)"
+msgstr "USA (標準)"
+
 msgid "USE DSP AUDIO"
 msgstr "DSP オーディオを使用"
 
@@ -4457,6 +4874,9 @@ msgstr "ソフトウェアレンダリングを使用"
 
 msgid "Ukraine"
 msgstr "ウクライナ"
+
+msgid "Ukrainian"
+msgstr "ウクライナ語"
 
 msgid "Ultra"
 msgstr "ウルトラ"
@@ -4566,6 +4986,9 @@ msgstr "画面垂直回転（縦画面）"
 msgid "VGA"
 msgstr "VGA"
 
+msgid "VGA (Default)"
+msgstr "VGA (標準)"
+
 msgid "VIDEO FILTERS"
 msgstr "ビデオ フィルター"
 
@@ -4594,6 +5017,9 @@ msgid "Very High"
 msgstr "非常に高い"
 
 msgid "Vietnam"
+msgstr "ベトナム"
+
+msgid "Vietnamese"
 msgstr "ベトナム"
 
 msgid "Vulkan"

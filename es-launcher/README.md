@@ -67,7 +67,7 @@ Generators
 
 | Emulator name (`es_systems.cfg`) | Generator | Notes |
 | --- | --- | --- |
-| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, vba-m (`vbam`), mgba, melondsds, melonds, desmume, mesen, fceumm, nestopia, snes9x, bsnes (and bsnes_hd), mupen64plus-next, parallel_n64, vb (`mednafen_vb`), pokemini, swanstation, mednafen_psx (`mednafen_psx_hw`), pcsx_rearmed, genesisplusgx (`genesis_plus_gx`, and the expanded build), picodrive, beetle-saturn (`mednafen_saturn`), yabasanshiro, kronos, ppsspp, pce and pce_fast (`mednafen_pce`, `mednafen_pce_fast`), mednafen_supergrafx, mednafen_wswan, fbneo, mame078plus (`mame2003_plus`), neocd, stella, handy, virtualjaguar, opera, atari800 (Atari 800 and 5200), dosbox_pure, scummvm, bluemsx, puae, vice_x64 (and vice_x64sc, vice_xscpu64) and flycast (Dreamcast, Naomi, Atomiswave); any other core runs with the generic settings |
+| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, vba-m (`vbam`), mgba, melondsds, melonds, desmume, mesen, fceumm, nestopia, snes9x, bsnes (and bsnes_hd), mupen64plus-next, parallel_n64, vb (`mednafen_vb`), pokemini, swanstation, mednafen_psx (`mednafen_psx_hw`), pcsx_rearmed, genesisplusgx (`genesis_plus_gx`, and the expanded build), picodrive, beetle-saturn (`mednafen_saturn`), yabasanshiro, kronos, ppsspp, pce and pce_fast (`mednafen_pce`, `mednafen_pce_fast`), mednafen_supergrafx, mednafen_wswan, fbneo, mame078plus (`mame2003_plus`), neocd, stella, handy, virtualjaguar, opera, atari800 (Atari 800 and 5200), dosbox_pure, scummvm, bluemsx, puae, vice_x64 (and vice_x64sc, vice_xscpu64), hatarib (Atari ST) and flycast (Dreamcast, Naomi, Atomiswave); any other core runs with the generic settings |
 | `duckstation` | DuckStation | PlayStation |
 | `pcsx2` | PCSX2 | PlayStation 2, x86_64 only |
 | `ppsspp` | PPSSPP | PSP |
@@ -85,6 +85,10 @@ Generators
 | `dosbox_staging` | DOSBox Staging | DOS: the game folder (`.pc`, `.dos`) with its `dosbox.conf`/`dosbox.cfg` and `dosbox.bat`, or a C:\> prompt |
 | `scummvm` | ScummVM | a `<game>.scummvm` file holding the game id (or empty: the file name), else detection |
 | `stella` | Stella | Atari 2600; started with the game, full screen, Stella keeps its own settings |
+| `hatari` | Hatari | Atari ST, STE, TT and Falcon: a floppy, a `.hd` hard disk image or a `.gemdos` folder |
+| `vita3k` | Vita3K | PlayStation Vita: a file named with the title id in brackets (`Game [PCSG00004].zip`), installed by Vita3K the first time |
+| `shadps4` | shadPS4 | PlayStation 4, x86_64 only: the game folder (or a file in it) with its `eboot.bin`, or a `.zar` |
+| `redream` | Redream | Dreamcast, x86_64 only |
 
 Any other emulator keeps the `es_systems.cfg` command. Setting `eslauncher=0` in the ES
 configuration (`global.eslauncher`, `<system>.eslauncher` or for one game) also keeps it.
@@ -138,6 +142,10 @@ leaves the others as the player set them in the emulator's menus.
 | ScummVM | `scummvm/scummvm.ini` (`--config`) | `<saves>/scummvm`; extra files in `<bios>/scummvm/extra` |
 | DOSBox Staging | `dosbox/dosbox-staging.conf`, read by the games' batch files (`RESCONF`) | in the game folder |
 | Supermodel | `supermodel/Config/Supermodel.ini` and `Games.xml` (run in `supermodel/`) | `<saves>/model3/NVRAM` and `Saves`, linked from `supermodel/` |
+| Hatari | `hatari/hatari.cfg` (`--configfile`) | in the disk images |
+| Vita3K | `vita3k/config.yml` (`-c`) | the Vita storage (`ux0`: installed games and saves) is `<saves>/psvita` |
+| shadPS4 | `shadps4/shadPS4/config.json` (`XDG_DATA_HOME` is `shadps4/`) | `<saves>/ps4`; DLC in the `DLC` folder next to the games |
+| Redream | `redream/redream.cfg`, next to the copy of the program it runs (`redream.key` goes there too) | `redream/` |
 
 * BIOS: DuckStation looks at the root of the BIOS folder, then `psx/` (scph1001.bin, scph5501.bin...);
   PCSX2 in `ps2/`, then the root; xemu needs `mcpx_1.0.bin` and `Complex_4627.bin` at the root,
@@ -147,7 +155,9 @@ leaves the others as the player set them in the emulator's menus.
   hold `prod.keys`; its firmware is installed from Eden's menu. melonDS uses `bios7.bin`,
   `bios9.bin` and `firmware.bin` from the root when all three are there, else its own free BIOS.
   PUAE reads the Kickstart ROMs from `amiga/`, VICE the JiffyDOS ROMs from `vice/` (JiffyDOS is on
-  when they are all there). Mupen64Plus reads the 64DD IPL `64DD_IPL.bin` from the root, Ymir the Saturn IPL ROMs. Supermodel needs the `Games.xml` of its install
+  when they are all there). Mupen64Plus reads the 64DD IPL `64DD_IPL.bin` from the root, Ymir the Saturn IPL ROMs. Hatari
+  reads the TOS from the root (`tos104us.img`, `tos162fr.img`, EmuTOS `etos256us.img`...), the best
+  one for the machine and language chosen. Supermodel needs the `Games.xml` of its install
   (copied from `/usr/share/supermodel` or the `Config` folder next to the program). A missing BIOS stops the launch
   with a message.
 * Options keep the names of batocera-launch (`duckstation_gfxbackend`, `pcsx2_ratio`,
@@ -174,7 +184,7 @@ leaves the others as the player set them in the emulator's menus.
 * Hotkeys: the same as RetroArch, bound in the emulator to player 1's hotkey held with the other
   button (Start quits, B opens the menu or pauses, Y/X save and load a state...), where the
   emulator has the action; Eden gets them as its controller shortcuts. Without a pad, the keyboard
-  keys of batocera-launch. Azahar, Cemu, xemu, Xenia, RPCS3, melonDS, Mupen64Plus, Ymir, Supermodel, Stella, DOSBox Staging and ScummVM cannot bind actions to a pad, so
+  keys of batocera-launch. Azahar, Cemu, xemu, Xenia, RPCS3, melonDS, Mupen64Plus, Ymir, Supermodel, Stella, DOSBox Staging, ScummVM, Hatari, Vita3K, shadPS4 and Redream cannot bind actions to a pad, so
   their command sets `closeOnHotkey`: while the game runs, ES watches the pads itself and closes
   the emulator when a player holds the hotkey and presses Start (SIGTERM to its process group,
   SIGKILL after 5 seconds). `exithotkey=0` turns this off. Their other hotkeys stay in the
@@ -198,18 +208,18 @@ Writing a generator
 #include <es-launcher/Generator.h>
 #include <es-launcher/LaunchError.h>
 
-class HatariGenerator : public es::launcher::Generator
+class FuseGenerator : public es::launcher::Generator
 {
 public:
     es::launcher::Command configure(const es::launcher::LaunchContext& ctx) override
     {
-        auto configDir = ctx.paths.configFor("hatari");
-        // ... write configDir / "hatari.cfg" from ctx.settings and ctx.controllers ...
-        return { { "hatari", "--fullscreen", "--disk-a", ctx.game.rom.string() } };
+        auto configDir = ctx.paths.configFor("fuse");
+        // ... write configDir / "fuserc" from ctx.settings and ctx.controllers ...
+        return { { "fuse", "--full-screen", ctx.game.rom.string() } };
     }
 };
 
-ES_LAUNCHER_REGISTER_GENERATOR("hatari", HatariGenerator)
+ES_LAUNCHER_REGISTER_GENERATOR("fuse", FuseGenerator)
 ```
 
 Rules for generators:
