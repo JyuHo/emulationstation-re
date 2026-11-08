@@ -12,7 +12,7 @@ ComponentGrid::ComponentGrid(Window* window, const Vector2i& gridDimensions) : G
 	assert(gridDimensions.x() > 0 && gridDimensions.y() > 0);
 
 	mSeparatorColor = ThemeData::getMenuTheme()->Grid.hasSeparatorColor ? ThemeData::getMenuTheme()->Grid.separatorColor : ThemeData::getMenuTheme()->Text.separatorColor;
-	mCells.reserve(gridDimensions.x() * gridDimensions.y());
+	mCells.reserve((size_t)gridDimensions.x() * (size_t)gridDimensions.y());
 
 	for(int x = 0; x < gridDimensions.x(); x++)
 		mColWidths.push_back(new GridSizeInfo());

@@ -29,7 +29,7 @@ jobs:
           apt-get install -y --no-install-recommends git ca-certificates build-essential cmake \
             ninja-build libsdl3-dev libsdl3-image-dev libfreetype-dev libcurl4-openssl-dev \
             rapidjson-dev libvlc-dev libasound2-dev libgl-dev libudev-dev libfribidi-dev \
-            libcec-dev zlib1g-dev gettext
+            libcec-dev zlib1g-dev gettext python3
 
       - uses: actions/checkout@v4
         with:
@@ -40,10 +40,6 @@ jobs:
         with:
           languages: c-cpp
           build-mode: manual
-          # the bundled libraries are not ES-RE's code: their alerts are left out
-          config: |
-            paths-ignore:
-              - external
 
       - name: Build
         run: |
@@ -51,8 +47,22 @@ jobs:
           cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DGL=ON -DES_TESTS=ON -DES_PCH=OFF
           cmake --build build
 
+      # uploaded below, once the alerts of external/ are taken out (paths-ignore has no
+      # effect on compiled code)
       - uses: github/codeql-action/analyze@v3
         with:
+          category: /language:c-cpp
+          output: sarif-results
+          upload: never
+
+      # leaves out the bundled libraries, which are not ES-RE's code, and lists the alerts in the
+      # job summary too, so they can be read without the Security tab
+      - name: List the alerts
+        run: python3 .github/scripts/sarif-summary.py --exclude external/ sarif-results/*.sarif
+
+      - uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: sarif-results
           category: /language:c-cpp
 
   actions:
@@ -69,3 +79,9 @@ jobs:
       - uses: github/codeql-action/analyze@v3
         with:
           category: /language:actions
+          output: sarif-results
+
+      # lists the alerts in the job summary too, so they can be read without the Security tab
+      - name: List the alerts
+        if: always()
+        run: python3 .github/scripts/sarif-summary.py sarif-results/*.sarif

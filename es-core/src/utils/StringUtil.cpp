@@ -435,6 +435,12 @@ namespace Utils
 
 		} // replace
 
+		std::string shellQuote(const std::string& _string)
+		{
+			return "'" + replace(_string, "'", "'\\''") + "'";
+
+		} // shellQuote
+
 		bool startsWith(const std::string& _string, const std::string& _start)
 		{
 			return (strncmp(_string.c_str(), _start.c_str(), _start.size()) == 0);

@@ -431,7 +431,7 @@ std::vector<std::string> ApiSystem::getVideoModes(const std::string output)
   if(output == "") {
     return executeEnumerationScript("batocera-resolution listModes");
   } else {
-    return executeEnumerationScript("batocera-resolution --screen \"" + output + "\" listModes");
+    return executeEnumerationScript("batocera-resolution --screen " + Utils::String::shellQuote(output) + " listModes");
   }
 }
 
@@ -454,7 +454,7 @@ std::vector<BiosSystem> ApiSystem::getBiosInformations(const std::string system)
 
 	std::string cmd = "batocera-systems";
 	if (!system.empty())
-		cmd += " --filter " + system;
+		cmd += " --filter " + Utils::String::shellQuote(system);
 
 	auto systems = executeEnumerationScript(cmd);
 	for (auto line : systems)
@@ -851,7 +851,7 @@ std::string ApiSystem::getMD5(const std::string fileName, bool fromZipContents)
 
 	if (fromZipContents && ext == ".7z")
 	{
-		auto cmd = getSevenZipCommand() + " x -so \"" + fileName + "\" | md5sum";
+		auto cmd = getSevenZipCommand() + " x -so " + Utils::String::shellQuote(fileName) + " | md5sum";
 		auto ret = executeEnumerationScript(cmd);
 		if (ret.size() == 1 && ret.cbegin()->length() >= 32)
 			return ret.cbegin()->substr(0, 32);
@@ -901,7 +901,7 @@ std::string ApiSystem::getCRC32(std::string fileName, bool fromZipContents)
 		LOG(LogDebug) << "getCRC32 is using 7z";
 
 		std::string fn = Utils::FileSystem::getFileName(fileName);
-		auto cmd = getSevenZipCommand() + " l -slt \"" + fileName + "\"";
+		auto cmd = getSevenZipCommand() + " l -slt " + Utils::String::shellQuote(fileName);
 		auto lines = executeEnumerationScript(cmd);
 		for (std::string all : lines)
 		{
@@ -982,7 +982,7 @@ bool ApiSystem::unzipFile(const std::string fileName, const std::string destFold
 	
 	LOG(LogDebug) << "unzipFile is using 7z";
 
-	std::string cmd = getSevenZipCommand() + " x \"" + Utils::FileSystem::getPreferredPath(fileName) + "\" -y -o\"" + Utils::FileSystem::getPreferredPath(destFolder) + "\"";
+	std::string cmd = getSevenZipCommand() + " x " + Utils::String::shellQuote(Utils::FileSystem::getPreferredPath(fileName)) + " -y -o" + Utils::String::shellQuote(Utils::FileSystem::getPreferredPath(destFolder));
 	bool ret = executeScript(cmd);
 	LOG(LogDebug) << "unzipFile <<";
 	return ret;
@@ -1738,12 +1738,12 @@ bool ApiSystem::isReadyFlagSet()
 
 int ApiSystem::formatDisk(const std::string disk, const std::string format, const std::function<void(const std::string)>& func)
 {
-	return executeScript("batocera-format format " + disk + " " + format, func).second;
+	return executeScript("batocera-format format " + Utils::String::shellQuote(disk) + " " + Utils::String::shellQuote(format), func).second;
 }
 
 int ApiSystem::getPdfPageCount(const std::string& fileName)
 {
-	auto lines = executeEnumerationScript("pdfinfo \"" + fileName + "\"");
+	auto lines = executeEnumerationScript("pdfinfo " + Utils::String::shellQuote(fileName));
 	for (auto line : lines)
 	{
 		auto splits = Utils::String::split(line, ':', true);
@@ -1824,7 +1824,7 @@ std::vector<std::string> ApiSystem::extractPdfImages(const std::string& fileName
 		page = " -f " + std::to_string(pageIndex) + " -l " + std::to_string(pageIndex + pageCount - 1);
 	}
 
-	executeEnumerationScript("pdftoppm -jpeg -r "+ squality +" -cropbox" + page + " \"" + fileName + "\" \"" + pdfFolder + "/" + prefix + "\"");
+	executeEnumerationScript("pdftoppm -jpeg -r "+ squality +" -cropbox" + page + " " + Utils::String::shellQuote(fileName) + " " + Utils::String::shellQuote(pdfFolder + "/" + prefix));
 
 	int time = SDL_GetTicks() - lastTime;
 	std::string text = std::to_string(time);
@@ -1848,12 +1848,12 @@ std::vector<std::string> ApiSystem::extractPdfImages(const std::string& fileName
 
 std::pair<std::string, int> ApiSystem::installBatoceraStorePackage(std::string name, const std::function<void(const std::string)>& func)
 {
-	return executeScript("batocera-store install \"" + name + "\"", func);
+	return executeScript("batocera-store install " + Utils::String::shellQuote(name), func);
 }
 
 std::pair<std::string, int> ApiSystem::uninstallBatoceraStorePackage(std::string name, const std::function<void(const std::string)>& func)
 {
-	return executeScript("batocera-store remove \"" + name + "\"", func);
+	return executeScript("batocera-store remove " + Utils::String::shellQuote(name), func);
 }
 
 // RetroArch shader presets, as paths relative to their folder without the extension ("crt/crt-royale")
