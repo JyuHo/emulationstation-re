@@ -39,8 +39,14 @@ msgstr "1 스레드"
 msgid "1% (Default)"
 msgstr "1% (기본)"
 
+msgid "1.0x (12.50Mhz)"
+msgstr "1.0배 (12.50Mhz)"
+
 msgid "1.1x"
 msgstr "1.1배"
+
+msgid "1.1x (13.75Mhz)"
+msgstr "1.1배 (13.75Mhz)"
 
 msgid "1.25x (800x600)"
 msgstr "1.25배 (800x600)"
@@ -51,6 +57,9 @@ msgstr "1.25배 원본"
 msgid "1.2x"
 msgstr "1.2배"
 
+msgid "1.2x (15.00Mhz)"
+msgstr "1.2배 (15.00Mhz)"
+
 msgid "1.3x"
 msgstr "1.3배"
 
@@ -59,6 +68,9 @@ msgstr "1.4배"
 
 msgid "1.5x"
 msgstr "1.5배"
+
+msgid "1.5x (18.75Mhz)"
+msgstr "1.5배 (18.75Mhz)"
 
 msgid "1.5x (960x720)"
 msgstr "1.5배 (960x720)"
@@ -69,8 +81,14 @@ msgstr "1.5배 원본"
 msgid "1.6x (1024x768)"
 msgstr "1.6배 (1024x768)"
 
+msgid "1.6x (20.00Mhz)"
+msgstr "1.6배 (20.00Mhz)"
+
 msgid "1.75x Native"
 msgstr "1.75배 원본"
+
+msgid "1.8x (22.50Mhz)"
+msgstr "1.8배 (22.50Mhz)"
 
 msgid "10 seconds"
 msgstr "10 초"
@@ -173,6 +191,9 @@ msgstr "2 초"
 
 msgid "2 threads"
 msgstr "2 스레드"
+
+msgid "2.0x (25.00Mhz)"
+msgstr "2.0배 (25.00Mhz)"
 
 msgid "2.25x (1440x1080)"
 msgstr "2.25배 (1440x1080)"
@@ -501,6 +522,9 @@ msgstr "9일"
 msgid "9x 4K (2880x2160)"
 msgstr "9배 4K (2880x2160)"
 
+msgid "ACTIVE INPUT DEVICES FIX"
+msgstr "활성 입력 장치 수정"
+
 msgid "ADJUST POWERPC FREQUENCY"
 msgstr "파워피씨 주파수 조정"
 
@@ -554,6 +578,9 @@ msgstr "비동기 셰이더 컴파일 (VULKAN 전용)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "비동기 텍스처 스트리밍"
+
+msgid "ATARI SYSTEM"
+msgstr "아타리 시스템"
 
 msgid "AUDIO"
 msgstr "오디오"
@@ -663,6 +690,12 @@ msgstr "아날로그 조이스틱"
 msgid "Analog Joystick (Flystick)"
 msgstr "아날로그 조이스틱 (플라이스틱)"
 
+msgid "Analog deadzone for paddles. Core default (15)."
+msgstr "패들에 대한 아날로그 데드존입니다. 코어 기본값 (15)입니다."
+
+msgid "Analog sensitivity for paddles. Core default (20)."
+msgstr "패들의 아날로그 감도입니다. 코어 기본값 (20)입니다."
+
 msgid "Angrylion"
 msgstr "앵그리라이언"
 
@@ -729,6 +762,9 @@ msgstr "오스트레일리아"
 msgid "Austria"
 msgstr "오스트리아"
 
+msgid "Auto (Default)"
+msgstr "자동 (기본값)"
+
 msgid "Auto Max Quality"
 msgstr "자동 최대 품질"
 
@@ -791,6 +827,9 @@ msgstr "BT601_625/D65 (모든 EUR/AUS 개발 게임에 권장)"
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "버퍼 그래픽 명령"
+
+msgid "Badly adjusted"
+msgstr "제대로 조정되지 못함"
 
 msgid "Bahrain"
 msgstr "바레인"
@@ -942,6 +981,9 @@ msgstr "색상 팔레트 (2D)"
 msgid "CONSOLE COUNTRY"
 msgstr "콘솔 국가"
 
+msgid "CONSOLE DISPLAY"
+msgstr "콘솔 디스플레이"
+
 msgid "CONSOLE LANGUAGE"
 msgstr "콘솔 언어"
 
@@ -1017,8 +1059,14 @@ msgstr "CPU 실행 모드"
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "CPU-GPU 지연 시간 제한합니다. 값이 낮을수록 지연 시간은 개선되지만 성능이 저하될 수 있습니다."
 
+msgid "CROP HORIZONTAL OVERSCAN"
+msgstr "가로 방향 오버스캔 자르기"
+
 msgid "CROP OVERSCAN"
 msgstr "오버스캔 자르기"
+
+msgid "CROP VERTICAL OVERSCAN"
+msgstr "세로 방향 오버스캔 자르기"
 
 msgid "CURSOR MODE"
 msgstr "커서 모드"
@@ -1205,6 +1253,12 @@ msgstr "코스타리카"
 
 msgid "Croatia"
 msgstr "크로아티아"
+
+msgid "Crop horizontal overscan."
+msgstr "가로 방향으로 오버스캔을 자릅니다."
+
+msgid "Crop vertical overscan (lines). Core default (0)."
+msgstr "세로 방향 오버스캔 (라인)을 자릅니다. 코어 기본값 (0)입니다."
 
 msgid "Cross"
 msgstr "십자가"
@@ -1488,6 +1542,9 @@ msgstr "MelonDS에서 두 개 이상의 화면을 표시할 수 있도록 설정
 msgid "Enable No-interlacing Patches."
 msgstr "비인터레이스 패치를 활성화합니다."
 
+msgid "Enable TV-like filtering / effects."
+msgstr "TV와 유사한 필터링/효과를 활성화합니다."
+
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "캐시 마운트를 활성화합니다. 일부 게임에서 성능과 호환성을 향상할 수 있습니다."
 
@@ -1503,8 +1560,17 @@ msgstr "두 화면 간 상호 작용이 있는 게임의 경우 게임패드 보
 msgid "Enable notifications of cache, controller events etc."
 msgstr "캐시, 컨트롤러 이벤트 등에 대한 알림을 활성화합니다."
 
+msgid "Enable phosphor mode (motion blur) for flickering effects."
+msgstr "깜빡임 효과를 위해 인광 모드 (모션 블러)를 활성화합니다."
+
 msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
 msgstr "두 번째 오디오 리미터를 활성화합니다. 성능 저하로 오디오 품질을 향상시킵니다."
+
+msgid "Enable shared saves for multi-disc games"
+msgstr "다중 디스크 게임에 대한 공유 저장 활성화"
+
+msgid "Enable the BASIC interpreter. Some games need this."
+msgstr "기본 해석기를 활성화합니다. 일부 게임에서는 이것이 필요합니다."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "더 정확한 오디오를 위해 드림캐스트 DSP를 활성화합니다. 빠른 시스템에만 권장됩니다."
@@ -1659,6 +1725,9 @@ msgstr "마스터 시스템과 유사하게 게임 화면 영역을 확장합니
 msgid "External"
 msgstr "외부"
 
+msgid "FAST BLITTER (LESS COMPATIBLE)"
+msgstr "빠른 블리터 (호환성 낮음)"
+
 msgid "FAST DISK TRANSFER RATE"
 msgstr "빠른 디스크 전송 속도"
 
@@ -1743,6 +1812,9 @@ msgstr "화면 찢어짐을 수정합니다. CPU가 성능을 많이 소모합�
 msgid "Fix texture banding when upscaling."
 msgstr "업스케일링 시 텍스처 밴딩을 수정합니다."
 
+msgid "Fixes a possible bug with multiple controllers detection."
+msgstr "여러 컨트롤러 검색에서 발생할 수 있는 버그를 수정합니다."
+
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "자이로 지원 게임용 (왼쪽 아날로그 스틱에 바인딩됨)"
 
@@ -1754,6 +1826,9 @@ msgstr "강제 피드백을 지원하는 에뮬레이터 및 컨트롤러용."
 
 msgid "For use with HD texture packs."
 msgstr "고선명 텍스처 팩과 함께 사용합니다."
+
+msgid "For weak machines. Some games will not work with this."
+msgstr "약한 기계의 경우. 일부 게임은 이것으로 작동하지 않습니다."
 
 msgid "Force 16:9"
 msgstr "강제 16:9"
@@ -1968,6 +2043,9 @@ msgstr "하드웨어 셰이더"
 msgid "HARDWARE TESSELLATION"
 msgstr "하드웨어 테셀레이션"
 
+msgid "HI-RES ARTIFACTING"
+msgstr "고해상도 아티팩트"
+
 msgid "HLE (Fastest)"
 msgstr "고수준 에뮬레이션 (가장 빠름)"
 
@@ -2036,6 +2114,9 @@ msgstr "정수 업스케일링"
 
 msgid "INTERLACING PATCHES"
 msgstr "인터레이싱 패치"
+
+msgid "INTERNAL BASIC INTERPRETER"
+msgstr "내부 기본 해석기"
 
 msgid "INTERNAL DISPLAY RESOLUTION"
 msgstr "내부 디스플레이 해상도"
@@ -2115,6 +2196,9 @@ msgstr "조이스틱 데드존"
 msgid "JOYSTICK GATE SIZE"
 msgstr "조이스틱 게이트 크기"
 
+msgid "JOYSTICK HACK (FOR ROBOTRON 2084)"
+msgstr "조이스틱 해킹 (로보트론 2084 용)"
+
 msgid "JOYSTICK SENSITIVITY"
 msgstr "조이스틱 감도"
 
@@ -2162,6 +2246,9 @@ msgstr "조이패드 6 버튼 + 팀 플레이어"
 
 msgid "Joypad Auto"
 msgstr "조이패드 자동"
+
+msgid "Joypad sensitivity for paddles. Core default (3)."
+msgstr "패들에 대한 조이패드 감도입니다. 코어 기본값 (3)입니다."
 
 msgid "Joystick"
 msgstr "조이스틱"
@@ -2475,6 +2562,9 @@ msgstr "모로코"
 msgid "Mouse"
 msgstr "마우스"
 
+msgid "Mouse sensitivity for paddles. Core default (10)."
+msgstr "패들에 대한 마우스 감도입니다. 코어 기본값 (10)입니다."
+
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "해석기보다 훨씬 빠릅니다 (그러나 문제가있을 수 있음)."
 
@@ -2529,8 +2619,17 @@ msgstr "NTSC (RGB)"
 msgid "NTSC (S-Video)"
 msgstr "NTSC (S-비디오)"
 
+msgid "NTSC 240x480px 60Hz"
+msgstr "NTSC 240x480픽셀 60Hz"
+
+msgid "NTSC ASPECT"
+msgstr "NTSC 화면비"
+
 msgid "NTSC FILTER"
 msgstr "NTSC 필터"
+
+msgid "NTSC aspect ratio correction. Core default (PAR)."
+msgstr "NTSC 화면비 보정입니다. 코어 기본값 (PAR)입니다."
 
 msgid "NTSC-J"
 msgstr "NTSC-J"
@@ -2540,6 +2639,12 @@ msgstr "NTSC-U"
 
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
+
+msgid "NTSC50"
+msgstr "NTSC50"
+
+msgid "NVRAM STORAGE"
+msgstr "NVRAM 스토리지"
 
 msgid "Namco GunCon"
 msgstr "남코 건콘"
@@ -2754,6 +2859,36 @@ msgstr "P1 전용"
 msgid "P2 only"
 msgstr "P2 전용"
 
+msgid "PADDLE ANALOG ABSOLUTE"
+msgstr "패들 아날로그 앱솔루트"
+
+msgid "PADDLE ANALOG DEADZONE"
+msgstr "패들 아날로그 데드존"
+
+msgid "PADDLE ANALOG SENSITIVITY"
+msgstr "패들 아날로그 감도"
+
+msgid "PADDLE JOYPAD SENSITIVITY"
+msgstr "패들 조이패드 감도"
+
+msgid "PADDLE MOUSE SENSITIVITY"
+msgstr "패들 마우스 감도"
+
+msgid "PAL 288x576px 50Hz"
+msgstr "PAL 288x576픽셀 50Hz"
+
+msgid "PAL ASPECT"
+msgstr "PAL 화면비"
+
+msgid "PAL aspect ratio correction. Core default (PAR)."
+msgstr "PAL 화면비 보정입니다. 코어 기본값 (PAR)입니다."
+
+msgid "PAL60"
+msgstr "PAL60"
+
+msgid "PALETTE COLORS"
+msgstr "팔레트 색상"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2774,6 +2909,12 @@ msgstr "성능"
 
 msgid "PERFORMANCE HACKS"
 msgstr "성능 해킹"
+
+msgid "PHOSPHOR BLEND"
+msgstr "인광체 혼합"
+
+msgid "PHOSPHOR MODE"
+msgstr "인광체 모드"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "플레이어 1 십자선 색상"
@@ -2844,6 +2985,9 @@ msgstr "1초당, 총 60초 (660MB|120MB)"
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "1초당, 총 90초 (990MB|180MB)"
 
+msgid "Per Game"
+msgstr "게임당"
+
 msgid "Per-game"
 msgstr "게임당"
 
@@ -2852,6 +2996,9 @@ msgstr "페루"
 
 msgid "Philippines"
 msgstr "필리핀"
+
+msgid "Phosphor blend level. Core default (60%)."
+msgstr "인광체 혼합 비율입니다. 코어 기본값 (60%)입니다."
 
 msgid "PlayStation Mouse"
 msgstr "플레이스테이션 마우스"
@@ -3093,6 +3240,12 @@ msgstr "화면 교체"
 msgid "SDL2"
 msgstr "SDL2"
 
+msgid "SECAM"
+msgstr "SECAM"
+
+msgid "SECAM60"
+msgstr "SECAM60"
+
 msgid "SENSITIVITY"
 msgstr "감도"
 
@@ -3128,6 +3281,9 @@ msgstr "화면 디스플레이 메시지 표시"
 
 msgid "SHOW SCREEN LAYOUT"
 msgstr "화면 레이아웃 표시"
+
+msgid "SIO ACCELERATION"
+msgstr "SIO 가속"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "버퍼 효과 건너뛰기"
@@ -3192,6 +3348,9 @@ msgstr "SPU 디코더"
 msgid "SPU LOOP DETECTION"
 msgstr "SPU 루프 감지"
 
+msgid "STEREO SOUND"
+msgstr "스트레오 사운드"
+
 msgid "STRETCH MODE"
 msgstr "늘리기 모드"
 
@@ -3249,8 +3408,14 @@ msgstr "세가/메가 CD"
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "'펌웨어 설정 사용'이 비활성화되어 있거나 펌웨어 파일을 찾을 수 없는 경우 언어 선택이 사용됩니다."
 
+msgid "Select the console video standard / display mode."
+msgstr "콘솔 비디오 표준/표시 모드를 선택하세요."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "터치 스크린을 탐색하려면 입력 유형을 선택"
+
+msgid "Select the palette used to render colors."
+msgstr "색상을 표현하는 데 사용할 팔레트를 선택하세요."
 
 msgid "Separate Windows"
 msgstr "별도의 창"
@@ -3417,11 +3582,17 @@ msgstr "듀얼 코어 모드의 속도를 높이는 해킹으로 일부 결함�
 msgid "Speed up shader compilation."
 msgstr "셰이더 컴파일 속도를 높입니다."
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "파일 로딩 속도를 높입니다. 일부 게임은 이 방법으로는 로딩되지 않습니다."
+
 msgid "Square pixel"
 msgstr "정사각형 픽셀"
 
 msgid "Standard (4:3)"
 msgstr "표준 (4:3)"
+
+msgid "Standard (Default)"
+msgstr "표준 (기본값)"
 
 msgid "Standard Controller"
 msgstr "표준 컨트롤러"
@@ -3434,6 +3605,9 @@ msgstr "스티어링 핸들"
 
 msgid "Stereo"
 msgstr "스테레오"
+
+msgid "Stereo sound output."
+msgstr "스트레오 사운드 출력입니다."
 
 msgid "Stretch"
 msgstr "늘리기"
@@ -3537,6 +3711,9 @@ msgstr "삼중선형 필터링"
 msgid "TRUE COLOR RENDERING"
 msgstr "트루 컬러 렌더링"
 
+msgid "TV EFFECTS"
+msgstr "TV 효과"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - 팩 1"
 
@@ -3617,6 +3794,9 @@ msgstr "터치 스크린"
 
 msgid "Traditional Chinese"
 msgstr "중국어 번체"
+
+msgid "Treats the right analog stick as the second joystick."
+msgstr "오른쪽 아날로그 스틱을 두 번째 조이스틱으로 취급합니다."
 
 msgid "Trilinear (Forced)"
 msgstr "삼중선형 (강제)"
@@ -3717,6 +3897,12 @@ msgstr "메가드라이브를 사용하면 6 버튼 레이아웃의 메가드라
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "안티에일리어싱을 위해 MSAA 대신 SSAA를 사용합니다. SSAA는 보기에는 더 좋지만 성능 비용이 더 높습니다."
 
+msgid "Use absolute analog input for paddles."
+msgstr "패들에는 절대 아날로그 입력을 사용하세요."
+
+msgid "Use an alternate resolution. Some games need this."
+msgstr "대체 해상도를 사용합니다. 일부 게임에서 필요합니다."
+
 msgid "Use language and username from the NDS Firmware"
 msgstr "NDS 펌웨어의 언어, 사용자 이름 사용"
 
@@ -3747,6 +3933,9 @@ msgstr "특정 아케이드 게임에 유용합니다."
 msgid "Useful for speedruns/glitches."
 msgstr "스피드런/글리치에 유용합니다."
 
+msgid "User"
+msgstr "사용자"
+
 msgid "Uses hardware to make curves."
 msgstr "하드웨어를 사용하여 곡선을 만듭니다."
 
@@ -3767,6 +3956,9 @@ msgstr "수직 회전 (테이트)"
 
 msgid "VIDEO FILTERS"
 msgstr "비디오 필터"
+
+msgid "VIDEO FORMAT STANDARD"
+msgstr "비디오 형식 표준"
 
 msgid "VIDEO SETTINGS"
 msgstr "비디오 설정"
@@ -3887,6 +4079,9 @@ msgstr "노란색"
 
 msgid "Yemen"
 msgstr "예멘"
+
+msgid "Z26"
+msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "ZCULL 정확도"

@@ -39,8 +39,14 @@ msgstr "1 szál"
 msgid "1% (Default)"
 msgstr "1% (alapértelmezett)"
 
+msgid "1.0x (12.50Mhz)"
+msgstr "1.0x (12.50Mhz)"
+
 msgid "1.1x"
 msgstr "1.1x"
+
+msgid "1.1x (13.75Mhz)"
+msgstr "1.1x (13.75Mhz)"
 
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
@@ -51,6 +57,9 @@ msgstr "1,25x Natív"
 msgid "1.2x"
 msgstr "1.2x"
 
+msgid "1.2x (15.00Mhz)"
+msgstr "1.2x (15.00Mhz)"
+
 msgid "1.3x"
 msgstr "1.3x"
 
@@ -59,6 +68,9 @@ msgstr "1.4x"
 
 msgid "1.5x"
 msgstr "1.5x"
+
+msgid "1.5x (18.75Mhz)"
+msgstr "1.5x (18.75Mhz)"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -69,8 +81,14 @@ msgstr "1,5x Natív"
 msgid "1.6x (1024x768)"
 msgstr "1.6x (1024x768)"
 
+msgid "1.6x (20.00Mhz)"
+msgstr "1.6x (20.00Mhz)"
+
 msgid "1.75x Native"
 msgstr "1.75x Natív"
+
+msgid "1.8x (22.50Mhz)"
+msgstr "1.8x (22.50Mhz)"
 
 msgid "10 seconds"
 msgstr "10 másodperc"
@@ -173,6 +191,9 @@ msgstr "2 másodperc"
 
 msgid "2 threads"
 msgstr "2 szál"
+
+msgid "2.0x (25.00Mhz)"
+msgstr "2.0x (25.00Mhz)"
 
 msgid "2.25x (1440x1080)"
 msgstr "2.25x (1440x1080)"
@@ -501,6 +522,9 @@ msgstr "9."
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ACTIVE INPUT DEVICES FIX"
+msgstr "AKTÍV BEMENETI ESZKÖZÖK JAVÍTÁSA"
+
 msgid "ADJUST POWERPC FREQUENCY"
 msgstr "POWERPC FREKVENCIA BEÁLLÍTÁSA"
 
@@ -554,6 +578,9 @@ msgstr "ASZINKRON SHADER FORDÍTÁS (CSAK VULKAN)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "ASZINKRON TEXTÚRA streamelés"
+
+msgid "ATARI SYSTEM"
+msgstr "ATARI SYSTEM"
 
 msgid "AUDIO"
 msgstr "AUDIÓ"
@@ -663,6 +690,12 @@ msgstr "Analóg Joystick"
 msgid "Analog Joystick (Flystick)"
 msgstr "Analóg Joystick (Flystick)"
 
+msgid "Analog deadzone for paddles. Core default (15)."
+msgstr "Analóg holtzóna a lapátokhoz. Alapértelmezés (15)."
+
+msgid "Analog sensitivity for paddles. Core default (20)."
+msgstr "Analóg érzékenység a lapátokhoz. Alapértelmezés (20)."
+
 msgid "Angrylion"
 msgstr "Angrylion"
 
@@ -729,6 +762,9 @@ msgstr "Ausztrália"
 msgid "Austria"
 msgstr "Ausztria"
 
+msgid "Auto (Default)"
+msgstr "Automatikus (alapértelmezett)"
+
 msgid "Auto Max Quality"
 msgstr "Automatikus Max minőség"
 
@@ -791,6 +827,9 @@ msgstr "BT601_625/D65 (ajánlott minden európa/ausztrál fejlesztésű játékh
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "PUFFER GRAFIKAI PARANCSOK"
+
+msgid "Badly adjusted"
+msgstr "Rossz beállítás"
 
 msgid "Bahrain"
 msgstr "Bahrein"
@@ -942,6 +981,9 @@ msgstr "SZÍNPALETTA (2D)"
 msgid "CONSOLE COUNTRY"
 msgstr "KONZOL ORSZÁGA"
 
+msgid "CONSOLE DISPLAY"
+msgstr "KONZOL KIJELZŐ"
+
 msgid "CONSOLE LANGUAGE"
 msgstr "KONZOL NYELVE"
 
@@ -1017,8 +1059,14 @@ msgstr "CPU VÉGREHAJTÁSI MÓD"
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "CPU-GPU késleltetési korlát. Az alacsonyabb értékek javítják a késleltetést, de csökkenthetik a teljesítményt."
 
+msgid "CROP HORIZONTAL OVERSCAN"
+msgstr "VÍZSZINTES TÚLSZKENNELÉS VÁGÁSA"
+
 msgid "CROP OVERSCAN"
 msgstr "Túlpáztázás levágása"
+
+msgid "CROP VERTICAL OVERSCAN"
+msgstr "FÜGGŐLEGES TÚLSZKENNELÉS VÁGÁSA"
 
 msgid "CURSOR MODE"
 msgstr "KURZOR MÓD"
@@ -1205,6 +1253,12 @@ msgstr "Costa Rica"
 
 msgid "Croatia"
 msgstr "Horvátország"
+
+msgid "Crop horizontal overscan."
+msgstr "Vízszintes túlszkennelés kivágása."
+
+msgid "Crop vertical overscan (lines). Core default (0)."
+msgstr "Függőleges túlszkenneléssel vágása (vonalak). Alapértelmezés (0)."
 
 msgid "Cross"
 msgstr "Kereszt"
@@ -1488,6 +1542,9 @@ msgstr "Engedélyezd a MelonDS két képernyőn való megjelenítését. Néhán
 msgid "Enable No-interlacing Patches."
 msgstr "Engedélyezze a sorváltás nélküli javításokat."
 
+msgid "Enable TV-like filtering / effects."
+msgstr "TV-szerű szűrés/effektusok."
+
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "Engedélyezze a gyorsítótár csatlakoztatását. Egyes játékokban javíthatja a teljesítményt és a kompatibilitást."
 
@@ -1503,8 +1560,17 @@ msgstr "A játékvezérlő nézet engedélyezése olyan játékoknál, amelyek k
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Értesítések engedélyezése a gyorsítótárról, a vezérlő eseményekről stb."
 
+msgid "Enable phosphor mode (motion blur) for flickering effects."
+msgstr "Foszfor módot engedélyezése (mozgás okozta elmosódás) a villódzó effektek eléréséhez."
+
 msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
 msgstr "Engedélyezze a második hangkorlátozót. Javítja a hangminőséget a teljesítmény árán."
+
+msgid "Enable shared saves for multi-disc games"
+msgstr "Megosztott mentések engedélyezése többlemezes játékokhoz"
+
+msgid "Enable the BASIC interpreter. Some games need this."
+msgstr "Engedélyezze a BASIC fordítót. Néhány játéknak szüksége van erre."
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "Engedélyezze a Dreamcast DSP-t a pontosabb hangzás érdekében. Csak gyors rendszerekhez ajánlott."
@@ -1659,6 +1725,9 @@ msgstr "Bővítse ki a játék képernyőterületét, hasonlóan a Master System
 msgid "External"
 msgstr "Külső"
 
+msgid "FAST BLITTER (LESS COMPATIBLE)"
+msgstr "GYORS BLITTER (Kevésbé kompatibilis)"
+
 msgid "FAST DISK TRANSFER RATE"
 msgstr "GYORS LEMEZÁTVITELI SEBESSÉG"
 
@@ -1743,6 +1812,9 @@ msgstr "Javítsa ki a képernyő szakadását. CPU terhelő."
 msgid "Fix texture banding when upscaling."
 msgstr "A textúra sávosodásának javítása felskálázáskor."
 
+msgid "Fixes a possible bug with multiple controllers detection."
+msgstr "Kijavít egy lehetséges hibát a több vezérlő észlelésével."
+
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Gyro-kompatibilis játékokhoz (bal oldali analóg karhoz kötve)"
 
@@ -1754,6 +1826,9 @@ msgstr "Erővisszacsatolást támogató emulátorokhoz és vezérlőkhöz."
 
 msgid "For use with HD texture packs."
 msgstr "HD textúracsomagok használata."
+
+msgid "For weak machines. Some games will not work with this."
+msgstr "Gyenge gépekhez. Egyes játékok nem működnek ezzel."
 
 msgid "Force 16:9"
 msgstr "Kényszerített 16:9"
@@ -1968,6 +2043,9 @@ msgstr "HARDVERES ÁRNYÉKOLÓ"
 msgid "HARDWARE TESSELLATION"
 msgstr "HARDWARE TESSELLATION"
 
+msgid "HI-RES ARTIFACTING"
+msgstr "HI-RES MŰVÉSZET"
+
 msgid "HLE (Fastest)"
 msgstr "HLE (Gyorsabb)"
 
@@ -2036,6 +2114,9 @@ msgstr "EGÉSZ SZÁMOS FELSKÁLÁZÁS"
 
 msgid "INTERLACING PATCHES"
 msgstr "INTERLACING PATCHES"
+
+msgid "INTERNAL BASIC INTERPRETER"
+msgstr "BELSŐ ALAP FORDÍTÓ"
 
 msgid "INTERNAL DISPLAY RESOLUTION"
 msgstr "BELSŐ KÉPERNYŐFELBONTÁS"
@@ -2115,6 +2196,9 @@ msgstr "JOYSTICK HOLTZÓNA"
 msgid "JOYSTICK GATE SIZE"
 msgstr "JOYSTICK KAPU MÉRETE"
 
+msgid "JOYSTICK HACK (FOR ROBOTRON 2084)"
+msgstr "JOYSTICK HACK (ROBOTRON 2084-HEZ)"
+
 msgid "JOYSTICK SENSITIVITY"
 msgstr "JOYSTICK ÉRZÉKENYSÉG"
 
@@ -2162,6 +2246,9 @@ msgstr "Joypad 6 gomb + Teamplayer"
 
 msgid "Joypad Auto"
 msgstr "Joypad Auto"
+
+msgid "Joypad sensitivity for paddles. Core default (3)."
+msgstr "Joypad érzékenység a pedálokhoz. Alapértelmezés (3)."
 
 msgid "Joystick"
 msgstr "Joystick"
@@ -2475,6 +2562,9 @@ msgstr "Marokkó"
 msgid "Mouse"
 msgstr "Egér"
 
+msgid "Mouse sensitivity for paddles. Core default (10)."
+msgstr "Egér érzékenysége a lapátokhoz. Alapértelmezés (10)."
+
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "Sokkal gyorsabb, mint a fordító (de lehetnek problémák)."
 
@@ -2529,8 +2619,17 @@ msgstr "NTSC (RGB)"
 msgid "NTSC (S-Video)"
 msgstr "NTSC (S-Video)"
 
+msgid "NTSC 240x480px 60Hz"
+msgstr "NTSC 240x480px 60Hz"
+
+msgid "NTSC ASPECT"
+msgstr "NTSC ASPECT"
+
 msgid "NTSC FILTER"
 msgstr "NTSC SZŰRŐ"
+
+msgid "NTSC aspect ratio correction. Core default (PAR)."
+msgstr "NTSC képarány-korrekció. Alapértelmezés (PAR)."
 
 msgid "NTSC-J"
 msgstr "NTSC-J"
@@ -2540,6 +2639,12 @@ msgstr "NTSC-U"
 
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
+
+msgid "NTSC50"
+msgstr "NTSC50"
+
+msgid "NVRAM STORAGE"
+msgstr "NVRAM TÁROLÁS"
 
 msgid "Namco GunCon"
 msgstr "Namco GunCon"
@@ -2754,6 +2859,36 @@ msgstr "P1 csak"
 msgid "P2 only"
 msgstr "P2 csak"
 
+msgid "PADDLE ANALOG ABSOLUTE"
+msgstr "ANALÓG LAPÁT"
+
+msgid "PADDLE ANALOG DEADZONE"
+msgstr "ANALÓG LAPÁT HOLTZÓNA"
+
+msgid "PADDLE ANALOG SENSITIVITY"
+msgstr "ANALÓG LAPÁT ÉRZÉKENYSÉG"
+
+msgid "PADDLE JOYPAD SENSITIVITY"
+msgstr "JOYPAD LAPÁT ÉRZÉKENYSÉGE"
+
+msgid "PADDLE MOUSE SENSITIVITY"
+msgstr "EGÉRGÖRGŐ ÉRZÉKENYSÉG"
+
+msgid "PAL 288x576px 50Hz"
+msgstr "PAL 288x576px 50Hz"
+
+msgid "PAL ASPECT"
+msgstr "PAL ASPECT"
+
+msgid "PAL aspect ratio correction. Core default (PAR)."
+msgstr "PAL képarány-korrekció. Alapértelmezés (PAR)."
+
+msgid "PAL60"
+msgstr "PAL60"
+
+msgid "PALETTE COLORS"
+msgstr "PALETTA SZÍNEK"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2774,6 +2909,12 @@ msgstr "TELJESÍTMÉNY"
 
 msgid "PERFORMANCE HACKS"
 msgstr "TELJESÍTMÉNY HACKEK"
+
+msgid "PHOSPHOR BLEND"
+msgstr "FOSZFORKEVERÉK"
+
+msgid "PHOSPHOR MODE"
+msgstr "FOSZFOR MÓD"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "JÁTÉKOS 1 CÉLKERESZT SZÍNE"
@@ -2844,6 +2985,9 @@ msgstr "1 másodpercenként, összesen 60 mp (660 MB|120 MB)"
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "1 másodpercenként, összesen 90 másodperc (990 MB|180 MB)"
 
+msgid "Per Game"
+msgstr "Játékonként"
+
 msgid "Per-game"
 msgstr "Játékonként"
 
@@ -2852,6 +2996,9 @@ msgstr "Peru"
 
 msgid "Philippines"
 msgstr "Fülöp-szigetek"
+
+msgid "Phosphor blend level. Core default (60%)."
+msgstr "Foszforkeverék szintje. Alapértelmezett mag (60%)."
 
 msgid "PlayStation Mouse"
 msgstr "PlayStation egér"
@@ -3093,6 +3240,12 @@ msgstr "KÉPERNYŐCSERE"
 msgid "SDL2"
 msgstr "SDL2"
 
+msgid "SECAM"
+msgstr "SECAM"
+
+msgid "SECAM60"
+msgstr "SECAM60"
+
 msgid "SENSITIVITY"
 msgstr "ÉRZÉKENYSÉG"
 
@@ -3128,6 +3281,9 @@ msgstr "KÉPERNYŐN MEGJELENŐ ÜZENETEK MEGJELENÍTÉSE"
 
 msgid "SHOW SCREEN LAYOUT"
 msgstr "KÉPERNYŐ-ELRENDEZÉS MEGJELENÍTÉSE"
+
+msgid "SIO ACCELERATION"
+msgstr "SIO GYORSULÁS"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "PUFFER HATÁSOK KIHAGYÁSA"
@@ -3192,6 +3348,9 @@ msgstr "SPU DEKÓDOLÓ"
 msgid "SPU LOOP DETECTION"
 msgstr "SPU HUROK ÉRZÉKELÉS"
 
+msgid "STEREO SOUND"
+msgstr "SZTEREO HANG"
+
 msgid "STRETCH MODE"
 msgstr "NYÚJTÁS MÓD"
 
@@ -3249,8 +3408,14 @@ msgstr "Sega/Mega CD"
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "A kiválasztott nyelv akkor kerül használatba, ha a 'Firmware beállítások használata' ki van kapcsolva, vagy ha a firmware fájl nem található."
 
+msgid "Select the console video standard / display mode."
+msgstr "Válassza ki a konzol videó szabványát / megjelenítési módját."
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "Válassza ki a beviteli típust az érintőképernyőn való navigáláshoz"
+
+msgid "Select the palette used to render colors."
+msgstr "Válassza ki a színek megjelenítéséhez használt palettát."
 
 msgid "Separate Windows"
 msgstr "Osztott Ablak"
@@ -3417,11 +3582,17 @@ msgstr "Sebesség hack a kétmagos üzemmódhoz, hogy kijavítson néhány hibá
 msgid "Speed up shader compilation."
 msgstr "A shader összeállításának felgyorsítása."
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "Gyorsítja a fájlok betöltését. Néhány játék nem töltődik be ezzel."
+
 msgid "Square pixel"
 msgstr "Négyzet alakú képpont"
 
 msgid "Standard (4:3)"
 msgstr "Standard (4:3)"
+
+msgid "Standard (Default)"
+msgstr "Normál (alapértelmezett)"
 
 msgid "Standard Controller"
 msgstr "Szabványos vezérlő"
@@ -3434,6 +3605,9 @@ msgstr "Kormánykerék"
 
 msgid "Stereo"
 msgstr "Sztereó"
+
+msgid "Stereo sound output."
+msgstr "Sztereó hangkimenet."
 
 msgid "Stretch"
 msgstr "Nyújtás"
@@ -3537,6 +3711,9 @@ msgstr "TRILINEÁRIS SZŰRÉS"
 msgid "TRUE COLOR RENDERING"
 msgstr "SZÍNHŰ SZÍNVISSZAADÁS"
 
+msgid "TV EFFECTS"
+msgstr "TV-EFEKTUSOK"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - Pack 1"
 
@@ -3617,6 +3794,9 @@ msgstr "Érintőképernyő"
 
 msgid "Traditional Chinese"
 msgstr "Hagyományos kínai"
+
+msgid "Treats the right analog stick as the second joystick."
+msgstr "A jobb analóg kart második joystickként kezeli."
 
 msgid "Trilinear (Forced)"
 msgstr "Trilineáris (kényszerített)"
@@ -3717,6 +3897,12 @@ msgstr "Használja a Megadrive-ot a 6 gombos Megadrive stílusú vezérlő bemen
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "Használja az SSAA-t az MSAA helyett az anti-aliasinghez. Az SSAA jobban nézhet ki, de nagyobb teljesítményköltséggel jár."
 
+msgid "Use absolute analog input for paddles."
+msgstr "Használjon abszolút analóg bemenetet a lapátokhoz."
+
+msgid "Use an alternate resolution. Some games need this."
+msgstr "Használjon alternatív felbontást. Néhány játéknak szüksége van erre."
+
 msgid "Use language and username from the NDS Firmware"
 msgstr "Az NDS firmware nyelvének és felhasználónevének használata"
 
@@ -3747,6 +3933,9 @@ msgstr "Hasznos bizonyos arcade játékokhoz."
 msgid "Useful for speedruns/glitches."
 msgstr "Hasznos speedruns/glitches esetén."
 
+msgid "User"
+msgstr "Felhasználó"
+
 msgid "Uses hardware to make curves."
 msgstr "Hardvereket használ ívek készítéséhez."
 
@@ -3767,6 +3956,9 @@ msgstr "FÜGGŐLEGES FORGÁS (TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "VIDEÓSZŰRŐK"
+
+msgid "VIDEO FORMAT STANDARD"
+msgstr "VIDEÓ FORMÁTUM SZABVÁNY"
 
 msgid "VIDEO SETTINGS"
 msgstr "KÉP BEÁLLÍTÁSOK"
@@ -3887,6 +4079,9 @@ msgstr "Sárga"
 
 msgid "Yemen"
 msgstr "Jemen"
+
+msgid "Z26"
+msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "ZCULL PONTOSSÁG"

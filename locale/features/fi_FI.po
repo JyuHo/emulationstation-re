@@ -237,6 +237,9 @@ msgstr "Venäjä"
 msgid "SHOW BIOS BOOTLOGO"
 msgstr "NÄYTÄ BIOS-KÄYNNISTYSANIMAATIO"
 
+msgid "SIO ACCELERATION"
+msgstr "SIO-KIIHDYTYS"
+
 msgid "SUPER FX OVERCLOCK"
 msgstr "SUPER FX YLIKELLOTUS"
 
@@ -258,6 +261,9 @@ msgstr "Espanja"
 msgid "Spanish"
 msgstr "Espanja"
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "Nopeuta tiedostojen lataamista. Jotkin pelit eivät lataudu, kun tämä on käytössä."
+
 msgid "Square pixel"
 msgstr "Neliöpikseli"
 
@@ -272,6 +278,9 @@ msgstr "Kieli, jolle käännetään."
 
 msgid "Turkey"
 msgstr "Turkki"
+
+msgid "Use an alternate resolution. Some games need this."
+msgstr "Käytä vaihtoehtoista resoluutiota. Jotkin pelit tarvitsevat tämän käyttöön."
 
 msgid "Very High"
 msgstr "Hyvin korkea"

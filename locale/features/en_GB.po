@@ -51,6 +51,9 @@ msgstr "GB - Smart Colouring"
 msgid "GB COLORIZATION"
 msgstr "GB COLOURISATION"
 
+msgid "PALETTE COLORS"
+msgstr "PALETTE COLOURS"
+
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "PLAYER 1 CROSSHAIR COLOUR"
 
@@ -62,6 +65,9 @@ msgstr "Reduces banding between coloUrs and improves the preceived color depth."
 
 msgid "SVideo (color bleeding only)"
 msgstr "SVideo (colour bleeding only)"
+
+msgid "Select the palette used to render colors."
+msgstr "Select the palette used to render colours."
 
 msgid "Set the color palette to use."
 msgstr "Set the colour palette to use."
@@ -77,6 +83,9 @@ msgstr "TRUE COLOUR RENDERING"
 
 msgid "The theme color of the emulated console."
 msgstr "The theme colour of the emulated console."
+
+msgid "Treats the right analog stick as the second joystick."
+msgstr "Treats the right analogue stick as the second joystick."
 
 msgid "Use Analog joysticks in addition to D-Pad for DualShock controllers."
 msgstr "Use Analogue joysticks in addition to D-Pad for DualShock controllers."

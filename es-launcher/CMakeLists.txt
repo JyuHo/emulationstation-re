@@ -50,6 +50,7 @@ add_library(es-launcher-objects OBJECT
     src/eden/EdenGenerator.cpp
     src/melonds/MelonDSGenerator.cpp
     src/mupen64plus/Mupen64PlusGenerator.cpp
+    src/stella/StellaGenerator.cpp
     src/supermodel/SupermodelGenerator.cpp
     src/ymir/YmirGenerator.cpp
     # Cemu's settings are XML: the copy of pugixml ES ships, built in with hidden symbols

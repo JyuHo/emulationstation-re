@@ -701,6 +701,41 @@ static void testCoreProfiles()
 		coreProfile("flycast").setCoreOptions(ctx, o);
 		CHECK(o.get("reicast_screen_rotation") == "horizontal");
 	}
+
+	// Atari and 3DO
+	{
+		ConfigFile o;
+		ctx.settings = Settings({ { "stella_palette", "z26" }, { "bios_vj", "disabled" } }, {}, {});
+		ctx.game.system = "atari2600";
+		coreProfile("stella").setCoreOptions(ctx, o);
+		CHECK(o.get("stella_palette") == "z26");
+		CHECK(o.get("stella_console") == "auto");
+		coreProfile("handy").setCoreOptions(ctx, o);
+		CHECK(o.get("handy_rot") == "None");
+		coreProfile("virtualjaguar").setCoreOptions(ctx, o);
+		CHECK(o.get("virtualjaguar_bios") == "disabled");
+
+		ctx.game.system = "3do";
+		ctx.game.rom = "/roms/3do/Myst (Disc 1).chd";
+		coreProfile("opera").setCoreOptions(ctx, o);
+		CHECK(o.get("opera_nvram_storage") == "shared");
+		ctx.game.rom = "/roms/3do/Gex.chd";
+		coreProfile("opera").setCoreOptions(ctx, o);
+		CHECK(o.get("opera_nvram_storage") == "per game");
+
+		const Core& atari = coreProfile("atari800");
+		ctx.game.system = "atari5200";
+		atari.setCoreOptions(ctx, o);
+		CHECK(o.get("atari800_system") == "5200");
+		CHECK(atari.deviceType(ctx, 2) == "513");
+		CHECK(atari.deviceType(ctx, 3) == std::nullopt);
+		ctx.game.system = "atari800";
+		ctx.settings = Settings({ { "atari800_artifacting", "enabled" } }, {}, {});
+		atari.setCoreOptions(ctx, o);
+		CHECK(o.get("atari800_system") == "800XL (64K)");
+		CHECK(o.get("atari800_artifacting_mode") == "blue/brown 1");
+		CHECK(!o.get("atari800_resolution"));
+	}
 }
 
 void tests::runRetroArchTests()

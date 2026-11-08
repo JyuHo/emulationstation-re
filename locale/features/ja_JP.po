@@ -39,8 +39,14 @@ msgstr "1 スレッド"
 msgid "1% (Default)"
 msgstr "1% (標準)"
 
+msgid "1.0x (12.50Mhz)"
+msgstr "1.0x (12.50Mhz)"
+
 msgid "1.1x"
 msgstr "1.1x"
+
+msgid "1.1x (13.75Mhz)"
+msgstr "1.1x (13.75Mhz)"
 
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
@@ -51,6 +57,9 @@ msgstr "1.25x 標準"
 msgid "1.2x"
 msgstr "1.2x"
 
+msgid "1.2x (15.00Mhz)"
+msgstr "1.2x (15.00Mhz)"
+
 msgid "1.3x"
 msgstr "1.3x"
 
@@ -59,6 +68,9 @@ msgstr "1.4x"
 
 msgid "1.5x"
 msgstr "1.5x"
+
+msgid "1.5x (18.75Mhz)"
+msgstr "1.5x (18.75Mhz)"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -69,8 +81,14 @@ msgstr "1.5x 標準"
 msgid "1.6x (1024x768)"
 msgstr "1.6x (1024x768)"
 
+msgid "1.6x (20.00Mhz)"
+msgstr "1.6x (20.00Mhz)"
+
 msgid "1.75x Native"
 msgstr "1.75x 標準"
+
+msgid "1.8x (22.50Mhz)"
+msgstr "1.8x (22.50Mhz)"
 
 msgid "10 seconds"
 msgstr "10 秒"
@@ -173,6 +191,9 @@ msgstr "2 秒"
 
 msgid "2 threads"
 msgstr "2 スレッド"
+
+msgid "2.0x (25.00Mhz)"
+msgstr "2.0x (25.00Mhz)"
 
 msgid "2.25x (1440x1080)"
 msgstr "2.25x (1440x1080)"
@@ -501,6 +522,9 @@ msgstr "9"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ACTIVE INPUT DEVICES FIX"
+msgstr "アクティブな入力デバイスの修正"
+
 msgid "ADJUST POWERPC FREQUENCY"
 msgstr "PowerPC の周波数を調整"
 
@@ -554,6 +578,9 @@ msgstr "非同期シェーダーのコンパイル (VULKAN のみ)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "非同期テクスチャ ストリーミング"
+
+msgid "ATARI SYSTEM"
+msgstr "ATARI システム"
 
 msgid "AUDIO"
 msgstr "音声"
@@ -663,6 +690,12 @@ msgstr "アナログジョイスティック"
 msgid "Analog Joystick (Flystick)"
 msgstr "アナログジョイスティック (Flystick)"
 
+msgid "Analog deadzone for paddles. Core default (15)."
+msgstr "パドルのアナログ遊び幅（コアの初期値=15）"
+
+msgid "Analog sensitivity for paddles. Core default (20)."
+msgstr "パドルのアナログ感度（コアの初期値=20）"
+
 msgid "Angrylion"
 msgstr "Angrylion"
 
@@ -729,6 +762,9 @@ msgstr "オーストラリア語"
 msgid "Austria"
 msgstr "オーストラリア"
 
+msgid "Auto (Default)"
+msgstr "自動 (標準)"
+
 msgid "Auto Max Quality"
 msgstr "自動最高品質"
 
@@ -791,6 +827,9 @@ msgstr "BT601_625/D65 (EUR/AUS で開発されたすべてのゲームに推奨)
 
 msgid "BUFFER GRAPHICS COMMANDS"
 msgstr "バッファグラフィックコマンド"
+
+msgid "Badly adjusted"
+msgstr "調整が不十分"
 
 msgid "Bahrain"
 msgstr "バーレーン"
@@ -942,6 +981,9 @@ msgstr "カラーパレット (2D)"
 msgid "CONSOLE COUNTRY"
 msgstr "コンソール 国 / 地域"
 
+msgid "CONSOLE DISPLAY"
+msgstr "コンソール表示"
+
 msgid "CONSOLE LANGUAGE"
 msgstr "コンソール言語"
 
@@ -1017,8 +1059,14 @@ msgstr "CPU 実行モード"
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "CPU-GPU レイテンシ制限。値を下げるとレイテンシは改善されますが、動作が低下する場合があります"
 
+msgid "CROP HORIZONTAL OVERSCAN"
+msgstr "水平オーバースキャンを切り取り"
+
 msgid "CROP OVERSCAN"
 msgstr "オーバースキャンを削除"
+
+msgid "CROP VERTICAL OVERSCAN"
+msgstr "垂直オーバースキャンを切り取り"
 
 msgid "CURSOR MODE"
 msgstr "カーソルモード"
@@ -1205,6 +1253,12 @@ msgstr "コスタリカ"
 
 msgid "Croatia"
 msgstr "クロアチア"
+
+msgid "Crop horizontal overscan."
+msgstr "水平オーバースキャンを切り取ります"
+
+msgid "Crop vertical overscan (lines). Core default (0)."
+msgstr "垂直オーバースキャン（ライン）を切り取ります（コアの標準=0）"
 
 msgid "Cross"
 msgstr "Ｘ(下のボタン)"
@@ -1488,6 +1542,9 @@ msgstr "MelonDS を2画面表示できるようにします。一部の関連画
 msgid "Enable No-interlacing Patches."
 msgstr "インターレース解除パッチを使用します"
 
+msgid "Enable TV-like filtering / effects."
+msgstr "テレビのようなフィルタリング/エフェクトを有効にします"
+
 msgid "Enable cache mount. Can improve performance and compatibility in some games."
 msgstr "キャッシュマウントを有効にします。一部のゲームの動作と互換性が向上します"
 
@@ -1503,8 +1560,17 @@ msgstr "２画面間で相互作用を行うゲームのゲームパッド 画�
 msgid "Enable notifications of cache, controller events etc."
 msgstr "キャッシュ、コントローライベントなどの通知を有効にします"
 
+msgid "Enable phosphor mode (motion blur) for flickering effects."
+msgstr "ちらつき効果を得るためにフォスファーモード (モーション ブラー) を有効にします"
+
 msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
 msgstr "2番目の音声制限を有効にします。動作を犠牲にして音質を向上させます"
+
+msgid "Enable shared saves for multi-disc games"
+msgstr "マルチディスクゲームの共有保存を有効にする"
+
+msgid "Enable the BASIC interpreter. Some games need this."
+msgstr "BASIC インタプリタを有効にします。一部のゲームではこれが必要です"
 
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "ドリームキャスト D.S.P.を有効にします(より正確な音声出力)高速システムにのみ推奨"
@@ -1659,6 +1725,9 @@ msgstr "マスターシステムのようにゲーム画面領域を拡張しま
 msgid "External"
 msgstr "外部"
 
+msgid "FAST BLITTER (LESS COMPATIBLE)"
+msgstr "高速ブリッター（互換性が低い）"
+
 msgid "FAST DISK TRANSFER RATE"
 msgstr "高速ディスク転送速度"
 
@@ -1743,6 +1812,9 @@ msgstr "画面のずれを修正します (CPU によってはゲームが開始
 msgid "Fix texture banding when upscaling."
 msgstr "アップスケーリング時のテクスチャバンディングを修正します"
 
+msgid "Fixes a possible bug with multiple controllers detection."
+msgstr "コントローラー検出で発生する可能性のあるバグを修正します"
+
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "ジャイロ対応ゲーム時（左アナログスティックに割り当てる）"
 
@@ -1754,6 +1826,9 @@ msgstr "フォースフィードバック(振動)可能時の設定"
 
 msgid "For use with HD texture packs."
 msgstr "HDテクスチャパックを使用します"
+
+msgid "For weak machines. Some games will not work with this."
+msgstr "弱いマシン用。一部のゲームはこれでは動作しません"
 
 msgid "Force 16:9"
 msgstr "16:9 に固定"
@@ -1968,6 +2043,9 @@ msgstr "ハードウェアシェーダー"
 msgid "HARDWARE TESSELLATION"
 msgstr "ハードウェアテッセレーション"
 
+msgid "HI-RES ARTIFACTING"
+msgstr "高解像度アーティファクト"
+
 msgid "HLE (Fastest)"
 msgstr "HLE (最速)"
 
@@ -2036,6 +2114,9 @@ msgstr "整数アップスケーリング"
 
 msgid "INTERLACING PATCHES"
 msgstr "インターレースパッチ"
+
+msgid "INTERNAL BASIC INTERPRETER"
+msgstr "内部 BASIC インタープリター"
 
 msgid "INTERNAL DISPLAY RESOLUTION"
 msgstr "内部ディスプレイ解像度"
@@ -2115,6 +2196,9 @@ msgstr "ジョイスティック 遊び幅"
 msgid "JOYSTICK GATE SIZE"
 msgstr "ジョイスティック ゲートサイズ(移動幅)"
 
+msgid "JOYSTICK HACK (FOR ROBOTRON 2084)"
+msgstr "ジョイスティックハック（ROBOTRON 2084用）"
+
 msgid "JOYSTICK SENSITIVITY"
 msgstr "ジョイスティック 感度"
 
@@ -2162,6 +2246,9 @@ msgstr "ジョイパッド 6ボタン + チームプレイ"
 
 msgid "Joypad Auto"
 msgstr "ジョイパッド自動選択"
+
+msgid "Joypad sensitivity for paddles. Core default (3)."
+msgstr "ジョイパッドのパドル感度（コアの標準=3）"
 
 msgid "Joystick"
 msgstr "ジョイスティック"
@@ -2475,6 +2562,9 @@ msgstr "モロッコ"
 msgid "Mouse"
 msgstr "マウス"
 
+msgid "Mouse sensitivity for paddles. Core default (10)."
+msgstr "パドルのマウス感度（コアの標準=10）"
+
 msgid "Much faster than interpreter (but may have issues)."
 msgstr "インタプリタよりもはるかに高速です（問題がでる可能性もあり）"
 
@@ -2529,8 +2619,17 @@ msgstr "NTSC (RGB)"
 msgid "NTSC (S-Video)"
 msgstr "NTSC（S-ビデオ）"
 
+msgid "NTSC 240x480px 60Hz"
+msgstr "NTSC 240x480px 60Hz"
+
+msgid "NTSC ASPECT"
+msgstr "NTSC アスペクト比"
+
 msgid "NTSC FILTER"
 msgstr "NTSC フィルター"
+
+msgid "NTSC aspect ratio correction. Core default (PAR)."
+msgstr "NTSCアスペクト比補正（コアの標準=PAR）"
 
 msgid "NTSC-J"
 msgstr "NTSC-J"
@@ -2540,6 +2639,12 @@ msgstr "NTSC-U"
 
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
+
+msgid "NTSC50"
+msgstr "NTSC50"
+
+msgid "NVRAM STORAGE"
+msgstr "NVRAM ストレージ"
 
 msgid "Namco GunCon"
 msgstr "ナムコ ガンコン"
@@ -2754,6 +2859,36 @@ msgstr "P1 のみ"
 msgid "P2 only"
 msgstr "P2 のみ"
 
+msgid "PADDLE ANALOG ABSOLUTE"
+msgstr "絶対位置指定アナログパドル"
+
+msgid "PADDLE ANALOG DEADZONE"
+msgstr "アナログパドル遊び幅"
+
+msgid "PADDLE ANALOG SENSITIVITY"
+msgstr "アナログパドル感度"
+
+msgid "PADDLE JOYPAD SENSITIVITY"
+msgstr "ジョイパッド パドル感度"
+
+msgid "PADDLE MOUSE SENSITIVITY"
+msgstr "パドルマウス感度"
+
+msgid "PAL 288x576px 50Hz"
+msgstr "PAL 288x576px 50Hz"
+
+msgid "PAL ASPECT"
+msgstr "PAL アスペクト比"
+
+msgid "PAL aspect ratio correction. Core default (PAR)."
+msgstr "PALアスペクト比補正（コアの標準=PAR）"
+
+msgid "PAL60"
+msgstr "PAL60"
+
+msgid "PALETTE COLORS"
+msgstr "パレットカラー"
+
 msgid "PAR 1:1"
 msgstr "ピクセルアスペクト比 1:1"
 
@@ -2774,6 +2909,12 @@ msgstr "パフォーマンス"
 
 msgid "PERFORMANCE HACKS"
 msgstr "性能ハック"
+
+msgid "PHOSPHOR BLEND"
+msgstr "フォスファーブレンド"
+
+msgid "PHOSPHOR MODE"
+msgstr "フォスファーモード"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "プレイヤー 1 照準の色"
@@ -2844,6 +2985,9 @@ msgstr " 1 秒間隔、合計 60秒 (660MB|120MB)"
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr " 1 秒間隔、合計 90秒 (990MB|180MB)"
 
+msgid "Per Game"
+msgstr "ゲームごと"
+
 msgid "Per-game"
 msgstr "ゲームごと"
 
@@ -2852,6 +2996,9 @@ msgstr "ペルー"
 
 msgid "Philippines"
 msgstr "フィリピン"
+
+msgid "Phosphor blend level. Core default (60%)."
+msgstr "フォスファーブレンドレベル（コアの標準=60%）"
 
 msgid "PlayStation Mouse"
 msgstr "PS マウス"
@@ -3093,6 +3240,12 @@ msgstr "画面の入替"
 msgid "SDL2"
 msgstr "SDL2"
 
+msgid "SECAM"
+msgstr "SECAM"
+
+msgid "SECAM60"
+msgstr "SECAM60"
+
 msgid "SENSITIVITY"
 msgstr "感度"
 
@@ -3128,6 +3281,9 @@ msgstr "オンスクリーンメッセージを表示"
 
 msgid "SHOW SCREEN LAYOUT"
 msgstr "画面レイアウト表示"
+
+msgid "SIO ACCELERATION"
+msgstr "SIO アクセラレーション"
 
 msgid "SKIP BUFFER EFFECTS"
 msgstr "バッファエフェクトを省く"
@@ -3192,6 +3348,9 @@ msgstr "SPU デコーダー"
 msgid "SPU LOOP DETECTION"
 msgstr "SPU ループの検出"
 
+msgid "STEREO SOUND"
+msgstr "ステレオサウンド"
+
 msgid "STRETCH MODE"
 msgstr "ストレッチモード"
 
@@ -3249,8 +3408,14 @@ msgstr "セガ/メガCD"
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "[ファームウェア設定を使用] が無効、またはファームウェア ファイルが見つからない場合は、使用する言語を選択します"
 
+msgid "Select the console video standard / display mode."
+msgstr "コンソールの ビデオ標準 / 表示モード を選択します"
+
 msgid "Select the input type to navigate the touch screen"
 msgstr "入力タイプを選択してタッチスクリーンを操作します"
+
+msgid "Select the palette used to render colors."
+msgstr "色のレンダリングに使用するパレットを選択します"
 
 msgid "Separate Windows"
 msgstr "１画面（切替可能）"
@@ -3417,11 +3582,17 @@ msgstr "いくつかの不具合を修正するデュアルコアモードのス
 msgid "Speed up shader compilation."
 msgstr "シェーダーのコンパイルを高速化します"
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "ファイルの読み込みを高速化します。いくつかのゲームは読み込めません"
+
 msgid "Square pixel"
 msgstr "正方形ピクセル"
 
 msgid "Standard (4:3)"
 msgstr "標準 (4:3)"
+
+msgid "Standard (Default)"
+msgstr "通常 (標準)"
 
 msgid "Standard Controller"
 msgstr "標準コントローラー"
@@ -3434,6 +3605,9 @@ msgstr "ステアリングホイール (ハンコン)"
 
 msgid "Stereo"
 msgstr "ステレオ"
+
+msgid "Stereo sound output."
+msgstr "ステレオサウンド出力にします"
 
 msgid "Stretch"
 msgstr "引き伸ばし"
@@ -3537,6 +3711,9 @@ msgstr "トライリニアフィルタリング"
 msgid "TRUE COLOR RENDERING"
 msgstr "トゥルー カラー (レンダリング)"
 
+msgid "TV EFFECTS"
+msgstr "TV エフェクト"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - Pack 1"
 
@@ -3617,6 +3794,9 @@ msgstr "タッチスクリーン"
 
 msgid "Traditional Chinese"
 msgstr "繁体字中国語"
+
+msgid "Treats the right analog stick as the second joystick."
+msgstr "右側のアナログスティックをジョイスティック2として扱います"
 
 msgid "Trilinear (Forced)"
 msgstr "トライリニア (強制)"
@@ -3717,6 +3897,12 @@ msgstr "6 ボタンのメガドライブ コントローラーのボタンの割
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "アンチエイリアシングには MSAA ではなく SSAA を使用します。 SSAA は見た目は良くなりますが、パフォーマンスのコストが高くなります"
 
+msgid "Use absolute analog input for paddles."
+msgstr "パドルには絶対アナログ入力を使用します"
+
+msgid "Use an alternate resolution. Some games need this."
+msgstr "一部のゲームの代替解像度を有効にします"
+
 msgid "Use language and username from the NDS Firmware"
 msgstr "NDS ファームウェアの言語とユーザー名を使用します"
 
@@ -3747,6 +3933,9 @@ msgstr "特定のアーケード ゲームに便利です"
 msgid "Useful for speedruns/glitches."
 msgstr "タイムアタック／バグに便利です"
 
+msgid "User"
+msgstr "ユーザー"
+
 msgid "Uses hardware to make curves."
 msgstr "ハードウェアを使用して曲線を作成します"
 
@@ -3767,6 +3956,9 @@ msgstr "画面垂直回転（縦画面）"
 
 msgid "VIDEO FILTERS"
 msgstr "ビデオ フィルター"
+
+msgid "VIDEO FORMAT STANDARD"
+msgstr "標準 映像フォーマット"
 
 msgid "VIDEO SETTINGS"
 msgstr "映像設定"
@@ -3887,6 +4079,9 @@ msgstr "黄色"
 
 msgid "Yemen"
 msgstr "イエメン"
+
+msgid "Z26"
+msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "ZCULL 精度"

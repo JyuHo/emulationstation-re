@@ -46,6 +46,7 @@ EMULATORS = {
     'melonds': 'melonds',
     'mupen64plus': 'mupen64plus',
     'supermodel': 'supermodel',
+    'stella': 'stella',
     'ymir': 'ymir',
     'pcsx2': 'pcsx2',
     'ppsspp': 'ppsspp',

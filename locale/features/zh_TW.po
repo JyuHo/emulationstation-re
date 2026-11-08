@@ -39,8 +39,14 @@ msgstr "1 執行緒"
 msgid "1% (Default)"
 msgstr "1% (預設)"
 
+msgid "1.0x (12.50Mhz)"
+msgstr "1.0x (12.50Mhz)"
+
 msgid "1.1x"
 msgstr "1.1x"
+
+msgid "1.1x (13.75Mhz)"
+msgstr "1.1x (13.75Mhz)"
 
 msgid "1.25x (800x600)"
 msgstr "1.25x (800x600)"
@@ -51,6 +57,9 @@ msgstr "1.25x 原生解析度"
 msgid "1.2x"
 msgstr "1.2x"
 
+msgid "1.2x (15.00Mhz)"
+msgstr "1.2x (15.00Mhz)"
+
 msgid "1.3x"
 msgstr "1.3x"
 
@@ -59,6 +68,9 @@ msgstr "1.4x"
 
 msgid "1.5x"
 msgstr "1.5x"
+
+msgid "1.5x (18.75Mhz)"
+msgstr "1.5x (18.75Mhz)"
 
 msgid "1.5x (960x720)"
 msgstr "1.5x (960x720)"
@@ -69,8 +81,14 @@ msgstr "1.5x 原生解析度"
 msgid "1.6x (1024x768)"
 msgstr "1.6x (1024x768)"
 
+msgid "1.6x (20.00Mhz)"
+msgstr "1.6x (20.00Mhz)"
+
 msgid "1.75x Native"
 msgstr "1.75x 原生解析度"
+
+msgid "1.8x (22.50Mhz)"
+msgstr "1.8x (22.50Mhz)"
 
 msgid "10 seconds"
 msgstr "10 秒"
@@ -173,6 +191,9 @@ msgstr "2 秒"
 
 msgid "2 threads"
 msgstr "2 執行緒"
+
+msgid "2.0x (25.00Mhz)"
+msgstr "2.0x (25.00Mhz)"
 
 msgid "2.25x (1440x1080)"
 msgstr "2.25x (1440x1080)"
@@ -495,6 +516,9 @@ msgstr "9th"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "ACTIVE INPUT DEVICES FIX"
+msgstr "主動輸入裝置修復"
+
 msgid "ADJUST POWERPC FREQUENCY"
 msgstr "調整 PowerPC 頻率"
 
@@ -548,6 +572,9 @@ msgstr "非同步著色器編譯 (VULKAN ONLY)"
 
 msgid "ASYNCHRONOUS TEXTURE STREAMING"
 msgstr "非同步材質串流"
+
+msgid "ATARI SYSTEM"
+msgstr "ATARI系統"
 
 msgid "AUDIO"
 msgstr "聲音"
@@ -1449,6 +1476,12 @@ msgstr "啟用快取、控制器事件等的通知。"
 msgid "Enable second audio limiter. Improves audio quality at the cost of performance."
 msgstr "啟用第二聲音限制器，以效能為代價改善音訊品質。"
 
+msgid "Enable shared saves for multi-disc games"
+msgstr "啟用多光碟遊戲的共用儲存檔"
+
+msgid "Enable the BASIC interpreter. Some games need this."
+msgstr "啟用 BASIC 解譯器，有些遊戲需要這樣做。"
+
 msgid "Enable the Dreamcast DSP for more accurate audio. Only recommended for fast systems."
 msgstr "啟用 Dreamcast DSP 以獲得更精確的音訊，僅建議快速系統使用。"
 
@@ -1602,6 +1635,9 @@ msgstr "擴充套件遊戲螢幕區域，類似於主系統。"
 msgid "External"
 msgstr "外部的"
 
+msgid "FAST BLITTER (LESS COMPATIBLE)"
+msgstr "快速阻斷器(較低相容)"
+
 msgid "FAST DISK TRANSFER RATE"
 msgstr "快速磁碟傳輸速率"
 
@@ -1686,6 +1722,9 @@ msgstr "修復螢幕撕裂。CPU吃重。"
 msgid "Fix texture banding when upscaling."
 msgstr "放大時修復紋理條帶。"
 
+msgid "Fixes a possible bug with multiple controllers detection."
+msgstr "修復了多控制器檢測的一個可能的錯誤。"
+
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "對於啟用陀螺儀的遊戲(綁定到左側模擬搖桿)"
 
@@ -1697,6 +1736,9 @@ msgstr "用於支援力回饋的模擬器與控制器。"
 
 msgid "For use with HD texture packs."
 msgstr "用於高清紋理包。"
+
+msgid "For weak machines. Some games will not work with this."
+msgstr "用於性能較差的機器。有些遊戲不能用這個。"
 
 msgid "Force 16:9"
 msgstr "強制 16:9"
@@ -1908,6 +1950,9 @@ msgstr "硬紋理快取記憶體限制"
 msgid "HARDWARE TESSELLATION"
 msgstr "硬體細分"
 
+msgid "HI-RES ARTIFACTING"
+msgstr "高解析度瑕疵"
+
 msgid "HLE (Fastest)"
 msgstr "HLE (最快)"
 
@@ -1973,6 +2018,9 @@ msgstr "整數向上縮放"
 
 msgid "INTERLACING PATCHES"
 msgstr "隔行掃描補丁"
+
+msgid "INTERNAL BASIC INTERPRETER"
+msgstr "內部 BASIC 解譯器"
 
 msgid "INTERNAL DISPLAY RESOLUTION"
 msgstr "內部顯示解析度"
@@ -2051,6 +2099,9 @@ msgstr "手把死區"
 
 msgid "JOYSTICK GATE SIZE"
 msgstr "搖桿閾值"
+
+msgid "JOYSTICK HACK (FOR ROBOTRON 2084)"
+msgstr "模擬搖桿破解(適用於ROBOTRON 2084)"
 
 msgid "JOYSTICK SENSITIVITY"
 msgstr "搖桿靈敏度"
@@ -2460,6 +2511,9 @@ msgstr "NTSC (RGB)"
 msgid "NTSC (S-Video)"
 msgstr "NTSC (S-Video)"
 
+msgid "NTSC 240x480px 60Hz"
+msgstr "NTSC 240x480px 60Hz"
+
 msgid "NTSC FILTER"
 msgstr "NTSC 過濾器"
 
@@ -2471,6 +2525,9 @@ msgstr "NTSC-U"
 
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
+
+msgid "NVRAM STORAGE"
+msgstr "NVRAM存儲"
 
 msgid "Namco GunCon"
 msgstr "Namco GunCon光槍"
@@ -2679,6 +2736,12 @@ msgstr "只有玩家1"
 msgid "P2 only"
 msgstr "只有玩家2"
 
+msgid "PADDLE MOUSE SENSITIVITY"
+msgstr "踏板式滑鼠靈敏度"
+
+msgid "PAL 288x576px 50Hz"
+msgstr "PAL 288x576px 50Hz"
+
 msgid "PAR 1:1"
 msgstr "PAR 1:1"
 
@@ -2768,6 +2831,9 @@ msgstr "Per 1s, 60s total (660MB|120MB)"
 
 msgid "Per 1s, 90s total (990MB|180MB)"
 msgstr "Per 1s, 90s total (990MB|180MB)"
+
+msgid "Per Game"
+msgstr "每個遊戲"
 
 msgid "Per-game"
 msgstr "每個遊戲"
@@ -3048,6 +3114,9 @@ msgstr "顯示螢幕顯示訊息"
 msgid "SHOW SCREEN LAYOUT"
 msgstr "顯示螢幕佈局"
 
+msgid "SIO ACCELERATION"
+msgstr "SIO加速"
+
 msgid "SKIP BUFFER EFFECTS"
 msgstr "跳過緩衝效果"
 
@@ -3324,6 +3393,9 @@ msgstr "雙核模式的速度補丁修復一些小故障。"
 msgid "Speed up shader compilation."
 msgstr "加速著色器編譯。"
 
+msgid "Speeds up file loading. Some games won't load with this."
+msgstr "加快檔案載入速度。有些遊戲會無法啟動。"
+
 msgid "Square pixel"
 msgstr "方形畫素"
 
@@ -3507,6 +3579,9 @@ msgstr "觸控式螢幕"
 msgid "Traditional Chinese"
 msgstr "正體中文"
 
+msgid "Treats the right analog stick as the second joystick."
+msgstr "將右邊的模擬搖桿視為第二個搖桿。"
+
 msgid "Trilinear (Forced)"
 msgstr "三線(強制)"
 
@@ -3600,6 +3675,9 @@ msgstr "使用Megadrive自動對映帶有6個按鈕佈局的Megadrive風格控�
 msgid "Use SSAA instead of MSAA for anti-aliasing. SSAA may look better but has a higher performance cost."
 msgstr "使用SSAA而不是MSAA消除鋸齒。SSAA可能看起來更好，但效能成本更高。"
 
+msgid "Use an alternate resolution. Some games need this."
+msgstr "使用替代解析度。有些遊戲需要。"
+
 msgid "Use language and username from the NDS Firmware"
 msgstr "使用NDS韌體中的語言和使用者名稱"
 
@@ -3650,6 +3728,9 @@ msgstr "垂直旋轉(TATE)"
 
 msgid "VIDEO FILTERS"
 msgstr "影像鏡"
+
+msgid "VIDEO FORMAT STANDARD"
+msgstr "影像格式標準"
 
 msgid "VIDEO SETTINGS"
 msgstr "影像設定"
