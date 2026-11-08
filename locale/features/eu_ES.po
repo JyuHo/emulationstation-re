@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45s"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (Lehenetsia)"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1536,6 +1539,9 @@ msgstr "Hobekuntza. Kendu lerroko zortzi spriteren muga."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Hobekuntza. Kendu lerroko laurogei spriteren muga."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "Hobekuntza. Kendu lerroko hamasei spriteren muga."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Hobekuntza. Kendu lerroko hogeita hamabi spriteren muga. Joko batzuk blokeatzen ditu."
 
@@ -2166,6 +2172,9 @@ msgstr "BEREIZMENA HANDITZE LINEALA"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "KARGATU TESTURA PERTSONALIZATUAK"
 
+msgid "Landscape"
+msgstr "Horizontala"
+
 msgid "Large Bottom"
 msgstr "Behekoa handia"
 
@@ -2643,6 +2652,12 @@ msgstr "PAR 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLEL-RDP ESKALATZAILEA"
 
+msgid "PCE Joypad"
+msgstr "PCE joypada"
+
+msgid "PCE Mouse"
+msgstr "PCE xagua"
+
 msgid "PERFORMANCE"
 msgstr "ERRENDIMENDUA"
 
@@ -2750,6 +2765,9 @@ msgstr "1+2 atakak"
 
 msgid "Port2"
 msgstr "2. ataka"
+
+msgid "Portrait"
+msgstr "Bertikala"
 
 msgid "Portugal"
 msgstr "Portugal"

@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45 сек"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (по умолчанию)"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1536,6 +1539,9 @@ msgstr "Улучшение. Удаляет ограничение в восем�
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Улучшение. Удаляет ограничение в восемьдесят спрайтов."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "Улучшение. Удаляет ограничение в шестнадцать спрайтов."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Улучшение. Удаляет ограничение в тридцать два спрайта. Вылетает в некоторых играх."
 
@@ -2166,6 +2172,9 @@ msgstr "ЛИНЕЙНОЕ МАСШТАБИРОВАНИЕ"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "ЗАГРУЖАТЬ ПОЛЬЗОВАТЕЛЬСКИЕ ТЕКСТУРЫ"
 
+msgid "Landscape"
+msgstr "Ландшафт"
+
 msgid "Large Bottom"
 msgstr "Large Bottom"
 
@@ -2643,6 +2652,12 @@ msgstr "PAR 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLEL-RDP АПСКЕЙЛ"
 
+msgid "PCE Joypad"
+msgstr "PCE Джойстик"
+
+msgid "PCE Mouse"
+msgstr "PCE Мышь"
+
 msgid "PERFORMANCE"
 msgstr "ПРОИЗВОДИТЕЛЬНОСТЬ"
 
@@ -2750,6 +2765,9 @@ msgstr "Порт1+2"
 
 msgid "Port2"
 msgstr "Порт2"
+
+msgid "Portrait"
+msgstr "Портрет"
 
 msgid "Portugal"
 msgstr "Portugal"

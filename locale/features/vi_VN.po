@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45s"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (Mặc định)"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1458,6 +1461,9 @@ msgstr "Tăng cường. Hủy bỏ tám sprites trên mỗi giới hạn dòng."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Tăng cường. Hủy bỏ giới hạn tám mươi sprites trên mỗi dòng."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "Tăng cường. Bỏ giới hạn mười sáu sprites mỗi dòng."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Tăng cường. Loại bỏ giới hạn ba mươi hai họa tiết trên mỗi dòng. Có thể xảy ra sự cố với một số trò chơi nhất định."
 
@@ -2061,6 +2067,9 @@ msgstr "LINEAR UPSCALING"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "TẢI TEXTURES CÁ NHÂN"
 
+msgid "Landscape"
+msgstr "Landscape"
+
 msgid "Large Bottom"
 msgstr "To bên dưới"
 
@@ -2523,6 +2532,12 @@ msgstr "PAR 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLEL-RDP UPSCALER"
 
+msgid "PCE Joypad"
+msgstr "PCE Joypad"
+
+msgid "PCE Mouse"
+msgstr "Chuột PCE"
+
 msgid "PERFORMANCE HACKS"
 msgstr "HACK HIỆU SUẤT"
 
@@ -2627,6 +2642,9 @@ msgstr "Cổng1+2"
 
 msgid "Port2"
 msgstr "Cổng2"
+
+msgid "Portrait"
+msgstr "Portrait"
 
 msgid "Portugal"
 msgstr "Bồ Đào Nha"

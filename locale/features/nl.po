@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45s"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (Standaard)"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1536,6 +1539,9 @@ msgstr "Verbetering. Verwijder de 8 sprites per regel limiet."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Verbetering. Verwijder de 80 sprites per regel limiet."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "Verbetering. Verwijder de 16 sprites per regel limiet."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Verbetering. Verwijder de 32 sprites per regel limiet. Crasht bepaalde games."
 
@@ -2166,6 +2172,9 @@ msgstr "LINEAIR OPSCHALEN"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "LAAD AANGEPASTE TEXTURES"
 
+msgid "Landscape"
+msgstr "Landschap"
+
 msgid "Large Bottom"
 msgstr "Grote bodem"
 
@@ -2643,6 +2652,12 @@ msgstr "PAR 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLEL-RDP UPSCALER"
 
+msgid "PCE Joypad"
+msgstr "PCE Joypad"
+
+msgid "PCE Mouse"
+msgstr "PCE Muis"
+
 msgid "PERFORMANCE"
 msgstr "PRESTATIE"
 
@@ -2750,6 +2765,9 @@ msgstr "Poort1+2"
 
 msgid "Port2"
 msgstr "Poort2"
+
+msgid "Portrait"
+msgstr "Portret"
 
 msgid "Portugal"
 msgstr "Portugal"

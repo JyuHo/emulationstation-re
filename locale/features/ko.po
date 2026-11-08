@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45s"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (기본)"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1536,6 +1539,9 @@ msgstr "향상. 줄당 8개의 스프라이트 제한을 제거합니다."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "향상. 줄당 80개의 스프라이트 제한을 제거합니다."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "향상. 줄당 16개의 스프라이트 제한을 제거합니다."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "향상. 줄당 32개의 스프라이트 제한을 제거합니다. 특정 게임을 충돌시킵니다."
 
@@ -2166,6 +2172,9 @@ msgstr "선형 업스케일러"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "커스텀 텍스처 로드"
 
+msgid "Landscape"
+msgstr "가로 화면"
+
 msgid "Large Bottom"
 msgstr "큰 하단"
 
@@ -2643,6 +2652,12 @@ msgstr "PAR 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "병렬-RDP 업스케일러"
 
+msgid "PCE Joypad"
+msgstr "PCE 조이패드"
+
+msgid "PCE Mouse"
+msgstr "PCE 마우스"
+
 msgid "PERFORMANCE"
 msgstr "성능"
 
@@ -2750,6 +2765,9 @@ msgstr "포트1+2"
 
 msgid "Port2"
 msgstr "포트2"
+
+msgid "Portrait"
+msgstr "세로화면"
 
 msgid "Portugal"
 msgstr "포르투갈"

@@ -339,6 +339,9 @@ msgstr "4096 م.ب"
 msgid "45s"
 msgstr "45 ثانية"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (الافتراضي)"
+
 msgid "48MB"
 msgstr "٤٨ م.ب"
 
@@ -1536,6 +1539,9 @@ msgstr "تحسين. إزالة الحد الأقصى لثمانية كائنات
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "تحسين. إزالة الحد الأقصى لثمانين كائناً (sprites) في السطر."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "تحسين. إزالة الحد الأقصى لستة عشر كائناً (sprites) في السطر."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "تحسين. إزالة الحد الأقصى لاثنين وثلاثين كائناً (sprites) في السطر. يتسبب في تعطل بعض الألعاب."
 
@@ -2166,6 +2172,9 @@ msgstr "ترقية خطية"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "تحميل إكساءات مخصصة"
 
+msgid "Landscape"
+msgstr "أفقي"
+
 msgid "Large Bottom"
 msgstr "أسفل كبير"
 
@@ -2643,6 +2652,12 @@ msgstr "PAR 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "مُرقي PARALLEL-RDP"
 
+msgid "PCE Joypad"
+msgstr "لوحة تحكم PCE"
+
+msgid "PCE Mouse"
+msgstr "ماوس PCE"
+
 msgid "PERFORMANCE"
 msgstr "الأداء"
 
@@ -2750,6 +2765,9 @@ msgstr "منفذ ١+٢"
 
 msgid "Port2"
 msgstr "منفذ ٢"
+
+msgid "Portrait"
+msgstr "عمودي (Portrait)"
 
 msgid "Portugal"
 msgstr "البرتغال"

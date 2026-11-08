@@ -339,6 +339,9 @@ msgstr "4096MO"
 msgid "45s"
 msgstr "45s"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (Implicit)"
+
 msgid "48MB"
 msgstr "48MO"
 
@@ -1536,6 +1539,9 @@ msgstr "Îmbunătățire. Elimină limita de opt sprite-uri per linie."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Îmbunătățire. Elimină limita de optzeci de sprite-uri per linie."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "Îmbunătățire. Elimină limita de șaisprezece sprite-uri per linie."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Îmbunătățire. Elimină limita de treizeci și două de sprite-uri per linie. Poate crăpa anumite jocuri."
 
@@ -2166,6 +2172,9 @@ msgstr "UPSCALING LINIAR"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "ÎNCARCĂ TEXTURI PERSONALIZATE"
 
+msgid "Landscape"
+msgstr "Peisaj"
+
 msgid "Large Bottom"
 msgstr "Dedesubt mare"
 
@@ -2643,6 +2652,12 @@ msgstr "PARITATE 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "UPSCALER PARALLEL-RDP"
 
+msgid "PCE Joypad"
+msgstr "Joypad PCE"
+
+msgid "PCE Mouse"
+msgstr "Maus PCE"
+
 msgid "PERFORMANCE"
 msgstr "PERFORMANȚĂ"
 
@@ -2750,6 +2765,9 @@ msgstr "Port1+2"
 
 msgid "Port2"
 msgstr "Port2"
+
+msgid "Portrait"
+msgstr "Portret"
 
 msgid "Portugal"
 msgstr "Portugalia"

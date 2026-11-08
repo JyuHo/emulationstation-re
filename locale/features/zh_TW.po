@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45秒"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (預設)"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1479,6 +1482,9 @@ msgstr "增強。取消每行八個精靈的限制。"
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "增強。取消每行80個精靈的限制。"
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "增強。取消每行16個精靈的限制。"
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "增強。取消每行32個精靈的限制，某些遊戲可能崩潰。"
 
@@ -2106,6 +2112,9 @@ msgstr "線性縮放"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "讀取自訂紋理"
 
+msgid "Landscape"
+msgstr "橫向"
+
 msgid "Large Bottom"
 msgstr "下方大"
 
@@ -2574,6 +2583,12 @@ msgstr "PAR 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLEL-RDP UPSCALER"
 
+msgid "PCE Joypad"
+msgstr "PCE 手把"
+
+msgid "PCE Mouse"
+msgstr "PCE 滑鼠"
+
 msgid "PERFORMANCE"
 msgstr "效能"
 
@@ -2681,6 +2696,9 @@ msgstr "Port1+2"
 
 msgid "Port2"
 msgstr "Port2"
+
+msgid "Portrait"
+msgstr "直立的"
 
 msgid "Portugal"
 msgstr "Portugal"

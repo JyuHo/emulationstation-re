@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45s"
 
+msgid "480x272 (Default)"
+msgstr "480x270 (predvolené)"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1536,6 +1539,9 @@ msgstr "Rozšírenie. Odstráni obmedzenie 8 spritov na riadok."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Rozšírenie. Odstráni obmedzenie 80 spritov na riadok."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "Rozšírenie. Odstráni obmedzenie 16 spritov na riadok."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Rozšírenie. Odstrániť limit tridsaťdva spritov na riadok. Zlyhajú niektoré hry."
 
@@ -2166,6 +2172,9 @@ msgstr "Lineárne škálovanie"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "Načítať vlastné textúry"
 
+msgid "Landscape"
+msgstr "Krajinka"
+
 msgid "Large Bottom"
 msgstr "Veľké tlačidlo"
 
@@ -2643,6 +2652,12 @@ msgstr "PAR 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "ParaLLEl-RDP upscaller"
 
+msgid "PCE Joypad"
+msgstr "PCE joypad"
+
+msgid "PCE Mouse"
+msgstr "PCE myš"
+
 msgid "PERFORMANCE"
 msgstr "VÝKON"
 
@@ -2750,6 +2765,9 @@ msgstr "Port1+2"
 
 msgid "Port2"
 msgstr "Port2"
+
+msgid "Portrait"
+msgstr "Portrét"
 
 msgid "Portugal"
 msgstr "Portugalsko"

@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45秒"
 
+msgid "480x272 (Default)"
+msgstr "480x272（標準）"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1536,6 +1539,9 @@ msgstr "強化：行制限ごとに8つのスプライトを削除します"
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "強化：行制限ごとに80個のスプライトを削除します"
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "強化：行制限ごとに16個のスプライトを削除します"
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "強化：行制限ごとに32個のスプライトを削除します(特定のゲームで不具合の可能性)"
 
@@ -2166,6 +2172,9 @@ msgstr "リニアアップスケーリング"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "カスタムテクスチャを読み込む"
 
+msgid "Landscape"
+msgstr "ランドスケープ(横)"
+
 msgid "Large Bottom"
 msgstr "下画面を大きく"
 
@@ -2643,6 +2652,12 @@ msgstr "ピクセルアスペクト比 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLEL-RDP アップスケーラー"
 
+msgid "PCE Joypad"
+msgstr "ジョイパッド"
+
+msgid "PCE Mouse"
+msgstr "マウス"
+
 msgid "PERFORMANCE"
 msgstr "パフォーマンス"
 
@@ -2750,6 +2765,9 @@ msgstr "ポート1+2"
 
 msgid "Port2"
 msgstr "ポート2"
+
+msgid "Portrait"
+msgstr "ポートレート(縦)"
 
 msgid "Portugal"
 msgstr "ポルトガル"
