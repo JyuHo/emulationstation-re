@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45秒"
 
+msgid "480x272 (Default)"
+msgstr "480x272（默认）"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1536,6 +1539,9 @@ msgstr "增强。移除每行8个精灵限制。"
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "增强。删除每行80个精灵限制。"
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "增强。移除每行16个精灵的限制。"
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "增强。删除每行32个精灵的限制。会破坏某些游戏。"
 
@@ -2166,6 +2172,9 @@ msgstr "线性放大"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "加载自定义纹理"
 
+msgid "Landscape"
+msgstr "景观"
+
 msgid "Large Bottom"
 msgstr "底部加大"
 
@@ -2643,6 +2652,12 @@ msgstr "像素宽高比 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "并行RDP升频器"
 
+msgid "PCE Joypad"
+msgstr "PCE操纵手柄"
+
+msgid "PCE Mouse"
+msgstr "PCE 鼠标"
+
 msgid "PERFORMANCE"
 msgstr "性能"
 
@@ -2750,6 +2765,9 @@ msgstr "端口1+2"
 
 msgid "Port2"
 msgstr "端口2"
+
+msgid "Portrait"
+msgstr "纵向"
 
 msgid "Portugal"
 msgstr "葡萄牙"

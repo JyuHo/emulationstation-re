@@ -623,6 +623,39 @@ static void testCoreProfiles()
 		CHECK(o.get("kronos_multitap_port1") == "enabled");
 		CHECK(o.get("kronos_multitap_port2") == "enabled");
 	}
+
+	// PPSSPP, Beetle PCE (both builds, each with its prefix), SuperGrafx, WonderSwan
+	{
+		ConfigFile o;
+		ctx.game.system = "psp";
+		ctx.settings = Settings({ { "ppsspp_resolution", "960x544" } }, {}, {});
+		coreProfile("ppsspp").setCoreOptions(ctx, o);
+		CHECK(o.get("ppsspp_internal_resolution") == "960x544");
+		CHECK(coreProfile("ppsspp").defaultVideoDriver("glcore") == "gl");
+
+		ctx.game.system = "pcengine";
+		ctx.settings = Settings({ { "pce_nospritelimit", "disabled" }, { "controller1_pce", "2" } }, {}, {});
+		coreProfile("mednafen_pce_fast").setCoreOptions(ctx, o);
+		CHECK(o.get("pce_fast_nospritelimit") == "disabled");
+		CHECK(!o.get("pce_nospritelimit"));
+		coreProfile("pce").setCoreOptions(ctx, o);
+		CHECK(o.get("pce_nospritelimit") == "disabled");
+		CHECK(coreProfile("pce_fast").deviceType(ctx, 1) == "2");
+		CHECK(coreProfile("mednafen_pce").deviceType(ctx, 2) == std::nullopt);
+
+		ctx.settings = Settings({}, {}, {});
+		CHECK(coreProfile("mednafen_pce").deviceType(ctx, 1) == "1");
+		coreProfile("mednafen_supergrafx").setCoreOptions(ctx, o);
+		CHECK(o.get("sgx_nospritelimit") == "enabled");
+
+		ConfigFile config;
+		ctx.game.system = "wswan";
+		ctx.settings = Settings({ { "wswan_rotate_display", "portrait" } }, {}, {});
+		coreProfile("mednafen_wswan").setCoreOptions(ctx, o);
+		coreProfile("mednafen_wswan").setConfig(ctx, config);
+		CHECK(o.get("wswan_rotate_display") == "portrait");
+		CHECK(config.get("wswan_rotate_display") == "portrait");
+	}
 }
 
 void tests::runRetroArchTests()

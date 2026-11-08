@@ -977,6 +977,69 @@ namespace es::launcher::retroarch
 		}
 	};
 
+	class Ppsspp : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "ppsspp_internal_resolution", "ppsspp_resolution", "480x272");
+		}
+
+		// it needs the compatibility GL driver
+		std::string defaultVideoDriver(const std::string& generic) const override
+		{
+			return generic == "glcore" ? "gl" : generic;
+		}
+	};
+
+	// Beetle PCE and Beetle PCE Fast: same options under their own prefix
+	class Pce : public Core
+	{
+	public:
+		explicit Pce(bool fast) : m_fast(fast) { }
+
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			// no 16 sprites per line limit
+			o.set(m_fast ? "pce_fast_nospritelimit" : "pce_nospritelimit", settingOr(ctx, "pce_nospritelimit", "enabled"));
+		}
+
+		std::optional<std::string> deviceType(const LaunchContext& ctx, int player) const override
+		{
+			if (player != 1)
+				return std::nullopt;
+			return settingOr(ctx, "controller1_pce", "1");
+		}
+
+	private:
+		bool m_fast;
+	};
+
+	class MednafenSupergrafx : public Core
+	{
+	public:
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			// no 16 sprites per line limit
+			option(ctx, o, "sgx_nospritelimit", "enabled");
+		}
+	};
+
+	class MednafenWswan : public Core
+	{
+	public:
+		// the player's choice, else manual (Batocera picks portrait for the games it decorates at 90°)
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			option(ctx, o, "wswan_rotate_display", "manual");
+		}
+
+		void setConfig(const LaunchContext& ctx, ConfigFile& config) const override
+		{
+			option(ctx, config, "wswan_rotate_display", "manual");
+		}
+	};
+
 	// ---------------------------------------------------------------------------------------------
 
 	const Core& coreProfile(std::string_view core)
@@ -1021,6 +1084,14 @@ namespace es::launcher::retroarch
 			m.emplace("mednafen_saturn", std::make_unique<BeetleSaturn>());
 			m.emplace("yabasanshiro", std::make_unique<YabaSanshiro>());
 			m.emplace("kronos", std::make_unique<Kronos>());
+			m.emplace("ppsspp", std::make_unique<Ppsspp>());
+			// Batocera calls Beetle PCE "pce" and "pce_fast", the libraries are mednafen_pce(_fast)
+			m.emplace("pce", std::make_unique<Pce>(false));
+			m.emplace("mednafen_pce", std::make_unique<Pce>(false));
+			m.emplace("pce_fast", std::make_unique<Pce>(true));
+			m.emplace("mednafen_pce_fast", std::make_unique<Pce>(true));
+			m.emplace("mednafen_supergrafx", std::make_unique<MednafenSupergrafx>());
+			m.emplace("mednafen_wswan", std::make_unique<MednafenWswan>());
 			return m;
 		}();
 		static const Core generic;

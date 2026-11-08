@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45s"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (domyślnie)"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1536,6 +1539,9 @@ msgstr "Usprawnienie. Usunięcie limitu ośmiu sprite'ów na linię."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Usprawnienie. Usunięcie limitu osiemdziesięciu sprite'ów na linię."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "Usprawnienie. Usunięcie limitu szesnastu sprite'ów na linię."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Usprawnienie. Usunięcie limitu trzydziestu dwóch sprite'ów na linię. Powoduje awarie niektórych gier."
 
@@ -2166,6 +2172,9 @@ msgstr "PRZESKALOWANIE LINIOWE"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "ZAŁADUJ NIESTANDARDOWE TEKSTURY"
 
+msgid "Landscape"
+msgstr "Poziomo"
+
 msgid "Large Bottom"
 msgstr "Duży dół"
 
@@ -2643,6 +2652,12 @@ msgstr "JEDEN DO JEDNEGO"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "UPSCALER RÓWNOLEGŁY-RDP"
 
+msgid "PCE Joypad"
+msgstr "Joypad PCE"
+
+msgid "PCE Mouse"
+msgstr "Mysz PCE"
+
 msgid "PERFORMANCE"
 msgstr "WYDAJNOŚĆ"
 
@@ -2750,6 +2765,9 @@ msgstr "Port1+2"
 
 msgid "Port2"
 msgstr "Port2"
+
+msgid "Portrait"
+msgstr "Pionowo"
 
 msgid "Portugal"
 msgstr "Portugalia"

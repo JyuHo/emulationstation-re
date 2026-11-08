@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45s"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (Alap)"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1536,6 +1539,9 @@ msgstr "Fokozás. Távolítsa el a soronkénti nyolc sprite-ot."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Fokozás. Távolítsa el a nyolcvan sprite-ot soronként."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "Enhancement. Remove the sixteen sprites per line limit."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Fokozás. Távolítsa el a harminckét sprite soronkénti korlátot. Összeomlik bizonyos játékok."
 
@@ -2166,6 +2172,9 @@ msgstr "LINEÁRIS FELSKÁLÁZÁS"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "EGYÉNI TEXTÚRÁK BETÖLTÉSE"
 
+msgid "Landscape"
+msgstr "Fekvő"
+
 msgid "Large Bottom"
 msgstr "Nagy alsó"
 
@@ -2643,6 +2652,12 @@ msgstr "PAR 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PÁRHUZAMOS-RDP FELSKÁLÁZÓ"
 
+msgid "PCE Joypad"
+msgstr "PCE Joypad"
+
+msgid "PCE Mouse"
+msgstr "PCE Mouse"
+
 msgid "PERFORMANCE"
 msgstr "TELJESÍTMÉNY"
 
@@ -2750,6 +2765,9 @@ msgstr "Port1+2"
 
 msgid "Port2"
 msgstr "Port2"
+
+msgid "Portrait"
+msgstr "Álló"
 
 msgid "Portugal"
 msgstr "Portugália"

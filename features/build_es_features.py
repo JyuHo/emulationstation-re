@@ -63,6 +63,8 @@ CORE_ALIASES = {
         'genesisplusgx': ['genesis_plus_gx'],
         'genesisplusgx-expanded': ['genesis_plus_gx_expanded'],
         'beetle-saturn': ['mednafen_saturn'],
+        'pce': ['mednafen_pce'],
+        'pce_fast': ['mednafen_pce_fast'],
     },
 }
 

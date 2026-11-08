@@ -339,6 +339,9 @@ msgstr "4096 MB"
 msgid "45s"
 msgstr "45s"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (standard)"
+
 msgid "48MB"
 msgstr "48 MB"
 
@@ -1455,6 +1458,9 @@ msgstr "Forbedring. Fjern grensen på åtte sprites per linje."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Forbedring. Fjern grensen på åtti sprites per linje."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "Forbedring. Fjern grensen på seksten sprites per linje."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Forbedring. Fjern grensen på trettito sprites per linje. Krasjer i enkelte spill."
 
@@ -2058,6 +2064,9 @@ msgstr "LINEÆR OPPSKALERING"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "LAST INN EGENDEFINERTE TEKSTURER"
 
+msgid "Landscape"
+msgstr "Landskap"
+
 msgid "Large Bottom"
 msgstr "Stor bunn"
 
@@ -2520,6 +2529,12 @@ msgstr "PAR 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "PARALLELL-RDP-OPPSKALERER"
 
+msgid "PCE Joypad"
+msgstr "PCE Joypad"
+
+msgid "PCE Mouse"
+msgstr "PCE-mus"
+
 msgid "PERFORMANCE HACKS"
 msgstr "PRESTASJONSHACKS"
 
@@ -2624,6 +2639,9 @@ msgstr "Port1+2"
 
 msgid "Port2"
 msgstr "Port2"
+
+msgid "Portrait"
+msgstr "Portrett"
 
 msgid "Portugal"
 msgstr "Portugal"

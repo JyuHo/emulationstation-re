@@ -339,6 +339,9 @@ msgstr "4096MB"
 msgid "45s"
 msgstr "45s"
 
+msgid "480x272 (Default)"
+msgstr "480x272 (Padrão)"
+
 msgid "48MB"
 msgstr "48MB"
 
@@ -1536,6 +1539,9 @@ msgstr "Aprimoramento. Remove o limite de oito imagens por linha."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Aprimoramento. Remove o limite de oitenta imagens por linha."
 
+msgid "Enhancement. Remove the sixteen sprites per line limit."
+msgstr "Aprimoramento. Remove o limite de dezesseis imagens por linha."
+
 msgid "Enhancement. Remove the thirty-two sprites per line limit. Crashes certain games."
 msgstr "Aprimoramento. Remove o limite de trinta e dois imagens por linha. Trava em certos jogos."
 
@@ -2166,6 +2172,9 @@ msgstr "AUMENTAR ESCALA LINEAR"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "CARREGAR TEXTURAS PERSONALIZADAS"
 
+msgid "Landscape"
+msgstr "Paisagem"
+
 msgid "Large Bottom"
 msgstr "Inferior Maior"
 
@@ -2643,6 +2652,12 @@ msgstr "PAR 1:1"
 msgid "PARALLEL-RDP UPSCALER"
 msgstr "AUMENTAR ESCALA DO RPD-PARALELO"
 
+msgid "PCE Joypad"
+msgstr "Controle PCE"
+
+msgid "PCE Mouse"
+msgstr "Mouse do PCE"
+
 msgid "PERFORMANCE"
 msgstr "PERFORMANCE"
 
@@ -2750,6 +2765,9 @@ msgstr "Porta1+2"
 
 msgid "Port2"
 msgstr "Porta2"
+
+msgid "Portrait"
+msgstr "Retrato"
 
 msgid "Portugal"
 msgstr "Portugal"
