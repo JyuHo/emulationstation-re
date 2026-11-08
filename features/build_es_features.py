@@ -75,6 +75,13 @@ BUILTIN_FEATURE_KEYS = {
 # Handled by ES itself, whatever the generator
 ES_FEATURES = {'padtokeyboard', 'joystick2pad'}
 
+# Built-in features Batocera no longer declares in its definitions, but that ES still shows only
+# for the emulators that declare them: "autocontrollers" is the AUTOCONFIGURE CONTROLLERS option
+# (global and per system), honoured by the RetroArch generator ("disableautocontrollers").
+EXTRA_FEATURES = {
+    'libretro': ['autocontrollers'],
+}
+
 yaml = ruamel.yaml.YAML(typ='safe', pure=True)
 
 
@@ -438,8 +445,11 @@ def main() -> None:
         if emulator not in registry:
             print(f'warning: no definition for {emulator}', file=sys.stderr)
             continue
-        blocks.append(('emulator', f'name="{protect(names)}" features="{{features}}"',
-                       filter_info(registry[emulator], supported, shared_keys)))
+        info = filter_info(registry[emulator], supported, shared_keys)
+        extra = filter_features(EXTRA_FEATURES.get(emulator), supported) or []
+        if extra:
+            info['features'] = (info['features'] or []) + [f for f in extra if f not in (info['features'] or [])]
+        blocks.append(('emulator', f'name="{protect(names)}" features="{{features}}"', info))
 
     global_defs = filter_info(registry['_global'], supported, shared_keys)
 
