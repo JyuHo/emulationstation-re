@@ -116,7 +116,7 @@ namespace Utils
 
 			// getting the output when in a pipe is not easy...
 			// https://stackoverflow.com/questions/1221833/pipe-output-and-capture-exit-status-in-bash
-			std::string cmdOutput = "((((" + cmd_utf8 + " 2> " + Utils::FileSystem::combine(Paths::getLogPath(), stderrFilename) + " ; echo $? >&3) | head -300 > " + Utils::FileSystem::combine(Paths::getLogPath(), stdoutFilename) + ") 3>&1) | (read xs; exit $xs))";
+			std::string cmdOutput = "((((" + cmd_utf8 + " 2> " + Utils::String::shellQuote(Utils::FileSystem::combine(Paths::getLogPath(), stderrFilename)) + " ; echo $? >&3) | head -300 > " + Utils::String::shellQuote(Utils::FileSystem::combine(Paths::getLogPath(), stdoutFilename)) + ") 3>&1) | (read xs; exit $xs))";
 			if (!Log::enabled())
 			  cmdOutput = "((((" + cmd_utf8 + " 2> /dev/null ; echo $? >&3) | head -300 > /dev/null) 3>&1) | (read xs; exit $xs))";
 

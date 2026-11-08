@@ -790,7 +790,7 @@ namespace Renderer
 
 		for (int i = 0; i <= n; i++)
 		{
-			float ang = sa + step * (float)i;
+			float ang = (float)(sa + (double)step * i);
 
 			// compute the next point
 			float next_x = cent_x + r * Math::sinf(ang);

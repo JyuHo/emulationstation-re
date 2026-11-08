@@ -26,7 +26,7 @@ using namespace rapidjson;
 void ArcadeDBScraper::generateRequests(const ScraperSearchParams& params,
 	std::queue<std::unique_ptr<ScraperRequest>>& requests, std::vector<ScraperSearchResult>& results)
 {
-	std::string path = "http://adb.arcadeitalia.net";
+	std::string path = "https://adb.arcadeitalia.net";
 
 	std::string cleanName = params.nameOverride;
 	if (!cleanName.empty())
