@@ -21,14 +21,6 @@ struct BiosSystem
   std::vector<BiosFile> bios;
 };
 
-struct BatoceraBezel
-{
-	std::string name;
-	std::string url;
-	std::string folderPath;
-	bool isInstalled;
-};
-
 struct BatoceraTheme
 {
 	std::string name; 
@@ -260,9 +252,6 @@ public:
 	virtual std::vector<BatoceraTheme> getBatoceraThemesList();
 	virtual bool isThemeInstalled(const std::string& themeName, const std::string& url);
 	virtual std::pair<std::string,int> installBatoceraTheme(std::string thname, const std::function<void(const std::string)>& func = nullptr);
-	virtual std::pair<std::string, int> uninstallBatoceraBezel(std::string bezelsystem, const std::function<void(const std::string)>& func = nullptr);
-
-	virtual std::pair<std::string,int> installBatoceraBezel(std::string bezelsystem, const std::function<void(const std::string)>& func = nullptr);
 	virtual std::pair<std::string,int> uninstallBatoceraTheme(std::string bezelsystem, const std::function<void(const std::string)>& func = nullptr);
 
 	virtual std::string getCRC32(const std::string fileName, bool fromZipContents = true);

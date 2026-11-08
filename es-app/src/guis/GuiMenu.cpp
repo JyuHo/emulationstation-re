@@ -11,6 +11,7 @@
 #include "guis/GuiScraperStart.h"
 #include "guis/GuiHashStart.h"
 #include "guis/GuiThemeInstaller.h"
+#include "guis/GuiBezelInstaller.h"
 #include "guis/GuiEmulatorCatalog.h"
 #include "updates/SelfUpdater.h"
 #include "guis/GuiSettings.h"
@@ -817,6 +818,15 @@ void GuiMenu::openUpdatesSettings()
 			mWindow->pushGui(new GuiThemeInstaller(mWindow));
 		});
 	}
+
+	// The Bezel Project: the bezels of the player's games, downloaded from its GitHub repositories
+	updateGui->addEntry(_("THE BEZEL PROJECT"), true, [this]
+	{
+		if (!checkNetwork())
+			return;
+
+		mWindow->pushGui(new GuiBezelInstaller(mWindow));
+	});
 
 
 	mWindow->pushGui(updateGui);

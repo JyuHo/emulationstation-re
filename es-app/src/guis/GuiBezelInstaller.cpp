@@ -1,0 +1,300 @@
+#include "guis/GuiBezelInstaller.h"
+
+#include "bezels/TheBezelProject.h"
+#include "components/OptionListComponent.h"
+#include "guis/GuiSettings.h"
+#include "views/ViewController.h"
+#include "components/ComponentGrid.h"
+#include "SystemData.h"
+#include "LocaleES.h"
+#include "ContentInstaller.h"
+#include "components/MultiLineMenuEntry.h"
+#include "GuiLoading.h"
+#include <cstring>
+#include "SystemConf.h"
+#include "guis/GuiMsgBox.h"
+
+#define WINDOW_WIDTH (float)Math::min(Renderer::getScreenHeight() * 1.125f, Renderer::getScreenWidth() * 0.90f)
+
+GuiBezelInstaller::GuiBezelInstaller(Window* window)
+	: GuiComponent(window), mMenu(window, _("THE BEZEL PROJECT").c_str()), mReloadList(1)
+{
+	addChild(&mMenu);
+	mMenu.setSubTitle(_("SELECT BEZELS TO INSTALL/REMOVE"));
+    mMenu.addButton(_("BACK"), "back", [&] { delete this; });
+
+	centerWindow();
+
+	ContentInstaller::RegisterNotify(this);
+}
+
+GuiBezelInstaller::~GuiBezelInstaller()
+{
+	ContentInstaller::UnregisterNotify(this);
+}
+
+void GuiBezelInstaller::OnContentInstalled(int contentType, std::string contentName, bool success)
+{
+	if (contentType == ContentInstaller::CONTENT_BEZEL_INSTALL && success)
+	{
+		auto global = SystemConf::getInstance()->get("global.bezel");
+
+		// When installed, set thebezelproject as default decorations for the system, if the global setting is not set to "AUTO"
+		auto current = SystemConf::getInstance()->get(contentName + ".bezel");
+		if ((current == "" || current == "AUTO") && global != "" && global != "AUTO")
+			SystemConf::getInstance()->set(contentName + ".bezel", "thebezelproject");
+	}
+	else if (contentType == ContentInstaller::CONTENT_BEZEL_UNINSTALL && success)
+	{
+		// When uninstalled, set "auto" as default decorations for the system, if it was thebezelproject before
+		auto current = SystemConf::getInstance()->get(contentName + ".bezel");
+		if (current == "thebezelproject")
+			SystemConf::getInstance()->set(contentName + ".bezel", "");
+	}
+
+	if (contentType == ContentInstaller::CONTENT_BEZEL_INSTALL || contentType == ContentInstaller::CONTENT_BEZEL_UNINSTALL)
+		mReloadList = 2;
+}
+
+void GuiBezelInstaller::update(int deltaTime)
+{
+	GuiComponent::update(deltaTime);
+
+	if (mReloadList != 0)
+	{
+		bool silent = (mReloadList == 2);
+
+		mReloadList = 0;
+
+		if (silent)
+			loadList();
+		else
+			loadBezelsAsync();
+	}
+}
+
+void GuiBezelInstaller::loadList()
+{
+	int idx = mMenu.getCursorIndex();
+	mMenu.clear();
+
+	int i = 0;
+	for (auto bezel : mBezels)
+	{
+		auto system = SystemData::sSystemVector.firstOrDefault([bezel](SystemData* sys) { return sys->getName() == bezel.system.name; });
+		if (system == nullptr)
+			continue;
+
+		ComponentListRow row;
+		auto grid = std::make_shared<GuiBezelProjectEntry>(mWindow, bezel);
+		row.addElement(grid, true);
+
+		if (!grid->isInstallPending())
+			row.makeAcceptInputHandler([this, bezel] { processBezel(bezel); });
+
+		mMenu.addRow(row, i == idx);
+		i++;
+	}
+
+	centerWindow();
+	mReloadList = 0;
+}
+
+void GuiBezelInstaller::loadBezelsAsync()
+{
+	Window* window = mWindow;
+
+	using Listing = std::pair<std::vector<bezelproject::Entry>, std::string>;
+
+	mWindow->pushGui(new GuiLoading<Listing>(mWindow, _("PLEASE WAIT"),
+		[](auto gui)
+		{
+			std::string error;
+			auto entries = bezelproject::list(&error);
+			return Listing(entries, error);
+		},
+		[this, window](Listing listing)
+		{
+			mBezels = listing.first;
+			loadList();
+
+			if (mBezels.empty())
+				window->pushGui(new GuiMsgBox(window, listing.second.empty() ? _("THE BEZEL PROJECT HAS NO BEZELS FOR YOUR SYSTEMS") : _("AN ERROR OCCURRED") + std::string(": ") + listing.second));
+		}
+	));
+}
+
+void GuiBezelInstaller::centerWindow()
+{
+	if (Renderer::ScreenSettings::fullScreenMenus())
+		mMenu.setSize(Renderer::getScreenWidth(), Renderer::getScreenHeight());
+	else
+		mMenu.setSize(WINDOW_WIDTH, Renderer::getScreenHeight() * 0.875f);
+
+	mMenu.setPosition((Renderer::getScreenWidth() - mMenu.getSize().x()) / 2, (Renderer::getScreenHeight() - mMenu.getSize().y()) / 2);
+}
+
+void GuiBezelInstaller::processBezel(bezelproject::Entry bezel)
+{
+	if (bezel.system.name.empty())
+		return;
+
+	GuiSettings* msgBox = new GuiSettings(mWindow, bezel.system.name);
+	msgBox->setSubTitle(bezel.system.repository);
+	msgBox->setTag("popup");
+
+	if (bezel.installed)
+	{
+		msgBox->addEntry(_U("\uF019 ") + _("UPDATE"), false, [this, msgBox, bezel]
+		{
+			char trstring[1024];
+			snprintf(trstring, 1024, _("'%s' ADDED TO DOWNLOAD QUEUE").c_str(), bezel.system.name.c_str());
+			mWindow->displayNotificationMessage(_U("\uF019 ") + std::string(trstring));
+
+			ContentInstaller::Enqueue(mWindow, ContentInstaller::CONTENT_BEZEL_INSTALL, bezel.system.name);
+			mReloadList = 2;
+
+			msgBox->close();
+		});
+
+		msgBox->addEntry(_U("\uF014 ") + _("REMOVE"), false, [this, msgBox, bezel]
+		{
+			auto updateStatus = bezelproject::remove(bezel.system.name);
+
+			if (updateStatus.second == 0)
+				mWindow->displayNotificationMessage(_U("\uF019 ") + bezel.system.name + " : " + _("BEZELS UNINSTALLED SUCCESSFULLY"));
+			else
+			{
+				std::string error = _("AN ERROR OCCURRED") + std::string(": ") + updateStatus.first;
+				mWindow->displayNotificationMessage(_U("\uF019 ") + error);
+			}
+
+			mReloadList = 2;
+			msgBox->close();
+		});
+	}
+	else
+	{
+		msgBox->addEntry(_U("\uF019 ") + _("INSTALL"), false, [this, msgBox, bezel]
+		{			
+			char trstring[1024];
+			snprintf(trstring, 1024, _("'%s' ADDED TO DOWNLOAD QUEUE").c_str(), bezel.system.name.c_str());
+			mWindow->displayNotificationMessage(_U("\uF019 ") + std::string(trstring));
+
+			ContentInstaller::Enqueue(mWindow, ContentInstaller::CONTENT_BEZEL_INSTALL, bezel.system.name);
+			mReloadList = 2;
+
+			msgBox->close();
+		});
+	}
+
+	mWindow->pushGui(msgBox);
+}
+
+bool GuiBezelInstaller::input(InputConfig* config, Input input)
+{
+	if (GuiComponent::input(config, input))
+		return true;
+
+	if (input.value != 0 && config->isMappedTo(BUTTON_BACK, input))
+	{
+		delete this;
+		return true;
+	}
+
+	if (config->isMappedTo("start", input) && input.value != 0)
+	{
+		// close everything
+		Window* window = mWindow;
+		while (window->peekGui() && window->peekGui() != ViewController::get())
+			delete window->peekGui();
+	}
+	return false;
+}
+
+std::vector<HelpPrompt> GuiBezelInstaller::getHelpPrompts()
+{
+	std::vector<HelpPrompt> prompts = mMenu.getHelpPrompts();
+	prompts.push_back(HelpPrompt(BUTTON_BACK, _("BACK")));
+	prompts.push_back(HelpPrompt("start", _("CLOSE")));
+	return prompts;
+}
+
+//////////////////////////////////////////////////////////////
+// GuiBezelProjectEntry
+//////////////////////////////////////////////////////////////
+
+GuiBezelProjectEntry::GuiBezelProjectEntry(Window* window, bezelproject::Entry& entry) :
+	ComponentGrid(window, Vector2i(4, 3))
+{
+	mEntry = entry;
+
+	auto theme = ThemeData::getMenuTheme();
+
+	bool isInstalled = entry.installed;
+
+	mIsPending = 
+		ContentInstaller::IsInQueue(ContentInstaller::CONTENT_BEZEL_INSTALL, entry.system.name) || 
+		ContentInstaller::IsInQueue(ContentInstaller::CONTENT_BEZEL_UNINSTALL, entry.system.name);
+
+	mImage = std::make_shared<TextComponent>(mWindow);
+	mImage->setColor(theme->Text.color);
+	mImage->setHorizontalAlignment(Alignment::ALIGN_CENTER);
+	mImage->setVerticalAlignment(Alignment::ALIGN_TOP);
+	mImage->setFont(theme->Text.font);
+	mImage->setText(isInstalled ? _U("\uF058") : _U("\uF019"));
+	mImage->setSize(theme->Text.font->getLetterHeight() * 1.5f, 0);
+
+	std::string name = entry.system.name;
+
+	auto system = SystemData::sSystemVector.firstOrDefault([entry](SystemData* sys) { return sys->getName() == entry.system.name; });
+	if (system != nullptr)
+		name = (*system)->getFullName();
+
+	mText = std::make_shared<TextComponent>(mWindow, name, theme->Text.font, theme->Text.color);
+	mText->setLineSpacing(1.5);
+	mText->setVerticalAlignment(ALIGN_TOP);
+
+	std::string details = _U("\uf0AC  ") + entry.system.repository;
+
+	if (mIsPending)
+	{
+		char trstring[1024];
+		snprintf(trstring, 1024, _("CURRENTLY IN DOWNLOAD QUEUE").c_str(), entry.system.name.c_str());
+		details = trstring;
+	}
+
+	mSubstring = std::make_shared<TextComponent>(mWindow, details, theme->TextSmall.font, theme->Text.color);
+	mSubstring->setOpacity(192);
+
+	setEntry(mImage, Vector2i(0, 0), false, true, Vector2i(1, 3));
+	setEntry(mText, Vector2i(2, 0), false, true);
+	setEntry(mSubstring, Vector2i(2, 1), false, true);
+
+	float h = mText->getSize().y() * 1.1f + mSubstring->getSize().y()/* + mDetails->getSize().y()*/;
+	float sw = WINDOW_WIDTH;
+
+	setColWidthPerc(0, 42.0f / sw, false);
+	setColWidthPerc(1, 0.015f, false);
+	setColWidthPerc(3, 0.002f, false);
+
+	setRowHeightPerc(0, mText->getSize().y() / h, false);
+	setRowHeightPerc(1, mSubstring->getSize().y() / h, false);
+
+	if (mIsPending)
+	{
+		mImage->setText(_U("\uF04B"));
+		mImage->setOpacity(120);
+		mText->setOpacity(150);
+		mSubstring->setOpacity(120);
+	}
+
+	setSize(Vector2f(0, h));
+}
+
+void GuiBezelProjectEntry::setColor(unsigned int color)
+{
+	mImage->setColor(color);
+	mText->setColor(color);
+	mSubstring->setColor(color);
+}

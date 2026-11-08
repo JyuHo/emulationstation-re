@@ -212,6 +212,17 @@ static void testGameOptions()
 	ctx.game.system = "snes";
 	CHECK(!RetroArchGenerator::decorationOverlay(ctx));
 
+	// what the Updates & downloads menu installs, Batocera's layout: games/<system>/<rom>.png, systems/<system>.png
+	writeFile(tmp.path / "deco2" / "thebezelproject" / "games" / "nes" / "Zelda (USA).png", "");
+	writeFile(tmp.path / "deco2" / "thebezelproject" / "systems" / "nes.png", "");
+	ctx.paths.decorations = { tmp.path / "deco2" };
+	ctx.settings = Settings({ { "bezel", "thebezelproject" } }, {}, {});
+	ctx.game.system = "nes";
+	ctx.game.rom = "/roms/nes/Zelda (USA).nes";
+	CHECK(RetroArchGenerator::decorationOverlay(ctx) == tmp.path / "deco2" / "thebezelproject" / "games" / "nes" / "Zelda (USA).png");
+	ctx.game.rom = "/roms/nes/Metroid.nes";
+	CHECK(RetroArchGenerator::decorationOverlay(ctx) == tmp.path / "deco2" / "thebezelproject" / "systems" / "nes.png");
+
 	// AI translation: the target language goes into the service URL
 	ctx.settings = Settings({ { "ai_service_enabled", "1" }, { "ai_target_lang", "Fr" }, { "ai_service_url", "http://localhost:4404/" }, { "ai_service_pause", "1" } }, {}, {});
 	RetroArchGenerator::setTranslation(ctx, config);

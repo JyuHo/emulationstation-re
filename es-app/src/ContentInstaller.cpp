@@ -1,5 +1,6 @@
 #include "ContentInstaller.h"
 #include "catalog/CatalogInstaller.h"
+#include "bezels/TheBezelProject.h"
 #include "Window.h"
 #include "components/AsyncNotificationComponent.h"
 #include "utils/StringUtil.h"
@@ -168,7 +169,7 @@ void ContentInstaller::threadUpdate()
 		}
 		else if (data.first == ContentType::CONTENT_BEZEL_INSTALL)
 		{
-			updateStatus = ApiSystem::getInstance()->installBatoceraBezel(data.second, [this](const std::string info)
+			updateStatus = bezelproject::install(data.second, [this](const std::string info)
 			{
 				updateNotificationComponentContent(info);
 			});
@@ -186,10 +187,7 @@ void ContentInstaller::threadUpdate()
 		}
 		else if (data.first == ContentType::CONTENT_BEZEL_UNINSTALL)
 		{
-			updateStatus = ApiSystem::getInstance()->uninstallBatoceraBezel(data.second, [this](const std::string info)
-			{
-				updateNotificationComponentContent(info);
-			});
+			updateStatus = bezelproject::remove(data.second);
 
 			if (updateStatus.second == 0)
 			{
