@@ -67,7 +67,7 @@ Generators
 
 | Emulator name (`es_systems.cfg`) | Generator | Notes |
 | --- | --- | --- |
-| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, vba-m (`vbam`), mgba, melondsds, melonds, desmume, mesen, fceumm, nestopia, snes9x, bsnes (and bsnes_hd), mupen64plus-next, parallel_n64, vb (`mednafen_vb`), pokemini, swanstation, mednafen_psx (`mednafen_psx_hw`), pcsx_rearmed, genesisplusgx (`genesis_plus_gx`, and the expanded build), picodrive, beetle-saturn (`mednafen_saturn`), yabasanshiro, kronos, ppsspp, pce and pce_fast (`mednafen_pce`, `mednafen_pce_fast`), mednafen_supergrafx, mednafen_wswan, fbneo, mame078plus (`mame2003_plus`), neocd, stella, handy, virtualjaguar, opera, atari800 (Atari 800 and 5200) and flycast (Dreamcast, Naomi, Atomiswave); any other core runs with the generic settings |
+| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, vba-m (`vbam`), mgba, melondsds, melonds, desmume, mesen, fceumm, nestopia, snes9x, bsnes (and bsnes_hd), mupen64plus-next, parallel_n64, vb (`mednafen_vb`), pokemini, swanstation, mednafen_psx (`mednafen_psx_hw`), pcsx_rearmed, genesisplusgx (`genesis_plus_gx`, and the expanded build), picodrive, beetle-saturn (`mednafen_saturn`), yabasanshiro, kronos, ppsspp, pce and pce_fast (`mednafen_pce`, `mednafen_pce_fast`), mednafen_supergrafx, mednafen_wswan, fbneo, mame078plus (`mame2003_plus`), neocd, stella, handy, virtualjaguar, opera, atari800 (Atari 800 and 5200), dosbox_pure, scummvm, bluemsx, puae, vice_x64 (and vice_x64sc, vice_xscpu64) and flycast (Dreamcast, Naomi, Atomiswave); any other core runs with the generic settings |
 | `duckstation` | DuckStation | PlayStation |
 | `pcsx2` | PCSX2 | PlayStation 2, x86_64 only |
 | `ppsspp` | PPSSPP | PSP |
@@ -82,6 +82,8 @@ Generators
 | `mupen64plus` | Mupen64Plus | Nintendo 64; the core is the video plugin (`gliden64`, `glide64mk2`, `rice`) |
 | `ymir` | Ymir | Sega Saturn |
 | `supermodel` | Supermodel | Sega Model 3 |
+| `dosbox_staging` | DOSBox Staging | DOS: the game folder (`.pc`, `.dos`) with its `dosbox.conf`/`dosbox.cfg` and `dosbox.bat`, or a C:\> prompt |
+| `scummvm` | ScummVM | a `<game>.scummvm` file holding the game id (or empty: the file name), else detection |
 | `stella` | Stella | Atari 2600; started with the game, full screen, Stella keeps its own settings |
 
 Any other emulator keeps the `es_systems.cfg` command. Setting `eslauncher=0` in the ES
@@ -133,6 +135,8 @@ leaves the others as the player set them in the emulator's menus.
 | melonDS | `melonds/melonDS/melonDS.toml` (`XDG_CONFIG_HOME` is `melonds/`) | `<saves>/nds`, cheats in `<saves>/nds/cheats` |
 | Mupen64Plus | `mupen64plus/mupen64plus.cfg` (started with `--configdir`) | `<saves>/n64` |
 | Ymir | `ymir/Ymir.toml` (started with `-p`) | backup memory and states in `<saves>/saturn/ymir` |
+| ScummVM | `scummvm/scummvm.ini` (`--config`) | `<saves>/scummvm`; extra files in `<bios>/scummvm/extra` |
+| DOSBox Staging | `dosbox/dosbox-staging.conf`, read by the games' batch files (`RESCONF`) | in the game folder |
 | Supermodel | `supermodel/Config/Supermodel.ini` and `Games.xml` (run in `supermodel/`) | `<saves>/model3/NVRAM` and `Saves`, linked from `supermodel/` |
 
 * BIOS: DuckStation looks at the root of the BIOS folder, then `psx/` (scph1001.bin, scph5501.bin...);
@@ -142,7 +146,8 @@ leaves the others as the player set them in the emulator's menus.
   (root or `ps3/`) before the first game. Eden's `keys/` folder links to `switch/`, which must
   hold `prod.keys`; its firmware is installed from Eden's menu. melonDS uses `bios7.bin`,
   `bios9.bin` and `firmware.bin` from the root when all three are there, else its own free BIOS.
-  Mupen64Plus reads the 64DD IPL `64DD_IPL.bin` from the root, Ymir the Saturn IPL ROMs. Supermodel needs the `Games.xml` of its install
+  PUAE reads the Kickstart ROMs from `amiga/`, VICE the JiffyDOS ROMs from `vice/` (JiffyDOS is on
+  when they are all there). Mupen64Plus reads the 64DD IPL `64DD_IPL.bin` from the root, Ymir the Saturn IPL ROMs. Supermodel needs the `Games.xml` of its install
   (copied from `/usr/share/supermodel` or the `Config` folder next to the program). A missing BIOS stops the launch
   with a message.
 * Options keep the names of batocera-launch (`duckstation_gfxbackend`, `pcsx2_ratio`,
@@ -169,7 +174,7 @@ leaves the others as the player set them in the emulator's menus.
 * Hotkeys: the same as RetroArch, bound in the emulator to player 1's hotkey held with the other
   button (Start quits, B opens the menu or pauses, Y/X save and load a state...), where the
   emulator has the action; Eden gets them as its controller shortcuts. Without a pad, the keyboard
-  keys of batocera-launch. Azahar, Cemu, xemu, Xenia, RPCS3, melonDS, Mupen64Plus, Ymir, Supermodel and Stella cannot bind actions to a pad, so
+  keys of batocera-launch. Azahar, Cemu, xemu, Xenia, RPCS3, melonDS, Mupen64Plus, Ymir, Supermodel, Stella, DOSBox Staging and ScummVM cannot bind actions to a pad, so
   their command sets `closeOnHotkey`: while the game runs, ES watches the pads itself and closes
   the emulator when a player holds the hotkey and presses Start (SIGTERM to its process group,
   SIGKILL after 5 seconds). `exithotkey=0` turns this off. Their other hotkeys stay in the

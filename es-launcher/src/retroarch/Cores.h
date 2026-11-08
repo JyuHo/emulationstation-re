@@ -8,6 +8,7 @@
 #include "es-launcher/LaunchContext.h"
 #include "retroarch/ConfigFile.h"
 
+#include <filesystem>
 #include <optional>
 #include <string>
 #include <string_view>
@@ -44,6 +45,9 @@ namespace es::launcher::retroarch
 
 		// false when rewinding and run-ahead break the core for this system
 		virtual bool supportsRewindAndRunAhead(const LaunchContext& /*ctx*/) const { return true; }
+
+		// The file RetroArch is given: the game, or a file the core reads in its place
+		virtual std::filesystem::path romArgument(const LaunchContext& ctx) const { return ctx.game.rom; }
 
 		// Arguments of RetroArch before the game ("--subsystem neocd")
 		virtual std::vector<std::string> commandArguments(const LaunchContext& /*ctx*/) const { return {}; }

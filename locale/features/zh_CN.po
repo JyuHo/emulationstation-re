@@ -3,6 +3,12 @@
 # Compiled together with lang/<lang>/LC_MESSAGES/emulationstation2.po, whose header (UTF-8) applies:
 # this file has none, msgfmt refuses a header defined twice.
 
+msgid " 3.54 MHz"
+msgstr " 3.54 MHz"
+
+msgid " 7.09 MHz (A500 speed)"
+msgstr " 7.09 MHz（A500速度）"
+
 msgid "(FDS) AUTOMATICALLY LOAD DISK SIDE A"
 msgstr "（FDS）自动加载磁碟A面"
 
@@ -38,6 +44,9 @@ msgstr "1 线程"
 
 msgid "1% (Default)"
 msgstr "1%（默认）"
+
+msgid "1.0 (240p)"
+msgstr "1.0（240p）"
 
 msgid "1.0x (12.50Mhz)"
 msgstr "1.0x（12.50Mhz）"
@@ -96,6 +105,9 @@ msgstr "10秒"
 msgid "100% (Default)"
 msgstr "100%（默认）"
 
+msgid "1024kB"
+msgstr "1024kB"
+
 msgid "10th"
 msgstr "10号"
 
@@ -108,14 +120,23 @@ msgstr "120帧"
 msgid "1280x720 (Default)"
 msgstr "1280x720（默认设置）"
 
+msgid "128MB"
+msgstr "128MB"
+
 msgid "128MiB"
 msgstr "128MiB"
+
+msgid "128kB (1700)"
+msgstr "128kB（1700）"
 
 msgid "12th"
 msgstr "12号"
 
 msgid "13th"
 msgstr "13号"
+
+msgid "14.18 MHz (A1200 speed)"
+msgstr "14.18 MHz（A1200速度）"
 
 msgid "144fps"
 msgstr "144帧"
@@ -138,6 +159,9 @@ msgstr "15秒"
 msgid "15th"
 msgstr "15号"
 
+msgid "16384kB"
+msgstr "16384kB"
+
 msgid "165fps"
 msgstr "165帧/秒"
 
@@ -146,6 +170,9 @@ msgstr "16:9（默认）"
 
 msgid "16:9 RENDERING RESOLUTION"
 msgstr "16比9渲染分辨率"
+
+msgid "16MB"
+msgstr "16MB"
 
 msgid "16th"
 msgstr "16号"
@@ -171,6 +198,9 @@ msgstr "19号"
 msgid "1st"
 msgstr "1号"
 
+msgid "1st Joystick (2 Axes, 2 Btns)"
+msgstr "第一个摇杆（2轴，2键）"
+
 msgid "1x (720p/1080p)"
 msgstr "1x (720p/1080p)"
 
@@ -191,6 +221,9 @@ msgstr "2秒"
 
 msgid "2 threads"
 msgstr "2 线程"
+
+msgid "2.0 (480p)"
+msgstr "2.0（480p）"
 
 msgid "2.0x (25.00Mhz)"
 msgstr "2.0x（25.00Mhz）"
@@ -219,6 +252,9 @@ msgstr "200毫秒"
 msgid "2048MB"
 msgstr "2048MB"
 
+msgid "2048kB"
+msgstr "2048kB"
+
 msgid "20ms"
 msgstr "20毫秒"
 
@@ -227,6 +263,9 @@ msgstr "20号"
 
 msgid "21st"
 msgstr "21号"
+
+msgid "224MB"
+msgstr "224MB"
 
 msgid "22nd"
 msgstr "22号"
@@ -240,11 +279,17 @@ msgstr "23号"
 msgid "24-bit, disables dithering."
 msgstr "24位，会禁用抖动。"
 
+msgid "24MB"
+msgstr "24MB"
+
 msgid "24MB (Default)"
 msgstr "24MB（默认）"
 
 msgid "24th"
 msgstr "24号"
+
+msgid "256kB (1764)"
+msgstr "256kB（1764）"
 
 msgid "25th"
 msgstr "25号"
@@ -258,17 +303,32 @@ msgstr "270度"
 msgid "27th"
 msgstr "27号"
 
+msgid "28.37 MHz"
+msgstr "28.37 MHz"
+
+msgid "286, 12.5MHz (2750 cps)"
+msgstr "286，12.5MHz（2750 cps）"
+
+msgid "286, 6MHz (1320 cps)"
+msgstr "286，6MHz（1320 cps）"
+
 msgid "28th"
 msgstr "28号"
 
 msgid "29th"
 msgstr "29号"
 
+msgid "2P GAMEPAD MAPPING (KEYRAH)"
+msgstr "双人游戏板映射"
+
 msgid "2X"
 msgstr "2倍"
 
 msgid "2nd"
 msgstr "2号"
+
+msgid "2nd Joystick (2 Axes, 2 Btns)"
+msgstr "第二个摇杆（2轴，2键）"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x（1440p/2160p）"
@@ -321,17 +381,35 @@ msgstr "30号"
 msgid "31st"
 msgstr "31号"
 
+msgid "32MB"
+msgstr "32MB"
+
 msgid "32x MSAA"
 msgstr "32x MSAA抗锯齿"
 
 msgid "32x SSAA"
 msgstr "32x SSAA抗锯齿"
 
+msgid "35.46 MHz"
+msgstr "35.46 MHz"
+
 msgid "3840MB"
 msgstr "3840MB"
 
 msgid "384MB (Default)"
 msgstr "384MB（默认）"
+
+msgid "386 (prefetch)"
+msgstr "386（预取）"
+
+msgid "386 (slow)"
+msgstr "386（缓慢）"
+
+msgid "386, 20MHz (4720 cps)"
+msgstr "386，20MHz（4720 cps）"
+
+msgid "386DX, 33MHz (7800 cps)"
+msgstr "386DX，33MHz（7800 cps）"
 
 msgid "3rd"
 msgstr "3号"
@@ -357,11 +435,26 @@ msgstr "4.5x（1440x1080）"
 msgid "4096MB"
 msgstr "4096MB"
 
+msgid "4096kB"
+msgstr "4096kB"
+
+msgid "42.56 MHz"
+msgstr "42.56 MHz"
+
 msgid "45s"
 msgstr "45秒"
 
 msgid "480x272 (Default)"
 msgstr "480x272（默认）"
+
+msgid "486 (slow)"
+msgstr "486（慢）"
+
+msgid "486DX, 33MHz (13400 cps)"
+msgstr "486DX，33MHz（13400 cps）"
+
+msgid "486DX2, 66MHz (26800 cps)"
+msgstr "486DX2，66MHz（26800 cps）"
 
 msgid "48MB"
 msgstr "48MB"
@@ -374,6 +467,9 @@ msgstr "4:3渲染分辨率"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4MB"
+msgstr "4MB"
 
 msgid "4X"
 msgstr "4倍"
@@ -417,6 +513,12 @@ msgstr "5%（默认）"
 msgid "5120MB"
 msgstr "5120MB"
 
+msgid "512kB (1750)"
+msgstr "512kB（1750）"
+
+msgid "56.75 MHz"
+msgstr "56.75 MHz"
+
 msgid "5th"
 msgstr "5号"
 
@@ -440,6 +542,9 @@ msgstr "60秒"
 
 msgid "6144MB"
 msgstr "6144MB"
+
+msgid "64MB"
+msgstr "64MB"
 
 msgid "64MiB (Default)"
 msgstr "64MiB（默认）"
@@ -479,6 +584,15 @@ msgstr "7倍原生分辨率（约为2520p）"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x 原生（1792 x 1344）"
+
+msgid "8086/8088, 4.77MHz (315 cps)"
+msgstr "8086/8088，4.77MHz（315 cps）"
+
+msgid "8192kB"
+msgstr "8192kB"
+
+msgid "8MB"
+msgstr "8MB"
 
 msgid "8X"
 msgstr "8倍"
@@ -522,6 +636,21 @@ msgstr "9号"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K（2880x2160）"
 
+msgid "A1200 (2MB Chip + 8MB Fast)"
+msgstr "A1200（2MB 芯片 + 8MB 快速存储）"
+
+msgid "A4000/040 (2MB Chip + 8MB Fast)"
+msgstr "A4000/040（2MB 芯片 + 8MB 快速存储）"
+
+msgid "A500 (512KB Chip + 512KB Slow)"
+msgstr "A500（512KB 芯片 + 512KB ，慢速存储）"
+
+msgid "A500+ (1MB Chip)"
+msgstr "A500+（1MB 芯片）"
+
+msgid "A600 (2MB Chip + 8MB Fast)"
+msgstr "A600（2MB 芯片 + 8MB 快速存储）"
+
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "激活输入设备修复"
 
@@ -543,11 +672,23 @@ msgstr "ALSA（高级Linux声音架构）"
 msgid "ALSAThread"
 msgstr "ALSAThread"
 
+msgid "AMD Athlon, 1.2GHz (1000000 cps)"
+msgstr "AMD速龙，1.2GHz（1000000 cps）"
+
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX超分辨率"
 
+msgid "AMIGA MODEL"
+msgstr "AMIGA 型号"
+
 msgid "ANAGLYPH PRESET (3D)"
 msgstr "红青色镜预设（3D）"
+
+msgid "ANALOG DEADZONE"
+msgstr "模拟死区"
+
+msgid "ANALOG JOYSTICK DEADZONE"
+msgstr "模拟操纵杆死区"
 
 msgid "ANISOTROPIC FILTERING"
 msgstr "各向异性过滤"
@@ -624,8 +765,17 @@ msgstr "调整全动态视频的纵横比。"
 msgid "Adjusts the positions of the screens."
 msgstr "调整屏幕的位置。"
 
+msgid "AdvMame"
+msgstr "AdvMame"
+
+msgid "Affects efficiency/stability."
+msgstr "影响效率或稳定性。"
+
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "影响模拟屏幕的缩放方式，仅限OpenGL渲染器。"
+
+msgid "Affects mouse speed globally."
+msgstr "影响全局鼠标速度。"
 
 msgid "After NMI"
 msgstr "NMI后"
@@ -705,6 +855,9 @@ msgstr "Angrylion（更好的兼容性）"
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "应用FXAA抗锯齿算法来提高游戏的视觉质量。"
 
+msgid "Apply a joy2key profile for the current game."
+msgstr "为当前游戏应用Joy2key配置文件。"
+
 msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
 msgstr "把操纵杆的输入值乘以一个乘数，以降低或提高响应性。"
 
@@ -771,14 +924,29 @@ msgstr "自动最大质量"
 msgid "Auto Standard (4:3 interlaced / 3:2 progressive)"
 msgstr "自动标准（4:3隔行扫描/3:2逐行扫描）"
 
+msgid "Auto zoom"
+msgstr "自动缩放"
+
+msgid "Auto-disable zoom"
+msgstr "自动禁用缩放"
+
 msgid "Autodetect"
 msgstr "自动检测"
+
+msgid "Autodetect (Compatible)"
+msgstr "自动检测（兼容）"
+
+msgid "Autodetect (by game name tag)"
+msgstr "自动检测（根据游戏名的Tag）"
 
 msgid "Automatic"
 msgstr "自动"
 
 msgid "Automatic ratio"
 msgstr "比率自适应"
+
+msgid "Automatic switches region per file path tags"
+msgstr "按文件路径标记自动切换区域"
 
 msgid "Automatically loads and applies cheats on game start."
 msgstr "游戏开始时自动加载并应用金手指。"
@@ -791,6 +959,12 @@ msgstr "避免每次都需要手动加载A面。"
 
 msgid "Azerbaijan"
 msgstr "阿塞拜疆"
+
+msgid "B = Fire"
+msgstr "B = 开火"
+
+msgid "B = Fire, A = Up"
+msgstr "B = 开火，A = 向上"
 
 msgid "BILINEAR FILTERING"
 msgstr "双线性滤波"
@@ -815,6 +989,9 @@ msgstr "混合高分辨率模式"
 
 msgid "BLENDING ACCURACY"
 msgstr "混合精度"
+
+msgid "BOOT ANIMATION FIRST"
+msgstr "启动动画"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (推荐美国公司开发的游戏)"
@@ -915,6 +1092,9 @@ msgstr "玻利维亚"
 msgid "Both"
 msgstr "两者"
 
+msgid "Both Joysticks (4 Axes, 4 Btns)"
+msgstr "两个摇杆（4轴，4键）"
+
 msgid "Bottom (Default)"
 msgstr "底部（默认）"
 
@@ -948,11 +1128,47 @@ msgstr "缓冲渲染"
 msgid "Bulgaria"
 msgstr "保加利亚"
 
+msgid "Button Options"
+msgstr "按钮选项"
+
+msgid "C64 Games System PAL"
+msgstr "C64 游戏系统 PAL"
+
+msgid "C64 Japanese NTSC"
+msgstr "C64 NTSC（日本）"
+
+msgid "C64 NTSC"
+msgstr "C64 NTSC"
+
+msgid "C64 NTSC Automatic"
+msgstr "C64 NTSC（自动）"
+
+msgid "C64 PAL"
+msgstr "C64 PAL"
+
+msgid "C64 PAL Automatic"
+msgstr "C64 PAL（自动）"
+
 msgid "CD ADD-ON"
 msgstr "CD附加组件"
 
+msgid "CD TURBO SPEED"
+msgstr "CD加速"
+
 msgid "CD-DA VOLUME"
 msgstr "CD-DA音量"
+
+msgid "CD32 (2MB Chip + 8MB Fast)"
+msgstr "CD32（2MB 芯片 + 8MB 快速存储器）"
+
+msgid "CD32 Default (2MB Chip)"
+msgstr "CD32 默认（2MB 芯片）"
+
+msgid "CD32 Pad"
+msgstr "CD32 手柄"
+
+msgid "CDTV (1MB Chip)"
+msgstr "CDTV（1MB 芯片）"
 
 msgid "CDZ"
 msgstr "CDZ"
@@ -962,6 +1178,9 @@ msgstr "CDZ MAME"
 
 msgid "CDZ Universe 3.3"
 msgstr "CDZ Universe 3.3"
+
+msgid "CGA"
+msgstr "CGA"
 
 msgid "CHEATS"
 msgstr "金手指"
@@ -1029,6 +1248,9 @@ msgstr "控制器4输入映射"
 msgid "CONTROLLER COMBINATION"
 msgstr "控制器组合键"
 
+msgid "CONTROLLER PORT"
+msgstr "控制器端口"
+
 msgid "CONTROLLER TYPE"
 msgstr "控制器类型"
 
@@ -1047,14 +1269,26 @@ msgstr "CPU处理器"
 msgid "CPU CLOCK"
 msgstr "CPU时钟"
 
+msgid "CPU COMPATIBILITY"
+msgstr "CPU兼容性"
+
 msgid "CPU CORE"
 msgstr "CPU核心"
+
+msgid "CPU CORE METHOD"
+msgstr "CPU核心方式"
 
 msgid "CPU DYNAREC (SPEED UP)"
 msgstr "CPU DYNAREC（加速）"
 
 msgid "CPU EXECUTION MODE"
 msgstr "CPU执行模式"
+
+msgid "CPU SPEED"
+msgstr "CPU速度"
+
+msgid "CPU TYPE"
+msgstr "CPU类型"
 
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "CPU-GPU延迟限制。较低的值会改善延迟但可能会降低性能."
@@ -1094,6 +1328,9 @@ msgstr "可用于模拟特定显示器的颜色。"
 
 msgid "Can change the language of some games."
 msgstr "可以更改某些游戏的语言。"
+
+msgid "Can fix drifting joysticks in games."
+msgstr "可以修复在游戏中有漂移问题的摇杆。"
 
 msgid "Can fix slowdown. Only works on some drivers."
 msgstr "可以修复减速。仅适用于某些驱动程序。"
@@ -1146,6 +1383,9 @@ msgstr "中国"
 msgid "Chinese"
 msgstr "中文"
 
+msgid "Chinese (Mandarin)"
+msgstr "中文（普通话）"
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "选择控制台语言. 并非所有游戏都支持语言选择."
 
@@ -1190,6 +1430,12 @@ msgstr "选择要使用的图形API库。"
 
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "选择要使用的图形API库，不是所有核心都能使用Vulkan。"
+
+msgid "Choose your preferred language."
+msgstr "选择您喜欢的语言。"
+
+msgid "Choose your preferred renderer."
+msgstr "选择您偏好的渲染器。"
 
 msgid "Classic Controller"
 msgstr "经典控制器"
@@ -1272,6 +1518,15 @@ msgstr "使用光标模式时的光标超时（直到超时）。"
 msgid "Custom"
 msgstr "自定义"
 
+msgid "Custom Keyboard Binds (best for Pad2Key)"
+msgstr "自定义键盘绑定（最适合Pad2Key）"
+
+msgid "Cycle-exact"
+msgstr "精确循环"
+
+msgid "Czech"
+msgstr "捷克语"
+
 msgid "Czech Republic"
 msgstr "捷克共和国"
 
@@ -1295,6 +1550,9 @@ msgstr "禁用4MB扩展内存"
 
 msgid "DISABLE CULLING"
 msgstr "禁用剔除"
+
+msgid "DISABLE EMULATOR JOYSTICK"
+msgstr "禁用模拟器手柄"
 
 msgid "DISABLE INTERLACING"
 msgstr "禁用隔行扫描"
@@ -1374,6 +1632,9 @@ msgstr "默认"
 msgid "Default Only"
 msgstr "仅默认值"
 
+msgid "Default by model"
+msgstr "默认型号"
+
 msgid "Degree in which 3D graphics are scaled up. OpenGL renderer only."
 msgstr "3D图形放大的程度。仅限OpenGL渲染器。"
 
@@ -1428,6 +1689,9 @@ msgstr "如果使用着色器集，或输出显示器与游戏的分辨率匹配
 msgid "Display on screen information like savestate, config warning, etc."
 msgstr "在屏幕上显示保存状态、配置警告等信息..."
 
+msgid "Does not affect the on-screen keyboard."
+msgstr "不影响屏幕键盘。"
+
 msgid "Dominican Republic"
 msgstr "多米尼加共和国"
 
@@ -1436,6 +1700,9 @@ msgstr "不覆盖"
 
 msgid "Dot"
 msgstr "点"
+
+msgid "DotMatrix"
+msgstr "点阵"
 
 msgid "Double buffering"
 msgstr "双重缓冲"
@@ -1458,14 +1725,26 @@ msgstr "在游戏过程中，按热键+R1可翻译屏幕上的文本。仅适用
 msgid "Dutch"
 msgstr "荷兰语"
 
+msgid "Dynamic (fast)"
+msgstr "动态（快速）"
+
 msgid "Dynamic Interpreter"
 msgstr "动态解释器"
 
 msgid "Dynarec (Fastest)"
 msgstr "Dynarec（最快）"
 
+msgid "EGA"
+msgstr "EGA"
+
 msgid "EMULATE WIIMOTE"
 msgstr "模拟Wii远程控制器"
+
+msgid "EMULATED CPU PERFORMANCE"
+msgstr "仿真CPU性能"
+
+msgid "EMULATED RAM SIZE"
+msgstr "模拟内存大小"
 
 msgid "EMULATION"
 msgstr "模拟器"
@@ -1484,6 +1763,9 @@ msgstr "启用金手指"
 
 msgid "ENABLE GAMEPAD VIEW"
 msgstr "开启游戏板视图"
+
+msgid "ENABLE GRAVIS ULTRASOUND"
+msgstr "启用GRAVIS ULTRASOUND"
 
 msgid "ENABLE NOTIFICATIONS"
 msgstr "启用通知"
@@ -1512,6 +1794,9 @@ msgstr "扩展屏幕"
 msgid "Ecuador"
 msgstr "厄瓜多尔"
 
+msgid "Edge (sharper filet)"
+msgstr "Edge（更锐利的圆角）"
+
 msgid "Egypt"
 msgstr "埃及"
 
@@ -1536,6 +1821,9 @@ msgstr "启用Cemu的性能覆盖。"
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "启用Gamecube引导动画和BIOS访问（需要相应用户目录中的IPL.bin BIOS）。"
 
+msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
+msgstr "启用Gravis Utrasound模拟。确保ULTRASND文件夹位于<game>.pc rom文件夹的根目录中。"
+
 msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
 msgstr "启用MelonDS在两个屏幕上的显示. 一些相关的屏幕选项将被忽略."
 
@@ -1556,6 +1844,9 @@ msgstr "为所选玩家在射击游戏中启用十字光标。"
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "为具有跨两个屏幕交互的游戏启用游戏手柄视图。 使用热键+R2切换屏幕。"
+
+msgid "Enable launching pre-installed WHDLoad installs."
+msgstr "启用启动预安装的WHDLoad安装。"
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "启用缓存、控制器事件等的通知。"
@@ -1671,6 +1962,9 @@ msgstr "增强。移除每行8个精灵限制。"
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "增强。删除每行80个精灵限制。"
 
+msgid "Enhancement. Remove the four sprites per line limit."
+msgstr "增强。删除每行4个精灵的限制。"
+
 msgid "Enhancement. Remove the sixteen sprites per line limit."
 msgstr "增强。移除每行16个精灵的限制。"
 
@@ -1716,6 +2010,9 @@ msgstr "欧洲"
 msgid "Even"
 msgstr "时空之轮 Odd/Even Bit Hack"
 
+msgid "Even Pixels"
+msgstr "偶数像素"
+
 msgid "Exclusive Ubershaders"
 msgstr "专有uber着色器"
 
@@ -1739,6 +2036,9 @@ msgstr "FIFO 待机模式"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "固件设置"
+
+msgid "FLOPPY TURBO SPEED"
+msgstr "软加速"
 
 msgid "FM SYNTHESIZER"
 msgstr "FM合成器"
@@ -1800,6 +2100,12 @@ msgstr "仅填充屏幕而不考虑长宽比，不适用于整数放大。"
 msgid "Finland"
 msgstr "芬兰"
 
+msgid "Fit 4:3 Aspect Ratio"
+msgstr "适合4:3纵横比"
+
+msgid "Fit resolution scale"
+msgstr "适合分辨率比例"
+
 msgid "Fit to Window / Fullscreen"
 msgstr "适合窗口/全屏"
 
@@ -1814,6 +2120,9 @@ msgstr "修复放大时的纹理条带。"
 
 msgid "Fixes a possible bug with multiple controllers detection."
 msgstr "修复了多个控制器检测可能出现的错误。"
+
+msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
+msgstr "飞行杆（3轴，4键，1帽）"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "对于启用陀螺仪的游戏（绑定到左侧模拟摇杆）"
@@ -1839,6 +2148,9 @@ msgstr "强制32位"
 msgid "Force 4:3"
 msgstr "强制4:3"
 
+msgid "Force a specific model and prevent tags detection."
+msgstr "强制使用特定的机型并阻止标记检测。"
+
 msgid "Force progressive render / scan."
 msgstr "强制渐进式渲染/扫描。"
 
@@ -1850,6 +2162,9 @@ msgstr "法国"
 
 msgid "French"
 msgstr "法语"
+
+msgid "Frontend MIDI driver"
+msgstr "前端MIDI驱动"
 
 msgid "Full (Hash Cache)"
 msgstr "完整（哈希缓存）"
@@ -1901,6 +2216,12 @@ msgstr "GameCube 端口3 类型"
 
 msgid "GAMECUBE PORT 4 TYPE"
 msgstr "GameCube 端口4 类型"
+
+msgid "GAMEPAD AUTOMATIC MAPPING"
+msgstr "手柄自动映射"
+
+msgid "GAMEPAD CURSOR SPEED"
+msgstr "游戏板光标速度"
 
 msgid "GB - Black and White"
 msgstr "GB - 黑白"
@@ -1977,11 +2298,17 @@ msgstr "图形"
 msgid "GRAPHICS API"
 msgstr "图形API"
 
+msgid "GRAPHICS CHIP TYPE"
+msgstr "图形芯片类型"
+
 msgid "GRAPHICS PLUGIN"
 msgstr "图形插件"
 
 msgid "Game default"
 msgstr "游戏默认值"
+
+msgid "GameBlaster"
+msgstr "GameBlaster"
 
 msgid "GameCube Adapter for Wii U"
 msgstr "Wii U的GameCube适配器"
@@ -2000,6 +2327,9 @@ msgstr "如果选择了不正确的区域，游戏可能会比正常运行得更
 
 msgid "Gaussian"
 msgstr "高斯"
+
+msgid "Generic Keyboard Binds"
+msgstr "通用键盘绑定"
 
 msgid "Genesis/Megadrive Style"
 msgstr "Genesis/Megadrive风格"
@@ -2021,6 +2351,9 @@ msgstr "Glide64"
 
 msgid "Gln64"
 msgstr "Gln64"
+
+msgid "Gravis GamePad (D-pad + 4 Btns)"
+msgstr "Gravis手柄（十字方向键 + 4键）"
 
 msgid "Gray"
 msgstr "灰色"
@@ -2049,17 +2382,38 @@ msgstr "高分辨率ARTIFACTING"
 msgid "HLE (Fastest)"
 msgstr "HLE（最快）"
 
+msgid "HQ (bilinear filter)"
+msgstr "HQ（双线性过滤）"
+
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack。 会将大多数PAL游戏的速度提高17%。"
+
+msgid "Hebrew"
+msgstr "希伯来语"
+
+msgid "Help games which are too quick or that have bugs."
+msgstr "帮助那些速度太快或有错误的游戏。"
 
 msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
 msgstr "有助于解决AMD显卡上的纹理损坏和深度问题. 在某些情况下对Intel显卡也有帮助."
 
+msgid "Hercules"
+msgstr "大力神"
+
 msgid "Hermite"
 msgstr "Hermite"
 
+msgid "Hides borders on many games. Some games use the borders."
+msgstr "在大多数游戏中隐藏边界。少部分游戏中使用边界。"
+
+msgid "Hides borders on many games. Some games used the borders."
+msgstr "在大部分游戏中隐藏边框。小部分游戏使用边框。"
+
 msgid "High"
 msgstr "高"
+
+msgid "High 720p"
+msgstr "高 720p"
 
 msgid "Honduras"
 msgstr "洪都拉斯"
@@ -2130,6 +2484,9 @@ msgstr "如果游戏以30hz运行, PPSSPP将向显示器推送60帧."
 msgid "If nothing is specified, will use ZTranslate by default."
 msgstr "如果未指定任何内容，默认情况下将使用ZTranslate。"
 
+msgid "Ignored with 'Cycle-exact'."
+msgstr "使用“精确循环”忽略。"
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "提高音频准确性（实验）。"
 
@@ -2159,6 +2516,12 @@ msgstr "印度"
 
 msgid "Indonesia"
 msgstr "印度尼西亚"
+
+msgid "Inserts CD during boot animation prevent loading fail."
+msgstr "在引导动画过程中插入CD以防止加载失败。"
+
+msgid "Inserts CD during boot animation to prevent loading fail."
+msgstr "在引导动画过程中插入CD以防止加载失败。"
 
 msgid "Interpreter (Slowest)"
 msgstr "编译器（最慢速）"
@@ -2204,6 +2567,12 @@ msgstr "摇杆灵敏度"
 
 msgid "JOYSTICK TO DPAD"
 msgstr "摇杆和方向键互相调换"
+
+msgid "JUMP ON A"
+msgstr "跳转到A"
+
+msgid "JUMP ON B"
+msgstr "跳转到B"
 
 msgid "Jamaica"
 msgstr "牙买加"
@@ -2262,6 +2631,9 @@ msgstr "六月"
 msgid "Justifier"
 msgstr "校准器"
 
+msgid "KEYBOARD PASSTHROUGH"
+msgstr "键盘直通"
+
 msgid "Kazakhstan"
 msgstr "哈萨克斯坦"
 
@@ -2271,11 +2643,23 @@ msgstr "肯尼亚"
 msgid "Keyboard"
 msgstr "键盘"
 
+msgid "Keyboard + Mouse (Left An.)"
+msgstr "键盘+鼠标（左摇杆）"
+
+msgid "Keyboard + Mouse (Right An.)"
+msgstr "键盘+鼠标（右摇杆）"
+
 msgid "Keyboard passthrough"
 msgstr "键盘直通"
 
 msgid "Keyboard shortcuts unavailable if passing through the keyboard."
 msgstr "通过键盘时，键盘快捷键不可用。"
+
+msgid "Keypad to joyport mappings for 2 players."
+msgstr "2名玩家的键盘到游戏端口映射。"
+
+msgid "Koalapad"
+msgstr "抱抱熊平板电脑（Koalapad）"
 
 msgid "Konami Justifier"
 msgstr "科乐美 Justifier光枪"
@@ -2409,6 +2793,9 @@ msgstr "如果想手动在xemu.toml配置文件中输入本地地址和端口来
 msgid "Low"
 msgstr "低"
 
+msgid "Low 360p"
+msgstr "低 360p"
+
 msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
 msgstr "较低的值可以减少音频延迟并提高性能，但可能会导致音频问题。"
 
@@ -2430,6 +2817,9 @@ msgstr "MAME（YM2612）"
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "手动纹理采样"
 
+msgid "MAX (as many as possible)"
+msgstr "MAX（尽可能多）"
+
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "最大功耗节能CPU抢占"
 
@@ -2439,11 +2829,23 @@ msgstr "记忆卡"
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "存储器管理单元"
 
+msgid "MIDI OUTPUT"
+msgstr "MIDI输出"
+
 msgid "MIPMAPPING"
 msgstr "贴图层级"
 
+msgid "MODEL TYPE"
+msgstr "型号类型"
+
 msgid "MOUNT CACHE"
 msgstr "装载缓存"
+
+msgid "MOUSE SPEED"
+msgstr "鼠标速度"
+
+msgid "MSX2"
+msgstr "MSX2"
 
 msgid "MULTITAP"
 msgstr "多点定位"
@@ -2457,6 +2859,12 @@ msgstr "澳门"
 msgid "Magnum FBX"
 msgstr "Magnum FBX"
 
+msgid "Makes second fire button press up instead."
+msgstr "改为按下第二个攻击/开火按钮。"
+
+msgid "Makes the blue button press up instead."
+msgstr "将蓝色按钮向上按。"
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "使抖动模式在更高的分辨率下不那么明显。"
 
@@ -2468,6 +2876,12 @@ msgstr "马尔代夫"
 
 msgid "Manually activate the adapter for supported games."
 msgstr "手动激活支持游戏的适配器。"
+
+msgid "Manually define which resolution to use.&#x0a;Auto defaults to High and switches to Super-High when needed."
+msgstr "手动定义要使用的分辨率。&#x0a;Auto（自动）默认为High（高），并在需要时切换到Super High（超高）。"
+
+msgid "Manually set cycles per second. Use with caution."
+msgstr "手动设置每秒周期。小心使用。"
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "将控制器映射到模拟Wiimote。"
@@ -2556,11 +2970,20 @@ msgstr "单色（Blargg）"
 msgid "More accurate emulation, but slower."
 msgstr "更精确的仿真，但更慢。"
 
+msgid "More compatible"
+msgstr "兼容性更好"
+
 msgid "Morocco"
 msgstr "摩洛哥"
 
+msgid "Most games use port 2, some use port 1."
+msgstr "大多数游戏使用端口2，有些使用端口1。"
+
 msgid "Mouse"
 msgstr "鼠标"
+
+msgid "Mouse (1351)"
+msgstr "鼠标（1351）"
 
 msgid "Mouse sensitivity for paddles. Core default (10)."
 msgstr "鼠标对摇杆的灵敏度. 核心默认值 (10)."
@@ -2621,6 +3044,12 @@ msgstr "NTSC（S-Video）"
 
 msgid "NTSC 240x480px 60Hz"
 msgstr "NTSC 240x480px 60Hz"
+
+msgid "NTSC 240x480px 60Hz (auto)"
+msgstr "NTSC 240x480px 60Hz（自动）"
+
+msgid "NTSC 492x262px"
+msgstr "NTSC 492x262px"
 
 msgid "NTSC ASPECT"
 msgstr "NTSC 宽高比"
@@ -2703,6 +3132,9 @@ msgstr "无 (默认)"
 msgid "No Buffer"
 msgstr "无缓冲"
 
+msgid "No EMS/XMS"
+msgstr "无 EMS/XMS"
+
 msgid "No Limit"
 msgstr "不受限"
 
@@ -2726,6 +3158,9 @@ msgstr "正常"
 
 msgid "Normal (Default)"
 msgstr "正常（默认）"
+
+msgid "Normal (interpreter)"
+msgstr "常规（解释器）"
 
 msgid "Norway"
 msgstr "挪威"
@@ -2802,6 +3237,12 @@ msgstr "开启（仅限Vulkan）"
 msgid "On (forced)"
 msgstr "打开（强制）"
 
+msgid "On with game detection message"
+msgstr "与游戏探测消息一并开启"
+
+msgid "On with rewind support"
+msgstr "与倒带支持一并开启"
+
 msgid "Only Overscan Area"
 msgstr "仅过扫描区域"
 
@@ -2828,6 +3269,12 @@ msgstr "OpenGL（默认）"
 
 msgid "OpenGL (Overwrites Libretro API settings)"
 msgstr "OpenGL（覆盖Libretro API设置）"
+
+msgid "OpenGL with Shaders"
+msgstr "OpenGL带着色器"
+
+msgid "Optimized (auto)"
+msgstr "优化（自动）"
 
 msgid "Orange"
 msgstr "橙色"
@@ -2877,6 +3324,12 @@ msgstr "拨杆键鼠标灵敏度​"
 msgid "PAL 288x576px 50Hz"
 msgstr "PAL 288x576px 50Hz"
 
+msgid "PAL 288x576px 50Hz (auto)"
+msgstr "PAL 288x576px 50Hz（自动）"
+
+msgid "PAL 576x312px"
+msgstr "PAL 576x312px"
+
 msgid "PAL ASPECT"
 msgstr "PAL制式"
 
@@ -2901,6 +3354,9 @@ msgstr "PCE操纵手柄"
 msgid "PCE Mouse"
 msgstr "PCE 鼠标"
 
+msgid "PCjr"
+msgstr "PCjr"
+
 msgid "PER-GAME SAVES"
 msgstr "游戏存档"
 
@@ -2915,6 +3371,9 @@ msgstr "荧光粉混合物"
 
 msgid "PHOSPHOR MODE"
 msgstr "荧光模式"
+
+msgid "PHYSICAL KEYBOARD LAYOUT"
+msgstr "物理键盘布局"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "玩家1的光枪准星颜色"
@@ -2943,6 +3402,9 @@ msgstr "旋钮手柄"
 msgid "Paddle can only be used in port 2."
 msgstr "Paddle手柄只能在端口2中使用。"
 
+msgid "Paddles"
+msgstr "Paddles手柄"
+
 msgid "Pakistan"
 msgstr "巴基斯坦"
 
@@ -2963,6 +3425,21 @@ msgstr "Parallel"
 
 msgid "Partial"
 msgstr "部分"
+
+msgid "Passes all physical keyboard events for Pad2Key."
+msgstr "通过Pad2Key的所有物理键盘事件。"
+
+msgid "Pentium (slow)"
+msgstr "奔腾（缓慢）"
+
+msgid "Pentium II, 300MHz (200000 cps)"
+msgstr "奔腾 II，300MHz（200000 cps）"
+
+msgid "Pentium III, 600MHz (500000 cps)"
+msgstr "奔腾 III，600MHz（500000 cps）"
+
+msgid "Pentium, 100MHz (77000 cps)"
+msgstr "奔腾，100MHz（77000 cps）"
 
 msgid "Per 0.05s, 5s total (550MB|100MB)"
 msgstr "每 0.05 秒，总计 5 秒（550MB|100MB）"
@@ -2999,6 +3476,12 @@ msgstr "菲律宾"
 
 msgid "Phosphor blend level. Core default (60%)."
 msgstr "荧光粉混合比例. 核心默认值 (60%)."
+
+msgid "Pixel Perfect"
+msgstr "像素完美"
+
+msgid "Pixel-Perfect"
+msgstr "像素完美"
 
 msgid "PlayStation Mouse"
 msgstr "PlayStation鼠标"
@@ -3068,6 +3551,9 @@ msgstr "四边形渲染"
 
 msgid "Qatar"
 msgstr "卡塔尔"
+
+msgid "RAM EXPANSION UNIT"
+msgstr "内存扩展单元"
 
 msgid "RDP PLUGIN"
 msgstr "RDP插件"
@@ -3147,6 +3633,9 @@ msgstr "减少晃动的多边形和扭曲的纹理。"
 msgid "Relaxed (Fastest)"
 msgstr "轻松（最快）"
 
+msgid "Removes loading but can add possible glitches/crashes."
+msgstr "删除加载，但可能会添加可能的故障/崩溃。"
+
 msgid "Replace meshed transparency by real transparency."
 msgstr "用实际透明度替换网格透明度。"
 
@@ -3171,11 +3660,17 @@ msgstr "复原版Wii虚拟平台"
 msgid "RetroPad (Default)"
 msgstr "复古手柄（默认设置）"
 
+msgid "RetroPad Face Button Options."
+msgstr "RetroPad正面按钮选项。"
+
 msgid "Retropad"
 msgstr "Retropad"
 
 msgid "Retropad (Default)"
 msgstr "经典手柄（默认）"
+
+msgid "Rewind can be CPU heavy."
+msgstr "倒带功能可能会占用很多CPU资源。"
 
 msgid "Rice"
 msgstr "Rice"
@@ -3185,6 +3680,9 @@ msgstr "右摇杆"
 
 msgid "Right/Left"
 msgstr "右/左"
+
+msgid "Roland MT-32/CM-32L"
+msgstr "Roland MT-32/CM-32L"
 
 msgid "Romania"
 msgstr "罗马尼亚"
@@ -3216,8 +3714,17 @@ msgstr "S-Video"
 msgid "S-Video (Blargg)"
 msgstr "S-端子（Blargg）"
 
+msgid "SAVESTATE/REWIND"
+msgstr "存档/倒带"
+
+msgid "SCALE FACTOR"
+msgstr "缩放因子"
+
 msgid "SCALED DITHERING"
 msgstr "比例抖动"
+
+msgid "SCALER MODE"
+msgstr "缩放模式"
 
 msgid "SCALING MODE"
 msgstr "缩放模式"
@@ -3330,6 +3837,9 @@ msgstr "光线传感器等级"
 msgid "SOUND QUALITY"
 msgstr "声音质量"
 
+msgid "SOUNDBLASTER TYPE"
+msgstr "创新声卡型号"
+
 msgid "SPECIAL CONTROL LAYOUTS"
 msgstr "特殊控制布局"
 
@@ -3369,6 +3879,9 @@ msgstr "超级FX超频"
 msgid "SUPER GB BORDERS"
 msgstr "超级GB边框"
 
+msgid "SVGA"
+msgstr "SVGA"
+
 msgid "SVideo (color bleeding only)"
 msgstr "S端子（仅限彩色溢出）"
 
@@ -3399,14 +3912,29 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "按比例缩放"
 
+msgid "Scanline Interpolation Filter (SAI)"
+msgstr "扫描线插值滤波器（SAI）"
+
 msgid "Screen Resolution (Default)"
 msgstr "屏幕分辨率（默认）"
 
 msgid "Sega/Mega CD"
 msgstr "Sega/Mega CD"
 
+msgid "Select controller type for Amiga P1."
+msgstr "为Amiga P1选择控制器类型。"
+
+msgid "Select controller type for Amiga P2."
+msgstr "为Amiga P2选择控制器类型。"
+
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "如果禁用“使用固件设置”或未找到固件文件，则将使用选中的语言。"
+
+msgid "Select scale resolution of the game."
+msgstr "选择此游戏的缩放分辨率。"
+
+msgid "Select the .SF2 SoundFont file, .ROM file, or interface used for MIDI output."
+msgstr "选择.SF2 SoundFont文件，.ROM文件或用于MIDI的输出接口。"
 
 msgid "Select the console video standard / display mode."
 msgstr "选择主机视频标准/显示模式."
@@ -3416,6 +3944,9 @@ msgstr "选择用以操作触摸屏的输入类型"
 
 msgid "Select the palette used to render colors."
 msgstr "选择用于渲染颜色的调色板."
+
+msgid "Select which Intel CPU to emulate."
+msgstr "选择要模拟的英特尔CPU。"
 
 msgid "Separate Windows"
 msgstr "单独窗口"
@@ -3432,8 +3963,14 @@ msgstr "设置要使用的调色板。"
 msgid "Set the controller rumble strength if supported."
 msgstr "设置控制器隆隆声强度（如果支持）"
 
+msgid "Set the deadzone of the joystick analog sticks."
+msgstr "设置摇杆的模拟操纵杆的死区。"
+
 msgid "Set virtual joysticks gate size. Smaller increases sensitivity. Larger decreases it."
 msgstr "设置虚拟摇杆活动范围大小。 较小的尺寸会增加灵敏度。 而较大的尺寸则会减少灵敏度。"
+
+msgid "Sets the scaler filter mode when rendering."
+msgstr "设置渲染时的缩放器过滤模式。"
 
 msgid "Shader Interpreter only"
 msgstr "仅着色器解释器"
@@ -3464,6 +4001,9 @@ msgstr "在屏幕上显示信息（存储卡已保存..）。"
 
 msgid "Simple"
 msgstr "简单"
+
+msgid "Simple (interpreter for old real-mode games)"
+msgstr "简易（旧实模式游戏的解释器）"
 
 msgid "Simplified Chinese"
 msgstr "简体中文"
@@ -3546,11 +4086,29 @@ msgstr "软件"
 msgid "Software mode is faster and more accurate, while OpenGL mode supports scaling 3D graphics."
 msgstr "软件模式更快更准确，而OpenGL模式支持缩放3D图形。"
 
+msgid "Some games and homebrews require more RAM"
+msgstr "某些游戏和自制软件需要更多内存"
+
 msgid "Some games have issues when the animation is shown, others require it."
 msgstr "有些游戏在播放动画时出现问题，有些则需要。"
 
 msgid "Sony CXA2025AS"
 msgstr "索尼CXA2025AS"
+
+msgid "SounBlaster 1.0"
+msgstr "SounBlaster 1.0"
+
+msgid "SounBlaster 16 (Default)"
+msgstr "SounBlaster 16（默认）"
+
+msgid "SounBlaster 2.0"
+msgstr "SounBlaster 2.0"
+
+msgid "SounBlaster Pro"
+msgstr "SounBlaster Pro"
+
+msgid "SounBlaster Pro 2"
+msgstr "SounBlaster Pro 2"
 
 msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
 msgstr "声音生成器，MAME运行速度更快，Nuked则是按周期精确，最初的型号采用了YM2612，而后来的版本采用了YM3438。"
@@ -3615,14 +4173,29 @@ msgstr "拉伸"
 msgid "Stretch to full"
 msgstr "拉伸到全屏"
 
+msgid "Stretch to screen"
+msgstr "拉伸到屏幕"
+
 msgid "Stretch to window"
 msgstr "拉伸到窗口"
+
+msgid "Stretches the output to fill the display area."
+msgstr "拉伸输出以填充显示区域。"
 
 msgid "Super Game Boy"
 msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "超范围"
+
+msgid "Super-high 1440p"
+msgstr "超高 1440p"
+
+msgid "SuperEagle"
+msgstr "SuperEagle"
+
+msgid "SuperSAI"
+msgstr "SuperSAI"
 
 msgid "Surround"
 msgstr "饰边"
@@ -3639,8 +4212,17 @@ msgstr "交换双显示器的位置。"
 msgid "Sweden"
 msgstr "瑞典"
 
+msgid "Swedish"
+msgstr "瑞典语"
+
 msgid "Switzerland"
 msgstr "瑞士"
+
+msgid "Switzerland (French)"
+msgstr "瑞士（法语）"
+
+msgid "Switzerland (German)"
+msgstr "瑞士（德语）"
 
 msgid "Syria"
 msgstr "叙利亚"
@@ -3696,6 +4278,9 @@ msgstr "线程视频"
 msgid "TIME STRETCHING THRESHOLD"
 msgstr "时间拉伸阈值"
 
+msgid "TIMED AXIS INTERVALS"
+msgstr "定时轴间隔"
+
 msgid "TOUCH MODE"
 msgstr "触摸模式"
 
@@ -3714,6 +4299,9 @@ msgstr "真彩色渲染"
 msgid "TV EFFECTS"
 msgstr "TV效果"
 
+msgid "TV2x CRT Television Filter"
+msgstr "TV2x CRT 电视滤镜"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - Pack 1"
 
@@ -3726,6 +4314,9 @@ msgstr "台湾"
 msgid "Taiwanese"
 msgstr "中文（台湾）"
 
+msgid "Tandy"
+msgstr "坦迪"
+
 msgid "Thailand"
 msgstr "泰国"
 
@@ -3737,6 +4328,9 @@ msgstr "摇杆的中立位置周围的区域，在此区域内的输入将被忽
 
 msgid "The day within the month of your birthday."
 msgstr "你生日当月的那一天。"
+
+msgid "The emulated graphics card."
+msgstr "仿真显卡。"
 
 msgid "The final output image, unrelated to the Wii's emulated NAND setting."
 msgstr "最终输出图像，与Wii的模拟NAND设置无关。"
@@ -3792,6 +4386,9 @@ msgstr "仅顶部"
 msgid "Touch Screen"
 msgstr "触摸屏"
 
+msgid "Trackball (Atari CX-22)"
+msgstr "轨迹球（Atari CX-22）"
+
 msgid "Traditional Chinese"
 msgstr "繁体中文"
 
@@ -3819,6 +4416,9 @@ msgstr "绿松"
 msgid "Twin Stick with Triggers"
 msgstr "带触发器的双摇杆"
 
+msgid "Type of emulated SoundBlaster card."
+msgstr "模拟创新声卡（SoundBlaster）的型号。"
+
 msgid "UBERSHADERS"
 msgstr "uber着色器"
 
@@ -3831,8 +4431,14 @@ msgstr "UDP远程地址"
 msgid "UDP Tunnel"
 msgstr "UDP Tunnel（UDP隧道）"
 
+msgid "UK"
+msgstr "英国"
+
 msgid "UPSCALE FILTER"
 msgstr "放大过滤器"
+
+msgid "US"
+msgstr "美国"
 
 msgid "USA"
 msgstr "美国"
@@ -3912,6 +4518,9 @@ msgstr "每个游戏使用一个保存文件。"
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "使用抢占帧机制代替提前运行帧数机制，该机制只有在控制器状态改变时生效."
 
+msgid "Use to eliminate cursor drift/unwanted input."
+msgstr "用于消除光标漂移/不需要的输入。"
+
 msgid "Use to eliminate joystick drift/unwanted input. Effects all controllers."
 msgstr "用于消除手柄漂移或不必要输入，会影响所有控制器。"
 
@@ -3954,11 +4563,17 @@ msgstr "垂直空白中断跳过"
 msgid "VERTICAL ROTATION (TATE)"
 msgstr "垂直旋转（TATE）"
 
+msgid "VGA"
+msgstr "VGA"
+
 msgid "VIDEO FILTERS"
 msgstr "视频滤镜"
 
 msgid "VIDEO FORMAT STANDARD"
 msgstr "视频格式标准"
+
+msgid "VIDEO RESOLUTION"
+msgstr "视频分辨率"
 
 msgid "VIDEO SETTINGS"
 msgstr "视频设置"
@@ -3992,6 +4607,9 @@ msgstr "警告BIOS问题"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "警告不支持的功能"
+
+msgid "WHDLOAD LAUNCHER"
+msgstr "WHDLOAD启动器"
 
 msgid "WHEELS"
 msgstr "方向盘"
@@ -4062,6 +4680,9 @@ msgstr "WiiMote 横持 + 挥动"
 msgid "Wiimote Sideway + Tilt"
 msgstr "WiiMote 横持 + 倾斜"
 
+msgid "Works with 'Cycle-exact' mode and for a few games."
+msgstr "适用于“精确循环”模式和一些游戏。"
+
 msgid "X2"
 msgstr "X2"
 
@@ -4070,6 +4691,12 @@ msgstr "已启用XBLA许可证（默认）"
 
 msgid "XBOX LIVE ARCADE"
 msgstr "XBOX LIVE ARCADE"
+
+msgid "Y = Fire"
+msgstr "Y = 开火"
+
+msgid "Y = Fire, B = Up"
+msgstr "Y = 开火，B = 向上"
 
 msgid "YUV v3 (Firebrand)"
 msgstr "YUV v3（Firebrand）"
@@ -4085,6 +4712,12 @@ msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "ZCULL 精度"
+
+msgid "ZOOM (HIDE BORDERS)"
+msgstr "缩放（隐藏边框）"
+
+msgid "ZOOM/CROP (HIDE BORDERS)"
+msgstr "缩放/裁剪（隐藏边框）"
 
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "放大以隐藏黑色边框。每个游戏的边框不同。"
@@ -4164,11 +4797,26 @@ msgstr "混合/下屏"
 msgid "hybrid/top"
 msgstr "混合/上屏"
 
+msgid "large"
+msgstr "大"
+
+msgid "larger"
+msgstr "更大"
+
 msgid "left/right"
 msgstr "左/右"
 
 msgid "lottes crt"
 msgstr "lottes crt"
+
+msgid "maximum"
+msgstr "最大值"
+
+msgid "medium"
+msgstr "中"
+
+msgid "minimum"
+msgstr "最小值"
 
 msgid "nearest"
 msgstr "最近的"
@@ -4202,6 +4850,12 @@ msgstr "royaltea"
 
 msgid "scanlines"
 msgstr "扫描行"
+
+msgid "small"
+msgstr "小"
+
+msgid "smaller"
+msgstr "更小"
 
 msgid "standard"
 msgstr "标准"

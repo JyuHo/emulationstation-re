@@ -736,6 +736,77 @@ static void testCoreProfiles()
 		CHECK(o.get("atari800_artifacting_mode") == "blue/brown 1");
 		CHECK(!o.get("atari800_resolution"));
 	}
+
+	// Computers: DOSBox Pure, ScummVM, blueMSX, PUAE, VICE
+	{
+		TempDir tmp;
+		ConfigFile o;
+		ConfigFile config;
+		ctx.paths.bios = tmp.path / "bios";
+
+		// a .pc folder starts with its batch file
+		fs::path game = tmp.path / "Doom.pc";
+		writeFile(game / "Doom.bat", "doom\n");
+		ctx.game.system = "dos";
+		ctx.game.rom = game;
+		ctx.settings = Settings({ { "pure_cycles", "automatic" }, { "controller1_dosbox_pure", "3" } }, {}, {});
+		const Core& pure = coreProfile("dosbox_pure");
+		CHECK(pure.romArgument(ctx) == game / "Doom.bat");
+		pure.setCoreOptions(ctx, o);
+		pure.setConfig(ctx, config);
+		CHECK(o.get("dosbox_pure_cycles") == "auto");
+		CHECK(o.get("dosbox_pure_machine") == "svga");
+		CHECK(config.get("input_player1_analog_dpad_mode") == "3");
+		CHECK(pure.deviceType(ctx, 1) == "3");
+		CHECK(pure.deviceType(ctx, 2) == std::nullopt);
+
+		// an empty .scummvm file stands for the game id
+		fs::path scumm = tmp.path / "monkey.scummvm";
+		writeFile(scumm, "");
+		ctx.game.system = "scummvm";
+		ctx.game.rom = scumm;
+		CHECK(coreProfile("scummvm").romArgument(ctx) == tmp.path / "monkey");
+
+		ctx.game.system = "msx2";
+		ctx.settings = Settings({}, {}, {});
+		coreProfile("bluemsx").setCoreOptions(ctx, o);
+		CHECK(o.get("bluemsx_msxtype") == "MSX2");
+		CHECK(o.get("bluemsx_nospritelimits") == "ON");
+		CHECK(o.get("bluemsx_overscan") == "MSX2");
+		CHECK(coreProfile("bluemsx").deviceType(ctx, 1) == "1");
+
+		// PUAE: the Kickstarts folder, the keyboard mapping, the CD32 pad
+		const Core& puae = coreProfile("puae");
+		ctx.game.system = "amiga1200";
+		puae.setConfig(ctx, config);
+		puae.setCoreOptions(ctx, o);
+		CHECK(config.get("system_directory") == (tmp.path / "bios" / "amiga").string() + "/");
+		CHECK(o.get("puae_model") == "A1200");
+		CHECK(o.get("puae_mapper_start") == "RETROK_RETURN");
+		CHECK(o.get("puae_mapper_x") == "RETROK_LALT");
+		CHECK(o.get("puae_use_whdload_prefs") == "config");
+		ctx.game.system = "amigacd32";
+		puae.setCoreOptions(ctx, o);
+		CHECK(o.get("puae_mapper_x") == "---");
+		CHECK(o.get("puae_mapper_l2") == "MOUSE_LEFT_BUTTON");
+		CHECK(o.get("puae_mapper_mouse_toggle") == "RETROK_RCTRL");
+		CHECK(o.get("puae_model") == "CD32FR");
+		CHECK(puae.deviceType(ctx, 1) == "517");
+		CHECK(puae.deviceType(ctx, 2) == std::nullopt);
+
+		// VICE: JiffyDOS once all its ROMs are there
+		ctx.game.system = "c64";
+		coreProfile("vice_x64").setCoreOptions(ctx, o);
+		CHECK(o.get("vice_jiffydos") == "disabled");
+		for (const char* rom : { "JiffyDOS_1541-II.bin", "JiffyDOS_1571_repl310654.bin", "JiffyDOS_1581.bin", "JiffyDOS_C64.bin" })
+			writeFile(tmp.path / "bios" / "vice" / rom, "");
+		coreProfile("vice_x64").setCoreOptions(ctx, o);
+		CHECK(o.get("vice_jiffydos") == "enabled");
+		CHECK(o.get("vice_mapper_start") == "RETROK_RETURN");
+		ConfigFile scConfig;
+		coreProfile("vice_x64sc").setConfig(ctx, scConfig);
+		CHECK(!scConfig.get("input_player1_analog_dpad_mode"));
+	}
 }
 
 void tests::runRetroArchTests()

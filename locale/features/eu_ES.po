@@ -3,6 +3,12 @@
 # Compiled together with lang/<lang>/LC_MESSAGES/emulationstation2.po, whose header (UTF-8) applies:
 # this file has none, msgfmt refuses a header defined twice.
 
+msgid " 3.54 MHz"
+msgstr "3.54 MHz"
+
+msgid " 7.09 MHz (A500 speed)"
+msgstr "7.09 MHz (A500 abiadura)"
+
 msgid "(FDS) AUTOMATICALLY LOAD DISK SIDE A"
 msgstr "(FDS) AUTOMATIKOKI A DISKAREN ALDEA KARGATU"
 
@@ -38,6 +44,9 @@ msgstr "Hari 1"
 
 msgid "1% (Default)"
 msgstr "1% (Lehenetsia)"
+
+msgid "1.0 (240p)"
+msgstr "1.0 (240p)"
 
 msgid "1.0x (12.50Mhz)"
 msgstr "1.0x (12.50Mhz)"
@@ -96,6 +105,9 @@ msgstr "10 segundo"
 msgid "100% (Default)"
 msgstr "100% (Lehenetsia)"
 
+msgid "1024kB"
+msgstr "1024kB"
+
 msgid "10th"
 msgstr "10.a"
 
@@ -108,14 +120,23 @@ msgstr "120fps"
 msgid "1280x720 (Default)"
 msgstr "1280x720 (Lehenetsia)"
 
+msgid "128MB"
+msgstr "128MB"
+
 msgid "128MiB"
 msgstr "128MiB"
+
+msgid "128kB (1700)"
+msgstr "128kB (1700)"
 
 msgid "12th"
 msgstr "12.a"
 
 msgid "13th"
 msgstr "13.a"
+
+msgid "14.18 MHz (A1200 speed)"
+msgstr "14.18 MHz (A1200 abiadura)"
 
 msgid "144fps"
 msgstr "144fps"
@@ -138,6 +159,9 @@ msgstr "15s"
 msgid "15th"
 msgstr "15.a"
 
+msgid "16384kB"
+msgstr "16384kB"
+
 msgid "165fps"
 msgstr "165fps"
 
@@ -146,6 +170,9 @@ msgstr "16:9 (Lehenetsia)"
 
 msgid "16:9 RENDERING RESOLUTION"
 msgstr "16:9 ERRENDATZE-BEREIZMENA"
+
+msgid "16MB"
+msgstr "16MB"
 
 msgid "16th"
 msgstr "16.a"
@@ -171,6 +198,9 @@ msgstr "19.a"
 msgid "1st"
 msgstr "1.a"
 
+msgid "1st Joystick (2 Axes, 2 Btns)"
+msgstr "1. joystick-a (2 ardatz, 2 botoi)"
+
 msgid "1x (720p/1080p)"
 msgstr "1x (720p/1080p)"
 
@@ -191,6 +221,9 @@ msgstr "2 segundo"
 
 msgid "2 threads"
 msgstr "2 hari"
+
+msgid "2.0 (480p)"
+msgstr "2.0 (480p)"
 
 msgid "2.0x (25.00Mhz)"
 msgstr "2.0x (25.00Mhz)"
@@ -219,6 +252,9 @@ msgstr "200ms"
 msgid "2048MB"
 msgstr "2048MB"
 
+msgid "2048kB"
+msgstr "2048kB"
+
 msgid "20ms"
 msgstr "20ms"
 
@@ -227,6 +263,9 @@ msgstr "20.a"
 
 msgid "21st"
 msgstr "21.a"
+
+msgid "224MB"
+msgstr "224MB"
 
 msgid "22nd"
 msgstr "22.a"
@@ -240,11 +279,17 @@ msgstr "23.a"
 msgid "24-bit, disables dithering."
 msgstr "24 bit, dithering-a desgaitzen du."
 
+msgid "24MB"
+msgstr "24MB"
+
 msgid "24MB (Default)"
 msgstr "24MB (Lehenetsia)"
 
 msgid "24th"
 msgstr "24.a"
+
+msgid "256kB (1764)"
+msgstr "256kB (1764)"
 
 msgid "25th"
 msgstr "25.a"
@@ -258,17 +303,32 @@ msgstr "270 gradu"
 msgid "27th"
 msgstr "27.a"
 
+msgid "28.37 MHz"
+msgstr "28.37 MHz"
+
+msgid "286, 12.5MHz (2750 cps)"
+msgstr "286, 12.5MHz (2750 cps)"
+
+msgid "286, 6MHz (1320 cps)"
+msgstr "286, 6MHz (1320 cps)"
+
 msgid "28th"
 msgstr "28.a"
 
 msgid "29th"
 msgstr "29.a"
 
+msgid "2P GAMEPAD MAPPING (KEYRAH)"
+msgstr "2 JOKALARIREN GAMEPAD ESLEIPENA (KEYRAH)"
+
 msgid "2X"
 msgstr "2X"
 
 msgid "2nd"
 msgstr "2.a"
+
+msgid "2nd Joystick (2 Axes, 2 Btns)"
+msgstr "2. joystick-a (2 ardatz, 2 botoi)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -321,17 +381,35 @@ msgstr "30.a"
 msgid "31st"
 msgstr "31.a"
 
+msgid "32MB"
+msgstr "32MB"
+
 msgid "32x MSAA"
 msgstr "32x MSAA"
 
 msgid "32x SSAA"
 msgstr "32x SSAA"
 
+msgid "35.46 MHz"
+msgstr "35.46 MHz"
+
 msgid "3840MB"
 msgstr "3840MB"
 
 msgid "384MB (Default)"
 msgstr "384MB (Lehenetsia)"
+
+msgid "386 (prefetch)"
+msgstr "386 (aurrebilatzea)"
+
+msgid "386 (slow)"
+msgstr "386 (motela)"
+
+msgid "386, 20MHz (4720 cps)"
+msgstr "386, 20MHz (4720 cps)"
+
+msgid "386DX, 33MHz (7800 cps)"
+msgstr "386DX, 33MHz (7800 cps)"
 
 msgid "3rd"
 msgstr "3.a"
@@ -357,11 +435,26 @@ msgstr "4.5x (1440x1080)"
 msgid "4096MB"
 msgstr "4096MB"
 
+msgid "4096kB"
+msgstr "4096kB"
+
+msgid "42.56 MHz"
+msgstr "42.56 MHz"
+
 msgid "45s"
 msgstr "45s"
 
 msgid "480x272 (Default)"
 msgstr "480x272 (Lehenetsia)"
+
+msgid "486 (slow)"
+msgstr "486 (motela)"
+
+msgid "486DX, 33MHz (13400 cps)"
+msgstr "486DX, 33MHz (13400 cps)"
+
+msgid "486DX2, 66MHz (26800 cps)"
+msgstr "486DX2, 66MHz (26800 cps)"
 
 msgid "48MB"
 msgstr "48MB"
@@ -374,6 +467,9 @@ msgstr "4:3 ERRENDATZE-BEREIZMENA"
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4MB"
+msgstr "4MB"
 
 msgid "4X"
 msgstr "4X"
@@ -417,6 +513,12 @@ msgstr "5% (Lehenetsia)"
 msgid "5120MB"
 msgstr "5120MB"
 
+msgid "512kB (1750)"
+msgstr "512kB (1750)"
+
+msgid "56.75 MHz"
+msgstr "56.75 MHz"
+
 msgid "5th"
 msgstr "5.a"
 
@@ -440,6 +542,9 @@ msgstr "60s"
 
 msgid "6144MB"
 msgstr "6144MB"
+
+msgid "64MB"
+msgstr "64MB"
 
 msgid "64MiB (Default)"
 msgstr "64MiB (Lehenetsia)"
@@ -479,6 +584,15 @@ msgstr "7x Jatorrizkoa (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x jatorrizkoa (1792 x 1344)"
+
+msgid "8086/8088, 4.77MHz (315 cps)"
+msgstr "8086/8088, 4.77MHz (315 cps)"
+
+msgid "8192kB"
+msgstr "8192kB"
+
+msgid "8MB"
+msgstr "8MB"
 
 msgid "8X"
 msgstr "8X"
@@ -522,6 +636,21 @@ msgstr "9.a"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "A1200 (2MB Chip + 8MB Fast)"
+msgstr "A1200 (2MB Chip + 8MB Fast)"
+
+msgid "A4000/040 (2MB Chip + 8MB Fast)"
+msgstr "A4000/040 (2MB Chip + 8MB Fast)"
+
+msgid "A500 (512KB Chip + 512KB Slow)"
+msgstr "A500 (512KB Chip + 512KB Slow)"
+
+msgid "A500+ (1MB Chip)"
+msgstr "A500+ (1MB Chip)"
+
+msgid "A600 (2MB Chip + 8MB Fast)"
+msgstr "A600 (2MB Chip + 8MB Fast)"
+
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "SARRERA-GAILU AKTIBOEN KONPONKETA"
 
@@ -543,11 +672,23 @@ msgstr "ALSA"
 msgid "ALSAThread"
 msgstr "ALSAThread"
 
+msgid "AMD Athlon, 1.2GHz (1000000 cps)"
+msgstr "AMD Athlon, 1.2GHz (1000000 cps)"
+
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX Super Resolution"
 
+msgid "AMIGA MODEL"
+msgstr "AMIGA MODELOA"
+
 msgid "ANAGLYPH PRESET (3D)"
 msgstr "ANAGLIFO AURREZARPENA (3D)"
+
+msgid "ANALOG DEADZONE"
+msgstr "ZONA HIL ANALOGIKOA"
+
+msgid "ANALOG JOYSTICK DEADZONE"
+msgstr "JOYSTICK ANALOGIKOAREN ZONA HILA"
 
 msgid "ANISOTROPIC FILTERING"
 msgstr "IRAGAZKETA ANISOTROPIKOA"
@@ -624,8 +765,17 @@ msgstr "Doitzen du Full Motion Video (FMV) filmen aspektu-erlazioa."
 msgid "Adjusts the positions of the screens."
 msgstr "Pantailen kokapenak doitzen ditu."
 
+msgid "AdvMame"
+msgstr "AdvMame"
+
+msgid "Affects efficiency/stability."
+msgstr "Eraginkortasunari/egonkortasunari eragiten dio."
+
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Emulatutako pantailak nola eskalatzen diren zehazten du. OpenGL errendatzailearekin soilik."
+
+msgid "Affects mouse speed globally."
+msgstr "Xaguaren abiadurari eragiten dio orokorrean."
 
 msgid "After NMI"
 msgstr "NMI ondoren"
@@ -705,6 +855,9 @@ msgstr "Angrylion (bateragarriena)"
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "FXAA antialiasing algoritmoa aplikatzen du jokoen kalitate bisuala hobetzeko."
 
+msgid "Apply a joy2key profile for the current game."
+msgstr "Aplikatu joy2key profil bat uneko jokoari."
+
 msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
 msgstr "Aplikatu biderkatzaile bat joystickaren sarrerari, erantzuna moteldu edo bizkortzeko."
 
@@ -771,14 +924,29 @@ msgstr "Gehieneko kalitate automatikoa"
 msgid "Auto Standard (4:3 interlaced / 3:2 progressive)"
 msgstr "Auto estandarra (4:3 gurutzelarkatua / 3:2 progresiboa)"
 
+msgid "Auto zoom"
+msgstr "Zoom automatikoa"
+
+msgid "Auto-disable zoom"
+msgstr "Desgaitu zooma automatikoki"
+
 msgid "Autodetect"
 msgstr "Detektatu automatikoki"
+
+msgid "Autodetect (Compatible)"
+msgstr "Detektatu automatikoki (bateragarria)"
+
+msgid "Autodetect (by game name tag)"
+msgstr "Detektatu automatikoki (jokoaren izeneko etiketaren arabera)"
 
 msgid "Automatic"
 msgstr "Automatikoa"
 
 msgid "Automatic ratio"
 msgstr "Erlazio automatikoa"
+
+msgid "Automatic switches region per file path tags"
+msgstr "Eskualdea automatikoki aldatzen du fitxategiaren bideko etiketen arabera"
 
 msgid "Automatically loads and applies cheats on game start."
 msgstr "Tranpak automatikoki kargatu eta aplikatzen ditu jokoa hastean."
@@ -791,6 +959,12 @@ msgstr "A aldea aldi bakoitzean eskuz kargatu beharra saihesten du."
 
 msgid "Azerbaijan"
 msgstr "Azerbaijan"
+
+msgid "B = Fire"
+msgstr "B = Tiro"
+
+msgid "B = Fire, A = Up"
+msgstr "B = Tiro, A = Gora"
 
 msgid "BILINEAR FILTERING"
 msgstr "IRAGAZKETA BILINEALA"
@@ -815,6 +989,9 @@ msgstr "NAHASTU BEREIZMEN HANDIKO MODUA"
 
 msgid "BLENDING ACCURACY"
 msgstr "NAHASKETAREN ZEHAZTASUNA"
+
+msgid "BOOT ANIMATION FIRST"
+msgstr "ABIARAZTE-ANIMAZIOA LEHENIK"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (AEBn garatutako joko guztietarako gomendatua)"
@@ -915,6 +1092,9 @@ msgstr "Bolibia"
 msgid "Both"
 msgstr "Biak"
 
+msgid "Both Joysticks (4 Axes, 4 Btns)"
+msgstr "Bi joystickak (4 ardatz, 4 botoi)"
+
 msgid "Bottom (Default)"
 msgstr "Behean (Lehenetsia)"
 
@@ -948,11 +1128,47 @@ msgstr "Bufferreko errendatzea"
 msgid "Bulgaria"
 msgstr "Bulgaria"
 
+msgid "Button Options"
+msgstr "Botoien aukerak"
+
+msgid "C64 Games System PAL"
+msgstr "C64 Games System PAL"
+
+msgid "C64 Japanese NTSC"
+msgstr "C64 NTSC japoniarra"
+
+msgid "C64 NTSC"
+msgstr "C64 NTSC"
+
+msgid "C64 NTSC Automatic"
+msgstr "C64 NTSC Automatikoa"
+
+msgid "C64 PAL"
+msgstr "C64 PAL"
+
+msgid "C64 PAL Automatic"
+msgstr "C64 PAL Automatikoa"
+
 msgid "CD ADD-ON"
 msgstr "CD GEHIGARRIA"
 
+msgid "CD TURBO SPEED"
+msgstr "CD TURBO ABIADURA"
+
 msgid "CD-DA VOLUME"
 msgstr "CD-DA BOLUMENA"
+
+msgid "CD32 (2MB Chip + 8MB Fast)"
+msgstr "CD32 (2MB Chip + 8MB Fast)"
+
+msgid "CD32 Default (2MB Chip)"
+msgstr "CD32 Lehenetsia (2MB Chip)"
+
+msgid "CD32 Pad"
+msgstr "CD32 pada"
+
+msgid "CDTV (1MB Chip)"
+msgstr "CDTV (1MB Chip)"
 
 msgid "CDZ"
 msgstr "CDZ"
@@ -962,6 +1178,9 @@ msgstr "CDZ MAME"
 
 msgid "CDZ Universe 3.3"
 msgstr "CDZ Universe 3.3"
+
+msgid "CGA"
+msgstr "CGA"
 
 msgid "CHEATS"
 msgstr "TRANPAK"
@@ -1029,6 +1248,9 @@ msgstr "4. AGINTE-KONTROLAREN SARRERA-ESLEIPENA"
 msgid "CONTROLLER COMBINATION"
 msgstr "AGINTE-KONTROLEN KONBINAZIOA"
 
+msgid "CONTROLLER PORT"
+msgstr "AGINTE-KONTROLAREN ATAKA"
+
 msgid "CONTROLLER TYPE"
 msgstr "AGINTE-KONTROL MOTA"
 
@@ -1047,14 +1269,26 @@ msgstr "PUZ"
 msgid "CPU CLOCK"
 msgstr "PUZAREN ERLOJUA"
 
+msgid "CPU COMPATIBILITY"
+msgstr "PUZAREN BATERAGARRITASUNA"
+
 msgid "CPU CORE"
 msgstr "PUZAREN NUKLEOA"
+
+msgid "CPU CORE METHOD"
+msgstr "PUZAREN NUKLEO-METODOA"
 
 msgid "CPU DYNAREC (SPEED UP)"
 msgstr "PUZ DYNAREC (AZKARTU)"
 
 msgid "CPU EXECUTION MODE"
 msgstr "PUZAREN EXEKUZIO MODUA"
+
+msgid "CPU SPEED"
+msgstr "PUZAREN ABIADURA"
+
+msgid "CPU TYPE"
+msgstr "PUZ MOTA"
 
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "PUZ-GPU latentzia-muga. Balio baxuagoek latentzia hobetzen dute, baina errendimendua murriztu dezakete."
@@ -1094,6 +1328,9 @@ msgstr "Pantaila jakin batzuen koloreak simulatzeko erabil daiteke."
 
 msgid "Can change the language of some games."
 msgstr "Joko batzuen hizkuntza alda dezake."
+
+msgid "Can fix drifting joysticks in games."
+msgstr "Jokoetan berez mugitzen diren joystickak konpon ditzake."
 
 msgid "Can fix slowdown. Only works on some drivers."
 msgstr "Moteltzeak konpon ditzake. Kontrolatzaile batzuekin soilik dabil."
@@ -1146,6 +1383,9 @@ msgstr "Txina"
 msgid "Chinese"
 msgstr "Txinera"
 
+msgid "Chinese (Mandarin)"
+msgstr "Txinera (mandarina)"
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Aukeratu kontsolaren hizkuntza. Baliteke joko guztiek hizkuntza-aukera hori ez onartzea."
 
@@ -1190,6 +1430,12 @@ msgstr "Aukeratu zein API grafiko-liburutegi erabili."
 
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "Aukeratu zein API grafiko-liburutegi erabili. Baliteke Vulkanek nukleo guztietan ez funtzionatzea."
+
+msgid "Choose your preferred language."
+msgstr "Aukeratu nahiago duzun hizkuntza."
+
+msgid "Choose your preferred renderer."
+msgstr "Aukeratu nahiago duzun errendatzailea."
 
 msgid "Classic Controller"
 msgstr "Classic Controller"
@@ -1272,6 +1518,15 @@ msgstr "Kurtsorearen denbora-muga segundotan, 'Denbora-muga arte' kurtsore-modua
 msgid "Custom"
 msgstr "Pertsonalizatua"
 
+msgid "Custom Keyboard Binds (best for Pad2Key)"
+msgstr "Teklatuko esleipen pertsonalizatuak (Pad2Key-rako onena)"
+
+msgid "Cycle-exact"
+msgstr "Zikloz ziklo zehatza"
+
+msgid "Czech"
+msgstr "Txekiera"
+
 msgid "Czech Republic"
 msgstr "Txekiar Errepublika"
 
@@ -1295,6 +1550,9 @@ msgstr "DESGAITU 4MB-EKO RAM HEDAPEN-PAKETEA"
 
 msgid "DISABLE CULLING"
 msgstr "DESGAITU CULLING-A"
+
+msgid "DISABLE EMULATOR JOYSTICK"
+msgstr "DESGAITU EMULADOREAREN JOYSTICKA"
 
 msgid "DISABLE INTERLACING"
 msgstr "DESGAITU GURUTZELARKATZEA"
@@ -1374,6 +1632,9 @@ msgstr "Lehenetsia"
 msgid "Default Only"
 msgstr "Lehenetsia soilik"
 
+msgid "Default by model"
+msgstr "Lehenetsia, modeloaren arabera"
+
 msgid "Degree in which 3D graphics are scaled up. OpenGL renderer only."
 msgstr "3D grafikoak zenbat handitzen diren. OpenGL errendatzailearekin soilik."
 
@@ -1428,6 +1689,9 @@ msgstr "Desgaituta shader-multzo bat erabiltzen bada edo irteerako pantailak jok
 msgid "Display on screen information like savestate, config warning, etc."
 msgstr "Erakutsi pantailan informazioa: gordetako egoerak, konfigurazio-abisuak, etab."
 
+msgid "Does not affect the on-screen keyboard."
+msgstr "Ez dio pantailako teklatuari eragiten."
+
 msgid "Dominican Republic"
 msgstr "Errepublika Dominikarra"
 
@@ -1436,6 +1700,9 @@ msgstr "Ez gainidatzi"
 
 msgid "Dot"
 msgstr "Puntua"
+
+msgid "DotMatrix"
+msgstr "Puntu-matrizea"
 
 msgid "Double buffering"
 msgstr "Buffer bikoitza"
@@ -1458,14 +1725,26 @@ msgstr "Jokoan zehar, sakatu laster-tekla + R1 pantailako testua itzultzeko. Lib
 msgid "Dutch"
 msgstr "Nederlandera"
 
+msgid "Dynamic (fast)"
+msgstr "Dinamikoa (azkarra)"
+
 msgid "Dynamic Interpreter"
 msgstr "Interpretatzaile dinamikoa"
 
 msgid "Dynarec (Fastest)"
 msgstr "Dynarec (azkarrena)"
 
+msgid "EGA"
+msgstr "EGA"
+
 msgid "EMULATE WIIMOTE"
 msgstr "EMULATU WIIMOTE-A"
+
+msgid "EMULATED CPU PERFORMANCE"
+msgstr "EMULATUTAKO PUZAREN ERRENDIMENDUA"
+
+msgid "EMULATED RAM SIZE"
+msgstr "EMULATUTAKO RAMAREN TAMAINA"
 
 msgid "EMULATION"
 msgstr "EMULAZIOA"
@@ -1484,6 +1763,9 @@ msgstr "GAITU TRANPAK"
 
 msgid "ENABLE GAMEPAD VIEW"
 msgstr "GAITU GAMEPAD IKUSPEGIA"
+
+msgid "ENABLE GRAVIS ULTRASOUND"
+msgstr "GAITU GRAVIS ULTRASOUND"
 
 msgid "ENABLE NOTIFICATIONS"
 msgstr "GAITU JAKINARAZPENAK"
@@ -1512,6 +1794,9 @@ msgstr "PANTAILA HEDATUA"
 msgid "Ecuador"
 msgstr "Ekuador"
 
+msgid "Edge (sharper filet)"
+msgstr "Ertza (biribilketa zorrotzagoa)"
+
 msgid "Egypt"
 msgstr "Egipto"
 
@@ -1536,6 +1821,9 @@ msgstr "Gaitu Cemuren errendimendu-gainjartzea."
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "Gaitu GameCuberen abiarazte-animazioa eta BIOSerako sarbidea (IPL.bin BIOSa behar du erabiltzailearen karpeta egokian)."
 
+msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
+msgstr "Gaitu Gravis Ultrasound emulazioa. Ziurtatu ULTRASND karpeta zure <game>.pc ROM karpetaren erroan dagoela."
+
 msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
 msgstr "Gaitu MelonDS bi pantailatan erakusteko. Lotutako pantaila-aukera batzuk ez dira kontuan hartuko."
 
@@ -1556,6 +1844,9 @@ msgstr "Gaitu mirak tiro-jokoetan, hautatutako jokalarientzat."
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "Gaitu gamepad ikuspegia bi pantailen arteko elkarrekintza duten jokoetarako. Erabili laster-tekla+R2 pantailaz aldatzeko."
+
+msgid "Enable launching pre-installed WHDLoad installs."
+msgstr "Gaitu aurrez instalatutako WHDLoad instalazioak abiaraztea."
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Gaitu cachearen, aginte-kontrolen gertaeren eta abarren jakinarazpenak."
@@ -1671,6 +1962,9 @@ msgstr "Hobekuntza. Kendu lerroko zortzi spriteren muga."
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Hobekuntza. Kendu lerroko laurogei spriteren muga."
 
+msgid "Enhancement. Remove the four sprites per line limit."
+msgstr "Hobekuntza. Kendu lerroko lau spriteren muga."
+
 msgid "Enhancement. Remove the sixteen sprites per line limit."
 msgstr "Hobekuntza. Kendu lerroko hamasei spriteren muga."
 
@@ -1716,6 +2010,9 @@ msgstr "Europa"
 msgid "Even"
 msgstr "Bikoitia"
 
+msgid "Even Pixels"
+msgstr "Pixel bikoitiak"
+
 msgid "Exclusive Ubershaders"
 msgstr "Ubershader esklusiboak"
 
@@ -1739,6 +2036,9 @@ msgstr "FIFO Erlaxatua"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "FIRMWARE EZARPENAK"
+
+msgid "FLOPPY TURBO SPEED"
+msgstr "DISKETEEN TURBO ABIADURA"
 
 msgid "FM SYNTHESIZER"
 msgstr "FM SINTETIZAGAILUA"
@@ -1800,6 +2100,12 @@ msgstr "Pantaila betetzen du aspektu-erlazioa edozein dela ere. Ez dabil eskalat
 msgid "Finland"
 msgstr "Finlandia"
 
+msgid "Fit 4:3 Aspect Ratio"
+msgstr "Egokitu 4:3 aspektu-erlaziora"
+
+msgid "Fit resolution scale"
+msgstr "Egokitu bereizmen-eskala"
+
 msgid "Fit to Window / Fullscreen"
 msgstr "Egokitu leihora / pantaila osoa"
 
@@ -1814,6 +2120,9 @@ msgstr "Konpondu testuretako banda-efektua bereizmena handitzean."
 
 msgid "Fixes a possible bug with multiple controllers detection."
 msgstr "Aginte-kontrol anitz hautematean gerta daitekeen akats bat konpontzen du."
+
+msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
+msgstr "Flight Stick (3 ardatz, 4 botoi, 1 hat)"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Giroskopioa erabiltzen duten jokoetarako (ezkerreko palanka analogikoari lotuta)"
@@ -1839,6 +2148,9 @@ msgstr "Behartu 32bit"
 msgid "Force 4:3"
 msgstr "Behartu 4:3"
 
+msgid "Force a specific model and prevent tags detection."
+msgstr "Behartu modelo jakin bat eta saihestu etiketen detekzioa."
+
 msgid "Force progressive render / scan."
 msgstr "Behartu errendatze / eskaneatze progresiboa."
 
@@ -1850,6 +2162,9 @@ msgstr "Frantzia"
 
 msgid "French"
 msgstr "Frantsesa"
+
+msgid "Frontend MIDI driver"
+msgstr "Interfazearen MIDI kontrolatzailea"
 
 msgid "Full (Hash Cache)"
 msgstr "Osoa (hash cachea)"
@@ -1901,6 +2216,12 @@ msgstr "GAMECUBE 3. ATAKA MOTA"
 
 msgid "GAMECUBE PORT 4 TYPE"
 msgstr "GAMECUBE 4. ATAKA MOTA"
+
+msgid "GAMEPAD AUTOMATIC MAPPING"
+msgstr "GAMEPADAREN ESLEIPEN AUTOMATIKOA"
+
+msgid "GAMEPAD CURSOR SPEED"
+msgstr "GAMEPADAREN KURTSOREAREN ABIADURA"
 
 msgid "GB - Black and White"
 msgstr "GB - Zuri-beltza"
@@ -1977,11 +2298,17 @@ msgstr "GRAFIKOAK"
 msgid "GRAPHICS API"
 msgstr "API GRAFIKOA"
 
+msgid "GRAPHICS CHIP TYPE"
+msgstr "TXIP GRAFIKO MOTA"
+
 msgid "GRAPHICS PLUGIN"
 msgstr "PLUGIN GRAFIKOA"
 
 msgid "Game default"
 msgstr "Jokoaren lehenetsia"
+
+msgid "GameBlaster"
+msgstr "GameBlaster"
 
 msgid "GameCube Adapter for Wii U"
 msgstr "GameCube egokigailua Wii U-rako"
@@ -2000,6 +2327,9 @@ msgstr "Jokoak normala baino azkarrago/motelago ibil daitezke eskualde okerra ha
 
 msgid "Gaussian"
 msgstr "Gaussiarra"
+
+msgid "Generic Keyboard Binds"
+msgstr "Teklatuko esleipen generikoak"
 
 msgid "Genesis/Megadrive Style"
 msgstr "Genesis/Megadrive estiloa"
@@ -2021,6 +2351,9 @@ msgstr "Glide64"
 
 msgid "Gln64"
 msgstr "Gln64"
+
+msgid "Gravis GamePad (D-pad + 4 Btns)"
+msgstr "Gravis GamePad (gurutzea + 4 botoi)"
 
 msgid "Gray"
 msgstr "Grisa"
@@ -2049,17 +2382,38 @@ msgstr "BEREIZMEN HANDIKO ARTEFAKTUAK"
 msgid "HLE (Fastest)"
 msgstr "HLE (Azkarrena)"
 
+msgid "HQ (bilinear filter)"
+msgstr "HQ (iragazki bilineala)"
+
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hacka. PAL joko gehienen abiadura % 17 handitzen du."
+
+msgid "Hebrew"
+msgstr "Hebreera"
+
+msgid "Help games which are too quick or that have bugs."
+msgstr "Lagundu azkarregiak edo akatsak dituzten jokoei."
 
 msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
 msgstr "AMD GPUetako testuren hondatzeekin eta sakonera-arazoekin laguntzen du. Zenbait kasutan Intel GPUei ere lagun diezaieke."
 
+msgid "Hercules"
+msgstr "Hercules"
+
 msgid "Hermite"
 msgstr "Hermite"
 
+msgid "Hides borders on many games. Some games use the borders."
+msgstr "Joko askotan ertzak ezkutatzen ditu. Joko batzuek ertzak erabiltzen dituzte."
+
+msgid "Hides borders on many games. Some games used the borders."
+msgstr "Joko askotan ertzak ezkutatzen ditu. Joko batzuek ertzak erabiltzen zituzten."
+
 msgid "High"
 msgstr "Altua"
+
+msgid "High 720p"
+msgstr "Altua, 720p"
 
 msgid "Honduras"
 msgstr "Honduras"
@@ -2130,6 +2484,9 @@ msgstr "Joko bat 30Hz-tan badabil, PPSSPPk 60 fotograma bidaliko dizkio monitore
 msgid "If nothing is specified, will use ZTranslate by default."
 msgstr "Ezer zehazten ez bada, ZTranslate erabiliko da lehenetsiz."
 
+msgid "Ignored with 'Cycle-exact'."
+msgstr "Ez da kontuan hartzen 'Zikloz ziklo zehatza' aukerarekin."
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "Hobetu audioaren zehaztasuna (esperimentala)."
 
@@ -2159,6 +2516,12 @@ msgstr "India"
 
 msgid "Indonesia"
 msgstr "Indonesia"
+
+msgid "Inserts CD during boot animation prevent loading fail."
+msgstr "CDa abiarazte-animazioan zehar sartzen du, karga-hutsegiteak saihesteko."
+
+msgid "Inserts CD during boot animation to prevent loading fail."
+msgstr "CDa abiarazte-animazioan zehar sartzen du, karga-hutsegiteak saihesteko."
 
 msgid "Interpreter (Slowest)"
 msgstr "Interpretatzailea (motelena)"
@@ -2204,6 +2567,12 @@ msgstr "JOYSTICKAREN SENTIKORTASUNA"
 
 msgid "JOYSTICK TO DPAD"
 msgstr "JOYSTICKA GURUTZE GISA"
+
+msgid "JUMP ON A"
+msgstr "SALTO A BOTOIAREKIN"
+
+msgid "JUMP ON B"
+msgstr "SALTO B BOTOIAREKIN"
 
 msgid "Jamaica"
 msgstr "Jamaika"
@@ -2262,6 +2631,9 @@ msgstr "Ekaina"
 msgid "Justifier"
 msgstr "Justifier"
 
+msgid "KEYBOARD PASSTHROUGH"
+msgstr "TEKLATUAREN ZUZENEKO PASABIDEA"
+
 msgid "Kazakhstan"
 msgstr "Kazakhstan"
 
@@ -2271,11 +2643,23 @@ msgstr "Kenya"
 msgid "Keyboard"
 msgstr "Teklatua"
 
+msgid "Keyboard + Mouse (Left An.)"
+msgstr "Teklatua + xagua (ezkerreko an.)"
+
+msgid "Keyboard + Mouse (Right An.)"
+msgstr "Teklatua + xagua (eskuineko an.)"
+
 msgid "Keyboard passthrough"
 msgstr "Teklatuaren zuzeneko pasabidea"
 
 msgid "Keyboard shortcuts unavailable if passing through the keyboard."
 msgstr "Laster-teklak ez daude erabilgarri teklatua zuzenean pasatzen bada."
+
+msgid "Keypad to joyport mappings for 2 players."
+msgstr "Teklatxotik joyportera esleipenak, 2 jokalarirentzat."
+
+msgid "Koalapad"
+msgstr "Koalapad"
 
 msgid "Konami Justifier"
 msgstr "Konami Justifier"
@@ -2409,6 +2793,9 @@ msgstr "Paketeak jasotzeko helbide eta ataka lokala. Utzi hutsik xemu.toml konfi
 msgid "Low"
 msgstr "Baxua"
 
+msgid "Low 360p"
+msgstr "Baxua, 360p"
+
 msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
 msgstr "Balio baxuagoek audioaren latentzia murrizten dute eta errendimendua hobetzen dute, baina audio-arazoak eragin ditzakete."
 
@@ -2430,6 +2817,9 @@ msgstr "MAME (YM2612)"
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "ESKUZKO TESTURA-LAGINKETA"
 
+msgid "MAX (as many as possible)"
+msgstr "MAX (ahalik eta gehien)"
+
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "ENERGIA AURREZTEKO GEHIENEZKO PUZ-ETENDURAK"
 
@@ -2439,11 +2829,23 @@ msgstr "MEMORIA-TXARTELAREN MODUA"
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "MEMORIA KUDEATZEKO UNITATEA (MMU)"
 
+msgid "MIDI OUTPUT"
+msgstr "MIDI IRTEERA"
+
 msgid "MIPMAPPING"
 msgstr "MIPMAPPING"
 
+msgid "MODEL TYPE"
+msgstr "MODELO MOTA"
+
 msgid "MOUNT CACHE"
 msgstr "MUNTATU CACHEA"
+
+msgid "MOUSE SPEED"
+msgstr "XAGUAREN ABIADURA"
+
+msgid "MSX2"
+msgstr "MSX2"
 
 msgid "MULTITAP"
 msgstr "MULTITAP"
@@ -2457,6 +2859,12 @@ msgstr "Macau"
 msgid "Magnum FBX"
 msgstr "Magnum FBX"
 
+msgid "Makes second fire button press up instead."
+msgstr "Horren ordez, bigarren tiro-botoiak gora egiten du."
+
+msgid "Makes the blue button press up instead."
+msgstr "Horren ordez, botoi urdinak gora egiten du."
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "Dithering eredua askoz ere gutxiago nabaritzen da bereizmen altuetan."
 
@@ -2468,6 +2876,12 @@ msgstr "Maldibak"
 
 msgid "Manually activate the adapter for supported games."
 msgstr "Aktibatu egokigailua eskuz joko bateragarrietan."
+
+msgid "Manually define which resolution to use.&#x0a;Auto defaults to High and switches to Super-High when needed."
+msgstr "Zehaztu eskuz zein bereizmen erabili.&#x0a;Auto aukerak Altua erabiltzen du lehenetsiz, eta Super-Altua behar denean."
+
+msgid "Manually set cycles per second. Use with caution."
+msgstr "Ezarri eskuz segundoko zikloak. Kontuz erabili."
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Esleitu zure aginte-kontrola emulatutako Wiimote bati."
@@ -2556,11 +2970,20 @@ msgstr "Monokromoa (Blargg)"
 msgid "More accurate emulation, but slower."
 msgstr "Emulazio zehatzagoa, baina motelagoa."
 
+msgid "More compatible"
+msgstr "Bateragarriagoa"
+
 msgid "Morocco"
 msgstr "Maroko"
 
+msgid "Most games use port 2, some use port 1."
+msgstr "Joko gehienek 2. ataka erabiltzen dute; batzuek 1.a."
+
 msgid "Mouse"
 msgstr "Xagua"
+
+msgid "Mouse (1351)"
+msgstr "Xagua (1351)"
 
 msgid "Mouse sensitivity for paddles. Core default (10)."
 msgstr "Paddle-en xagu-sentikortasuna. Nukleoaren lehenetsia (10)."
@@ -2621,6 +3044,12 @@ msgstr "NTSC (S-Video)"
 
 msgid "NTSC 240x480px 60Hz"
 msgstr "NTSC 240x480px 60Hz"
+
+msgid "NTSC 240x480px 60Hz (auto)"
+msgstr "NTSC 240x480px 60Hz (auto)"
+
+msgid "NTSC 492x262px"
+msgstr "NTSC 492x262px"
 
 msgid "NTSC ASPECT"
 msgstr "NTSC ASPEKTUA"
@@ -2703,6 +3132,9 @@ msgstr "Ez (Lehenetsia)"
 msgid "No Buffer"
 msgstr "Bufferrik gabe"
 
+msgid "No EMS/XMS"
+msgstr "EMS/XMS gabe"
+
 msgid "No Limit"
 msgstr "Mugarik gabe"
 
@@ -2726,6 +3158,9 @@ msgstr "Normala"
 
 msgid "Normal (Default)"
 msgstr "Normala (Lehenetsia)"
+
+msgid "Normal (interpreter)"
+msgstr "Normala (interpretatzailea)"
 
 msgid "Norway"
 msgstr "Norvegia"
@@ -2802,6 +3237,12 @@ msgstr "Aktibatuta (Vulkan soilik)"
 msgid "On (forced)"
 msgstr "Aktibatuta (behartuta)"
 
+msgid "On with game detection message"
+msgstr "Aktibatuta, jokoa hautemateko mezuarekin"
+
+msgid "On with rewind support"
+msgstr "Aktibatuta, atzera egiteko euskarriarekin"
+
 msgid "Only Overscan Area"
 msgstr "Overscan eremua soilik"
 
@@ -2828,6 +3269,12 @@ msgstr "OpenGL (Lehenetsia)"
 
 msgid "OpenGL (Overwrites Libretro API settings)"
 msgstr "OpenGL (Libretro APIaren ezarpenak gainidazten ditu)"
+
+msgid "OpenGL with Shaders"
+msgstr "OpenGL shaderrekin"
+
+msgid "Optimized (auto)"
+msgstr "Optimizatua (automatikoa)"
 
 msgid "Orange"
 msgstr "Laranja"
@@ -2877,6 +3324,12 @@ msgstr "PADDLE: XAGUAREN SENTIKORTASUNA"
 msgid "PAL 288x576px 50Hz"
 msgstr "PAL 288x576px 50Hz"
 
+msgid "PAL 288x576px 50Hz (auto)"
+msgstr "PAL 288x576px 50Hz (auto)"
+
+msgid "PAL 576x312px"
+msgstr "PAL 576x312px"
+
 msgid "PAL ASPECT"
 msgstr "PAL ASPEKTUA"
 
@@ -2901,6 +3354,9 @@ msgstr "PCE joypada"
 msgid "PCE Mouse"
 msgstr "PCE xagua"
 
+msgid "PCjr"
+msgstr "PCjr"
+
 msgid "PER-GAME SAVES"
 msgstr "JOKO BAKOITZEKO GORDETZEAK"
 
@@ -2915,6 +3371,9 @@ msgstr "FOSFORO-NAHASKETA"
 
 msgid "PHOSPHOR MODE"
 msgstr "FOSFORO MODUA"
+
+msgid "PHYSICAL KEYBOARD LAYOUT"
+msgstr "TEKLATU FISIKOAREN DISEINUA"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "1. JOKALARIAREN MIRAREN KOLOREA"
@@ -2943,6 +3402,9 @@ msgstr "Paddle kontrola"
 msgid "Paddle can only be used in port 2."
 msgstr "Paddlea 2. atakan soilik erabil daiteke."
 
+msgid "Paddles"
+msgstr "Paddleak"
+
 msgid "Pakistan"
 msgstr "Pakistan"
 
@@ -2963,6 +3425,21 @@ msgstr "Parallel"
 
 msgid "Partial"
 msgstr "Partziala"
+
+msgid "Passes all physical keyboard events for Pad2Key."
+msgstr "Teklatu fisikoaren gertaera guztiak Pad2Key-ri pasatzen dizkio."
+
+msgid "Pentium (slow)"
+msgstr "Pentium (motela)"
+
+msgid "Pentium II, 300MHz (200000 cps)"
+msgstr "Pentium II, 300MHz (200000 cps)"
+
+msgid "Pentium III, 600MHz (500000 cps)"
+msgstr "Pentium III, 600MHz (500000 cps)"
+
+msgid "Pentium, 100MHz (77000 cps)"
+msgstr "Pentium, 100MHz (77000 cps)"
 
 msgid "Per 0.05s, 5s total (550MB|100MB)"
 msgstr "0.05 s-ro, 5 s guztira (550MB|100MB)"
@@ -2999,6 +3476,12 @@ msgstr "Filipinak"
 
 msgid "Phosphor blend level. Core default (60%)."
 msgstr "Fosforo-nahasketaren maila. Nukleoaren lehenetsia (% 60)."
+
+msgid "Pixel Perfect"
+msgstr "Pixel Perfect"
+
+msgid "Pixel-Perfect"
+msgstr "Pixel-Perfect"
 
 msgid "PlayStation Mouse"
 msgstr "PlayStation xagua"
@@ -3068,6 +3551,9 @@ msgstr "LAUKIEN (QUAD) ERRENDATZEA"
 
 msgid "Qatar"
 msgstr "Katar"
+
+msgid "RAM EXPANSION UNIT"
+msgstr "RAM HEDAPEN-UNITATEA"
 
 msgid "RDP PLUGIN"
 msgstr "RDP PLUGINA"
@@ -3147,6 +3633,9 @@ msgstr "Poligono dardaratiak eta testura deformatuak murrizten ditu."
 msgid "Relaxed (Fastest)"
 msgstr "Malgua (azkarrena)"
 
+msgid "Removes loading but can add possible glitches/crashes."
+msgstr "Karga kentzen du, baina akatsak/blokeoak eragin ditzake."
+
 msgid "Replace meshed transparency by real transparency."
 msgstr "Ordeztu sare-gardentasuna benetako gardentasunarekin."
 
@@ -3171,11 +3660,17 @@ msgstr "Wii VC lehengoratua"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Lehenetsia)"
 
+msgid "RetroPad Face Button Options."
+msgstr "RetroPad aurreko botoien aukerak."
+
 msgid "Retropad"
 msgstr "Retropad"
 
 msgid "Retropad (Default)"
 msgstr "Retropad (Lehenetsia)"
+
+msgid "Rewind can be CPU heavy."
+msgstr "Atzera egiteak PUZ asko behar dezake."
 
 msgid "Rice"
 msgstr "Rice"
@@ -3185,6 +3680,9 @@ msgstr "Eskuineko palanka"
 
 msgid "Right/Left"
 msgstr "Eskuina/ezkerra"
+
+msgid "Roland MT-32/CM-32L"
+msgstr "Roland MT-32/CM-32L"
 
 msgid "Romania"
 msgstr "Errumania"
@@ -3216,8 +3714,17 @@ msgstr "S-Video"
 msgid "S-Video (Blargg)"
 msgstr "S-Video (Blargg)"
 
+msgid "SAVESTATE/REWIND"
+msgstr "GORDETAKO EGOERA/ATZERA EGIN"
+
+msgid "SCALE FACTOR"
+msgstr "ESKALA-FAKTOREA"
+
 msgid "SCALED DITHERING"
 msgstr "DITHERING ESKALATUA"
+
+msgid "SCALER MODE"
+msgstr "ESKALATZAILE MODUA"
 
 msgid "SCALING MODE"
 msgstr "ESKALATZE MODUA"
@@ -3330,6 +3837,9 @@ msgstr "EGUZKI-SENTSOREAREN MAILA"
 msgid "SOUND QUALITY"
 msgstr "SOINUAREN KALITATEA"
 
+msgid "SOUNDBLASTER TYPE"
+msgstr "SOUNDBLASTER MOTA"
+
 msgid "SPECIAL CONTROL LAYOUTS"
 msgstr "KONTROLEN ANTOLAMENDU BEREZIAK"
 
@@ -3369,6 +3879,9 @@ msgstr "SUPER FX OVERCLOCKA"
 msgid "SUPER GB BORDERS"
 msgstr "SUPER GB ERTZAK"
 
+msgid "SVGA"
+msgstr "SVGA"
+
 msgid "SVideo (color bleeding only)"
 msgstr "SVideo (kolore-isurketa soilik)"
 
@@ -3399,14 +3912,29 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Eskalatua"
 
+msgid "Scanline Interpolation Filter (SAI)"
+msgstr "Eskaner-lerroen interpolazio-iragazkia (SAI)"
+
 msgid "Screen Resolution (Default)"
 msgstr "Pantailaren bereizmena (Lehenetsia)"
 
 msgid "Sega/Mega CD"
 msgstr "Sega/Mega CD"
 
+msgid "Select controller type for Amiga P1."
+msgstr "Hautatu Amiga P1-erako aginte-kontrol mota."
+
+msgid "Select controller type for Amiga P2."
+msgstr "Hautatu Amiga P2-rako aginte-kontrol mota."
+
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Hautatutako hizkuntza erabiliko da 'Erabili firmwarearen ezarpenak' desgaituta badago edo firmware-fitxategia aurkitu ez bada."
+
+msgid "Select scale resolution of the game."
+msgstr "Hautatu jokoaren eskalatze-bereizmena."
+
+msgid "Select the .SF2 SoundFont file, .ROM file, or interface used for MIDI output."
+msgstr "Aukeratu .SF2 SoundFont fitxategia, .ROM fitxategia, edo MIDI irteerarako erabiliko den interfazea."
 
 msgid "Select the console video standard / display mode."
 msgstr "Hautatu kontsolaren bideo-estandarra / pantaila modua."
@@ -3416,6 +3944,9 @@ msgstr "Hautatu ukipen-pantailan nabigatzeko sarrera mota"
 
 msgid "Select the palette used to render colors."
 msgstr "Hautatu koloreak errendatzeko erabiliko den paleta."
+
+msgid "Select which Intel CPU to emulate."
+msgstr "Hautatu zein Intel PUZ emulatu."
 
 msgid "Separate Windows"
 msgstr "Leiho bereiziak"
@@ -3432,8 +3963,14 @@ msgstr "Ezarri erabili beharreko kolore-paleta."
 msgid "Set the controller rumble strength if supported."
 msgstr "Ezarri aginte-kontrolaren bibrazio-indarra, onartzen bada."
 
+msgid "Set the deadzone of the joystick analog sticks."
+msgstr "Ezarri joystickaren palanka analogikoen zona hila."
+
 msgid "Set virtual joysticks gate size. Smaller increases sensitivity. Larger decreases it."
 msgstr "Ezarri joystick birtualen atearen tamaina. Txikiagoak sentikortasuna handitzen du; handiagoak murriztu."
+
+msgid "Sets the scaler filter mode when rendering."
+msgstr "Errendatzean eskalatzailearen iragazki-modua ezartzen du."
 
 msgid "Shader Interpreter only"
 msgstr "Shader-interpretatzailea soilik"
@@ -3464,6 +4001,9 @@ msgstr "Erakutsi pantailako mezuak (memoria-txartelean gordetzeak...)."
 
 msgid "Simple"
 msgstr "Sinplea"
+
+msgid "Simple (interpreter for old real-mode games)"
+msgstr "Sinplea (modu errealeko joko zaharretarako interpretatzailea)"
 
 msgid "Simplified Chinese"
 msgstr "Txinera sinplifikatua"
@@ -3546,11 +4086,29 @@ msgstr "Softwarea"
 msgid "Software mode is faster and more accurate, while OpenGL mode supports scaling 3D graphics."
 msgstr "Software modua azkarragoa eta zehatzagoa da; OpenGL moduak, berriz, 3D grafikoak eskalatzea onartzen du."
 
+msgid "Some games and homebrews require more RAM"
+msgstr "Joko eta homebrew batzuek RAM gehiago behar dute"
+
 msgid "Some games have issues when the animation is shown, others require it."
 msgstr "Joko batzuek arazoak dituzte animazioa erakustean; beste batzuek behar dute."
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "SounBlaster 1.0"
+msgstr "SoundBlaster 1.0"
+
+msgid "SounBlaster 16 (Default)"
+msgstr "SoundBlaster 16 (Lehenetsia)"
+
+msgid "SounBlaster 2.0"
+msgstr "SoundBlaster 2.0"
+
+msgid "SounBlaster Pro"
+msgstr "SoundBlaster Pro"
+
+msgid "SounBlaster Pro 2"
+msgstr "SoundBlaster Pro 2"
 
 msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
 msgstr "Soinu-sorgailua. MAME azkarragoa da eta Nuked zikloz ziklo zehatza. Jatorrizko modeloak YM2612 erabiltzen zuen, eta geroko bertsioek YM3438."
@@ -3615,14 +4173,29 @@ msgstr "Luzatu"
 msgid "Stretch to full"
 msgstr "Luzatu osoa bete arte"
 
+msgid "Stretch to screen"
+msgstr "Luzatu pantailara"
+
 msgid "Stretch to window"
 msgstr "Luzatu leihora"
+
+msgid "Stretches the output to fill the display area."
+msgstr "Irteera luzatzen du pantaila-eremua betetzeko."
 
 msgid "Super Game Boy"
 msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
+
+msgid "Super-high 1440p"
+msgstr "Super-altua, 1440p"
+
+msgid "SuperEagle"
+msgstr "SuperEagle"
+
+msgid "SuperSAI"
+msgstr "SuperSAI"
 
 msgid "Surround"
 msgstr "Inguratzailea"
@@ -3639,8 +4212,17 @@ msgstr "Trukatu bi pantailen kokapena."
 msgid "Sweden"
 msgstr "Suedia"
 
+msgid "Swedish"
+msgstr "Suediera"
+
 msgid "Switzerland"
 msgstr "Suitza"
+
+msgid "Switzerland (French)"
+msgstr "Suitza (frantsesa)"
+
+msgid "Switzerland (German)"
+msgstr "Suitza (alemana)"
 
 msgid "Syria"
 msgstr "Siria"
@@ -3696,6 +4278,9 @@ msgstr "HARIKATUTAKO BIDEOA"
 msgid "TIME STRETCHING THRESHOLD"
 msgstr "DENBORA-LUZATZEAREN ATALASEA"
 
+msgid "TIMED AXIS INTERVALS"
+msgstr "ARDATZEN DENBORA-TARTEAK"
+
 msgid "TOUCH MODE"
 msgstr "UKITZE MODUA"
 
@@ -3714,6 +4299,9 @@ msgstr "TRUE COLOR ERRENDATZEA"
 msgid "TV EFFECTS"
 msgstr "TV EFFECTS"
 
+msgid "TV2x CRT Television Filter"
+msgstr "TV2x CRT telebista-iragazkia"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - Pack 1"
 
@@ -3726,6 +4314,9 @@ msgstr "Taiwan"
 msgid "Taiwanese"
 msgstr "Taiwanera"
 
+msgid "Tandy"
+msgstr "Tandy"
+
 msgid "Thailand"
 msgstr "Tailandia"
 
@@ -3737,6 +4328,9 @@ msgstr "Joystickaren posizio neutroaren inguruko eremua, non sarrera ez den kont
 
 msgid "The day within the month of your birthday."
 msgstr "Zure urtebetetzearen hilabeteko eguna."
+
+msgid "The emulated graphics card."
+msgstr "Emulatutako txartel grafikoa."
 
 msgid "The final output image, unrelated to the Wii's emulated NAND setting."
 msgstr "Azken irteerako irudia; ez du zerikusirik Wiiren emulatutako NAND ezarpenarekin."
@@ -3792,6 +4386,9 @@ msgstr "Goikoa soilik"
 msgid "Touch Screen"
 msgstr "Ukipen-pantaila"
 
+msgid "Trackball (Atari CX-22)"
+msgstr "Trackballa (Atari CX-22)"
+
 msgid "Traditional Chinese"
 msgstr "Txinera tradizionala"
 
@@ -3819,6 +4416,9 @@ msgstr "Turkesa"
 msgid "Twin Stick with Triggers"
 msgstr "Twin Stick katuekin"
 
+msgid "Type of emulated SoundBlaster card."
+msgstr "Emulatutako SoundBlaster txartel mota."
+
 msgid "UBERSHADERS"
 msgstr "UBERSHADERRAK"
 
@@ -3831,8 +4431,14 @@ msgstr "UDP URRUNEKO HELBIDEA"
 msgid "UDP Tunnel"
 msgstr "UDP Tunela"
 
+msgid "UK"
+msgstr "UK"
+
 msgid "UPSCALE FILTER"
 msgstr "BEREIZMENA HANDITZEKO IRAGAZKIA"
+
+msgid "US"
+msgstr "US"
 
 msgid "USA"
 msgstr "AEB"
@@ -3912,6 +4518,9 @@ msgstr "Erabili gordetze-fitxategi bat joko bakoitzeko."
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Erabili fotograma prebentiboak run-ahead-en ordez. Aginte-kontrolaren egoera aldatzen denean soilik exekutatzen du aurrez."
 
+msgid "Use to eliminate cursor drift/unwanted input."
+msgstr "Erabili kurtsorearen noraezeko mugimendua / nahi gabeko sarrera ezabatzeko."
+
 msgid "Use to eliminate joystick drift/unwanted input. Effects all controllers."
 msgstr "Erabili joystickaren noraezeko mugimendua / nahi gabeko sarrera ezabatzeko. Aginte-kontrol guztiei eragiten die."
 
@@ -3954,11 +4563,17 @@ msgstr "VBI JAUZIA"
 msgid "VERTICAL ROTATION (TATE)"
 msgstr "BIRAKETA BERTIKALA (TATE)"
 
+msgid "VGA"
+msgstr "VGA"
+
 msgid "VIDEO FILTERS"
 msgstr "BIDEO-IRAGAZKIAK"
 
 msgid "VIDEO FORMAT STANDARD"
 msgstr "BIDEO-FORMATUAREN ESTANDARRA"
+
+msgid "VIDEO RESOLUTION"
+msgstr "BIDEO-BEREIZMENA"
 
 msgid "VIDEO SETTINGS"
 msgstr "BIDEO-EZARPENAK"
@@ -3992,6 +4607,9 @@ msgstr "OHARTARAZI BIOSAREN ARAZOEZ"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "OHARTARAZI ONARTZEN EZ DIREN EZAUGARRIEZ"
+
+msgid "WHDLOAD LAUNCHER"
+msgstr "WHDLOAD JAURTITZAILEA"
 
 msgid "WHEELS"
 msgstr "BOLANTEAK"
@@ -4062,6 +4680,9 @@ msgstr "Wiimote etzana + Swing"
 msgid "Wiimote Sideway + Tilt"
 msgstr "Wiimote etzana + inklinazioa"
 
+msgid "Works with 'Cycle-exact' mode and for a few games."
+msgstr "'Zikloz ziklo zehatza' moduarekin eta joko gutxi batzuekin dabil."
+
 msgid "X2"
 msgstr "X2"
 
@@ -4070,6 +4691,12 @@ msgstr "XBLA lizentzia gaituta (Lehenetsia)"
 
 msgid "XBOX LIVE ARCADE"
 msgstr "XBOX LIVE ARCADE"
+
+msgid "Y = Fire"
+msgstr "Y = Tiro"
+
+msgid "Y = Fire, B = Up"
+msgstr "Y = Tiro, B = Gora"
 
 msgid "YUV v3 (Firebrand)"
 msgstr "YUV v3 (Firebrand)"
@@ -4085,6 +4712,12 @@ msgstr "Z26"
 
 msgid "ZCULL ACCURACY"
 msgstr "ZCULL ZEHAZTASUNA"
+
+msgid "ZOOM (HIDE BORDERS)"
+msgstr "ZOOMA (EZKUTATU ERTZAK)"
+
+msgid "ZOOM/CROP (HIDE BORDERS)"
+msgstr "ZOOMA/MOZKETA (EZKUTATU ERTZAK)"
 
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Zooma egiten du ertz beltzak ezkutatzeko. Ertzak desberdinak dira joko bakoitzean."
@@ -4164,11 +4797,26 @@ msgstr "hibridoa/behean"
 msgid "hybrid/top"
 msgstr "hibridoa/goian"
 
+msgid "large"
+msgstr "handia"
+
+msgid "larger"
+msgstr "handiagoa"
+
 msgid "left/right"
 msgstr "ezkerra/eskuina"
 
 msgid "lottes crt"
 msgstr "lottes crt"
+
+msgid "maximum"
+msgstr "gehienezkoa"
+
+msgid "medium"
+msgstr "ertaina"
+
+msgid "minimum"
+msgstr "gutxienekoa"
 
 msgid "nearest"
 msgstr "hurbilena"
@@ -4202,6 +4850,12 @@ msgstr "royaltea"
 
 msgid "scanlines"
 msgstr "eskaner-lerroak"
+
+msgid "small"
+msgstr "txikia"
+
+msgid "smaller"
+msgstr "txikiagoa"
 
 msgid "standard"
 msgstr "estandarra"

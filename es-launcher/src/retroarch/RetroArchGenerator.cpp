@@ -713,7 +713,7 @@ namespace es::launcher::retroarch
 
 		for (std::string& arg : coreProfile(ctx.core).commandArguments(ctx))
 			cmd.argv.push_back(std::move(arg));
-		cmd.argv.push_back(ctx.game.rom.string());
+		cmd.argv.push_back(coreProfile(ctx.core).romArgument(ctx).string());
 		return cmd;
 	}
 }

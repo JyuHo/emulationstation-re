@@ -3,6 +3,12 @@
 # Compiled together with lang/<lang>/LC_MESSAGES/emulationstation2.po, whose header (UTF-8) applies:
 # this file has none, msgfmt refuses a header defined twice.
 
+msgid " 3.54 MHz"
+msgstr " 3.54 MHz"
+
+msgid " 7.09 MHz (A500 speed)"
+msgstr "7.09 MHz (kecepatan A500)"
+
 msgid "(FDS) AUTOMATICALLY LOAD DISK SIDE A"
 msgstr "(FDS) OTOMATIS MUAT DISK SISI A"
 
@@ -38,6 +44,9 @@ msgstr "1 thread / Utas"
 
 msgid "1% (Default)"
 msgstr "1% (Default / Bawaan)"
+
+msgid "1.0 (240p)"
+msgstr "1.0 (240p)"
 
 msgid "1.0x (12.50Mhz)"
 msgstr "1.0x (12.50Mhz)"
@@ -96,6 +105,9 @@ msgstr "10 detik"
 msgid "100% (Default)"
 msgstr "100% (Default / Bawaan)"
 
+msgid "1024kB"
+msgstr "1024kB"
+
 msgid "10th"
 msgstr "ke-10"
 
@@ -108,14 +120,23 @@ msgstr "120fps"
 msgid "1280x720 (Default)"
 msgstr "1280x720 (Default / Bawaan)"
 
+msgid "128MB"
+msgstr "128MB"
+
 msgid "128MiB"
 msgstr "128MiB"
+
+msgid "128kB (1700)"
+msgstr "128kB (1700)"
 
 msgid "12th"
 msgstr "ke-12"
 
 msgid "13th"
 msgstr "ke-13"
+
+msgid "14.18 MHz (A1200 speed)"
+msgstr "14.18 MHz (kecepatan A1200)"
 
 msgid "144fps"
 msgstr "144fps"
@@ -138,6 +159,9 @@ msgstr "15s"
 msgid "15th"
 msgstr "ke-15"
 
+msgid "16384kB"
+msgstr "16384kB"
+
 msgid "165fps"
 msgstr "165fps"
 
@@ -146,6 +170,9 @@ msgstr "16:9 (Default / Bawaan)"
 
 msgid "16:9 RENDERING RESOLUTION"
 msgstr "16：9 RESOLUSI RENDERING"
+
+msgid "16MB"
+msgstr "16MB"
 
 msgid "16th"
 msgstr "ke-16"
@@ -171,6 +198,9 @@ msgstr "ke-19"
 msgid "1st"
 msgstr "ke-1"
 
+msgid "1st Joystick (2 Axes, 2 Btns)"
+msgstr "Joystick Utama (2 Sumbu, 2 Tombol)"
+
 msgid "1x (720p/1080p)"
 msgstr "1x (720p/1080p)"
 
@@ -191,6 +221,9 @@ msgstr "2 detik"
 
 msgid "2 threads"
 msgstr "2 threads"
+
+msgid "2.0 (480p)"
+msgstr "2.0 (480p)"
 
 msgid "2.0x (25.00Mhz)"
 msgstr "2.0x (25.00Mhz)"
@@ -219,6 +252,9 @@ msgstr "200ms"
 msgid "2048MB"
 msgstr "2048MB"
 
+msgid "2048kB"
+msgstr "2048kB"
+
 msgid "20ms"
 msgstr "20ms"
 
@@ -227,6 +263,9 @@ msgstr "ke-20"
 
 msgid "21st"
 msgstr "ke-21"
+
+msgid "224MB"
+msgstr "224MB"
 
 msgid "22nd"
 msgstr "ke-22"
@@ -240,11 +279,17 @@ msgstr "ke-23"
 msgid "24-bit, disables dithering."
 msgstr "24-bit, menonaktifkan dithering."
 
+msgid "24MB"
+msgstr "24MB"
+
 msgid "24MB (Default)"
 msgstr "24MB (Default / Bawaan)"
 
 msgid "24th"
 msgstr "ke-24"
+
+msgid "256kB (1764)"
+msgstr "256kB (1764)"
 
 msgid "25th"
 msgstr "ke-25"
@@ -258,17 +303,32 @@ msgstr "270 Derajat"
 msgid "27th"
 msgstr "ke-27"
 
+msgid "28.37 MHz"
+msgstr "28.37 MHz"
+
+msgid "286, 12.5MHz (2750 cps)"
+msgstr "286, 12.5MHz (2750 cps)"
+
+msgid "286, 6MHz (1320 cps)"
+msgstr "286, 6MHz (1320 cps)"
+
 msgid "28th"
 msgstr "ke-28"
 
 msgid "29th"
 msgstr "ke-29"
 
+msgid "2P GAMEPAD MAPPING (KEYRAH)"
+msgstr "Pengaturan Tombol Gamepad Pemain 2 (Keyrah)"
+
 msgid "2X"
 msgstr "2X"
 
 msgid "2nd"
 msgstr "ke-2"
+
+msgid "2nd Joystick (2 Axes, 2 Btns)"
+msgstr "Joystick Kedua (2 Sumbu, 2 Tombol)"
 
 msgid "2x (1440p/2160p)"
 msgstr "2x (1440p/2160p)"
@@ -321,17 +381,35 @@ msgstr "ke-30"
 msgid "31st"
 msgstr "ke-31"
 
+msgid "32MB"
+msgstr "32MB"
+
 msgid "32x MSAA"
 msgstr "32x MSAA"
 
 msgid "32x SSAA"
 msgstr "32x SSAA"
 
+msgid "35.46 MHz"
+msgstr "35.46 MHz"
+
 msgid "3840MB"
 msgstr "3840MB"
 
 msgid "384MB (Default)"
 msgstr "384MB (Default / Bawaan)"
+
+msgid "386 (prefetch)"
+msgstr "386（prefetch）"
+
+msgid "386 (slow)"
+msgstr "386 (Lamban)"
+
+msgid "386, 20MHz (4720 cps)"
+msgstr "386, 20MHz (4720 cps)"
+
+msgid "386DX, 33MHz (7800 cps)"
+msgstr "386DX, 33MHz (7800 cps)"
 
 msgid "3rd"
 msgstr "ke-3"
@@ -357,11 +435,26 @@ msgstr "4.5x (1440x1080)"
 msgid "4096MB"
 msgstr "4096MB"
 
+msgid "4096kB"
+msgstr "4096kB"
+
+msgid "42.56 MHz"
+msgstr "42.56 MHz"
+
 msgid "45s"
 msgstr "45s"
 
 msgid "480x272 (Default)"
 msgstr "480x272 (Default / Bawaan)"
+
+msgid "486 (slow)"
+msgstr "486 (lamban)"
+
+msgid "486DX, 33MHz (13400 cps)"
+msgstr "486DX, 33MHz (13400 cps)"
+
+msgid "486DX2, 66MHz (26800 cps)"
+msgstr "486DX2, 66MHz (26800 cps)"
 
 msgid "48MB"
 msgstr "48MB"
@@ -374,6 +467,9 @@ msgstr "4:3 RESOLUSI RENDERING "
 
 msgid "4K"
 msgstr "4K"
+
+msgid "4MB"
+msgstr "4MB"
 
 msgid "4X"
 msgstr "4X"
@@ -417,6 +513,12 @@ msgstr "5% (Default / Bawaan)"
 msgid "5120MB"
 msgstr "5120MB"
 
+msgid "512kB (1750)"
+msgstr "512kB (1750)"
+
+msgid "56.75 MHz"
+msgstr "56.75 MHz"
+
 msgid "5th"
 msgstr "ke-5"
 
@@ -440,6 +542,9 @@ msgstr "60s"
 
 msgid "6144MB"
 msgstr "6144MB"
+
+msgid "64MB"
+msgstr "64MB"
 
 msgid "64MiB (Default)"
 msgstr "64MiB (Default / Bawaan)"
@@ -479,6 +584,15 @@ msgstr "7x Native / Asli (~2520p)"
 
 msgid "7x native (1792 x 1344)"
 msgstr "7x native / asli (1792 x 1344)"
+
+msgid "8086/8088, 4.77MHz (315 cps)"
+msgstr "8086/8088, 4.77MHz (315 cps)"
+
+msgid "8192kB"
+msgstr "8192kB"
+
+msgid "8MB"
+msgstr "8MB"
 
 msgid "8X"
 msgstr "8X"
@@ -522,6 +636,21 @@ msgstr "ke-9"
 msgid "9x 4K (2880x2160)"
 msgstr "9x 4K (2880x2160)"
 
+msgid "A1200 (2MB Chip + 8MB Fast)"
+msgstr "A1200 (2MB Chip + 8MB Fast / Cepat)"
+
+msgid "A4000/040 (2MB Chip + 8MB Fast)"
+msgstr "A4000/040 (2MB Chip + 8MB Fast / Cepat)"
+
+msgid "A500 (512KB Chip + 512KB Slow)"
+msgstr "A500 (512KB Chip + 512KB Slow / Lamban)"
+
+msgid "A500+ (1MB Chip)"
+msgstr "A500+ (1MB Chip)"
+
+msgid "A600 (2MB Chip + 8MB Fast)"
+msgstr "A600 (2MB Chip + 8MB Fast / Cepat)"
+
 msgid "ACTIVE INPUT DEVICES FIX"
 msgstr "PERBAIKAN PERANGKAT INPUT-(MASUKAN) AKTIF"
 
@@ -543,11 +672,23 @@ msgstr "ALSA"
 msgid "ALSAThread"
 msgstr "ALSAThread"
 
+msgid "AMD Athlon, 1.2GHz (1000000 cps)"
+msgstr "AMD Athlon, 1.2GHz (1000000 cps)"
+
 msgid "AMD FidelityFX Super Resolution"
 msgstr "AMD FidelityFX Super Resolution"
 
+msgid "AMIGA MODEL"
+msgstr "MODEL AMIGA"
+
 msgid "ANAGLYPH PRESET (3D)"
 msgstr "ANAGLYPH PRESET (3D)"
+
+msgid "ANALOG DEADZONE"
+msgstr "ZONA MATI ANALOG"
+
+msgid "ANALOG JOYSTICK DEADZONE"
+msgstr "ZONA-MATI ANALOG JOYSTICK"
 
 msgid "ANISOTROPIC FILTERING"
 msgstr "PENYARINGAN ANISTROPIC"
@@ -624,8 +765,17 @@ msgstr "Mengatur rasio layar untuk video/film di dalam game."
 msgid "Adjusts the positions of the screens."
 msgstr "Menyesuaikan posisi pada layar."
 
+msgid "AdvMame"
+msgstr "AdvMame (Nama emulator)"
+
+msgid "Affects efficiency/stability."
+msgstr "Mempengaruhi efisiensi / stabilitas."
+
 msgid "Affects how the emulated screens are scaled. OpenGL renderer only."
 msgstr "Mempengaruhi cara layar emulasi diskalakan. Hanya renderer OpenGL."
+
+msgid "Affects mouse speed globally."
+msgstr "Mempengaruhi kecepatan mouse secara global."
 
 msgid "After NMI"
 msgstr "Sesudah NMI"
@@ -705,6 +855,9 @@ msgstr "Angrylion (Paling Kompatibel)"
 msgid "Applies the FXAA anti-aliasing algorithm to improve the visual quality of games."
 msgstr "Menerapkan algoritma FXAA (anti-aliasing) untuk menghaluskan tepian objekdan meningkatkan kualitas visual game."
 
+msgid "Apply a joy2key profile for the current game."
+msgstr "Terapkan profil joy2key untuk game saat ini."
+
 msgid "Apply a multiplier to the joystick's input to lower or increase responsiveness."
 msgstr "Gunakan nilai pengali pada input stik (joystick)untuk menurunkan atau menaikkan tingkat kemudahan respons."
 
@@ -771,14 +924,29 @@ msgstr "Kualitas Maximal Otomatis"
 msgid "Auto Standard (4:3 interlaced / 3:2 progressive)"
 msgstr "Standar Otomatis (4:3 interlaced / 3:2 progressive)"
 
+msgid "Auto zoom"
+msgstr "Zoom-(Perbesar) Otomatis"
+
+msgid "Auto-disable zoom"
+msgstr "Matikan Otomatis Zoom-(Pembesaran)"
+
 msgid "Autodetect"
 msgstr "Deteksi Otomatis"
+
+msgid "Autodetect (Compatible)"
+msgstr "Deteksi Otomatis (Kompatible)"
+
+msgid "Autodetect (by game name tag)"
+msgstr "Deteksi Otomatis (berdasarkan tag nama game)"
 
 msgid "Automatic"
 msgstr "Otomatis"
 
 msgid "Automatic ratio"
 msgstr "Rasio Layar Otomatis"
+
+msgid "Automatic switches region per file path tags"
+msgstr "Ganti region otomatis berdasarkan tag jalur file"
 
 msgid "Automatically loads and applies cheats on game start."
 msgstr "Memuat dan memasang cheat secara otomatis saat game dimulai."
@@ -791,6 +959,12 @@ msgstr "Hindari keharusan muat sisi A secara manual setiap saat."
 
 msgid "Azerbaijan"
 msgstr "Azerbaijan"
+
+msgid "B = Fire"
+msgstr "B = Tembak"
+
+msgid "B = Fire, A = Up"
+msgstr "B = Tembak, A = Atas"
 
 msgid "BILINEAR FILTERING"
 msgstr "PENYARINGAN BILINEAR"
@@ -815,6 +989,9 @@ msgstr "CAMPUR MODE RESOLUSI TINGGI"
 
 msgid "BLENDING ACCURACY"
 msgstr "Akurasi Pencampuran Warna (Blending)"
+
+msgid "BOOT ANIMATION FIRST"
+msgstr "ANIMASI BOOT TERLEBIH DAHULU"
 
 msgid "BT601_525/D65 (recommended for all US developed games)"
 msgstr "BT601_525/D65 (disarankan untuk semua game buatan AS)"
@@ -915,6 +1092,9 @@ msgstr "Bolivia"
 msgid "Both"
 msgstr "Kedua-nya"
 
+msgid "Both Joysticks (4 Axes, 4 Btns)"
+msgstr "Joysticks Kedua-nya(4 Sumbu, 4 Tombol)"
+
 msgid "Bottom (Default)"
 msgstr "Bawah (Default / Bawaan)"
 
@@ -948,11 +1128,47 @@ msgstr "Buffered rendering"
 msgid "Bulgaria"
 msgstr "Bulgaria"
 
+msgid "Button Options"
+msgstr "Tombol Pilihan"
+
+msgid "C64 Games System PAL"
+msgstr "Permian C64 System PAL"
+
+msgid "C64 Japanese NTSC"
+msgstr "C64 Jepang NTSC"
+
+msgid "C64 NTSC"
+msgstr "C64 NTSC"
+
+msgid "C64 NTSC Automatic"
+msgstr "C64 NTSC Otomatis"
+
+msgid "C64 PAL"
+msgstr "C64 PAL"
+
+msgid "C64 PAL Automatic"
+msgstr "C64 PAL Otomatis"
+
 msgid "CD ADD-ON"
 msgstr "CD ADD-ON"
 
+msgid "CD TURBO SPEED"
+msgstr "KECEPATAN TURBO CD"
+
 msgid "CD-DA VOLUME"
 msgstr "VOLUME CD-DA"
+
+msgid "CD32 (2MB Chip + 8MB Fast)"
+msgstr "CD32 (2MB Chip + 8MB Cepat)"
+
+msgid "CD32 Default (2MB Chip)"
+msgstr "CD32 Standar (2MB Chip)"
+
+msgid "CD32 Pad"
+msgstr "Pad CD32"
+
+msgid "CDTV (1MB Chip)"
+msgstr "CDTV (1MB Chip)"
 
 msgid "CDZ"
 msgstr "CDZ"
@@ -962,6 +1178,9 @@ msgstr "CDZ MAME"
 
 msgid "CDZ Universe 3.3"
 msgstr "CDZ Universe BIOS 3.3"
+
+msgid "CGA"
+msgstr "CGA"
 
 msgid "CHEATS"
 msgstr "Cheat / Kode Curang"
@@ -1029,6 +1248,9 @@ msgstr "Pengaturan Tombol - Stik 4"
 msgid "CONTROLLER COMBINATION"
 msgstr "KOMBINASI KONTROLER"
 
+msgid "CONTROLLER PORT"
+msgstr "PORT KONTROLER"
+
 msgid "CONTROLLER TYPE"
 msgstr "TIPE KONTROLER"
 
@@ -1047,14 +1269,26 @@ msgstr "CPU / Prosesor"
 msgid "CPU CLOCK"
 msgstr "CPU CLOCK"
 
+msgid "CPU COMPATIBILITY"
+msgstr "KOMPATIBLE CPU"
+
 msgid "CPU CORE"
 msgstr "CORE CPU"
+
+msgid "CPU CORE METHOD"
+msgstr "METODE CORE CPU"
 
 msgid "CPU DYNAREC (SPEED UP)"
 msgstr "CPU DYNAREC (PERCEPAT)"
 
 msgid "CPU EXECUTION MODE"
 msgstr "MODE EKSEKUSI CPU"
+
+msgid "CPU SPEED"
+msgstr "KECEPATAN CPU"
+
+msgid "CPU TYPE"
+msgstr "TIPE CPU"
 
 msgid "CPU-GPU latency limit. Lower values improve latency but may reduce performance."
 msgstr "Batas jeda (latensi) CPU-GPU. Nilai lebih rendah mengurangi jeda tomboltetapi bisa menurunkan performa kelancaran."
@@ -1094,6 +1328,9 @@ msgstr "Dapat dipakai untuk simulasi warna tampilan khusus"
 
 msgid "Can change the language of some games."
 msgstr "Dapat Mengubah Bahasa dari beberapa game"
+
+msgid "Can fix drifting joysticks in games."
+msgstr "Dapat memperbaiki drifting joystick dalam games"
 
 msgid "Can fix slowdown. Only works on some drivers."
 msgstr "Dapat memperbaiki perlambatan, hanya bekerja pada beberapa drivers"
@@ -1146,6 +1383,9 @@ msgstr "Cina"
 msgid "Chinese"
 msgstr "Cina"
 
+msgid "Chinese (Mandarin)"
+msgstr "Bahasa Tionghoa (Mandarin)"
+
 msgid "Choose console language. Not all games may support the language choice."
 msgstr "Pilih bahasa konsol. Tidak semua game mendukung pilihan bahasa ini."
 
@@ -1190,6 +1430,12 @@ msgstr "Pilih perpustakaan API yang akan di pakai"
 
 msgid "Choose which graphics API library to use. Vulkan may not work for every core."
 msgstr "Pilih perpustakaan grafis API untuk dipakaiVulkan mungkin tidak akan berjalan disetiap cores"
+
+msgid "Choose your preferred language."
+msgstr "Pilih bahasa yang Anda inginkan."
+
+msgid "Choose your preferred renderer."
+msgstr "Pilih perupa (renderer) yang diinginkan."
 
 msgid "Classic Controller"
 msgstr "Kontroler Klasik"
@@ -1272,6 +1518,15 @@ msgstr "Batas waktu kursor hilang (dalam detik) saat menggunakan Mode Kursor - H
 msgid "Custom"
 msgstr "Kostum"
 
+msgid "Custom Keyboard Binds (best for Pad2Key)"
+msgstr "Kostum Keyboard Binds (bagus untuk Pad2Key)"
+
+msgid "Cycle-exact"
+msgstr "Cycle-exact"
+
+msgid "Czech"
+msgstr "Ceko"
+
 msgid "Czech Republic"
 msgstr "Republik Ceko"
 
@@ -1295,6 +1550,9 @@ msgstr "NONAKTIFKAN PAKET RAM EKSPANSI 4MB"
 
 msgid "DISABLE CULLING"
 msgstr "MATIKAN CULLING"
+
+msgid "DISABLE EMULATOR JOYSTICK"
+msgstr "NONAKTIFKAN JOYSTICK EMULATOR"
 
 msgid "DISABLE INTERLACING"
 msgstr "Nonaktifkan Interlacing"
@@ -1374,6 +1632,9 @@ msgstr "Standar"
 msgid "Default Only"
 msgstr "Hanya Default"
 
+msgid "Default by model"
+msgstr "Standar berdasarkan model"
+
 msgid "Degree in which 3D graphics are scaled up. OpenGL renderer only."
 msgstr "Tingkat peningkatan ukuran (scale up) grafis 3D. Hanya untuk perupa (renderer) OpenGL."
 
@@ -1428,6 +1689,9 @@ msgstr "Dimatikan bila memakai pengaturan shader atau saat tampilan keluaran gam
 msgid "Display on screen information like savestate, config warning, etc."
 msgstr "Tampilkan informasi di layar seperti status penyimpanan (savestate), peringatan konfigurasi, dll."
 
+msgid "Does not affect the on-screen keyboard."
+msgstr "Tidak memengaruhi keyboard di layar."
+
 msgid "Dominican Republic"
 msgstr "Republik Dominika"
 
@@ -1436,6 +1700,9 @@ msgstr "Jangan Alihkan / Jangan Ganti"
 
 msgid "Dot"
 msgstr "Titik"
+
+msgid "DotMatrix"
+msgstr "Matriks Titik (Dot Matrix)"
 
 msgid "Double buffering"
 msgstr "Double buffering"
@@ -1458,14 +1725,26 @@ msgstr "Selama bermain game, tekan Hotkey + R1 untuk menerjemahkan teks di layar
 msgid "Dutch"
 msgstr "Dutch (Beland)"
 
+msgid "Dynamic (fast)"
+msgstr "Dinamis（Cepat）"
+
 msgid "Dynamic Interpreter"
 msgstr "Penerjemah Dinamis"
 
 msgid "Dynarec (Fastest)"
 msgstr "Dynarec (Cepat)"
 
+msgid "EGA"
+msgstr "EGA"
+
 msgid "EMULATE WIIMOTE"
 msgstr "EMULASI WIIMOTE"
+
+msgid "EMULATED CPU PERFORMANCE"
+msgstr "DICONTOH PERFORMA CPU"
+
+msgid "EMULATED RAM SIZE"
+msgstr "MENIRU UKURAN RAM"
 
 msgid "EMULATION"
 msgstr "Emulasi"
@@ -1484,6 +1763,9 @@ msgstr "AKTIFKAN CHEATS"
 
 msgid "ENABLE GAMEPAD VIEW"
 msgstr "AKTFIKAN PENGLIHATAN GAMEPAD"
+
+msgid "ENABLE GRAVIS ULTRASOUND"
+msgstr "Aktifkan Gravis Ultrasound (Kartu suara jadul)"
 
 msgid "ENABLE NOTIFICATIONS"
 msgstr "AKTIFKAN NOTIFIKA SI"
@@ -1512,6 +1794,9 @@ msgstr "TAMBAH LAYAR"
 msgid "Ecuador"
 msgstr "Ekuador"
 
+msgid "Edge (sharper filet)"
+msgstr "Tepi (Filter Lebih Tajam)"
+
 msgid "Egypt"
 msgstr "Mesir"
 
@@ -1536,6 +1821,9 @@ msgstr "Aktifkan hamparan performa Cemu's"
 msgid "Enable Gamecube boot animation and BIOS access (requires IPL.bin BIOS in appropriate user directory)."
 msgstr "Aktifkan animasi boot Gamecube dan akses BIOS(memerlukan berkas BIOS IPL.bin di direktori pengguna yang sesuai)."
 
+msgid "Enable Gravis Utrasound emulation. Ensure the ULTRASND folder is in the root of your <game>.pc rom folder."
+msgstr "Aktifkan emulasi Gravis Ultrasound. Pastikan folder ULTRASNDberada di dalam folder utama (root) rom .pc Anda."
+
 msgid "Enable MelonDS to display over two screens. Some related screen options will be ignored."
 msgstr "Aktifkan MelonDS untuk menampilkan game di dua layar.Beberapa opsi layar terkait akan diabaikan."
 
@@ -1556,6 +1844,9 @@ msgstr "Mengaktifkan tampilan corsair (bidik) dalam game untuk pemain yang dipil
 
 msgid "Enable gamepad view for games that have interaction across two screens. Use Hotkey+R2 to switch screens."
 msgstr "Aktifkan tampilan gamepad untuk game yang memiliki interaksi di dua layar.Gunakan Hotkey+R2 untuk berganti layar."
+
+msgid "Enable launching pre-installed WHDLoad installs."
+msgstr "Aktifkan meluncurkan pemasangan WHDLoad sebelum memasang"
 
 msgid "Enable notifications of cache, controller events etc."
 msgstr "Aktifkan notifikasi cache, peristiwa pengontrol, dll."
@@ -1671,6 +1962,9 @@ msgstr "Meningkatkan. hapus delapan sprites tiap-batas baris"
 msgid "Enhancement. Remove the eighty sprites per line limit."
 msgstr "Meningkatkan. Hapus delapan puluh sprite per batas baris."
 
+msgid "Enhancement. Remove the four sprites per line limit."
+msgstr "Meningkatkan: Hapus 4 sprite per batas baris"
+
 msgid "Enhancement. Remove the sixteen sprites per line limit."
 msgstr "Meningkatkan, hapus enam belas sprites tiap batas baris"
 
@@ -1716,6 +2010,9 @@ msgstr "Eropa"
 msgid "Even"
 msgstr "Meskipun"
 
+msgid "Even Pixels"
+msgstr "Piksel Sejajar / Genap (Even Pixels)"
+
 msgid "Exclusive Ubershaders"
 msgstr "Ubershaders Langsung"
 
@@ -1739,6 +2036,9 @@ msgstr "FIFO Santai (FIFO Relaxed)"
 
 msgid "FIRMWARE SETTINGS"
 msgstr "Pengaturan Firmware"
+
+msgid "FLOPPY TURBO SPEED"
+msgstr "FLOPPY KECEPATAN TURBO"
 
 msgid "FM SYNTHESIZER"
 msgstr "Sintetisator FM (FM Synthesizer)"
@@ -1800,6 +2100,12 @@ msgstr "Memenuhi layar tanpa memedulikan rasio aspek asli.Tidak berfungsi jika P
 msgid "Finland"
 msgstr "Finlandia"
 
+msgid "Fit 4:3 Aspect Ratio"
+msgstr "Sesuai Rasio Aspek 4:3"
+
+msgid "Fit resolution scale"
+msgstr "Sesuaikan skala resolusi"
+
 msgid "Fit to Window / Fullscreen"
 msgstr "Sesuaikan dengan Jendela / Layar Penuh"
 
@@ -1814,6 +2120,9 @@ msgstr "Perbaiki garis tekstur saat meningkatkan skala."
 
 msgid "Fixes a possible bug with multiple controllers detection."
 msgstr "Memperbaiki kemungkinan bug dalam deteksi pengontrol"
+
+msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
+msgstr "Flight Stick (3 Sumbu, 4 Tombol, 1 Hat)"
 
 msgid "For Gyro-enabled games (bound to left analog stick)"
 msgstr "Aktifkan untuk permainan Gyro (terikat pada stik analog kiri)"
@@ -1839,6 +2148,9 @@ msgstr "Paksa 32-bit"
 msgid "Force 4:3"
 msgstr "Dorong 4:3"
 
+msgid "Force a specific model and prevent tags detection."
+msgstr "Paksa sebuah mode spesifik dan mencegak deteksi tags"
+
 msgid "Force progressive render / scan."
 msgstr "Paksa render / pemindaian progresif (tanpa garis kedip)."
 
@@ -1850,6 +2162,9 @@ msgstr "Prancis"
 
 msgid "French"
 msgstr "Prancis"
+
+msgid "Frontend MIDI driver"
+msgstr "Driver MIDI Pengelola (Frontend)"
 
 msgid "Full (Hash Cache)"
 msgstr "Penuh (Hash Cache)"
@@ -1901,6 +2216,12 @@ msgstr "TIPE GAMECUBRE - PORT 3"
 
 msgid "GAMECUBE PORT 4 TYPE"
 msgstr "TIPE GAMECUBRE - PORT 4"
+
+msgid "GAMEPAD AUTOMATIC MAPPING"
+msgstr "PEMETAAN GAMEPAD OTOMATIS"
+
+msgid "GAMEPAD CURSOR SPEED"
+msgstr "KECEPATAN KURSOR GAMEPAD"
 
 msgid "GB - Black and White"
 msgstr "GB - Hitam and Putih"
@@ -1977,11 +2298,17 @@ msgstr "Grafis"
 msgid "GRAPHICS API"
 msgstr "GRAFIS API"
 
+msgid "GRAPHICS CHIP TYPE"
+msgstr "TIPE CHIP GRAFIS"
+
 msgid "GRAPHICS PLUGIN"
 msgstr "Plugin Grafis"
 
 msgid "Game default"
 msgstr "Standar permainan"
+
+msgid "GameBlaster"
+msgstr "GameBlaster (Kartu suara jadul)"
 
 msgid "GameCube Adapter for Wii U"
 msgstr "Adaptor GameCUbe untuk Wii u"
@@ -2000,6 +2327,9 @@ msgstr "Permainan dapat berjalan lebih cepat/lebih lambat dari biasanya jika wil
 
 msgid "Gaussian"
 msgstr "Gaussian"
+
+msgid "Generic Keyboard Binds"
+msgstr "Generic Keyboard Binds"
 
 msgid "Genesis/Megadrive Style"
 msgstr "Gaya Genesis/Megadrive"
@@ -2021,6 +2351,9 @@ msgstr "Glide64 (Nama plugin grafis N64)"
 
 msgid "Gln64"
 msgstr "Gln64 (Nama plugin grafis N64)"
+
+msgid "Gravis GamePad (D-pad + 4 Btns)"
+msgstr "Gravis GamePad (D-pad + 4 Tombol)"
 
 msgid "Gray"
 msgstr "Abu-abu"
@@ -2049,17 +2382,38 @@ msgstr "ARTEFAK HI-RES"
 msgid "HLE (Fastest)"
 msgstr "HLE (Cepat)"
 
+msgid "HQ (bilinear filter)"
+msgstr "HQ / Kualitas Tinggi (Filter Bilinear)"
+
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Peretasan. meningkatkan kebanyakan games PAL' kecepatan dengan 17%"
+
+msgid "Hebrew"
+msgstr "Bahasa Ibrani"
+
+msgid "Help games which are too quick or that have bugs."
+msgstr "Bantu game yang terlalu cepat atau yang memiliki bug."
 
 msgid "Helps with texture corruption and depth issues on AMD GPUs. Can also help Intel GPUs in some cases."
 msgstr "Membantu mengatasi tekstur rusak dan masalah kedalaman gambar pada GPU AMD.Dalam beberapa kasus, ini juga bisa membantu GPU Intel."
 
+msgid "Hercules"
+msgstr "Hercules"
+
 msgid "Hermite"
 msgstr "Hermite"
 
+msgid "Hides borders on many games. Some games use the borders."
+msgstr "Sembunyikan batas untuk banyak game. Beberapa game menggunakan borders"
+
+msgid "Hides borders on many games. Some games used the borders."
+msgstr "Sembunyikan borders pada kebanyakan game. Beberapa game menggunakan borders."
+
 msgid "High"
 msgstr "Tinggi"
+
+msgid "High 720p"
+msgstr "Tinggi 720p"
 
 msgid "Honduras"
 msgstr "Honduras"
@@ -2130,6 +2484,9 @@ msgstr "Jika game berjalan di 30Hz, PPSSPP akan tetap mengirimkan 60 frame ke mo
 msgid "If nothing is specified, will use ZTranslate by default."
 msgstr "Jika tidak ada yang ditentukan, ZTranslate akan digunakan secara default."
 
+msgid "Ignored with 'Cycle-exact'."
+msgstr "Abaikan dengan 'Cycle-exact'."
+
 msgid "Improve audio accuracy (experimental)."
 msgstr "Tingkatkan Akurasi Audio (Dalam Uji Coba)"
 
@@ -2159,6 +2516,12 @@ msgstr "India"
 
 msgid "Indonesia"
 msgstr "Indonesia"
+
+msgid "Inserts CD during boot animation prevent loading fail."
+msgstr "Memasukkan CD selama animasi booting mencegah pemuatan gagal."
+
+msgid "Inserts CD during boot animation to prevent loading fail."
+msgstr "Masukkan CD selama animasi boot untuk mencegah pemuatan gagal."
 
 msgid "Interpreter (Slowest)"
 msgstr "Terjemahkan (Lamban)"
@@ -2204,6 +2567,12 @@ msgstr "Sensitivitas Stik"
 
 msgid "JOYSTICK TO DPAD"
 msgstr "JOYSTICK KE DPAD"
+
+msgid "JUMP ON A"
+msgstr "LOMPAT KE A"
+
+msgid "JUMP ON B"
+msgstr "LOMPAT KE B"
 
 msgid "Jamaica"
 msgstr "Jamaika"
@@ -2262,6 +2631,9 @@ msgstr "Juni"
 msgid "Justifier"
 msgstr "Justifier (Jenis pistol mainan/lightgun jadul)"
 
+msgid "KEYBOARD PASSTHROUGH"
+msgstr "MELEWATI KEYBOARD"
+
 msgid "Kazakhstan"
 msgstr "Kazakhstan"
 
@@ -2271,11 +2643,23 @@ msgstr "Kenya"
 msgid "Keyboard"
 msgstr "Keyboard"
 
+msgid "Keyboard + Mouse (Left An.)"
+msgstr "Keyboard + Mouse (Kiri An.)"
+
+msgid "Keyboard + Mouse (Right An.)"
+msgstr "Keyboard + Mouse (Kanan An.)"
+
 msgid "Keyboard passthrough"
 msgstr "Melewati Keyboard"
 
 msgid "Keyboard shortcuts unavailable if passing through the keyboard."
 msgstr "Pintasan keyboard tidak tersedia jika melewati keyboard."
+
+msgid "Keypad to joyport mappings for 2 players."
+msgstr "Keypad untuk pemetaan joyport untuk 2 pemain."
+
+msgid "Koalapad"
+msgstr "Koalapad"
 
 msgid "Konami Justifier"
 msgstr "Konami Justifie"
@@ -2409,6 +2793,9 @@ msgstr "Alamat dan port lokal untuk menerima paket data.Biarkan kosong jika Anda
 msgid "Low"
 msgstr "Rendah"
 
+msgid "Low 360p"
+msgstr "Rendah 360p"
+
 msgid "Lower values reduce audio latency and improve performance, but can cause audio issues."
 msgstr "Nilai yang lebih rendah mengurangi latensi audio dan meningkatkan performa, tetapi dapat menyebabkan masalah audio."
 
@@ -2430,6 +2817,9 @@ msgstr "MAME (YM2612)"
 msgid "MANUAL TEXTURE SAMPLING"
 msgstr "Pengambilan Sampel Tekstur Manual"
 
+msgid "MAX (as many as possible)"
+msgstr "MAX（sebanyak mungkin bila mungkin）"
+
 msgid "MAX POWER SAVING CPU-PREEMPTIONS"
 msgstr "Penghematan Daya Maksimal Interupsi CPU"
 
@@ -2439,11 +2829,23 @@ msgstr "MODE KARTU MEMORI"
 msgid "MEMORY MANAGEMENT UNIT"
 msgstr "UNIT PENGELOLA MEMORI"
 
+msgid "MIDI OUTPUT"
+msgstr "Output MIDI (Format suara)"
+
 msgid "MIPMAPPING"
 msgstr "Mipmapping (Optimasi tekstur jarak jauh)"
 
+msgid "MODEL TYPE"
+msgstr "TIPE MODEL"
+
 msgid "MOUNT CACHE"
 msgstr "Pasang Cache (Mount Cache)"
+
+msgid "MOUSE SPEED"
+msgstr "KECEPATAN MOUSE"
+
+msgid "MSX2"
+msgstr "MSX2"
 
 msgid "MULTITAP"
 msgstr "MULTITAP"
@@ -2457,6 +2859,12 @@ msgstr "Makau"
 msgid "Magnum FBX"
 msgstr "Magnum FBX (Jenis skema warna/filter)"
 
+msgid "Makes second fire button press up instead."
+msgstr "Alternatif untuk mengaktifkan tombol kedua"
+
+msgid "Makes the blue button press up instead."
+msgstr "Membuat tombol biru ditekan sebagai gantinya."
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "Membuat pola bintik warna (dither) menjadi tidak terlalu terlihat pada resolusi tinggi."
 
@@ -2468,6 +2876,12 @@ msgstr "Maladewa"
 
 msgid "Manually activate the adapter for supported games."
 msgstr "Aktifkan adapter secara manual untuk game yang didukung."
+
+msgid "Manually define which resolution to use.&#x0a;Auto defaults to High and switches to Super-High when needed."
+msgstr "Jelaskan secara manual resolusi mana yang akan digunakan, Standar otomatis ke tinggi danberalih ke super tinggi ketika di-butuhkan"
+
+msgid "Manually set cycles per second. Use with caution."
+msgstr "Atur siklus per detik secara manual. Gunakan dengan hati-hati."
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Peta kontroler anda untuk emulasi Wiimote"
@@ -2556,11 +2970,20 @@ msgstr "Monochrome (Blargg)"
 msgid "More accurate emulation, but slower."
 msgstr "Emulasi akurasi lebih akurat, tapi lamban"
 
+msgid "More compatible"
+msgstr "Lebih Kompatible"
+
 msgid "Morocco"
 msgstr "Maroko"
 
+msgid "Most games use port 2, some use port 1."
+msgstr "kebanyakan games menggunakan port 2, beberapa menggunakan port 1."
+
 msgid "Mouse"
 msgstr "Mouse"
+
+msgid "Mouse (1351)"
+msgstr "Mouse (1351)"
 
 msgid "Mouse sensitivity for paddles. Core default (10)."
 msgstr "Sensitivitas mouse untuk kontroler paddle. Bawaan sistem (10)."
@@ -2621,6 +3044,12 @@ msgstr "NTSC (S-Video)"
 
 msgid "NTSC 240x480px 60Hz"
 msgstr "NTSC 240x480px 60Hz"
+
+msgid "NTSC 240x480px 60Hz (auto)"
+msgstr "NTSC 240x480px 60Hz (otomatis)"
+
+msgid "NTSC 492x262px"
+msgstr "NTSC 492x262px"
 
 msgid "NTSC ASPECT"
 msgstr "Rasio Layar NTSC"
@@ -2703,6 +3132,9 @@ msgstr "Tidak (Default / Bawaan)"
 msgid "No Buffer"
 msgstr "Tanpa Penyangga (No Buffer)"
 
+msgid "No EMS/XMS"
+msgstr "No EMS/XMS"
+
 msgid "No Limit"
 msgstr "Tanpa Batas"
 
@@ -2726,6 +3158,9 @@ msgstr "Normal"
 
 msgid "Normal (Default)"
 msgstr "Normal (Default / Bawaan)"
+
+msgid "Normal (interpreter)"
+msgstr "Normal（Penerjemah)"
 
 msgid "Norway"
 msgstr "Norwagia"
@@ -2802,6 +3237,12 @@ msgstr "Aktif (Khusus Vulkan)"
 msgid "On (forced)"
 msgstr "Hidup (Paksa)"
 
+msgid "On with game detection message"
+msgstr "Aktif dengan pendeteksi peta"
+
+msgid "On with rewind support"
+msgstr "Aktif dengan dukungan putar ulang"
+
 msgid "Only Overscan Area"
 msgstr "Hanya Area Overscan"
 
@@ -2828,6 +3269,12 @@ msgstr "OpenGL (Standar)"
 
 msgid "OpenGL (Overwrites Libretro API settings)"
 msgstr "OpenGL (Menimpa pengaturan API Libretro)"
+
+msgid "OpenGL with Shaders"
+msgstr "OpenGL dengan Shader"
+
+msgid "Optimized (auto)"
+msgstr "Optimalkan (otomatis)"
 
 msgid "Orange"
 msgstr "Jingga / Oranye"
@@ -2877,6 +3324,12 @@ msgstr "Sensitivitas Mouse Paddle"
 msgid "PAL 288x576px 50Hz"
 msgstr "PAL 288x576px 50Hz"
 
+msgid "PAL 288x576px 50Hz (auto)"
+msgstr "PAL 288x576px 50Hz (otomatis) (Format video TV wilayah Eropa/Asia)"
+
+msgid "PAL 576x312px"
+msgstr "PAL 576x312px"
+
 msgid "PAL ASPECT"
 msgstr "Rasio Layar PAL"
 
@@ -2901,6 +3354,9 @@ msgstr "Joypad PCE"
 msgid "PCE Mouse"
 msgstr "Mouse PCE"
 
+msgid "PCjr"
+msgstr "PCjr"
+
 msgid "PER-GAME SAVES"
 msgstr "PENYIMPANAN TIAP-GAME"
 
@@ -2915,6 +3371,9 @@ msgstr "Perpaduan Fosfor (Phosphor Blend) (Efek grafis TV tabung)"
 
 msgid "PHOSPHOR MODE"
 msgstr "MODE FOSFOR"
+
+msgid "PHYSICAL KEYBOARD LAYOUT"
+msgstr "TATA LETAK FISIK KEYBOARD"
 
 msgid "PLAYER 1 CROSSHAIR COLOR"
 msgstr "PLAYER 1 CROSSHAIR COLOR"
@@ -2943,6 +3402,9 @@ msgstr "Kontrol Paddle"
 msgid "Paddle can only be used in port 2."
 msgstr "Paddle hanya dapat digunakan dalam port 2"
 
+msgid "Paddles"
+msgstr "Pedal"
+
 msgid "Pakistan"
 msgstr "Pakistan"
 
@@ -2963,6 +3425,21 @@ msgstr "Paralel"
 
 msgid "Partial"
 msgstr "Sebagian / Parsial"
+
+msgid "Passes all physical keyboard events for Pad2Key."
+msgstr "Melewati semua aktivitas keyboard fisik untuk Pad2Key."
+
+msgid "Pentium (slow)"
+msgstr "Pentium (Lamban)"
+
+msgid "Pentium II, 300MHz (200000 cps)"
+msgstr "Pentium II, 300MHz (200000 cps)"
+
+msgid "Pentium III, 600MHz (500000 cps)"
+msgstr "Pentium III, 600MHz (500000 cps)"
+
+msgid "Pentium, 100MHz (77000 cps)"
+msgstr "Pentium, 100MHz (77000 cps)"
 
 msgid "Per 0.05s, 5s total (550MB|100MB)"
 msgstr "Setiap 0.05s, 5s total (550MB|100MB)"
@@ -2999,6 +3476,12 @@ msgstr "Filipina"
 
 msgid "Phosphor blend level. Core default (60%)."
 msgstr "Tingkat perpaduan fosfor (phosphor blend). Bawaan sistem (60%)."
+
+msgid "Pixel Perfect"
+msgstr "Piksel Sempurna (Pixel Perfect) (Rasio gambar pas dengan piksel asli)"
+
+msgid "Pixel-Perfect"
+msgstr "Piksel-Sempurna"
 
 msgid "PlayStation Mouse"
 msgstr "PlayStation Mouse"
@@ -3068,6 +3551,9 @@ msgstr "QUAD RENDERING"
 
 msgid "Qatar"
 msgstr "Qatar"
+
+msgid "RAM EXPANSION UNIT"
+msgstr "Unit Ekspansi RAM"
 
 msgid "RDP PLUGIN"
 msgstr "PLUGIN RDP"
@@ -3147,6 +3633,9 @@ msgstr "Mengurangi poligon yang goyang & tekstur yang melar/distorsi(Sering digu
 msgid "Relaxed (Fastest)"
 msgstr "Santai / Relaxed (Paling Cepat)"
 
+msgid "Removes loading but can add possible glitches/crashes."
+msgstr "menghapus pemuatan, tetapi dapat menyebabkan glitches/crashes."
+
 msgid "Replace meshed transparency by real transparency."
 msgstr "Mengganti transparansi model jaring (mesh/dithered) dengan transparansi asli yang mulus."
 
@@ -3171,11 +3660,17 @@ msgstr "Wii VC (Virtual Console) yang Dipulihkan"
 msgid "RetroPad (Default)"
 msgstr "RetroPad (Bawaan)"
 
+msgid "RetroPad Face Button Options."
+msgstr "Opsi Wajah Tombol RetroPad."
+
 msgid "Retropad"
 msgstr "Retropad"
 
 msgid "Retropad (Default)"
 msgstr "Retropad (Default / Bawaan)"
+
+msgid "Rewind can be CPU heavy."
+msgstr "Putar ulang dapat membuat CPU Berat"
 
 msgid "Rice"
 msgstr "Rice (Nama plugin grafis N64)"
@@ -3185,6 +3680,9 @@ msgstr "Stik Kanan"
 
 msgid "Right/Left"
 msgstr "Kanan/Kiri"
+
+msgid "Roland MT-32/CM-32L"
+msgstr "Roland MT-32/CM-32L (Modul suara/MIDI jadul)"
 
 msgid "Romania"
 msgstr "Rumania"
@@ -3216,8 +3714,17 @@ msgstr "S-Video (Jenis kabel video)"
 msgid "S-Video (Blargg)"
 msgstr "S-Video (Blargg)"
 
+msgid "SAVESTATE/REWIND"
+msgstr "SIMPAN/PUTAR-ULANG"
+
+msgid "SCALE FACTOR"
+msgstr "FAKTOR SKALA"
+
 msgid "SCALED DITHERING"
 msgstr " SIMULASI WARNA (DITHERING) BERSKALA"
+
+msgid "SCALER MODE"
+msgstr "MODE PENYESUAIAN SKALA (SCALER)"
 
 msgid "SCALING MODE"
 msgstr "MODE SKALA"
@@ -3330,6 +3837,9 @@ msgstr "LEVEL SENSOR SOLAR"
 msgid "SOUND QUALITY"
 msgstr "KUALITAS SUARA"
 
+msgid "SOUNDBLASTER TYPE"
+msgstr "JENIS SOUNDBLASTER (Kartu suara jadul)"
+
 msgid "SPECIAL CONTROL LAYOUTS"
 msgstr "TATA LETAK KONTROL"
 
@@ -3369,6 +3879,9 @@ msgstr "OVERCLOCK - SUPER-FX"
 msgid "SUPER GB BORDERS"
 msgstr "BORDERS SUPER GB"
 
+msgid "SVGA"
+msgstr "SVGA"
+
 msgid "SVideo (color bleeding only)"
 msgstr "SVideo (hanya warna berdarah)"
 
@@ -3399,14 +3912,29 @@ msgstr "ScaleForce"
 msgid "Scaled"
 msgstr "Berskala"
 
+msgid "Scanline Interpolation Filter (SAI)"
+msgstr "Filter Interpolasi Scanline (SAI)"
+
 msgid "Screen Resolution (Default)"
 msgstr "Filter Interpolasi Scanline (SAI) (Efek garis TV tabung)"
 
 msgid "Sega/Mega CD"
 msgstr "Sega/Mega CD"
 
+msgid "Select controller type for Amiga P1."
+msgstr "Pilih jenis pengontrol untuk Amiga P1."
+
+msgid "Select controller type for Amiga P2."
+msgstr "Pilih Tipe Kontroler untuk Amiga P2 "
+
 msgid "Select language will be used if 'Use Firmware Settings' is disabled or if firmware file was not found."
 msgstr "Bahasa terpilih akan digunakan jika opsi 'Gunakan Pengaturan Firmware' dimatikanatau jika berkas firmware tidak ditemukan."
+
+msgid "Select scale resolution of the game."
+msgstr "Pilih skala resolusi untuk game."
+
+msgid "Select the .SF2 SoundFont file, .ROM file, or interface used for MIDI output."
+msgstr "Pilih berkas SoundFont .SF2, berkas .ROM, atau antarmuka yang digunakan untuk output MIDI."
 
 msgid "Select the console video standard / display mode."
 msgstr "Pilih standar video konsol / mode tampilan layar."
@@ -3416,6 +3944,9 @@ msgstr "Pilih jenis masukan untuk menavigasi layar sentuh"
 
 msgid "Select the palette used to render colors."
 msgstr "Pilih palet warna yang digunakan untuk menampilkan visual."
+
+msgid "Select which Intel CPU to emulate."
+msgstr "Pilih CPU Intel mana yang akan ditiru"
 
 msgid "Separate Windows"
 msgstr "Jendela Terpisah"
@@ -3432,8 +3963,14 @@ msgstr "Atur Palet Warna untuk dipakai"
 msgid "Set the controller rumble strength if supported."
 msgstr "Atur kekuatan getaran kontroler bila didukung"
 
+msgid "Set the deadzone of the joystick analog sticks."
+msgstr "Atur zona-mati dari stick analog joystick"
+
 msgid "Set virtual joysticks gate size. Smaller increases sensitivity. Larger decreases it."
 msgstr "Atur ukuran batas gerak (gate size) stik virtual.Semakin kecil akan meningkatkan sensitivitas, semakin besar akan menguranginya."
+
+msgid "Sets the scaler filter mode when rendering."
+msgstr "Mengatur mode filter penyesuaian skala (scaler) saat merupa grafis."
 
 msgid "Shader Interpreter only"
 msgstr "Hanya Penerjemah Shader (Shader Interpreter)"
@@ -3464,6 +4001,9 @@ msgstr "Tampilkan pesan di layar / OSD (seperti proses simpan kartu memori, dll)
 
 msgid "Simple"
 msgstr "Sederhana"
+
+msgid "Simple (interpreter for old real-mode games)"
+msgstr "Sederhana (penerjemah untuk games real-mode lama)"
 
 msgid "Simplified Chinese"
 msgstr "Cina Sederhana"
@@ -3546,11 +4086,29 @@ msgstr "Perangkat Lunak"
 msgid "Software mode is faster and more accurate, while OpenGL mode supports scaling 3D graphics."
 msgstr "Mode Perangkat Lunak (Software) lebih cepat dan akurat, sedangkan mode OpenGL mendukung peningkatan skala grafis 3D."
 
+msgid "Some games and homebrews require more RAM"
+msgstr "eberapa game dan aplikasi buatan komunitas (homebrew) memerlukan RAM lebih besar."
+
 msgid "Some games have issues when the animation is shown, others require it."
 msgstr "Beberapa game mengalami masalah saat animasi ditampilkan, yang lain membutuhkannya."
 
 msgid "Sony CXA2025AS"
 msgstr "Sony CXA2025AS"
+
+msgid "SounBlaster 1.0"
+msgstr "SoundBlaster 1.0 (Kartu suara jadul)"
+
+msgid "SounBlaster 16 (Default)"
+msgstr "SoundBlaster 16 (Bawaan)"
+
+msgid "SounBlaster 2.0"
+msgstr "SoundBlaster 2.0"
+
+msgid "SounBlaster Pro"
+msgstr "SoundBlaster Pro"
+
+msgid "SounBlaster Pro 2"
+msgstr "SoundBlaster Pro 2"
 
 msgid "Sound generator. MAME is faster and Nuked is cycle accurate. Original model used YM2612 while later revisions used YM3438."
 msgstr "Pembuat (generator) suara. MAME lebih cepat,sedangkan Nuked memiliki akurasi siklus yang pas.Model awal menggunakan chip YM2612, sementara revisi setelahnya menggunakan YM3438."
@@ -3615,14 +4173,29 @@ msgstr "Rentangkan"
 msgid "Stretch to full"
 msgstr "Rentangkan ke penuh"
 
+msgid "Stretch to screen"
+msgstr "Regangkan ke Layar"
+
 msgid "Stretch to window"
 msgstr "Rentangkan ke jendela (window)"
+
+msgid "Stretches the output to fill the display area."
+msgstr "Meregangkan tampilan output untuk memenuhi area layar."
 
 msgid "Super Game Boy"
 msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
+
+msgid "Super-high 1440p"
+msgstr "Sangat Tinggi 1440p"
+
+msgid "SuperEagle"
+msgstr "SuperEagle (Jenis filter penghalus grafis piksel)"
+
+msgid "SuperSAI"
+msgstr "SuperSAI (Jenis filter penghalus grafis piksel)"
 
 msgid "Surround"
 msgstr "Surround"
@@ -3639,8 +4212,17 @@ msgstr "Tukar posisi tampilan ganda"
 msgid "Sweden"
 msgstr "Swedia"
 
+msgid "Swedish"
+msgstr "Bahasa Swedia"
+
 msgid "Switzerland"
 msgstr "Swiss"
+
+msgid "Switzerland (French)"
+msgstr "Switzerland (Prancis)"
+
+msgid "Switzerland (German)"
+msgstr "Switzerland (Jerman)"
 
 msgid "Syria"
 msgstr "Suriah"
@@ -3696,6 +4278,9 @@ msgstr "VIDEO THREADED"
 msgid "TIME STRETCHING THRESHOLD"
 msgstr "AMBANG BATAS PENGULURAN WAKTU AUDIO (TIME STRETCHING)"
 
+msgid "TIMED AXIS INTERVALS"
+msgstr "JEDA WAKTU SUMBU"
+
 msgid "TOUCH MODE"
 msgstr "MODE SENTUH"
 
@@ -3714,6 +4299,9 @@ msgstr "PERUPAAN WARNA ASLI (TRUE COLOR RENDERING)"
 msgid "TV EFFECTS"
 msgstr "EFEK LAYAR TV"
 
+msgid "TV2x CRT Television Filter"
+msgstr "Filter Televisi CRT (TV Tabung) TV2x"
+
 msgid "TWB64 - Pack 1"
 msgstr "TWB64 - Paket 1"
 
@@ -3726,6 +4314,9 @@ msgstr "Taiwan"
 msgid "Taiwanese"
 msgstr "Taiwan"
 
+msgid "Tandy"
+msgstr "Tandy"
+
 msgid "Thailand"
 msgstr "Thailand"
 
@@ -3737,6 +4328,9 @@ msgstr "Area di sekitar posisi tengah/netral stik di mana input diabaikan.Dapat 
 
 msgid "The day within the month of your birthday."
 msgstr "Tanggal hari dari bulan kelahiran Anda."
+
+msgid "The emulated graphics card."
+msgstr "Meniru kartu grafis.."
 
 msgid "The final output image, unrelated to the Wii's emulated NAND setting."
 msgstr "Gambar hasil akhir, tidak terkait dengan pengaturan NAND yang ditiru Wii."
@@ -3792,6 +4386,9 @@ msgstr "Hanya atas"
 msgid "Touch Screen"
 msgstr "Layar Sentuh"
 
+msgid "Trackball (Atari CX-22)"
+msgstr "Trackball (Atari CX-22"
+
 msgid "Traditional Chinese"
 msgstr "Cina Tradisional"
 
@@ -3819,6 +4416,9 @@ msgstr "Pirus / Toska"
 msgid "Twin Stick with Triggers"
 msgstr "Twin Stick dengan Pemicu"
 
+msgid "Type of emulated SoundBlaster card."
+msgstr "Jenis kartu SoundBlaster yang diemulasikan."
+
 msgid "UBERSHADERS"
 msgstr "UBERSHADERS"
 
@@ -3831,8 +4431,14 @@ msgstr "ALAMAT REMOTE UDP"
 msgid "UDP Tunnel"
 msgstr "Terowongan (Tunnel) UDP (Untuk koneksi jaringan/multiplayer)"
 
+msgid "UK"
+msgstr "UK"
+
 msgid "UPSCALE FILTER"
 msgstr "SARING UPSCALE"
+
+msgid "US"
+msgstr "US"
 
 msgid "USA"
 msgstr "Amerika"
@@ -3912,6 +4518,9 @@ msgstr "Gunakan Satu File Tersimpan Tiap Game"
 msgid "Use preemptive frames instead of run-ahead. Only runs ahead when controller state changes."
 msgstr "Gunakan bingkai preemptive sebagai pengganti run-ahead.Hanya berjalan mendahului (run-ahead) ketika status kontroler berubah."
 
+msgid "Use to eliminate cursor drift/unwanted input."
+msgstr "Digunakan untuk menghilangkan imobilitas kursor/pergerakan/input yang tidak perlu"
+
 msgid "Use to eliminate joystick drift/unwanted input. Effects all controllers."
 msgstr "Gunakan untuk menghilangkan pergeseran stik (drift) atau input yang tidak diinginkan.Berdampak pada semua kontroler."
 
@@ -3954,11 +4563,17 @@ msgstr "LEWATI VBI (Vertical Blank Interrupt)"
 msgid "VERTICAL ROTATION (TATE)"
 msgstr "ROTASI VERTIKAL（KEADAAN"
 
+msgid "VGA"
+msgstr "VGA"
+
 msgid "VIDEO FILTERS"
 msgstr "FILTER VIDEO"
 
 msgid "VIDEO FORMAT STANDARD"
 msgstr "STANDAR VIDEO FORMAT"
+
+msgid "VIDEO RESOLUTION"
+msgstr "RESOLUSI VIDEO"
 
 msgid "VIDEO SETTINGS"
 msgstr "PENGATURAN VIDEO"
@@ -3992,6 +4607,9 @@ msgstr "PERINGATKAN JIKA ADA MASALAH BIOS"
 
 msgid "WARN ABOUT UNSUPPORTED FEATURES"
 msgstr "PERINGATKAN JIKA ADA FITUR YANG TIDAK DIDUKUNG"
+
+msgid "WHDLOAD LAUNCHER"
+msgstr "MEJALANKAN WHDLOAD"
 
 msgid "WHEELS"
 msgstr "SETIR"
@@ -4062,6 +4680,9 @@ msgstr "Wiimote Sideway + Swing"
 msgid "Wiimote Sideway + Tilt"
 msgstr "Wiimote Sideway + Putar"
 
+msgid "Works with 'Cycle-exact' mode and for a few games."
+msgstr "berfungsi dalam mode 'Cycle-exact' dan beberapa game"
+
 msgid "X2"
 msgstr "X2"
 
@@ -4070,6 +4691,12 @@ msgstr "Lisensi XBLA aktif (Bawaan)"
 
 msgid "XBOX LIVE ARCADE"
 msgstr "Xbox Live Arcade"
+
+msgid "Y = Fire"
+msgstr "Y = Tembak"
+
+msgid "Y = Fire, B = Up"
+msgstr "Y = Tembak, B = Up"
 
 msgid "YUV v3 (Firebrand)"
 msgstr "YUV v3 (Firebrand)"
@@ -4085,6 +4712,12 @@ msgstr "Z26 (Nama emulator Atari 2600)"
 
 msgid "ZCULL ACCURACY"
 msgstr "AKURASI ZCULL (Fitur perupaan grafis 3D)"
+
+msgid "ZOOM (HIDE BORDERS)"
+msgstr "PERBESAR (SEMBUNYIKAN BORDERS）"
+
+msgid "ZOOM/CROP (HIDE BORDERS)"
+msgstr "ZOOM/POTONG (SEMBUNYIKAN BATAS)"
 
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Perbesar untuk menyembunyikan border, borders dapat berbeda setiap game"
@@ -4164,11 +4797,26 @@ msgstr "hibrida/bawah"
 msgid "hybrid/top"
 msgstr "hibrida/atas"
 
+msgid "large"
+msgstr "besar"
+
+msgid "larger"
+msgstr "sangat besar"
+
 msgid "left/right"
 msgstr "kiri/kanan"
 
 msgid "lottes crt"
 msgstr "lottes crt (Jenis shader TV tabung)"
+
+msgid "maximum"
+msgstr "maximal"
+
+msgid "medium"
+msgstr "sedang"
+
+msgid "minimum"
+msgstr "Minimal"
 
 msgid "nearest"
 msgstr "mendekati"
@@ -4202,6 +4850,12 @@ msgstr "royaltea (Jenis shader/filter grafis)"
 
 msgid "scanlines"
 msgstr "garis pindai (scanlines) (Efek layar TV tabung)"
+
+msgid "small"
+msgstr "kecil"
+
+msgid "smaller"
+msgstr "sangat kecil"
 
 msgid "standard"
 msgstr "standar / bawaan"
