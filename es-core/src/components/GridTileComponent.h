@@ -86,6 +86,7 @@ public:
 		fontSize = 0;
 		glowColor = 0;
 		glowSize = 0;
+		autoScroll = false;
 		padding = Vector4f::Zero();
 	}
 

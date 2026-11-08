@@ -114,6 +114,8 @@ set(ES_HEADERS
 )
 
 set(ES_SOURCES
+    # first: the longest file to compile, so that a parallel build starts it early
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiMenu.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/FileData.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/GameLauncher.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/HotkeyExitWatcher.cpp
@@ -162,7 +164,6 @@ set(ES_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiGameOptions.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiGamelistOptions.cpp    
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiGeneralScreensaverOptions.cpp    
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiMenu.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiSettings.cpp    
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiScraperStart.cpp		
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiHashStart.cpp	
@@ -217,6 +218,7 @@ set(ES_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ApiSystem.cpp # batocera
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ZaparooSupport.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/LibretroRatio.cpp # batocera
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/BuildInfo.cpp
 )
 
 
@@ -224,7 +226,12 @@ set(ES_SOURCES
 # define target
 include_directories(${COMMON_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR}/src)
 add_executable(emulationstation ${ES_SOURCES} ${ES_HEADERS})
+set_property(SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/src/BuildInfo.cpp APPEND PROPERTY
+    COMPILE_DEFINITIONS ES_VERSION_STRING="${ES_VERSION_RESOLVED}")
 target_link_libraries(emulationstation ${COMMON_LIBRARIES} es-core es-launcher)
+if(ES_PCH)
+    target_precompile_headers(emulationstation PRIVATE ${ES_PRECOMPILED_HEADERS})
+endif()
 
 # libes-launcher.so is installed in the lib folder of the same prefix; outside the default
 # library paths (/usr/local/lib on some systems) the executable still finds it

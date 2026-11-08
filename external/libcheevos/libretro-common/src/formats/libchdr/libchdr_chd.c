@@ -2599,9 +2599,14 @@ static chd_error zlib_codec_init(void *codec, uint32_t hunkbytes)
 	else
 		err = CHDERR_NONE;
 
-	/* handle an error */
+	/* handle an error: data is embedded in the caller's codec struct (it is
+	 * not a heap block of its own), so release what it holds, never data itself */
 	if (err != CHDERR_NONE)
-		free(data);
+	{
+		zlib_codec_free(data);
+		/* the caller may free the codec again: leave nothing to free twice */
+		memset(data, 0, sizeof(zlib_codec_data));
+	}
 
 	return err;
 }
