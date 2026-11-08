@@ -6,8 +6,8 @@
 #include <SDL3/SDL_timer.h>
 #include "TextToSpeech.h"
 
-GuiInfoPopup::GuiInfoPopup(Window* window, std::string message, int duration) :
-	GuiComponent(window), mMessage(message), mDuration(duration), mRunning(true), mFadeOut(0)
+GuiInfoPopup::GuiInfoPopup(Window* window, std::string message, int duration, Align align) :
+	GuiComponent(window), mAlign(align), mMessage(message), mDuration(duration), mRunning(true), mFadeOut(0)
 {
 	auto theme = ThemeData::getMenuTheme();
 
@@ -44,7 +44,9 @@ GuiInfoPopup::GuiInfoPopup(Window* window, std::string message, int duration) :
 	mSize[0] = mSize.x() + paddingX;
 	mSize[1] = mSize.y() + paddingY;
 
-	float posX = Renderer::getScreenWidth()*0.5f - mSize.x()*0.5f;
+	float posX = align == Align::RIGHT
+		? Renderer::getScreenWidth() * 0.98f - mSize.x()
+		: Renderer::getScreenWidth() * 0.5f - mSize.x() * 0.5f;
 	float posY = Renderer::getScreenHeight() * 0.02f;
 
 	setPosition(posX, posY, 0);

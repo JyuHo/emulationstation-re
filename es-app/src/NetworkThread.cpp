@@ -10,12 +10,16 @@
 #include "watchers/BatteryLevelWatcher.h"
 #include "watchers/NetworkStateWatcher.h"
 #include "RetroAchievements.h"
+#include "Settings.h"
+#include "updates/SelfUpdater.h"
+#include "utils/StringUtil.h"
 
 NetworkThread::NetworkThread(Window* window) : mWindow(window)
 {
 	WatchersManager* mgr = WatchersManager::getInstance();
 
 	mgr->RegisterComponent(&mCheckCheevosTokenComponent);
+	mgr->RegisterComponent(&mCheckSelfUpdateComponent);
 	mgr->RegisterComponent(new BatteryLevelWatcher());
 	mgr->RegisterComponent(new NetworkStateWatcher());
 
@@ -98,6 +102,28 @@ bool CheckCheevosTokenComponent::check()
 	return false;
 }
 
+bool CheckSelfUpdateComponent::enabled()
+{
+	return Settings::getInstance()->getBool("CheckUpdatesAtStartup");
+}
+
+bool CheckSelfUpdateComponent::check()
+{
+	if (ApiSystem::getInstance()->getIpAddress() == "NOT CONNECTED")
+		return false;
+
+	auto release = SelfUpdater::fetchLatest(); // logs its errors, nothing is shown
+	if (!release || release->version.empty() || release->version == mNotifiedVersion)
+		return false;
+
+	auto current = ApiSystem::getInstance()->getVersion();
+	if (selfupdate::compareVersions(release->version, current) <= 0)
+		return false;
+
+	LOG(LogInfo) << "Updates: version " << release->version << " is available (running " << current << ")";
+	mNotifiedVersion = release->version;
+	return true;
+}
 
 void NetworkThread::onJoystickChanged()
 {
@@ -111,6 +137,13 @@ void NetworkThread::OnWatcherChanged(IWatcher* component)
 		auto pads = mCheckPadsBatteryLevelComponent.getPadsInfo();
 
 		mWindow->postToUiThread([pads]() { for (auto pad : pads) InputManager::getInstance()->updateBatteryLevel(pad.id, pad.device, pad.path, pad.battery); });
+		return;
+	}
+
+	if (component == &mCheckSelfUpdateComponent)
+	{
+		auto text = Utils::String::format(_("UPDATE %s AVAILABLE").c_str(), mCheckSelfUpdateComponent.getVersion().c_str());
+		mWindow->displayCornerNotificationMessage(_U("\uF019  ") + text, 8000);
 		return;
 	}
 

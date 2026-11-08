@@ -51,7 +51,9 @@ public:
 	~Window();
 
 	void pushGui(GuiComponent* gui);
-	void displayNotificationMessage(std::string message, int duration = -1); 
+	void displayNotificationMessage(std::string message, int duration = -1);
+	// Same, in the top right corner instead of the top center
+	void displayCornerNotificationMessage(std::string message, int duration = -1);
 	void removeGui(GuiComponent* gui);
 	GuiComponent* peekGui();
 	inline int getGuiStackSize() { return (int)mGuiStack.size(); }
@@ -135,6 +137,7 @@ private:
 	void layoutNotificationPopups();
 
 	void processNotificationMessages();
+	void queueNotificationMessage(const std::string& message, int duration, bool corner);
 	void processSongTitleNotifications();
 
 	void onSleep();
@@ -148,7 +151,12 @@ private:
 	std::vector<GuiComponent*> mScreenExtras;
 	std::vector<GuiComponent*> mGuiStack;
 
-	typedef std::pair<std::string, int> NotificationMessage;
+	struct NotificationMessage
+	{
+		std::string first;  // message
+		int         second; // duration, ms
+		bool        corner = false;
+	};
 	std::vector<NotificationMessage> mNotificationMessages; 
 
 	std::vector< std::shared_ptr<Font> > mDefaultFonts;

@@ -126,6 +126,7 @@ void Settings::setDefaults()
 	mIntMap.clear();
 
 	mBoolMap["BackgroundJoystickInput"] = false;
+	mBoolMap["CheckUpdatesAtStartup"] = true;
 	mBoolMap["ParseGamelistOnly"] = false;
 	mBoolMap["ShowHiddenFiles"] = false;
 	mBoolMap["ShowParentFolder"] = true;
