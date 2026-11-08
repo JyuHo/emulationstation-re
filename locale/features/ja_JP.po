@@ -306,6 +306,9 @@ msgstr "22"
 msgid "2304MB"
 msgstr "2304MB"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "23"
 
@@ -405,6 +408,9 @@ msgstr "3.5x 標準"
 msgid "30 seconds"
 msgstr "30 秒"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072MB"
 
@@ -476,6 +482,9 @@ msgstr "4 スレッド"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x (1440x1080)"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -1245,6 +1254,24 @@ msgstr "ブルガリア"
 msgid "Button Options"
 msgstr "ボタン 設定"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64 ゲームシステム PAL"
 
@@ -1533,6 +1560,9 @@ msgstr "ドリームキャストのコンソールリージョンを選択しま
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Parallel N64 グラフィックス プラグインを選択します"
 
+msgid "Choose the appropriate media for disk image."
+msgstr "ディスク イメージに合ったメディアを選択します"
+
 msgid "Choose the audio output type."
 msgstr "音声出力タイプを選択します"
 
@@ -1730,6 +1760,9 @@ msgstr "VERTEXキャッシュを無効"
 
 msgid "DISK SHADER CACHE"
 msgstr "ディスクシェーダーキャッシュ"
+
+msgid "DISK TYPE"
+msgstr "ディスクタイプ"
 
 msgid "DISPLAY"
 msgstr "表示系設定"
@@ -2349,6 +2382,9 @@ msgstr "コントローラー検出で発生する可能性のあるバグを修
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "フライトスティック (3軸,4ボタン,1ハット)"
 
+msgid "Floppy Disk Image"
+msgstr "FDイメージ"
+
 msgid "Floppy Disk List"
 msgstr "フロッピーリスト"
 
@@ -2411,6 +2447,9 @@ msgstr "フル (遅い)"
 
 msgid "Full (more compatible)"
 msgstr "フル（互換性が高い）"
+
+msgid "Full Speed (Default)"
+msgstr "フルスピード（標準）"
 
 msgid "Full speed"
 msgstr "フルスピード"
@@ -2636,6 +2675,9 @@ msgstr "HQ (バイリニアフィルター)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "ハック：ほとんどのPALゲームの速度が17％向上します"
+
+msgid "Hard Disk Image"
+msgstr "HDイメージ"
 
 msgid "Hebrew"
 msgstr "ヘブライ語"
@@ -3000,6 +3042,9 @@ msgstr "LLE"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "カスタムテクスチャを読み込む"
 
+msgid "LOADING SPEED"
+msgstr "読込速度"
+
 msgid "Landscape"
 msgstr "ランドスケープ(横)"
 
@@ -3323,6 +3368,9 @@ msgstr "ネットワークタイプ"
 
 msgid "NEW 3DS MODE"
 msgstr "New 3DS モード"
+
+msgid "NO (DEFAULT)"
+msgstr "無効 (標準)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC（コンポジット）"
@@ -3711,6 +3759,12 @@ msgstr "プレイヤー 1 照準の色"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "プレイヤー 2 照準の色"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "PPU デコーダー"
 
@@ -3956,6 +4010,9 @@ msgstr "ランダム値"
 
 msgid "Raw"
 msgstr "Raw"
+
+msgid "Realistic Loading"
+msgstr "実機同様"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "リコンパイラ（最速）(標準)"
@@ -4238,6 +4295,9 @@ msgstr "SUPER-FX オーバークロック"
 
 msgid "SUPER GB BORDERS"
 msgstr "スーパーゲームボーイ表示"
+
+msgid "SUPERPET"
+msgstr "SUPERPET"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4566,6 +4626,9 @@ msgstr "スーパーゲームボーイ"
 msgid "Super Scope"
 msgstr "スーパースコープ"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "Super VIC (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "超高 1440p"
 
@@ -4757,6 +4820,9 @@ msgstr "エミュレートするコンソールのテーマカラー"
 
 msgid "There is generally no point in going beyond 4x texture scaling unless you are running at very high resolutions."
 msgstr "通常、非常に高い解像度で実行していない限り、テクスチャ スケーリングを 4 倍以上にする意味はありません"
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "レーザーディスクを使用する場合に便利です"
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "Xbox Live Arcacde ゲームをプレイできるようになります\n非 XBLA ゲームとの互換性の問題が発生する可能性があります"
@@ -4977,6 +5043,9 @@ msgstr "通常、シングルコアモードよりもそれほど高速ではあ
 msgid "Uzbekistan"
 msgstr "ウズベキスタン"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "VBI(垂直ブランク割り込み) スキップ"
 
@@ -4988,6 +5057,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA (標準)"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC 自動"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "VIC20 PAL 自動"
 
 msgid "VIDEO FILTERS"
 msgstr "ビデオ フィルター"
@@ -5148,6 +5229,9 @@ msgstr "ズーム/クロップ（境界線を非表示）"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "拡大して黒い境界線を隠します（境界線はゲームごとに異なります）"
 
+msgid "amber"
+msgstr "琥珀"
+
 msgid "bilinear"
 msgstr "バイリニア"
 
@@ -5183,6 +5267,12 @@ msgstr "下画面のみ（切替不可）"
 
 msgid "bottom/top"
 msgstr "下 / 上"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -5240,6 +5330,12 @@ msgstr "最大"
 
 msgid "medium"
 msgstr "中"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "最低"
@@ -5315,6 +5411,12 @@ msgstr "xBRZ (標準)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - シャープニングのアップスケールアルゴリズム\nバイキュービック - 滑らかな外観\nハイブリッド - 滑らかな領域にバイキュービックを使用"
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc"
+
+msgid "yape-pal"
+msgstr "yape-pal"
 
 msgid "yellow/blue"
 msgstr "黄/青"

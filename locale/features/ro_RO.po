@@ -306,6 +306,9 @@ msgstr "22"
 msgid "2304MB"
 msgstr "2304MO"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "23"
 
@@ -405,6 +408,9 @@ msgstr "3.5x Nativ"
 msgid "30 seconds"
 msgstr "30 de secunde"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072MO"
 
@@ -476,6 +482,9 @@ msgstr "4 fire"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x (1440x1080)"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096MO"
@@ -1245,6 +1254,24 @@ msgstr "Bulgaria"
 msgid "Button Options"
 msgstr "Opțiuni butoane"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64 Games System PAL"
 
@@ -1533,6 +1560,9 @@ msgstr "Alege regiunea consolei Dreamcast."
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Alege plugin-ul grafic Parallel N64."
 
+msgid "Choose the appropriate media for disk image."
+msgstr "Alege mediul de stocare convenabil pentru imaginea de disc."
+
 msgid "Choose the audio output type."
 msgstr "Alege tipul de ieșire audio."
 
@@ -1730,6 +1760,9 @@ msgstr "DEZACTIVEAZĂ CACHE VERTEXURI"
 
 msgid "DISK SHADER CACHE"
 msgstr "CACHE SHADER PE DISC"
+
+msgid "DISK TYPE"
+msgstr "TIP DISC"
 
 msgid "DISPLAY"
 msgstr "ECRAN"
@@ -2349,6 +2382,9 @@ msgstr "Repară o problemă posibilă cu detecția mai multor controlere."
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Manetă de zbor (3 axe, 4 butoane, 1 direcție)"
 
+msgid "Floppy Disk Image"
+msgstr "Imagine disc flexibil"
+
 msgid "Floppy Disk List"
 msgstr "Listă discuri flexibile"
 
@@ -2411,6 +2447,9 @@ msgstr "Întreagă (Lent)"
 
 msgid "Full (more compatible)"
 msgstr "Complet (mai compatibil)"
+
+msgid "Full Speed (Default)"
+msgstr "Viteză normală (Implicit)"
 
 msgid "Full speed"
 msgstr "Viteză întreagă"
@@ -2636,6 +2675,9 @@ msgstr "HQ (filtru bilinear)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack. Crește viteza majorității jocurilor PAL cu 17%."
+
+msgid "Hard Disk Image"
+msgstr "Imagine disc dur"
 
 msgid "Hebrew"
 msgstr "Ebraică"
@@ -3000,6 +3042,9 @@ msgstr "LLE"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "ÎNCARCĂ TEXTURI PERSONALIZATE"
 
+msgid "LOADING SPEED"
+msgstr "VITEZA DE ÎNCĂRCARE"
+
 msgid "Landscape"
 msgstr "Peisaj"
 
@@ -3323,6 +3368,9 @@ msgstr "TIP REȚEA"
 
 msgid "NEW 3DS MODE"
 msgstr "MOD NOU 3DS"
+
+msgid "NO (DEFAULT)"
+msgstr "NU (IMPLICIT)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC (Compozit)"
@@ -3711,6 +3759,12 @@ msgstr "CULOARE MARCAJ ȚINTĂ JUCĂTOR 1"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "CULOARE MARCAJ ȚINTĂ JUCĂTOR 2"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "DECODIFICATOR PPU"
 
@@ -3956,6 +4010,9 @@ msgstr "Valori aleatoare"
 
 msgid "Raw"
 msgstr "Raw"
+
+msgid "Realistic Loading"
+msgstr "Încărcare realistică"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Recompilator (Cel mai rapid)(Implicit)"
@@ -4238,6 +4295,9 @@ msgstr "OVERCLOCK SUPER FX"
 
 msgid "SUPER GB BORDERS"
 msgstr "MARGINI SUPER GB"
+
+msgid "SUPERPET"
+msgstr "SUPERPET"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4566,6 +4626,9 @@ msgstr "Super Game Boy"
 msgid "Super Scope"
 msgstr "Super Scope"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "Super VIC (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "Super-înalt 1440p"
 
@@ -4757,6 +4820,9 @@ msgstr "Culoarea temei consolei emulate."
 
 msgid "There is generally no point in going beyond 4x texture scaling unless you are running at very high resolutions."
 msgstr "În general nu este niciun avantaj să mergi peste scalare texturi 4x, dacă nu folosești rezoluții foarte înalte."
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "Acest lucru poate fi convenabil dacă folosești LaserDisc-uri."
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "Această opțiune permite să fie jucate jocuri Xbox Live Arcade. Poate cauza probleme de compatibilitate cu jocurile non-XBLA."
@@ -4977,6 +5043,9 @@ msgstr "De regulă nu este cu mult mai rapid decât modul cu un singur nucleu."
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "OMITERE VBI"
 
@@ -4988,6 +5057,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA (Implicit)"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC Automat"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "VIC20 PAL Automat"
 
 msgid "VIDEO FILTERS"
 msgstr "FILTRE VIDEO"
@@ -5148,6 +5229,9 @@ msgstr "MĂREȘTE/DECUPEAZĂ (ASCUNDE MARGINILE)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Mărește pentru a ascunde marginile negre. Marginile sunt diferite per joc."
 
+msgid "amber"
+msgstr "portocaliu închis"
+
 msgid "bilinear"
 msgstr "bilinear"
 
@@ -5183,6 +5267,12 @@ msgstr "doar jos"
 
 msgid "bottom/top"
 msgstr "jos/sus"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -5240,6 +5330,12 @@ msgstr "maxim"
 
 msgid "medium"
 msgstr "mediu"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "minim"
@@ -5315,6 +5411,12 @@ msgstr "xBRZ (Implicit)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - un algoritm de upscaling de clarificare, Bicubic - un aspect neted, Hybrid - folosește bicubic pentru ariile netede."
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc"
+
+msgid "yape-pal"
+msgstr "yape-pal"
 
 msgid "yellow/blue"
 msgstr "galben/albastru"

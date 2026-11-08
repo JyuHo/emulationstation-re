@@ -807,6 +807,14 @@ static void testCoreProfiles()
 		coreProfile("vice_x64sc").setConfig(ctx, scConfig);
 		CHECK(!scConfig.get("input_player1_analog_dpad_mode"));
 
+		// the other VICE machines
+		coreProfile("vice_xvic").setCoreOptions(ctx, o);
+		CHECK(o.get("vice_vic20_model") == "VIC20 PAL auto");
+		CHECK(o.get("vice_vic20_external_palette") == "colodore_vic");
+		coreProfile("vice_x128").setCoreOptions(ctx, o);
+		CHECK(o.get("vice_c128_model") == "C128 PAL");
+		CHECK(o.get("vice_jiffydos") == "disabled");   // JiffyDOS_C128.bin is missing
+
 		// hatariB: a floppy is the content, a hard disk is linked in the BIOS folder
 		const Core& hatarib = coreProfile("hatarib");
 		ctx.game.system = "atarist";

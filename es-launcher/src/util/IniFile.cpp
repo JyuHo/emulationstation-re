@@ -175,7 +175,7 @@ namespace es::launcher::util
 				if (l.key.empty())
 					out << l.value << '\n';
 				else
-					out << l.key << " = " << l.value << '\n';
+					out << l.key << mSeparator << l.value << '\n';
 				empty = false;
 				endsWithBlank = l.key.empty() && l.value.empty();
 			}

@@ -306,6 +306,9 @@ msgstr "22."
 msgid "2304MB"
 msgstr "2304MB"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "23."
 
@@ -405,6 +408,9 @@ msgstr "3.5x natívne"
 msgid "30 seconds"
 msgstr "30 sekúnd"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072MB"
 
@@ -476,6 +482,9 @@ msgstr "4 vlákna"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x (1440x1080)"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -1245,6 +1254,24 @@ msgstr "Bulharsko"
 msgid "Button Options"
 msgstr "Voľby tlačidiel"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64 hry systému PAL"
 
@@ -1533,6 +1560,9 @@ msgstr "Vyberte región konzoly Dreamcast."
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Vyberte grafický doplnok Parallel N64."
 
+msgid "Choose the appropriate media for disk image."
+msgstr "Vyberte vhodné médiá pre obraz disku."
+
 msgid "Choose the audio output type."
 msgstr "Vyberte typ zvukového výstupu."
 
@@ -1730,6 +1760,9 @@ msgstr "Zakázať vertex cache"
 
 msgid "DISK SHADER CACHE"
 msgstr "Disková cache shadera"
+
+msgid "DISK TYPE"
+msgstr "Typ disku"
 
 msgid "DISPLAY"
 msgstr "Zobrazenie"
@@ -2349,6 +2382,9 @@ msgstr "Opraví možný bug s detekciou viacerých ovládačov."
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Flight Stick (3 osi, 4 tlačidlá, 1 klobúk)"
 
+msgid "Floppy Disk Image"
+msgstr "Obraz pružného disku"
+
 msgid "Floppy Disk List"
 msgstr "Zoznam pružných diskov"
 
@@ -2411,6 +2447,9 @@ msgstr "Plné (pomalé)"
 
 msgid "Full (more compatible)"
 msgstr "Plné (viac kompatibilné)"
+
+msgid "Full Speed (Default)"
+msgstr "Plná rýchlosť (predvolené)"
 
 msgid "Full speed"
 msgstr "Plná rýchlosť"
@@ -2636,6 +2675,9 @@ msgstr "HQ (bilineárne filtrovanie)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack. Zvýši rýchlosť väčšiny PAL hier o 17 percent."
+
+msgid "Hard Disk Image"
+msgstr "Obraz pevného disku"
 
 msgid "Hebrew"
 msgstr "Hebrejčina"
@@ -3000,6 +3042,9 @@ msgstr "LLE"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "Načítať vlastné textúry"
 
+msgid "LOADING SPEED"
+msgstr "Rýchlosť načítavania"
+
 msgid "Landscape"
 msgstr "Krajinka"
 
@@ -3323,6 +3368,9 @@ msgstr "Typ siete"
 
 msgid "NEW 3DS MODE"
 msgstr "Nový 3DS režim"
+
+msgid "NO (DEFAULT)"
+msgstr "Nie (predvolené)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC (kompozitné)"
@@ -3711,6 +3759,12 @@ msgstr "Farba nitkového kríža hráča 1"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "Farba nitkového kríža hráča 2"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "PPU dekodér"
 
@@ -3956,6 +4010,9 @@ msgstr "Náhodné hodnoty"
 
 msgid "Raw"
 msgstr "Surové"
+
+msgid "Realistic Loading"
+msgstr "Realistické načítavanie"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Recompiler (najrýchlejšie, predvolené)"
@@ -4238,6 +4295,9 @@ msgstr "Super FX pretaktovanie"
 
 msgid "SUPER GB BORDERS"
 msgstr "Super GB okraje"
+
+msgid "SUPERPET"
+msgstr "SUPERPET"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4566,6 +4626,9 @@ msgstr "Super Game Boy"
 msgid "Super Scope"
 msgstr "Super rozsah"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "Super VIC (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "Super vysoké 1440p"
 
@@ -4757,6 +4820,9 @@ msgstr "Farba témy emulovanej konzoly."
 
 msgid "There is generally no point in going beyond 4x texture scaling unless you are running at very high resolutions."
 msgstr "Všeobecne nemá zmysel ísť nad 4x škálovanie textúr, pokiaľ nepoužívate veľmi vysoké rozlíšenia."
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "Toto môže byť užitočné, ak používate laserdisky."
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "Táto možnosť povoľuje hranie hier Xbox Live Arcade. Môže spôsobiť problémy s kompatibilitou s hrami mimo XBLA."
@@ -4977,6 +5043,9 @@ msgstr "Obyčajne nie oveľa rýchlejšie ako režim jedného jadra."
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "Preskočiť VBI"
 
@@ -4988,6 +5057,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA (predvolené)"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC automaticky"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "VIC20 PAL automaticky"
 
 msgid "VIDEO FILTERS"
 msgstr "Video filtre"
@@ -5148,6 +5229,9 @@ msgstr "Priblížiť/orezať (skryť okraje)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Priblíži na skrytie čiernych okrajov. Okraje sú rôzne podľa hry."
 
+msgid "amber"
+msgstr "jantár"
+
 msgid "bilinear"
 msgstr "bilineárne"
 
@@ -5183,6 +5267,12 @@ msgstr "iba dolu"
 
 msgid "bottom/top"
 msgstr "dolu/hore"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -5240,6 +5330,12 @@ msgstr "maximálne"
 
 msgid "medium"
 msgstr "stredné"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "minimálne"
@@ -5315,6 +5411,12 @@ msgstr "xBRZ (predvolené)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - algoritmus zaostrujúceho upscalu, Bicubic - hladký vzhľad, Hybrid - používa bicubic pre hladké oblasti."
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc"
+
+msgid "yape-pal"
+msgstr "yape-pal"
 
 msgid "yellow/blue"
 msgstr "žltá/modrá"

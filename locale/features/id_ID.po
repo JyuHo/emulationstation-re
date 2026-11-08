@@ -306,6 +306,9 @@ msgstr "ke-22"
 msgid "2304MB"
 msgstr "2304MB"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "ke-23"
 
@@ -405,6 +408,9 @@ msgstr "3.5x Native / Asli"
 msgid "30 seconds"
 msgstr "30 detik"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072MB"
 
@@ -476,6 +482,9 @@ msgstr "4 threads"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x (1440x1080)"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -1245,6 +1254,24 @@ msgstr "Bulgaria"
 msgid "Button Options"
 msgstr "Tombol Pilihan"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "Permian C64 System PAL"
 
@@ -1533,6 +1560,9 @@ msgstr "Pilih Wilayah Konsol Dreamcast"
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Pilih plugin grafis Parallel N64."
 
+msgid "Choose the appropriate media for disk image."
+msgstr "Pilih media yang sesuai untuk file citra disk (disk image)."
+
 msgid "Choose the audio output type."
 msgstr "Pilih Tipe Keluaran Suara"
 
@@ -1730,6 +1760,9 @@ msgstr "MATIKAN CACHE VERTEX"
 
 msgid "DISK SHADER CACHE"
 msgstr "CACHE DISK SHADER"
+
+msgid "DISK TYPE"
+msgstr "Jenis Disk"
 
 msgid "DISPLAY"
 msgstr "Tampilan / Layar"
@@ -2349,6 +2382,9 @@ msgstr "Memperbaiki kemungkinan bug dalam deteksi pengontrol"
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Flight Stick (3 Sumbu, 4 Tombol, 1 Hat)"
 
+msgid "Floppy Disk Image"
+msgstr "File Citra Disket (Floppy Disk)"
+
 msgid "Floppy Disk List"
 msgstr "Daftar Disket"
 
@@ -2411,6 +2447,9 @@ msgstr "Penuh (Lambat)"
 
 msgid "Full (more compatible)"
 msgstr "Penuh（Lebih Kompatibil）"
+
+msgid "Full Speed (Default)"
+msgstr "Kecepatan Penuh (Bawaan)"
 
 msgid "Full speed"
 msgstr "Kecepatan Penuh"
@@ -2636,6 +2675,9 @@ msgstr "HQ / Kualitas Tinggi (Filter Bilinear)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Peretasan. meningkatkan kebanyakan games PAL' kecepatan dengan 17%"
+
+msgid "Hard Disk Image"
+msgstr "File Citra Hard Disk"
 
 msgid "Hebrew"
 msgstr "Bahasa Ibrani"
@@ -3000,6 +3042,9 @@ msgstr "LLE (Low-Level Emulation / Emulation tingkat rendah yang lebih akurat)"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "MUAT KOSTUM TEXTURES"
 
+msgid "LOADING SPEED"
+msgstr "Kecepatan Pemuatan (Loading)"
+
 msgid "Landscape"
 msgstr "Landscape"
 
@@ -3323,6 +3368,9 @@ msgstr "Jenis Jaringan"
 
 msgid "NEW 3DS MODE"
 msgstr "MODE NEW 3DS"
+
+msgid "NO (DEFAULT)"
+msgstr "TIDAK (DEFAULT / BAWAAN)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC (Komposit) (Sinyal video TV jadul)"
@@ -3711,6 +3759,12 @@ msgstr "PLAYER 1 CROSSHAIR COLOR"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "WARNA CORSAIR PEMAIN 2"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "PPU DECODER"
 
@@ -3956,6 +4010,9 @@ msgstr "Nilai Acak"
 
 msgid "Raw"
 msgstr "Mentah / Raw (Input tanpa filter)"
+
+msgid "Realistic Loading"
+msgstr "Waktu Pemuatan (Loading) Realistis"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Rekompiler (Paling Cepat)(Bawaan)"
@@ -4238,6 +4295,9 @@ msgstr "OVERCLOCK - SUPER-FX"
 
 msgid "SUPER GB BORDERS"
 msgstr "BORDERS SUPER GB"
+
+msgid "SUPERPET"
+msgstr "SUPERPET"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4566,6 +4626,9 @@ msgstr "Super Game Boy"
 msgid "Super Scope"
 msgstr "Super Scope"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "Super VIC (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "Sangat Tinggi 1440p"
 
@@ -4757,6 +4820,9 @@ msgstr "Warna tema dari konsol yang diemulasikan."
 
 msgid "There is generally no point in going beyond 4x texture scaling unless you are running at very high resolutions."
 msgstr "Umumnya tidak ada gunanya menaikkan skala tekstur di atas 4x,kecuali jika Anda bermain pada resolusi yang sangat tinggi."
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "Ini bisa memudahkan jika Anda menggunakan format LaserDisc."
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "Opsi ini mengaktifkan kemampuan untuk memainkan game Xbox Live Arcade (XBLA).Mungkin menyebabkan masalah kompatibilitas pada game non-XBLA."
@@ -4977,6 +5043,9 @@ msgstr "Biasanya tidak cukup cepat dari mode single core"
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "LEWATI VBI (Vertical Blank Interrupt)"
 
@@ -4988,6 +5057,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA (Standar)"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC Otomatis"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "VIC20 PAL Otomatis"
 
 msgid "VIDEO FILTERS"
 msgstr "FILTER VIDEO"
@@ -5148,6 +5229,9 @@ msgstr "ZOOM/POTONG (SEMBUNYIKAN BATAS)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Perbesar untuk menyembunyikan border, borders dapat berbeda setiap game"
 
+msgid "amber"
+msgstr "amber"
+
 msgid "bilinear"
 msgstr "bilinear"
 
@@ -5183,6 +5267,12 @@ msgstr "hanya bawah"
 
 msgid "bottom/top"
 msgstr "bawah/atas"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (AS) (Model chip decoder video)"
@@ -5240,6 +5330,12 @@ msgstr "maximal"
 
 msgid "medium"
 msgstr "sedang"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "Minimal"
@@ -5315,6 +5411,12 @@ msgstr "xBRZ (Default / Bawaan)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - algoritma upscale yang menajamkan gambar, Bicubic - tampilan yang halus,Hybrid - menggunakan bicubic khusus untuk area yang mulus."
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc"
+
+msgid "yape-pal"
+msgstr "yape-pal"
 
 msgid "yellow/blue"
 msgstr "kuning/biru"

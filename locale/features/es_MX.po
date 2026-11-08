@@ -306,6 +306,9 @@ msgstr "22.º"
 msgid "2304MB"
 msgstr "2304 MB"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "23.º"
 
@@ -405,6 +408,9 @@ msgstr "3,5x nativa"
 msgid "30 seconds"
 msgstr "30 segundos"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072 MB"
 
@@ -476,6 +482,9 @@ msgstr "4 hilos"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x (1440x1080)"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096 MB"
@@ -1245,6 +1254,24 @@ msgstr "Bulgaria"
 msgid "Button Options"
 msgstr "Opciones de los botones"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64 Games System PAL"
 
@@ -1533,6 +1560,9 @@ msgstr "Selecciona la región de la consola Dreamcast."
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Selecciona el complemento gráfico de Parallel N64."
 
+msgid "Choose the appropriate media for disk image."
+msgstr "Elige el medio adecuado para la imagen de disco."
+
 msgid "Choose the audio output type."
 msgstr "Elige el tipo de salida de audio."
 
@@ -1730,6 +1760,9 @@ msgstr "DESACTIVAR CACHÉ DE VÉRTICES"
 
 msgid "DISK SHADER CACHE"
 msgstr "CACHÉ DE SOMBREADORES EN DISCO"
+
+msgid "DISK TYPE"
+msgstr "TIPO DE DISCO"
 
 msgid "DISPLAY"
 msgstr "PANTALLA"
@@ -2349,6 +2382,9 @@ msgstr "Corrige un posible error en la detección de varios mandos."
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Joystick de vuelo (3 ejes, 4 botones, 1 cruceta)"
 
+msgid "Floppy Disk Image"
+msgstr "Imagen de disquete"
+
 msgid "Floppy Disk List"
 msgstr "Lista de disquetes"
 
@@ -2411,6 +2447,9 @@ msgstr "Completo (lento)"
 
 msgid "Full (more compatible)"
 msgstr "Completa (mayor compatibilidad)"
+
+msgid "Full Speed (Default)"
+msgstr "Velocidad máxima (predeterminado)"
 
 msgid "Full speed"
 msgstr "Velocidad máxima"
@@ -2636,6 +2675,9 @@ msgstr "HQ (filtro bilineal)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Truco. Aumenta un 17 % la velocidad de la mayoría de los juegos PAL."
+
+msgid "Hard Disk Image"
+msgstr "Imagen de disco duro"
 
 msgid "Hebrew"
 msgstr "Hebreo"
@@ -3000,6 +3042,9 @@ msgstr "LLE"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "CARGAR TEXTURAS PERSONALIZADAS"
 
+msgid "LOADING SPEED"
+msgstr "VELOCIDAD DE CARGA"
+
 msgid "Landscape"
 msgstr "Horizontal"
 
@@ -3323,6 +3368,9 @@ msgstr "TIPO DE RED"
 
 msgid "NEW 3DS MODE"
 msgstr "MODO NEW 3DS"
+
+msgid "NO (DEFAULT)"
+msgstr "NO (PREDETERMINADO)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC (Compuesto)"
@@ -3711,6 +3759,12 @@ msgstr "COLOR DE LA MIRA DEL JUGADOR 1"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "COLOR DE LA MIRA DEL JUGADOR 2"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "DECODIFICADOR PPU"
 
@@ -3956,6 +4010,9 @@ msgstr "Valores aleatorios"
 
 msgid "Raw"
 msgstr "Sin procesar"
+
+msgid "Realistic Loading"
+msgstr "Carga realista"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Recompilador (más rápido) (predeterminado)"
@@ -4238,6 +4295,9 @@ msgstr "SOBREFRECUENCIA DE SUPER FX"
 
 msgid "SUPER GB BORDERS"
 msgstr "BORDES DE SUPER GB"
+
+msgid "SUPERPET"
+msgstr "SUPERPET"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4566,6 +4626,9 @@ msgstr "Super Game Boy"
 msgid "Super Scope"
 msgstr "Super Scope"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "Super VIC (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "Súper alta 1440p"
 
@@ -4757,6 +4820,9 @@ msgstr "El color del tema de la consola emulada."
 
 msgid "There is generally no point in going beyond 4x texture scaling unless you are running at very high resolutions."
 msgstr "Por lo general, no tiene sentido superar el escalado de texturas 4x, a menos que utilices resoluciones muy altas."
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "Esto puede resultar útil si utilizas discos láser."
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "Esta opción permite jugar a juegos de Xbox Live Arcade. Puede causar problemas de compatibilidad con juegos que no sean de XBLA."
@@ -4977,6 +5043,9 @@ msgstr "Por lo general, no es mucho más rápido que el modo de un solo núcleo.
 msgid "Uzbekistan"
 msgstr "Uzbekistán"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "OMITIR VBI"
 
@@ -4988,6 +5057,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA (Predeterminado)"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC automático"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "VIC20 PAL automático"
 
 msgid "VIDEO FILTERS"
 msgstr "FILTROS DE VIDEO"
@@ -5148,6 +5229,9 @@ msgstr "ZOOM/RECORTE (OCULTAR BORDES)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Amplía la imagen para ocultar los bordes negros. Los bordes varían según el juego."
 
+msgid "amber"
+msgstr "ámbar"
+
 msgid "bilinear"
 msgstr "Bilineal"
 
@@ -5183,6 +5267,12 @@ msgstr "Solo pantalla inferior"
 
 msgid "bottom/top"
 msgstr "Abajo/arriba"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (EE. UU.)"
@@ -5240,6 +5330,12 @@ msgstr "máximo"
 
 msgid "medium"
 msgstr "mediano"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "mínimo"
@@ -5315,6 +5411,12 @@ msgstr "xBRZ (Predeterminado)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ: un algoritmo de escalado que mejora la nitidez; Bicubic: ofrece una imagen suave; Hibrido: utiliza Bicubic para las zonas suaves."
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc"
+
+msgid "yape-pal"
+msgstr "yape-pal"
 
 msgid "yellow/blue"
 msgstr "amarillo/azul"

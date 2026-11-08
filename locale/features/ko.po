@@ -306,6 +306,9 @@ msgstr "22일"
 msgid "2304MB"
 msgstr "2304MB"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "23일"
 
@@ -405,6 +408,9 @@ msgstr "3.5배 원본"
 msgid "30 seconds"
 msgstr "30 초"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072MB"
 
@@ -476,6 +482,9 @@ msgstr "4 스레드"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5배 (1440x1080)"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -1245,6 +1254,24 @@ msgstr "불가리아"
 msgid "Button Options"
 msgstr "옵션 버튼"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64 게임 시스템 PAL"
 
@@ -1533,6 +1560,9 @@ msgstr "드림캐스트 콘솔 지역을 선택하세요."
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Parallel N64 그래픽 플러그인을 선택하세요."
 
+msgid "Choose the appropriate media for disk image."
+msgstr "디스크 이미지에 적합한 미디어를 선택하세요."
+
 msgid "Choose the audio output type."
 msgstr "오디오 출력 유형을 선택하세요."
 
@@ -1730,6 +1760,9 @@ msgstr "VERTEX 캐시 비활성화"
 
 msgid "DISK SHADER CACHE"
 msgstr "디스크 셰이더 캐시"
+
+msgid "DISK TYPE"
+msgstr "디스크 유형"
 
 msgid "DISPLAY"
 msgstr "디스플레이"
@@ -2349,6 +2382,9 @@ msgstr "여러 컨트롤러 검색에서 발생할 수 있는 버그를 수정�
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "비행 스틱 (3 축, 4 버튼, 1 햇)"
 
+msgid "Floppy Disk Image"
+msgstr "플로피 디스크 이미지"
+
 msgid "Floppy Disk List"
 msgstr "플로피 디스크 목록"
 
@@ -2411,6 +2447,9 @@ msgstr "전체 (느림)"
 
 msgid "Full (more compatible)"
 msgstr "전체 (호환성 향상)"
+
+msgid "Full Speed (Default)"
+msgstr "전속력 (기본)"
 
 msgid "Full speed"
 msgstr "전속력"
@@ -2636,6 +2675,9 @@ msgstr "고품질 (이중선형 필터)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "해킹. 대부분의 PAL 게임의 속도가 17% 증가합니다."
+
+msgid "Hard Disk Image"
+msgstr "하드 디스크 이미지"
 
 msgid "Hebrew"
 msgstr "히브리어"
@@ -3000,6 +3042,9 @@ msgstr "저수준 에뮬레이션"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "커스텀 텍스처 로드"
 
+msgid "LOADING SPEED"
+msgstr "로딩 속도"
+
 msgid "Landscape"
 msgstr "가로 화면"
 
@@ -3323,6 +3368,9 @@ msgstr "네트워크 유형"
 
 msgid "NEW 3DS MODE"
 msgstr "새 3DS 모드"
+
+msgid "NO (DEFAULT)"
+msgstr "아니요 (기본)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC (컴포지트)"
@@ -3711,6 +3759,12 @@ msgstr "플레이어 1 십자선 색상"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "플레이어 2 십자선 색상"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "PPU 디코더"
 
@@ -3956,6 +4010,9 @@ msgstr "무작위 값"
 
 msgid "Raw"
 msgstr "원시"
+
+msgid "Realistic Loading"
+msgstr "현실적인 로딩"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "재컴파일러 (가장 빠름)(기본)"
@@ -4238,6 +4295,9 @@ msgstr "슈퍼 FX 오버클럭"
 
 msgid "SUPER GB BORDERS"
 msgstr "슈퍼 GB 테두리"
+
+msgid "SUPERPET"
+msgstr "슈퍼펫"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4566,6 +4626,9 @@ msgstr "슈퍼 게임보이"
 msgid "Super Scope"
 msgstr "슈퍼 스코프"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "슈퍼 VIC (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "최대 1440p"
 
@@ -4757,6 +4820,9 @@ msgstr "에뮬레이션된 콘솔의 테마 색상입니다."
 
 msgid "There is generally no point in going beyond 4x texture scaling unless you are running at very high resolutions."
 msgstr "매우 높은 해상도에서 실행하지 않는 한, 텍스처 스케일링을 4배 이상으로 늘리는 것은 일반적으로 의미가 없습니다."
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "레이저디스크를 사용하는 경우 편리할 수 있습니다."
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "이 옵션은 엑스박스 라이브 아케이드 게임을 플레이할 수 있는 기능을 제공합니다. XBLA가 아닌 게임과 호환성 문제가 발생할 수 있습니다."
@@ -4977,6 +5043,9 @@ msgstr "일반적으로 단일 코어 모드보다 훨씬 빠르지 않습니다
 msgid "Uzbekistan"
 msgstr "우즈베키스탄"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "VBI 건너뛰기"
 
@@ -4988,6 +5057,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA (기본)"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC 자동"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "VIC20 PAL 자동"
 
 msgid "VIDEO FILTERS"
 msgstr "비디오 필터"
@@ -5148,6 +5229,9 @@ msgstr "확대/축소/자르기 (테두리 숨기기)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "확대/축소하여 검은색 테두리를 숨깁니다. 테두리는 게임마다 다릅니다."
 
+msgid "amber"
+msgstr "호박색"
+
 msgid "bilinear"
 msgstr "이중선형"
 
@@ -5183,6 +5267,12 @@ msgstr "하단만"
 
 msgid "bottom/top"
 msgstr "하단/상단"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -5240,6 +5330,12 @@ msgstr "최대"
 
 msgid "medium"
 msgstr "보통"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "최소"
@@ -5315,6 +5411,12 @@ msgstr "xBRZ (기본)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - 선명도를 높이는 고급 알고리즘, Bicubic - 매끄러운 모양, Hybrid - 매끄러운 영역에 Bicubic을 사용합니다."
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc"
+
+msgid "yape-pal"
+msgstr "yape-pal"
 
 msgid "yellow/blue"
 msgstr "노란색/파란색"
