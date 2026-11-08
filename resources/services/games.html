@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Games - EmulationStation-RE</title>
+	<link rel="icon" href="/resources/splash.svg" type="image/svg+xml">
+	<link href="app.css" rel="stylesheet">
+	<script src="app.js"></script>
+</head>
+
+<body>
+
+<main id="content">
+	<div class="games-layout">
+		<section class="card">
+			<div class="card-head" id="sysHead"></div>
+			<div class="syslist" id="systems"><div class="empty">Loading...</div></div>
+		</section>
+
+		<section>
+			<div class="toolbar">
+				<input class="input" id="filter" type="search" placeholder="Search a game" oninput="showGames()">
+				<span class="muted" id="count"></span>
+			</div>
+			<div class="grid games" id="games"></div>
+		</section>
+	</div>
+</main>
+
+<script>
+ES.shell("games", "Games");
+
+document.getElementById("sysHead").innerHTML = ES.icon("systems") + "<span>Systems</span>";
+
+var systems = [];
+var games = [];
+var current = null;
+
+function showSystems() {
+	var out = systems.map(function(s) {
+		return '<a class="sysitem' + (s.name == current ? ' active' : '') + '" href="#' + encodeURIComponent(s.name) + '">' +
+			'<span>' + ES.escapeHtml(s.fullname || s.name) + '</span><span class="count">' + (s.totalGames || 0) + '</span></a>';
+	}).join("");
+	document.getElementById("systems").innerHTML = out || '<div class="empty">No system</div>';
+}
+
+function showGames() {
+	var filter = document.getElementById("filter").value.trim().toLowerCase();
+	var list = games.filter(function(g) { return !filter || String(g.name).toLowerCase().indexOf(filter) >= 0; });
+
+	document.getElementById("count").textContent = current ? list.length + " / " + games.length + " games" : "";
+
+	var el = document.getElementById("games");
+	if (!current) {
+		el.innerHTML = '<div class="empty">Pick a system</div>';
+		return;
+	}
+	if (!list.length) {
+		el.innerHTML = '<div class="empty">' + (games.length ? "No game matches" : "No game in this system") + '</div>';
+		return;
+	}
+
+	el.innerHTML = list.map(function(g, i) {
+		var art = g.thumbnail || g.image;
+		var meta = [g.releasedate ? g.releasedate.substring(0, 4) : "", g.developer, g.genre].filter(Boolean).join(" · ");
+		return '<div class="card game" title="' + ES.escapeHtml(g.desc || g.name) + '">' +
+			'<div class="game-art">' + (art ? '<img loading="lazy" src="' + ES.escapeHtml(art) + '" alt="">' : ES.icon("games")) + '</div>' +
+			'<div class="game-info">' +
+				'<div class="game-name">' + (g.favorite == "true" ? '<span class="fav">&#9733;</span> ' : '') + ES.escapeHtml(g.name) + '</div>' +
+				'<div class="game-meta">' + ES.escapeHtml(meta || " ") + '</div>' +
+				'<button class="btn btn-primary btn-sm" data-index="' + games.indexOf(g) + '">' + ES.icon("play") + 'Play</button>' +
+			'</div></div>';
+	}).join("");
+
+	el.querySelectorAll("[data-index]").forEach(function(btn) {
+		btn.onclick = function() { ES.launch(games[btn.dataset.index].path); };
+	});
+}
+
+function selectSystem(name) {
+	current = name;
+	games = [];
+	showSystems();
+	if (!name) {
+		showGames();
+		return;
+	}
+
+	document.getElementById("games").innerHTML = '<div class="empty">Loading...</div>';
+	ES.getJson("/systems/" + encodeURIComponent(name) + "/games").then(function(list) {
+		if (current != name)
+			return;
+		games = list.sort(ES.byName);
+		showGames();
+	}).catch(function(e) {
+		document.getElementById("games").innerHTML = '<div class="empty error">' + ES.escapeHtml(e.message) + '</div>';
+	});
+}
+
+function fromHash() {
+	var name = decodeURIComponent(location.hash.substring(1));
+	if (!name && systems.length)
+		name = systems[0].name;
+	selectSystem(name);
+}
+
+window.addEventListener("hashchange", fromHash);
+
+ES.getJson("/systems").then(function(list) {
+	systems = list.filter(function(s) { return s.visible == "true" && (s.totalGames || 0) > 0; });
+	fromHash();
+}).catch(function(e) {
+	document.getElementById("systems").innerHTML = '<div class="empty error">' + ES.escapeHtml(e.message) + '</div>';
+});
+</script>
+</body>
+</html>

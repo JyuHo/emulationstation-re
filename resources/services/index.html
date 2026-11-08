@@ -1,174 +1,145 @@
 <!DOCTYPE html>
-<html lang='fr'>
-<head>			
-	<title>EmulationStation Web services</title>
-	<link rel="shortcut icon" href="favicon.png">
-	<link href="main.css" rel="stylesheet">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard - EmulationStation-RE</title>
+	<link rel="icon" href="/resources/splash.svg" type="image/svg+xml">
+	<link href="app.css" rel="stylesheet">
+	<script src="app.js"></script>
 </head>
 
 <body>
 
-<div class="title">
-	<img height="24" style="vertical-align: middle;" src="favicon.png">
-	<span>EmulationStation Web services</span>
-</div>
+<main id="content">
+	<div class="grid stats" id="stats"></div>
 
-<!-- See REST Api list on https://github.com/batocera-linux/batocera-emulationstation/blob/master/es-app/src/services/HttpServerThread.cpp#L25
- -->
- 
-<script type='text/javascript'>
+	<div class="grid cols">
+		<section class="card">
+			<div class="card-head" id="systemsHead"></div>
+			<div id="systems"><div class="empty">Loading...</div></div>
+		</section>
 
-function quitES() {
-	var xhr = new XMLHttpRequest();			
-	xhr.open('GET', '/quit');
-	xhr.send(); 
+		<div class="stack">
+			<section class="card">
+				<div class="card-head" id="playingHead"></div>
+				<div class="card-body" id="playing"></div>
+			</section>
+
+			<section class="card">
+				<div class="card-head" id="actionsHead"></div>
+				<div class="card-body actions" id="actions"></div>
+			</section>
+
+			<section class="card">
+				<div class="card-head" id="topHead"></div>
+				<div id="top"></div>
+			</section>
+		</div>
+	</div>
+</main>
+
+<script>
+ES.shell("dashboard", "Dashboard");
+
+function head(id, iconName, title, extra) {
+	document.getElementById(id).innerHTML = ES.icon(iconName) + "<span>" + ES.escapeHtml(title) + "</span>" + (extra || "");
 }
 
-function reloadGamelists() {
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', '/reloadgames');
-	xhr.send(); 
+head("systemsHead", "systems", "Systems", '<div class="spacer"></div><a class="btn btn-sm" href="games.html">Browse games</a>');
+head("playingHead", "activity", "Now playing");
+head("actionsHead", "dashboard", "Quick actions");
+head("topHead", "trophy", "Most played per system");
+
+document.getElementById("actions").innerHTML =
+	'<button class="btn" data-run="reload">' + ES.icon("reload") + 'Reload games</button>' +
+	'<a class="btn" href="files.html">' + ES.icon("upload") + 'Add ROMs</a>' +
+	'<button class="btn btn-danger" data-run="emukill">' + ES.icon("stop") + 'Stop emulator</button>' +
+	'<button class="btn btn-danger" data-run="quit">' + ES.icon("power") + 'Quit ES</button>';
+
+document.querySelectorAll("[data-run]").forEach(function(el) {
+	el.onclick = function() { ES.run(el.dataset.run); };
+});
+
+function stat(iconName, value, label) {
+	return '<div class="card stat"><div class="stat-icon">' + ES.icon(iconName) + '</div>' +
+		'<div><div class="stat-value">' + ES.escapeHtml(value) + '</div><div class="stat-label">' + ES.escapeHtml(label) + '</div></div></div>';
 }
 
-function emuKill() {
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', '/emukill');
-	xhr.send();
-}
+function showSystems(list) {
+	// Real game systems only: collections and groups count the same games again
+	var systems = list.filter(function(s) {
+		return s.visible == "true" && s.gamesystem == "true" && s.collection != "true" && s.groupsystem != "true";
+	});
 
-function launchGame(game) {
-	var xhr = new XMLHttpRequest();
-	xhr.open('POST', '/launch');
-	xhr.send(game);
-}
+	var total = 0, favorites = 0, played = 0, max = 1;
+	systems.forEach(function(s) {
+		total += s.totalGames || 0;
+		favorites += s.favoriteGames || 0;
+		played += s.playedGames || 0;
+		max = Math.max(max, s.totalGames || 0);
+	});
 
-function showGames(arr) {
-    var out = "<table width=100% border=0 cellpadding=4 cellspacing=0>";
-    var i;
-    for(i = 0; i < arr.length; i++) {
-		out += '<tr class="game">';
-		if(arr[i].image)
-			out += '<td width="72px" align="center"><img loading="lazy" height=48 style="max-width:100pt" src="' + arr[i].image + '"></td>';
-		else
-			out += '<td width="72px" align="center"></td>';
-		out += '<td>';
-		out += '<table width=100%>';
-		out += '<tr><td>' + arr[i].name + '</td></tr>';
-		if (arr[i].desc) {
-			out += '<tr><td><div class="desc">' + arr[i].desc + '</div></td></tr>';
-		}
-		out += '</table>';
-		out += '<button class="playitBtn" onclick="launchGame(\'' + arr[i].path + '\')">Play</button>'
-		out += '</td>';
-		out += '<tr/>';
-    }
-	
-	out += "</table>";
-    document.getElementById("gameList").innerHTML = out;
-}
+	document.getElementById("stats").innerHTML =
+		stat("systems", systems.length, "Systems") +
+		stat("games", total, "Games") +
+		stat("star", favorites, "Favorites") +
+		stat("play", played, "Games played");
 
-function getOrder(prop) {
-    return function(a, b) {
-        if (a[prop] > b[prop]) {
-            return 1;
-        } else if (a[prop] < b[prop]) {
-            return -1;
-        }
-        return 0;
-    }
-}
+	systems.sort(function(a, b) { return (b.totalGames || 0) - (a.totalGames || 0) || ES.byName(a, b); });
 
-function loadGames(name) {
-	var xhr = new XMLHttpRequest();
-	
-	xhr.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			var myArr = JSON.parse(this.responseText);
-			myArr.sort(getOrder("name"));
-			showGames(myArr);
-		}
-	};
-
-	xhr.open('GET', '/systems/' + name + '/games');
-	xhr.send(); 
-	
-}
-
-var xmlhttp = new XMLHttpRequest();
-var url = "/systems";
-
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var myArr = JSON.parse(this.responseText);
-        showSystems(myArr);
-    }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-
-function showSystems(arr) {
-    var out = "<table width=30% cellpadding=8>";
-    var i;
-    for(i = 0; i < arr.length; i++) {
-	
-		if (arr[i].visible == "true") {
-			out += '<tr class="system">';
-			if (arr[i].logo) {
-				out += '<td align="center"><a onclick="javascript:loadGames(\''+ arr[i].name +'\')" href="#"><img height=32pt style="max-width:100pt" src="' + arr[i].logo + '"></a></td>';
-			} else {
-				out += '<td align="center"><a onclick="javascript:loadGames(\'' + arr[i].name +'\')" href="#">' + arr[i].fullname + '</a></td>';
-			}
-			
-		//	out += '<td>Games : ' + arr[i].totalGames + '</td>';
-			
-			out += '<tr/>';
-		}
-    }
-	
-	out += "</table>";
-    document.getElementById("systemList").innerHTML = out;
-}
-</script>
-
-<!-- <img src="resources/vid.jpg"/> -->
-
-<div id="toolbar" class="toolbar">
-	<input class="toolbarbutton" type='button' value='Reload games' onClick='reloadGamelists()'/>
-	<input class="toolbarbutton" type='button' value='Exit EmulationStation' onClick='quitES()'/>
-	<input class="toolbarbutton" type='button' value='Kill running emulator' onClick='emuKill()'/>
-	<a class="toolbarbutton" style="display:inline-block; text-decoration:none;" href='files.html'>ROMs, BIOS &amp; configs</a>
-</div>
-
-<table height='100%' width='100%' cellpadding=0 cellspacing=0 border=0>
-<tr>
- <td valign="top" width='120pt'>
-    <div id="systemList" class="systemlist"></div>
- </td>
- <td valign="top">
-   <div id="gameList" class="gamelist" style="height:300px"></div>
- </td>
-</tr> 
-</table>
-
-
-<script type='text/javascript'>
-function resize() {
-	var heights = window.innerHeight;	
-	var toolbar = document.getElementById("toolbar");
-	
-	var systemList = document.getElementById("systemList");
-	if (systemList) {
-		systemList.style.height = (heights - toolbar.offsetTop - toolbar.offsetHeight) + "px";
+	if (!systems.length) {
+		document.getElementById("systems").innerHTML = '<div class="empty">No system with games yet. <a href="files.html">Add ROMs</a></div>';
+		document.getElementById("top").innerHTML = '<div class="empty">Nothing played yet</div>';
+		return;
 	}
-	
-	var systemList = document.getElementById("gameList");
-	if (gameList) {
-		gameList.style.height = (heights - toolbar.offsetTop - toolbar.offsetHeight) + "px";
-	}
+
+	var rows = systems.map(function(s) {
+		var name = ES.escapeHtml(s.fullname || s.name);
+		var logo = s.logo ? '<img class="syslogo" loading="lazy" src="' + ES.escapeHtml(s.logo) + '" alt="' + name + '" title="' + name + '">' : name;
+		var maker = [s.manufacturer, s.releaseYear].filter(Boolean).join(", ");
+		return '<tr>' +
+			'<td><a href="games.html#' + encodeURIComponent(s.name) + '">' + logo + '</a></td>' +
+			'<td><div>' + name + '</div><div class="muted">' + ES.escapeHtml(maker) + '</div></td>' +
+			'<td class="hide-sm" style="width:28%"><div class="bar"><span style="width:' + Math.round((s.totalGames || 0) * 100 / max) + '%"></span></div></td>' +
+			'<td class="num">' + (s.totalGames || 0) + '</td>' +
+			'<td class="num muted hide-sm">' + (s.favoriteGames || 0) + ' &#9733;</td>' +
+			'</tr>';
+	}).join("");
+
+	document.getElementById("systems").innerHTML =
+		'<table class="list"><thead><tr><th></th><th>System</th><th class="hide-sm"></th><th class="num">Games</th><th class="num hide-sm">Fav.</th></tr></thead><tbody>' + rows + '</tbody></table>';
+
+	var top = systems.filter(function(s) { return s.mostPlayedGame; }).slice(0, 8).map(function(s) {
+		return '<tr><td><div>' + ES.escapeHtml(s.mostPlayedGame) + '</div><div class="muted">' + ES.escapeHtml(s.fullname || s.name) + '</div></td></tr>';
+	}).join("");
+
+	document.getElementById("top").innerHTML = top ? '<table class="list"><tbody>' + top + '</tbody></table>' : '<div class="empty">Nothing played yet</div>';
 }
 
-resize();
-window.onresize = function() { 	resize(); };		
+ES.onStatus(function(game) {
+	var el = document.getElementById("playing");
+	if (game === undefined) {
+		el.innerHTML = '<div class="empty">EmulationStation does not answer</div>';
+		return;
+	}
+	if (!game) {
+		el.innerHTML = '<div class="empty">No game running</div>';
+		return;
+	}
+
+	var art = game.thumbnail || game.image;
+	el.innerHTML =
+		'<div class="playing">' + (art ? '<img src="' + ES.escapeHtml(art) + '" alt="">' : '') +
+		'<div><div class="playing-name">' + ES.escapeHtml(game.name) + '</div>' +
+		'<div class="muted">' + ES.escapeHtml(game.systemName) + '</div>' +
+		'<button class="btn btn-danger btn-sm" style="margin-top:8px" id="stopGame">' + ES.icon("stop") + 'Stop</button></div></div>';
+	document.getElementById("stopGame").onclick = function() { ES.run("emukill"); };
+});
+
+ES.getJson("/systems").then(showSystems).catch(function(e) {
+	document.getElementById("systems").innerHTML = '<div class="empty error">' + ES.escapeHtml(e.message) + '</div>';
+});
 </script>
 </body>
 </html>
