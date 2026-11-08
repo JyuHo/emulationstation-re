@@ -147,6 +147,12 @@ leaves the others as the player set them in the emulator's menus.
   give a pad the same GUID and the same button numbers as ES. SDL's HIDAPI drivers would give
   PlayStation, Switch or Xbox pads other GUIDs and numbers, which also differ between SDL2 and
   SDL3. If `SDL_JOYSTICK_HIDAPI` is set in the environment of ES, that value is used instead.
+  RetroArch's udev driver does not number buttons, axes and hats the same way as SDL for every
+  pad (a button below `BTN_JOYSTICK`, an axis above `ABS_MISC`...): the RetroArch generator
+  reads the pad's evdev device and converts ES's numbers (`EvdevLayout`).
+* A pad the player has not mapped gets Batocera's mapping when there is one
+  (`controllers/es_input_batocera.cfg`, matched by GUID without the name CRC and by evdev name,
+  converted from udev to SDL numbers).
 * Hotkeys: the same as RetroArch, bound in the emulator to player 1's hotkey held with the other
   button (Start quits, B opens the menu or pauses, Y/X save and load a state...), where the
   emulator has the action; Eden gets them as its controller shortcuts. Without a pad, the keyboard

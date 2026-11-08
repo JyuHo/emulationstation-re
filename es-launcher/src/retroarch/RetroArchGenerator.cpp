@@ -5,6 +5,7 @@
 
 #include "retroarch/RetroArchGenerator.h"
 
+#include "es-launcher/EvdevLayout.h"
 #include "es-launcher/LaunchError.h"
 #include "retroarch/Cores.h"
 #include "util/EmulatorCommand.h"
@@ -386,13 +387,23 @@ namespace es::launcher::retroarch
 			config.remove(std::string("input_") + action + "_axis");
 		}
 
-		config.set("input_joypad_driver", ctx.settings.getString("input_joypad_driver", "udev"));
+		// ES numbers the controls as SDL3 does; RetroArch's udev driver numbers them its own way
+		// (see EvdevLayout): read the pad's evdev device to give RetroArch its numbers
+		std::string joypadDriver = ctx.settings.getString("input_joypad_driver", "udev");
+		std::vector<Controller> pads;
+		for (const Controller& pad : ctx.controllers)
+		{
+			auto layout = joypadDriver == "udev" ? EvdevLayout::read(pad.devicePath) : std::nullopt;
+			pads.push_back(layout ? layout->sdlToUdev(pad) : pad);
+		}
+
+		config.set("input_joypad_driver", joypadDriver);
 		config.set("input_max_users", 16);
 		config.set("input_autodetect_enable", false);   // ES already knows the mappings
 
 		bool fightstick = ctx.settings.getString("altlayout") == "fightstick";
 
-		for (const Controller& pad : ctx.controllers)
+		for (const Controller& pad : pads)
 		{
 			std::string player = "input_player" + std::to_string(pad.player) + "_";
 
@@ -452,9 +463,9 @@ namespace es::launcher::retroarch
 		}
 
 		// Hotkeys on player 1's pad: hold the hotkey button, then press another one
-		if (!ctx.controllers.empty())
+		if (!pads.empty())
 		{
-			const Controller& pad = ctx.controllers.front();
+			const Controller& pad = pads.front();
 			const InputBinding* hotkey = pad.find("hotkey");
 			if (hotkey != nullptr && hotkey->type == InputBinding::Type::Button)
 			{

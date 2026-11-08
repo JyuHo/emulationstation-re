@@ -16,6 +16,7 @@
 #include "utils/StringUtil.h"
 #include "LocaleES.h"
 #include "Paths.h"
+#include <es-launcher/EvdevLayout.h>
 #include "GunManager.h"
 #include "renderers/Renderer.h"
 #include <fstream>
@@ -258,6 +259,8 @@ void InputManager::rebuildAllJoysticks(bool deinit)
 	// same button and axis numbers, so the mappings made in ES work in every emulator (es-launcher
 	// starts them with SDL_JOYSTICK_HIDAPI=0 too). The SDL_JOYSTICK_HIDAPI variable overrides it.
 	SDL_SetHint(SDL_HINT_JOYSTICK_HIDAPI, "0");
+	// Every hat is a hat, as in RetroArch: SDL would otherwise guess, and could make a d-pad two axes
+	SDL_SetHint(SDL_HINT_JOYSTICK_LINUX_DIGITAL_HATS, "1");
 	SDL_InitSubSystem(SDL_INIT_JOYSTICK);
 
 
@@ -760,6 +763,95 @@ bool InputManager::loadFromSdlMapping(InputConfig* config, const std::string& ma
 	return isConfigured;
 }
 
+// A file shipped with ES: next to the executable, then in the system configuration and data folders
+static std::string findSharedFile(const std::string& fileName)
+{
+	std::vector<std::string> roots = { Paths::getEmulationStationPath() };
+	roots.insert(roots.end(), Paths::getSystemConfigPaths().cbegin(), Paths::getSystemConfigPaths().cend());
+	roots.insert(roots.end(), Paths::getSystemDataPaths().cbegin(), Paths::getSystemDataPaths().cend());
+
+	for (const auto& root : roots)
+		if (!root.empty() && Utils::FileSystem::exists(root + "/" + fileName))
+			return root + "/" + fileName;
+
+	return std::string();
+}
+
+static std::string guidWithoutCrc(std::string guid)
+{
+	guid = Utils::String::toLower(guid);
+	if (guid.size() == 32)
+		guid.replace(4, 4, "0000");
+	return guid;
+}
+
+bool InputManager::tryLoadBatoceraInputConfig(const std::string& path, InputConfig* config)
+{
+	if (path.empty() || config->getDeviceId() < 0)
+		return false;
+
+	auto layout = es::launcher::EvdevLayout::read(config->getDevicePath());
+	if (!layout)
+		return false;
+
+	pugi::xml_document doc;
+	if (!doc.load_file(path.c_str()))
+		return false;
+
+	pugi::xml_node root = doc.child("inputList");
+	std::string guid = guidWithoutCrc(config->getDeviceGUIDString());
+
+	// same GUID and evdev name, else same GUID (bus, vendor, product, version)
+	pugi::xml_node configNode;
+	for (bool withName : { true, false })
+	{
+		for (pugi::xml_node item = root.child("inputConfig"); item && !configNode; item = item.next_sibling("inputConfig"))
+		{
+			if (std::string(item.attribute("type").value()) != "joystick" || guidWithoutCrc(item.attribute("deviceGUID").value()) != guid)
+				continue;
+			if (!withName || layout->name() == item.attribute("deviceName").value())
+				configNode = item;
+		}
+		if (configNode)
+			break;
+	}
+
+	if (!configNode)
+		return false;
+
+	// Batocera's ids are RetroArch udev numbers: back to SDL's
+	pugi::xml_document converted;
+	pugi::xml_node node = converted.append_child("inputConfig");
+	for (pugi::xml_node input = configNode.child("input"); input; input = input.next_sibling("input"))
+	{
+		std::string type = input.attribute("type").value();
+		es::launcher::InputBinding binding;
+		if (type == "button") binding.type = es::launcher::InputBinding::Type::Button;
+		else if (type == "axis") binding.type = es::launcher::InputBinding::Type::Axis;
+		else if (type == "hat") binding.type = es::launcher::InputBinding::Type::Hat;
+		else continue;
+		binding.id = input.attribute("id").as_int();
+		binding.value = input.attribute("value").as_int();
+
+		auto sdl = layout->udevToSdl(binding);
+		if (!sdl)
+			continue;
+
+		pugi::xml_node copy = node.append_child("input");
+		copy.append_attribute("name") = input.attribute("name").value();
+		copy.append_attribute("type") = type.c_str();
+		copy.append_attribute("id") = sdl->id;
+		copy.append_attribute("value") = sdl->value;
+	}
+
+	if (!node.child("input"))
+		return false;
+
+	LOG(LogInfo) << "Using Batocera's mapping of " << configNode.attribute("deviceName").value() << " (" << configNode.attribute("deviceGUID").value() << ") for " << config->getDeviceName();
+	config->loadFromXML(node);
+	return true;
+}
+
 bool InputManager::loadInputConfig(InputConfig* config)
 {
 	std::string path = getConfigPath();
@@ -769,8 +861,12 @@ bool InputManager::loadInputConfig(InputConfig* config)
 		return true;
 
 	// Find system exact device
-	std::string sharedPath = Paths::getEmulationStationPath() + "/es_input.cfg";
-	if (tryLoadInputConfig(sharedPath, config, false))
+	std::string sharedPath = findSharedFile("es_input.cfg");
+	if (!sharedPath.empty() && tryLoadInputConfig(sharedPath, config, false))
+		return true;
+
+	// The mappings of Batocera, for the same pad
+	if (tryLoadBatoceraInputConfig(findSharedFile("es_input_batocera.cfg"), config))
 		return true;
 
 	// Find user Approximative device
@@ -778,7 +874,7 @@ bool InputManager::loadInputConfig(InputConfig* config)
 		return true;
 
 	// Find system Approximative device
-	if (tryLoadInputConfig(sharedPath, config, true))
+	if (!sharedPath.empty() && tryLoadInputConfig(sharedPath, config, true))
 		return true;
 
 	return false;

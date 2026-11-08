@@ -270,7 +270,8 @@ LIST(APPEND CORE_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/Renderer_GL3.
 
 include_directories(${COMMON_INCLUDE_DIRS})
 add_library(es-core STATIC ${CORE_SOURCES} ${CORE_HEADERS})
-target_link_libraries(es-core ${COMMON_LIBRARIES})
+# es-launcher: EvdevLayout, to read Batocera's es_input_batocera.cfg
+target_link_libraries(es-core ${COMMON_LIBRARIES} es-launcher)
 if(ES_PCH)
     target_precompile_headers(es-core PRIVATE ${ES_PRECOMPILED_HEADERS})
 endif()

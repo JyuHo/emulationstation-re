@@ -31,3 +31,6 @@ Resources
 
 Open Sans font
 	http://www.google.com/fonts/specimen/Open+Sans
+
+Batocera emulator options and controller mappings (`features/es_features.cfg`, `controllers/es_input_batocera.cfg`, LGPL-3.0-or-later)
+	https://github.com/batocera-linux/batocera.linux
