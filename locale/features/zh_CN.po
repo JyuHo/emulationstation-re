@@ -306,6 +306,9 @@ msgstr "22号"
 msgid "2304MB"
 msgstr "2304MB"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "23号"
 
@@ -405,6 +408,9 @@ msgstr "3.5倍原生分辨率"
 msgid "30 seconds"
 msgstr "30秒"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072MB"
 
@@ -476,6 +482,9 @@ msgstr "4 线程"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x（1440x1080）"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -1245,6 +1254,24 @@ msgstr "保加利亚"
 msgid "Button Options"
 msgstr "按钮选项"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64 游戏系统 PAL"
 
@@ -1533,6 +1560,9 @@ msgstr "选择Dreamcast主机区域。"
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "选择Parallel N64图形插件。"
 
+msgid "Choose the appropriate media for disk image."
+msgstr "为磁盘映像选择适当的介质。"
+
 msgid "Choose the audio output type."
 msgstr "选择音频输出类型。"
 
@@ -1730,6 +1760,9 @@ msgstr "禁用顶点缓存"
 
 msgid "DISK SHADER CACHE"
 msgstr "磁盘着色器缓存"
+
+msgid "DISK TYPE"
+msgstr "磁盘类型"
 
 msgid "DISPLAY"
 msgstr "显示"
@@ -2349,6 +2382,9 @@ msgstr "修复了多个控制器检测可能出现的错误。"
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "飞行杆（3轴，4键，1帽）"
 
+msgid "Floppy Disk Image"
+msgstr "软盘映像"
+
 msgid "Floppy Disk List"
 msgstr "软盘列表"
 
@@ -2411,6 +2447,9 @@ msgstr "完整（慢）"
 
 msgid "Full (more compatible)"
 msgstr "Full（更多兼容性）"
+
+msgid "Full Speed (Default)"
+msgstr "全速（默认）"
 
 msgid "Full speed"
 msgstr "满速"
@@ -2636,6 +2675,9 @@ msgstr "HQ（双线性过滤）"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack。 会将大多数PAL游戏的速度提高17%。"
+
+msgid "Hard Disk Image"
+msgstr "硬盘映像"
 
 msgid "Hebrew"
 msgstr "希伯来语"
@@ -3000,6 +3042,9 @@ msgstr "低级仿真层"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "加载自定义纹理"
 
+msgid "LOADING SPEED"
+msgstr "加载速度"
+
 msgid "Landscape"
 msgstr "景观"
 
@@ -3323,6 +3368,9 @@ msgstr "网络类型"
 
 msgid "NEW 3DS MODE"
 msgstr "New 3DS模式"
+
+msgid "NO (DEFAULT)"
+msgstr "否（默认）"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC（复合端子）"
@@ -3711,6 +3759,12 @@ msgstr "玩家1的光枪准星颜色"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "玩家2的光枪准星颜色"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "PPU解码器"
 
@@ -3956,6 +4010,9 @@ msgstr "随机值"
 
 msgid "Raw"
 msgstr "Raw"
+
+msgid "Realistic Loading"
+msgstr "现实加载"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "再编译模式（最快）（默认）"
@@ -4238,6 +4295,9 @@ msgstr "超级FX超频"
 
 msgid "SUPER GB BORDERS"
 msgstr "超级GB边框"
+
+msgid "SUPERPET"
+msgstr "超级"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4566,6 +4626,9 @@ msgstr "Super Game Boy"
 msgid "Super Scope"
 msgstr "超范围"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "超级VIC（+16K）NTSC"
+
 msgid "Super-high 1440p"
 msgstr "超高 1440p"
 
@@ -4757,6 +4820,9 @@ msgstr "模拟主机的主题颜色。"
 
 msgid "There is generally no point in going beyond 4x texture scaling unless you are running at very high resolutions."
 msgstr "除非你以非常高的分辨率运行, 否则通常没有必要超过4倍的纹理缩放."
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "如果你正在使用激光唱片，这将非常方便。"
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "此选项使您能够玩Xbox Live Arcade游戏. 可能会导致与非XBLA游戏的兼容性问题."
@@ -4977,6 +5043,9 @@ msgstr "通常不会比单核模式快多少。"
 msgid "Uzbekistan"
 msgstr "乌兹别克斯坦"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "垂直空白中断跳过"
 
@@ -4988,6 +5057,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA（默认）"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC 自动"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "VIC20 PAL 自动"
 
 msgid "VIDEO FILTERS"
 msgstr "视频滤镜"
@@ -5148,6 +5229,9 @@ msgstr "缩放/裁剪（隐藏边框）"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "放大以隐藏黑色边框。每个游戏的边框不同。"
 
+msgid "amber"
+msgstr "琥珀色"
+
 msgid "bilinear"
 msgstr "双线性"
 
@@ -5183,6 +5267,12 @@ msgstr "仅下屏"
 
 msgid "bottom/top"
 msgstr "下/上"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -5240,6 +5330,12 @@ msgstr "最大值"
 
 msgid "medium"
 msgstr "中"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "最小值"
@@ -5315,6 +5411,12 @@ msgstr "xBRZ（默认）"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ是一种锐化高级算法, Bicubic是一种平滑外观, Hybrid使用Bicubic来平滑区域."
+
+msgid "yape-ntsc"
+msgstr "yape-NTSC"
+
+msgid "yape-pal"
+msgstr "yape-PAL"
 
 msgid "yellow/blue"
 msgstr "黄色/蓝色"

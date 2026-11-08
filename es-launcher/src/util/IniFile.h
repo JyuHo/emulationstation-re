@@ -44,6 +44,10 @@ namespace es::launcher::util
 
 		std::string toString() const;
 
+		// What toString() writes between a key and its value: " = " by default; "=" for the
+		// emulators that do not trim keys (VICE)
+		void setSeparator(std::string_view separator) { mSeparator = separator; }
+
 	private:
 		struct Line
 		{
@@ -62,6 +66,7 @@ namespace es::launcher::util
 		Section& getOrAdd(std::string_view section);
 
 		std::vector<Section> mSections;
+		std::string mSeparator = " = ";
 	};
 
 	// A TOML basic string: "C:\\dir" with its backslashes and quotes escaped. xemu and Xenia

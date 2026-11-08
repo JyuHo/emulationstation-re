@@ -1596,6 +1596,67 @@ namespace es::launcher::retroarch
 		bool m_scpu;
 	};
 
+	// The other VICE cores: C128, VIC-20, Plus/4, PET. They differ in their model and palette
+	// options, and in the joystick options the machine has.
+	class ViceMachine : public Core
+	{
+	public:
+		struct Options
+		{
+			const char* model;           // core option
+			const char* modelSetting;
+			const char* modelDefault;
+			const char* palette;         // core option
+			const char* paletteDefault;
+			bool aspect;                 // vice_aspect_ratio
+			bool retropad;               // vice_retropad_options
+			bool joyport;                // vice_joyport (the machine has two joystick ports)
+			bool joyportType;            // vice_joyport_type
+			bool c128;                   // JiffyDOS and the RAM expansion of the C128
+		};
+
+		explicit ViceMachine(Options options) : m(options) { }
+
+		void setCoreOptions(const LaunchContext& ctx, ConfigFile& o) const override
+		{
+			if (m.c128)
+			{
+				std::vector<std::string> roms = { "JiffyDOS_1541-II.bin", "JiffyDOS_1571_repl310654.bin", "JiffyDOS_1581.bin",
+					"JiffyDOS_C64.bin", "JiffyDOS_C128.bin" };
+				bool jiffy = std::ranges::all_of(roms, [&](const std::string& rom) {
+					std::error_code ec;
+					return std::filesystem::exists(ctx.paths.bios / "vice" / rom, ec);
+				});
+				o.set("vice_jiffydos", jiffy ? "enabled" : "disabled");
+			}
+			o.set("vice_autoloadwarp", "enabled");
+			o.set("vice_datasette_hotkeys", "disabled");
+			o.set("vice_read_vicerc", "disabled");
+			o.set("vice_Controller", "joystick");
+			o.set("vice_turbo_fire", "disabled");
+
+			option(ctx, o, m.model, m.modelSetting, m.modelDefault);
+			if (m.aspect)
+				option(ctx, o, "vice_aspect_ratio", "pal");
+			std::string zoom = settingOr(ctx, "vice_zoom_mode", "auto_disable");
+			o.set("vice_crop", zoom == "automatic" ? "auto" : zoom);
+			o.set("vice_zoom_mode", "deprecated");
+			option(ctx, o, m.palette, m.paletteDefault);
+			if (m.retropad)
+				option(ctx, o, "vice_retropad_options", "disabled");
+			if (m.joyport)
+				option(ctx, o, "vice_joyport", "2");
+			if (m.joyportType)
+				option(ctx, o, "vice_joyport_type", "1");
+			if (m.c128)
+				option(ctx, o, "vice_c128_ram_expansion_unit", "none");
+			option(ctx, o, "vice_physical_keyboard_pass_through", "vice_keyboard_pass_through", "disabled");
+		}
+
+	private:
+		Options m;
+	};
+
 	// ---------------------------------------------------------------------------------------------
 
 	const Core& coreProfile(std::string_view core)
@@ -1666,6 +1727,14 @@ namespace es::launcher::retroarch
 			m.emplace("vice_x64", std::make_unique<ViceX64>(true, false));
 			m.emplace("vice_x64sc", std::make_unique<ViceX64>(false, false));
 			m.emplace("vice_xscpu64", std::make_unique<ViceX64>(false, true));
+			m.emplace("vice_x128", std::make_unique<ViceMachine>(ViceMachine::Options {
+				"vice_c128_model", "c128_model", "C128 PAL", "vice_external_palette", "colodore", true, true, true, true, true }));
+			m.emplace("vice_xvic", std::make_unique<ViceMachine>(ViceMachine::Options {
+				"vice_vic20_model", "vic20_model", "VIC20 PAL auto", "vice_vic20_external_palette", "colodore_vic", true, true, false, true, false }));
+			m.emplace("vice_xplus4", std::make_unique<ViceMachine>(ViceMachine::Options {
+				"vice_plus4_model", "plus4_model", "PLUS4 PAL", "vice_plus4_external_palette", "colodore_ted", true, true, true, true, false }));
+			m.emplace("vice_xpet", std::make_unique<ViceMachine>(ViceMachine::Options {
+				"vice_pet_model", "pet_model", "8032", "vice_pet_external_palette", "default", false, false, false, false, false }));
 			return m;
 		}();
 		static const Core generic;

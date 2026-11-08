@@ -306,6 +306,9 @@ msgstr "22.a"
 msgid "2304MB"
 msgstr "2304MB"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "23.a"
 
@@ -405,6 +408,9 @@ msgstr "3.5x Jatorrizkoa"
 msgid "30 seconds"
 msgstr "30 segundo"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072MB"
 
@@ -476,6 +482,9 @@ msgstr "4 hari"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x (1440x1080)"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -1245,6 +1254,24 @@ msgstr "Bulgaria"
 msgid "Button Options"
 msgstr "Botoien aukerak"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64 Games System PAL"
 
@@ -1533,6 +1560,9 @@ msgstr "Aukeratu Dreamcast kontsolaren eskualdea."
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Aukeratu Parallel N64 plugin grafikoa."
 
+msgid "Choose the appropriate media for disk image."
+msgstr "Aukeratu disko-irudirako euskarri egokia."
+
 msgid "Choose the audio output type."
 msgstr "Aukeratu audio-irteera mota."
 
@@ -1730,6 +1760,9 @@ msgstr "DESGAITU ERPINEN CACHEA"
 
 msgid "DISK SHADER CACHE"
 msgstr "DISKOKO SHADER-CACHEA"
+
+msgid "DISK TYPE"
+msgstr "DISKO MOTA"
 
 msgid "DISPLAY"
 msgstr "PANTAILA"
@@ -2349,6 +2382,9 @@ msgstr "Aginte-kontrol anitz hautematean gerta daitekeen akats bat konpontzen du
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Flight Stick (3 ardatz, 4 botoi, 1 hat)"
 
+msgid "Floppy Disk Image"
+msgstr "Disketearen irudia"
+
 msgid "Floppy Disk List"
 msgstr "Disketeen zerrenda"
 
@@ -2411,6 +2447,9 @@ msgstr "Osoa (Motela)"
 
 msgid "Full (more compatible)"
 msgstr "Osoa (bateragarriagoa)"
+
+msgid "Full Speed (Default)"
+msgstr "Abiadura osoa (Lehenetsia)"
 
 msgid "Full speed"
 msgstr "Abiadura osoa"
@@ -2636,6 +2675,9 @@ msgstr "HQ (iragazki bilineala)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hacka. PAL joko gehienen abiadura % 17 handitzen du."
+
+msgid "Hard Disk Image"
+msgstr "Disko gogorraren irudia"
 
 msgid "Hebrew"
 msgstr "Hebreera"
@@ -3000,6 +3042,9 @@ msgstr "LLE"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "KARGATU TESTURA PERTSONALIZATUAK"
 
+msgid "LOADING SPEED"
+msgstr "KARGA-ABIADURA"
+
 msgid "Landscape"
 msgstr "Horizontala"
 
@@ -3323,6 +3368,9 @@ msgstr "SARE MOTA"
 
 msgid "NEW 3DS MODE"
 msgstr "NEW 3DS MODUA"
+
+msgid "NO (DEFAULT)"
+msgstr "EZ (LEHENETSIA)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC (Composite)"
@@ -3711,6 +3759,12 @@ msgstr "1. JOKALARIAREN MIRAREN KOLOREA"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "2. JOKALARIAREN MIRAREN KOLOREA"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "PPU DEKODETZAILEA"
 
@@ -3956,6 +4010,9 @@ msgstr "Ausazko balioak"
 
 msgid "Raw"
 msgstr "Gordina"
+
+msgid "Realistic Loading"
+msgstr "Karga errealista"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Birkonpilatzailea (azkarrena) (Lehenetsia)"
@@ -4238,6 +4295,9 @@ msgstr "SUPER FX OVERCLOCKA"
 
 msgid "SUPER GB BORDERS"
 msgstr "SUPER GB ERTZAK"
+
+msgid "SUPERPET"
+msgstr "SUPERPET"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4566,6 +4626,9 @@ msgstr "Super Game Boy"
 msgid "Super Scope"
 msgstr "Super Scope"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "Super VIC (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "Super-altua, 1440p"
 
@@ -4757,6 +4820,9 @@ msgstr "Emulatutako kontsolaren gaiaren kolorea."
 
 msgid "There is generally no point in going beyond 4x texture scaling unless you are running at very high resolutions."
 msgstr "Oro har, ez du merezi testurak 4x baino gehiago eskalatzea, oso bereizmen altuetan ari ez bazara behintzat."
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "Erabilgarria izan daiteke laserdiscak erabiltzen badituzu."
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "Aukera honi esker, Xbox Live Arcade jokoetan jokatu daiteke. XBLA ez diren jokoekin bateragarritasun-arazoak eragin ditzake."
@@ -4977,6 +5043,9 @@ msgstr "Normalean ez da nukleo bakarreko modua baino askoz azkarragoa."
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "VBI JAUZIA"
 
@@ -4988,6 +5057,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA (Lehenetsia)"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC Automatikoa"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "VIC20 PAL Automatikoa"
 
 msgid "VIDEO FILTERS"
 msgstr "BIDEO-IRAGAZKIAK"
@@ -5148,6 +5229,9 @@ msgstr "ZOOMA/MOZKETA (EZKUTATU ERTZAK)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Zooma egiten du ertz beltzak ezkutatzeko. Ertzak desberdinak dira joko bakoitzean."
 
+msgid "amber"
+msgstr "anbarra"
+
 msgid "bilinear"
 msgstr "bilineala"
 
@@ -5183,6 +5267,12 @@ msgstr "behekoa soilik"
 
 msgid "bottom/top"
 msgstr "behean/goian"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (AEB)"
@@ -5240,6 +5330,12 @@ msgstr "gehienezkoa"
 
 msgid "medium"
 msgstr "ertaina"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "gutxienekoa"
@@ -5315,6 +5411,12 @@ msgstr "xBRZ (Lehenetsia)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ: zorrozten duen eskalatze-algoritmoa; Bikubikoa: itxura leuna; Hibridoa: bikubikoa erabiltzen du eremu leunetan."
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc"
+
+msgid "yape-pal"
+msgstr "yape-pal"
 
 msgid "yellow/blue"
 msgstr "horia/urdina"

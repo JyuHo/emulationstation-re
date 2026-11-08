@@ -29,6 +29,8 @@
 #include "shadps4/ShadPS4Generator.h"
 #include "redream/RedreamGenerator.h"
 #include "hatari/HatariGenerator.h"
+#include "openmsx/OpenMSXGenerator.h"
+#include "vice/ViceGenerator.h"
 #include "util/YamlFile.h"
 
 #include <pugixml.hpp>
@@ -1125,6 +1127,108 @@ static void testHatari()
 	CHECK(cmd.argv[cmd.argv.size() - 2] == "--acsi");
 }
 
+static void testVice()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "x64sc", "#!/bin/sh\n", true);
+	writeFile(tmp.path / "bin" / "xvic", "#!/bin/sh\n", true);
+	fs::path vicerc = tmp.path / "emulators" / "vice" / "vicerc";
+	writeFile(vicerc, "[C64SC]\nSidModel=1\n");
+
+	LaunchContext ctx = makeContext(tmp.path, "vice", "c64", "/roms/c64/Elite.d64");
+	ctx.controllers = { makePad(1, 3), makePad(2, 1) };
+	ctx.settings = Settings({}, { { "noborder", "1" }, { "vice.C64SC.DriveSoundEmulation", "1" } }, {});
+	Command cmd = Launch(ctx).prepare();
+	CHECK(cmd.argv[0] == (tmp.path / "bin" / "x64sc").string());
+	CHECK(cmd.argv[1] == "-config");
+	CHECK(cmd.argv.back() == "/roms/c64/Elite.d64");
+
+	std::string rc = readFile(vicerc);
+	CHECK(rc.find("SidModel=1\n") != std::string::npos);
+	CHECK(rc.find("VICIIFullscreen=1\n") != std::string::npos);
+	CHECK(rc.find("VICIIBorderMode=3\n") != std::string::npos);
+	CHECK(rc.find("JoyDevice2=7\n") != std::string::npos);   // player 1, the fourth pad
+	CHECK(rc.find("JoyDevice1=5\n") != std::string::npos);
+	CHECK(rc.find("DriveSoundEmulation=1\n") != std::string::npos);
+
+	std::string map = readFile(tmp.path / "emulators" / "vice" / "joymap.vjm");
+	CHECK(map.find("\n3 1 1 1 16\n") != std::string::npos);   // ES "b" is fire
+	CHECK(map.find("\n3 2 0 1 1\n") != std::string::npos);    // hat up
+	CHECK(map.find("\n3 1 6 4\n") != std::string::npos);      // select opens the menu
+
+	// the VIC-20: its own program, port 1 only
+	ctx.game.system = "c20";
+	ctx.game.rom = "/roms/c20/Gorf.prg";
+	cmd = Launch(ctx).prepare();
+	CHECK(cmd.argv[0] == (tmp.path / "bin" / "xvic").string());
+	CHECK(IniFile::load(vicerc).get("VIC20", "JoyDevice1") == "7");
+	CHECK(!IniFile::load(vicerc).get("VIC20", "JoyDevice2"));
+
+	ctx.core = "x128";
+	CHECK(vice::ViceGenerator::machine(ctx) == "x128");
+
+	// the Flatpak runs the machine as one of its commands
+	ctx.core.clear();
+	ctx.installedEmulators["vice"] = { "flatpak", "run", "net.sf.VICE" };
+	writeFile(tmp.path / "bin" / "flatpak", "#!/bin/sh\n", true);
+	cmd = Launch(ctx).prepare();
+	// before the application id, with the --env= options
+	auto app = std::ranges::find(cmd.argv, "net.sf.VICE");
+	auto command = std::ranges::find(cmd.argv, "--command=xvic");
+	CHECK(command < app && app != cmd.argv.end());
+}
+
+static void testOpenMSX()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "openmsx", "#!/bin/sh\n", true);
+
+	LaunchContext ctx = makeContext(tmp.path, "openmsx", "msx2", "/roms/msx2/Aleste.rom");
+	Command cmd = Launch(ctx).prepare();
+	CHECK(cmd.argv[1] == "-machine");
+	CHECK(cmd.argv[2] == "Boosted_MSX2_EN");
+	CHECK(cmd.argv[3] == "-cart");
+	CHECK(cmd.env["OPENMSX_HOME"] == (tmp.path / "emulators" / "openmsx").string());
+
+	std::string script = readFile(tmp.path / "emulators" / "openmsx" / "es-launch.tcl");
+	CHECK(script.find("plug joyporta joystick1\n") != std::string::npos);
+	CHECK(script.find("bind \"joy1 button3 down\" \"keymatrixdown 6 0x40\"\n") != std::string::npos);
+	CHECK(script.find("set fullspeedwhenloading on\n") != std::string::npos);
+
+	// a disk as the hard disk, a cassette, a laserdisc in a zip, two disks
+	ctx.settings = Settings({}, { { "openmsx_disk", "hda" } }, {});
+	ctx.game.rom = "/roms/msx2/Game.DSK";
+	CHECK(openmsx::OpenMSXGenerator::mediaArguments(ctx)[2] == "-hda");
+	ctx.game.rom = "/roms/msx2/Game.cas";
+	CHECK(openmsx::OpenMSXGenerator::mediaArguments(ctx)[2] == "-cassetteplayer");
+
+	// a zip written by hand: one stored file, "Astron Belt.ogv"
+	std::string name = "Astron Belt.ogv";
+	auto u16 = [](uint16_t v) { return std::string { char(v & 0xff), char(v >> 8) }; };
+	auto u32 = [&](uint32_t v) { return u16(uint16_t(v & 0xffff)) + u16(uint16_t(v >> 16)); };
+	std::string local = std::string("PK\x03\x04", 4) + std::string(22, '\0') + u16(uint16_t(name.size())) + u16(0) + name;
+	std::string central = std::string("PK\x01\x02", 4) + std::string(24, '\0') + u16(uint16_t(name.size())) + u16(0) + u16(0)
+		+ std::string(12, '\0') + name;
+	std::string end = std::string("PK\x05\x06", 4) + std::string(4, '\0') + u16(1) + u16(1) + u32(uint32_t(central.size()))
+		+ u32(uint32_t(local.size())) + u16(0);
+	fs::path zip = tmp.path / "roms" / "Astron.zip";
+	writeFile(zip, local + central + end);
+	CHECK(openmsx::OpenMSXGenerator::zipMediaExtension(zip) == ".ogv");
+	ctx.game.rom = zip;
+	auto args = openmsx::OpenMSXGenerator::mediaArguments(ctx);
+	CHECK(args[1] == "Pioneer_PX-7");
+	CHECK(args[2] == "-laserdisc");
+
+	fs::path list = tmp.path / "roms" / "Game.openmsx";
+	writeFile(list, "Disk1.dsk\nDisk2.dsk\n");
+	ctx.game.rom = list;
+	args = openmsx::OpenMSXGenerator::mediaArguments(ctx);
+	CHECK(args[2] == "-diska");
+	CHECK(args[5] == (tmp.path / "roms" / "Disk2.dsk").string());
+}
+
 void tests::runStandaloneTests()
 {
 	testIniFile();
@@ -1153,4 +1257,6 @@ void tests::runStandaloneTests()
 	testShadPS4();
 	testRedream();
 	testHatari();
+	testVice();
+	testOpenMSX();
 }

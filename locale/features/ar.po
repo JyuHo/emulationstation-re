@@ -306,6 +306,9 @@ msgstr "الثاني والعشرون"
 msgid "2304MB"
 msgstr "٢٣٠٤ ميجابايت"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "الثالث والعشرون"
 
@@ -405,6 +408,9 @@ msgstr "‫x٣.٥ أصلي"
 msgid "30 seconds"
 msgstr "30 ثانية"
 
+msgid "3032B"
+msgstr "٣٠٣٢ بايت"
+
 msgid "3072MB"
 msgstr "3072 م.ب"
 
@@ -476,6 +482,9 @@ msgstr "4 مسارات"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x (1440x1080)"
+
+msgid "4032B"
+msgstr "٤٠٣٢ بايت"
 
 msgid "4096MB"
 msgstr "4096 م.ب"
@@ -1245,6 +1254,24 @@ msgstr "بلغاريا"
 msgid "Button Options"
 msgstr "زر الخيارات"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64 Games System PAL"
 
@@ -1533,6 +1560,9 @@ msgstr "اختر منطقة جهاز كونسول الدريم كاست."
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "اختر إضافة رسومات Parallel N64."
 
+msgid "Choose the appropriate media for disk image."
+msgstr "اختر الوسائط المناسبة لصورة القرص."
+
 msgid "Choose the audio output type."
 msgstr "اختر نوع خرج الصوت."
 
@@ -1730,6 +1760,9 @@ msgstr "تعطيل ذاكرة التخزين المؤقت للرؤوس"
 
 msgid "DISK SHADER CACHE"
 msgstr "ذاكرة تخزين مؤقت للظلال على القرص"
+
+msgid "DISK TYPE"
+msgstr "نوع القرص"
 
 msgid "DISPLAY"
 msgstr "الشاشة"
@@ -2349,6 +2382,9 @@ msgstr "يُصلح خطأً محتملاً في اكتشاف وحدات تحكم
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "عصا طيران (3 محاور، 4 أزرار، قبعة واحدة)"
 
+msgid "Floppy Disk Image"
+msgstr "صورة قرص مرن"
+
 msgid "Floppy Disk List"
 msgstr "قائمة الأقراص المرنة"
 
@@ -2411,6 +2447,9 @@ msgstr "كامل (بطيء)"
 
 msgid "Full (more compatible)"
 msgstr "كامل (أكثر توافقاً)"
+
+msgid "Full Speed (Default)"
+msgstr "السرعة الكاملة (تلقائي)"
 
 msgid "Full speed"
 msgstr "السرعة الكاملة"
@@ -2636,6 +2675,9 @@ msgstr "HQ (مرشح ثنائي الخطية)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "اختراق. يزيد سرعة معظم ألعاب PAL بنسبة 17%."
+
+msgid "Hard Disk Image"
+msgstr "صورة القرص الصلب"
 
 msgid "Hebrew"
 msgstr "العبرية"
@@ -3000,6 +3042,9 @@ msgstr "LLE"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "تحميل إكساءات مخصصة"
 
+msgid "LOADING SPEED"
+msgstr "سرعة التحميل"
+
 msgid "Landscape"
 msgstr "أفقي"
 
@@ -3323,6 +3368,9 @@ msgstr "نوع الشبكة"
 
 msgid "NEW 3DS MODE"
 msgstr "وضع 3DS الجديد"
+
+msgid "NO (DEFAULT)"
+msgstr "لا (افتراضي)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC (مركب)"
@@ -3711,6 +3759,12 @@ msgstr "لون علامة التصويب للاعب 1"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "لون علامة التصويب للاعب 2"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "وحدة فك ترميز PPU"
 
@@ -3956,6 +4010,9 @@ msgstr "قيم عشوائية"
 
 msgid "Raw"
 msgstr "خام (Raw)"
+
+msgid "Realistic Loading"
+msgstr "تحميل واقعي"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "إعادة المترجم (الأسرع) (افتراضي)"
@@ -4238,6 +4295,9 @@ msgstr "كسر سرعة SUPER FX"
 
 msgid "SUPER GB BORDERS"
 msgstr "حدود السوبر جيم بوي"
+
+msgid "SUPERPET"
+msgstr "SUPERPET"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4566,6 +4626,9 @@ msgstr "سوبر جيم بوي(SGB)"
 msgid "Super Scope"
 msgstr "Super Scope"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "Super VIC (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "مرتفع جداً ١٤٤٠p"
 
@@ -4757,6 +4820,9 @@ msgstr "لون موضوع وحدة التحكم المحاكاة."
 
 msgid "There is generally no point in going beyond 4x texture scaling unless you are running at very high resolutions."
 msgstr "لا يوجد عادةً أي فائدة من تجاوز تحجيم النسيج 4x ما لم تكن تعمل بدقة عالية جدًا."
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "قد يكون هذا مناسبًا إذا كنت تستخدم أقراص الليزر."
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "يتيح هذا الخيار إمكانية تشغيل ألعاب Xbox Live Arcade. قد يتسبب في مشاكل توافق مع الألعاب غير التابعة لـ XBLA."
@@ -4977,6 +5043,9 @@ msgstr "عادةً لا يكون أسرع كثيرًا من وضع النواة 
 msgid "Uzbekistan"
 msgstr "أوزبكستان"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "VBI تخطي"
 
@@ -4988,6 +5057,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "(افتراضي) VGA"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "أوتوماتيكي VIC20 NTSC"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "أوتوماتيكي VIC20 PAL"
 
 msgid "VIDEO FILTERS"
 msgstr "مرشحات الفيديو"
@@ -5148,6 +5229,9 @@ msgstr "التقريب/القص (إخفاء الحدود)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "يُجري تقريبًا للصورة لإخفاء الحواف السوداء. تختلف هذه الحواف من لعبة لأخرى."
 
+msgid "amber"
+msgstr "عنبري"
+
 msgid "bilinear"
 msgstr "bilinear مرشح بنية"
 
@@ -5183,6 +5267,12 @@ msgstr "أسفل فقط"
 
 msgid "bottom/top"
 msgstr "أسفل/فوق"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (الولايات المتحدة)"
@@ -5240,6 +5330,12 @@ msgstr "الأقصى"
 
 msgid "medium"
 msgstr "متوسط"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc مرشح"
+
+msgid "mike-pal"
+msgstr "mike-pal مرشح"
 
 msgid "minimum"
 msgstr "الأقل"
@@ -5315,6 +5411,12 @@ msgstr "(افتراضي) xBRZ"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - خوارزمية لرفع الدقة مع تعزيز الحدة، Bicubic - مظهر ناعم، Hybrid - تستخدم تقنية Bicubic للمناطق الناعمة."
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc مرشح"
+
+msgid "yape-pal"
+msgstr "yape-pal مرشح"
 
 msgid "yellow/blue"
 msgstr "أصفر/أزرق"

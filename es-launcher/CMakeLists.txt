@@ -62,6 +62,8 @@ add_library(es-launcher-objects OBJECT
     src/shadps4/ShadPS4Generator.cpp
     src/redream/RedreamGenerator.cpp
     src/hatari/HatariGenerator.cpp
+    src/vice/ViceGenerator.cpp
+    src/openmsx/OpenMSXGenerator.cpp
     # Cemu's settings are XML: the copy of pugixml ES ships, built in with hidden symbols
     ${CMAKE_CURRENT_SOURCE_DIR}/../external/pugixml/src/pugixml.cpp
 )

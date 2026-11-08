@@ -306,6 +306,9 @@ msgstr "22."
 msgid "2304MB"
 msgstr "2304 MB"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "23."
 
@@ -405,6 +408,9 @@ msgstr "3.5x Native"
 msgid "30 seconds"
 msgstr "30 sekunder"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072 MB"
 
@@ -476,6 +482,9 @@ msgstr "4 tråder"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x (1440x1080)"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096 MB"
@@ -1203,6 +1212,24 @@ msgstr "Bulgaria"
 msgid "Button Options"
 msgstr "Knappealternativer"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64-spillsystem PAL"
 
@@ -1458,6 +1485,9 @@ msgstr "Velg Dreamcast-konsollregionen."
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Velg Parallel N64-grafikktillegget."
 
+msgid "Choose the appropriate media for disk image."
+msgstr "Velg riktig medium for diskavbildningen."
+
 msgid "Choose the audio output type."
 msgstr "Velg type lydutgang."
 
@@ -1631,6 +1661,9 @@ msgstr "DEAKTIVERE VERTEX-CACHE"
 
 msgid "DISK SHADER CACHE"
 msgstr "DISK SHADER-HURTIGBUFFER"
+
+msgid "DISK TYPE"
+msgstr "DISKTYPE"
 
 msgid "DISPLAY"
 msgstr "VISNING"
@@ -2211,6 +2244,9 @@ msgstr "Løser en mulig feil med deteksjon av flere kontrollere."
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Flight Stick (3 økser, 4 btn, 1 hatt)"
 
+msgid "Floppy Disk Image"
+msgstr "Diskettavbildning"
+
 msgid "Floppy Disk List"
 msgstr "Diskettliste"
 
@@ -2267,6 +2303,9 @@ msgstr "Full (langsom)"
 
 msgid "Full (more compatible)"
 msgstr "Full (mer kompatibel)"
+
+msgid "Full Speed (Default)"
+msgstr "Full hastighet (standard)"
 
 msgid "Full speed"
 msgstr "Full fart"
@@ -2486,6 +2525,9 @@ msgstr "HQ (bilineært filter)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack. Øker hastigheten i de fleste PAL-spill med 17 %."
+
+msgid "Hard Disk Image"
+msgstr "Harddiskavbildning"
 
 msgid "Hebrew"
 msgstr "Hebraisk"
@@ -2832,6 +2874,9 @@ msgstr "LLE"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "LAST INN EGENDEFINERTE TEKSTURER"
 
+msgid "LOADING SPEED"
+msgstr "LASTINGSHASTIGHET"
+
 msgid "Landscape"
 msgstr "Landskap"
 
@@ -3146,6 +3191,9 @@ msgstr "NETTVERKSTYPE"
 
 msgid "NEW 3DS MODE"
 msgstr "NY 3DS-MODUS"
+
+msgid "NO (DEFAULT)"
+msgstr "Color Computer 3 (NTSC) (Standard)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC (kompositt)"
@@ -3474,6 +3522,12 @@ msgstr "FARGE PÅ TRÅDKORSET TIL SPILLER 1"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "FARGE PÅ TRÅDKORSET TIL SPILLER 2"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "PPU-DEKODER"
 
@@ -3704,6 +3758,9 @@ msgstr "RUMBLE-NIVÅ"
 
 msgid "Random Values"
 msgstr "Tilfeldige verdier"
+
+msgid "Realistic Loading"
+msgstr "Realistisk lasting"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Rekompilator (raskest) (standard)"
@@ -3950,6 +4007,9 @@ msgstr "SUPER FX OVERKLOKKING"
 
 msgid "SUPER GB BORDERS"
 msgstr "SUPER GB-GRENSER"
+
+msgid "SUPERPET"
+msgstr "SUPERPET"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4254,6 +4314,9 @@ msgstr "Super Game Boy"
 msgid "Super Scope"
 msgstr "Super Scope"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "Super VIC (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "Superhøye 1440p"
 
@@ -4424,6 +4487,9 @@ msgstr "Måneden du er født."
 
 msgid "The theme color of the emulated console."
 msgstr "Temafargen til den emulerte konsollen."
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "Dette kan være praktisk hvis du bruker laserdisker."
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "Dette alternativet gjør det mulig å spille Xbox Live Arcade-spill. Kan forårsake kompatibilitetsproblemer med ikke-XBLA-spill."
@@ -4614,6 +4680,9 @@ msgstr "Vanligvis ikke mye raskere enn enkeltkjernemodus."
 msgid "Uzbekistan"
 msgstr "Usbekistan"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "VBI SKIP"
 
@@ -4625,6 +4694,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA (standard)"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC Automatisk"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "VIC20 PAL Automatisk"
 
 msgid "VIDEO FILTERS"
 msgstr "VIDEOFILTER"
@@ -4770,6 +4851,9 @@ msgstr "ZOOM/BESKJÆR (SKJUL GRENSER)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Zoomer inn for å skjule svarte kanter. Kantene er forskjellige fra spill til spill."
 
+msgid "amber"
+msgstr "ravgult"
+
 msgid "bilinear"
 msgstr "bilineær"
 
@@ -4805,6 +4889,12 @@ msgstr "kun bunnen"
 
 msgid "bottom/top"
 msgstr "bunn/topp"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "dark knight"
 msgstr "mørk ridder"
@@ -4859,6 +4949,12 @@ msgstr "maksimum"
 
 msgid "medium"
 msgstr "medium"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "minimum"
@@ -4928,6 +5024,12 @@ msgstr "xBR (svært langsom, ingen kantblanding)"
 
 msgid "xBRZ (Default)"
 msgstr "xBRZ (standard)"
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc"
+
+msgid "yape-pal"
+msgstr "yape-pal"
 
 msgid "yellow/blue"
 msgstr "gul/blå"

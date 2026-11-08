@@ -54,6 +54,8 @@ EMULATORS = {
     'shadps4': 'shadps4',
     'redream': 'redream',
     'hatari': 'hatari',
+    'vice': 'vice',
+    'openmsx': 'openmsx',
     'pcsx2': 'pcsx2',
     'ppsspp': 'ppsspp',
     'rpcs3': 'rpcs3',

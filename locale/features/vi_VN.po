@@ -306,6 +306,9 @@ msgstr "22"
 msgid "2304MB"
 msgstr "2304MB"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "23"
 
@@ -405,6 +408,9 @@ msgstr "3.5x Native"
 msgid "30 seconds"
 msgstr "30 giây"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072MB"
 
@@ -476,6 +482,9 @@ msgstr "4 luồng"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x (1440x1080)"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -1203,6 +1212,24 @@ msgstr "Bulgaria"
 msgid "Button Options"
 msgstr "Tùy chọn nút"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64 Games System PAL"
 
@@ -1461,6 +1488,9 @@ msgstr "Chọn khu vực bảng điều khiển Dreamcast."
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Chọn plugin đồ họa N64 song song."
 
+msgid "Choose the appropriate media for disk image."
+msgstr "Chọn phương tiện thích hợp cho đĩa."
+
 msgid "Choose the audio output type."
 msgstr "Chọn loại đầu ra âm thanh."
 
@@ -1634,6 +1664,9 @@ msgstr "DISABLE VERTEX CACHE"
 
 msgid "DISK SHADER CACHE"
 msgstr "DISK SHADER CACHE"
+
+msgid "DISK TYPE"
+msgstr "LOẠI ĐĨA"
 
 msgid "DISPLAY"
 msgstr "MÀN HÌNH"
@@ -2214,6 +2247,9 @@ msgstr "Sửa lỗi có thể xảy ra khi phát hiện nhiều bộ điều khi
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 
+msgid "Floppy Disk Image"
+msgstr "Floppy Disk Image"
+
 msgid "Floppy Disk List"
 msgstr "Danh Sách Đĩa Mềm"
 
@@ -2270,6 +2306,9 @@ msgstr "Đầy đủ (Chậm)"
 
 msgid "Full (more compatible)"
 msgstr "Đầy đủ (tương thích hơn)"
+
+msgid "Full Speed (Default)"
+msgstr "Tốc độ tối đa (Mặc định)"
 
 msgid "Full speed"
 msgstr "Tốc độ tối đa"
@@ -2489,6 +2528,9 @@ msgstr "HQ (bilinear filter)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Hack. Tăng tốc độ của hầu hết các trò chơi PAL lên 17%."
+
+msgid "Hard Disk Image"
+msgstr "Hard Disk Image"
 
 msgid "Hebrew"
 msgstr "Tiếng Do Thái"
@@ -2835,6 +2877,9 @@ msgstr "LLE"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "TẢI TEXTURES CÁ NHÂN"
 
+msgid "LOADING SPEED"
+msgstr "TỐC ĐỘ TẢI"
+
 msgid "Landscape"
 msgstr "Landscape"
 
@@ -3149,6 +3194,9 @@ msgstr "LOẠI MẠNG"
 
 msgid "NEW 3DS MODE"
 msgstr "CHẾ ĐỘ 3DS MỚI"
+
+msgid "NO (DEFAULT)"
+msgstr "KHÔNG (MẶC ĐỊNH)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC (Tổng hợp)"
@@ -3477,6 +3525,12 @@ msgstr "MÀU TÂM NGẮM NGƯỜI CHƠI 1"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "MÀU TÂM NGẮM NGƯỜI CHƠI 2"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "BỘ GIẢI MÃ PPU"
 
@@ -3707,6 +3761,9 @@ msgstr "RUMBLE LEVEL"
 
 msgid "Random Values"
 msgstr "Giá trị ngẫu nhiên"
+
+msgid "Realistic Loading"
+msgstr "Realistic Loading"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Recompiler (Nhanh nhất)(Mặc định)"
@@ -3953,6 +4010,9 @@ msgstr "SIÊU FX OVERCLOCK"
 
 msgid "SUPER GB BORDERS"
 msgstr "SUPER GB BORDERS"
+
+msgid "SUPERPET"
+msgstr "SUPERPET"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4257,6 +4317,9 @@ msgstr "Super Game Boy"
 msgid "Super Scope"
 msgstr "Super Scope"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "Super Vic (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "Siêu cao 1440p"
 
@@ -4427,6 +4490,9 @@ msgstr "Tháng sinh của bạn."
 
 msgid "The theme color of the emulated console."
 msgstr "Màu chủ đề của bảng điều khiển mô phỏng."
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "Điều này có thể thuận tiện nếu bạn đang sử dụng đĩa laze."
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "Tùy chọn này cho phép khả năng chơi trò chơi Xbox Live Arcade. Có thể gây ra sự cố tương thích với các trò chơi không phải XBLA."
@@ -4617,6 +4683,9 @@ msgstr "Thường không nhanh hơn nhiều so với chế độ lõi đơn."
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "BỎ QUA VBI"
 
@@ -4628,6 +4697,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA (Mặc định)"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC tự động"
+
+msgid "VIC20 PAL"
+msgstr "Vic20 Pal"
+
+msgid "VIC20 PAL Automatic"
+msgstr "Vic20 Pal tự động"
 
 msgid "VIDEO FILTERS"
 msgstr "BỘ LỌC VIDEO"
@@ -4773,6 +4854,9 @@ msgstr "PHÓNG TO/CẮT (ẨN ĐƯỜNG VIỀN)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Phóng to để ẩn đường viền đen. Đường viền khác nhau với mỗi trò chơi."
 
+msgid "amber"
+msgstr "màu hổ phách"
+
 msgid "bilinear"
 msgstr "bilinear"
 
@@ -4808,6 +4892,12 @@ msgstr "chỉ dưới"
 
 msgid "bottom/top"
 msgstr "dưới/trên"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "dark knight"
 msgstr "hiệp sĩ bóng đêm"
@@ -4862,6 +4952,12 @@ msgstr "tối đa"
 
 msgid "medium"
 msgstr "trung bình"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "tối thiểu"
@@ -4931,6 +5027,12 @@ msgstr "xBR (Rất chậm, No Edge Blending)"
 
 msgid "xBRZ (Default)"
 msgstr "xBRZ (Mặc định)"
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc"
+
+msgid "yape-pal"
+msgstr "yape-pal"
 
 msgid "yellow/blue"
 msgstr "vàng/xanh da trời"

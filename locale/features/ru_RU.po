@@ -306,6 +306,9 @@ msgstr "22"
 msgid "2304MB"
 msgstr "2304MB"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "23"
 
@@ -405,6 +408,9 @@ msgstr "3.5x"
 msgid "30 seconds"
 msgstr "30 секунд"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072MB"
 
@@ -476,6 +482,9 @@ msgstr "4 потока"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x (1440x1080)"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -1245,6 +1254,24 @@ msgstr "Bulgaria"
 msgid "Button Options"
 msgstr "Параметры кнопок"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64 Games System PAL"
 
@@ -1533,6 +1560,9 @@ msgstr "Выберите регион консоли Dreamcast."
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "Выбрать графический плагин Parallel N64."
 
+msgid "Choose the appropriate media for disk image."
+msgstr "Выбрать подходящий носитель для образа диска."
+
 msgid "Choose the audio output type."
 msgstr "Выберите тип аудиовыхода."
 
@@ -1730,6 +1760,9 @@ msgstr "DISABLE VERTEX CACHE"
 
 msgid "DISK SHADER CACHE"
 msgstr "ПРЕДВАРИТЕЛЬНЫЙ КЭШ ШЕЙДЕРОВ"
+
+msgid "DISK TYPE"
+msgstr "ТИП ДИСКА"
 
 msgid "DISPLAY"
 msgstr "ЭКРАН"
@@ -2349,6 +2382,9 @@ msgstr "Исправляет возможную ошибку с обнаруже
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "Flight Stick (3 оси, 4 кнопки, 1 Hat)"
 
+msgid "Floppy Disk Image"
+msgstr "Образ дискеты"
+
 msgid "Floppy Disk List"
 msgstr "Список дискет"
 
@@ -2411,6 +2447,9 @@ msgstr "Полная (медленно)"
 
 msgid "Full (more compatible)"
 msgstr "Полный (более совместимый)"
+
+msgid "Full Speed (Default)"
+msgstr "Полная скорость (по умолчанию)"
 
 msgid "Full speed"
 msgstr "Полная скорость"
@@ -2636,6 +2675,9 @@ msgstr "HQ (bilinear filter)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "Хак. Увеличивает скорость большинства PAL игр на 17%."
+
+msgid "Hard Disk Image"
+msgstr "Образ жесткого диска"
 
 msgid "Hebrew"
 msgstr "Hebrew"
@@ -3000,6 +3042,9 @@ msgstr "LLE"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "ЗАГРУЖАТЬ ПОЛЬЗОВАТЕЛЬСКИЕ ТЕКСТУРЫ"
 
+msgid "LOADING SPEED"
+msgstr "СКОРОСТЬ ЗАГРУЗКИ"
+
 msgid "Landscape"
 msgstr "Ландшафт"
 
@@ -3323,6 +3368,9 @@ msgstr "ТИП СЕТИ"
 
 msgid "NEW 3DS MODE"
 msgstr "РЕЖИМ NEW 3DS"
+
+msgid "NO (DEFAULT)"
+msgstr "НЕТ (по умолчанию)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC (Composite)"
@@ -3711,6 +3759,12 @@ msgstr "ИГРОК 1 ЦВЕТ ПЕРЕКРЕСТИЯ"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "ИГРОК 2 ЦВЕТ ПЕРЕКРЕСТИЯ"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "PPU ДЕКОДЕР"
 
@@ -3956,6 +4010,9 @@ msgstr "Случайные значения"
 
 msgid "Raw"
 msgstr "Без обработки"
+
+msgid "Realistic Loading"
+msgstr "Реалистичная загрузка"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Рекомпилятор (самый быстрый) (по умолчанию)"
@@ -4238,6 +4295,9 @@ msgstr "РАЗГОН SUPER FX"
 
 msgid "SUPER GB BORDERS"
 msgstr "SUPER GB РАМКИ"
+
+msgid "SUPERPET"
+msgstr "SUPERPET"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4566,6 +4626,9 @@ msgstr "Super Game Boy"
 msgid "Super Scope"
 msgstr "Super Scope"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "Super VIC (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "Супер-высокое 1440p"
 
@@ -4757,6 +4820,9 @@ msgstr "Цвет темы эмулируемой консоли."
 
 msgid "There is generally no point in going beyond 4x texture scaling unless you are running at very high resolutions."
 msgstr "Обычно нет смысла исп. масштабирование текстур выше 4x, если только вы не играете в очень высоком разрешении."
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "Может быть удобно, если вы используете лазерные диски."
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "Эта опция позволяет играть в игры Xbox Live Arcade. Может вызвать проблемы совместимости с играми, не относящимися к XBLA."
@@ -4977,6 +5043,9 @@ msgstr "Обычно не намного быстрее, чем одноядер
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "ПРОПУСК VBI"
 
@@ -4988,6 +5057,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA (по умолчанию)"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC Automatic"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "VIC20 PAL Automatic"
 
 msgid "VIDEO FILTERS"
 msgstr "ВИДЕО ФИЛЬТРЫ"
@@ -5148,6 +5229,9 @@ msgstr "МАСШТАБИРОВАНИЕ (СКРЫТИЕ РАМКИ)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Увеличивает масштаб, чтобы скрыть черные границы. Границы различаются в зависимости от игры."
 
+msgid "amber"
+msgstr "янтарь"
+
 msgid "bilinear"
 msgstr "билинейная"
 
@@ -5183,6 +5267,12 @@ msgstr "только нижний"
 
 msgid "bottom/top"
 msgstr "нижний/верхний"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "cxa2025as (US)"
 msgstr "cxa2025as (US)"
@@ -5240,6 +5330,12 @@ msgstr "максимальная"
 
 msgid "medium"
 msgstr "средняя"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "минимум"
@@ -5315,6 +5411,12 @@ msgstr "xBRZ (по умолчанию)"
 
 msgid "xBRZ - a sharpening upscale algorithm, Bicubic - a smooth look, Hybrid - uses bicubic for smooth areas."
 msgstr "xBRZ - алгоритм увеличения с резкостью, Bicubic - сглаживание, Hybrid - использует Bicubic для плавных участков."
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc"
+
+msgid "yape-pal"
+msgstr "yape-pal"
 
 msgid "yellow/blue"
 msgstr "жёлтая/синяя"

@@ -67,7 +67,7 @@ Generators
 
 | Emulator name (`es_systems.cfg`) | Generator | Notes |
 | --- | --- | --- |
-| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, vba-m (`vbam`), mgba, melondsds, melonds, desmume, mesen, fceumm, nestopia, snes9x, bsnes (and bsnes_hd), mupen64plus-next, parallel_n64, vb (`mednafen_vb`), pokemini, swanstation, mednafen_psx (`mednafen_psx_hw`), pcsx_rearmed, genesisplusgx (`genesis_plus_gx`, and the expanded build), picodrive, beetle-saturn (`mednafen_saturn`), yabasanshiro, kronos, ppsspp, pce and pce_fast (`mednafen_pce`, `mednafen_pce_fast`), mednafen_supergrafx, mednafen_wswan, fbneo, mame078plus (`mame2003_plus`), neocd, stella, handy, virtualjaguar, opera, atari800 (Atari 800 and 5200), dosbox_pure, scummvm, bluemsx, puae, vice_x64 (and vice_x64sc, vice_xscpu64), hatarib (Atari ST) and flycast (Dreamcast, Naomi, Atomiswave); any other core runs with the generic settings |
+| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, vba-m (`vbam`), mgba, melondsds, melonds, desmume, mesen, fceumm, nestopia, snes9x, bsnes (and bsnes_hd), mupen64plus-next, parallel_n64, vb (`mednafen_vb`), pokemini, swanstation, mednafen_psx (`mednafen_psx_hw`), pcsx_rearmed, genesisplusgx (`genesis_plus_gx`, and the expanded build), picodrive, beetle-saturn (`mednafen_saturn`), yabasanshiro, kronos, ppsspp, pce and pce_fast (`mednafen_pce`, `mednafen_pce_fast`), mednafen_supergrafx, mednafen_wswan, fbneo, mame078plus (`mame2003_plus`), neocd, stella, handy, virtualjaguar, opera, atari800 (Atari 800 and 5200), dosbox_pure, scummvm, bluemsx, puae, vice_x64 (and vice_x64sc, vice_xscpu64), vice_x128, vice_xvic, vice_xplus4, vice_xpet, hatarib (Atari ST) and flycast (Dreamcast, Naomi, Atomiswave); any other core runs with the generic settings |
 | `duckstation` | DuckStation | PlayStation |
 | `pcsx2` | PCSX2 | PlayStation 2, x86_64 only |
 | `ppsspp` | PPSSPP | PSP |
@@ -89,6 +89,8 @@ Generators
 | `vita3k` | Vita3K | PlayStation Vita: a file named with the title id in brackets (`Game [PCSG00004].zip`), installed by Vita3K the first time |
 | `shadps4` | shadPS4 | PlayStation 4, x86_64 only: the game folder (or a file in it) with its `eboot.bin`, or a `.zar` |
 | `redream` | Redream | Dreamcast, x86_64 only |
+| `vice` | VICE | Commodore 64, 128, VIC-20, Plus/4, PET: the core is VICE's program (`x64sc`, `x128`, `xvic`, `xplus4`, `xpet`...), else the system's |
+| `openmsx` | openMSX | MSX, ColecoVision, Spectravideo: the machine follows the system, the media the extension (`.rom`, `.dsk`, `.cas`, `.ogv`, in a `.zip` too, or a `.openmsx` list of two) |
 
 Any other emulator keeps the `es_systems.cfg` command. Setting `eslauncher=0` in the ES
 configuration (`global.eslauncher`, `<system>.eslauncher` or for one game) also keeps it.
@@ -145,6 +147,8 @@ leaves the others as the player set them in the emulator's menus.
 | Hatari | `hatari/hatari.cfg` (`--configfile`) | in the disk images |
 | Vita3K | `vita3k/config.yml` (`-c`) | the Vita storage (`ux0`: installed games and saves) is `<saves>/psvita` |
 | shadPS4 | `shadps4/shadPS4/config.json` (`XDG_DATA_HOME` is `shadps4/`) | `<saves>/ps4`; DLC in the `DLC` folder next to the games |
+| VICE | `vice/vicerc` (`-config`) and `vice/joymap.vjm` | in the disk images |
+| openMSX | `OPENMSX_HOME` is `openmsx/`; ES's startup script `openmsx/es-launch.tcl` (`-script`) | `openmsx/` |
 | Redream | `redream/redream.cfg`, next to the copy of the program it runs (`redream.key` goes there too) | `redream/` |
 
 * BIOS: DuckStation looks at the root of the BIOS folder, then `psx/` (scph1001.bin, scph5501.bin...);
@@ -157,13 +161,14 @@ leaves the others as the player set them in the emulator's menus.
   PUAE reads the Kickstart ROMs from `amiga/`, VICE the JiffyDOS ROMs from `vice/` (JiffyDOS is on
   when they are all there). Mupen64Plus reads the 64DD IPL `64DD_IPL.bin` from the root, Ymir the Saturn IPL ROMs. Hatari
   reads the TOS from the root (`tos104us.img`, `tos162fr.img`, EmuTOS `etos256us.img`...), the best
-  one for the machine and language chosen. Supermodel needs the `Games.xml` of its install
+  one for the machine and language chosen. openMSX looks for the system ROMs in `Machines/` and
+  `openmsx/`. Supermodel needs the `Games.xml` of its install
   (copied from `/usr/share/supermodel` or the `Config` folder next to the program). A missing BIOS stops the launch
   with a message.
 * Options keep the names of batocera-launch (`duckstation_gfxbackend`, `pcsx2_ratio`,
   `internal_resolution`...), so the same `es_features.cfg` entries work. For PPSSPP,
   `ppsspp.<section>.<key>` sets any key of `ppsspp.ini`, and `mupen64plus.<section>.<key>` any
-  key of `mupen64plus.cfg`.
+  key of `mupen64plus.cfg`, and `vice.<section>.<resource>` any resource of VICE's `vicerc`.
   Eden has no batocera-launch generator: its options are `eden_backend`, `eden_resolution`,
   `eden_vsync`, `eden_ratio`, `eden_antialiasing`, `eden_scaling`, `eden_accuracy` (Eden's own
   values) and `eden_docked`.
@@ -184,7 +189,7 @@ leaves the others as the player set them in the emulator's menus.
 * Hotkeys: the same as RetroArch, bound in the emulator to player 1's hotkey held with the other
   button (Start quits, B opens the menu or pauses, Y/X save and load a state...), where the
   emulator has the action; Eden gets them as its controller shortcuts. Without a pad, the keyboard
-  keys of batocera-launch. Azahar, Cemu, xemu, Xenia, RPCS3, melonDS, Mupen64Plus, Ymir, Supermodel, Stella, DOSBox Staging, ScummVM, Hatari, Vita3K, shadPS4 and Redream cannot bind actions to a pad, so
+  keys of batocera-launch. Azahar, Cemu, xemu, Xenia, RPCS3, melonDS, Mupen64Plus, Ymir, Supermodel, Stella, DOSBox Staging, ScummVM, Hatari, Vita3K, shadPS4, Redream, VICE and openMSX cannot bind actions to a pad, so
   their command sets `closeOnHotkey`: while the game runs, ES watches the pads itself and closes
   the emulator when a player holds the hotkey and presses Start (SIGTERM to its process group,
   SIGKILL after 5 seconds). `exithotkey=0` turns this off. Their other hotkeys stay in the

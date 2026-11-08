@@ -306,6 +306,9 @@ msgstr "22nd"
 msgid "2304MB"
 msgstr "2304MB"
 
+msgid "232 NTSC"
+msgstr "232 NTSC"
+
 msgid "23rd"
 msgstr "23rd"
 
@@ -405,6 +408,9 @@ msgstr "3.5x 原生解析度"
 msgid "30 seconds"
 msgstr "30 秒"
 
+msgid "3032B"
+msgstr "3032B"
+
 msgid "3072MB"
 msgstr "3072MB"
 
@@ -476,6 +482,9 @@ msgstr "4 執行緒"
 
 msgid "4.5x (1440x1080)"
 msgstr "4.5x (1440x1080)"
+
+msgid "4032B"
+msgstr "4032B"
 
 msgid "4096MB"
 msgstr "4096MB"
@@ -1218,6 +1227,24 @@ msgstr "Bulgaria"
 msgid "Button Options"
 msgstr "按鍵Options"
 
+msgid "C128 DCR NTSC"
+msgstr "C128 DCR NTSC"
+
+msgid "C128 DCR PAL"
+msgstr "C128 DCR PAL"
+
+msgid "C128 NTSC"
+msgstr "C128 NTSC"
+
+msgid "C128 PAL"
+msgstr "C128 PAL"
+
+msgid "C16 NTSC"
+msgstr "C16 NTSC"
+
+msgid "C16 PAL"
+msgstr "C16 PAL"
+
 msgid "C64 Games System PAL"
 msgstr "C64 Games System PAL"
 
@@ -1482,6 +1509,9 @@ msgstr "選擇 Dreamcast 主機地區。"
 msgid "Choose the Parallel N64 graphics plugin."
 msgstr "選擇並行 N64 圖形插件。"
 
+msgid "Choose the appropriate media for disk image."
+msgstr "選擇磁碟映像的合適媒體。"
+
 msgid "Choose the audio output type."
 msgstr "選擇聲音輸出類型。"
 
@@ -1658,6 +1688,9 @@ msgstr "停用頂點快取"
 
 msgid "DISK SHADER CACHE"
 msgstr "磁碟著色器快取"
+
+msgid "DISK TYPE"
+msgstr "磁碟類型"
 
 msgid "DISPLAY"
 msgstr "顯示"
@@ -2259,6 +2292,9 @@ msgstr "修復了多控制器檢測的一個可能的錯誤。"
 msgid "Flight Stick (3 Axes, 4 Btns, 1 Hat)"
 msgstr "飛行搖桿(3軸，4鍵，1個Hat)"
 
+msgid "Floppy Disk Image"
+msgstr "軟碟映像"
+
 msgid "Floppy Disk List"
 msgstr "軟碟列表"
 
@@ -2321,6 +2357,9 @@ msgstr "全部(慢)"
 
 msgid "Full (more compatible)"
 msgstr "全部(更相容)"
+
+msgid "Full Speed (Default)"
+msgstr "全速(預設)"
 
 msgid "Full speed"
 msgstr "全速"
@@ -2543,6 +2582,9 @@ msgstr "HQ (線性濾鏡)"
 
 msgid "Hack. Increases most PAL games' speed by 17%."
 msgstr "破解將大多數 PAL 遊戲的速度提高 17%。"
+
+msgid "Hard Disk Image"
+msgstr "硬碟鏡像"
 
 msgid "Hebrew"
 msgstr "Hebrew"
@@ -2901,6 +2943,9 @@ msgstr "LLE"
 msgid "LOAD CUSTOM TEXTURES"
 msgstr "讀取自訂紋理"
 
+msgid "LOADING SPEED"
+msgstr "讀取速度"
+
 msgid "Landscape"
 msgstr "橫向"
 
@@ -3215,6 +3260,9 @@ msgstr "網路類型"
 
 msgid "NEW 3DS MODE"
 msgstr "新3DS模式"
+
+msgid "NO (DEFAULT)"
+msgstr "否(預設)"
 
 msgid "NTSC (Composite)"
 msgstr "NTSC (Composite)"
@@ -3558,6 +3606,12 @@ msgstr "玩家 1 十字準星顏色"
 msgid "PLAYER 2 CROSSHAIR COLOR"
 msgstr "玩家 2 十字準星顏色"
 
+msgid "PLUS4 NTSC"
+msgstr "PLUS4 NTSC"
+
+msgid "PLUS4 PAL"
+msgstr "PLUS4 PAL"
+
 msgid "PPU DECODER"
 msgstr "PPU解碼器"
 
@@ -3797,6 +3851,9 @@ msgstr "震動等級"
 
 msgid "Random Values"
 msgstr "隨機值"
+
+msgid "Realistic Loading"
+msgstr "真實讀取"
 
 msgid "Recompiler (Fastest)(Default)"
 msgstr "重新編譯器（最快）（預設）"
@@ -4061,6 +4118,9 @@ msgstr "SUPER FX 超頻"
 
 msgid "SUPER GB BORDERS"
 msgstr "SUPER GB 邊框"
+
+msgid "SUPERPET"
+msgstr "SUPERPET"
 
 msgid "SVGA"
 msgstr "SVGA"
@@ -4371,6 +4431,9 @@ msgstr "Super Game Boy"
 msgid "Super Scope"
 msgstr "Super Scope"
 
+msgid "Super VIC (+16K) NTSC"
+msgstr "Super VIC (+16K) NTSC"
+
 msgid "Super-high 1440p"
 msgstr "超高 1440p"
 
@@ -4553,6 +4616,9 @@ msgstr "模擬主機的主題顏色。"
 
 msgid "There is generally no point in going beyond 4x texture scaling unless you are running at very high resolutions."
 msgstr "除非使用非常高的解析度，否則一般不建議超過 4 倍的紋理縮放。"
+
+msgid "This can be convenient if you're using laserdiscs."
+msgstr "如果你用的是鐳射唱盤，這會很方便。"
 
 msgid "This option enables the ability to play Xbox Live Arcade games. May cause compatibility issues with non-XBLA games."
 msgstr "此選項允許玩Xbox Live街機遊戲。可能導致與非XBLA遊戲的相容性問題。"
@@ -4749,6 +4815,9 @@ msgstr "通常比單核模式快不了多少。"
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
+msgid "V364 NTSC"
+msgstr "V364 NTSC"
+
 msgid "VBI SKIP"
 msgstr "VBI SKIP"
 
@@ -4760,6 +4829,18 @@ msgstr "VGA"
 
 msgid "VGA (Default)"
 msgstr "VGA (預設)"
+
+msgid "VIC20 NTSC"
+msgstr "VIC20 NTSC"
+
+msgid "VIC20 NTSC Automatic"
+msgstr "VIC20 NTSC Automatic"
+
+msgid "VIC20 PAL"
+msgstr "VIC20 PAL"
+
+msgid "VIC20 PAL Automatic"
+msgstr "VIC20 PAL Automatic"
 
 msgid "VIDEO FILTERS"
 msgstr "影像鏡"
@@ -4911,6 +4992,9 @@ msgstr "縮放/裁切(隱藏邊框)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "放大以隱藏黑色邊框。每個遊戲的邊界都不同。"
 
+msgid "amber"
+msgstr "amber"
+
 msgid "bilinear"
 msgstr "雙線姓"
 
@@ -4946,6 +5030,12 @@ msgstr "只有底部"
 
 msgid "bottom/top"
 msgstr "底部/頂部"
+
+msgid "colodore_ted"
+msgstr "colodore_ted"
+
+msgid "colodore_vic"
+msgstr "colodore_vic"
 
 msgid "dark knight"
 msgstr "黑暗騎士"
@@ -5000,6 +5090,12 @@ msgstr "最大"
 
 msgid "medium"
 msgstr "中"
+
+msgid "mike-ntsc"
+msgstr "mike-ntsc"
+
+msgid "mike-pal"
+msgstr "mike-pal"
 
 msgid "minimum"
 msgstr "最小"
@@ -5069,6 +5165,12 @@ msgstr "xBR (非常慢，無邊緣融合)"
 
 msgid "xBRZ (Default)"
 msgstr "xBRZ (預設)"
+
+msgid "yape-ntsc"
+msgstr "yape-ntsc"
+
+msgid "yape-pal"
+msgstr "yape-pal"
 
 msgid "yellow/blue"
 msgstr "yellow/blue"
