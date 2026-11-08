@@ -285,6 +285,9 @@ msgstr "3x 標準 (~1080p)"
 msgid "3x native (768 x 576)"
 msgstr "3x 標準 (768 x 576)"
 
+msgid "4 PLAYER ADAPTER"
+msgstr "4プレーヤーアダプター"
+
 msgid "4 threads"
 msgstr "4 スレッド"
 
@@ -501,6 +504,9 @@ msgstr "アダプティブ(ボトムフィールド優先)"
 msgid "Adaptive (Top Field First)"
 msgstr "アダプティブ(トップフィールド優先)"
 
+msgid "Add color to Game Boy games."
+msgstr "ゲームボーイのゲームに色を追加します"
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "フル モーション ビデオ (FMV)のアスペクト比を調整します"
 
@@ -537,6 +543,9 @@ msgstr "サブチャンネル情報ファイルなしで保護されたゲーム
 msgid "Allows reducing the visual quality of these curves for higher performance."
 msgstr "より高いパフォーマンスを得るために、これらの曲線の視覚的な品質を下げることができます"
 
+msgid "Allows up to 5 or 8 controllers in supported games."
+msgstr "多人数対応ゲームで5～8のコントローラーを使用できます"
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "多人数対応ゲームで最大8個のコントローラーを使用できます"
 
@@ -545,6 +554,18 @@ msgstr "ユーザーがテクスチャを置換可能にします"
 
 msgid "Always"
 msgstr "常に"
+
+msgid "Analog Controller"
+msgstr "アナログコントローラー"
+
+msgid "Analog Controller (DualShock)"
+msgstr "デュアルショック"
+
+msgid "Analog Joystick"
+msgstr "アナログジョイスティック"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "アナログジョイスティック (Flystick)"
 
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (最も互換性がある)"
@@ -789,6 +810,9 @@ msgstr "CPU"
 msgid "CPU CORE"
 msgstr "CPU コア"
 
+msgid "CPU DYNAREC (SPEED UP)"
+msgstr "CPUダイナレック（速度増加）"
+
 msgid "CPU EXECUTION MODE"
 msgstr "CPU 実行モード"
 
@@ -806,6 +830,9 @@ msgstr "カーソルタイムアウト"
 
 msgid "CUSTOMIZE EMULATED WIIMOTE & GAMEPAD"
 msgstr "Wii リモコン&ゲームパッド"
+
+msgid "CXA2025AS (JP)"
+msgstr "ソニー CXA2025AS (JP)"
 
 msgid "CXD4 (LLE Fallback)"
 msgstr "CXD4 (LLE フォールバック)"
@@ -996,6 +1023,9 @@ msgstr "ディザリング"
 msgid "DK Bongos"
 msgstr "タルコンガ (DK Bongos)"
 
+msgid "DMA Only (Slightly Faster)"
+msgstr "DMAのみ（微高速）"
+
 msgid "DOLBY PRO LOGIC II"
 msgstr "DOLBY PRO LOGIC II(サラウンド)"
 
@@ -1013,6 +1043,9 @@ msgstr "DSi"
 
 msgid "DUAL CORE MODE"
 msgstr "デュアルコアモード"
+
+msgid "DYNAREC CODE INVALIDATION"
+msgstr "ダイナレックコードの無効化"
 
 msgid "Dance Mat"
 msgstr "ダンスマット"
@@ -1062,6 +1095,15 @@ msgstr "ボタン画面にカーソルをどのように表示するかを決定
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "システムの速度と先読み動作を決定します"
 
+msgid "Digital Controller"
+msgstr "デジタルコントローラー"
+
+msgid "Digital Controller (Gamepad)"
+msgstr "デジタルコントローラー（ゲームパッド）"
+
+msgid "Digital Prime FBX"
+msgstr "デジタルプライムFBX"
+
 msgid "Disabled"
 msgstr "使用しない"
 
@@ -1082,6 +1124,15 @@ msgstr "上書きしない"
 
 msgid "Double buffering"
 msgstr "ダブルバッファリング"
+
+msgid "Double the rendering resolution."
+msgstr "レンダリング解像度を2倍にする"
+
+msgid "DualShock Controller"
+msgstr "デュアルショック"
+
+msgid "DualShock has rumble support. Not all games support DualShock."
+msgstr "デュアルショックには振動機能がありますが、非対応のゲームもあります"
 
 msgid "During gameplay, press Hotkey + R1 to translate on-screen text. Only on libretro cores."
 msgstr "ゲームプレイ中に、ホットキー+R1で、画面上のテキストを翻訳します\n(libretroコアのみ) "
@@ -1130,6 +1181,9 @@ msgstr "タイムストレッチを有効"
 
 msgid "ENABLE WIDESCREEN PATCHES"
 msgstr "ワイドスクリーン パッチを有効"
+
+msgid "ENHANCED RENDERING RESOLUTION"
+msgstr "レンダリング解像度を強化"
 
 msgid "Ecuador"
 msgstr "エクアドル"
@@ -1260,6 +1314,9 @@ msgstr "強化：行制限ごとに32個のスプライトを削除します(特
 msgid "Enhancement. Removes disc loading."
 msgstr "強化：ディスク読み込みをなくします"
 
+msgid "Enhancement. Skipping it can break some games."
+msgstr "強化：スキップすると、いくつかのゲームが壊れる可能性があります"
+
 msgid "Enhancement. Smooth out jagged edges on 3D object polygons."
 msgstr "強化：3Dオブジェクトポリゴンのギザギザのエッジを滑らかにします"
 
@@ -1268,6 +1325,9 @@ msgstr "強化：3Dオブジェクトポリゴンのギザギザのエッジを�
 
 msgid "Enhancement. Smooth/upscale textures on 3D objects."
 msgstr "強化：3Dオブジェクトのテクスチャをアップスケール/滑らかにします"
+
+msgid "Enhancement. Smooth/upscale textures."
+msgstr "強化：アップスケール/滑らかにします"
 
 msgid "Enhancement. Upscale textures."
 msgstr "強化：テクスチャをアップスケールします"
@@ -1305,6 +1365,9 @@ msgstr "FMVのインターレースを解除する方法を選択します"
 msgid "FORCE NTSC TIMINGS ON PAL"
 msgstr "強制的に PALをNTSCタイミング"
 
+msgid "FRAME DUPING (SPEED UP)"
+msgstr "フレームデュッピング（スピードアップ）"
+
 msgid "FRAME LIMIT"
 msgstr "フレーム制限"
 
@@ -1322,6 +1385,9 @@ msgstr "フレームスキップ制御"
 
 msgid "FXAA"
 msgstr "FXAA(アンチエイリアシング アルゴリズム)"
+
+msgid "Famicom (FDS)"
+msgstr "ファミコン (FDS)"
 
 msgid "Faroe Islands"
 msgstr "フェロー諸島"
@@ -1356,6 +1422,12 @@ msgstr "画面のずれを修正します (CPU によってはゲームが開始
 msgid "Fix texture banding when upscaling."
 msgstr "アップスケーリング時のテクスチャバンディングを修正します"
 
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "ジャイロ対応ゲーム時（左アナログスティックに割り当てる）"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "ジャイロ対応ゲーム時（右アナログスティックに割り当てる）"
+
 msgid "For emulators and controllers supporting force feedback."
 msgstr "フォースフィードバック(振動)可能時の設定"
 
@@ -1388,6 +1460,9 @@ msgstr "フル (ハッシュキャッシュ)"
 
 msgid "Full (Slow)"
 msgstr "フル (遅い)"
+
+msgid "Full (more compatible)"
+msgstr "フル（互換性が高い）"
 
 msgid "Full speed"
 msgstr "フルスピード"
@@ -1445,6 +1520,9 @@ msgstr "GB - Pocket"
 
 msgid "GB - Smart Coloring"
 msgstr "GB - Smart Coloring"
+
+msgid "GB COLORIZATION"
+msgstr "GB カラー化"
 
 msgid "GBC - Blue"
 msgstr "GBC - Blue"
@@ -1539,6 +1617,9 @@ msgstr "グレー"
 msgid "Greece"
 msgstr "ギリシャ"
 
+msgid "Green"
+msgstr "緑"
+
 msgid "Guatemala"
 msgstr "グアテマラ"
 
@@ -1589,6 +1670,9 @@ msgstr "ハイブリッド (上下＋大上)"
 
 msgid "Hybrid Ubershaders"
 msgstr "ハイブリッドUS"
+
+msgid "Hyper Blaster/Justifier"
+msgstr "ハイパーブラスター/ジャスティファイア"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "ポリゴン分割の改善"
@@ -1710,6 +1794,9 @@ msgstr "7月"
 msgid "June"
 msgstr "6月"
 
+msgid "Justifier"
+msgstr "コナミ ジャスティファイア"
+
 msgid "Kazakhstan"
 msgstr "カザフスタン"
 
@@ -1806,6 +1893,9 @@ msgstr "ライトパープル"
 msgid "Light guns can only be used in port 2."
 msgstr "ライトガン(ガンコン)はポート2でのみ使用できます"
 
+msgid "Lightrec Interpreter"
+msgstr "Lightrec インタプリタ"
+
 msgid "Lime"
 msgstr "ライム"
 
@@ -1854,6 +1944,9 @@ msgstr "マルチスレッド RSX"
 msgid "Macau"
 msgstr "マカオ"
 
+msgid "Magnum FBX"
+msgstr "Magnum FBX"
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "解像度が高くなると、「ディザ パターン」あまりが目立たなくなります"
 
@@ -1862,6 +1955,9 @@ msgstr "マレーシア"
 
 msgid "Maldives"
 msgstr "モルディブ"
+
+msgid "Manually activate the adapter for supported games."
+msgstr "対応しているゲームのアダプターを手動で有効にします"
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "コントローラをエミュレートされたWiiリモコンにマッピングします"
@@ -1874,6 +1970,9 @@ msgstr "ウィンドウに合わせる"
 
 msgid "Max (demanding games)"
 msgstr "MAX (要求の厳しいゲーム)"
+
+msgid "Max Performance"
+msgstr "最大パフォーマンス"
 
 msgid "Maximum (Very Slow)"
 msgstr "最大 (非常に遅い)"
@@ -1932,11 +2031,17 @@ msgstr "モノクロ"
 msgid "Monochrome (Blargg)"
 msgstr "モノクロ (Blargg)"
 
+msgid "More accurate emulation, but slower."
+msgstr "より正確なエミュレーションですが、速度は遅くなります"
+
 msgid "Morocco"
 msgstr "モロッコ"
 
 msgid "Mouse"
 msgstr "マウス"
+
+msgid "Much faster than interpreter (but may have issues)."
+msgstr "インタプリタよりもはるかに高速です（問題がでる可能性もあり）"
 
 msgid "NAT"
 msgstr "NAT"
@@ -1959,6 +2064,21 @@ msgstr "ネットワークタイプ"
 msgid "NEW 3DS MODE"
 msgstr "New 3DS モード"
 
+msgid "NTSC (Composite)"
+msgstr "NTSC（コンポジット）"
+
+msgid "NTSC (NES)"
+msgstr "NTSC (NES)"
+
+msgid "NTSC (RF)"
+msgstr "NTSC (RF)"
+
+msgid "NTSC (RGB)"
+msgstr "NTSC (RGB)"
+
+msgid "NTSC (S-Video)"
+msgstr "NTSC（S-ビデオ）"
+
 msgid "NTSC FILTER"
 msgstr "NTSC フィルター"
 
@@ -1968,6 +2088,9 @@ msgstr "NTSC-J"
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
+msgid "Namco GunCon"
+msgstr "ナムコ ガンコン"
+
 msgid "Nat to access internet from xemu machine. Udp for System Link. Default (Auto) disables network access."
 msgstr "xemu からインターネットに接続する Nat設定(システムリンク用の UDP) \n標準 (自動) では、ネットワーク接続が無効になります"
 
@@ -1976,6 +2099,12 @@ msgstr "ネイティブ"
 
 msgid "Native (PS2)(Default)"
 msgstr "PS2実機同等(標準)"
+
+msgid "NeGcon"
+msgstr "ネジコン(ナムコ)"
+
+msgid "NeGcon (Rumble)"
+msgstr "ネジコン(ナムコ)(振動有)"
 
 msgid "Nearest"
 msgstr "最近傍"
@@ -2073,6 +2202,9 @@ msgstr "オフ (ノイズ多)"
 msgid "Off (None)"
 msgstr "オフ (なし)"
 
+msgid "Off is safer, On for specific games."
+msgstr "オフの方が安全です。特定のゲームの場合はオンです"
+
 msgid "Oman"
 msgstr "オマーン"
 
@@ -2082,11 +2214,17 @@ msgstr "使用"
 msgid "On (Default)"
 msgstr "使用 (標準)"
 
+msgid "On (Speed hack)"
+msgstr "オン（スピードハック）"
+
 msgid "On (Vulkan Only)"
 msgstr "オン (Vulkan のみ)"
 
 msgid "Only Overscan Area"
 msgstr "オーバースキャンエリアのみ"
+
+msgid "Only for games that employed it (for Boktai)"
+msgstr "それを採用したゲームのみ（ボクらの太陽）"
 
 msgid "Only increase the image size in integer multiples."
 msgstr "画像サイズは、整数倍でのみ増やします"
@@ -2132,6 +2270,12 @@ msgstr "パフォーマンス"
 
 msgid "PERFORMANCE HACKS"
 msgstr "性能ハック"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "プレイヤー 1 照準の色"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "プレイヤー 2 照準の色"
 
 msgid "PPU DECODER"
 msgstr "PPU デコーダー"
@@ -2193,6 +2337,9 @@ msgstr "ペルー"
 msgid "Philippines"
 msgstr "フィリピン"
 
+msgid "PlayStation Mouse"
+msgstr "PS マウス"
+
 msgid "Pointer"
 msgstr "ポインター"
 
@@ -2201,6 +2348,24 @@ msgstr "ポーランド"
 
 msgid "Polish"
 msgstr "ポーランド語"
+
+msgid "Port 1"
+msgstr "ポート 1"
+
+msgid "Port 1+2"
+msgstr "ポート1+2"
+
+msgid "Port 2"
+msgstr "ポート 2"
+
+msgid "Port1"
+msgstr "ポート1"
+
+msgid "Port1+2"
+msgstr "ポート1+2"
+
+msgid "Port2"
+msgstr "ポート2"
 
 msgid "Portugal"
 msgstr "ポルトガル"
@@ -2286,6 +2451,9 @@ msgstr "振動レベル"
 msgid "Random Values"
 msgstr "ランダム値"
 
+msgid "Raw"
+msgstr "Raw"
+
 msgid "Recompiler (Fastest)(Default)"
 msgstr "リコンパイラ（最速）(標準)"
 
@@ -2315,6 +2483,9 @@ msgstr "BIOSファイルが必要です"
 
 msgid "Resampling (Pirch Shift)"
 msgstr "リサンプリング（ピッチシフト）"
+
+msgid "Restored Wii VC"
+msgstr "復元済Wii VC"
 
 msgid "Right Stick"
 msgstr "Rスティック"
@@ -2363,6 +2534,12 @@ msgstr "SDL2"
 
 msgid "SENSOR BAR POSITION"
 msgstr "センサーバーの位置"
+
+msgid "SENSOR SENSITIVITY (GYROSCOPE)"
+msgstr "センサー感度（ジャイロスコープ）"
+
+msgid "SENSOR SENSITIVITY (TILT)"
+msgstr "センサー感度（傾斜）"
 
 msgid "SHOW ACHIEVEMENT MESSAGES"
 msgstr "達成メッセージを表示"
@@ -2571,6 +2748,9 @@ msgstr "スロバキア"
 msgid "Slovenia"
 msgstr "スロベニア"
 
+msgid "Small performance increase (may drop frames)."
+msgstr "の微向上（フレームドロップする可能性）"
+
 msgid "Smaller"
 msgstr "小さい"
 
@@ -2585,6 +2765,9 @@ msgstr "スムーズ 3"
 
 msgid "Smooth 4"
 msgstr "スムーズ 4"
+
+msgid "Smooth V2 FBX"
+msgstr "スムーズ V2 FBX"
 
 msgid "Smooth textures on 3D objects."
 msgstr "3Dオブジェクトのテクスチャを滑らかにします"
@@ -2660,6 +2843,9 @@ msgstr "画面に合わせ引き伸ばし"
 
 msgid "Stretch to window"
 msgstr "ウィンドウに合わせる"
+
+msgid "Super Game Boy"
+msgstr "スーパーゲームボーイ"
 
 msgid "Super Scope"
 msgstr "スーパースコープ"
@@ -2856,6 +3042,9 @@ msgstr "DSP オーディオを使用"
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "プリエンプティブフレームを使用"
 
+msgid "USE SOFTWARE RENDERING"
+msgstr "ソフトウェアレンダリングを使用"
+
 msgid "Ukraine"
 msgstr "ウクライナ"
 
@@ -2921,6 +3110,9 @@ msgstr "ウズベキスタン"
 
 msgid "VBI SKIP"
 msgstr "VBI(垂直ブランク割り込み) スキップ"
+
+msgid "VIDEO FILTERS"
+msgstr "ビデオ フィルター"
 
 msgid "VIDEO SETTINGS"
 msgstr "映像設定"
@@ -2991,6 +3183,9 @@ msgstr "100% 以外で動作している場合、フレームを落とさずに�
 msgid "While Touching"
 msgstr "タッチしたとき"
 
+msgid "White"
+msgstr "白"
+
 msgid "Widescreen (16:9)"
 msgstr "ワイドスクリーン (16:9)"
 
@@ -3002,6 +3197,9 @@ msgstr "Wii NAND の言語設定"
 
 msgid "Wii U Classic Controller"
 msgstr "Wii U クラシックコントローラ"
+
+msgid "Wii Virtual Console"
+msgstr "Wii バーチャルコンソール"
 
 msgid "Wiimote Sideway"
 msgstr "Wii リモコン横向き"
@@ -3039,14 +3237,44 @@ msgstr "ZCULL 精度"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "拡大して黒い境界線を隠します（境界線はゲームごとに異なります）"
 
+msgid "black and white"
+msgstr "黒と白"
+
+msgid "blue sea"
+msgstr "シーブルー"
+
+msgid "cxa2025as (US)"
+msgstr "cxa2025as (US)"
+
+msgid "dark knight"
+msgstr "dark knight"
+
 msgid "diagonal filter"
 msgstr "対角フィルタ"
+
+msgid "gba sp"
+msgstr "GBA SP"
+
+msgid "green forest"
+msgstr "グリーンフォレスト"
+
+msgid "hot desert"
+msgstr "hot desert"
 
 msgid "lottes crt"
 msgstr "Lotte CRT"
 
 msgid "nxagss"
 msgstr "NxAGSS"
+
+msgid "original gameboy"
+msgstr "オリジナルゲームボーイ"
+
+msgid "pink dreams"
+msgstr "ピンクドリーム"
+
+msgid "royaltea"
+msgstr "ロイヤルティー"
 
 msgid "scanlines"
 msgstr "スキャンライン"
@@ -3059,6 +3287,9 @@ msgstr "三角フィルタ"
 
 msgid "wave filter"
 msgstr "波形フィルタ"
+
+msgid "weird colors"
+msgstr "不思議な色"
 
 msgid "xBR (Very Slow)"
 msgstr "xBR (非常に遅い)"

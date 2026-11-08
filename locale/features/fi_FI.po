@@ -183,6 +183,9 @@ msgstr "YLIKELLOTUKSEN TYYPPI"
 msgid "Off"
 msgstr "Pois"
 
+msgid "Off is safer, On for specific games."
+msgstr "Pois päältä on turvallisempi, päällä on tiettyjä pelejä varten."
+
 msgid "On"
 msgstr "Päällä"
 

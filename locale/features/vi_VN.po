@@ -285,6 +285,9 @@ msgstr "3x Native (~1080p)"
 msgid "3x native (768 x 576)"
 msgstr "3x native (768 x 576)"
 
+msgid "4 PLAYER ADAPTER"
+msgstr "BỘ CHUYỂN ĐỔI 4 NGƯỜI CHƠI"
+
 msgid "4 threads"
 msgstr "4 luồng"
 
@@ -501,6 +504,9 @@ msgstr "Adaptive (Bottom Field First)"
 msgid "Adaptive (Top Field First)"
 msgstr "Adaptive (Top Field First)"
 
+msgid "Add color to Game Boy games."
+msgstr "Thêm màu sắc vào các trò chơi Game Boy."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Điều chỉnh tỷ lệ khung hình của phim Full Motion Video."
 
@@ -531,6 +537,9 @@ msgstr "Tất cả các giấy phép có thể (Không khuyến khích)"
 msgid "Allows loading protected games without subchannel information."
 msgstr "Cho phép tải các trò chơi được bảo vệ mà không cần thông tin kênh phụ."
 
+msgid "Allows up to 5 or 8 controllers in supported games."
+msgstr "Cho phép tối đa 5 hoặc 8 bộ điều khiển trong các trò chơi được hỗ trợ."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Cho phép tối đa 8 bộ điều khiển trong các trò chơi được hỗ trợ."
 
@@ -539,6 +548,18 @@ msgstr "Cho phép người dùng có thể thay thế họa tiết."
 
 msgid "Always"
 msgstr "Luôn luôn"
+
+msgid "Analog Controller"
+msgstr "Analog Controller"
+
+msgid "Analog Controller (DualShock)"
+msgstr "Analog Controller (DualShock)"
+
+msgid "Analog Joystick"
+msgstr "Analog Joystick"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "Analog Joystick (Flystick)"
 
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (Tương thích nhất)"
@@ -768,6 +789,9 @@ msgstr "CPU"
 msgid "CPU CORE"
 msgstr "LÕI CPU"
 
+msgid "CPU DYNAREC (SPEED UP)"
+msgstr "CPU DYNAREC (TĂNG TỐC)"
+
 msgid "CPU EXECUTION MODE"
 msgstr "CHẾ ĐỘ THỰC THI CPU"
 
@@ -951,6 +975,9 @@ msgstr "DITHERING"
 msgid "DK Bongos"
 msgstr "DK Bongos"
 
+msgid "DMA Only (Slightly Faster)"
+msgstr "Chỉ DMA (nhanh hơn một chút)"
+
 msgid "DOLBY PRO LOGIC II"
 msgstr "DOLBY PRO LOGIC II"
 
@@ -968,6 +995,9 @@ msgstr "DSi"
 
 msgid "DUAL CORE MODE"
 msgstr "CHẾ ĐỘ LÕI KÉP"
+
+msgid "DYNAREC CODE INVALIDATION"
+msgstr "DYNAREC CODE INVALIDATION"
 
 msgid "Dance Mat"
 msgstr "Dance Mat"
@@ -1017,6 +1047,12 @@ msgstr "Xác định cách con trỏ xuất hiện trên màn hình."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Xác định tốc độ và thành phần chạy trước của hệ thống."
 
+msgid "Digital Controller"
+msgstr "Digital Controller"
+
+msgid "Digital Controller (Gamepad)"
+msgstr "Digital Controller (Gamepad)"
+
 msgid "Disabled"
 msgstr "Tắt"
 
@@ -1037,6 +1073,15 @@ msgstr "Không ghi đè"
 
 msgid "Double buffering"
 msgstr "Bộ đệm kép"
+
+msgid "Double the rendering resolution."
+msgstr "Nhân đôi độ phân giải kết xuất."
+
+msgid "DualShock Controller"
+msgstr "DualShock Controller"
+
+msgid "DualShock has rumble support. Not all games support DualShock."
+msgstr "Dualshock có sự hỗ trợ của Rumble. Không phải tất cả các trò chơi đều hỗ trợ DualShock."
 
 msgid "During gameplay, press Hotkey + R1 to translate on-screen text. Only on libretro cores."
 msgstr "Trong quá trình chơi game, nhấn Hotkey + R1 để dịch văn bản trên màn hình. Chỉ trên lõi libretro."
@@ -1085,6 +1130,9 @@ msgstr "CHO PHÉP KÉO DÀI THỜI GIAN"
 
 msgid "ENABLE WIDESCREEN PATCHES"
 msgstr "BẬT BẢN VÁ MÀN HÌNH RỘNG"
+
+msgid "ENHANCED RENDERING RESOLUTION"
+msgstr "TĂNG CƯỜNG ĐỘ PHÂN GIẢI KẾT XUẤT"
 
 msgid "Ecuador"
 msgstr "Ecuador"
@@ -1215,6 +1263,9 @@ msgstr "Tăng cường. Loại bỏ giới hạn ba mươi hai họa tiết trê
 msgid "Enhancement. Removes disc loading."
 msgstr "Tăng cường. Giảm thời gian tải dữ liệu từ ổ đĩa."
 
+msgid "Enhancement. Skipping it can break some games."
+msgstr "Tăng cường. Bỏ qua có thể làm hỏng một số trò chơi."
+
 msgid "Enhancement. Smooth out jagged edges on 3D object polygons."
 msgstr "Tăng cường. Làm mịn các cạnh lởm chởm trên đa giác đối tượng 3D."
 
@@ -1223,6 +1274,9 @@ msgstr "Tăng cường. Làm mịn các cạnh lởm chởm trên các đối t�
 
 msgid "Enhancement. Smooth/upscale textures on 3D objects."
 msgstr "Tăng cường. Họa tiết mượt mà/cao cấp trên các đối tượng 3D."
+
+msgid "Enhancement. Smooth/upscale textures."
+msgstr "Tăng cường. Mượt/Nâng cấp textures."
 
 msgid "Enhancement. Upscale textures."
 msgstr "Tăng cường. Nâng cấp họa tiết."
@@ -1260,6 +1314,9 @@ msgstr "Khử xen kẽ phim FMV."
 msgid "FORCE NTSC TIMINGS ON PAL"
 msgstr "BẮT BUỘC THỜI GIAN NTSC TRÊN PAL"
 
+msgid "FRAME DUPING (SPEED UP)"
+msgstr "KHUNG DUPING (TĂNG TỐC)"
+
 msgid "FRAME LIMIT"
 msgstr "GIỚI HẠN KHUNG HÌNH"
 
@@ -1271,6 +1328,9 @@ msgstr "BỎ QUA KHUNG HÌNH"
 
 msgid "FXAA"
 msgstr "FXAA"
+
+msgid "Famicom (FDS)"
+msgstr "Famicom (FDS)"
 
 msgid "Faroe Islands"
 msgstr "Quần đảo Faroe"
@@ -1298,6 +1358,12 @@ msgstr "Sửa lỗi xé màn hình. CPU hoạt động nặng."
 
 msgid "Fix texture banding when upscaling."
 msgstr "Sửa lỗi dải họa tiết khi nâng cấp."
+
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "Dành cho các trò chơi hỗ trợ Gyro (liên kết với cần analog bên trái)"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "Dành cho các trò chơi hỗ trợ Gyro (liên kết với cần analog bên phải)"
 
 msgid "For emulators and controllers supporting force feedback."
 msgstr "Dành cho trình mô phỏng và bộ điều khiển hỗ trợ bắt buộc feedback."
@@ -1331,6 +1397,9 @@ msgstr "TOÀN BỘ (bộ nhớ cache băm)"
 
 msgid "Full (Slow)"
 msgstr "Đầy đủ (Chậm)"
+
+msgid "Full (more compatible)"
+msgstr "Đầy đủ (tương thích hơn)"
 
 msgid "Full speed"
 msgstr "Tốc độ tối đa"
@@ -1388,6 +1457,9 @@ msgstr "GB - Túi"
 
 msgid "GB - Smart Coloring"
 msgstr "GB - Màu Thông Minh"
+
+msgid "GB COLORIZATION"
+msgstr "MÀU SẮC GB"
 
 msgid "GBC - Blue"
 msgstr "GBC - Xanh Da Trời"
@@ -1482,6 +1554,9 @@ msgstr "Xám"
 msgid "Greece"
 msgstr "Hy Lạp"
 
+msgid "Green"
+msgstr "Màu xanh lá"
+
 msgid "Guatemala"
 msgstr "Guatemala"
 
@@ -1526,6 +1601,9 @@ msgstr "Hybrid màn hình bên trên"
 
 msgid "Hybrid Ubershaders"
 msgstr "Hybrid Ubershaders"
+
+msgid "Hyper Blaster/Justifier"
+msgstr "Hyper Blaster/Justifier"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "CẢI THIỆN TÁCH ĐA GIÁC"
@@ -1641,6 +1719,9 @@ msgstr "Tháng 7"
 msgid "June"
 msgstr "Tháng 6"
 
+msgid "Justifier"
+msgstr "Justifier"
+
 msgid "Kazakhstan"
 msgstr "Kazakhstan"
 
@@ -1734,6 +1815,9 @@ msgstr "Tím sáng"
 msgid "Light guns can only be used in port 2."
 msgstr "Light gun chỉ có thể được sử dụng ở cổng 2."
 
+msgid "Lightrec Interpreter"
+msgstr "Trình biên dịch Lightrec"
+
 msgid "Lime"
 msgstr "Chanh xanh"
 
@@ -1791,6 +1875,9 @@ msgstr "Malaysia"
 msgid "Maldives"
 msgstr "Maldives"
 
+msgid "Manually activate the adapter for supported games."
+msgstr "Kích hoạt thủ công bộ điều hợp cho các trò chơi được hỗ trợ."
+
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Ánh xạ bộ điều khiển của bạn tới mô phỏng Wiimote."
 
@@ -1802,6 +1889,9 @@ msgstr "Match Window"
 
 msgid "Max (demanding games)"
 msgstr "Max (trò chơi đòi hỏi khắt khe)"
+
+msgid "Max Performance"
+msgstr "Hiệu suất tối đa"
 
 msgid "Maximum (Very Slow)"
 msgstr "Tối đa (Rất chậm)"
@@ -1860,11 +1950,17 @@ msgstr "Đơn sắc"
 msgid "Monochrome (Blargg)"
 msgstr "Monochrome (Blargg)"
 
+msgid "More accurate emulation, but slower."
+msgstr "Mô phỏng chính xác hơn, nhưng chậm hơn."
+
 msgid "Morocco"
 msgstr "Ma-rốc"
 
 msgid "Mouse"
 msgstr "Chuột"
+
+msgid "Much faster than interpreter (but may have issues)."
+msgstr "Nhanh hơn nhiều so với trình biên dịch (nhưng có thể có vấn đề)."
 
 msgid "NAT"
 msgstr "NAT"
@@ -1887,6 +1983,21 @@ msgstr "LOẠI MẠNG"
 msgid "NEW 3DS MODE"
 msgstr "CHẾ ĐỘ 3DS MỚI"
 
+msgid "NTSC (Composite)"
+msgstr "NTSC (Tổng hợp)"
+
+msgid "NTSC (NES)"
+msgstr "NTSC (NES)"
+
+msgid "NTSC (RF)"
+msgstr "NTSC (RF)"
+
+msgid "NTSC (RGB)"
+msgstr "NTSC (RGB)"
+
+msgid "NTSC (S-Video)"
+msgstr "NTSC (S-Video)"
+
 msgid "NTSC FILTER"
 msgstr "BỘ LỌC NTSC"
 
@@ -1896,6 +2007,9 @@ msgstr "NTSC-J"
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
+msgid "Namco GunCon"
+msgstr "Namco GunCon"
+
 msgid "Nat to access internet from xemu machine. Udp for System Link. Default (Auto) disables network access."
 msgstr "Nat để truy cập internet từ máy xemu. Udp cho Liên kết hệ thống. Mặc định (Tự động) vô hiệu hóa truy cập mạng."
 
@@ -1904,6 +2018,12 @@ msgstr "Tự nhiên"
 
 msgid "Native (PS2)(Default)"
 msgstr "Native (PS2)(Mặc định)"
+
+msgid "NeGcon"
+msgstr "NeGcon"
+
+msgid "NeGcon (Rumble)"
+msgstr "NeGcon (Rumble)"
 
 msgid "Nearest"
 msgstr "Nearest"
@@ -1989,6 +2109,9 @@ msgstr "Tắt (Ồn)"
 msgid "Off (None)"
 msgstr "Tắt (Không)"
 
+msgid "Off is safer, On for specific games."
+msgstr "Tắt an toàn hơn, bật cho một vài trò chơi cụ thể."
+
 msgid "Oman"
 msgstr "Ô-man"
 
@@ -1998,11 +2121,17 @@ msgstr "Bật"
 msgid "On (Default)"
 msgstr "Bật (Mặc định)"
 
+msgid "On (Speed hack)"
+msgstr "Bật (Hack tốc độ)"
+
 msgid "On (Vulkan Only)"
 msgstr "Bật (chỉ Vulkan)"
 
 msgid "Only Overscan Area"
 msgstr "Only Overscan Area"
+
+msgid "Only for games that employed it (for Boktai)"
+msgstr "Chỉ dành cho các trò chơi sử dụng nó (đối với Boktai)"
 
 msgid "Only increase the image size in integer multiples."
 msgstr "Chỉ tăng kích thước hình ảnh theo bội số nguyên."
@@ -2045,6 +2174,12 @@ msgstr "PARALLEL-RDP UPSCALER"
 
 msgid "PERFORMANCE HACKS"
 msgstr "HACK HIỆU SUẤT"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "MÀU TÂM NGẮM NGƯỜI CHƠI 1"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "MÀU TÂM NGẮM NGƯỜI CHƠI 2"
 
 msgid "PPU DECODER"
 msgstr "BỘ GIẢI MÃ PPU"
@@ -2106,6 +2241,9 @@ msgstr "Peru"
 msgid "Philippines"
 msgstr "Philippines"
 
+msgid "PlayStation Mouse"
+msgstr "Chuột PlayStation"
+
 msgid "Pointer"
 msgstr "Con trỏ"
 
@@ -2114,6 +2252,24 @@ msgstr "Ba Lan"
 
 msgid "Polish"
 msgstr "Ba Lan"
+
+msgid "Port 1"
+msgstr "Cổng 1"
+
+msgid "Port 1+2"
+msgstr "Cổng 1+2"
+
+msgid "Port 2"
+msgstr "Cổng 2"
+
+msgid "Port1"
+msgstr "Cổng1"
+
+msgid "Port1+2"
+msgstr "Cổng1+2"
+
+msgid "Port2"
+msgstr "Cổng2"
 
 msgid "Portugal"
 msgstr "Bồ Đào Nha"
@@ -2270,6 +2426,12 @@ msgstr "SDL2"
 
 msgid "SENSOR BAR POSITION"
 msgstr "VỊ TRÍ THANH CẢM BIẾN"
+
+msgid "SENSOR SENSITIVITY (GYROSCOPE)"
+msgstr "ĐỘ NHẠY CẢM BIẾN (GYROSCOPE)"
+
+msgid "SENSOR SENSITIVITY (TILT)"
+msgstr "ĐỘ NHẠY CẢM BIẾN (TILT)"
 
 msgid "SHOW ACHIEVEMENT MESSAGES"
 msgstr "HIỂN THỊ THÔNG BÁO THÀNH TÍCH"
@@ -2454,6 +2616,9 @@ msgstr "Slovakia"
 msgid "Slovenia"
 msgstr "Slovenia"
 
+msgid "Small performance increase (may drop frames)."
+msgstr "Tăng hiệu suất nhỏ (có thể giảm khung hình)."
+
 msgid "Smaller"
 msgstr "Nhỏ hơn"
 
@@ -2543,6 +2708,9 @@ msgstr "Kéo dài đến đầy đủ"
 
 msgid "Stretch to window"
 msgstr "Kéo dài đến hết cửa sổ"
+
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
@@ -2715,6 +2883,9 @@ msgstr "SỬ DỤNG ÂM THANH DSP"
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "SỬ DỤNG KHUNG KHÁM PHÁ TRƯỚC"
 
+msgid "USE SOFTWARE RENDERING"
+msgstr "SỬ DỤNG KẾT XUẤT PHẦN MỀM"
+
 msgid "Ukraine"
 msgstr "Ukraine"
 
@@ -2768,6 +2939,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "BỎ QUA VBI"
+
+msgid "VIDEO FILTERS"
+msgstr "BỘ LỌC VIDEO"
 
 msgid "VIDEO SETTINGS"
 msgstr "CÀI ĐẶT VIDEO"
@@ -2832,6 +3006,9 @@ msgstr "Khi chạy trên 100%, hãy điều chỉnh nhiệt độ thay vì giả
 msgid "While Touching"
 msgstr "Khi chạm"
 
+msgid "White"
+msgstr "Trắng"
+
 msgid "Widescreen (16:9)"
 msgstr "Màn hình rộng (16:9)"
 
@@ -2880,14 +3057,38 @@ msgstr "ZCULL ACCURACY"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Phóng to để ẩn đường viền đen. Đường viền khác nhau với mỗi trò chơi."
 
+msgid "black and white"
+msgstr "đen và trắng"
+
+msgid "blue sea"
+msgstr "xanh biển"
+
+msgid "dark knight"
+msgstr "hiệp sĩ bóng đêm"
+
 msgid "diagonal filter"
 msgstr "bộ lọc chéo"
+
+msgid "gba sp"
+msgstr "gba sp"
+
+msgid "green forest"
+msgstr "rừng xanh"
+
+msgid "hot desert"
+msgstr "sa mạc nóng"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original gameboy"
+msgstr "original gameboy"
+
+msgid "pink dreams"
+msgstr "hồng mộng mơ"
 
 msgid "scanlines"
 msgstr "scanlines"
@@ -2900,6 +3101,9 @@ msgstr "bộ lọc hình tam giác"
 
 msgid "wave filter"
 msgstr "bộ lọc sóng"
+
+msgid "weird colors"
+msgstr "màu sắc kỳ lạ"
 
 msgid "xBR (Very Slow)"
 msgstr "xBR (Rất Chậm)"

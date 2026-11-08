@@ -67,7 +67,7 @@ Generators
 
 | Emulator name (`es_systems.cfg`) | Generator | Notes |
 | --- | --- | --- |
-| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, mgba, melondsds, mesen, fceumm, snes9x, mupen64plus-next and flycast; any other core runs with the generic settings |
+| `libretro`, `retroarch` | RetroArch | Core profiles for gambatte, vba-m (`vbam`), mgba, melondsds, mesen, fceumm, nestopia, snes9x, bsnes (and bsnes_hd), mupen64plus-next, swanstation, mednafen_psx (`mednafen_psx_hw`), pcsx_rearmed and flycast; any other core runs with the generic settings |
 | `duckstation` | DuckStation | PlayStation |
 | `pcsx2` | PCSX2 | PlayStation 2, x86_64 only |
 | `ppsspp` | PPSSPP | PSP |

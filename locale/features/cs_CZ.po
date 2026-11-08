@@ -285,6 +285,9 @@ msgstr "3x nativní (~1080p)"
 msgid "3x native (768 x 576)"
 msgstr "3x nativní(768 x 576)"
 
+msgid "4 PLAYER ADAPTER"
+msgstr "ADAPTÉR PRO 4 HRÁČE"
+
 msgid "4 threads"
 msgstr "4 vlákna"
 
@@ -501,6 +504,9 @@ msgstr "Adaptivní (spodní pole první)"
 msgid "Adaptive (Top Field First)"
 msgstr "Adaptivní (horní pole první)"
 
+msgid "Add color to Game Boy games."
+msgstr "Přidání barev do her pro Game Boy."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Upravuje poměr stran filmů Video v plném pohybu."
 
@@ -534,6 +540,9 @@ msgstr "Všechny možné licence (nedoporučuje se)"
 msgid "Allows loading protected games without subchannel information."
 msgstr "Umožňuje načítání chráněných her bez informací o dílčím kanálu."
 
+msgid "Allows up to 5 or 8 controllers in supported games."
+msgstr "Umožňuje až 5 nebo 8 ovladačů v podporovaných hrách."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Umožňuje až 8 ovladačů v podporovaných hrách."
 
@@ -542,6 +551,18 @@ msgstr "Umožňuje uživatelsky vyměnitelné textury."
 
 msgid "Always"
 msgstr "Vždy"
+
+msgid "Analog Controller"
+msgstr "Analogový ovladač"
+
+msgid "Analog Controller (DualShock)"
+msgstr "Analogový ovladač (DualShock)"
+
+msgid "Analog Joystick"
+msgstr "Analogový Joystick"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "Analogový Joystick (Flystick)"
 
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (více kompatibilní)"
@@ -774,6 +795,9 @@ msgstr "CPU"
 msgid "CPU CORE"
 msgstr "JÁDRO CPU"
 
+msgid "CPU DYNAREC (SPEED UP)"
+msgstr "CPU DYNAREC (ZRYCHLENÍ)"
+
 msgid "CPU EXECUTION MODE"
 msgstr "VÝKONOVÝ REŽIM CPU"
 
@@ -957,6 +981,9 @@ msgstr "ROZDĚLENÍ"
 msgid "DK Bongos"
 msgstr "DK Bongos"
 
+msgid "DMA Only (Slightly Faster)"
+msgstr "Pouze DMA (Mírně Rychlejší)"
+
 msgid "DOLBY PRO LOGIC II"
 msgstr "DOLBY PRO LOGIC II"
 
@@ -974,6 +1001,9 @@ msgstr "DSi"
 
 msgid "DUAL CORE MODE"
 msgstr "REŽIM DVOJITÉHO JÁDRA"
+
+msgid "DYNAREC CODE INVALIDATION"
+msgstr "NEPLATNOST KÓDU DYNAREC"
 
 msgid "Dance Mat"
 msgstr "Taneční Podložka"
@@ -1023,6 +1053,12 @@ msgstr "Určuje, jak se má kurzor zobrazovat na spodní obrazovce."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Určuje rychlost a chování systému při běhu vpřed."
 
+msgid "Digital Controller"
+msgstr "Digitální Ovladač"
+
+msgid "Digital Controller (Gamepad)"
+msgstr "Digitální ovladač (Gamepad)"
+
 msgid "Disabled"
 msgstr "Zakázáno"
 
@@ -1043,6 +1079,15 @@ msgstr "Nepřepisovat"
 
 msgid "Double buffering"
 msgstr "Dvojitá vyrovnávací paměť"
+
+msgid "Double the rendering resolution."
+msgstr "Zdvojnásobte rozlišení vykreslování."
+
+msgid "DualShock Controller"
+msgstr "Ovladač DualShock"
+
+msgid "DualShock has rumble support. Not all games support DualShock."
+msgstr "DualShock podporuje funkci vibrace. Ne všechny hry podporují DualShock."
 
 msgid "During gameplay, press Hotkey + R1 to translate on-screen text. Only on libretro cores."
 msgstr "Během hry můžete stisknutím klávesové zkratky + R1 přeložit text na obrazovce. Pouze na jádrech libretro."
@@ -1091,6 +1136,9 @@ msgstr "UMOŽNIT ČASOVÉ PROTAŽENÍ"
 
 msgid "ENABLE WIDESCREEN PATCHES"
 msgstr "POVOLIT ŠIROKOÚHLÉ ZÁPLATY"
+
+msgid "ENHANCED RENDERING RESOLUTION"
+msgstr "VYLEPŠENÉ ROZLIŠENÍ VYKRESLOVÁNÍ"
 
 msgid "Ecuador"
 msgstr "Ekvádor"
@@ -1221,6 +1269,9 @@ msgstr "Vylepšení. Odstranění limitu třiceti dvou spritů na řádek. V ně
 msgid "Enhancement. Removes disc loading."
 msgstr "Vylepšení. Odstraňuje načítání disku."
 
+msgid "Enhancement. Skipping it can break some games."
+msgstr "Vylepšení. Jeho vynechání může některé hry zničit."
+
 msgid "Enhancement. Smooth out jagged edges on 3D object polygons."
 msgstr "Vylepšení. Vyhlazení zubatých hran polygonů 3D objektů."
 
@@ -1229,6 +1280,9 @@ msgstr "Vylepšení. Vyhlazení zubatých hran na polygonech 3D objektů."
 
 msgid "Enhancement. Smooth/upscale textures on 3D objects."
 msgstr "Vylepšení. Vyhlazení/zvětšení měřítka textur na 3D objektech."
+
+msgid "Enhancement. Smooth/upscale textures."
+msgstr "Vylepšení. Vyhlazení/zvětšení měřítka textur."
 
 msgid "Enhancement. Upscale textures."
 msgstr "Vylepšení. Špičkové textury."
@@ -1266,6 +1320,9 @@ msgstr "Odstraňování prokladu u filmů FMV."
 msgid "FORCE NTSC TIMINGS ON PAL"
 msgstr "VYNUTIT ČASOVÁNÍ NTSC NA PAL"
 
+msgid "FRAME DUPING (SPEED UP)"
+msgstr "DUPLIKOVÁNÍ SNÍMKŮ (ZRYCHLENÍ)"
+
 msgid "FRAME LIMIT"
 msgstr "OMEZENÍ SNÍMKU"
 
@@ -1277,6 +1334,9 @@ msgstr "PŘESKOČENÍ SNÍMKU"
 
 msgid "FXAA"
 msgstr "FXAA"
+
+msgid "Famicom (FDS)"
+msgstr "Famicom (FDS)"
 
 msgid "Faroe Islands"
 msgstr "Faroe Islands"
@@ -1304,6 +1364,12 @@ msgstr "Oprava trhání obrazovky. Zatížení CPU."
 
 msgid "Fix texture banding when upscaling."
 msgstr "Oprava proužkování textur při upscalingu."
+
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "Pro hry s gyroskopem (na levou analogovou páčku)"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "Pro hry s gyroskopem (na pravou analogovou páčku)"
 
 msgid "For emulators and controllers supporting force feedback."
 msgstr "Pro emulátory a ovladače podporující silovou zpětnou vazbu."
@@ -1337,6 +1403,9 @@ msgstr "Plná (Hash Cache)"
 
 msgid "Full (Slow)"
 msgstr "Plný (pomalý)"
+
+msgid "Full (more compatible)"
+msgstr "Full (více kompatibilní)"
 
 msgid "Full speed"
 msgstr "Plná rychlost"
@@ -1394,6 +1463,9 @@ msgstr "GB - Kapesní"
 
 msgid "GB - Smart Coloring"
 msgstr "GB - Chytré Zbarvení"
+
+msgid "GB COLORIZATION"
+msgstr "OBARVENÍ GB"
 
 msgid "GBC - Blue"
 msgstr "GBC - Modrá"
@@ -1488,6 +1560,9 @@ msgstr "Šedá"
 msgid "Greece"
 msgstr "Řecko"
 
+msgid "Green"
+msgstr "Zelená"
+
 msgid "Guatemala"
 msgstr "Guatemala"
 
@@ -1532,6 +1607,9 @@ msgstr "Hybridní horní obrazovka"
 
 msgid "Hybrid Ubershaders"
 msgstr "Hybridní Ubershadery"
+
+msgid "Hyper Blaster/Justifier"
+msgstr "Hyper Blaster/Justifier"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "Vylepšené dělení Polygonů"
@@ -1647,6 +1725,9 @@ msgstr "Červenec"
 msgid "June"
 msgstr "Červen"
 
+msgid "Justifier"
+msgstr "Justifier"
+
 msgid "Kazakhstan"
 msgstr "Kazachstán"
 
@@ -1740,6 +1821,9 @@ msgstr "Světle fialová"
 msgid "Light guns can only be used in port 2."
 msgstr "Světelné zbraně lze používat pouze v portu 2."
 
+msgid "Lightrec Interpreter"
+msgstr "Tlumočník Lightrec"
+
 msgid "Lime"
 msgstr "Limetka"
 
@@ -1797,6 +1881,9 @@ msgstr "Malajsie"
 msgid "Maldives"
 msgstr "Maledivy"
 
+msgid "Manually activate the adapter for supported games."
+msgstr "Ručně aktivujte adaptér pro podporované hry."
+
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Namapujte svůj ovladač na emulovaný Wiimote."
 
@@ -1808,6 +1895,9 @@ msgstr "Okno zápasu"
 
 msgid "Max (demanding games)"
 msgstr "Max (náročné hry)"
+
+msgid "Max Performance"
+msgstr "Maximální Výkon"
 
 msgid "Maximum (Very Slow)"
 msgstr "Maximální (velmi pomalý)"
@@ -1866,11 +1956,17 @@ msgstr "Jednobarevné"
 msgid "Monochrome (Blargg)"
 msgstr "Jednobarevné (Blargg)"
 
+msgid "More accurate emulation, but slower."
+msgstr "Přesnější emulace, ale pomalejší."
+
 msgid "Morocco"
 msgstr "Maroko"
 
 msgid "Mouse"
 msgstr "Myš"
+
+msgid "Much faster than interpreter (but may have issues)."
+msgstr "Mnohem rychlejší než tlumočník (ale může mít problémy)."
 
 msgid "NAT"
 msgstr "NAT"
@@ -1893,6 +1989,21 @@ msgstr "Typ sítě"
 msgid "NEW 3DS MODE"
 msgstr "NOVÝ REŽIM 3DS"
 
+msgid "NTSC (Composite)"
+msgstr "NTSC (Composite)"
+
+msgid "NTSC (NES)"
+msgstr "NTSC (NES)"
+
+msgid "NTSC (RF)"
+msgstr "NTSC (RF)"
+
+msgid "NTSC (RGB)"
+msgstr "NTSC (RGB)"
+
+msgid "NTSC (S-Video)"
+msgstr "NTSC (S-Video)"
+
 msgid "NTSC FILTER"
 msgstr "NTSC FILTR"
 
@@ -1902,6 +2013,9 @@ msgstr "NTSC-J"
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
+msgid "Namco GunCon"
+msgstr "Namco GunCon"
+
 msgid "Nat to access internet from xemu machine. Udp for System Link. Default (Auto) disables network access."
 msgstr "Nat pro přístup k internetu z počítače xemu. Udp pro System Link. Výchozí nastavení (auto) zakazuje přístup k síti."
 
@@ -1910,6 +2024,12 @@ msgstr "Nativní"
 
 msgid "Native (PS2)(Default)"
 msgstr "Nativní (PS2)(Výchozí)"
+
+msgid "NeGcon"
+msgstr "NeGcon"
+
+msgid "NeGcon (Rumble)"
+msgstr "NeGcon (Vibrace)"
 
 msgid "Nearest"
 msgstr "Nejbližší"
@@ -1995,6 +2115,9 @@ msgstr "Vypnuto (Hlučné)"
 msgid "Off (None)"
 msgstr "Vypnuto (Žádný)"
 
+msgid "Off is safer, On for specific games."
+msgstr "Vypnout je bezpečnější, Zapnout pro konkrétní hry."
+
 msgid "Oman"
 msgstr "Omán"
 
@@ -2004,11 +2127,17 @@ msgstr "Zapnout"
 msgid "On (Default)"
 msgstr "Zapnout (Výchozí)"
 
+msgid "On (Speed hack)"
+msgstr "Zapnout (Rychlostní hack)"
+
 msgid "On (Vulkan Only)"
 msgstr "Zapnout (pouze Vulkan)"
 
 msgid "Only Overscan Area"
 msgstr "Pouze Oblast Overscan"
+
+msgid "Only for games that employed it (for Boktai)"
+msgstr "Pouze pro hry, které ji využívaly (pro Boktai)"
 
 msgid "Only increase the image size in integer multiples."
 msgstr "Velikost obrázku zvětšujte pouze v celočíselných násobcích."
@@ -2051,6 +2180,12 @@ msgstr "PARALLEL-RDP UPSCALER"
 
 msgid "PERFORMANCE HACKS"
 msgstr "VÝKONNOSTNÍ HACKY"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "BARVA ZAMĚŘOVAČE HRÁČE 1"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "BARVA ZAMĚŘOVAČE HRÁČE 2"
 
 msgid "PPU DECODER"
 msgstr "PPU DEKODÉR"
@@ -2112,6 +2247,9 @@ msgstr "Peru"
 msgid "Philippines"
 msgstr "Filipíny"
 
+msgid "PlayStation Mouse"
+msgstr "PlayStation Myš"
+
 msgid "Pointer"
 msgstr "Ukazatel"
 
@@ -2120,6 +2258,24 @@ msgstr "Polsko"
 
 msgid "Polish"
 msgstr "Polský"
+
+msgid "Port 1"
+msgstr "Port 1"
+
+msgid "Port 1+2"
+msgstr "Port 1+2"
+
+msgid "Port 2"
+msgstr "Port 2"
+
+msgid "Port1"
+msgstr "Port1"
+
+msgid "Port1+2"
+msgstr "Port1+2"
+
+msgid "Port2"
+msgstr "Port2"
 
 msgid "Portugal"
 msgstr "Portugalsko"
@@ -2276,6 +2432,12 @@ msgstr "SDL2"
 
 msgid "SENSOR BAR POSITION"
 msgstr "POLOHA SENZOROVÉ LIŠTY"
+
+msgid "SENSOR SENSITIVITY (GYROSCOPE)"
+msgstr "CITLIVOST SENZORU (GYROSKOP)"
+
+msgid "SENSOR SENSITIVITY (TILT)"
+msgstr "CITLIVOST SNÍMAČE (NÁKLON)"
 
 msgid "SHOW ACHIEVEMENT MESSAGES"
 msgstr "ZOBRAZIT ZPRÁVY O ÚSPĚCHU"
@@ -2463,6 +2625,9 @@ msgstr "Slovensko"
 msgid "Slovenia"
 msgstr "Slovinsko"
 
+msgid "Small performance increase (may drop frames)."
+msgstr "Malé zvýšení výkonu (může dojít k poklesu snímků)."
+
 msgid "Smaller"
 msgstr "Menší"
 
@@ -2552,6 +2717,9 @@ msgstr "Roztažení do plna"
 
 msgid "Stretch to window"
 msgstr "Roztáhnout na okno"
+
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
@@ -2724,6 +2892,9 @@ msgstr "POUŽITÍ ZVUK DSP"
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "POUŽITÍ PREEMPTIVNÍCH RÁMCŮ"
 
+msgid "USE SOFTWARE RENDERING"
+msgstr "POUŽÍT VYKRESLOVACÍ SOFTWARE"
+
 msgid "Ukraine"
 msgstr "Ukrajina"
 
@@ -2780,6 +2951,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "Přeskočit VBI"
+
+msgid "VIDEO FILTERS"
+msgstr "VIDEO FILTRY"
 
 msgid "VIDEO SETTINGS"
 msgstr "Nastavení videa"
@@ -2847,6 +3021,9 @@ msgstr "Při spuštění mimo 100 % upraví teplotu namísto snižování snímk
 msgid "While Touching"
 msgstr "Při dotyku"
 
+msgid "White"
+msgstr "Bílá"
+
 msgid "Widescreen (16:9)"
 msgstr "Širokoúhlý (16:9)"
 
@@ -2895,14 +3072,38 @@ msgstr "PŘESNOST ZCULL"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Přiblíží a skryje černé okraje. Ohraničení se liší podle hry."
 
+msgid "black and white"
+msgstr "černá a bílá"
+
+msgid "blue sea"
+msgstr "modré moře"
+
+msgid "dark knight"
+msgstr "temný rytíř"
+
 msgid "diagonal filter"
 msgstr "diagonální filtr"
+
+msgid "gba sp"
+msgstr "gba sp"
+
+msgid "green forest"
+msgstr "zelený les"
+
+msgid "hot desert"
+msgstr "horká poušť"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original gameboy"
+msgstr "originál gameboy"
+
+msgid "pink dreams"
+msgstr "růžové sny"
 
 msgid "scanlines"
 msgstr "skenovací linky"
@@ -2915,6 +3116,9 @@ msgstr "trojúhelníkový filtr"
 
 msgid "wave filter"
 msgstr "vlnový filtr"
+
+msgid "weird colors"
+msgstr "podivné barvy"
 
 msgid "xBR (Very Slow)"
 msgstr "xBR (velmi pomalý)"

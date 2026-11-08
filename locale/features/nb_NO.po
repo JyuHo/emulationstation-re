@@ -285,6 +285,9 @@ msgstr "3x Opprinnelig (~1080p)"
 msgid "3x native (768 x 576)"
 msgstr "3x Opprinnelig (768 x 576)"
 
+msgid "4 PLAYER ADAPTER"
+msgstr "ADAPTER FOR 4 SPILLERE"
+
 msgid "4 threads"
 msgstr "4 tråder"
 
@@ -501,6 +504,9 @@ msgstr "Adaptiv (nederste felt først)"
 msgid "Adaptive (Top Field First)"
 msgstr "Adaptiv (øverste felt først)"
 
+msgid "Add color to Game Boy games."
+msgstr "Legg til farger i Game Boy-spill."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Justerer størrelsesforholdet for Full Motion-videofilmer."
 
@@ -531,6 +537,9 @@ msgstr "Alle mulige lisenser (anbefales ikke)"
 msgid "Allows loading protected games without subchannel information."
 msgstr "Gjør det mulig å laste inn beskyttede spill uten underkanalinformasjon."
 
+msgid "Allows up to 5 or 8 controllers in supported games."
+msgstr "Tillater opptil 5 eller 8 kontrollere i spill som støttes."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Tillater opptil 8 kontrollere i spill som støttes."
 
@@ -539,6 +548,18 @@ msgstr "Tillater teksturer som kan byttes ut av brukeren."
 
 msgid "Always"
 msgstr "Alltid"
+
+msgid "Analog Controller"
+msgstr "Analog styreenhet"
+
+msgid "Analog Controller (DualShock)"
+msgstr "Analog kontroller (DualShock)"
+
+msgid "Analog Joystick"
+msgstr "Analog styrespak"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "Analog styrespak (Flystick)"
 
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (mest kompatibel)"
@@ -768,6 +789,9 @@ msgstr "CPU"
 msgid "CPU CORE"
 msgstr "CPU KJERNE"
 
+msgid "CPU DYNAREC (SPEED UP)"
+msgstr "CPU DYNAREC (ØKT HASTIGHET)"
+
 msgid "CPU EXECUTION MODE"
 msgstr "CPU-KJØRINGSMODUS"
 
@@ -948,6 +972,9 @@ msgstr "DITHERING"
 msgid "DK Bongos"
 msgstr "DK Bongos"
 
+msgid "DMA Only (Slightly Faster)"
+msgstr "Kun DMA (litt raskere)"
+
 msgid "DOLBY PRO LOGIC II"
 msgstr "DOLBY PRO LOGIC II"
 
@@ -965,6 +992,9 @@ msgstr "DSi"
 
 msgid "DUAL CORE MODE"
 msgstr "DUAL CORE-MODUS"
+
+msgid "DYNAREC CODE INVALIDATION"
+msgstr "UGYLDIGGJØRING AV DYNAREC-KODE"
 
 msgid "Dance Mat"
 msgstr "Dansematte"
@@ -1014,6 +1044,12 @@ msgstr "Bestemmer hvordan markøren skal vises på nederste del av skjermen."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Bestemmer systemets hastighet og kjøreadferd."
 
+msgid "Digital Controller"
+msgstr "Digital styreenhet"
+
+msgid "Digital Controller (Gamepad)"
+msgstr "Digital kontroller (Gamepad)"
+
 msgid "Disabled"
 msgstr "Deaktivert"
 
@@ -1034,6 +1070,15 @@ msgstr "Ikke overstyr"
 
 msgid "Double buffering"
 msgstr "Dobbel bufring"
+
+msgid "Double the rendering resolution."
+msgstr "Doble gjengivelsesoppløsningen."
+
+msgid "DualShock Controller"
+msgstr "DualShock-kontroller"
+
+msgid "DualShock has rumble support. Not all games support DualShock."
+msgstr "DualShock har støtte for rumble. Ikke alle spill støtter DualShock."
 
 msgid "During gameplay, press Hotkey + R1 to translate on-screen text. Only on libretro cores."
 msgstr "Under spillingen kan du trykke på hurtigtast + R1 for å oversette tekst på skjermen. Bare på libretro-kjerner."
@@ -1082,6 +1127,9 @@ msgstr "AKTIVERE TIDSSTREKKING"
 
 msgid "ENABLE WIDESCREEN PATCHES"
 msgstr "AKTIVERE WIDESCREEN-OPPDATERINGER"
+
+msgid "ENHANCED RENDERING RESOLUTION"
+msgstr "FORBEDRET GJENGIVELSESOPPLØSNING"
 
 msgid "Ecuador"
 msgstr "Ecuador"
@@ -1212,6 +1260,9 @@ msgstr "Forbedring. Fjern grensen på trettito sprites per linje. Krasjer i enke
 msgid "Enhancement. Removes disc loading."
 msgstr "Forbedring. Fjerner diskinnlasting."
 
+msgid "Enhancement. Skipping it can break some games."
+msgstr "Forbedring. Hvis du hopper over den, kan det ødelegge noen spill."
+
 msgid "Enhancement. Smooth out jagged edges on 3D object polygons."
 msgstr "Forbedring. Glatt ut ujevne kanter på 3D-objektpolygoner."
 
@@ -1220,6 +1271,9 @@ msgstr "Forbedring. Glatt ut ujevne kanter på 3D-objektenes polygoner."
 
 msgid "Enhancement. Smooth/upscale textures on 3D objects."
 msgstr "Forbedring. Utjevning/oppskalering av teksturer på 3D-objekter."
+
+msgid "Enhancement. Smooth/upscale textures."
+msgstr "Forbedring. Utjevning/oppskalering av teksturer."
 
 msgid "Enhancement. Upscale textures."
 msgstr "Forbedring. Eksklusive teksturer."
@@ -1257,6 +1311,9 @@ msgstr "Deinterlacing av FMV-film."
 msgid "FORCE NTSC TIMINGS ON PAL"
 msgstr "TVINGE NTSC-TIDER PÅ PAL"
 
+msgid "FRAME DUPING (SPEED UP)"
+msgstr "FRAME DUPING (ØKE HASTIGHETEN)"
+
 msgid "FRAME LIMIT"
 msgstr "RAMMEBEGRENSNING"
 
@@ -1268,6 +1325,9 @@ msgstr "FRAMESKIP"
 
 msgid "FXAA"
 msgstr "FXAA"
+
+msgid "Famicom (FDS)"
+msgstr "Famicom (FDS)"
 
 msgid "Faroe Islands"
 msgstr "Færøyene"
@@ -1295,6 +1355,12 @@ msgstr "Fikser skjermriving. CPU-tung."
 
 msgid "Fix texture banding when upscaling."
 msgstr "Fikser teksturbånd ved oppskalering."
+
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "For Gyro-aktiverte spill (bundet til venstre analoge spak)"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "For Gyro-aktiverte spill (bundet til høyre analoge spak)"
 
 msgid "For emulators and controllers supporting force feedback."
 msgstr "For emulatorer og kontrollere som støtter force feedback."
@@ -1328,6 +1394,9 @@ msgstr "Full (Hash-hurtigbuffer)"
 
 msgid "Full (Slow)"
 msgstr "Full (langsom)"
+
+msgid "Full (more compatible)"
+msgstr "Full (mer kompatibel)"
 
 msgid "Full speed"
 msgstr "Full fart"
@@ -1385,6 +1454,9 @@ msgstr "GB - Lomme"
 
 msgid "GB - Smart Coloring"
 msgstr "GB - Smart fargelegging"
+
+msgid "GB COLORIZATION"
+msgstr "GB-FARGELEGGING"
 
 msgid "GBC - Blue"
 msgstr "GBC - Blå"
@@ -1479,6 +1551,9 @@ msgstr "Grå"
 msgid "Greece"
 msgstr "Hellas"
 
+msgid "Green"
+msgstr "Grønn"
+
 msgid "Guatemala"
 msgstr "Guatemala"
 
@@ -1523,6 +1598,9 @@ msgstr "Hybrid Screen Top"
 
 msgid "Hybrid Ubershaders"
 msgstr "Hybrid Ubershaders"
+
+msgid "Hyper Blaster/Justifier"
+msgstr "Hyper Blaster/Justifier"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "FORBEDRET POLYGONOPPDELING"
@@ -1638,6 +1716,9 @@ msgstr "Juli"
 msgid "June"
 msgstr "Juni"
 
+msgid "Justifier"
+msgstr "Justifier"
+
 msgid "Kazakhstan"
 msgstr "Kasakhstan"
 
@@ -1731,6 +1812,9 @@ msgstr "Lys lilla"
 msgid "Light guns can only be used in port 2."
 msgstr "Lette kanoner kan bare brukes i port 2."
 
+msgid "Lightrec Interpreter"
+msgstr "Lightrec-tolk"
+
 msgid "Lime"
 msgstr "Lime"
 
@@ -1788,6 +1872,9 @@ msgstr "Malaysia"
 msgid "Maldives"
 msgstr "Maldivene"
 
+msgid "Manually activate the adapter for supported games."
+msgstr "Aktiver adapteren manuelt for spill som støttes."
+
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Tilordne kontrolleren din til en emulert Wiimote."
 
@@ -1799,6 +1886,9 @@ msgstr "Matchvindu"
 
 msgid "Max (demanding games)"
 msgstr "Maks (krevende spill)"
+
+msgid "Max Performance"
+msgstr "Maksimal ytelse"
 
 msgid "Maximum (Very Slow)"
 msgstr "Maksimum (svært langsom)"
@@ -1857,11 +1947,17 @@ msgstr "Monokrom"
 msgid "Monochrome (Blargg)"
 msgstr "Monokrom (Blargg)"
 
+msgid "More accurate emulation, but slower."
+msgstr "Mer nøyaktig emulering, men langsommere."
+
 msgid "Morocco"
 msgstr "Marokko"
 
 msgid "Mouse"
 msgstr "Mus"
+
+msgid "Much faster than interpreter (but may have issues)."
+msgstr "Mye raskere enn tolk (men kan ha problemer)."
 
 msgid "NAT"
 msgstr "NAT"
@@ -1884,6 +1980,21 @@ msgstr "NETTVERKSTYPE"
 msgid "NEW 3DS MODE"
 msgstr "NY 3DS-MODUS"
 
+msgid "NTSC (Composite)"
+msgstr "NTSC (kompositt)"
+
+msgid "NTSC (NES)"
+msgstr "NTSC (NES)"
+
+msgid "NTSC (RF)"
+msgstr "NTSC (RF)"
+
+msgid "NTSC (RGB)"
+msgstr "NTSC (RGB)"
+
+msgid "NTSC (S-Video)"
+msgstr "NTSC (S-Video)"
+
 msgid "NTSC FILTER"
 msgstr "NTSC-FILTER"
 
@@ -1893,6 +2004,9 @@ msgstr "NTSC-J"
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
+msgid "Namco GunCon"
+msgstr "Namco GunCon"
+
 msgid "Nat to access internet from xemu machine. Udp for System Link. Default (Auto) disables network access."
 msgstr "Nat for å få tilgang til Internett fra xemu-maskinen. Udp for systemkobling. Standard (Auto) deaktiverer nettverkstilgang."
 
@@ -1901,6 +2015,12 @@ msgstr "7x Native(~2520p)"
 
 msgid "Native (PS2)(Default)"
 msgstr "Opprinnelig (PS2) (standard)"
+
+msgid "NeGcon"
+msgstr "NeGcon"
+
+msgid "NeGcon (Rumble)"
+msgstr "NeGcon (Rumble)"
 
 msgid "Nearest"
 msgstr "Nærmest"
@@ -1986,6 +2106,9 @@ msgstr "Av (støyende)"
 msgid "Off (None)"
 msgstr "Av (ingen)"
 
+msgid "Off is safer, On for specific games."
+msgstr "Av er tryggere, På for spesifikke spill."
+
 msgid "Oman"
 msgstr "Oman"
 
@@ -1995,11 +2118,17 @@ msgstr "På"
 msgid "On (Default)"
 msgstr "På (standard)"
 
+msgid "On (Speed hack)"
+msgstr "På (hastighetshack)"
+
 msgid "On (Vulkan Only)"
 msgstr "På (kun Vulkan)"
 
 msgid "Only Overscan Area"
 msgstr "Kun overscanningsområde"
+
+msgid "Only for games that employed it (for Boktai)"
+msgstr "Bare for spill som brukte det (for Boktai)"
 
 msgid "Only increase the image size in integer multiples."
 msgstr "Bildestørrelsen kan bare økes i heltallsmultipler."
@@ -2042,6 +2171,12 @@ msgstr "PARALLELL-RDP-OPPSKALERER"
 
 msgid "PERFORMANCE HACKS"
 msgstr "PRESTASJONSHACKS"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "FARGE PÅ TRÅDKORSET TIL SPILLER 1"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "FARGE PÅ TRÅDKORSET TIL SPILLER 2"
 
 msgid "PPU DECODER"
 msgstr "PPU-DEKODER"
@@ -2103,6 +2238,9 @@ msgstr "Peru"
 msgid "Philippines"
 msgstr "Filipinene"
 
+msgid "PlayStation Mouse"
+msgstr "PlayStation-mus"
+
 msgid "Pointer"
 msgstr "Peker"
 
@@ -2111,6 +2249,24 @@ msgstr "Polen"
 
 msgid "Polish"
 msgstr "Polsk"
+
+msgid "Port 1"
+msgstr "Port 1"
+
+msgid "Port 1+2"
+msgstr "Port 1+2"
+
+msgid "Port 2"
+msgstr "Port 2"
+
+msgid "Port1"
+msgstr "Port1"
+
+msgid "Port1+2"
+msgstr "Port1+2"
+
+msgid "Port2"
+msgstr "Port2"
 
 msgid "Portugal"
 msgstr "Portugal"
@@ -2267,6 +2423,12 @@ msgstr "SDL2"
 
 msgid "SENSOR BAR POSITION"
 msgstr "SENSOR BAR POSISJON"
+
+msgid "SENSOR SENSITIVITY (GYROSCOPE)"
+msgstr "SENSORFØLSOMHET (GYROSKOP)"
+
+msgid "SENSOR SENSITIVITY (TILT)"
+msgstr "SENSORENS FØLSOMHET (TILT)"
 
 msgid "SHOW ACHIEVEMENT MESSAGES"
 msgstr "VISE PRESTASJONSMELDINGER"
@@ -2451,6 +2613,9 @@ msgstr "Slovakia"
 msgid "Slovenia"
 msgstr "Slovenia"
 
+msgid "Small performance increase (may drop frames)."
+msgstr "Liten ytelsesøkning (kan hoppe over bilder)."
+
 msgid "Smaller"
 msgstr "Mindre"
 
@@ -2540,6 +2705,9 @@ msgstr "Strekk til full"
 
 msgid "Stretch to window"
 msgstr "Strekk til vindu"
+
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
@@ -2712,6 +2880,9 @@ msgstr "BRUK DSP AUDIO"
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "BRUK FOREBYGGENDE RAMMER"
 
+msgid "USE SOFTWARE RENDERING"
+msgstr "BRUKE PROGRAMVAREGJENGIVELSE"
+
 msgid "Ukraine"
 msgstr "Ukraina"
 
@@ -2765,6 +2936,9 @@ msgstr "Usbekistan"
 
 msgid "VBI SKIP"
 msgstr "VBI SKIP"
+
+msgid "VIDEO FILTERS"
+msgstr "VIDEOFILTER"
 
 msgid "VIDEO SETTINGS"
 msgstr "VIDEOINNSTILLINGER"
@@ -2829,6 +3003,9 @@ msgstr "Når du kjører utenfor 100 %, justeres temperaturen i stedet for å hop
 msgid "While Touching"
 msgstr "Ved berøring"
 
+msgid "White"
+msgstr "Hvit"
+
 msgid "Widescreen (16:9)"
 msgstr "Widescreen (16:9)"
 
@@ -2877,14 +3054,38 @@ msgstr "ZCULL NØYAKTIGHET"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Zoomer inn for å skjule svarte kanter. Kantene er forskjellige fra spill til spill."
 
+msgid "black and white"
+msgstr "svart og hvitt"
+
+msgid "blue sea"
+msgstr "blått hav"
+
+msgid "dark knight"
+msgstr "mørk ridder"
+
 msgid "diagonal filter"
 msgstr "diagonalt filter"
+
+msgid "gba sp"
+msgstr "gba sp"
+
+msgid "green forest"
+msgstr "grønn skog"
+
+msgid "hot desert"
+msgstr "varm ørken"
 
 msgid "lottes crt"
 msgstr "Lottes crt-filter"
 
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original gameboy"
+msgstr "original gameboy"
+
+msgid "pink dreams"
+msgstr "rosa drømmer"
 
 msgid "scanlines"
 msgstr "skannelinjer"
@@ -2897,6 +3098,9 @@ msgstr "triangulært filter"
 
 msgid "wave filter"
 msgstr "bølgefilter"
+
+msgid "weird colors"
+msgstr "merkelige farger"
 
 msgid "xBR (Very Slow)"
 msgstr "xBR (svært langsom)"

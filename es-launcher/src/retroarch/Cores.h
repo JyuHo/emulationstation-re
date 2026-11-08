@@ -37,7 +37,7 @@ namespace es::launcher::retroarch
 		virtual void adjustButtons(const LaunchContext& /*ctx*/, const Controller& /*pad*/, ButtonMap& /*buttons*/) const { }
 
 		// input_playerN_analog_dpad_mode: 1 makes the left stick drive the d-pad
-		virtual int analogDpadMode(const Controller& pad) const;
+		virtual int analogDpadMode(const LaunchContext& ctx, const Controller& pad) const;
 
 		// input_libretro_device_pN, when the core needs another device than the RetroPad
 		virtual std::optional<std::string> deviceType(const LaunchContext& /*ctx*/, int /*player*/) const { return std::nullopt; }

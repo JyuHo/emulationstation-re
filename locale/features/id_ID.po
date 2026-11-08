@@ -285,6 +285,9 @@ msgstr "3x Native / Asli (~1080p)"
 msgid "3x native (768 x 576)"
 msgstr "3x native / asli (768 x 576)"
 
+msgid "4 PLAYER ADAPTER"
+msgstr "ADAPTER 4 PEMAIN"
+
 msgid "4 threads"
 msgstr "4 threads"
 
@@ -501,6 +504,9 @@ msgstr "Adaptif (Bidang Bawah Duluan)"
 msgid "Adaptive (Top Field First)"
 msgstr "Adaptif (Bidang Atas Duluan)"
 
+msgid "Add color to Game Boy games."
+msgstr "Tambahkan warna pada permaianan Game Boy"
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Mengatur rasio layar untuk video/film di dalam game."
 
@@ -537,6 +543,9 @@ msgstr "Mengizinkan memuat game terlindungi tanpa informasi subchannel."
 msgid "Allows reducing the visual quality of these curves for higher performance."
 msgstr "Memungkinkan pengurangan kualitas visual lengkungan iniuntuk mendapatkan performa yang lebih tinggi."
 
+msgid "Allows up to 5 or 8 controllers in supported games."
+msgstr "Mengizinkan hingga 5 atau 8 kontroler pada game yang mendukung."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Mendukung hingga 8 stik/kontroller pada game yang kompatibel."
 
@@ -545,6 +554,18 @@ msgstr "Mengizinkan tekstur yang dapat diganti pengguna."
 
 msgid "Always"
 msgstr "Selalu"
+
+msgid "Analog Controller"
+msgstr "Kontroler Analog"
+
+msgid "Analog Controller (DualShock)"
+msgstr "Kontroler Analog (DualShock)"
+
+msgid "Analog Joystick"
+msgstr "Joystik Analog"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "Joystick Analog (Flystick)"
 
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (Paling Kompatibel)"
@@ -789,6 +810,9 @@ msgstr "CPU / Prosesor"
 msgid "CPU CORE"
 msgstr "CORE CPU"
 
+msgid "CPU DYNAREC (SPEED UP)"
+msgstr "CPU DYNAREC (PERCEPAT)"
+
 msgid "CPU EXECUTION MODE"
 msgstr "MODE EKSEKUSI CPU"
 
@@ -806,6 +830,9 @@ msgstr "Batas Waktu Kursor Hilang"
 
 msgid "CUSTOMIZE EMULATED WIIMOTE & GAMEPAD"
 msgstr "KOSTUM EMULASI WIIMOTE DAN GAMEPAD"
+
+msgid "CXA2025AS (JP)"
+msgstr "CXA2025AS (JP) (Jenis chip video Jepang)"
 
 msgid "CXD4 (LLE Fallback)"
 msgstr "CXD4 (LLE Fallback)"
@@ -996,6 +1023,9 @@ msgstr "Dithering (Efek pencampuran warna piksel)"
 msgid "DK Bongos"
 msgstr "DK Bongos"
 
+msgid "DMA Only (Slightly Faster)"
+msgstr "Hanya DMA (Sedikit Lebih Cepat)"
+
 msgid "DOLBY PRO LOGIC II"
 msgstr "Dolby Pro Logic II (Format audio)"
 
@@ -1013,6 +1043,9 @@ msgstr "DSi"
 
 msgid "DUAL CORE MODE"
 msgstr "MODE DUAL CORE"
+
+msgid "DYNAREC CODE INVALIDATION"
+msgstr "PEMBATALAN KODE DYNAREC"
 
 msgid "Dance Mat"
 msgstr "Matras Dansa"
@@ -1062,6 +1095,15 @@ msgstr "Menentukan bagaimana kursor akan muncul di layar bawah."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Menentukan kecepatan dan perilaku sistem untuk mengurangi jeda input (runahead)."
 
+msgid "Digital Controller"
+msgstr "Kontroler Digital"
+
+msgid "Digital Controller (Gamepad)"
+msgstr "Kontroler Digital (Gamepad)"
+
+msgid "Digital Prime FBX"
+msgstr "Digital Prime FBX"
+
 msgid "Disabled"
 msgstr "Matikan"
 
@@ -1082,6 +1124,15 @@ msgstr "Jangan Alihkan / Jangan Ganti"
 
 msgid "Double buffering"
 msgstr "Double buffering"
+
+msgid "Double the rendering resolution."
+msgstr "Gandakan resolusi rendering."
+
+msgid "DualShock Controller"
+msgstr "Kontroler DualShock"
+
+msgid "DualShock has rumble support. Not all games support DualShock."
+msgstr "DualShock memiliki dukungan getaran, tidak semua games DualShock di dukung"
 
 msgid "During gameplay, press Hotkey + R1 to translate on-screen text. Only on libretro cores."
 msgstr "Selama bermain game, tekan Hotkey + R1 untuk menerjemahkan teks di layar. Hanya bila aktif libretro cores."
@@ -1130,6 +1181,9 @@ msgstr "AKTIFKAN PEREGANGAN WAKTUA"
 
 msgid "ENABLE WIDESCREEN PATCHES"
 msgstr "Aktifkan Patch Layar Lebar (Modifikasi agar game jadul pas di layar lebar)"
+
+msgid "ENHANCED RENDERING RESOLUTION"
+msgstr "MENINGKATKAN RESOLUSI RENDERING"
 
 msgid "Ecuador"
 msgstr "Ekuador"
@@ -1260,6 +1314,9 @@ msgstr "Peningkatan. Hapus tiga puluh dua sprite per batas baris. Hancurkan tert
 msgid "Enhancement. Removes disc loading."
 msgstr "Meningkatkan. hapus pemuatan disc"
 
+msgid "Enhancement. Skipping it can break some games."
+msgstr "Meningkatkan, Melewatkannya dapat merusak beberapa game."
+
 msgid "Enhancement. Smooth out jagged edges on 3D object polygons."
 msgstr "Meningkatkan. haluskan tepi bergerigi pada poligon objek 3D."
 
@@ -1268,6 +1325,9 @@ msgstr "Meningkatkan. Menghaluskan tepi bergerigi pada poligon objek 3D."
 
 msgid "Enhancement. Smooth/upscale textures on 3D objects."
 msgstr "Meningkatkan. kehalusan/peningkatan textures dalam 3D objects"
+
+msgid "Enhancement. Smooth/upscale textures."
+msgstr "Meningkatkan Halus/Textures Kelas Atas"
 
 msgid "Enhancement. Upscale textures."
 msgstr "Meningkatkan. Textures kelas atas"
@@ -1305,6 +1365,9 @@ msgstr "Penghilang efek garis (deinterlacing) pada video game (FMV)."
 msgid "FORCE NTSC TIMINGS ON PAL"
 msgstr "PAKSA WAKTU NTSC KE PAL"
 
+msgid "FRAME DUPING (SPEED UP)"
+msgstr "FRAME DUPING (PERCEPATP)"
+
 msgid "FRAME LIMIT"
 msgstr "BATAS FRAME"
 
@@ -1322,6 +1385,9 @@ msgstr "Kontrol Lompat Bingkai"
 
 msgid "FXAA"
 msgstr "FXAA"
+
+msgid "Famicom (FDS)"
+msgstr "Famicom (FDS)"
 
 msgid "Faroe Islands"
 msgstr "Kepulauan Faroe"
@@ -1356,6 +1422,12 @@ msgstr "Perbaiki layar tearing. CPU berat"
 msgid "Fix texture banding when upscaling."
 msgstr "Perbaiki garis tekstur saat meningkatkan skala."
 
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "Aktifkan untuk permainan Gyro (terikat pada stik analog kiri)"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "Aktifkan untuk permainan Gyro (terikat pada stik analog kanan"
+
 msgid "For emulators and controllers supporting force feedback."
 msgstr "Untuk emulator dan kontroler yang mendukung umpan balik (getaran)"
 
@@ -1388,6 +1460,9 @@ msgstr "Penuh (Hash Cache)"
 
 msgid "Full (Slow)"
 msgstr "Penuh (Lambat)"
+
+msgid "Full (more compatible)"
+msgstr "Penuh（Lebih Kompatibil）"
 
 msgid "Full speed"
 msgstr "Kecepatan Penuh"
@@ -1445,6 +1520,9 @@ msgstr "GB - Pocket"
 
 msgid "GB - Smart Coloring"
 msgstr "GB - Pewarnaan Pintar"
+
+msgid "GB COLORIZATION"
+msgstr "PEWARNAAN GB"
 
 msgid "GBC - Blue"
 msgstr "GBC - Biru"
@@ -1539,6 +1617,9 @@ msgstr "Abu-abu"
 msgid "Greece"
 msgstr "Yunani"
 
+msgid "Green"
+msgstr "Hijau"
+
 msgid "Guatemala"
 msgstr "Guatemala"
 
@@ -1589,6 +1670,9 @@ msgstr "Layar Campuran (Hybrid) di Atas"
 
 msgid "Hybrid Ubershaders"
 msgstr "Ubershaders Hibrida"
+
+msgid "Hyper Blaster/Justifier"
+msgstr "Hyper Blaster/Justifier (Jenis pistol mainan/lightgun jadul)"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "Perbaikan Pembagian Poligon"
@@ -1710,6 +1794,9 @@ msgstr "Juli"
 msgid "June"
 msgstr "Juni"
 
+msgid "Justifier"
+msgstr "Justifier (Jenis pistol mainan/lightgun jadul)"
+
 msgid "Kazakhstan"
 msgstr "Kazakhstan"
 
@@ -1806,6 +1893,9 @@ msgstr "Ungu Muda"
 msgid "Light guns can only be used in port 2."
 msgstr "Light guns hanya dapat di pakai di port 2"
 
+msgid "Lightrec Interpreter"
+msgstr "Menjermahkan Lightrec"
+
 msgid "Lime"
 msgstr "Hijau Limau"
 
@@ -1854,6 +1944,9 @@ msgstr "RSX Multi-Proses (Multithreaded RSX) (Optimasi grafis)"
 msgid "Macau"
 msgstr "Makau"
 
+msgid "Magnum FBX"
+msgstr "Magnum FBX (Jenis skema warna/filter)"
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "Membuat pola bintik warna (dither) menjadi tidak terlalu terlihat pada resolusi tinggi."
 
@@ -1862,6 +1955,9 @@ msgstr "Malaysia"
 
 msgid "Maldives"
 msgstr "Maladewa"
+
+msgid "Manually activate the adapter for supported games."
+msgstr "Aktifkan adapter secara manual untuk game yang didukung."
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Peta kontroler anda untuk emulasi Wiimote"
@@ -1874,6 +1970,9 @@ msgstr "Sesuaikan dengan Jendela Screen"
 
 msgid "Max (demanding games)"
 msgstr "Maximal (Kebutuhan Games)"
+
+msgid "Max Performance"
+msgstr "Performa Maximal"
 
 msgid "Maximum (Very Slow)"
 msgstr "Maksimal (Sangat Lambat)"
@@ -1932,11 +2031,17 @@ msgstr "Hitam Putih / Monokrom"
 msgid "Monochrome (Blargg)"
 msgstr "Monochrome (Blargg)"
 
+msgid "More accurate emulation, but slower."
+msgstr "Emulasi akurasi lebih akurat, tapi lamban"
+
 msgid "Morocco"
 msgstr "Maroko"
 
 msgid "Mouse"
 msgstr "Mouse"
+
+msgid "Much faster than interpreter (but may have issues)."
+msgstr "Jauh lebih cepat daripada juru bahasa (tetapi mungkin memiliki masalah)."
 
 msgid "NAT"
 msgstr "NAT (Jenis pengaturan jaringan)"
@@ -1959,6 +2064,21 @@ msgstr "Jenis Jaringan"
 msgid "NEW 3DS MODE"
 msgstr "MODE NEW 3DS"
 
+msgid "NTSC (Composite)"
+msgstr "NTSC (Komposit) (Sinyal video TV jadul)"
+
+msgid "NTSC (NES)"
+msgstr "NTSC (NES)"
+
+msgid "NTSC (RF)"
+msgstr "NTSC (RF)"
+
+msgid "NTSC (RGB)"
+msgstr "NTSC (RGB)"
+
+msgid "NTSC (S-Video)"
+msgstr "NTSC (S-Video)"
+
 msgid "NTSC FILTER"
 msgstr "NTSC FILTER"
 
@@ -1968,6 +2088,9 @@ msgstr "NTSC-J"
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
+msgid "Namco GunCon"
+msgstr "Namco GunCon"
+
 msgid "Nat to access internet from xemu machine. Udp for System Link. Default (Auto) disables network access."
 msgstr "Mode NAT untuk mengakses internet dari mesin xemu.UDP untuk fitur System Link. Setelan Bawaan (Otomatis) akan mematikan akses jaringan."
 
@@ -1976,6 +2099,12 @@ msgstr "Native / Bawaan (Asli)"
 
 msgid "Native (PS2)(Default)"
 msgstr "Native / Bawaan PS2 (Asli)"
+
+msgid "NeGcon"
+msgstr "NeGcon"
+
+msgid "NeGcon (Rumble)"
+msgstr "NeGcon (Getaran)"
 
 msgid "Nearest"
 msgstr "Mendekati"
@@ -2073,6 +2202,9 @@ msgstr "Mati (Bising/Noisy)"
 msgid "Off (None)"
 msgstr "Mati (Tidak Ada)"
 
+msgid "Off is safer, On for specific games."
+msgstr "Nonaktif lebih aman, Aktif untuk game tertentu."
+
 msgid "Oman"
 msgstr "Oman"
 
@@ -2082,11 +2214,17 @@ msgstr "Hidup"
 msgid "On (Default)"
 msgstr "Aktifkan (Standar)"
 
+msgid "On (Speed hack)"
+msgstr "AKTTIFKAN (PERETASAN KECEPATAN)"
+
 msgid "On (Vulkan Only)"
 msgstr "Aktif (Khusus Vulkan)"
 
 msgid "Only Overscan Area"
 msgstr "Hanya Area Overscan"
+
+msgid "Only for games that employed it (for Boktai)"
+msgstr "Hanya untuk game yang menggunakan itu (untuk Boktai)"
 
 msgid "Only increase the image size in integer multiples."
 msgstr "Hanya tingkatkan ukuran gambar dalam kelipatan bilangan bulat."
@@ -2132,6 +2270,12 @@ msgstr "PERFORMA"
 
 msgid "PERFORMANCE HACKS"
 msgstr "RETAS PERFORMA"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "PLAYER 1 CROSSHAIR COLOR"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "WARNA CORSAIR PEMAIN 2"
 
 msgid "PPU DECODER"
 msgstr "PPU DECODER"
@@ -2193,6 +2337,9 @@ msgstr "Peru"
 msgid "Philippines"
 msgstr "Filipina"
 
+msgid "PlayStation Mouse"
+msgstr "PlayStation Mouse"
+
 msgid "Pointer"
 msgstr "Penunjuk / Pointer"
 
@@ -2201,6 +2348,24 @@ msgstr "Polandia"
 
 msgid "Polish"
 msgstr "Bahasa Polandia"
+
+msgid "Port 1"
+msgstr "Port 1"
+
+msgid "Port 1+2"
+msgstr "Port 1+2"
+
+msgid "Port 2"
+msgstr "Port 2"
+
+msgid "Port1"
+msgstr "Port1"
+
+msgid "Port1+2"
+msgstr "Port1+2"
+
+msgid "Port2"
+msgstr "Port2"
 
 msgid "Portugal"
 msgstr "Portugal"
@@ -2286,6 +2451,9 @@ msgstr "TINGKAT GETARAN"
 msgid "Random Values"
 msgstr "Nilai Acak"
 
+msgid "Raw"
+msgstr "Mentah / Raw (Input tanpa filter)"
+
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Rekompiler (Paling Cepat)(Bawaan)"
 
@@ -2315,6 +2483,9 @@ msgstr "Membutuhkan file BIOS "
 
 msgid "Resampling (Pirch Shift)"
 msgstr "Pengambilan Sampel Ulang / Resampling (Pitch Shift) (Pengaturan audio)"
+
+msgid "Restored Wii VC"
+msgstr "Wii VC (Virtual Console) yang Dipulihkan"
 
 msgid "Right Stick"
 msgstr "Stik Kanan"
@@ -2363,6 +2534,12 @@ msgstr "SDL2"
 
 msgid "SENSOR BAR POSITION"
 msgstr "POSISI SENSOR BAR (Untuk Nintendo Wii)"
+
+msgid "SENSOR SENSITIVITY (GYROSCOPE)"
+msgstr "SENSITIVITAS SENSOR GYROSCOPE"
+
+msgid "SENSOR SENSITIVITY (TILT)"
+msgstr "SENSITIVITAS SENSOR (MEMRINGKAN)"
 
 msgid "SHOW ACHIEVEMENT MESSAGES"
 msgstr "TAMPILKAN PESAN PENCAPAIAN (ACHIEVEMENT)"
@@ -2571,6 +2748,9 @@ msgstr "Slovakia"
 msgid "Slovenia"
 msgstr "Slovenia"
 
+msgid "Small performance increase (may drop frames)."
+msgstr "Peningkatan kinerja kecil (dapat menurunkan frame)."
+
 msgid "Smaller"
 msgstr "Lebih Kecil"
 
@@ -2585,6 +2765,9 @@ msgstr "Halus 3"
 
 msgid "Smooth 4"
 msgstr "Halus 4"
+
+msgid "Smooth V2 FBX"
+msgstr "Smooth V2 FBX (Jenis filter grafis)"
 
 msgid "Smooth textures on 3D objects."
 msgstr "Tekstur halus pada objek 3D."
@@ -2660,6 +2843,9 @@ msgstr "Rentangkan ke penuh"
 
 msgid "Stretch to window"
 msgstr "Rentangkan ke jendela (window)"
+
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
@@ -2856,6 +3042,9 @@ msgstr "GUNAKAN AUDIO DSP"
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "GUNAKAN BINGKAI PRE-EMPTIVE (Fitur pengurang jeda input/lag)"
 
+msgid "USE SOFTWARE RENDERING"
+msgstr "GUNAKAN SOFTWARE RENDERING"
+
 msgid "Ukraine"
 msgstr "Ukraina"
 
@@ -2921,6 +3110,9 @@ msgstr "Uzbekistan"
 
 msgid "VBI SKIP"
 msgstr "LEWATI VBI (Vertical Blank Interrupt)"
+
+msgid "VIDEO FILTERS"
+msgstr "FILTER VIDEO"
 
 msgid "VIDEO SETTINGS"
 msgstr "PENGATURAN VIDEO"
@@ -2991,6 +3183,9 @@ msgstr "Saat emulasi tidak berjalan 100%, opsi ini menyesuaikan tempo suaraalih-
 msgid "While Touching"
 msgstr "Saat Menyentuh"
 
+msgid "White"
+msgstr "Putih"
+
 msgid "Widescreen (16:9)"
 msgstr "Layar Lebar (16:9)"
 
@@ -3002,6 +3197,9 @@ msgstr "Wii NAND's pengaturan bahasa."
 
 msgid "Wii U Classic Controller"
 msgstr "Wii U Kontroler Klasik"
+
+msgid "Wii Virtual Console"
+msgstr "Konsol Virtual Wii"
 
 msgid "Wiimote Sideway"
 msgstr "Wiimote Sideway"
@@ -3039,14 +3237,44 @@ msgstr "AKURASI ZCULL (Fitur perupaan grafis 3D)"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Perbesar untuk menyembunyikan border, borders dapat berbeda setiap game"
 
+msgid "black and white"
+msgstr "hitam dan putih"
+
+msgid "blue sea"
+msgstr "laut biru"
+
+msgid "cxa2025as (US)"
+msgstr "cxa2025as (AS) (Model chip decoder video)"
+
+msgid "dark knight"
+msgstr "kesatria hitam"
+
 msgid "diagonal filter"
 msgstr "filter diagonal"
+
+msgid "gba sp"
+msgstr "GBA SP"
+
+msgid "green forest"
+msgstr "hutan hijau"
+
+msgid "hot desert"
+msgstr "hot desert"
 
 msgid "lottes crt"
 msgstr "lottes crt (Jenis shader TV tabung)"
 
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original gameboy"
+msgstr "gameboy asli"
+
+msgid "pink dreams"
+msgstr "pink dreams"
+
+msgid "royaltea"
+msgstr "royaltea (Jenis shader/filter grafis)"
 
 msgid "scanlines"
 msgstr "garis pindai (scanlines) (Efek layar TV tabung)"
@@ -3059,6 +3287,9 @@ msgstr "filter segitiga (triangular filter)"
 
 msgid "wave filter"
 msgstr "filter gelombang"
+
+msgid "weird colors"
+msgstr "warna aneh"
 
 msgid "xBR (Very Slow)"
 msgstr "xBR (Sangat Lambat) (Algoritma peningkat skala gambar)"

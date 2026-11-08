@@ -285,6 +285,9 @@ msgstr "3x Doğal (~1080p)"
 msgid "3x native (768 x 576)"
 msgstr "3x doğal (768 x 576)"
 
+msgid "4 PLAYER ADAPTER"
+msgstr "4 OYUNCU ADAPTÖR"
+
 msgid "4 threads"
 msgstr "4 iş parçacığı"
 
@@ -501,6 +504,9 @@ msgstr "Uyarlanabilir (Önce En Alt Alan)"
 msgid "Adaptive (Top Field First)"
 msgstr "Uyarlanabilir (Önce En Üst Alan)"
 
+msgid "Add color to Game Boy games."
+msgstr "Game Boy oyunlarına renk kat."
+
 msgid "Adjusts Full Motion Video movies aspect ratio."
 msgstr "Tam Hareketli Video filmlerinin en boy oranını ayarlar."
 
@@ -537,6 +543,9 @@ msgstr "Alt kanal bilgisi olmadan korumalı oyunların yüklenmesine izin ver."
 msgid "Allows reducing the visual quality of these curves for higher performance."
 msgstr "Daha yüksek performans için bu eğrilerin görsel kalitesinin azaltılmasına olanak tanır."
 
+msgid "Allows up to 5 or 8 controllers in supported games."
+msgstr "Desteklenen oyunlarda 5 veya 8 kontrolcüye izin verir."
+
 msgid "Allows up to 8 controllers in supported games."
 msgstr "Desteklenen oyunlarda 8 kontrolcüye izin verir."
 
@@ -545,6 +554,18 @@ msgstr "Kullanıcının değiştirebileceği dokulara izin verir."
 
 msgid "Always"
 msgstr "Sürekli"
+
+msgid "Analog Controller"
+msgstr "Analog Kontrolcü"
+
+msgid "Analog Controller (DualShock)"
+msgstr "Analog Kontrolcü (DualShock)"
+
+msgid "Analog Joystick"
+msgstr "Analog Joystick"
+
+msgid "Analog Joystick (Flystick)"
+msgstr "Analog Joystick (Flystick)"
 
 msgid "Angrylion (Most Compatible)"
 msgstr "Angrylion (En Uyumlu)"
@@ -789,6 +810,9 @@ msgstr "CPU"
 msgid "CPU CORE"
 msgstr "CPU ÇEKİRDEĞİ"
 
+msgid "CPU DYNAREC (SPEED UP)"
+msgstr "CPU DİNAMİK YENİDEN DERLEYİCİ (HIZLANDIR)"
+
 msgid "CPU EXECUTION MODE"
 msgstr "CPU YÜRÜTME MODU"
 
@@ -806,6 +830,9 @@ msgstr "İMLEÇ ZAMAN AŞIMI"
 
 msgid "CUSTOMIZE EMULATED WIIMOTE & GAMEPAD"
 msgstr "TAKLİT EDİLEN WIIMOTE VE OYUN KOLUNU ÖZELLEŞTİR"
+
+msgid "CXA2025AS (JP)"
+msgstr "CXA2025AS (JP)"
 
 msgid "CXD4 (LLE Fallback)"
 msgstr "CXD4 (LLE Fallback)"
@@ -996,6 +1023,9 @@ msgstr "TİTREŞİM"
 msgid "DK Bongos"
 msgstr "DK Bongos"
 
+msgid "DMA Only (Slightly Faster)"
+msgstr "Yalnızca DMA (Biraz Daha Hızlı)"
+
 msgid "DOLBY PRO LOGIC II"
 msgstr "DOLBY PRO LOGIC II"
 
@@ -1013,6 +1043,9 @@ msgstr "DSi"
 
 msgid "DUAL CORE MODE"
 msgstr "ÇİFT ÇEKİRDEK MODU"
+
+msgid "DYNAREC CODE INVALIDATION"
+msgstr "DİNAMİK YENİDEN DERLEYİCİ KODU ETKİSİZŞLEŞTİR"
 
 msgid "Dance Mat"
 msgstr "Dans Minderi"
@@ -1062,6 +1095,15 @@ msgstr "İmlecin alt ekranda nasıl görünmesi gerektiğini belirler."
 msgid "Determines the speed and the runahead behaviour of the system."
 msgstr "Sistemin hızını ve ilerleme davranışını belirler."
 
+msgid "Digital Controller"
+msgstr "Dijital Kontrolcü"
+
+msgid "Digital Controller (Gamepad)"
+msgstr "Dijital Kontrolcü (Oyun Kolu)"
+
+msgid "Digital Prime FBX"
+msgstr "Dijital Prime FBX"
+
 msgid "Disabled"
 msgstr "Devre dışı"
 
@@ -1082,6 +1124,15 @@ msgstr "Geçersiz Kılınmasın"
 
 msgid "Double buffering"
 msgstr "Çift arabellek"
+
+msgid "Double the rendering resolution."
+msgstr "İşleme çözünürlüğünü ikiye katla."
+
+msgid "DualShock Controller"
+msgstr "DualShock Kontrolcü"
+
+msgid "DualShock has rumble support. Not all games support DualShock."
+msgstr "DualShoc titreşim desteğine sahiptir. Tüm oyunlar DualShock desteklemez."
 
 msgid "During gameplay, press Hotkey + R1 to translate on-screen text. Only on libretro cores."
 msgstr "Oyun sırasında, ekrandaki metni çevirmek için Hotkey + R1'e basın. Yalnızca libretro çekirdeklerinde."
@@ -1130,6 +1181,9 @@ msgstr "ZAMAN UZATMAYI ETKİNLEŞTİR"
 
 msgid "ENABLE WIDESCREEN PATCHES"
 msgstr "GENİŞ EKRAN YAMALARINI ETKİNLEŞTİR"
+
+msgid "ENHANCED RENDERING RESOLUTION"
+msgstr "GELİŞMİŞ İŞLEME ÇÖZÜNÜRLÜĞÜ"
 
 msgid "Ecuador"
 msgstr "Ekvador"
@@ -1260,6 +1314,9 @@ msgstr "İyileştirme. Satır başına otuz iki karakter sınırını kaldırın
 msgid "Enhancement. Removes disc loading."
 msgstr "İyileştirme. Disk yüklemesini kaldırır."
 
+msgid "Enhancement. Skipping it can break some games."
+msgstr "İyileştirme. bunu atlamak bazı oyunları bozabilir."
+
 msgid "Enhancement. Smooth out jagged edges on 3D object polygons."
 msgstr "İyileştirme. 3D nesne çokgenlerindeki pürüzlü kenarları düzeltin."
 
@@ -1268,6 +1325,9 @@ msgstr "İyileştirme. 3D nesnelerin çokgenlerindeki pürüzlü kenarları düz
 
 msgid "Enhancement. Smooth/upscale textures on 3D objects."
 msgstr "İyileştirme. 3D nesnelerde pürüzsüz/yükseltilmiş dokular."
+
+msgid "Enhancement. Smooth/upscale textures."
+msgstr "İyileştirme. Pürüzsüz/yükseltilmiş dokular."
 
 msgid "Enhancement. Upscale textures."
 msgstr "İyileştirme. Dokuları yükselt."
@@ -1305,6 +1365,9 @@ msgstr "FMV filmi ayrıştırma."
 msgid "FORCE NTSC TIMINGS ON PAL"
 msgstr "PAL İÇİN NTSC ZAMANINA ZORLA"
 
+msgid "FRAME DUPING (SPEED UP)"
+msgstr "KARELERİ ÇOĞALT (HIZLANDIR)"
+
 msgid "FRAME LIMIT"
 msgstr "KARE SINIRI"
 
@@ -1322,6 +1385,9 @@ msgstr "KARE ATLAMA KONTROLÜ"
 
 msgid "FXAA"
 msgstr "FXAA"
+
+msgid "Famicom (FDS)"
+msgstr "Famicom (FDS)"
 
 msgid "Faroe Islands"
 msgstr "Faroe Adaları"
@@ -1356,6 +1422,12 @@ msgstr "Ekran yırtılmasını düzelt. CPU yükü."
 msgid "Fix texture banding when upscaling."
 msgstr "Yükseltme sırasında doku bantlamasını düzeltin."
 
+msgid "For Gyro-enabled games (bound to left analog stick)"
+msgstr "Gyro özellikli oyunlar için (sol analog çubuğa bağlı)"
+
+msgid "For Gyro-enabled games (bound to right analog stick)"
+msgstr "Gyro özellikli oyunlar için (sağ analog çubuğa bağlı)"
+
 msgid "For emulators and controllers supporting force feedback."
 msgstr "Emülatörler ve kontrolcüler için kuvvet geri bildirimi desteklenir."
 
@@ -1388,6 +1460,9 @@ msgstr "Tam (Önbellek Doğrulamalı)"
 
 msgid "Full (Slow)"
 msgstr "Tam (Yavaş)"
+
+msgid "Full (more compatible)"
+msgstr "Tam (daha uyumlu)"
 
 msgid "Full speed"
 msgstr "Tam hız"
@@ -1445,6 +1520,9 @@ msgstr "GB - Cep"
 
 msgid "GB - Smart Coloring"
 msgstr "GB - Akıllı Renklendirme"
+
+msgid "GB COLORIZATION"
+msgstr "GB RENKLENDİRME"
 
 msgid "GBC - Blue"
 msgstr "GBC - Mavi"
@@ -1539,6 +1617,9 @@ msgstr "Gri"
 msgid "Greece"
 msgstr "Yunanistan"
 
+msgid "Green"
+msgstr "Yeşil"
+
 msgid "Guatemala"
 msgstr "Guatemala"
 
@@ -1589,6 +1670,9 @@ msgstr "Hibrit Ekran Üst"
 
 msgid "Hybrid Ubershaders"
 msgstr "Hibrit Üstün Gölgelendiriciler"
+
+msgid "Hyper Blaster/Justifier"
+msgstr "Hyper Blaster/Justifier"
 
 msgid "IMPROVED POLYGON SPLITTING"
 msgstr "GELİŞTİRİLMİŞ POLİGON AYRIMI"
@@ -1710,6 +1794,9 @@ msgstr "Temmuz"
 msgid "June"
 msgstr "Haziran"
 
+msgid "Justifier"
+msgstr "Justifier"
+
 msgid "Kazakhstan"
 msgstr "Kazakistan"
 
@@ -1806,6 +1893,9 @@ msgstr "Açık Mor"
 msgid "Light guns can only be used in port 2."
 msgstr "Işın tabancaları sadece port 2 ile kullanılabilir."
 
+msgid "Lightrec Interpreter"
+msgstr "Lightrec Yorumcusu"
+
 msgid "Lime"
 msgstr "Yeşil"
 
@@ -1854,6 +1944,9 @@ msgstr "ÇOKLU İŞ PARÇACIKLI RSX"
 msgid "Macau"
 msgstr "Makao"
 
+msgid "Magnum FBX"
+msgstr "Magnum FBX"
+
 msgid "Makes the dither pattern much less obvious at higher resolutions."
 msgstr "Titreşim desenini daha yüksek çözünürlüklerde çok daha az belirgin hale getirir."
 
@@ -1862,6 +1955,9 @@ msgstr "Malezya"
 
 msgid "Maldives"
 msgstr "Maldivler"
+
+msgid "Manually activate the adapter for supported games."
+msgstr "Desteklenen oyunlar için adaptörü el ile etkinleştir."
 
 msgid "Map your controller to an emulated Wiimote."
 msgstr "Kontrolcünüzü taklit edilmiş bir Wiimote ile eşleştirin."
@@ -1874,6 +1970,9 @@ msgstr "Eşleme Penceresi"
 
 msgid "Max (demanding games)"
 msgstr "Azami (zorlu oyunlar)"
+
+msgid "Max Performance"
+msgstr "En Yüksek Performans"
 
 msgid "Maximum (Very Slow)"
 msgstr "Azami (Çok Yavaş)"
@@ -1932,11 +2031,17 @@ msgstr "Tek Renkli"
 msgid "Monochrome (Blargg)"
 msgstr "Tek Renkli (Blargg)"
 
+msgid "More accurate emulation, but slower."
+msgstr "Daha doğru emülasyon, ancak daha yavaş."
+
 msgid "Morocco"
 msgstr "Fas"
 
 msgid "Mouse"
 msgstr "Fare"
+
+msgid "Much faster than interpreter (but may have issues)."
+msgstr "Yorumcudan çok daha hızlı (ancak sorunları olabilir)."
 
 msgid "NAT"
 msgstr "NAT"
@@ -1959,6 +2064,21 @@ msgstr "AĞ TÜRÜ"
 msgid "NEW 3DS MODE"
 msgstr "YENİ 3DS MODU"
 
+msgid "NTSC (Composite)"
+msgstr "NTSC (Karışık)"
+
+msgid "NTSC (NES)"
+msgstr "NTSC (NES)"
+
+msgid "NTSC (RF)"
+msgstr "NTSC (RF)"
+
+msgid "NTSC (RGB)"
+msgstr "NTSC (RGB)"
+
+msgid "NTSC (S-Video)"
+msgstr "NTSC (S-Video)"
+
 msgid "NTSC FILTER"
 msgstr "NTSC FİLTRE"
 
@@ -1968,6 +2088,9 @@ msgstr "NTSC-J"
 msgid "NTSC-U/C"
 msgstr "NTSC-U/C"
 
+msgid "Namco GunCon"
+msgstr "Namco GunCon"
+
 msgid "Nat to access internet from xemu machine. Udp for System Link. Default (Auto) disables network access."
 msgstr "Nat, xemu makinesinden internete erişmek için. Sistem Bağlantısı için Udp. Varsayılan (Otomatik) ağ erişimini devre dışı bırakır."
 
@@ -1976,6 +2099,12 @@ msgstr "Doğal"
 
 msgid "Native (PS2)(Default)"
 msgstr "Doğal (PS2)(Varsayılan)"
+
+msgid "NeGcon"
+msgstr "NeGcon"
+
+msgid "NeGcon (Rumble)"
+msgstr "NeGcon (Titreşim)"
 
 msgid "Nearest"
 msgstr "En yakın"
@@ -2073,6 +2202,9 @@ msgstr "Kapalı (Gürültülü)"
 msgid "Off (None)"
 msgstr "Kapalı (Yok)"
 
+msgid "Off is safer, On for specific games."
+msgstr "Kapalı olması daha güvenlidir, belirli oyunlar için Açık."
+
 msgid "Oman"
 msgstr "Umman"
 
@@ -2082,11 +2214,17 @@ msgstr "Açık"
 msgid "On (Default)"
 msgstr "Açık (Varsayılan)"
 
+msgid "On (Speed hack)"
+msgstr "Açık (Hız geliştirmesi)"
+
 msgid "On (Vulkan Only)"
 msgstr "Açık (Sadece Vulkan)"
 
 msgid "Only Overscan Area"
 msgstr "Sadece Aşırı Tarama Alanı"
+
+msgid "Only for games that employed it (for Boktai)"
+msgstr "Sadece onu kullanan oyunlar için (Boktai için)"
 
 msgid "Only increase the image size in integer multiples."
 msgstr "Sadece görüntü boyutunu tam sayı katlarında artırın."
@@ -2132,6 +2270,12 @@ msgstr "PERFORMANS"
 
 msgid "PERFORMANCE HACKS"
 msgstr "PERFORMANS GELİŞTİRMELERİ"
+
+msgid "PLAYER 1 CROSSHAIR COLOR"
+msgstr "OYUNCU 1 HEDEF İMLECİ RENGİ"
+
+msgid "PLAYER 2 CROSSHAIR COLOR"
+msgstr "OYUNCU 2 HEDEF İMLECİ RENGİ"
 
 msgid "PPU DECODER"
 msgstr "PPU ÇÖZÜCÜ"
@@ -2193,6 +2337,9 @@ msgstr "Peru"
 msgid "Philippines"
 msgstr "Filipinler"
 
+msgid "PlayStation Mouse"
+msgstr "PlayStation Faresi"
+
 msgid "Pointer"
 msgstr "İşaretçi"
 
@@ -2201,6 +2348,24 @@ msgstr "Polonya"
 
 msgid "Polish"
 msgstr "Lehçe"
+
+msgid "Port 1"
+msgstr "Port 1"
+
+msgid "Port 1+2"
+msgstr "Port 1+2"
+
+msgid "Port 2"
+msgstr "Port 2"
+
+msgid "Port1"
+msgstr "Port1"
+
+msgid "Port1+2"
+msgstr "Port1+2"
+
+msgid "Port2"
+msgstr "Port2"
 
 msgid "Portugal"
 msgstr "Portekiz"
@@ -2286,6 +2451,9 @@ msgstr "TİTREŞİM SEVİYESİ"
 msgid "Random Values"
 msgstr "Rasgele Değerler"
 
+msgid "Raw"
+msgstr "Ham"
+
 msgid "Recompiler (Fastest)(Default)"
 msgstr "Yeniden Derleyici (En Hızlı)(Varsayılan)"
 
@@ -2315,6 +2483,9 @@ msgstr "BIOS dosyasının mevcut olmasını gerektirir."
 
 msgid "Resampling (Pirch Shift)"
 msgstr "Yeniden Örnekleyici (Pirch Kaydırma)"
+
+msgid "Restored Wii VC"
+msgstr "Geri Yüklenen Wii VC"
 
 msgid "Right Stick"
 msgstr "Sağ Çubuk"
@@ -2363,6 +2534,12 @@ msgstr "SDL2"
 
 msgid "SENSOR BAR POSITION"
 msgstr "SENSÖR ÇUBUĞU KONUMU"
+
+msgid "SENSOR SENSITIVITY (GYROSCOPE)"
+msgstr "SENSÖR HASSASİYETİ (JİROSKOP)"
+
+msgid "SENSOR SENSITIVITY (TILT)"
+msgstr "SENSÖR HASSASİYETİ (EĞİM)"
 
 msgid "SHOW ACHIEVEMENT MESSAGES"
 msgstr "BAŞARIM MESAJLARINI GÖSTER"
@@ -2571,6 +2748,9 @@ msgstr "Slovakya"
 msgid "Slovenia"
 msgstr "Slovenya"
 
+msgid "Small performance increase (may drop frames)."
+msgstr "Küçük performans artışı (kare düşebilir)."
+
 msgid "Smaller"
 msgstr "Daha Küçük"
 
@@ -2585,6 +2765,9 @@ msgstr "Pürüzsüz 3"
 
 msgid "Smooth 4"
 msgstr "Pürüzsüz 4"
+
+msgid "Smooth V2 FBX"
+msgstr "Pürüzsüz V2 FBX"
 
 msgid "Smooth textures on 3D objects."
 msgstr "3D nesnelerde pürüzsüz dokular."
@@ -2660,6 +2843,9 @@ msgstr "Tam uzat"
 
 msgid "Stretch to window"
 msgstr "Pencereye uzat"
+
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
 
 msgid "Super Scope"
 msgstr "Super Scope"
@@ -2856,6 +3042,9 @@ msgstr "DSP SES KULLAN"
 msgid "USE PRE-EMPTIVE FRAMES"
 msgstr "ÖNLEYİCİ KARELER KULLAN"
 
+msgid "USE SOFTWARE RENDERING"
+msgstr "YAZILIMSAL İŞLEYİCİ KULLAN"
+
 msgid "Ukraine"
 msgstr "Ukrayna"
 
@@ -2921,6 +3110,9 @@ msgstr "Özbekistan"
 
 msgid "VBI SKIP"
 msgstr "VBI ATLA"
+
+msgid "VIDEO FILTERS"
+msgstr "VİDEO FİLTRELERİ"
 
 msgid "VIDEO SETTINGS"
 msgstr "VİDEO AYARLARI"
@@ -2991,6 +3183,9 @@ msgstr "%100'ün dışında çalışırken kareleri düşürmek yerine sıcaklı
 msgid "While Touching"
 msgstr "Dokunulduğunda"
 
+msgid "White"
+msgstr "Beyaz"
+
 msgid "Widescreen (16:9)"
 msgstr "Geniş Ekran (16:9)"
 
@@ -3002,6 +3197,9 @@ msgstr "Wii NAND dil ayarları."
 
 msgid "Wii U Classic Controller"
 msgstr "Wii U Klasik Kontrolcüler"
+
+msgid "Wii Virtual Console"
+msgstr "Wii Sanal Konsol"
 
 msgid "Wiimote Sideway"
 msgstr "Wiimote Sideway"
@@ -3039,14 +3237,44 @@ msgstr "ZCULL DOĞRULUĞU"
 msgid "Zooms in to hide black borders. Borders are different per game."
 msgstr "Siyah kenarlıkları gizlemek için yakınlaştırır. Kenarlıklar oyuna göre farklıdır."
 
+msgid "black and white"
+msgstr "siyah ve beyaz"
+
+msgid "blue sea"
+msgstr "mavi deniz"
+
+msgid "cxa2025as (US)"
+msgstr "cxa2025as (ABD)"
+
+msgid "dark knight"
+msgstr "dark knight"
+
 msgid "diagonal filter"
 msgstr "çapraz filtre"
+
+msgid "gba sp"
+msgstr "gba sp"
+
+msgid "green forest"
+msgstr "yeşil orman"
+
+msgid "hot desert"
+msgstr "sıcak çöl"
 
 msgid "lottes crt"
 msgstr "lottes crt"
 
 msgid "nxagss"
 msgstr "nxagss"
+
+msgid "original gameboy"
+msgstr "orijinal gameboy"
+
+msgid "pink dreams"
+msgstr "pembe rüyalar"
+
+msgid "royaltea"
+msgstr "royaltea"
 
 msgid "scanlines"
 msgstr "tarama çizgileri"
@@ -3059,6 +3287,9 @@ msgstr "üçgensel filtre"
 
 msgid "wave filter"
 msgstr "dalga filtresi"
+
+msgid "weird colors"
+msgstr "tuhaf renkler"
 
 msgid "xBR (Very Slow)"
 msgstr "xBR (Çok Yavaş)"

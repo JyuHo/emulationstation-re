@@ -50,6 +50,15 @@ EMULATORS = {
     'xenia-edge': 'xenia-edge',
 }
 
+# Other names es-launcher gives a core (es-launcher/src/retroarch/Cores.cpp): the core name of
+# es_systems.cfg is also the name of its library, so systems may use these instead of Batocera's.
+CORE_ALIASES = {
+    'libretro': {
+        'mednafen_psx': ['mednafen_psx_hw'],
+        'vba-m': ['vbam'],
+    },
+}
+
 # Built-in features of ES (features="..." attribute) and the setting each one writes
 BUILTIN_FEATURE_KEYS = {
     'ratio': 'ratio',
@@ -446,6 +455,12 @@ def main() -> None:
             print(f'warning: no definition for {emulator}', file=sys.stderr)
             continue
         info = filter_info(registry[emulator], supported, shared_keys)
+        cores = {}
+        for name, core in info['cores'].items():
+            cores[name] = core
+            for alias in CORE_ALIASES.get(emulator, {}).get(name, []):
+                cores.setdefault(alias, core)
+        info['cores'] = cores
         extra = filter_features(EXTRA_FEATURES.get(emulator), supported) or []
         if extra:
             info['features'] = (info['features'] or []) + [f for f in extra if f not in (info['features'] or [])]
