@@ -29,6 +29,26 @@ option(USE_SYSTEM_PUGIXML "Set to ON to use system-wide pugixml library" OFF)
 
 project(emulationstation-all)
 
+# Faster builds. ccache is used when it is installed (unless a launcher is already given), and
+# es-core and es-app precompile the headers that almost every file includes. Turn either off
+# with -DES_CCACHE=OFF or -DES_PCH=OFF (the clang-tidy and CodeQL workflows do without PCH).
+option(ES_CCACHE "Compile through ccache when it is installed" ON)
+option(ES_PCH "Precompile the common headers of es-core and es-app" ON)
+
+if(ES_CCACHE AND NOT CMAKE_CXX_COMPILER_LAUNCHER AND NOT CMAKE_C_COMPILER_LAUNCHER)
+    find_program(CCACHE_PROGRAM ccache)
+    if(CCACHE_PROGRAM)
+        message("-- Using ccache: ${CCACHE_PROGRAM}")
+        # pch_defines and time_macros let ccache cache the files built with a precompiled header,
+        # include_file_ctime/mtime let it hit right after a checkout (CI) touched every file
+        set(ES_CCACHE_LAUNCHER ${CMAKE_COMMAND} -E env
+            CCACHE_SLOPPINESS=pch_defines,time_macros,include_file_ctime,include_file_mtime
+            ${CCACHE_PROGRAM})
+        set(CMAKE_C_COMPILER_LAUNCHER ${ES_CCACHE_LAUNCHER})
+        set(CMAKE_CXX_COMPILER_LAUNCHER ${ES_CCACHE_LAUNCHER})
+    endif()
+endif()
+
 # Lets `ctest --test-dir build` find the tests that ES_TESTS and ES_LAUNCHER_TESTS add in the subfolders
 enable_testing()
 
@@ -53,7 +73,8 @@ else()
     string(REGEX REPLACE "^v" "" ES_VERSION_RESOLVED "${ES_VERSION}")
 endif()
 message("-- EmulationStation-RE version: ${ES_VERSION_RESOLVED}")
-add_compile_definitions(ES_VERSION_STRING="${ES_VERSION_RESOLVED}")
+# Set on es-app/src/BuildInfo.cpp only (see es-app/CMakeLists.txt): a new commit changes the
+# version, and a definition given to every file would rebuild them all and defeat ccache.
 # Installed files are also looked up in $XDG_DATA_DIRS, this is the fallback when the prefix is not listed there
 add_compile_definitions(ES_INSTALL_DATADIR="${CMAKE_INSTALL_FULL_DATADIR}" ES_INSTALL_LOCALEDIR="${CMAKE_INSTALL_FULL_LOCALEDIR}")
 
@@ -199,6 +220,12 @@ endif()
 
 add_compile_options($<$<COMPILE_LANGUAGE:CXX>:-Wno-attributes>)
 
+# Release builds at -O2, like the distribution packages, instead of CMake's -O3: the build is
+# about a third faster and the front-end gains nothing measurable from -O3.
+foreach(ES_LANG C CXX)
+    string(REPLACE "-O3" "-O2" CMAKE_${ES_LANG}_FLAGS_RELEASE "${CMAKE_${ES_LANG}_FLAGS_RELEASE}")
+endforeach()
+
 add_definitions(-DUSE_GL3)
 if(GLES3)
     add_definitions(-DUSE_GLES)
@@ -327,6 +354,27 @@ endif()
 
 #-------------------------------------------------------------------------------
 # add each component
+
+# Headers that most files of es-core and es-app include, compiled once per target (ES_PCH)
+set(ES_PRECOMPILED_HEADERS
+    <algorithm>
+    <functional>
+    <map>
+    <memory>
+    <mutex>
+    <set>
+    <sstream>
+    <string>
+    <thread>
+    <unordered_map>
+    <vector>
+    ${CMAKE_CURRENT_SOURCE_DIR}/es-core/src/GuiComponent.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/es-core/src/Window.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/es-core/src/Log.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/es-core/src/Settings.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/es-core/src/LocaleES.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/es-core/src/utils/StringUtil.h
+)
 
 add_subdirectory("external")
 add_subdirectory("es-core")

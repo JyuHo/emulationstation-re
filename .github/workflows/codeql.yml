@@ -48,7 +48,7 @@ jobs:
       - name: Build
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DGL=ON -DES_TESTS=ON
+          cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DGL=ON -DES_TESTS=ON -DES_PCH=OFF
           cmake --build build
 
       - uses: github/codeql-action/analyze@v3

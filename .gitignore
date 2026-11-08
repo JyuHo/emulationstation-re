@@ -10,3 +10,6 @@ compile_commands.json
 
 # gettext backups
 *.po~
+
+# ccache folder of the CI builds
+/.ccache/

@@ -123,18 +123,19 @@ private:
 						checkbox->setResize(0, font->getLetterHeight());
 						row.addElement(checkbox, false);
 
-						// input handler
-						// update checkbox state & selected value
-						row.makeAcceptInputHandler([this, &e, checkbox]
-						{
-							e.selected = !e.selected;
-							checkbox->setImage(e.selected ? CHECKED_PATH : UNCHECKED_PATH);
-							mParent->onSelectedChanged();
-						});
-
 						CheckBoxElement el;
 						el.checkbox = checkbox.get();
 						el.item = &e;
+
+						// input handler
+						// update checkbox state & selected value
+						// (the row owns the checkbox, so the handler can hold a plain pointer)
+						row.makeAcceptInputHandler([this, &e, box = el.checkbox]
+						{
+							e.selected = !e.selected;
+							box->setImage(e.selected ? CHECKED_PATH : UNCHECKED_PATH);
+							mParent->onSelectedChanged();
+						});
 
 						// for select all/none
 						mCheckBoxes.push_back(el);
@@ -619,10 +620,12 @@ private:
 		if (!mPendingFill)
 			return;
 
-		auto alive = mAlive;
-		mWindow->postToUiThread([this, alive]
+		// A weak_ptr (copying the shared_ptr into this lambda makes GCC 15 report a false
+		// -Wmaybe-uninitialized). Other callbacks may still own mAlive, hence the *flag check.
+		mWindow->postToUiThread([this, alive = std::weak_ptr<bool>(mAlive)]
 		{
-			if (*alive && !mPopupOpen)
+			auto flag = alive.lock();
+			if (flag && *flag && !mPopupOpen)
 				applyPendingFill();
 		});
 	}

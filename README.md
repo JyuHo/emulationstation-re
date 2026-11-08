@@ -132,6 +132,10 @@ cmake --build build
 
 Use `-DCMAKE_BUILD_TYPE=Debug` for a debug build (the default is `Release`).
 
+Install `ccache` (`ccache` package on Arch and Debian) to make rebuilds much faster: CMake
+uses it on its own when it finds it. A rebuild after switching branches or pulling then only
+compiles the files that changed (13 s instead of about 4 minutes on 4 cores).
+
 Everything the build produces stays in the build folder, nothing is written to the
 source tree: `build/emulationstation`, `build/locale/<lang>/LC_MESSAGES/*.mo` and a
 `build/resources` link to the source resources. Translations are only compiled when
@@ -190,6 +194,8 @@ CMake options
 | `ENABLE_FILEMANAGER` | `OFF` | F1 opens a file manager |
 | `DISABLE_KODI` | `OFF` | Remove Kodi from the menu |
 | `USE_SYSTEM_PUGIXML` | `OFF` | Use the system pugixml instead of the bundled one |
+| `ES_CCACHE` | `ON` | Compile through ccache when it is installed |
+| `ES_PCH` | `ON` | Precompile the headers that most files of es-core and es-app include |
 
 `GL` and `GLES3` are mutually exclusive. When neither is given, ARM builds pick `GLES3` and
 the others pick `GL`.

@@ -16,6 +16,11 @@ optdepends=('noto-fonts-cjk: Chinese, Japanese and Korean characters'
             'flatpak: Flatpak emulators of the emulator catalog')
 conflicts=('emulationstation')
 options=('!debug')
+# The CI builds of pull requests and master set ES_NO_LTO=1: link-time optimization more than
+# doubles the link time. Release packages keep it, as Arch does by default.
+if [[ -n "${ES_NO_LTO:-}" ]]; then
+  options+=('!lto')
+fi
 
 _srcroot="$(realpath "$startdir/../..")"
 

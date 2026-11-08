@@ -46,21 +46,42 @@ jobs:
           apt-get install -y --no-install-recommends git ca-certificates build-essential cmake \
             ninja-build dpkg-dev file libsdl3-dev libsdl3-image-dev libfreetype-dev \
             libcurl4-openssl-dev rapidjson-dev libvlc-dev libasound2-dev libgles-dev libgl-dev \
-            libudev-dev libfribidi-dev libcec-dev zlib1g-dev gettext
+            libudev-dev libfribidi-dev libcec-dev zlib1g-dev gettext ccache
 
       - uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
 
+      # ccache's objects of the last build of this branch, else of master (see "Save the compiler cache")
+      - name: Restore the compiler cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .ccache
+          key: ccache-debian-${{ inputs.arch }}-${{ github.sha }}
+          restore-keys: ccache-debian-${{ inputs.arch }}-
+
       - name: Build the package
+        env:
+          CCACHE_DIR: ${{ github.workspace }}/.ccache
+          CCACHE_MAXSIZE: 500M
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          ccache --zero-stats
           cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr \
             ${{ inputs.graphics }} ${ES_VERSION:+-DES_VERSION="$ES_VERSION"}
           cmake --build build
+          ccache --show-stats
           if [ -f build/CTestTestfile.cmake ]; then ctest --test-dir build --output-on-failure; fi
           cd build && cpack -G DEB
+
+      # Not on a tag: those builds compile the API keys in, and they must not end up in a cache
+      - name: Save the compiler cache
+        if: ${{ !cancelled() && !startsWith(github.ref, 'refs/tags/') }}
+        uses: actions/cache/save@v4
+        with:
+          path: .ccache
+          key: ccache-debian-${{ inputs.arch }}-${{ github.sha }}
 
       - name: Check the package
         run: |
