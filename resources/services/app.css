@@ -1,21 +1,21 @@
 /* EmulationStation-RE web pages: shared layout (sidebar, top bar, cards) and theme.
-   Colours come from the blue neon ES-RE logo (resources/splash.svg). */
+   Colours come from the Mono theme (charcoal, amber, resources/splash.svg). */
 
 :root {
-	--bg: #050b16;
-	--panel: #03101f;
-	--card: #0a1628;
-	--card-hover: #0f1f36;
-	--line: #16304f;
-	--line-soft: #10233b;
-	--text: #e4f1ff;
-	--muted: #86a0bd;
-	--accent: #2fd0ff;
-	--accent-soft: rgba(47, 208, 255, 0.12);
-	--accent-glow: 0 0 12px rgba(47, 208, 255, 0.45);
-	--ok: #3ee69a;
+	--bg: #0a0c10;
+	--panel: #0d1117;
+	--card: #151b23;
+	--card-hover: #1b232e;
+	--line: #26303b;
+	--line-soft: #1d2530;
+	--text: #f2f4f8;
+	--muted: #9aa3ae;
+	--accent: #f2b84b;
+	--accent-soft: rgba(242, 184, 75, 0.12);
+	--accent-glow: 0 0 12px rgba(242, 184, 75, 0.35);
+	--ok: #5bd6a0;
 	--warn: #ffc24a;
-	--danger: #ff5c7a;
+	--danger: #ff6b7d;
 	--radius: 10px;
 	--sidebar: 236px;
 }
@@ -58,7 +58,7 @@ a:hover { text-decoration: underline; }
 	color: var(--text);
 }
 .brand:hover { text-decoration: none; }
-.brand img { width: 44px; height: 44px; filter: drop-shadow(0 0 6px rgba(47, 208, 255, 0.5)); }
+.brand img { width: 44px; height: 44px; filter: drop-shadow(0 0 6px rgba(242, 184, 75, 0.4)); }
 .brand-name { font-weight: 800; font-size: 19px; letter-spacing: 2px; color: var(--accent); text-shadow: var(--accent-glow); }
 .brand-sub { font-size: 11px; color: var(--muted); letter-spacing: 0.5px; }
 
@@ -186,7 +186,7 @@ a:hover { text-decoration: underline; }
 }
 .btn:hover { border-color: var(--accent); text-decoration: none; }
 .btn svg { width: 15px; height: 15px; }
-.btn-primary { background: var(--accent); border-color: var(--accent); color: #021220; font-weight: 600; }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: #0a0c10; font-weight: 600; }
 .btn-primary:hover { box-shadow: var(--accent-glow); }
 .btn-danger:hover { border-color: var(--danger); color: var(--danger); }
 .btn-sm { padding: 3px 9px; font-size: 12px; }
@@ -278,7 +278,7 @@ table.list tbody tr:hover { background: var(--card-hover); }
 .fm-files.fm-dragging { outline: 2px dashed var(--accent); outline-offset: -6px; }
 .fm-dragging .fm-drop { display: block; text-align: center; padding: 10px; color: var(--accent); }
 
-.modal { position: fixed; inset: 0; background: rgba(1, 5, 12, 0.75); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal { position: fixed; inset: 0; background: rgba(5, 7, 10, 0.78); display: flex; align-items: center; justify-content: center; z-index: 20; }
 .modal-box { width: 90%; height: 85%; display: flex; flex-direction: column; }
 .modal-box .card-body { flex: 1; display: flex; flex-direction: column; gap: 10px; min-height: 0; }
 .modal textarea { flex: 1; background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 6px; font-family: monospace; font-size: 13px; padding: 10px; resize: none; }
