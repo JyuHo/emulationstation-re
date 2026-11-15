@@ -4184,3 +4184,15 @@ msgstr[2] "Pred %d sekundami"
 #~ "nemáte osobitné tlačidlo pre Hotkey, použite tlačidlo Select. Preskočte "
 #~ "všetky tlačidlá/páčky, ktoré nemáte držaním nejakého tlačidla. Stlačte "
 #~ "južné tlačidlo na potvrdenie, ak ste hotoví."
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "HESLO PRE WEBOVÝ PRÍSTUP"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "NIE JE MOŽNÉ ZMENIŤ ROZLOŽENIE KLAVESNICE"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "REŠTARTOVAŤ EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "NAOZAJ REŠTARTOVAŤ EMULATIONSTATION?"

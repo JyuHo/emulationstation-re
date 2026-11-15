@@ -1416,7 +1416,7 @@ msgid "CONNECTED"
 msgstr "VERBONDEN"
 
 msgid "ALREADY CONNECTED"
-msgstr ""
+msgstr "AL VERBONDEN"
 
 msgid "SEARCHING WI-FI NETWORKS"
 msgstr "WI-FI NETWERKEN ZOEKEN"
@@ -2275,15 +2275,15 @@ msgstr ""
 "vermeerdert opstarttijd"
 
 msgid "DIRECTORY DEPTH TO INDEX"
-msgstr ""
+msgstr "MAPDIEPTE OM TE INDEXEREN"
 
 msgid "UNLIMITED"
-msgstr ""
+msgstr "ONBEPERKT"
 
 msgid ""
 "Maximum depth scanned inside each ROM folder, to ignore subfolders with many "
 "files."
-msgstr ""
+msgstr "Maximale diepte die in elke ROM-map wordt gescand om submappen met veel bestanden te negeren."
 
 msgid "THREADED LOADING"
 msgstr "THREADED LADEN"
@@ -2450,17 +2450,17 @@ msgstr ""
 "uitvoer."
 
 msgid "HDR"
-msgstr ""
+msgstr "HDR"
 
 msgid "Allows HDR content such as Moonlight HDR streams to the display."
-msgstr ""
+msgstr "Hiermee kan HDR-inhoud, zoals Moonlight HDR-streams, op het scherm worden weergegeven."
 
 msgid "VARIABLE REFRESH RATE"
 msgstr "VARIABELE REFRESH RATE"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "Laat het scherm de framesnelheid volgen. Schakel dit uit als het scherm flikkert."
 
 msgid "BOOT SPLASH"
 msgstr "OPSTART SPLASH"
@@ -2951,13 +2951,13 @@ msgstr "VIDEO PREVIEW AUDIO INSCHAKELEN"
 
 #, c-format
 msgid "UNABLE TO CONNECT TO '%s'"
-msgstr ""
+msgstr "KAN GEEN VERBINDING MAKEN MET '%s'"
 
 msgid "WI-FI NETWORKS"
-msgstr ""
+msgstr "WI-FI-NETWERKEN"
 
 msgid "ADD A WI-FI NETWORK"
-msgstr ""
+msgstr "WI-FI-NETWERK TOEVOEGEN"
 
 msgid "WI-FI SSID"
 msgstr "WI-FI SSID"
@@ -2966,7 +2966,7 @@ msgid "WI-FI KEY"
 msgstr "WI-FI KEY"
 
 msgid "USE"
-msgstr ""
+msgstr "GEBRUIKEN"
 
 msgid "FORGET"
 msgstr "VERGEET"
@@ -4086,3 +4086,15 @@ msgstr[1] "%d secondes geleden"
 #~ msgstr ""
 #~ "Laad de nieuwste savestate bij het starten van het spel en de savestate "
 #~ "bij het afsluiten van het spel."
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "WACHTWOORD VOOR WEBTOEGANG"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "KAN TOETSENBORDINDELING NIET WIJZIGEN"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "EMULATIONSTATION HERSTARTEN"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "EMULATIONSTATION ECHT HERSTARTEN?"

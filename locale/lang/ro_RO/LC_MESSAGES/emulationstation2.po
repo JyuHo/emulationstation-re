@@ -1420,7 +1420,7 @@ msgid "CONNECTED"
 msgstr "CONECTAT"
 
 msgid "ALREADY CONNECTED"
-msgstr ""
+msgstr "DEJA CONECTAT"
 
 msgid "SEARCHING WI-FI NETWORKS"
 msgstr "SE CAUTĂ REȚELE WI-FI"
@@ -2462,7 +2462,7 @@ msgstr "RATĂ DE REÎMPROSPĂTARE VARIABILĂ"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "Permite ecranului să urmeze rata de cadre. Dezactivează dacă ecranul pâlpâie."
 
 msgid "BOOT SPLASH"
 msgstr "ECRAN DE PORNIRE"
@@ -4155,3 +4155,15 @@ msgstr[2] "acum %d de secunde"
 
 #~ msgid "FORGET A BLUETOOTH DEVICE"
 #~ msgstr "ELIMINĂ UN DISPOZITIV BLUETOOTH"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "PAROLA DE ACCES WEB"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "NU SE POATE SCHIMBA AMPLASAREA TASTATURII"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "REPORNEȘTE EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "REPORNEȘTI ÎNTRA-ADEVĂR EMULATIONSTATION?"

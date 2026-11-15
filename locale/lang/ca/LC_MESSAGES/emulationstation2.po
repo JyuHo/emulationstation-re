@@ -2454,7 +2454,7 @@ msgstr "FREQÜÈNCIA DE MOSTRATGE VARIABLE"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "Permet que la pantalla segueixi la freqüència de fotogrames. Desactiva-ho si la pantalla parpelleja."
 
 msgid "BOOT SPLASH"
 msgstr "PANTALLA DE PRESENTACIÓ"
@@ -4127,3 +4127,15 @@ msgstr[1] "fa %d segons"
 
 #~ msgid "HAS MEDIAS"
 #~ msgstr "TÉ CONTINGUTS"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "CONTRASENYA D'ACCÉS WEB"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "NO ES POT CANVIAR LA DISPOSICIÓ DEL TECLAT"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "REINICIA EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "REALMENT VOLS REINICIAR EMULATIONSTATION?"

@@ -1408,7 +1408,7 @@ msgid "CONNECTED"
 msgstr "CONNESSO"
 
 msgid "ALREADY CONNECTED"
-msgstr ""
+msgstr "GIÀ CONNESSO"
 
 msgid "SEARCHING WI-FI NETWORKS"
 msgstr "RICERCA RETI WI-FI"
@@ -2043,7 +2043,7 @@ msgid "VSYNC"
 msgstr "VSYNC"
 
 msgid "ANTI-ALIASING (MSAA)"
-msgstr ""
+msgstr "ANTI-ALIASING (MSAA)"
 
 msgid "FPS LIMIT"
 msgstr "LIMITE FPS"
@@ -2216,10 +2216,10 @@ msgid "CONTROL EMULATIONSTATION WITH FIRST JOYSTICK ONLY"
 msgstr "UTILIZZO DI ES SOLO PER IL PRIMO CONTROLLER"
 
 msgid "RIGHT ANALOG STICK CHANGES VOLUME"
-msgstr ""
+msgstr "LO STICK ANALOGICO DESTRO REGOLA IL VOLUME"
 
 msgid "Move the right stick up/down to raise or lower the audio volume."
-msgstr ""
+msgstr "Sposta lo stick destro su/giù per alzare o abbassare il volume audio."
 
 msgid "GUN MOVE TOLERENCE"
 msgstr "MUOVI LA TOLLERANZA DELLA PISTOLA"
@@ -2257,15 +2257,15 @@ msgid ""
 msgstr "Precarica tutti i media dei giochi, riducendo i tempi di caricamento"
 
 msgid "DIRECTORY DEPTH TO INDEX"
-msgstr ""
+msgstr "PROFONDITÀ DELLE DIRECTORY DA INDICIZZARE"
 
 msgid "UNLIMITED"
-msgstr ""
+msgstr "ILLIMITATO"
 
 msgid ""
 "Maximum depth scanned inside each ROM folder, to ignore subfolders with many "
 "files."
-msgstr ""
+msgstr "Profondità massima analizzata in ogni cartella ROM per ignorare le sottocartelle con molti file."
 
 msgid "THREADED LOADING"
 msgstr "CARICAMENTO ACCODATO"
@@ -2301,7 +2301,7 @@ msgid "UPDATE TYPE"
 msgstr "TIPO AGGIORNAMENTO"
 
 msgid "ARCHITECTURE UPDATE"
-msgstr ""
+msgstr "AGGIORNAMENTO ARCHITETTURA"
 
 msgid "APPLY UPDATE"
 msgstr "APPLICA AGGIORNAMENTO"
@@ -2427,17 +2427,17 @@ msgstr ""
 "Le opzioni disponibili possino cambiare a seconda dell'attuale uscita audio"
 
 msgid "HDR"
-msgstr ""
+msgstr "HDR"
 
 msgid "Allows HDR content such as Moonlight HDR streams to the display."
-msgstr ""
+msgstr "Consente di visualizzare contenuti HDR, come i flussi HDR di Moonlight, sullo schermo."
 
 msgid "VARIABLE REFRESH RATE"
 msgstr "REFRESH RATE VARIABILE"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "Fa seguire allo schermo la frequenza dei fotogrammi. Disattiva se lo schermo sfarfalla."
 
 msgid "BOOT SPLASH"
 msgstr "SCHERMATA DI AVVIO"
@@ -2925,13 +2925,13 @@ msgstr "AUDIO DELLE ANTEPRIME VIDEO"
 
 #, c-format
 msgid "UNABLE TO CONNECT TO '%s'"
-msgstr ""
+msgstr "IMPOSSIBLE CONNETTERSI A '%s'"
 
 msgid "WI-FI NETWORKS"
-msgstr ""
+msgstr "RETI WI-FI"
 
 msgid "ADD A WI-FI NETWORK"
-msgstr ""
+msgstr "AGGIUNGI UNA RETE WI-FI"
 
 msgid "WI-FI SSID"
 msgstr "SSID WI-FI"
@@ -2940,7 +2940,7 @@ msgid "WI-FI KEY"
 msgstr "CHIAVE WI-FI"
 
 msgid "USE"
-msgstr ""
+msgstr "USA"
 
 msgid "FORGET"
 msgstr "DIMENTICA"
@@ -5323,3 +5323,15 @@ msgstr[1] "%d secondi fa"
 
 #~ msgid "UPDATE FAILED, THE SYSTEM WILL NOW REBOOT"
 #~ msgstr "AGGIORNAMENTO FALLITO, IL SISTEMA VERRÀ RIAVVIATO"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "PASSWORD DI ACCESSO WEB"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "IMPOSSIBILE CAMBIARE IL LAYOUT DELLA TASTIERA"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "RIAVVIA EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "VUOI DAVVERO RIAVVIARE EMULATIONSTATION?"

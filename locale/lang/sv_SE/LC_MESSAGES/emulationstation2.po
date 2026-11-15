@@ -1413,7 +1413,7 @@ msgid "CONNECTED"
 msgstr "ANSLUTEN"
 
 msgid "ALREADY CONNECTED"
-msgstr ""
+msgstr "REDAN ANSLUTEN"
 
 msgid "SEARCHING WI-FI NETWORKS"
 msgstr "SÖKNING AV WI-FI-NÄTVERK"
@@ -2447,7 +2447,7 @@ msgstr "VARIABEL UPPDATERINGSFREKVENS"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "Låter skärmen följa bildfrekvensen. Stäng av om skärmen flimrar."
 
 msgid "BOOT SPLASH"
 msgstr "SKOSNÖRE SPLASH"
@@ -4123,3 +4123,15 @@ msgstr[1] "%d sekunder sedan"
 
 #~ msgid "ZFAST"
 #~ msgstr "ZFAST"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "LÖSENORD FÖR WEBBÅTKOMST"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "KUNDE INTE ÄNDRA TANGENTBORDSLAYOUT"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "STARTA OM EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "VILL DU VERKLIGEN STARTA OM EMULATIONSTATION?"

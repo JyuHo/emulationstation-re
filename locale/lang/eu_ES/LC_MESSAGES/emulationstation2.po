@@ -2461,7 +2461,7 @@ msgstr "FRESKATZE-MAIZTASUN ALDAKORRA"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "Pantailak fotograma-abiadura jarraitzea ahalbidetzen du. Desaktibatu pantaila keinuka aritzen bada."
 
 msgid "BOOT SPLASH"
 msgstr "ABIARAZTE-PANTAILA"
@@ -4496,3 +4496,15 @@ msgstr[1] "duela %d segundo"
 
 #~ msgid "UPDATE FAILED, THE SYSTEM WILL NOW REBOOT"
 #~ msgstr "EGUNERAKETAK HUTS EGIN DU. SISTEMA BERRABIARAZIKO DA ORAIN"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "WEB SARBIDEAREN PASAHITZA"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "EZIN DA TEKLATUAREN KOKAPENA ALDATU"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "BERHASI EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "BENETAN BERHASI EMULATIONSTATION?"

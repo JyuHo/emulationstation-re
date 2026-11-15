@@ -4543,3 +4543,15 @@ msgstr[3] ""
 
 #~ msgid "REALLY SHUTDOWN WITHOUT SAVING METADATAS?"
 #~ msgstr "בטוח לכבות בלי לשמור METADATA"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "סיסמת גישה לאינטרנט"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "לא ניתן לשנות את פריסת המקלדת"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "הפעל מחדש את EmulationStation"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "להפעיל מחדש את EmulationStation?"

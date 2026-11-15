@@ -1405,7 +1405,7 @@ msgid "CONNECTED"
 msgstr "TERHUBUNG"
 
 msgid "ALREADY CONNECTED"
-msgstr ""
+msgstr "SUDAH TERHUBUNG"
 
 msgid "SEARCHING WI-FI NETWORKS"
 msgstr "MENCARI JARINGAN WI-FI"
@@ -2257,15 +2257,15 @@ msgstr ""
 "meningkatkan waktu boot"
 
 msgid "DIRECTORY DEPTH TO INDEX"
-msgstr ""
+msgstr "KEDALAMAN DIREKTORI YANG DIINDEKS"
 
 msgid "UNLIMITED"
-msgstr ""
+msgstr "TANPA BATAS"
 
 msgid ""
 "Maximum depth scanned inside each ROM folder, to ignore subfolders with many "
 "files."
-msgstr ""
+msgstr "Kedalaman maksimum yang dipindai di setiap folder ROM untuk mengabaikan subfolder dengan banyak file."
 
 msgid "THREADED LOADING"
 msgstr "MEMUAT THREAD"
@@ -2427,17 +2427,17 @@ msgstr ""
 "Pilihan yang tersedia dapat berubah tergantung pada output audio saat ini."
 
 msgid "HDR"
-msgstr ""
+msgstr "HDR"
 
 msgid "Allows HDR content such as Moonlight HDR streams to the display."
-msgstr ""
+msgstr "Memungkinkan konten HDR, seperti streaming HDR Moonlight, ditampilkan di layar."
 
 msgid "VARIABLE REFRESH RATE"
 msgstr "TINGKAT VARIABEL REFRESH"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "Membuat layar mengikuti laju bingkai. Matikan jika layar berkedip."
 
 msgid "BOOT SPLASH"
 msgstr "SPLASH BOOT"
@@ -2922,13 +2922,13 @@ msgstr "AKTIFKAN AUDIO PREVIEW VIDEO"
 
 #, c-format
 msgid "UNABLE TO CONNECT TO '%s'"
-msgstr ""
+msgstr "TIDAK DAPAT TERHUBUNG KE '%s'"
 
 msgid "WI-FI NETWORKS"
-msgstr ""
+msgstr "JARINGAN WI-FI"
 
 msgid "ADD A WI-FI NETWORK"
-msgstr ""
+msgstr "TAMBAHKAN JARINGAN WI-FI"
 
 msgid "WI-FI SSID"
 msgstr "NAMA WI-FI"
@@ -2937,7 +2937,7 @@ msgid "WI-FI KEY"
 msgstr "PASSWORD WI-FI"
 
 msgid "USE"
-msgstr ""
+msgstr "GUNAKAN"
 
 msgid "FORGET"
 msgstr "LUPAKAN"
@@ -4117,3 +4117,15 @@ msgstr[0] "%d detik lalu"
 
 #~ msgid "HAS MEDIAS"
 #~ msgstr "MEMILIKI MEDIA"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "KATA SANDI AKSES WEB"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "TIDAK DAPAT MENGUBAH TATA LETAK KEYBOARD"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "MULAI ULANG EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "YAKIN INGIN MEMULAI ULANG EMULATIONSTATION?"

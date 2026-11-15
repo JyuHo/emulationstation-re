@@ -4104,3 +4104,15 @@ msgstr[0] "%d giây trước"
 
 #~ msgid "model"
 #~ msgstr "Model"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "MẬT KHẨU TRUY CẬP WEB"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "KHÔNG THỂ THAY ĐỔI BỐ CỤC BÀN PHÍM"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "KHỞI ĐỘNG LẠI EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "THỰC SỰ KHỞI ĐỘNG LẠI EMULATIONSTATION?"
