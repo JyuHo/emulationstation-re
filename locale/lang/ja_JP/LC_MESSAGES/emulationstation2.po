@@ -4080,3 +4080,15 @@ msgstr[0] "%d 秒前"
 #~ msgstr ""
 #~ "ゲーム リストが更新されると、新しいドライブ コンテンツが利用できるようにな"
 #~ "ります…"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "Webアクセスのパスワード"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "キーボードレイアウトを変更できません"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "EmulationStationを再起動"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "EmulationStationを再起動しますか？"

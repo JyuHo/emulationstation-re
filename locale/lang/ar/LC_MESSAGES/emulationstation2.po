@@ -2480,7 +2480,7 @@ msgstr "إنعاش المعدل متغير"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "يجعل الشاشة تتبع معدل الإطارات. أوقفه إذا كانت الشاشة تومض."
 
 msgid "BOOT SPLASH"
 msgstr "شاشة الافتتاحية"
@@ -4145,3 +4145,15 @@ msgstr[5] "منذ %d ثانية"
 
 #~ msgid "RESTRICT HOTKEYS TO EXIT"
 #~ msgstr "تقييد زر الاختصار للخروج"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "كلمة مرور الوصول عبر الويب"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "تعذر تغيير تخطيط لوحة المفاتيح"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "إعادة تشغيل EmulationStation"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "هل تريد إعادة تشغيل EmulationStation حقًا؟"

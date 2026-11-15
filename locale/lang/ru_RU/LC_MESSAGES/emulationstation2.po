@@ -1414,7 +1414,7 @@ msgid "CONNECTED"
 msgstr "ПОДКЛЮЧЕНО"
 
 msgid "ALREADY CONNECTED"
-msgstr ""
+msgstr "УЖЕ ПОДКЛЮЧЕНО"
 
 msgid "SEARCHING WI-FI NETWORKS"
 msgstr "ПОИСК WI-FI СЕТИ"
@@ -2049,7 +2049,7 @@ msgid "VSYNC"
 msgstr "VSYNC"
 
 msgid "ANTI-ALIASING (MSAA)"
-msgstr ""
+msgstr "СГЛАЖИВАНИЕ (MSAA)"
 
 msgid "FPS LIMIT"
 msgstr "ЛИМИТ FPS"
@@ -2222,10 +2222,10 @@ msgid "CONTROL EMULATIONSTATION WITH FIRST JOYSTICK ONLY"
 msgstr "УПРАВЛЯТЬ EMULATIONSTATION ТОЛЬКО ПЕРВЫМ КОНТРОЛЛЕРОМ"
 
 msgid "RIGHT ANALOG STICK CHANGES VOLUME"
-msgstr ""
+msgstr "ПРАВЫЙ АНАЛОГОВЫЙ СТИК ИЗМЕНЯЕТ ГРОМКОСТЬ"
 
 msgid "Move the right stick up/down to raise or lower the audio volume."
-msgstr ""
+msgstr "Двигайте правый стик вверх/вниз, чтобы повысить или понизить громкость аудио."
 
 msgid "GUN MOVE TOLERENCE"
 msgstr "ДОПУСТИМОСТЬ ПЕРЕМЕЩЕНИЯ ПИСТОЛЕТА"
@@ -2262,15 +2262,15 @@ msgstr ""
 "Уменьшает лаги во время просмотра списка игр, увеличивает время загрузки"
 
 msgid "DIRECTORY DEPTH TO INDEX"
-msgstr ""
+msgstr "ГЛУБИНА КАТАЛОГОВ ДЛЯ ИНДЕКСАЦИИ"
 
 msgid "UNLIMITED"
-msgstr ""
+msgstr "БЕЗ ОГРАНИЧЕНИЙ"
 
 msgid ""
 "Maximum depth scanned inside each ROM folder, to ignore subfolders with many "
 "files."
-msgstr ""
+msgstr "Максимальная глубина сканирования в каждой папке ROM, чтобы игнорировать подпапки с большим количеством файлов."
 
 msgid "THREADED LOADING"
 msgstr "МНОГОПОТОЧНАЯ ЗАГРУЗКА"
@@ -2306,7 +2306,7 @@ msgid "UPDATE TYPE"
 msgstr "ВЕТКА ОБНОВЛЕНИЯ"
 
 msgid "ARCHITECTURE UPDATE"
-msgstr ""
+msgstr "ОБНОВЛЕНИЕ АРХИТЕКТУРЫ"
 
 msgid "APPLY UPDATE"
 msgstr "ПРИМЕНИТЬ ОБНОВЛЕНИЕ"
@@ -2431,17 +2431,17 @@ msgid "Available options can change depending on current audio output."
 msgstr "Доступные опции могут меняться в зависимости от текущего аудио выхода."
 
 msgid "HDR"
-msgstr ""
+msgstr "HDR"
 
 msgid "Allows HDR content such as Moonlight HDR streams to the display."
-msgstr ""
+msgstr "Позволяет выводить на экран HDR-контент, например HDR-потоки Moonlight."
 
 msgid "VARIABLE REFRESH RATE"
 msgstr "ПЕРЕМЕННАЯ ЧАСТОТА ОБНОВЛЕНИЯ"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "Экран следует частоте кадров. Отключите, если экран мерцает."
 
 msgid "BOOT SPLASH"
 msgstr "ВСТУПИТЕЛЬНОЕ ИНТРО"
@@ -2927,13 +2927,13 @@ msgstr "ВКЛЮЧИТЬ ЗВУК В ВИДЕО"
 
 #, c-format
 msgid "UNABLE TO CONNECT TO '%s'"
-msgstr ""
+msgstr "НЕ УДАЛОСЬ ПОДКЛЮЧИТЬСЯ К '%s'"
 
 msgid "WI-FI NETWORKS"
-msgstr ""
+msgstr "СЕТИ WI-FI"
 
 msgid "ADD A WI-FI NETWORK"
-msgstr ""
+msgstr "ДОБАВИТЬ СЕТЬ WI-FI"
 
 msgid "WI-FI SSID"
 msgstr "ИМЯ СЕТИ WI-FI"
@@ -2942,7 +2942,7 @@ msgid "WI-FI KEY"
 msgstr "ПАРОЛЬ СЕТИ WI-FI"
 
 msgid "USE"
-msgstr ""
+msgstr "ИСПОЛЬЗОВАТЬ"
 
 msgid "FORGET"
 msgstr "ЗАБЫТЬ"
@@ -5202,3 +5202,15 @@ msgstr[2] "%d секунд назад"
 
 #~ msgid "sortname"
 #~ msgstr "название для сортировки"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "ПАРОЛЬ ВЕБ-ДОСТУПА"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "НЕ УДАЛОСЬ ИЗМЕНИТЬ РАСКЛАДКУ КЛАВИАТУРЫ"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "ПЕРЕЗАПУСТИТЬ EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "ДЕЙСТВИТЕЛЬНО ПЕРЕЗАПУСТИТЬ EMULATIONSTATION?"

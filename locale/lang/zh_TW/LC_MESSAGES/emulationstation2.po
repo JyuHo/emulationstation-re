@@ -4055,3 +4055,15 @@ msgstr[0] "%d 幾秒前"
 
 #~ msgid "HAS MEDIAS"
 #~ msgstr "含有媒體"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "WEB 存取密碼"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "無法變更鍵盤配置"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "重新啟動 EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "確定要重新啟動 EMULATIONSTATION 嗎？"

@@ -1420,7 +1420,7 @@ msgid "CONNECTED"
 msgstr "CONECTADO"
 
 msgid "ALREADY CONNECTED"
-msgstr ""
+msgstr "YA CONECTADO"
 
 msgid "SEARCHING WI-FI NETWORKS"
 msgstr "BUSCANDO REDES INALÁMBRICAS"
@@ -2282,15 +2282,15 @@ msgstr ""
 "de arranque."
 
 msgid "DIRECTORY DEPTH TO INDEX"
-msgstr ""
+msgstr "PROFUNDIDAD DE DIRECTORIOS A INDEXAR"
 
 msgid "UNLIMITED"
-msgstr ""
+msgstr "SIN LÍMITE"
 
 msgid ""
 "Maximum depth scanned inside each ROM folder, to ignore subfolders with many "
 "files."
-msgstr ""
+msgstr "Profundidad máxima escaneada dentro de cada carpeta de ROM para ignorar las subcarpetas con muchos archivos."
 
 msgid "THREADED LOADING"
 msgstr "ACELERAR CARGA DEL SISTEMA"
@@ -2453,17 +2453,17 @@ msgstr ""
 "Las opciones disponibles pueden cambiar según la salida de audio actual."
 
 msgid "HDR"
-msgstr ""
+msgstr "HDR"
 
 msgid "Allows HDR content such as Moonlight HDR streams to the display."
-msgstr ""
+msgstr "Permite mostrar contenido HDR, como los flujos HDR de Moonlight, en la pantalla."
 
 msgid "VARIABLE REFRESH RATE"
 msgstr "FRECUENCIA DE ACTUALIZACIÓN VARIABLE"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "Permite que la pantalla siga la frecuencia de fotogramas. Desactívalo si la pantalla parpadea."
 
 msgid "BOOT SPLASH"
 msgstr "PANTALLA DE ARRANQUE"
@@ -2955,13 +2955,13 @@ msgstr "ACTIVAR AUDIO EN LOS VÍDEOS"
 
 #, c-format
 msgid "UNABLE TO CONNECT TO '%s'"
-msgstr ""
+msgstr "NO SE PUEDE CONECTAR A '%s'"
 
 msgid "WI-FI NETWORKS"
-msgstr ""
+msgstr "REDES WI-FI"
 
 msgid "ADD A WI-FI NETWORK"
-msgstr ""
+msgstr "AÑADIR UNA RED WI-FI"
 
 msgid "WI-FI SSID"
 msgstr "SSID O NOMBRE DE LA RED WI-FI"
@@ -2970,7 +2970,7 @@ msgid "WI-FI KEY"
 msgstr "CLAVE WI-FI"
 
 msgid "USE"
-msgstr ""
+msgstr "USAR"
 
 msgid "FORGET"
 msgstr "OLVIDAR"
@@ -3970,7 +3970,7 @@ msgstr "EN USO"
 msgid ""
 "CALIBRATING GUN\n"
 "Fire on targets to calibrate"
-msgstr ""
+msgstr "CALIBRANDO EL PISTOLETO\nDispara a los objetivos para calibrar"
 
 msgid "Reloaded the games list..."
 msgstr "Recargada la lista de juegos..."
@@ -4179,3 +4179,15 @@ msgstr[1] "hace %d segundos"
 #~ msgstr ""
 #~ "PARA ESCRIBIR EL COMANDO DE INICIO PARA '%s' PRESIONE EL BOTÓN DE "
 #~ "ESCRITURA Y LUEGO COLOQUE UNA ETIQUETA EN EL LECTOR NFC"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "CONTRASEÑA DE ACCESO WEB"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "NO SE PUEDE CAMBIAR LA DISTRIBUCIÓN DEL TECLADO"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "REINICIAR EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "¿REINICIAR EMULATIONSTATION REALMENTE?"

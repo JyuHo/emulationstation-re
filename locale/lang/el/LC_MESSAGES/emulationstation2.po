@@ -4535,3 +4535,15 @@ msgstr[1] "%d δευτερολεπτα πριν"
 
 #~ msgid "AN UPDATE IS AVAILABLE FOR BATOCERA.LINUX"
 #~ msgstr "ΜΙΑ ΑΝΑΒΑΘΜΙΣΗ ΕΙΝΑΙ ΔΙΑΘΕΣΙΜΗ ΓΙΑ ΤΟ BATOCERA.LINUX"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "ΚΩΔΙΚΟΣ ΠΡΟΣΒΑΣΗΣ WEB"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "ΑΔΥΝΑΜΙΑ ΑΛΛΑΓΗΣ ΔΙΑΤΑΞΗΣ ΠΛΗΚΤΡΟΛΟΓΙΟΥ"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "ΕΠΑΝΕΚΚΙΝΗΣΗ EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "ΝΑ ΓΙΝΕΙ ΠΡΑΓΜΑΤΙΚΑ ΕΠΑΝΕΚΚΙΝΗΣΗ ΤΟΥ EMULATIONSTATION;"

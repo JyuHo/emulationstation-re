@@ -4539,9 +4539,6 @@ msgstr[2] ""
 #~ msgid "FORGET BLUETOOTH CONTROLLERS"
 #~ msgstr "ВИДАЛЕННЯ BLUETOOTH КОНТРОЛЕРІВ"
 
-#~ msgid "RESTART EMULATIONSTATION"
-#~ msgstr "ПЕРЕЗАВАНТАЖИТИ EMULATIONSTATION"
-
 #~ msgid "START RETROARCH"
 #~ msgstr "ЗАПУСТИТИ RETROARCH"
 
@@ -4627,3 +4624,15 @@ msgstr[2] ""
 
 #~ msgid "STOP EDITING"
 #~ msgstr "ЗАВЕРШИТИ РЕДАГУВАННЯ"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "ПАРОЛЬ ВЕБ-ДОСТУПУ"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "НЕ ВДАЛОСЯ ЗМІНИТИ РОЗКЛАДКУ КЛАВІАТУРИ"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "ПЕРЕЗАПУСТИТИ EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "ДІЙСНО ПЕРЕЗАПУСТИТИ EMULATIONSTATION?"

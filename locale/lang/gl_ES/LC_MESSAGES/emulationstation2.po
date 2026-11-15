@@ -1413,7 +1413,7 @@ msgid "CONNECTED"
 msgstr "CONECTADO"
 
 msgid "ALREADY CONNECTED"
-msgstr ""
+msgstr "XA CONECTADO"
 
 msgid "SEARCHING WI-FI NETWORKS"
 msgstr "BUSCANDO REDES WI-FI"
@@ -2268,15 +2268,15 @@ msgstr ""
 "auditada, aumenta o tempo de arranque"
 
 msgid "DIRECTORY DEPTH TO INDEX"
-msgstr ""
+msgstr "PROFUNDIDADE DE DIRECTORIOS A INDEXAR"
 
 msgid "UNLIMITED"
-msgstr ""
+msgstr "SEN LÍMITE"
 
 msgid ""
 "Maximum depth scanned inside each ROM folder, to ignore subfolders with many "
 "files."
-msgstr ""
+msgstr "Profundidade máxima explorada dentro de cada cartafol de ROM para ignorar os subcartafoles con moitos ficheiros."
 
 msgid "THREADED LOADING"
 msgstr "ACELERAR CARGA DO SISTEMA"
@@ -2440,17 +2440,17 @@ msgstr ""
 "As opcións dispoñíbeis poden cambiar dependendo da saída de audio actual."
 
 msgid "HDR"
-msgstr ""
+msgstr "HDR"
 
 msgid "Allows HDR content such as Moonlight HDR streams to the display."
-msgstr ""
+msgstr "Permite mostrar contido HDR, como os fluxos HDR de Moonlight, na pantalla."
 
 msgid "VARIABLE REFRESH RATE"
 msgstr "FRECUENCIA DE ACTUALIZACIÓN VARIÁBEL"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "Permite que a pantalla siga a frecuencia de fotogramas. Desactívao se a pantalla parpadea."
 
 msgid "BOOT SPLASH"
 msgstr "PANTALLA DE ARRANQUE"
@@ -2937,13 +2937,13 @@ msgstr "ACTIVAR AUDIO DO VÍDEO DE MOSTRA"
 
 #, c-format
 msgid "UNABLE TO CONNECT TO '%s'"
-msgstr ""
+msgstr "NON SE PODE CONECTAR A '%s'"
 
 msgid "WI-FI NETWORKS"
-msgstr ""
+msgstr "REDES WI-FI"
 
 msgid "ADD A WI-FI NETWORK"
-msgstr ""
+msgstr "ENGADIR UNHA REDE WI-FI"
 
 msgid "WI-FI SSID"
 msgstr "SSID DA WI-FI"
@@ -2952,7 +2952,7 @@ msgid "WI-FI KEY"
 msgstr "CLAVE DA WI-FI"
 
 msgid "USE"
-msgstr ""
+msgstr "USAR"
 
 msgid "FORGET"
 msgstr "ESQUECER"
@@ -4140,3 +4140,15 @@ msgstr[1] "hai %d segundos"
 #~ msgstr ""
 #~ "PARA ESCRIBIR O COMANDO DE INICIO PARA '%s' PREME O BOTÓN DE ESCRIBIR E "
 #~ "DESPOIS COLOCA UNHA ETIQUETA NFC NO GRAVADOR"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "CONTRASINAL DE ACCESO WEB"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "NON SE PODE CAMBIAR A DISPOSICIÓN DO TECLADO"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "REINICIAR EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "¿REINICIAR EMULATIONSTATION DE VERDADE?"

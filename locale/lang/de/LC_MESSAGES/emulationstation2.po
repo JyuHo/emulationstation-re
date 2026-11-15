@@ -4089,3 +4089,15 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d Sekunde her"
 msgstr[1] "%d Sekunden her"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "PASSWORT FÜR WEBZUGRIFF"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "TASTATURLAYOUT KANN NICHT GEÄNDERT WERDEN"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "EMULATIONSTATION NEU STARTEN"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "EMULATIONSTATION WIRKLICH NEU STARTEN?"

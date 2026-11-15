@@ -1424,7 +1424,7 @@ msgid "CONNECTED"
 msgstr "CONECTADO"
 
 msgid "ALREADY CONNECTED"
-msgstr ""
+msgstr "JÁ CONECTADO"
 
 msgid "SEARCHING WI-FI NETWORKS"
 msgstr "PESQUISANDO REDES WI-FI"
@@ -2466,7 +2466,7 @@ msgstr "TAXA DE ATUALIZAÇÃO VARIÁVEL"
 
 msgid ""
 "Lets the display follow the frame rate. Turn off if the screen flickers."
-msgstr ""
+msgstr "Permite que a tela siga a taxa de quadros. Desative se a tela piscar."
 
 msgid "BOOT SPLASH"
 msgstr "TELA DE ABERTURA"
@@ -4123,3 +4123,15 @@ msgstr[1] "%d segundos atrás"
 
 #~ msgid "RESTRICT HOTKEYS TO EXIT"
 #~ msgstr "RESTRINGIR ATALHOS PARA SAIR"
+
+msgid "WEB ACCESS PASSWORD"
+msgstr "SENHA DE ACESSO WEB"
+
+msgid "UNABLE TO CHANGE THE KEYBOARD LAYOUT"
+msgstr "NÃO FOI POSSÍVEL ALTERAR O LAYOUT DO TECLADO"
+
+msgid "RESTART EMULATIONSTATION"
+msgstr "REINICIAR EMULATIONSTATION"
+
+msgid "REALLY RESTART EMULATIONSTATION?"
+msgstr "REALMENTE REINICIAR O EMULATIONSTATION?"
