@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Name=EmulationStation-RE
+GenericName=Emulator Frontend
+GenericName[fr]=Frontend d'émulateurs
+Comment=Browse and launch your games with a controller
+Comment[fr]=Parcourir et lancer vos jeux à la manette
+Exec=emulationstation
+TryExec=emulationstation
+Icon=emulationstation-re
+Terminal=false
+Categories=Game;Emulator;
+Keywords=emulator;games;frontend;retro;controller;
+Keywords[fr]=émulateur;jeux;frontend;rétro;manette;
+StartupNotify=true
