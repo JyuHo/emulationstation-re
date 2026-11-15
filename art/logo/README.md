@@ -1,19 +1,22 @@
 # Logo et splash d'EmulationStation-RE
 
-Logo néon bleu « ES-RE », avec la flèche « recommencer ».
+Assets de la marque, dans la palette du thème Mono : fond charbon, grille
+fine, accent ambré et lettrage monochrome.
 
 | Fichier généré | Source | Commande (depuis ce dossier) |
 | --- | --- | --- |
-| `resources/logo.png` (1920×1080, splash de démarrage) | `logo.py` → `logo.svg` | `python3 logo.py && node render.js && mv logo.png ../../resources/logo.png` |
+| `resources/logo.png` (1920×1080, splash de démarrage) | `logo.py` → `logo.svg` | `python3 logo.py && rsvg-convert -o ../../resources/logo.png logo.svg` |
 | `resources/splash.svg` (icône 720×720) | `splash.py` | `python3 splash.py` |
 
 - Les lettres « ES-RE » (E, S, R, e, tiret, deux-points) sont dessinées à la main dans
   `letters.py` : ce sont des polygones, aucune police n'est nécessaire.
-- Le sous-titre « EmulationStation-RE » est en Orbitron (police libre, licence OFL), converti
-  en chemins par `textpath.py`. Pour régénérer `logo.svg`, il faut `fonttools` et le fichier
-  Orbitron Black de Google Fonts, dans `fonts/Orbitron-Black.ttf` ou à l'emplacement donné
-  par la variable `ORBITRON`. `logo.svg` est versionné tout prêt, donc `render.js` n'a besoin
-  d'aucune police.
+- Le sous-titre « EMULATIONSTATION-RE » est en Ubuntu Condensed, la police des titres
+  du thème, déjà livrée dans `resources/ubuntu_condensed.ttf`. `textpath.py` la convertit
+  en chemins avec fontTools (`python3 -m pip install fonttools`). `logo.svg` est versionné
+  tout prêt, donc le rendu PNG ne demande ni police ni fontTools.
+- `render.js` reste une alternative Puppeteer pour rendre `logo.svg` en PNG.
 - `splash.svg` est lu par NanoSVG, qui ignore `<text>`, les filtres et les dégradés sur les
-  traits. Il n'utilise donc que des chemins pleins, et le halo néon y est simulé par des traits
+  traits. Il n'utilise donc que des chemins pleins, et le halo est simulé par des traits
   superposés semi-transparents.
+
+Palette : `#0A0C10` (fond), `#F2B84B` (ambre), `#F2F4F8` (blanc), `#9AA3AE` (texte secondaire).

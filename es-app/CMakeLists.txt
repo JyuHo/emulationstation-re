@@ -320,8 +320,17 @@ endif()
 install(TARGETS emulationstation
     RUNTIME
     DESTINATION ${CMAKE_INSTALL_BINDIR})
+# Desktop entry and icon, so ES-RE shows up in the applications menu.
+install(FILES ${CMAKE_SOURCE_DIR}/packaging/emulationstation-re.desktop
+    DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
+install(FILES ${CMAKE_SOURCE_DIR}/resources/splash.svg
+    DESTINATION ${CMAKE_INSTALL_DATADIR}/icons/hicolor/scalable/apps
+    RENAME emulationstation-re.svg)
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/resources
     DESTINATION ${CMAKE_INSTALL_DATADIR}/emulationstation)
+# Default theme set, installed system-wide; users can install other themes.
+install(DIRECTORY ${CMAKE_SOURCE_DIR}/themes/
+    DESTINATION ${CMAKE_INSTALL_DATADIR}/emulationstation/themes)
 # Options of each emulator in the per system and per game settings (features/build_es_features.py).
 # A user es_features.cfg in ~/.config/emulationstation replaces it; es_features_*.cfg files add to it.
 install(FILES ${CMAKE_SOURCE_DIR}/features/es_features.cfg
