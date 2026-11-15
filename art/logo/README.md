@@ -7,6 +7,7 @@ fine, accent ambré et lettrage monochrome.
 | --- | --- | --- |
 | `resources/logo.png` (1920×1080, splash de démarrage) | `logo.py` → `logo.svg` | `python3 logo.py && rsvg-convert -o ../../resources/logo.png logo.svg` |
 | `resources/splash.svg` (icône 720×720) | `splash.py` | `python3 splash.py` |
+| `docs/es-re-banner.png` (2400×600, bannière du README) | `banner.py` → `banner.svg` | `python3 banner.py && rsvg-convert -o ../../docs/es-re-banner.png banner.svg` |
 
 - Les lettres « ES-RE » (E, S, R, e, tiret, deux-points) sont dessinées à la main dans
   `letters.py` : ce sont des polygones, aucune police n'est nécessaire.
@@ -18,5 +19,7 @@ fine, accent ambré et lettrage monochrome.
 - `splash.svg` est lu par NanoSVG, qui ignore `<text>`, les filtres et les dégradés sur les
   traits. Il n'utilise donc que des chemins pleins, et le halo est simulé par des traits
   superposés semi-transparents.
+- `banner.py` reprend l'icône de `resources/splash.svg` et le lettrage de `letters.py` pour la
+  bannière du README ; lancer `splash.py` d'abord si l'icône change.
 
 Palette : `#0A0C10` (fond), `#F2B84B` (ambre), `#F2F4F8` (blanc), `#9AA3AE` (texte secondaire).

@@ -8,6 +8,8 @@ EmulationStation-RE
 [![CodeQL](https://github.com/JyuHo/emulationstation-re/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/codeql.yml)
 [![Latest release](https://img.shields.io/github/v/release/JyuHo/emulationstation-re)](https://github.com/JyuHo/emulationstation-re/releases/latest)
 
+![EmulationStation-RE](docs/es-re-banner.png)
+
 EmulationStation-RE is a graphical front-end for emulators with controller navigation, for
 Linux only. It started from the Batocera fork of EmulationStation and was reworked:
 
@@ -25,6 +27,20 @@ Supported platforms:
 * x86_64 (Arch Linux / CachyOS), OpenGL 3.3 core
 * Raspberry Pi 4 and later (Armbian / Debian trixie, arm64), OpenGL ES 3.x
 
+Previews
+--------
+
+### Default theme: es-re-mono
+
+| Systems | Games |
+| --- | --- |
+| ![System view](docs/es-re-mono-system.png) | ![Game view](docs/es-re-mono-games.png) |
+
+The default theme ships with 47 Monochrome console logos, a charcoal and amber palette, and
+matching logo and splash artwork. [Combined preview](docs/es-re-mono-preview.png).
+
+![EmulationStation-RE logo and splash icon](docs/es-re-mono-brand.png)
+
 Installing and running
 ======================
 
@@ -37,6 +53,8 @@ pre-releases out of `releases/latest`.
 sudo pacman -U emulationstation-re-<version>-1-x86_64.pkg.tar.zst   # Arch Linux / CachyOS
 sudo apt install ./emulationstation-re_<version>_arm64.deb          # Debian / Armbian trixie
 ```
+
+The packages also install a desktop entry and icon, so ES-RE appears in the applications menu.
 
 When ES was installed from one of these packages, **Updates & downloads > Check for updates**
 compares it with the latest release (its `latest.json`) and installs the new package:
