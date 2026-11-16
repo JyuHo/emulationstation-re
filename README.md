@@ -8,7 +8,6 @@ EmulationStation-RE
 [![CodeQL](https://github.com/JyuHo/emulationstation-re/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/codeql.yml)
 [![Latest release](https://img.shields.io/github/v/release/JyuHo/emulationstation-re)](https://github.com/JyuHo/emulationstation-re/releases/latest)
 
-![EmulationStation-RE](docs/es-re-banner.png)
 
 EmulationStation-RE is a graphical front-end for emulators with controller navigation, for
 Linux only. It started from the Batocera fork of EmulationStation and was reworked:
