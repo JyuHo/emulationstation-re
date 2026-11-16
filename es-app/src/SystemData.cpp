@@ -1285,7 +1285,9 @@ SystemData* SystemData::loadSystem(pugi::xml_node system, bool fullMode)
 				for (pugi::xml_node coreNode = coresNode.child("core"); coreNode; coreNode = coreNode.next_sibling("core"))
 				{
 					CoreData core;
-					core.name = coreNode.text().as_string();
+					core.name = coreNode.attribute("name").as_string();
+					if (core.name.empty())
+						core.name = coreNode.text().as_string();
 					core.netplay = coreNode.attribute("netplay") && strcmp(coreNode.attribute("netplay").value(), "true") == 0;
 					core.isDefault = coreNode.attribute("default") && strcmp(coreNode.attribute("default").value(), "true") == 0;
 					
