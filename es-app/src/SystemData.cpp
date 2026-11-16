@@ -695,6 +695,32 @@ bool SystemData::loadFeatures()
 					emul.customFeatures.push_back(feat);
 			}
 
+			// Catalog-installed standalone emulators have no <core>. Their options are
+			// described under the core of the same name in es_features.cfg (Dolphin,
+			// DuckStation...), so apply that feature set to the emulator itself.
+			if (emul.cores.empty())
+			{
+				for (auto& escore : it->second.cores)
+				{
+					if (escore.name != emul.name)
+						continue;
+
+					emul.features = emul.features | escore.features;
+					for (auto& feat : escore.customFeatures)
+						emul.customFeatures.push_back(feat);
+
+					for (auto& essystem : escore.systemFeatures)
+					{
+						if (essystem.name != systemName)
+							continue;
+
+						emul.features = emul.features | essystem.features;
+						for (auto feat : essystem.customFeatures)
+							emul.customFeatures.push_back(feat);
+					}
+				}
+			}
+
 			for (auto& core : emul.cores)
 			{
 				for (auto& escore : it->second.cores)
