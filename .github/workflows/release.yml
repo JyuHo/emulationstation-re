@@ -1,6 +1,7 @@
-# On a v* tag, builds the Arch and Debian packages and publishes them as a GitHub release (with
+# On a v* tag, builds the Arch, Debian and Fedora packages and publishes them as a GitHub release (with
 # SHA256SUMS and latest.json), which is where ES finds its updates. Pull requests and pushes to
-# master are built by build-arch.yml, build-debian-amd64.yml and build-debian-arm64.yml.
+# master are built by build-arch.yml, build-fedora.yml, build-debian-amd64.yml and
+# build-debian-arm64.yml.
 name: release
 
 on:
@@ -14,6 +15,10 @@ jobs:
   arch:
     uses: ./.github/workflows/build-arch.yml
     secrets: inherit  # the API keys compiled into the release packages
+
+  fedora:
+    uses: ./.github/workflows/build-fedora.yml
+    secrets: inherit
 
   debian-amd64:
     uses: ./.github/workflows/build-debian.yml
@@ -34,7 +39,7 @@ jobs:
   release:
     name: Publish the release
     if: startsWith(github.ref, 'refs/tags/v')
-    needs: [arch, debian-amd64, debian-arm64]
+    needs: [arch, fedora, debian-amd64, debian-arm64]
     runs-on: ubuntu-24.04
     permissions:
       contents: write
@@ -51,7 +56,7 @@ jobs:
         # what ES's update menu reads, from <repo>/releases/latest/download/latest.json
         run: |
           cd packages
-          sha256sum -- *.pkg.tar.zst *.deb > SHA256SUMS
+          sha256sum -- *.pkg.tar.zst *.deb *.rpm > SHA256SUMS
           cat SHA256SUMS
           python3 - <<'PY'
           import datetime, json, os, re
@@ -63,6 +68,8 @@ jobs:
               key = f"arch-{m.group(1)}" if m else None
               m = re.fullmatch(r"emulationstation-re_.+_(amd64|arm64)\.deb", name)
               key = f"debian-{m.group(1)}" if m else key
+              m = re.fullmatch(r"emulationstation-re-.+\.(x86_64|aarch64)\.rpm", name)
+              key = f"fedora-{m.group(1)}" if m else key
               if key:
                   packages[key] = {"file": name, "sha256": sha, "size": os.path.getsize(name)}
           latest = {
