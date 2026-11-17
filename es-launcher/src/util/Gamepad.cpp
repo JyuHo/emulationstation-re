@@ -96,6 +96,16 @@ namespace es::launcher::util
 			return a.type == b.type && a.id == b.id && (a.type == InputBinding::Type::Button || a.value == b.value);
 		}
 
+		bool hidapiDisabled(const char* value)
+		{
+			if (value == nullptr || value[0] == 0)
+				return true;
+
+			std::string lower(value);
+			std::ranges::transform(lower, lower.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+			return lower == "0" || lower == "false";
+		}
+
 		std::optional<std::string> sdlBinding(std::string_view esInput, std::string_view sdlName, const InputBinding& input)
 		{
 			std::string id = std::to_string(input.id);
@@ -199,7 +209,7 @@ namespace es::launcher::util
 
 	void setPadEnvironment(Command& cmd, const std::vector<Controller>& controllers)
 	{
-		if (const char* hidapi = std::getenv("SDL_JOYSTICK_HIDAPI"); hidapi == nullptr || hidapi[0] == 0)
+		if (hidapiDisabled(std::getenv("SDL_JOYSTICK_HIDAPI")))
 		{
 			cmd.env["SDL_JOYSTICK_HIDAPI"] = "0";
 			for (const char* family : hidapiFamilies)

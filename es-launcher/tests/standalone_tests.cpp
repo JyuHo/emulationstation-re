@@ -187,6 +187,14 @@ static void testGamepad()
 		CHECK(familyCmd.env["SDL_JOYSTICK_HIDAPI_PS5"] == "0");
 		unsetenv("SDL_JOYSTICK_HIDAPI_PS4");
 
+		// a global variable set to 0 disables the families too
+		setenv("SDL_JOYSTICK_HIDAPI", "0", 1);
+		Command zeroCmd;
+		setPadEnvironment(zeroCmd, { makePad(1, 0) });
+		CHECK(zeroCmd.env["SDL_JOYSTICK_HIDAPI"] == "0");
+		CHECK(zeroCmd.env["SDL_JOYSTICK_HIDAPI_PS4"] == "0");
+		unsetenv("SDL_JOYSTICK_HIDAPI");
+
 		// the variable of the environment of ES wins
 		setenv("SDL_JOYSTICK_HIDAPI", "1", 1);
 		Command userCmd;
