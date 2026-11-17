@@ -62,6 +62,10 @@ namespace es::launcher::util
 	//   axes, and SDL2 and SDL3 do not drive the same pads through HIDAPI. Through evdev, SDL2 and
 	//   SDL3 give a pad the same GUID and the same numbers. A SDL_JOYSTICK_HIDAPI set in the
 	//   environment of ES wins, as it does in ES.
+	// - SDL_JOYSTICK_HIDAPI_* =0: the per-family drivers, which win over the global hint when an
+	//   emulator enables one with SDL_SetHint() before SDL_Init (Cemu enables the PlayStation
+	//   ones). An environment variable cannot be overridden by SDL_SetHint(), so the families too
+	//   are disabled in the environment; a family set in the environment of ES wins.
 	// - SDL_JOYSTICK_LINUX_DIGITAL_HATS=1: every hat is a hat, as in ES and RetroArch (SDL would
 	//   otherwise guess, and could turn a d-pad into two axes).
 	// - SDL_GAMECONTROLLERCONFIG: the mapping of each pad in ES (gameControllerConfig()).
