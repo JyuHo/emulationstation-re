@@ -2,11 +2,11 @@
 # EmulationStation-RE updater, run by ES's "Update EmulationStation" menu.
 #
 #   es-re-update platform   prints which release package fits this machine (arch-x86_64,
-#                           debian-amd64, debian-arm64), "not-packaged" when ES was not installed
+#                           debian-amd64, debian-arm64, fedora-x86_64), "not-packaged" when ES was not installed
 #                           from the emulationstation-re package, "unsupported" otherwise
 #   es-re-update install    as root (ES runs it through pkexec): downloads that package from the
 #                           latest GitHub release, checks it against the release's SHA256SUMS and
-#                           installs it with pacman or apt
+#                           installs it with pacman, apt or dnf
 #
 # It takes no other argument, and pkexec clears the environment: the only thing it can install
 # is the package of the latest official release.
@@ -36,6 +36,9 @@ platform() {
             dpkg-query -W -f '${Status}' "$PACKAGE" 2>/dev/null | grep -q 'install ok installed' \
                 || { echo not-packaged; return; }
             echo "debian-$(dpkg --print-architecture)" ;;
+        *" fedora "*)
+            rpm -q "$PACKAGE" >/dev/null 2>&1 || { echo not-packaged; return; }
+            echo "fedora-$(uname -m)" ;;
         *)
             echo unsupported ;;
     esac
@@ -48,6 +51,7 @@ install_latest() {
     case "$platform" in
         arch-*)   pattern="$PACKAGE-*-${platform#arch-}.pkg.tar.zst" ;;
         debian-*) pattern="${PACKAGE}_*_${platform#debian-}.deb" ;;
+        fedora-*) pattern="$PACKAGE-*.${platform#fedora-}.rpm" ;;
         not-packaged) fail "EmulationStation was not installed from the $PACKAGE package" ;;
         *) fail "No package for this system" ;;
     esac
@@ -84,6 +88,7 @@ install_latest() {
     case "$platform" in
         arch-*)   pacman -U --noconfirm "$work/$file" ;;
         debian-*) DEBIAN_FRONTEND=noninteractive apt-get install -y "$work/$file" ;;
+        fedora-*) dnf install -y "$work/$file" ;;
     esac
     echo "Done"
 }

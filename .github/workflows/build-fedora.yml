@@ -1,0 +1,102 @@
+# Builds and checks the Fedora x86_64 RPM package. On a v* tag, release.yml calls this workflow
+# and publishes the package it builds.
+name: Fedora x86_64
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+env:
+  # empty outside a tag: the version then comes from `git describe`
+  ES_VERSION: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || '' }}
+  # API keys compiled into the release packages (see "API keys" in the README). They are only
+  # given to tag builds: pull request and master builds, whose packages anyone can download as
+  # artifacts, are built without them. A secret that is not set is empty, which means no key.
+  SCREENSCRAPER_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.SCREENSCRAPER_DEV_LOGIN || '' }}
+  SCREENSCRAPER_SOFTNAME: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.SCREENSCRAPER_SOFTNAME || '' }}
+  GAMESDB_APIKEY: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.GAMESDB_APIKEY || '' }}
+  HFS_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.HFS_DEV_LOGIN || '' }}
+  CHEEVOS_DEV_LOGIN: ${{ startsWith(github.ref, 'refs/tags/v') && secrets.CHEEVOS_DEV_LOGIN || '' }}
+
+jobs:
+  fedora:
+    name: Fedora x86_64
+    runs-on: ubuntu-24.04
+    container: fedora:latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Install build tools
+        run: |
+          # libvlc is not in Fedora's own repositories: its headers come from RPM Fusion
+          dnf install -y "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm"
+          dnf install -y git gcc-c++ cmake ninja-build rpm-build file gettext ccache python3 \
+            SDL3-devel SDL3_image-devel freetype-devel libcurl-devel rapidjson-devel vlc-devel \
+            alsa-lib-devel libglvnd-devel mesa-libEGL-devel systemd-devel fribidi-devel \
+            libcec-devel zlib-devel
+
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      # ccache's objects of the last build of this branch, else of master (see "Save the compiler cache")
+      - name: Restore the compiler cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .ccache
+          key: ccache-fedora-${{ github.sha }}
+          restore-keys: ccache-fedora-
+
+      - name: Build the package
+        env:
+          CCACHE_DIR: ${{ github.workspace }}/.ccache
+          CCACHE_MAXSIZE: 500M
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          ccache --zero-stats
+          cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr \
+            -DGL=ON -DES_TESTS=ON ${ES_VERSION:+-DES_VERSION="$ES_VERSION"}
+          cmake --build build
+          ccache --show-stats
+          if [ -f build/CTestTestfile.cmake ]; then ctest --test-dir build --output-on-failure; fi
+
+          cd build
+          # RPM versions cannot contain '-': 1.3.0-beta1 becomes 1.3.0~beta1 (sorts before 1.3.0)
+          version=$(sed -n 's/^set(CPACK_PACKAGE_VERSION "\(.*\)")$/\1/p' CPackConfig.cmake | head -n 1)
+          version=$(printf '%s' "$version" | tr '-' '~')
+          cpack -G RPM \
+            -D CPACK_PACKAGE_VERSION="$version" \
+            -D CPACK_RPM_FILE_NAME=RPM-DEFAULT \
+            -D CPACK_RPM_PACKAGE_LICENSE=MIT \
+            -D CPACK_RPM_PACKAGE_URL=https://github.com/JyuHo/emulationstation-re \
+            -D CPACK_RPM_PACKAGE_SUGGESTS="polkit, curl" \
+            -D CPACK_RPM_PACKAGE_CONFLICTS=emulationstation
+
+      # Not on a tag: those builds compile the API keys in, and they must not end up in a cache
+      - name: Save the compiler cache
+        if: ${{ !cancelled() && !startsWith(github.ref, 'refs/tags/') }}
+        uses: actions/cache/save@v4
+        with:
+          path: .ccache
+          key: ccache-fedora-${{ github.sha }}
+
+      - name: Check the package
+        run: |
+          rpm -qip build/*.rpm
+          rpm -qRp build/*.rpm
+          dnf install -y ./build/*.rpm
+          emulationstation --help | head -3
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fedora-x86_64
+          path: build/*.rpm
+          if-no-files-found: error
