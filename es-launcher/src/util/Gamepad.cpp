@@ -39,6 +39,39 @@ namespace es::launcher::util
 			{ "hotkey", "guide" },
 		};
 
+		// SDL's per-family hints default to SDL_JOYSTICK_HIDAPI, but a hint set with SDL_SetHint()
+		// wins over the global one: Cemu sets SDL_JOYSTICK_HIDAPI_PS4 and SDL_JOYSTICK_HIDAPI_PS5
+		// before SDL_Init, so it still gets the HIDAPI GUID of the pads when only
+		// SDL_JOYSTICK_HIDAPI is disabled. SDL_SetHint() cannot override an environment variable,
+		// so each family is disabled in the environment too.
+		constexpr const char* hidapiFamilies[] = {
+			"SDL_JOYSTICK_HIDAPI_8BITDO",
+			"SDL_JOYSTICK_HIDAPI_FLYDIGI",
+			"SDL_JOYSTICK_HIDAPI_GAMECUBE",
+			"SDL_JOYSTICK_HIDAPI_GIP",
+			"SDL_JOYSTICK_HIDAPI_JOY_CONS",
+			"SDL_JOYSTICK_HIDAPI_LG4FF",
+			"SDL_JOYSTICK_HIDAPI_LUNA",
+			"SDL_JOYSTICK_HIDAPI_NINTENDO_CLASSIC",
+			"SDL_JOYSTICK_HIDAPI_PS3",
+			"SDL_JOYSTICK_HIDAPI_PS4",
+			"SDL_JOYSTICK_HIDAPI_PS5",
+			"SDL_JOYSTICK_HIDAPI_SHIELD",
+			"SDL_JOYSTICK_HIDAPI_SINPUT",
+			"SDL_JOYSTICK_HIDAPI_STADIA",
+			"SDL_JOYSTICK_HIDAPI_STEAM",
+			"SDL_JOYSTICK_HIDAPI_STEAM_HORI",
+			"SDL_JOYSTICK_HIDAPI_STEAMDECK",
+			"SDL_JOYSTICK_HIDAPI_SWITCH",
+			"SDL_JOYSTICK_HIDAPI_SWITCH2",
+			"SDL_JOYSTICK_HIDAPI_WII",
+			"SDL_JOYSTICK_HIDAPI_XBOX",
+			"SDL_JOYSTICK_HIDAPI_XBOX_360",
+			"SDL_JOYSTICK_HIDAPI_XBOX_360_WIRELESS",
+			"SDL_JOYSTICK_HIDAPI_XBOX_ONE",
+			"SDL_JOYSTICK_HIDAPI_ZUIKI",
+		};
+
 		constexpr std::pair<const char*, PadControl> controls[] = {
 			{ "b", PadControl::South },
 			{ "a", PadControl::East },
@@ -167,7 +200,15 @@ namespace es::launcher::util
 	void setPadEnvironment(Command& cmd, const std::vector<Controller>& controllers)
 	{
 		if (const char* hidapi = std::getenv("SDL_JOYSTICK_HIDAPI"); hidapi == nullptr || hidapi[0] == 0)
+		{
 			cmd.env["SDL_JOYSTICK_HIDAPI"] = "0";
+			for (const char* family : hidapiFamilies)
+			{
+				const char* value = std::getenv(family);
+				if (value == nullptr || value[0] == 0)
+					cmd.env[family] = "0";
+			}
+		}
 		if (const char* hats = std::getenv("SDL_JOYSTICK_LINUX_DIGITAL_HATS"); hats == nullptr || hats[0] == 0)
 			cmd.env["SDL_JOYSTICK_LINUX_DIGITAL_HATS"] = "1";
 		cmd.env["SDL_GAMECONTROLLERCONFIG"] = gameControllerConfig(controllers);

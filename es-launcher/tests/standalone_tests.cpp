@@ -170,15 +170,29 @@ static void testGamepad()
 	{
 		Command padCmd;
 		unsetenv("SDL_JOYSTICK_HIDAPI");
+		unsetenv("SDL_JOYSTICK_HIDAPI_PS4");
 		setPadEnvironment(padCmd, { makePad(1, 0) });
 		CHECK(padCmd.env["SDL_JOYSTICK_HIDAPI"] == "0");
 		CHECK(padCmd.env["SDL_GAMECONTROLLERCONFIG"].starts_with("030000005e0400008e02000010010000,"));
+		// Cemu enables the PlayStation drivers with SDL_SetHint(): the families must be off too
+		CHECK(padCmd.env["SDL_JOYSTICK_HIDAPI_PS4"] == "0");
+		CHECK(padCmd.env["SDL_JOYSTICK_HIDAPI_PS5"] == "0");
+		CHECK(padCmd.env["SDL_JOYSTICK_HIDAPI_XBOX_360"] == "0");
+
+		// a family variable of the environment of ES wins, as the global one
+		setenv("SDL_JOYSTICK_HIDAPI_PS4", "1", 1);
+		Command familyCmd;
+		setPadEnvironment(familyCmd, { makePad(1, 0) });
+		CHECK(!familyCmd.env.contains("SDL_JOYSTICK_HIDAPI_PS4"));
+		CHECK(familyCmd.env["SDL_JOYSTICK_HIDAPI_PS5"] == "0");
+		unsetenv("SDL_JOYSTICK_HIDAPI_PS4");
 
 		// the variable of the environment of ES wins
 		setenv("SDL_JOYSTICK_HIDAPI", "1", 1);
 		Command userCmd;
 		setPadEnvironment(userCmd, { makePad(1, 0) });
 		CHECK(!userCmd.env.contains("SDL_JOYSTICK_HIDAPI"));
+		CHECK(!userCmd.env.contains("SDL_JOYSTICK_HIDAPI_PS4"));
 		unsetenv("SDL_JOYSTICK_HIDAPI");
 	}
 
