@@ -2,6 +2,7 @@ EmulationStation-RE
 ===================
 
 [![Arch Linux x86_64](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-arch.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-arch.yml)
+[![Fedora x86_64](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-fedora.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-fedora.yml)
 [![Debian amd64](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-debian-amd64.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-debian-amd64.yml)
 [![Debian arm64](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-debian-arm64.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/build-debian-arm64.yml)
 [![Code quality](https://github.com/JyuHo/emulationstation-re/actions/workflows/quality.yml/badge.svg?branch=master)](https://github.com/JyuHo/emulationstation-re/actions/workflows/quality.yml)
@@ -19,12 +20,12 @@ Linux only. It started from the Batocera fork of EmulationStation and was rework
 * **es-launcher**: native C++ generators that configure each emulator (controllers, video, per-game options) and build the command that starts it, in place of Batocera's Python `batocera-launch` (see [Game launcher](#game-launcher)).
 * **Emulator and theme catalog**: the **Emulator catalog** menu and **Updates & downloads > Themes** install emulators, libretro cores and themes listed by [es-re-catalog](https://github.com/JyuHo/es-re-catalog).
 * **The Bezel Project**: **Updates & downloads > The Bezel Project** downloads, system by system, the bezels of the games you have straight from [The Bezel Project](https://github.com/thebezelproject)'s GitHub repositories (nothing of it is shipped with ES), into the `thebezelproject` decoration set, as Batocera does. It uses Batocera's lists of bezels; copies of them in `~/.config/emulationstation/thebezelproject/` (`tbp_systems.txt`, `tbp_<system>.txt`) take precedence.
-* **Updates from GitHub releases**: Arch Linux and Debian packages are published for each `vX.Y.Z` tag, and ES installs them from **Updates & downloads > Check for updates** (see [Installing and running](#installing-and-running)).
+* **Updates from GitHub releases**: Arch Linux, Fedora and Debian packages are published for each `vX.Y.Z` tag, and ES installs them from **Updates & downloads > Check for updates** (see [Installing and running](#installing-and-running)).
 * **Web server** on port 1234, for local tools and remote control. It only listens on `127.0.0.1` unless **Enable public web API access** is turned on, then it answers on `http://<host>:1234`. Its pages show a dashboard (systems, game counts, the running game), a game browser that starts games, and a manager for the ROMs, BIOS, saves and configuration files.
 
 Supported platforms:
 
-* x86_64 (Arch Linux / CachyOS), OpenGL 3.3 core
+* x86_64 (Arch Linux / CachyOS, Fedora), OpenGL 3.3 core
 * Raspberry Pi 4 and later (Armbian / Debian trixie, arm64), OpenGL ES 3.x
 
 Previews
@@ -45,23 +46,26 @@ Installing and running
 ======================
 
 Each `vX.Y.Z` tag publishes a [release](https://github.com/JyuHo/emulationstation-re/releases) with
-an Arch Linux package (x86_64, OpenGL) and Debian trixie packages (amd64 with OpenGL, arm64 with
+an Arch Linux package (x86_64, OpenGL), a Fedora package (RPM, x86_64, OpenGL) and Debian trixie packages (amd64 with OpenGL, arm64 with
 OpenGL ES for the Raspberry Pi 4 and later), plus their `SHA256SUMS`. ES's update menu only sees the latest *full* release: GitHub leaves
 pre-releases out of `releases/latest`.
 
 ```bash
 sudo pacman -U emulationstation-re-<version>-1-x86_64.pkg.tar.zst   # Arch Linux / CachyOS
+sudo dnf install ./emulationstation-re-<version>-1.x86_64.rpm       # Fedora
 sudo apt install ./emulationstation-re_<version>_arm64.deb          # Debian / Armbian trixie
 ```
+
+The Fedora package needs libvlc, which Fedora does not ship: enable [RPM Fusion Free](https://rpmfusion.org/Configuration) before installing it. A pre-release version has a `~` in its RPM version (`1.3.0~beta1`).
 
 The packages also install a desktop entry and icon, so ES-RE appears in the applications menu.
 
 When ES was installed from one of these packages, **Updates & downloads > Check for updates**
 compares it with the latest release (its `latest.json`) and installs the new package:
 `es-re-update` (in `<libexecdir>/emulationstation-re`) downloads it, checks it against the
-release's `SHA256SUMS` and installs it with pacman or apt, run as root by `pkexec`. Its polkit
+release's `SHA256SUMS` and installs it with pacman, dnf or apt, run as root by `pkexec`. Its polkit
 policy lets the active local session do this without a password; it needs `curl` and `pkexec`
-(package `polkit` on Arch, `pkexec` on Debian).
+(package `polkit` on Arch and Fedora, `pkexec` on Debian).
 
 ES also looks at `latest.json` by itself, 10 seconds after it starts and then once a day: when a
 newer version is out, a small notification shows in the top right corner, and nothing shows
@@ -137,6 +141,13 @@ The code is built as C++23, so you need GCC 13+ or Clang 18+ and CMake 3.25+. Yo
 ```bash
 sudo pacman -S --needed base-devel cmake ninja sdl3 sdl3_image freetype2 curl \
   rapidjson vlc alsa-lib gettext fribidi libcec zlib
+```
+
+**On Fedora** (libvlc comes from [RPM Fusion Free](https://rpmfusion.org/Configuration)):
+```bash
+sudo dnf install gcc-c++ cmake ninja-build rpm-build gettext SDL3-devel SDL3_image-devel \
+  freetype-devel libcurl-devel rapidjson-devel vlc-devel alsa-lib-devel libglvnd-devel \
+  mesa-libEGL-devel systemd-devel fribidi-devel libcec-devel zlib-devel
 ```
 
 **On Armbian trixie / Debian:**
@@ -325,11 +336,11 @@ Packages
 
 The version comes from the tag (`git describe` for other builds, or `-DES_VERSION=<version>`).
 To make the packages yourself: `ES_VERSION=<version> makepkg -s` in `packaging/arch`, or configure
-with `-DCMAKE_INSTALL_PREFIX=/usr`, build, and run `cpack` in the build folder for the `.deb`.
-Three workflows build and check the packages for every pull request and every push to `master`,
-each with its own badge at the top of this page: [Arch Linux x86_64](.github/workflows/build-arch.yml),
+with `-DCMAKE_INSTALL_PREFIX=/usr`, build, and run `cpack` in the build folder for the `.deb` (`cpack -G RPM` makes the Fedora package; its workflow also replaces `-` by `~` in the version).
+Four workflows build and check the packages for every pull request and every push to `master`,
+each with its own badge at the top of this page: [Arch Linux x86_64](.github/workflows/build-arch.yml), [Fedora x86_64](.github/workflows/build-fedora.yml),
 [Debian amd64](.github/workflows/build-debian-amd64.yml) and [Debian arm64](.github/workflows/build-debian-arm64.yml).
-When a `vX.Y.Z` tag is pushed, the [release workflow](.github/workflows/release.yml) builds the three
+When a `vX.Y.Z` tag is pushed, the [release workflow](.github/workflows/release.yml) builds them
 again, with the API keys, and publishes them.
 
 Code quality
