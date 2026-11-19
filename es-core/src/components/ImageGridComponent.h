@@ -10,6 +10,7 @@
 #include "Settings.h"
 #include "Sound.h"
 #include <algorithm>
+#include <cmath>
 #include "LocaleES.h"
 #include "components/ScrollbarComponent.h"
 #include "components/TextComponent.h"
@@ -223,7 +224,7 @@ public:
 	bool onMouseWheel(int delta) override;
 	bool hitTest(int x, int y, Transform4x4f& parentTransform, std::vector<GuiComponent*>* pResult = nullptr) override;
 
-	virtual int getCursorIndex() override
+	int getCursorIndex() override
 	{
 		if (mEntriesReordered && mCursor >= 0 && mCursor < (int)mEntries.size())
 			return mEntries[mCursor].data.sourceIndex;
@@ -231,7 +232,7 @@ public:
 		return mCursor;
 	}
 
-	virtual void setCursorIndex(int index, bool force = false) override
+	void setCursorIndex(int index, bool force = false) override
 	{
 		if (mEntriesReordered && index >= 0 && index < (int)mEntries.size())
 		{
@@ -1048,7 +1049,7 @@ void ImageGridComponent<T>::endBandDrag()
 	const int visibleCols = Math::max(1, mGridDimension.x());
 	const int maxScroll = Math::max(0, group.count - visibleCols);
 
-	int col = (int)(group.scrollX / distance + 0.5f);
+	int col = static_cast<int>(std::lround(group.scrollX / distance));
 	col = Math::max(0, Math::min(col, maxScroll));
 
 	group.scrollCol = col;
