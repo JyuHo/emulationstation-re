@@ -33,7 +33,7 @@ jobs:
             libudev-dev libfribidi-dev libcec-dev zlib1g-dev gettext
           clang-tidy --version
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           submodules: recursive
           fetch-depth: 0

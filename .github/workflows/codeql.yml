@@ -31,12 +31,12 @@ jobs:
             rapidjson-dev libvlc-dev libasound2-dev libgl-dev libudev-dev libfribidi-dev \
             libcec-dev zlib1g-dev gettext python3
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           submodules: recursive
           fetch-depth: 0
 
-      - uses: github/codeql-action/init@v3
+      - uses: github/codeql-action/init@v4
         with:
           languages: c-cpp
           build-mode: manual
@@ -49,7 +49,7 @@ jobs:
 
       # uploaded below, once the alerts of external/ are taken out (paths-ignore has no
       # effect on compiled code)
-      - uses: github/codeql-action/analyze@v3
+      - uses: github/codeql-action/analyze@v4
         with:
           category: /language:c-cpp
           output: sarif-results
@@ -60,7 +60,7 @@ jobs:
       - name: List the alerts
         run: python3 .github/scripts/sarif-summary.py --exclude external/ sarif-results/*.sarif
 
-      - uses: github/codeql-action/upload-sarif@v3
+      - uses: github/codeql-action/upload-sarif@v4
         with:
           sarif_file: sarif-results
           category: /language:c-cpp
@@ -72,11 +72,11 @@ jobs:
       contents: read
       security-events: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: github/codeql-action/init@v3
+      - uses: actions/checkout@v7
+      - uses: github/codeql-action/init@v4
         with:
           languages: actions
-      - uses: github/codeql-action/analyze@v3
+      - uses: github/codeql-action/analyze@v4
         with:
           category: /language:actions
           output: sarif-results
