@@ -28,7 +28,10 @@ jobs:
   fedora:
     name: Fedora x86_64
     runs-on: ubuntu-24.04
-    container: fedora:latest
+    # Pinned on purpose: a package built on a Fedora needs that Fedora's glibc or newer (the v2.1.0
+    # RPM, built on `latest`, needed glibc 2.43, which Fedora 43 does not have). Use the oldest Fedora the package should
+    # install on, and move it up when that release reaches its end of life.
+    container: fedora:44
     defaults:
       run:
         shell: bash

@@ -56,7 +56,7 @@ sudo dnf install ./emulationstation-re-<version>-1.x86_64.rpm       # Fedora
 sudo apt install ./emulationstation-re_<version>_arm64.deb          # Debian / Armbian trixie
 ```
 
-The Fedora package needs libvlc, which Fedora does not ship: enable [RPM Fusion Free](https://rpmfusion.org/Configuration) before installing it. A pre-release version has a `~` in its RPM version (`1.3.0~beta1`).
+The Fedora package is built on Fedora 44 and needs Fedora 44 or newer (a derivative such as Nobara follows the release number of the Fedora it is based on). It also needs libvlc, which Fedora does not ship: enable [RPM Fusion Free](https://rpmfusion.org/Configuration) before installing it. A pre-release version has a `~` in its RPM version (`1.3.0~beta1`).
 
 The packages also install a desktop entry and icon, so ES-RE appears in the applications menu.
 
