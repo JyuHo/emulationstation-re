@@ -877,7 +877,7 @@ bool FileData::launchGame(Window* window, LaunchGameOptions options)
 				return RomMSaveSync::syncGame(rommGamePath,
 					[handler](const std::string& text) { handler->setText(text); });
 			},
-			[window](RomMSaveSyncResult result)
+			[window](const RomMSaveSyncResult& result)
 			{
 				if (!result.success)
 				{

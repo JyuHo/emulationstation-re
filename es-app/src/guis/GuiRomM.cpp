@@ -85,7 +85,7 @@ void GuiRomM::syncSaves()
 				{
 					return RomMSaveSync::sync([handler](const std::string& text) { handler->setText(text); });
 				},
-				[w](RomMSaveSyncResult result)
+				[w](const RomMSaveSyncResult& result)
 				{
 					if (!result.success)
 					{
