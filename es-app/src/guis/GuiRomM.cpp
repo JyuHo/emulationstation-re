@@ -99,6 +99,8 @@ void GuiRomM::syncSaves()
 						message += "\r\n" + std::to_string(result.conflicts) + " " + _("conflicts kept on both sides:") + "\r\n";
 						for (size_t i = 0; i < result.conflictNames.size() && i < 8; ++i)
 							message += " - " + result.conflictNames[i] + "\r\n";
+
+						message += "\r\n" + _("Use RESOLVE CONFLICTS to keep the local or the server file.");
 					}
 
 					w->pushGui(new GuiMsgBox(w, message, _("OK"), nullptr, GuiMsgBoxIcon::ICON_INFORMATION));
