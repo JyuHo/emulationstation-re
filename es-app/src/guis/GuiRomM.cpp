@@ -18,6 +18,9 @@ GuiRomM::GuiRomM(Window* window) : GuiSettings(window, _("ROMM"))
 	addInputTextConfigRow(_("PASSWORD"), "RomMPassword", true, true);
 	addInputTextConfigRow(_("API TOKEN"), "RomMToken", true, true);
 
+	addGroup(_("SAVES"));
+	addSwitch(_("SYNC AFTER EACH GAME"), "RomMAutoSyncSaves", true);
+
 	addGroup(_("LIBRARY"));
 	addEntry(_("SYNC LIBRARY"), true, [this] { sync(); });
 	addEntry(_("SYNC SAVES & STATES"), true, [this] { syncSaves(); });

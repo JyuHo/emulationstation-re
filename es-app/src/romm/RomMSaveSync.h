@@ -47,6 +47,11 @@ namespace RomMSaveSync
 	// lives in an emulator's own folder is left alone.
 	RomMSaveSyncResult sync(const std::function<void(const std::string&)>& setText);
 
+	// Sync only the saves and states of one library game, identified by the path
+	// ES launched (the stub file or the top-level .m3u). Used after a game exits.
+	RomMSaveSyncResult syncGame(const std::string& gamePath,
+		const std::function<void(const std::string&)>& setText);
+
 	// The conflicts the last sync kept on both sides, and their resolution.
 	// Resolving keeps the chosen side and updates the baseline, so the next
 	// sync sees both sides as equal.

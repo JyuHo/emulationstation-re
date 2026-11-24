@@ -373,6 +373,36 @@ namespace
 		return result;
 	}
 
+	// The single library game ES just launched, found from its sidecar instead of
+	// walking the whole library.
+	std::vector<GameEntry> libraryGame(const std::string& gamePath)
+	{
+		std::vector<GameEntry> result;
+		std::error_code ec;
+
+		const fs::path path(gamePath);
+		if (!fs::exists(path, ec))
+			return result;
+
+		int romId = 0;
+		if (!readSidecarRomId(gamePath + ".romm.json", romId))
+			return result;
+
+		const std::string directoryName = path.parent_path().filename().string();
+		const std::string prefix = "romm-";
+		if (directoryName.size() <= prefix.size() || directoryName.compare(0, prefix.size(), prefix) != 0)
+			return result;
+
+		GameEntry game;
+		game.romId = romId;
+		game.baseSystem = directoryName.substr(prefix.size());
+		game.gamePath = gamePath;
+		game.gameStem = Utils::FileSystem::getStem(gamePath);
+		result.push_back(game);
+
+		return result;
+	}
+
 	std::vector<std::string> m3uStems(const std::string& gamePath)
 	{
 		std::vector<std::string> result;
@@ -787,23 +817,10 @@ namespace
 
 namespace RomMSaveSync
 {
-	RomMSaveSyncResult sync(const std::function<void(const std::string&)>& setText)
+	static RomMSaveSyncResult syncGames(const std::string& server, const std::vector<GameEntry>& games,
+		const std::function<void(const std::string&)>& setText)
 	{
 		RomMSaveSyncResult result;
-
-		const std::string server = RomMScraperUrl::normalizeServer(Settings::getInstance()->getString("RomMServer"));
-		if (server.empty())
-		{
-			result.error = "No RomM server URL configured";
-			return result;
-		}
-
-		const std::vector<GameEntry> games = libraryGames();
-		if (games.empty())
-		{
-			result.error = "No RomM library game found; sync the library first";
-			return result;
-		}
 
 		std::map<std::string, Baseline> baseline = loadBaseline();
 		std::map<std::string, RomMConflict> pending = conflictMap();
@@ -1050,6 +1067,52 @@ namespace RomMSaveSync
 		persist();
 		result.success = true;
 		return result;
+	}
+
+	RomMSaveSyncResult sync(const std::function<void(const std::string&)>& setText)
+	{
+		RomMSaveSyncResult result;
+
+		const std::string server = RomMScraperUrl::normalizeServer(Settings::getInstance()->getString("RomMServer"));
+		if (server.empty())
+		{
+			result.error = "No RomM server URL configured";
+			return result;
+		}
+
+		const std::vector<GameEntry> games = libraryGames();
+		if (games.empty())
+		{
+			result.error = "No RomM library game found; sync the library first";
+			return result;
+		}
+
+		return syncGames(server, games, setText);
+	}
+
+	RomMSaveSyncResult syncGame(const std::string& gamePath,
+		const std::function<void(const std::string&)>& setText)
+	{
+		RomMSaveSyncResult result;
+
+		const std::string server = RomMScraperUrl::normalizeServer(Settings::getInstance()->getString("RomMServer"));
+		if (server.empty())
+		{
+			result.error = "No RomM server URL configured";
+			return result;
+		}
+
+		const std::vector<GameEntry> games = libraryGame(Utils::FileSystem::getCanonicalPath(gamePath));
+
+		// The library may have been removed or resynced while the game was running;
+		// there is then nothing to sync and nothing to report.
+		if (games.empty())
+		{
+			result.success = true;
+			return result;
+		}
+
+		return syncGames(server, games, setText);
 	}
 
 	std::vector<RomMConflict> loadConflicts()

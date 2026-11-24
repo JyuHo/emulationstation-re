@@ -39,6 +39,7 @@
 #include "views/gamelist/GameNameFormatter.h"
 #include "watchers/WatchersManager.h"
 #include "romm/RomMLibrary.h"
+#include "romm/RomMSaveSync.h"
 
 using namespace Utils::Platform;
 
@@ -866,6 +867,37 @@ bool FileData::launchGame(Window* window, LaunchGameOptions options)
 
 	if (exitCode >= 200 && exitCode <= 300)
 		window->pushGui(new GuiMsgBox(window, _("AN ERROR OCCURRED") + ":\r\n" + getMessageFromExitCode(exitCode), _("OK"), nullptr, GuiMsgBoxIcon::ICON_ERROR));
+
+	// Push the saves and states of a RomM game back to RomM once the emulator exits.
+	if (system->isRomMSystem() && Settings::getInstance()->getBool("RomMAutoSyncSaves"))
+	{
+		const std::string rommGamePath = gameToUpdate->getPath();
+		window->pushGui(new GuiLoading<RomMSaveSyncResult>(window, _("SYNCING ROMM SAVES"),
+			[rommGamePath](IGuiLoadingHandler* handler)
+			{
+				return RomMSaveSync::syncGame(rommGamePath,
+					[handler](const std::string& text) { handler->setText(text); });
+			},
+			[window](RomMSaveSyncResult result)
+			{
+				if (!result.success)
+				{
+					window->pushGui(new GuiMsgBox(window, _("ROMM SAVE SYNC FAILED") + ":\r\n" + result.error,
+						_("OK"), nullptr, GuiMsgBoxIcon::ICON_ERROR));
+					return;
+				}
+
+				if (result.conflicts > 0)
+				{
+					std::string message = std::to_string(result.conflicts) + " " + _("conflicts kept on both sides:") + "\r\n";
+					for (size_t i = 0; i < result.conflictNames.size() && i < 8; ++i)
+						message += " - " + result.conflictNames[i] + "\r\n";
+					message += "\r\n" + _("Use RESOLVE CONFLICTS in the ROMM menu to choose a side.");
+
+					window->pushGui(new GuiMsgBox(window, message, _("OK"), nullptr, GuiMsgBoxIcon::ICON_INFORMATION));
+				}
+			}));
+	}
 
 	return exitCode == 0;
 }

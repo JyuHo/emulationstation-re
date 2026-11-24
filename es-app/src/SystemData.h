@@ -100,6 +100,8 @@ public:
 	// The system whose settings, emulators and command a generated system
 	// reuses: itself, unless it has a <rommBaseSystem>.
 	inline const std::string& getLaunchSystemName() const { return mMetadata.baseSystem.empty() ? mMetadata.name : mMetadata.baseSystem; }
+	// True for the systems generated from a RomM library.
+	inline bool isRomMSystem() const { return !mMetadata.baseSystem.empty(); }
 	inline const std::string& getStartPath() const { return mEnvData->mStartPath; }
 	inline const std::set<std::string>& getExtensions() const { return mEnvData->mSearchExtensions; }
 	inline const std::string& getThemeFolder() const { return mMetadata.themeFolder; }

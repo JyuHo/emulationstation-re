@@ -146,6 +146,7 @@ void Settings::setDefaults()
 	mStringMap["StartupSystem"] = "lastsystem";
 	mStringMap["ShowTags"] = "";
 	mBoolMap["UseFileCache"] = true;
+	mBoolMap["RomMAutoSyncSaves"] = true;
 
 	mBoolMap["ShowOnlyExit"] = false;
 	mBoolMap["FullscreenBorderless"] = false;
