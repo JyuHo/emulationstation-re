@@ -48,7 +48,7 @@ void GuiRomM::syncNow()
 		{
 			return RomMLibrary::sync([handler](const std::string& text) { handler->setText(text); });
 		},
-		[window](RomMSyncResult result)
+		[window](const RomMSyncResult& result)
 		{
 			if (!result.success)
 			{

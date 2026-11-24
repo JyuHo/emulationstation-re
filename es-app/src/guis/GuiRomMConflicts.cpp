@@ -59,7 +59,7 @@ void GuiRomMConflicts::resolve(const RomMConflict& conflict, bool keepLocal)
 			return RomMSaveSync::resolveConflict(conflict, keepLocal,
 				[handler](const std::string& text) { handler->setText(text); });
 		},
-		[this, window](RomMResolveResult result)
+		[this, window](const RomMResolveResult& result)
 		{
 			if (!result.success)
 			{

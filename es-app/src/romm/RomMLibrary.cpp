@@ -559,7 +559,7 @@ namespace
 			for (const RomFileInfo& file : base)
 			{
 				if (!ids.empty())
-					ids += ",";
+					ids += ',';
 				ids += std::to_string(file.id);
 			}
 
@@ -1181,7 +1181,7 @@ namespace RomMLibrary
 			if (extensions.find(".m3u") == std::string::npos)
 			{
 				if (!extensions.empty() && extensions.back() != ' ')
-					extensions += " ";
+					extensions += ' ';
 				extensions += ".m3u";
 				system.child("extension").text().set(extensions.c_str());
 			}
@@ -1235,7 +1235,7 @@ namespace RomMLibrary
 			if (!entry.is_regular_file())
 				continue;
 
-			const fs::path path = entry.path();
+			const fs::path& path = entry.path();
 			if (path.filename().string().ends_with(".romm.json"))
 				continue;
 

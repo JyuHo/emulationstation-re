@@ -703,14 +703,13 @@ bool FileData::launchGame(Window* window, LaunchGameOptions options)
 	{
 		const std::string gamePath = gameToUpdate->getPath();
 		auto error = std::make_shared<std::string>();
-		const LaunchGameOptions pendingOptions = options;
 
 		window->pushGui(new GuiLoading<bool>(window, _("DOWNLOADING GAME"),
 			[gamePath, error](IGuiLoadingHandler* handler)
 			{
 				return RomMLibrary::downloadGame(gamePath, [handler](const std::string& text) { handler->setText(text); }, *error);
 			},
-			[this, window, pendingOptions, error](bool downloaded)
+			[this, window, options, error](bool downloaded)
 			{
 				if (!downloaded)
 				{
@@ -719,7 +718,7 @@ bool FileData::launchGame(Window* window, LaunchGameOptions options)
 					return;
 				}
 
-				launchGame(window, pendingOptions);
+				launchGame(window, options);
 			}));
 
 		return true;
