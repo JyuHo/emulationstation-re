@@ -19,6 +19,7 @@ Linux only. It started from the Batocera fork of EmulationStation and was rework
 * **XDG folders**: settings in `~/.config`, data in `~/.local/share`, cache, logs and runtime files in their own XDG folders (see [Where files live](#where-files-live)).
 * **es-launcher**: native C++ generators that configure each emulator (controllers, video, per-game options) and build the command that starts it, in place of Batocera's Python `batocera-launch` (see [Game launcher](#game-launcher)).
 * **Emulator and theme catalog**: the **Emulator catalog** menu and **Updates & downloads > Themes** install emulators, libretro cores and themes listed by [es-re-catalog](https://github.com/JyuHo/es-re-catalog).
+* **RomM**: sync a self-hosted [RomM](https://romm.app/) library into generated `romm-<system>` systems, with its metadata and images, download each ROM the first time it is launched, and sync saves and states after each game.
 * **The Bezel Project**: **Updates & downloads > The Bezel Project** downloads, system by system, the bezels of the games you have straight from [The Bezel Project](https://github.com/thebezelproject)'s GitHub repositories (nothing of it is shipped with ES), into the `thebezelproject` decoration set, as Batocera does. It uses Batocera's lists of bezels; copies of them in `~/.config/emulationstation/thebezelproject/` (`tbp_systems.txt`, `tbp_<system>.txt`) take precedence.
 * **Updates from GitHub releases**: Arch Linux, Fedora and Debian packages are published for each `vX.Y.Z` tag, and ES installs them from **Updates & downloads > Check for updates** (see [Installing and running](#installing-and-running)).
 * **Web server** on port 1234, for local tools and remote control. It only listens on `127.0.0.1` unless **Enable public web API access** is turned on, then it answers on `http://<host>:1234`. Its pages show a dashboard (systems, game counts, the running game), a game browser that starts games, and a manager for the ROMs, BIOS, saves and configuration files.
@@ -290,6 +291,14 @@ publish a build or a cache made with your own keys.
 IGDB and ArcadeDB need no build-time key. The IGDB client ID and secret are entered in the
 scraper settings (**Client ID** and **Client secret**, saved as `IGDBClientID` and `IGDBSecret`).
 
+RomM needs no build-time key either. Enter the URL of your RomM server and either your
+username/password or a client API token in the scraper settings (**Server URL**, **Username**,
+**Password**, **API token**, saved as `RomMServer`, `RomMUser`, `RomMPassword` and `RomMToken`).
+The API token is created in RomM under **Settings > Client tokens** with the `roms.read` and
+`platforms.read` scopes. A token takes precedence over the username and password. The scraper
+matches each ES-RE system to a RomM platform by its slug, its library folder, or the usual
+Batocera/ES-RE aliases, and reads the metadata and media RomM already holds for the game.
+
 The scraper account settings also accept user keys:
 
 - **ScreenScraper**: your account username/password, plus the developer ID and password
@@ -302,6 +311,36 @@ The scraper account settings also accept user keys:
 A key entered by the user takes precedence over the compiled one. The keys are saved in
 `es_settings.cfg`, chmod `0600` (the optional `config` file used by `SystemConf` is chmod
 `0600` too). The compiled keys remain in the binary as a fallback.
+
+RomM library
+------------
+
+The main menu's **ROMM** page syncs a [RomM](https://romm.app/) server into ES-RE:
+
+- **Sync library** reads the RomM platforms and games, writes a generated
+  `es_systems_romm.cfg` (one `romm-<system>` per platform), a stub file and a sidecar per
+  game, and a `gamelist.xml` with the metadata and the cover and logo. A generated system
+  reuses the emulator and settings of its local counterpart: `romm-snes` runs as `snes`.
+  Multi-disc games are downloaded as RomM's archive, extracted into a per-game folder, and
+  get a top-level `.m3u` playlist.
+- **Sync saves & states** uploads and downloads the saves and states of the RomM library
+  games. It reads the automatic save and the `.state` and `.state1` to `.state9` states
+  under ES-RE's `saves/<system>` folder, and keeps a per-game baseline to decide which side
+  changed. A save changed on both sides is recorded in `romm/library/conflicts.json` and
+  kept on both sides. Saves that a standalone emulator keeps in its own folder are not
+  synced yet.
+- **Resolve conflicts** lists the conflicts the last sync kept. For each one, **keep local**
+  uploads the local file and **keep server** downloads the server file; both choices update
+  the baseline so the next sync sees the two sides as equal.
+- **Sync after each game** uploads and downloads the saves and states of the RomM game that
+  just exited. It is on by default; the **SYNC AFTER EACH GAME** switch turns it off.
+- **Clear downloaded games** empties the downloaded ROMs; the next launch downloads them
+  again.
+- **Remove RomM library** removes the generated systems and the library.
+
+The RomM server URL, username/password and API token are on the same page. A game is
+downloaded from RomM the first time it is launched, then kept under
+`~/.local/share/emulationstation/romm/library/`.
 
 Tests
 -----
@@ -456,7 +495,7 @@ The `gamelist.xml` file for a system defines metadata for games, such as a name,
 
 If at least one game in a system has an image specified, ES will use the detailed view for that system (which displays metadata alongside the game list).
 
-*You can use ES's [scraping](http://en.wikipedia.org/wiki/Web_scraping) tools (ScreenScraper, TheGamesDB, HfsDB, IGDB, ArcadeDB; see [API keys](#api-keys) for the ones that need a key at build time) to avoid creating a `gamelist.xml` by hand.*  There are two ways to run the scraper:
+*You can use ES's [scraping](http://en.wikipedia.org/wiki/Web_scraping) tools (ScreenScraper, TheGamesDB, HfsDB, IGDB, ArcadeDB, RomM; see [API keys](#api-keys) for the ones that need a key at build time) to avoid creating a `gamelist.xml` by hand.*  There are two ways to run the scraper:
 
 * **If you want to scrape multiple games:** press start to open the menu and choose the "SCRAPER" option.  Adjust your settings and press "SCRAPE NOW".
 * **If you just want to scrape one game:** find the game on the game list in ES and press select.  Choose "EDIT THIS GAME'S METADATA" and then press the "SCRAPE" button at the bottom of the metadata editor.

@@ -81,6 +81,13 @@ set(ES_HEADERS
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiSaveState.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFileBrowser.h	
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFavoriteMusicSelector.h	
+	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiRomM.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiRomMConflicts.h
+
+    # RomM
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMClient.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMLibrary.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMSaveSync.h
 
     # Scrapers
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/Scraper.h
@@ -91,6 +98,8 @@ set(ES_HEADERS
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/ArcadeDBJSONScraper.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/HfsDBScraper.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/IGDBScraper.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/RomMScraper.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/RomMScraperUrl.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/ScreenScraper.h    
 
     # Views
@@ -195,6 +204,13 @@ set(ES_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiSaveState.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFileBrowser.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFavoriteMusicSelector.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiRomM.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiRomMConflicts.cpp
+
+    # RomM
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMClient.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMLibrary.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMSaveSync.cpp
 
     # Scrapers
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/Scraper.cpp
@@ -205,6 +221,8 @@ set(ES_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/ArcadeDBJSONScraper.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/HfsDBScraper.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/IGDBScraper.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/RomMScraper.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/RomMScraperUrl.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/ScreenScraper.cpp	
 
     # Views
@@ -277,6 +295,13 @@ if(ES_TESTS)
     target_include_directories(es-app-scraper-key-format-tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
     target_compile_options(es-app-scraper-key-format-tests PRIVATE -Wall -Wextra)
     add_test(NAME es-app-scraper-key-format-tests COMMAND es-app-scraper-key-format-tests)
+
+    add_executable(es-app-romm-scraper-tests
+        ${CMAKE_CURRENT_SOURCE_DIR}/tests/romm_scraper_tests.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/RomMScraperUrl.cpp)
+    target_include_directories(es-app-romm-scraper-tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
+    target_compile_options(es-app-romm-scraper-tests PRIVATE -Wall -Wextra)
+    add_test(NAME es-app-romm-scraper-tests COMMAND es-app-romm-scraper-tests)
 
     add_executable(es-app-update-tests
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/update_tests.cpp

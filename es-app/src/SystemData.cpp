@@ -1168,6 +1168,7 @@ SystemData* SystemData::loadSystem(pugi::xml_node system, bool fullMode)
 	md.releaseYear = Utils::String::toInteger(system.child("release").text().get());
 	md.hardwareType = system.child("hardware").text().get();
 	md.themeFolder = system.child("theme").text().as_string(md.name.c_str());
+	md.baseSystem = system.child("rommBaseSystem").text().get();
 
 	// convert extensions list from a string into a vector of strings
 	std::set<std::string> extensions;
@@ -1910,7 +1911,7 @@ SystemData* SystemData::getParentGroupSystem()
 
 std::string SystemData::getEmulator(bool resolveDefault)
 {
-	std::string emulator = SystemConf::getInstance()->get(getName() + ".emulator");
+	std::string emulator = SystemConf::getInstance()->get(getLaunchSystemName() + ".emulator");
 
 	for (auto emul : mEmulators)
 		if (emul.name == emulator)
@@ -1924,7 +1925,7 @@ std::string SystemData::getEmulator(bool resolveDefault)
 
 std::string SystemData::getCore(bool resolveDefault)
 {
-	std::string core = SystemConf::getInstance()->get(getName() + ".core");
+	std::string core = SystemConf::getInstance()->get(getLaunchSystemName() + ".core");
 
 	if (!core.empty() && core != "auto")
 	{

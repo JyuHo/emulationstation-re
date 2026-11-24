@@ -42,6 +42,7 @@
 #include "AudioManager.h"
 #include "FavoriteMusicManager.h"
 #include "guis/GuiFavoriteMusicSelector.h"
+#include "guis/GuiRomM.h"
 
 #include <LibretroRatio.h>
 #include "guis/GuiTextEditPopupKeyboard.h"
@@ -190,6 +191,8 @@ GuiMenu::GuiMenu(Window *window, bool animate) : GuiComponent(window), mMenu(win
 		}
 
 		addEntry(_("SCRAPER").c_str(), true, [this] { openScraperSettings(); }, "iconScraper");
+
+		addEntry(_("ROMM").c_str(), true, [this] { mWindow->pushGui(new GuiRomM(mWindow)); }, "iconNetwork");
 
 		if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::THEMESDOWNLOADER))
 			addEntry(_("UPDATES & DOWNLOADS"), true, [this] { openUpdatesSettings(); }, "iconUpdates");
