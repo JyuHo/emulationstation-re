@@ -82,6 +82,7 @@ set(ES_HEADERS
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFileBrowser.h	
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFavoriteMusicSelector.h	
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiRomM.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiRomMConflicts.h
 
     # RomM
     ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMClient.h
@@ -204,6 +205,7 @@ set(ES_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFileBrowser.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFavoriteMusicSelector.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiRomM.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiRomMConflicts.cpp
 
     # RomM
     ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMClient.cpp

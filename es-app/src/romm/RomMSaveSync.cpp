@@ -209,6 +209,99 @@ namespace
 		writeTextFile(baselinePath(), buffer.GetString());
 	}
 
+	std::string conflictsPath()
+	{
+		return RomMLibrary::libraryRoot() + "/conflicts.json";
+	}
+
+	std::vector<RomMConflict> loadConflictList()
+	{
+		std::vector<RomMConflict> result;
+
+		std::ifstream in(conflictsPath(), std::ios::binary);
+		if (!in)
+			return result;
+
+		std::stringstream content;
+		content << in.rdbuf();
+
+		rapidjson::Document document;
+		document.Parse(content.str().c_str());
+		if (document.HasParseError() || !document.IsArray())
+			return result;
+
+		for (const rapidjson::Value& value : document.GetArray())
+		{
+			if (!value.IsObject())
+				continue;
+
+			RomMConflict conflict;
+			conflict.id = stringValue(value, "id");
+			conflict.romId = intValue(value, "rom_id");
+			conflict.game = stringValue(value, "game");
+			conflict.baseSystem = stringValue(value, "base_system");
+			conflict.kind = stringValue(value, "kind");
+			conflict.suffix = stringValue(value, "suffix");
+			conflict.localPath = stringValue(value, "local_path");
+			conflict.localHash = stringValue(value, "local_hash");
+			conflict.localMtime = int64Value(value, "local_mtime");
+			conflict.serverId = intValue(value, "server_id");
+			conflict.serverUpdated = int64Value(value, "server_updated");
+			conflict.serverHash = stringValue(value, "server_hash");
+			conflict.serverExtension = stringValue(value, "server_extension");
+			conflict.serverFileName = stringValue(value, "server_file_name");
+			conflict.serverEmulator = stringValue(value, "server_emulator");
+
+			if (!conflict.id.empty() && conflict.romId > 0)
+				result.push_back(conflict);
+		}
+
+		return result;
+	}
+
+	void saveConflicts(const std::vector<RomMConflict>& conflicts)
+	{
+		rapidjson::Document document;
+		document.SetArray();
+		rapidjson::Document::AllocatorType& allocator = document.GetAllocator();
+
+		for (const RomMConflict& conflict : conflicts)
+		{
+			rapidjson::Value entry(rapidjson::kObjectType);
+			entry.AddMember("id", rapidjson::Value(conflict.id.c_str(), allocator), allocator);
+			entry.AddMember("rom_id", conflict.romId, allocator);
+			entry.AddMember("game", rapidjson::Value(conflict.game.c_str(), allocator), allocator);
+			entry.AddMember("base_system", rapidjson::Value(conflict.baseSystem.c_str(), allocator), allocator);
+			entry.AddMember("kind", rapidjson::Value(conflict.kind.c_str(), allocator), allocator);
+			entry.AddMember("suffix", rapidjson::Value(conflict.suffix.c_str(), allocator), allocator);
+			entry.AddMember("local_path", rapidjson::Value(conflict.localPath.c_str(), allocator), allocator);
+			entry.AddMember("local_hash", rapidjson::Value(conflict.localHash.c_str(), allocator), allocator);
+			entry.AddMember("local_mtime", conflict.localMtime, allocator);
+			entry.AddMember("server_id", conflict.serverId, allocator);
+			entry.AddMember("server_updated", conflict.serverUpdated, allocator);
+			entry.AddMember("server_hash", rapidjson::Value(conflict.serverHash.c_str(), allocator), allocator);
+			entry.AddMember("server_extension", rapidjson::Value(conflict.serverExtension.c_str(), allocator), allocator);
+			entry.AddMember("server_file_name", rapidjson::Value(conflict.serverFileName.c_str(), allocator), allocator);
+			entry.AddMember("server_emulator", rapidjson::Value(conflict.serverEmulator.c_str(), allocator), allocator);
+			document.PushBack(entry, allocator);
+		}
+
+		rapidjson::StringBuffer buffer;
+		rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);
+		document.Accept(writer);
+		writeTextFile(conflictsPath(), buffer.GetString());
+	}
+
+	std::map<std::string, RomMConflict> conflictMap()
+	{
+		std::map<std::string, RomMConflict> result;
+
+		for (const RomMConflict& conflict : loadConflictList())
+			result[conflict.id] = conflict;
+
+		return result;
+	}
+
 	bool readSidecarRomId(const fs::path& path, int& romId)
 	{
 		std::ifstream in(path, std::ios::binary);
@@ -543,7 +636,8 @@ namespace
 		return name;
 	}
 
-	bool uploadFile(const std::string& url, const std::string& field, const std::string& filePath, rapidjson::Document& response, std::string& error)
+	bool uploadFile(const std::string& url, const std::string& field, const std::string& filePath,
+		rapidjson::Document& response, std::string& error, const std::string& fileNameOverride = "")
 	{
 		const std::vector<char> data = Utils::FileSystem::readAllBytes(filePath);
 		if (data.empty())
@@ -559,7 +653,8 @@ namespace
 		}
 
 		const std::string boundary = "----EmulationStationRE" + std::to_string(Utils::Time::now());
-		const std::string fileName = safeFileName(Utils::FileSystem::getFileName(filePath));
+		const std::string fileName = safeFileName(fileNameOverride.empty()
+			? Utils::FileSystem::getFileName(filePath) : fileNameOverride);
 
 		std::string body;
 		body.reserve(data.size() + 512);
@@ -625,13 +720,15 @@ namespace
 	}
 
 	bool uploadState(const std::string& server, const GameEntry& game, const std::string& filePath,
-		const std::string& localHash, ServerState& uploaded, std::string& error)
+		const std::string& localHash, ServerState& uploaded, std::string& error,
+		const std::string& fileNameOverride = "", const std::string& emulatorOverride = "")
 	{
+		const std::string emulator = emulatorOverride.empty() ? game.baseSystem : emulatorOverride;
 		std::string url = server + "/api/states?rom_id=" + std::to_string(game.romId) +
-			"&emulator=" + HttpReq::urlEncode(game.baseSystem);
+			"&emulator=" + HttpReq::urlEncode(emulator);
 
 		rapidjson::Document response;
-		if (!uploadFile(url, "stateFile", filePath, response, error))
+		if (!uploadFile(url, "stateFile", filePath, response, error, fileNameOverride))
 			return false;
 
 		uploaded.id = intValue(response, "id");
@@ -709,7 +806,20 @@ namespace RomMSaveSync
 		}
 
 		std::map<std::string, Baseline> baseline = loadBaseline();
+		std::map<std::string, RomMConflict> pending = conflictMap();
 		const fs::path savesRoot = Paths::getSavesPath();
+
+		auto persist = [&]()
+		{
+			saveBaseline(baseline);
+
+			std::vector<RomMConflict> conflicts;
+			conflicts.reserve(pending.size());
+			for (const auto& [id, conflict] : pending)
+				conflicts.push_back(conflict);
+
+			saveConflicts(conflicts);
+		};
 
 		for (const GameEntry& game : games)
 		{
@@ -733,7 +843,7 @@ namespace RomMSaveSync
 				if (!fetchServerSaves(server, game.romId, saves, error))
 				{
 					result.error = error;
-					saveBaseline(baseline);
+					persist();
 					return result;
 				}
 
@@ -755,7 +865,7 @@ namespace RomMSaveSync
 					if (!uploadSave(server, game, localPath, localHash, uploaded, error))
 					{
 						result.error = error;
-						saveBaseline(baseline);
+						persist();
 						return result;
 					}
 
@@ -773,7 +883,7 @@ namespace RomMSaveSync
 					if (!downloadFile(server, "/api/saves/" + std::to_string(serverSave->id) + "/content", destination, error))
 					{
 						result.error = error;
-						saveBaseline(baseline);
+						persist();
 						return result;
 					}
 
@@ -785,11 +895,31 @@ namespace RomMSaveSync
 				{
 					result.conflicts++;
 					result.conflictNames.push_back(game.gameStem + " (save)");
+
+					RomMConflict conflict;
+					conflict.id = key;
+					conflict.romId = game.romId;
+					conflict.game = game.gameStem;
+					conflict.baseSystem = game.baseSystem;
+					conflict.kind = "save";
+					conflict.localPath = localPath;
+					conflict.localHash = localHash;
+					conflict.localMtime = localMtime;
+					conflict.serverId = serverSave->id;
+					conflict.serverUpdated = serverSave->updated;
+					conflict.serverHash = serverHash;
+					conflict.serverExtension = serverSave->extension;
+					conflict.serverFileName = serverSave->fileName;
+					conflict.serverEmulator = serverSave->emulator;
+					pending[key] = conflict;
 				}
 				else if (serverSave != nullptr)
 				{
 					remember(baseline[key], serverSave->id, serverSave->updated, serverHash, localPath, localHash);
 				}
+
+				if (action != Action::Conflict)
+					pending.erase(key);
 			}
 
 			// States
@@ -798,7 +928,7 @@ namespace RomMSaveSync
 				if (!fetchServerStates(server, game.romId, states, error))
 				{
 					result.error = error;
-					saveBaseline(baseline);
+					persist();
 					return result;
 				}
 
@@ -832,7 +962,7 @@ namespace RomMSaveSync
 						if (!uploadState(server, game, state.path, localHash, uploaded, error))
 						{
 							result.error = error;
-							saveBaseline(baseline);
+							persist();
 							return result;
 						}
 
@@ -849,7 +979,7 @@ namespace RomMSaveSync
 						if (!downloadFile(server, "/api/states/" + std::to_string(serverState->id) + "/content", destination, error))
 						{
 							result.error = error;
-							saveBaseline(baseline);
+							persist();
 							return result;
 						}
 
@@ -861,11 +991,32 @@ namespace RomMSaveSync
 					{
 						result.conflicts++;
 						result.conflictNames.push_back(game.gameStem + " (" + state.suffix + ")");
+
+						RomMConflict conflict;
+						conflict.id = key;
+						conflict.romId = game.romId;
+						conflict.game = game.gameStem;
+						conflict.baseSystem = game.baseSystem;
+						conflict.kind = "state";
+						conflict.suffix = state.suffix;
+						conflict.localPath = state.path;
+						conflict.localHash = localHash;
+						conflict.localMtime = localMtime;
+						conflict.serverId = serverState->id;
+						conflict.serverUpdated = serverState->updated;
+						conflict.serverHash = serverHash;
+						conflict.serverExtension = serverState->extension;
+						conflict.serverFileName = serverState->fileName;
+						conflict.serverEmulator = serverState->emulator;
+						pending[key] = conflict;
 					}
 					else if (serverState != nullptr)
 					{
 						remember(baseline[key], serverState->id, serverState->updated, serverHash, state.path, localHash);
 					}
+
+					if (action != Action::Conflict)
+						pending.erase(key);
 
 					handled.insert(extension);
 				}
@@ -883,7 +1034,7 @@ namespace RomMSaveSync
 					if (!downloadFile(server, "/api/states/" + std::to_string(serverState->id) + "/content", destination, error))
 					{
 						result.error = error;
-						saveBaseline(baseline);
+						persist();
 						return result;
 					}
 
@@ -891,11 +1042,116 @@ namespace RomMSaveSync
 					const std::string key = "state:" + std::to_string(game.romId) + ":" + extension;
 					remember(baseline[key], serverState->id, serverState->updated, serverState->hash,
 						destination.string(), fileMd5(destination.string()));
+					pending.erase(key);
 				}
 			}
 		}
 
+		persist();
+		result.success = true;
+		return result;
+	}
+
+	std::vector<RomMConflict> loadConflicts()
+	{
+		return loadConflictList();
+	}
+
+	RomMResolveResult resolveConflict(const RomMConflict& conflict, bool keepLocal,
+		const std::function<void(const std::string&)>& setText)
+	{
+		RomMResolveResult result;
+
+		const std::string server = RomMScraperUrl::normalizeServer(Settings::getInstance()->getString("RomMServer"));
+		if (server.empty())
+		{
+			result.error = "No RomM server URL configured";
+			return result;
+		}
+
+		if (conflict.id.empty() || conflict.romId <= 0 || conflict.kind.empty())
+		{
+			result.error = "Invalid conflict";
+			return result;
+		}
+
+		GameEntry game;
+		game.romId = conflict.romId;
+		game.baseSystem = conflict.baseSystem;
+		game.gamePath = conflict.localPath;
+		game.gameStem = Utils::FileSystem::getStem(conflict.localPath);
+
+		std::map<std::string, Baseline> baseline = loadBaseline();
+		const fs::path savesRoot = Paths::getSavesPath();
+		std::error_code ec;
+
+		if (keepLocal)
+		{
+			if (conflict.localPath.empty() || !fs::exists(conflict.localPath, ec))
+			{
+				result.error = "The local file is missing: " + conflict.localPath;
+				return result;
+			}
+
+			const std::string localHash = fileMd5(conflict.localPath);
+
+			if (conflict.kind == "save")
+			{
+				if (setText)
+					setText("Uploading " + conflict.game + " save...");
+
+				ServerSave uploaded;
+				if (!uploadSave(server, game, conflict.localPath, localHash, uploaded, result.error))
+					return result;
+
+				remember(baseline[conflict.id], uploaded.id, uploaded.updated, uploaded.hash,
+					conflict.localPath, localHash);
+			}
+			else
+			{
+				if (setText)
+					setText("Uploading " + conflict.game + " state...");
+
+				ServerState uploaded;
+				if (!uploadState(server, game, conflict.localPath, localHash, uploaded, result.error,
+					conflict.serverFileName, conflict.serverEmulator))
+					return result;
+
+				remember(baseline[conflict.id], uploaded.id, uploaded.updated, uploaded.hash,
+					conflict.localPath, localHash);
+			}
+		}
+		else
+		{
+			fs::path destination = conflict.localPath;
+			if (destination.empty())
+			{
+				const std::string extension = conflict.kind == "save"
+					? (conflict.serverExtension.empty() ? "srm" : conflict.serverExtension)
+					: conflict.suffix.substr(1);
+				destination = savesRoot / conflict.baseSystem / (conflict.game + "." + extension);
+			}
+
+			if (setText)
+				setText("Downloading " + conflict.game + (conflict.kind == "save" ? " save..." : " state..."));
+
+			const std::string urlPath = (conflict.kind == "save" ? "/api/saves/" : "/api/states/") +
+				std::to_string(conflict.serverId) + "/content";
+
+			if (!downloadFile(server, urlPath, destination, result.error))
+				return result;
+
+			remember(baseline[conflict.id], conflict.serverId, conflict.serverUpdated, conflict.serverHash,
+				destination.string(), fileMd5(destination.string()));
+		}
+
 		saveBaseline(baseline);
+
+		std::vector<RomMConflict> conflicts = loadConflictList();
+		conflicts.erase(std::remove_if(conflicts.begin(), conflicts.end(),
+			[&conflict](const RomMConflict& other) { return other.id == conflict.id; }), conflicts.end());
+		saveConflicts(conflicts);
+
 		result.success = true;
 		return result;
 	}

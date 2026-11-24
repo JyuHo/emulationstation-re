@@ -326,8 +326,12 @@ The main menu's **ROMM** page syncs a [RomM](https://romm.app/) server into ES-R
 - **Sync saves & states** uploads and downloads the saves and states of the RomM library
   games. It reads the automatic save and the `.state` and `.state1` to `.state9` states
   under ES-RE's `saves/<system>` folder, and keeps a per-game baseline to decide which side
-  changed. A save changed on both sides is reported as a conflict and kept on both sides.
-  Saves that a standalone emulator keeps in its own folder are not synced yet.
+  changed. A save changed on both sides is recorded in `romm/library/conflicts.json` and
+  kept on both sides. Saves that a standalone emulator keeps in its own folder are not
+  synced yet.
+- **Resolve conflicts** lists the conflicts the last sync kept. For each one, **keep local**
+  uploads the local file and **keep server** downloads the server file; both choices update
+  the baseline so the next sync sees the two sides as equal.
 - **Clear downloaded games** empties the downloaded ROMs; the next launch downloads them
   again.
 - **Remove RomM library** removes the generated systems and the library.

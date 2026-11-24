@@ -2,6 +2,7 @@
 
 #include "guis/GuiLoading.h"
 #include "guis/GuiMsgBox.h"
+#include "guis/GuiRomMConflicts.h"
 #include "romm/RomMLibrary.h"
 #include "romm/RomMSaveSync.h"
 #include "views/ViewController.h"
@@ -20,6 +21,7 @@ GuiRomM::GuiRomM(Window* window) : GuiSettings(window, _("ROMM"))
 	addGroup(_("LIBRARY"));
 	addEntry(_("SYNC LIBRARY"), true, [this] { sync(); });
 	addEntry(_("SYNC SAVES & STATES"), true, [this] { syncSaves(); });
+	addEntry(_("RESOLVE CONFLICTS"), true, [this] { mWindow->pushGui(new GuiRomMConflicts(mWindow)); });
 	addEntry(_("CLEAR DOWNLOADED GAMES"), true, [this] { clearDownloads(); });
 	addEntry(_("REMOVE ROMM LIBRARY"), true, [this] { removeLibrary(); });
 }
