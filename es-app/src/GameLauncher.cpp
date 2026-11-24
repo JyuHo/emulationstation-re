@@ -206,11 +206,14 @@ namespace GameLauncher
 		launcher::LaunchContext ctx;
 		ctx.game.rom = game->getPath();
 		ctx.game.name = game->getName();
-		ctx.game.system = system->getName();
+		// A generated RomM system reuses the emulator and settings of its local
+		// counterpart; only the UI and the library path carry the RomM name.
+		const std::string launchSystem = system->getLaunchSystemName();
+		ctx.game.system = launchSystem;
 		ctx.game.systemName = system->getFullName();
 		ctx.emulator = selection.emulator;
 		ctx.core = selection.core;
-		ctx.settings = launcher::Settings(readLayer("global."), readLayer(system->getName() + "."), readLayer(game->getConfigurationName() + "."));
+		ctx.settings = launcher::Settings(readLayer("global."), readLayer(launchSystem + "."), readLayer(game->getConfigurationName() + "."));
 		ctx.controllers = readControllers();
 		ctx.paths = readPaths();
 

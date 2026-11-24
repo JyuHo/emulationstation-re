@@ -33,10 +33,12 @@
 #include "TextToSpeech.h"
 #include "LocaleES.h"
 #include "guis/GuiMsgBox.h"
+#include "guis/GuiLoading.h"
 #include "Paths.h"
 #include "resources/TextureData.h"
 #include "views/gamelist/GameNameFormatter.h"
 #include "watchers/WatchersManager.h"
+#include "romm/RomMLibrary.h"
 
 using namespace Utils::Platform;
 
@@ -693,6 +695,34 @@ bool FileData::launchGame(Window* window, LaunchGameOptions options)
 	SystemData* system = gameToUpdate->getSystem();
 	if (system == nullptr)
 		return false;
+
+	// A RomM library game is an empty stub until its first launch. Download it
+	// before es-launcher reads the path, then launch the real file.
+	if (window != nullptr && RomMLibrary::needsDownload(gameToUpdate->getPath()))
+	{
+		const std::string gamePath = gameToUpdate->getPath();
+		auto error = std::make_shared<std::string>();
+		const LaunchGameOptions pendingOptions = options;
+
+		window->pushGui(new GuiLoading<bool>(window, _("DOWNLOADING GAME"),
+			[gamePath, error](IGuiLoadingHandler* handler)
+			{
+				return RomMLibrary::downloadGame(gamePath, [handler](const std::string& text) { handler->setText(text); }, *error);
+			},
+			[this, window, pendingOptions, error](bool downloaded)
+			{
+				if (!downloaded)
+				{
+					window->pushGui(new GuiMsgBox(window, _("THE GAME COULD NOT BE DOWNLOADED") + ":\r\n" + *error,
+						_("OK"), nullptr, GuiMsgBoxIcon::ICON_ERROR));
+					return;
+				}
+
+				launchGame(window, pendingOptions);
+			}));
+
+		return true;
+	}
 
 	if (options.saveStateInfo == nullptr && SaveStateRepository::isEnabled(this))
 	{

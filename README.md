@@ -19,6 +19,7 @@ Linux only. It started from the Batocera fork of EmulationStation and was rework
 * **XDG folders**: settings in `~/.config`, data in `~/.local/share`, cache, logs and runtime files in their own XDG folders (see [Where files live](#where-files-live)).
 * **es-launcher**: native C++ generators that configure each emulator (controllers, video, per-game options) and build the command that starts it, in place of Batocera's Python `batocera-launch` (see [Game launcher](#game-launcher)).
 * **Emulator and theme catalog**: the **Emulator catalog** menu and **Updates & downloads > Themes** install emulators, libretro cores and themes listed by [es-re-catalog](https://github.com/JyuHo/es-re-catalog).
+* **RomM**: sync a self-hosted [RomM](https://romm.app/) library into generated `romm-<system>` systems, with its metadata and images, and download each ROM the first time it is launched.
 * **The Bezel Project**: **Updates & downloads > The Bezel Project** downloads, system by system, the bezels of the games you have straight from [The Bezel Project](https://github.com/thebezelproject)'s GitHub repositories (nothing of it is shipped with ES), into the `thebezelproject` decoration set, as Batocera does. It uses Batocera's lists of bezels; copies of them in `~/.config/emulationstation/thebezelproject/` (`tbp_systems.txt`, `tbp_<system>.txt`) take precedence.
 * **Updates from GitHub releases**: Arch Linux, Fedora and Debian packages are published for each `vX.Y.Z` tag, and ES installs them from **Updates & downloads > Check for updates** (see [Installing and running](#installing-and-running)).
 * **Web server** on port 1234, for local tools and remote control. It only listens on `127.0.0.1` unless **Enable public web API access** is turned on, then it answers on `http://<host>:1234`. Its pages show a dashboard (systems, game counts, the running game), a game browser that starts games, and a manager for the ROMs, BIOS, saves and configuration files.
@@ -310,6 +311,23 @@ The scraper account settings also accept user keys:
 A key entered by the user takes precedence over the compiled one. The keys are saved in
 `es_settings.cfg`, chmod `0600` (the optional `config` file used by `SystemConf` is chmod
 `0600` too). The compiled keys remain in the binary as a fallback.
+
+RomM library
+------------
+
+The main menu's **ROMM** page syncs a [RomM](https://romm.app/) server into ES-RE:
+
+- **Sync library** reads the RomM platforms and games, writes a generated
+  `es_systems_romm.cfg` (one `romm-<system>` per platform), a stub file and a sidecar per
+  game, and a `gamelist.xml` with the metadata and the cover and logo. A generated system
+  reuses the emulator and settings of its local counterpart: `romm-snes` runs as `snes`.
+- **Clear downloaded games** empties the downloaded ROMs; the next launch downloads them
+  again.
+- **Remove RomM library** removes the generated systems and the library.
+
+The RomM server URL, username/password and API token are on the same page. A game is
+downloaded from RomM the first time it is launched, then kept under
+`~/.local/share/emulationstation/romm/library/`.
 
 Tests
 -----

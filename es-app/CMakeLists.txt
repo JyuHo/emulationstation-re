@@ -81,6 +81,11 @@ set(ES_HEADERS
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiSaveState.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFileBrowser.h	
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFavoriteMusicSelector.h	
+	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiRomM.h
+
+    # RomM
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMClient.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMLibrary.h
 
     # Scrapers
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/Scraper.h
@@ -197,6 +202,11 @@ set(ES_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiSaveState.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFileBrowser.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiFavoriteMusicSelector.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiRomM.cpp
+
+    # RomM
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMClient.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMLibrary.cpp
 
     # Scrapers
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/Scraper.cpp
