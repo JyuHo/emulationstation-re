@@ -290,6 +290,14 @@ publish a build or a cache made with your own keys.
 IGDB and ArcadeDB need no build-time key. The IGDB client ID and secret are entered in the
 scraper settings (**Client ID** and **Client secret**, saved as `IGDBClientID` and `IGDBSecret`).
 
+RomM needs no build-time key either. Enter the URL of your RomM server and either your
+username/password or a client API token in the scraper settings (**Server URL**, **Username**,
+**Password**, **API token**, saved as `RomMServer`, `RomMUser`, `RomMPassword` and `RomMToken`).
+The API token is created in RomM under **Settings > Client tokens** with the `roms.read` and
+`platforms.read` scopes. A token takes precedence over the username and password. The scraper
+matches each ES-RE system to a RomM platform by its slug, its library folder, or the usual
+Batocera/ES-RE aliases, and reads the metadata and media RomM already holds for the game.
+
 The scraper account settings also accept user keys:
 
 - **ScreenScraper**: your account username/password, plus the developer ID and password
@@ -456,7 +464,7 @@ The `gamelist.xml` file for a system defines metadata for games, such as a name,
 
 If at least one game in a system has an image specified, ES will use the detailed view for that system (which displays metadata alongside the game list).
 
-*You can use ES's [scraping](http://en.wikipedia.org/wiki/Web_scraping) tools (ScreenScraper, TheGamesDB, HfsDB, IGDB, ArcadeDB; see [API keys](#api-keys) for the ones that need a key at build time) to avoid creating a `gamelist.xml` by hand.*  There are two ways to run the scraper:
+*You can use ES's [scraping](http://en.wikipedia.org/wiki/Web_scraping) tools (ScreenScraper, TheGamesDB, HfsDB, IGDB, ArcadeDB, RomM; see [API keys](#api-keys) for the ones that need a key at build time) to avoid creating a `gamelist.xml` by hand.*  There are two ways to run the scraper:
 
 * **If you want to scrape multiple games:** press start to open the menu and choose the "SCRAPER" option.  Adjust your settings and press "SCRAPE NOW".
 * **If you just want to scrape one game:** find the game on the game list in ES and press select.  Choose "EDIT THIS GAME'S METADATA" and then press the "SCRAPE" button at the bottom of the metadata editor.

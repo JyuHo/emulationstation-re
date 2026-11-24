@@ -368,6 +368,12 @@ void GuiScraperStart::loadAccountsPage()
 	addGroup(_("IGDB"));
 	addInputTextConfigRow(_("CLIENT ID"), "IGDBClientID", false, true);
 	addInputTextConfigRow(_("CLIENT SECRET"), "IGDBSecret", true, true);
+
+	addGroup(_("ROMM"));
+	addInputTextConfigRow(_("SERVER URL"), "RomMServer", false, true);
+	addInputTextConfigRow(_("USERNAME"), "RomMUser", false, true);
+	addInputTextConfigRow(_("PASSWORD"), "RomMPassword", true, true);
+	addInputTextConfigRow(_("API TOKEN"), "RomMToken", true, true);
 }
 
 void GuiScraperStart::pressedStart()

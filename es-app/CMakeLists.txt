@@ -91,6 +91,8 @@ set(ES_HEADERS
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/ArcadeDBJSONScraper.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/HfsDBScraper.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/IGDBScraper.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/RomMScraper.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/RomMScraperUrl.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/ScreenScraper.h    
 
     # Views
@@ -205,6 +207,8 @@ set(ES_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/ArcadeDBJSONScraper.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/HfsDBScraper.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/IGDBScraper.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/RomMScraper.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/RomMScraperUrl.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/ScreenScraper.cpp	
 
     # Views
@@ -277,6 +281,13 @@ if(ES_TESTS)
     target_include_directories(es-app-scraper-key-format-tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
     target_compile_options(es-app-scraper-key-format-tests PRIVATE -Wall -Wextra)
     add_test(NAME es-app-scraper-key-format-tests COMMAND es-app-scraper-key-format-tests)
+
+    add_executable(es-app-romm-scraper-tests
+        ${CMAKE_CURRENT_SOURCE_DIR}/tests/romm_scraper_tests.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/RomMScraperUrl.cpp)
+    target_include_directories(es-app-romm-scraper-tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
+    target_compile_options(es-app-romm-scraper-tests PRIVATE -Wall -Wextra)
+    add_test(NAME es-app-romm-scraper-tests COMMAND es-app-romm-scraper-tests)
 
     add_executable(es-app-update-tests
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/update_tests.cpp

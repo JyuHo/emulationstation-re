@@ -18,6 +18,7 @@
 #include <SDL3/SDL_timer.h>
 #include "HfsDBScraper.h"
 #include "IGDBScraper.h"
+#include "RomMScraper.h"
 #include "utils/Uri.h"
 
 #define OVERQUOTA_RETRY_DELAY 15000
@@ -38,7 +39,8 @@ std::vector<std::pair<std::string, Scraper*>> Scraper::scrapers
 #endif
 
 	{ "IGDB", new IGDBScraper() },
-	{ "ArcadeDB", new ArcadeDBScraper() }
+	{ "ArcadeDB", new ArcadeDBScraper() },
+	{ "RomM", new RomMScraper() }
 };
 
 std::string Scraper::getScraperName(Scraper* scraper)

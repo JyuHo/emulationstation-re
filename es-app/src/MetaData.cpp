@@ -22,7 +22,8 @@ static std::map<std::string, int> KnowScrapersIds =
 	{ "ScreenScraper", 0 },
 	{ "TheGamesDB", 1 },
 	{ "HfsDB", 2 },
-	{ "ArcadeDB", 3 }
+	{ "ArcadeDB", 3 },
+	{ "RomM", 4 }
 };
 
 void MetaDataList::initMetadata()
