@@ -10,6 +10,7 @@ public:
 private:
 	void sync();
 	void syncNow();
+	void syncSaves();
 	void clearDownloads();
 	void removeLibrary();
 };

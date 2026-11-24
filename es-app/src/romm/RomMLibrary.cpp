@@ -11,6 +11,7 @@
 #include "utils/FileSystemUtil.h"
 #include "utils/StringUtil.h"
 #include "utils/TimeUtil.h"
+#include "utils/ZipFile.h"
 
 #include <rapidjson/document.h>
 #include <rapidjson/stringbuffer.h>
@@ -309,10 +310,89 @@ namespace
 		return true;
 	}
 
-	const rapidjson::Value* gameFile(const rapidjson::Value& rom)
+	struct RomFileInfo
 	{
+		int id = 0;
+		std::string name;
+		std::string path;
+		std::string relative;
+		std::string extension;
+		std::string category;
+		int64_t size = 0;
+	};
+
+	bool isDescriptorExtension(const std::string& extension)
+	{
+		return extension == ".cue" || extension == ".gdi" || extension == ".ccd" || extension == ".mds";
+	}
+
+	bool isCompanionExtension(const std::string& extension)
+	{
+		return extension == ".bin" || extension == ".raw" || extension == ".img" || extension == ".sub" ||
+			extension == ".mdf" || extension == ".wav" || extension == ".ogg" || extension == ".flac" || extension == ".mp3";
+	}
+
+	bool isDiscExtension(const std::string& extension)
+	{
+		return isDescriptorExtension(extension) || isCompanionExtension(extension) ||
+			extension == ".chd" || extension == ".iso" || extension == ".cdi" || extension == ".gcm" ||
+			extension == ".rvz" || extension == ".gcz";
+	}
+
+	bool isDiscLikeGame(const std::vector<RomFileInfo>& files)
+	{
+		for (const RomFileInfo& file : files)
+			if (!isDiscExtension(file.extension))
+				return false;
+
+		return true;
+	}
+
+	bool supportsPlaylist(SystemData* local)
+	{
+		const std::string& name = local->getName();
+
+		// Redream does not open .m3u playlists; keep the first disc for it.
+		if (name == "dreamcast")
+			return false;
+
+		return local->getExtensions().find(".m3u") != local->getExtensions().end() ||
+			name == "psx" || name == "ps2" || name == "saturn" || name == "segacd" || name == "megacd" ||
+			name == "gamecube" || name == "wii";
+	}
+
+	std::string sanitizeFolderName(const std::string& name)
+	{
+		std::string result = name;
+
+		for (char& c : result)
+			if (c == '/' || c == '\\' || c == '\0')
+				c = '_';
+
+		if (result == "." || result == "..")
+			result = "Game";
+
+		while (!result.empty() && (result.front() == ' ' || result.front() == '.'))
+			result.erase(result.begin());
+
+		return result.empty() ? "Game" : result;
+	}
+
+	bool isRootFile(const RomFileInfo& file)
+	{
+		return file.relative.find('/') == std::string::npos;
+	}
+
+	std::vector<RomFileInfo> baseGameFiles(const rapidjson::Value& rom, const std::string& romPath, const std::string& romName)
+	{
+		std::vector<RomFileInfo> result;
+
 		if (!rom.IsObject() || !rom.HasMember("files") || !rom["files"].IsArray())
-			return nullptr;
+			return result;
+
+		std::string base = romPath;
+		if (!base.empty() && !romName.empty())
+			base += "/" + romName;
 
 		for (const rapidjson::Value& file : rom["files"].GetArray())
 		{
@@ -326,45 +406,135 @@ namespace
 			if (!category.empty() && category != "game")
 				continue;
 
-			if (file.HasMember("is_top_level") && file["is_top_level"].IsBool() && !file["is_top_level"].GetBool())
+			std::string name = stringValue(file, "file_name");
+			if (name.empty())
 				continue;
 
-			return &file;
+			const std::string extension = Utils::String::toLower(Utils::FileSystem::getExtension(name));
+			if (extension == ".m3u")
+				continue;
+
+			const std::string path = stringValue(file, "file_path");
+			std::string relative = name;
+
+			if (!base.empty())
+			{
+				if (path == base)
+					relative = name;
+				else if (path.rfind(base + "/", 0) == 0)
+					relative = path.substr(base.size() + 1) + "/" + name;
+			}
+
+			RomFileInfo info;
+			info.id = intValue(file, "id");
+			info.name = name;
+			info.path = path;
+			info.relative = relative;
+			info.extension = extension;
+			info.category = category;
+			info.size = int64Value(file, "file_size_bytes");
+
+			if (info.id > 0)
+				result.push_back(info);
 		}
 
-		return nullptr;
+		std::sort(result.begin(), result.end(), [](const RomFileInfo& a, const RomFileInfo& b) { return a.name < b.name; });
+		return result;
 	}
 
 	bool addGame(const std::string& server, SystemData* local, const fs::path& systemDir,
 		const rapidjson::Value& rom, pugi::xml_node gameList, RomMSyncResult& result,
 		const std::function<void(const std::string&)>& setText)
 	{
-		const rapidjson::Value* file = gameFile(rom);
-		if (file == nullptr)
+		const std::string romPath = stringValue(rom, "fs_path");
+		const std::string romName = stringValue(rom, "fs_name");
+		const std::vector<RomFileInfo> base = baseGameFiles(rom, romPath, romName);
+
+		if (base.empty())
 		{
-			LOG(LogWarning) << "RomM: no single game file for " << stringValue(rom, "fs_name");
+			LOG(LogWarning) << "RomM: no game file for " << romName;
 			return false;
 		}
 
-		std::string fileName = stringValue(*file, "file_name");
-		if (fileName.empty())
-			fileName = stringValue(rom, "fs_name");
-
-		const std::string extension = Utils::String::toLower(Utils::FileSystem::getExtension(fileName));
-		if (extension.empty() || local->getExtensions().find(extension) == local->getExtensions().end())
+		const bool archive = base.size() > 1;
+		if (archive && !isDiscLikeGame(base))
 		{
-			LOG(LogWarning) << "RomM: " << local->getName() << " does not handle " << fileName;
+			LOG(LogWarning) << "RomM: unsupported multi-file game " << romName;
 			return false;
 		}
 
-		const int fileId = intValue(*file, "id");
-		if (fileId <= 0)
-			return false;
+		bool descriptor = false;
+		for (const RomFileInfo& file : base)
+			if (isDescriptorExtension(file.extension))
+			{
+				descriptor = true;
+				break;
+			}
+
+		const std::string archiveName = romName.empty() ? Utils::FileSystem::getStem(base[0].name) : romName;
+		const std::string romStem = Utils::FileSystem::getStem(archiveName);
+		const bool playlist = archive && supportsPlaylist(local) && (descriptor || base.size() > 1);
+
+		std::string gameName;
+		std::string folder;
+
+		if (playlist)
+		{
+			folder = sanitizeFolderName(archiveName);
+			gameName = romStem + ".m3u";
+		}
+		else if (archive)
+		{
+			const RomFileInfo* root = nullptr;
+
+			for (const RomFileInfo& file : base)
+				if (isRootFile(file) && isDescriptorExtension(file.extension))
+				{
+					root = &file;
+					break;
+				}
+
+			if (root == nullptr)
+				for (const RomFileInfo& file : base)
+					if (isRootFile(file))
+					{
+						root = &file;
+						break;
+					}
+
+			if (root == nullptr)
+			{
+				LOG(LogWarning) << "RomM: no root file for " << romName;
+				return false;
+			}
+
+			gameName = root->name;
+
+			const std::string extension = Utils::String::toLower(Utils::FileSystem::getExtension(gameName));
+			if (local->getExtensions().find(extension) == local->getExtensions().end())
+			{
+				LOG(LogWarning) << "RomM: " << local->getName() << " does not handle " << gameName;
+				return false;
+			}
+
+			LOG(LogWarning) << "RomM: " << local->getName() << " has no playlist support; using " << gameName;
+		}
+		else
+		{
+			gameName = base[0].name;
+
+			const std::string extension = Utils::String::toLower(Utils::FileSystem::getExtension(gameName));
+			if (local->getExtensions().find(extension) == local->getExtensions().end())
+			{
+				LOG(LogWarning) << "RomM: " << local->getName() << " does not handle " << gameName;
+				return false;
+			}
+		}
 
 		std::error_code ec;
 		fs::create_directories(systemDir, ec);
 
-		const fs::path gamePath = systemDir / fileName;
+		const fs::path gamePath = systemDir / gameName;
 		if (!fs::exists(gamePath, ec) || fs::file_size(gamePath, ec) == 0)
 		{
 			std::ofstream stub(gamePath, std::ios::binary | std::ios::trunc);
@@ -382,9 +552,31 @@ namespace
 		rapidjson::Document::AllocatorType& allocator = sidecar.GetAllocator();
 		sidecar.AddMember("server", rapidjson::Value(server.c_str(), allocator), allocator);
 		sidecar.AddMember("rom_id", intValue(rom, "id"), allocator);
-		sidecar.AddMember("file_id", fileId, allocator);
-		sidecar.AddMember("file_name", rapidjson::Value(fileName.c_str(), allocator), allocator);
-		sidecar.AddMember("size", int64Value(*file, "file_size_bytes"), allocator);
+
+		if (archive)
+		{
+			std::string ids;
+			for (const RomFileInfo& file : base)
+			{
+				if (!ids.empty())
+					ids += ",";
+				ids += std::to_string(file.id);
+			}
+
+			sidecar.AddMember("archive", true, allocator);
+			sidecar.AddMember("file_name", rapidjson::Value(archiveName.c_str(), allocator), allocator);
+			sidecar.AddMember("file_ids", rapidjson::Value(ids.c_str(), allocator), allocator);
+			sidecar.AddMember("game_name", rapidjson::Value(gameName.c_str(), allocator), allocator);
+			sidecar.AddMember("playlist", playlist, allocator);
+			if (playlist)
+				sidecar.AddMember("folder", rapidjson::Value(folder.c_str(), allocator), allocator);
+		}
+		else
+		{
+			sidecar.AddMember("file_id", base[0].id, allocator);
+			sidecar.AddMember("file_name", rapidjson::Value(base[0].name.c_str(), allocator), allocator);
+			sidecar.AddMember("size", base[0].size, allocator);
+		}
 
 		rapidjson::StringBuffer buffer;
 		rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);
@@ -395,7 +587,7 @@ namespace
 			return false;
 		}
 
-		const std::string stem = Utils::FileSystem::getStem(fileName);
+		const std::string stem = Utils::FileSystem::getStem(gameName);
 		const std::string cover = coverPath(rom);
 		std::string imageRel;
 		std::string thumbRel;
@@ -425,7 +617,7 @@ namespace
 		}
 
 		pugi::xml_node game = gameList.append_child("game");
-		game.append_child("path").text().set(("./" + fileName).c_str());
+		game.append_child("path").text().set(("./" + gameName).c_str());
 
 		std::string name = stringValue(rom, "name");
 		if (name.empty())
@@ -443,7 +635,9 @@ namespace
 		const std::string publishers = metadatum == nullptr ? "" : joinedList(*metadatum, "publishers");
 		const std::string genres = metadatum == nullptr ? "" : joinedList(*metadatum, "genres");
 		const std::string families = metadatum == nullptr ? "" : firstListValue(*metadatum, "franchises");
-		const std::string players = metadatum == nullptr ? "" : stringValue(*metadatum, "player_count");
+		std::string players = metadatum == nullptr ? "" : stringValue(*metadatum, "player_count");
+		if (players == "null" || players == "None")
+			players.clear();
 
 		if (!developers.empty())
 			game.append_child("developer").text().set(developers.c_str());
@@ -529,8 +723,48 @@ namespace RomMLibrary
 	bool needsDownload(const std::string& gamePath)
 	{
 		std::error_code ec;
-		if (!fs::exists(sidecarPath(gamePath), ec))
+		const std::string sidecar = sidecarPath(gamePath);
+
+		if (!fs::exists(sidecar, ec))
 			return false;
+
+		std::ifstream in(sidecar, std::ios::binary);
+		if (!in)
+			return true;
+
+		std::stringstream content;
+		content << in.rdbuf();
+
+		rapidjson::Document document;
+		document.Parse(content.str().c_str());
+		if (document.HasParseError() || !document.IsObject())
+			return true;
+
+		if (document.HasMember("archive") && document["archive"].IsBool() && document["archive"].GetBool())
+		{
+			if (!fs::exists(gamePath, ec))
+				return true;
+
+			return fs::file_size(gamePath, ec) == 0;
+		}
+
+		if (document.HasMember("files") && document["files"].IsArray())
+		{
+			const fs::path parent = fs::path(gamePath).parent_path();
+
+			for (const rapidjson::Value& file : document["files"].GetArray())
+			{
+				const std::string name = stringValue(file, "file_name");
+				if (name.empty())
+					continue;
+
+				const fs::path path = parent / name;
+				if (!fs::exists(path, ec) || fs::file_size(path, ec) == 0)
+					return true;
+			}
+
+			return false;
+		}
 
 		if (!fs::exists(gamePath, ec))
 			return true;
@@ -564,10 +798,230 @@ namespace RomMLibrary
 		if (server.empty())
 			server = RomMScraperUrl::normalizeServer(Settings::getInstance()->getString("RomMServer"));
 
+		if (server.empty())
+		{
+			error = "No RomM server URL configured";
+			return false;
+		}
+
+		const int romId = intValue(document, "rom_id");
+		const fs::path gameFile(gamePath);
+		const fs::path parent = gameFile.parent_path();
+		std::error_code ec;
+
+		const bool archive = document.HasMember("archive") && document["archive"].IsBool() && document["archive"].GetBool();
+		if (archive)
+		{
+			const std::string fileName = stringValue(document, "file_name");
+			const std::string fileIds = stringValue(document, "file_ids");
+			const std::string gameName = stringValue(document, "game_name");
+			const std::string folder = stringValue(document, "folder");
+			const bool playlist = document.HasMember("playlist") && document["playlist"].IsBool() && document["playlist"].GetBool();
+
+			if (romId <= 0 || fileName.empty() || fileIds.empty() || gameName.empty())
+			{
+				error = "Incomplete RomM archive sidecar for " + gamePath;
+				return false;
+			}
+
+			const fs::path zipPath = parent / (Utils::FileSystem::getStem(gamePath) + ".romm.zip");
+			const std::string url = server + "/api/roms/" + std::to_string(romId) + "/content/" +
+				HttpReq::urlEncode(fileName) + "?file_ids=" + fileIds;
+
+			auto truncateGame = [&]
+			{
+				std::ofstream stub(gamePath, std::ios::binary | std::ios::trunc);
+			};
+
+			if (setText)
+				setText("Downloading " + gameName + "...");
+
+			std::string downloadError;
+			if (!RomMClient::download(url, zipPath.string(), [&](int percent)
+			{
+				if (setText && percent >= 0)
+					setText("Downloading " + gameName + " ... " + std::to_string(percent) + "%");
+			}, downloadError))
+			{
+				error = downloadError;
+				fs::remove(zipPath, ec);
+				truncateGame();
+				return false;
+			}
+
+			Utils::Zip::ZipFile zip;
+			if (!zip.load(zipPath.string()))
+			{
+				error = "Invalid RomM archive for " + gamePath;
+				fs::remove(zipPath, ec);
+				truncateGame();
+				return false;
+			}
+
+			const fs::path root = playlist && !folder.empty() ? parent / folder : parent;
+			fs::create_directories(root, ec);
+
+			std::string m3uMember;
+			if (playlist)
+			{
+				const std::string preferred = fileName + ".m3u";
+
+				for (const std::string& member : zip.namelist())
+				{
+					if (member == preferred)
+					{
+						m3uMember = member;
+						break;
+					}
+
+					if (m3uMember.empty() && member.size() > 4 && member.compare(member.size() - 4, 4, ".m3u") == 0)
+						m3uMember = member;
+				}
+
+				if (m3uMember.empty())
+				{
+					error = "No playlist in the RomM archive for " + gamePath;
+					fs::remove(zipPath, ec);
+					truncateGame();
+					return false;
+				}
+			}
+
+			if (setText)
+				setText("Extracting " + gameName + "...");
+
+			bool extracted = true;
+			for (const std::string& member : zip.namelist())
+			{
+				if (member.empty() || member.back() == '/')
+					continue;
+
+				if (member.find("..") != std::string::npos || fs::path(member).is_absolute())
+					continue;
+
+				const fs::path destination = root / member;
+				fs::create_directories(destination.parent_path(), ec);
+
+				if (!zip.extract(member, root.string(), false))
+				{
+					extracted = false;
+					break;
+				}
+			}
+
+			if (!extracted)
+			{
+				error = "Cannot extract the RomM archive for " + gamePath;
+				fs::remove(zipPath, ec);
+				truncateGame();
+				return false;
+			}
+
+			if (playlist)
+			{
+				std::string playlistContent;
+				auto append = [](void* opaque, uint64_t, const void* data, size_t size) -> size_t
+				{
+					static_cast<std::string*>(opaque)->append(static_cast<const char*>(data), size);
+					return size;
+				};
+
+				if (!zip.readBuffered(m3uMember, append, &playlistContent))
+				{
+					error = "Cannot read the RomM playlist for " + gamePath;
+					fs::remove(zipPath, ec);
+					truncateGame();
+					return false;
+				}
+
+				const std::string prefix = folder.empty() ? "" : folder + "/";
+				std::ostringstream written;
+				std::istringstream lines(playlistContent);
+				std::string line;
+
+				while (std::getline(lines, line))
+				{
+					if (!line.empty() && line.back() == '\r')
+						line.pop_back();
+
+					const size_t first = line.find_first_not_of(" \t");
+					if (first == std::string::npos)
+						continue;
+
+					const size_t last = line.find_last_not_of(" \t");
+					line = line.substr(first, last - first + 1);
+
+					if (line.empty() || line[0] == '#')
+						continue;
+
+					std::replace(line.begin(), line.end(), '\\', '/');
+					if (line[0] == '/')
+						written << line << "\n";
+					else
+						written << prefix << line << "\n";
+				}
+
+				if (written.str().empty() || !writeTextFile(gamePath, written.str()))
+				{
+					error = "Cannot write the RomM playlist for " + gamePath;
+					fs::remove(zipPath, ec);
+					truncateGame();
+					return false;
+				}
+			}
+
+			fs::remove(zipPath, ec);
+
+			if (!fs::exists(gamePath, ec) || fs::file_size(gamePath, ec) == 0)
+			{
+				error = "The downloaded game is empty";
+				truncateGame();
+				return false;
+			}
+
+			return true;
+		}
+
+		if (document.HasMember("files") && document["files"].IsArray())
+		{
+			for (const rapidjson::Value& file : document["files"].GetArray())
+			{
+				const int fileId = intValue(file, "id");
+				const std::string fileName = stringValue(file, "file_name");
+				if (fileId <= 0 || fileName.empty())
+					continue;
+
+				const fs::path destination = parent / fileName;
+				if (fs::exists(destination, ec) && fs::file_size(destination, ec) > 0)
+					continue;
+
+				const std::string url = server + "/api/roms/" + std::to_string(fileId) +
+					"/files/content/" + HttpReq::urlEncode(fileName);
+
+				if (setText)
+					setText("Downloading " + fileName + "...");
+
+				if (!RomMClient::download(url, destination.string(), [&](int percent)
+				{
+					if (setText && percent >= 0)
+						setText("Downloading " + fileName + " ... " + std::to_string(percent) + "%");
+				}, error))
+					return false;
+			}
+
+			if (!fs::exists(gamePath, ec) || fs::file_size(gamePath, ec) == 0)
+			{
+				error = "The downloaded game is empty";
+				return false;
+			}
+
+			return true;
+		}
+
 		const int fileId = intValue(document, "file_id");
 		const std::string fileName = stringValue(document, "file_name");
 
-		if (server.empty() || fileId <= 0 || fileName.empty())
+		if (fileId <= 0 || fileName.empty())
 		{
 			error = "Incomplete RomM sidecar for " + gamePath;
 			return false;
@@ -588,7 +1042,6 @@ namespace RomMLibrary
 		if (!downloaded)
 			return false;
 
-		std::error_code ec;
 		if (!fs::exists(gamePath, ec) || fs::file_size(gamePath, ec) == 0)
 		{
 			error = "The downloaded game is empty";
@@ -722,6 +1175,17 @@ namespace RomMLibrary
 			system.child("fullname").text().set(("RomM - " + local->getFullName()).c_str());
 			system.child("path").text().set(systemDir.string().c_str());
 
+			// The generated system also lists the playlists made for multi-disc
+			// RomM games.
+			std::string extensions = system.child("extension").text().get();
+			if (extensions.find(".m3u") == std::string::npos)
+			{
+				if (!extensions.empty() && extensions.back() != ' ')
+					extensions += " ";
+				extensions += ".m3u";
+				system.child("extension").text().set(extensions.c_str());
+			}
+
 			pugi::xml_node theme = system.child("theme");
 			if (!theme)
 				theme = system.append_child("theme");
@@ -780,6 +1244,21 @@ namespace RomMLibrary
 
 			if (fs::file_size(path, ec) == 0)
 				continue;
+
+			std::ifstream sidecarIn(sidecarPath(path.string()), std::ios::binary);
+			if (sidecarIn)
+			{
+				std::stringstream sidecarContent;
+				sidecarContent << sidecarIn.rdbuf();
+
+				rapidjson::Document sidecar;
+				sidecar.Parse(sidecarContent.str().c_str());
+				if (!sidecar.HasParseError() && sidecar.IsObject() && sidecar.HasMember("folder") && sidecar["folder"].IsString())
+				{
+					const fs::path folder = path.parent_path() / sidecar["folder"].GetString();
+					fs::remove_all(folder, ec);
+				}
+			}
 
 			std::ofstream stub(path, std::ios::binary | std::ios::trunc);
 			if (stub)

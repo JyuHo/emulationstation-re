@@ -3,6 +3,7 @@
 #include "guis/GuiLoading.h"
 #include "guis/GuiMsgBox.h"
 #include "romm/RomMLibrary.h"
+#include "romm/RomMSaveSync.h"
 #include "views/ViewController.h"
 #include "LocaleES.h"
 
@@ -18,6 +19,7 @@ GuiRomM::GuiRomM(Window* window) : GuiSettings(window, _("ROMM"))
 
 	addGroup(_("LIBRARY"));
 	addEntry(_("SYNC LIBRARY"), true, [this] { sync(); });
+	addEntry(_("SYNC SAVES & STATES"), true, [this] { syncSaves(); });
 	addEntry(_("CLEAR DOWNLOADED GAMES"), true, [this] { clearDownloads(); });
 	addEntry(_("REMOVE ROMM LIBRARY"), true, [this] { removeLibrary(); });
 }
@@ -64,9 +66,47 @@ void GuiRomM::syncNow()
 		}));
 }
 
-void GuiRomM::clearDownloads()
+void GuiRomM::syncSaves()
 {
 	Window* window = mWindow;
+
+	window->pushGui(new GuiMsgBox(window, _("SYNC SAVES AND STATES WITH ROMM?"),
+		_("START"), [this]
+		{
+			Window* w = mWindow;
+
+			w->pushGui(new GuiLoading<RomMSaveSyncResult>(w, _("SYNCING ROMM SAVES"),
+				[](IGuiLoadingHandler* handler)
+				{
+					return RomMSaveSync::sync([handler](const std::string& text) { handler->setText(text); });
+				},
+				[w](RomMSaveSyncResult result)
+				{
+					if (!result.success)
+					{
+						w->pushGui(new GuiMsgBox(w, _("ROMM SAVE SYNC FAILED") + ":\r\n" + result.error,
+							_("OK"), nullptr, GuiMsgBoxIcon::ICON_ERROR));
+						return;
+					}
+
+					std::string message = std::to_string(result.uploaded) + " " + _("uploaded") + ", " +
+						std::to_string(result.downloaded) + " " + _("downloaded") + ".";
+
+					if (result.conflicts > 0)
+					{
+						message += "\r\n" + std::to_string(result.conflicts) + " " + _("conflicts kept on both sides:") + "\r\n";
+						for (size_t i = 0; i < result.conflictNames.size() && i < 8; ++i)
+							message += " - " + result.conflictNames[i] + "\r\n";
+					}
+
+					w->pushGui(new GuiMsgBox(w, message, _("OK"), nullptr, GuiMsgBoxIcon::ICON_INFORMATION));
+				}));
+		},
+		_("CANCEL"), nullptr));
+}
+
+void GuiRomM::clearDownloads()
+{	Window* window = mWindow;
 
 	window->pushGui(new GuiMsgBox(window, _("EMPTY EVERY DOWNLOADED ROMM GAME?") + "\r\n" +
 		_("The games stay in the library and are downloaded again when launched."),

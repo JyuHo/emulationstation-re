@@ -86,6 +86,7 @@ set(ES_HEADERS
     # RomM
     ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMClient.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMLibrary.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMSaveSync.h
 
     # Scrapers
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/Scraper.h
@@ -207,6 +208,7 @@ set(ES_SOURCES
     # RomM
     ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMClient.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMLibrary.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/romm/RomMSaveSync.cpp
 
     # Scrapers
     ${CMAKE_CURRENT_SOURCE_DIR}/src/scrapers/Scraper.cpp
