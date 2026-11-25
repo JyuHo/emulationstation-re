@@ -43,6 +43,7 @@ EMULATORS = {
     'dolphin': 'dolphin',
     'duckstation': 'duckstation',
     'eden': 'eden',
+    'fritchii': 'fritchii',
     'melonds': 'melonds',
     'mupen64plus': 'mupen64plus',
     'supermodel': 'supermodel',

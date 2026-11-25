@@ -78,6 +78,7 @@ Generators
 | `xenia-edge` | Xenia Edge | Xbox 360, x86_64 only |
 | `rpcs3` | RPCS3 | PlayStation 3, x86_64 only |
 | `eden` | Eden | Nintendo Switch, x86_64 only |
+| `fritchii` | Fritchii | Nintendo Switch 2, x86_64 only |
 | `melonds` | melonDS | Nintendo DS |
 | `mupen64plus` | Mupen64Plus | Nintendo 64; the core is the video plugin (`gliden64`, `glide64mk2`, `rice`) |
 | `ymir` | Ymir | Sega Saturn |
@@ -138,6 +139,7 @@ leaves the others as the player set them in the emulator's menus.
 | Xenia Edge | `xenia-edge/Xenia/xenia-edge.config.toml` (`XDG_DATA_HOME` is `xenia-edge/`) | `<saves>/xbox360` |
 | RPCS3 | `rpcs3/rpcs3/config.yml`, `vfs.yml`, `input_configs/global/Default.yml` (`XDG_CONFIG_HOME` is `rpcs3/`) | the PS3 hard disk `dev_hdd0` is `<saves>/ps3/dev_hdd0` |
 | Eden | `eden/eden/qt-config.ini` (`XDG_CONFIG_HOME` is `eden/`) | `XDG_DATA_HOME` is `<saves>/switch`: NAND and SD card in `<saves>/switch/eden` |
+| Fritchii | `fritchii/fritchii/qt-config.ini` (`XDG_CONFIG_HOME` is `fritchii/`) | `XDG_DATA_HOME` is `<saves>/switch2`: NAND and SD card in `<saves>/switch2/fritchii` |
 | melonDS | `melonds/melonDS/melonDS.toml` (`XDG_CONFIG_HOME` is `melonds/`) | `<saves>/nds`, cheats in `<saves>/nds/cheats` |
 | Mupen64Plus | `mupen64plus/mupen64plus.cfg` (started with `--configdir`) | `<saves>/n64` |
 | Ymir | `ymir/Ymir.toml` (started with `-p`) | backup memory and states in `<saves>/saturn/ymir` |
@@ -156,7 +158,8 @@ leaves the others as the player set them in the emulator's menus.
   and copies `xbox_hdd.qcow2` from there to `<saves>/xbox` the first time. Cemu's `keys.txt` is
   linked from `cemu/keys.txt` or the root. RPCS3 installs the PS3 firmware from `PS3UPDAT.PUP`
   (root or `ps3/`) before the first game. Eden's `keys/` folder links to `switch/`, which must
-  hold `prod.keys`; its firmware is installed from Eden's menu. melonDS uses `bios7.bin`,
+  hold `prod.keys`; its firmware is installed from Eden's menu. Fritchii's `keys/` folder also
+  links to `switch/`; its firmware is installed from Fritchii's menu. melonDS uses `bios7.bin`,
   `bios9.bin` and `firmware.bin` from the root when all three are there, else its own free BIOS.
   PUAE reads the Kickstart ROMs from `amiga/`, VICE the JiffyDOS ROMs from `vice/` (JiffyDOS is on
   when they are all there). Mupen64Plus reads the 64DD IPL `64DD_IPL.bin` from the root, Ymir the Saturn IPL ROMs. Hatari
@@ -171,7 +174,7 @@ leaves the others as the player set them in the emulator's menus.
   key of `mupen64plus.cfg`, and `vice.<section>.<resource>` any resource of VICE's `vicerc`.
   Eden has no batocera-launch generator: its options are `eden_backend`, `eden_resolution`,
   `eden_vsync`, `eden_ratio`, `eden_antialiasing`, `eden_scaling`, `eden_accuracy` (Eden's own
-  values) and `eden_docked`.
+  values) and `eden_docked`. Fritchii uses the same options under `fritchii_*`.
 * Pads: the emulators read them through SDL. ES passes its own mapping of each pad in
   `SDL_GAMECONTROLLERCONFIG`, so the generators bind SDL's gamepad names and any pad works the way
   it was mapped in ES. A Flatpak gets this environment through `--env=` options.
