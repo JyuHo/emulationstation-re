@@ -240,7 +240,7 @@ namespace
 
 		CHECK(std::string(switch2->fullName) == "Nintendo Switch 2");
 		CHECK(std::string(switch2->platform) == "switch");
-		CHECK(std::string(switch2->theme) == "switch");
+		CHECK(std::string(switch2->theme) == "switch2");
 		CHECK(std::string(switch2->extensions).find(".nup") != std::string::npos);
 		CHECK(std::string(switch2->extensions).find(".nsp") != std::string::npos);
 
@@ -495,7 +495,7 @@ namespace
 		CHECK(std::string(switch2System.child("name").text().get()) == "switch2");
 		CHECK(std::string(switch2System.child("fullname").text().get()) == "Nintendo Switch 2");
 		CHECK(std::string(switch2System.child("path").text().get()) == "~/ROMs/switch2");
-		CHECK(std::string(switch2System.child("theme").text().get()) == "switch");
+		CHECK(std::string(switch2System.child("theme").text().get()) == "switch2");
 		CHECK(std::string(switch2System.child("emulators").child("emulator").attribute("name").value()) == "fritchii");
 		CHECK(std::filesystem::is_directory(dir + "/home/ROMs/switch2"));
 
