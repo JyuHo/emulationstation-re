@@ -233,6 +233,17 @@ namespace
 
 		CHECK(std::string(msx->platform) == "msx2+");
 
+		auto switch2 = findSystemDefinition("switch2");
+		CHECK(switch2 != nullptr);
+		if (!switch2)
+			return;
+
+		CHECK(std::string(switch2->fullName) == "Nintendo Switch 2");
+		CHECK(std::string(switch2->platform) == "switch");
+		CHECK(std::string(switch2->theme) == "switch");
+		CHECK(std::string(switch2->extensions).find(".nup") != std::string::npos);
+		CHECK(std::string(switch2->extensions).find(".nsp") != std::string::npos);
+
 		CHECK(findSystemDefinition("not-a-system") == nullptr);
 	}
 
@@ -241,7 +252,7 @@ namespace
 		// Every system of the standalone emulators in es-re-catalog.
 		const char* systems[] = {
 			"psx", "ps2", "ps3", "psp", "psvita", "ps4",
-			"nds", "3ds", "gamecube", "wii", "wiiu", "switch",
+			"nds", "3ds", "gamecube", "wii", "wiiu", "switch", "switch2",
 			"xbox", "xbox360", "dreamcast", "naomi", "atomiswave",
 			"dos", "scummvm", "atarist",
 			"c64", "c128", "c20", "cplus4", "pet",
@@ -467,6 +478,26 @@ namespace
 		userDuckstation.systems = { "psx" };
 		CHECK(writeSystemConfigs(userDuckstation, item, paths, &error));
 		CHECK(!std::filesystem::exists(dir + "/es_systems_psx.cfg"));
+
+		// switch2 has no system in the base config: a complete entry is generated
+		Emulator fritchii;
+		fritchii.id = "fritchii";
+		fritchii.systems = { "switch2" };
+
+		InstalledItem fritchiiItem;
+		fritchiiItem.command = { "/home/me/Fritchii.AppImage" };
+
+		CHECK(writeSystemConfigs(fritchii, fritchiiItem, paths, &error));
+
+		pugi::xml_document switch2;
+		CHECK(switch2.load_file((dir + "/es_systems_switch2.cfg").c_str()));
+		auto switch2System = switch2.child("systemList").child("system");
+		CHECK(std::string(switch2System.child("name").text().get()) == "switch2");
+		CHECK(std::string(switch2System.child("fullname").text().get()) == "Nintendo Switch 2");
+		CHECK(std::string(switch2System.child("path").text().get()) == "~/ROMs/switch2");
+		CHECK(std::string(switch2System.child("theme").text().get()) == "switch");
+		CHECK(std::string(switch2System.child("emulators").child("emulator").attribute("name").value()) == "fritchii");
+		CHECK(std::filesystem::is_directory(dir + "/home/ROMs/switch2"));
 
 		std::filesystem::remove_all(dir);
 	}

@@ -207,7 +207,8 @@ python3 features/build_es_features.py /tmp/batocera
 ```
 
 This also refreshes the translations of the options (`locale/features/<lang>.po`). Options
-of an emulator Batocera does not have go in `features/<emulator>.emulator.yml` (Eden).
+of an emulator Batocera does not have go in `features/<emulator>.emulator.yml` (Eden,
+Fritchii).
 An `es_features.cfg` in `~/.config/emulationstation` replaces the installed one, and
 `es_features_*.cfg` files add to it.
 
@@ -325,8 +326,9 @@ Game launcher
 
 `es-launcher/` holds the game launcher: it configures each emulator (controllers, video,
 per-game options) and builds the command that starts it, as Batocera's `batocera-launch` does.
-It has native generators for RetroArch, Azahar, Cemu, Dolphin, DuckStation, Eden, PCSX2,
-PPSSPP, RPCS3, xemu and Xenia; an emulator without a generator is started with the command of
+It has native generators for RetroArch, Azahar, Cemu, Dolphin, DuckStation, Eden, Fritchii,
+PCSX2, PPSSPP, RPCS3, xemu and Xenia; an emulator without a generator is started with the
+command of
 its `es_systems.cfg` entry. es-launcher is licensed under the LGPL 3.0 or later, unlike the rest
 of the code (MIT), and is built as a shared library, `libes-launcher.so`. See
 [es-launcher/README.md](es-launcher/README.md).

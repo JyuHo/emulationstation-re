@@ -29,6 +29,7 @@ namespace catalog
 			{ "wii",          "Nintendo Wii",                  ".iso .wbfs .rvz .ciso .gcz .wad",                    "wii",          "wii" },
 			{ "wiiu",         "Nintendo Wii U",                ".wud .wux .rpx .elf .iso .zip",                      "wiiu",         "wiiu" },
 			{ "switch",       "Nintendo Switch",               ".nsp .xci .nsz .xcz .zip",                           "switch",       "switch" },
+			{ "switch2",      "Nintendo Switch 2",             ".nup .nsp .xci .nsz .xcz .zip",                      "switch",       "switch" },
 
 			{ "xbox",         "Microsoft Xbox",                ".iso .xiso .bin .cue",                               "xbox",         "xbox" },
 			{ "xbox360",      "Microsoft Xbox 360",            ".iso .xex .zar .zip",                                "xbox360",      "xbox360" },

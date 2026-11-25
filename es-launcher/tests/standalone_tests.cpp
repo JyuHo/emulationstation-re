@@ -18,6 +18,7 @@
 #include "xenia/XeniaGenerator.h"
 #include "rpcs3/Rpcs3Generator.h"
 #include "eden/EdenGenerator.h"
+#include "fritchii/FritchiiGenerator.h"
 #include "melonds/MelonDSGenerator.h"
 #include "mupen64plus/Mupen64PlusGenerator.h"
 #include "dosbox/DosboxStagingGenerator.h"
@@ -774,6 +775,57 @@ static void testEden()
 	CHECK(es::launcher::eden::EdenGenerator::edenGuid("0300ABCD5E0400008E02000010010000") == "030000005e0400008e02000010010000");
 }
 
+static void testFritchii()
+{
+	TempDir tmp;
+	PathOverride path(tmp.path / "bin");
+	writeFile(tmp.path / "bin" / "lichii", "#!/bin/sh\n", true);
+
+	LaunchContext ctx = makeContext(tmp.path, "fritchii", "switch2", "/roms/switch2/Zelda.nsp");
+	ctx.controllers = { makePad(1, 1), makePad(2, 0) };
+	ctx.controllers[0].guid = "03001234" "5e0400008e02000010010000";   // a name CRC, as SDL 3 makes them
+
+	// no keys
+	CHECK(throwsLaunchError(ctx, ErrorCode::Generic));
+	writeFile(tmp.path / "bios" / "switch" / "prod.keys", "keys");
+
+	Command cmd = Launch(ctx).prepare();
+	CHECK(cmd.closeOnHotkey == false);   // Fritchii quits on hotkey + Start itself
+	CHECK((std::vector<std::string>(cmd.argv.end() - 3, cmd.argv.end()) == std::vector<std::string>{ "-f", "-g", "/roms/switch2/Zelda.nsp" }));
+	CHECK(cmd.env["XDG_CONFIG_HOME"] == (tmp.path / "emulators" / "fritchii").string());
+	CHECK(cmd.env["XDG_DATA_HOME"] == (tmp.path / "saves" / "switch2").string());
+	CHECK(fs::read_symlink(tmp.path / "saves" / "switch2" / "fritchii" / "keys") == tmp.path / "bios" / "switch");
+
+	IniFile ini = IniFile::load(tmp.path / "emulators" / "fritchii" / "fritchii" / "qt-config.ini");
+	CHECK(ini.get("Renderer", "backend") == "1");
+	CHECK(ini.get("Renderer", "backend\\default") == "false");
+	CHECK(ini.get("UI", "fullscreen") == "true");
+	CHECK(ini.get("UI", "Shortcuts\\Main%20Window\\Exit%20Eglantine\\Controller_KeySeq") == "Home+Plus");
+	CHECK(ini.get("UI", "Shortcuts\\Main%20Window\\Continue\\Pause%20Emulation\\Controller_KeySeq") == "Home+B");
+	CHECK(ini.get("", "Screenshots\\screenshot_path") == (tmp.path / "shots").string());
+
+	// the CRC is not part of Fritchii's GUID; player 1 is the second pad of that GUID
+	std::string pad1 = "engine:sdl,port:1,guid:030000005e0400008e02000010010000";
+	std::string pad2 = "engine:sdl,port:0,guid:030000005e0400008e02000010010000";
+	CHECK(ini.get("Controls", "player_0_connected") == "true");
+	CHECK(ini.get("Controls", "player_0_button_a") == "\"" + pad1 + ",button:0\"");
+	CHECK(ini.get("Controls", "player_0_button_dup") == "\"" + pad1 + ",hat:0,direction:up\"");
+	CHECK(ini.get("Controls", "player_0_button_zl") == "\"" + pad1 + ",axis:2,threshold:0.500000,invert:+\"");
+	CHECK(ini.get("Controls", "player_0_button_home") == "\"" + pad1 + ",button:8\"");
+	CHECK(ini.get("Controls", "player_0_lstick") == "\"" + pad1 + ",axis_x:0,axis_y:1,offset_x:0.000000,offset_y:0.000000,invert_x:+,invert_y:+,deadzone:0.150000,range:1.000000\"");
+	CHECK(ini.get("Controls", "player_1_button_b") == "\"" + pad2 + ",button:1\"");
+	CHECK(ini.get("Controls", "player_2_connected") == "false");
+
+	// hotkey on select: the shortcuts use Minus, Home stays unbound
+	ctx.controllers[0].inputs["hotkey"] = ctx.controllers[0].inputs["select"];
+	Launch(ctx).prepare();
+	ini = IniFile::load(tmp.path / "emulators" / "fritchii" / "fritchii" / "qt-config.ini");
+	CHECK(ini.get("UI", "Shortcuts\\Main%20Window\\Exit%20Eglantine\\Controller_KeySeq") == "Minus+Plus");
+	CHECK(ini.get("Controls", "player_0_button_home") == "\"\"");
+
+	CHECK(es::launcher::fritchii::FritchiiGenerator::fritchiiGuid("0300ABCD5E0400008E02000010010000") == "030000005e0400008e02000010010000");
+}
+
 static void testMelonDS()
 {
 	TempDir tmp;
@@ -1268,6 +1320,7 @@ void tests::runStandaloneTests()
 	testCommandBefore();
 	testRpcs3();
 	testEden();
+	testFritchii();
 	testMelonDS();
 	testMupen64Plus();
 	testYmir();

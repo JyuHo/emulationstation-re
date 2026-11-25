@@ -51,6 +51,7 @@ add_library(es-launcher-objects OBJECT
     src/xenia/XeniaGenerator.cpp
     src/rpcs3/Rpcs3Generator.cpp
     src/eden/EdenGenerator.cpp
+    src/fritchii/FritchiiGenerator.cpp
     src/melonds/MelonDSGenerator.cpp
     src/mupen64plus/Mupen64PlusGenerator.cpp
     src/dosbox/DosboxStagingGenerator.cpp
